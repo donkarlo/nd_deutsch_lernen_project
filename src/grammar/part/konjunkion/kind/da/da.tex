@@ -1,0 +1,281 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Das Wort \glqq da\grqq}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+\section{Grundbedeutung}
+
+\begin{grammarentry}{da}{adverb / conjunction}
+\GermanText{\textbf{da} hat mehrere Bedeutungen. Sehr oft bedeutet es \textbf{there}, \textbf{here}, \textbf{then} oder \textbf{since/because}. Die genaue Bedeutung kommt aus dem Kontext.}
+\EnglishText{\textbf{da} has several meanings. Very often it means \textbf{there}, \textbf{here}, \textbf{then}, or \textbf{since/because}. The exact meaning comes from the context.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Da ist mein Fahrrad.}{There is my bicycle.}
+    \ExampleItem{Ich bin da.}{I am here / I am there.}
+    \ExampleItem{Da habe ich den Fehler gesehen.}{Then I saw the mistake.}
+    \ExampleItem{Da ich müde bin, gehe ich nach Hause.}{Since I am tired, I am going home.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{da als Ort}
+
+\begin{grammarentry}{da = there / here}{place}
+\GermanText{Als Ortsadverb zeigt \textbf{da} einen Ort. Es kann je nach Situation \textbf{there} oder manchmal \textbf{here} bedeuten.}
+\EnglishText{As an adverb of place, \textbf{da} points to a place. Depending on the situation, it can mean \textbf{there} or sometimes \textbf{here}.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Da steht ein Auto.}{There is a car standing there.}
+    \ExampleItem{Da wohnt meine Schwester.}{My sister lives there.}
+    \ExampleItem{Bleib bitte da.}{Please stay there / here.}
+    \ExampleItem{Komm bitte da nicht hin.}{Please do not go there.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{da sein}{to be there / to be present}
+\GermanText{\textbf{da sein} bedeutet oft: anwesend sein oder angekommen sein.}
+\EnglishText{\textbf{da sein} often means: to be present or to have arrived.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Bist du da?}{Are you there? / Are you here?}
+    \ExampleItem{Ich bin schon da.}{I am already here / there.}
+    \ExampleItem{Der Arzt ist heute nicht da.}{The doctor is not there today.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{da als Zeit oder Situation}
+
+\begin{grammarentry}{da = then / at that moment}{time}
+\GermanText{\textbf{da} kann auch einen Zeitpunkt oder eine Situation meinen. Dann bedeutet es oft \textbf{then} oder \textbf{at that moment}.}
+\EnglishText{\textbf{da} can also refer to a time or a situation. Then it often means \textbf{then} or \textbf{at that moment}.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Da habe ich verstanden, was passiert ist.}{Then I understood what had happened.}
+    \ExampleItem{Ich war krank. Da konnte ich nicht arbeiten.}{I was sick. Then / in that situation I could not work.}
+    \ExampleItem{Er kam zu spät. Da war der Zug schon weg.}{He came too late. By then the train was already gone.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{da als Grund}
+
+\begin{grammarentry}{da = since / because}{subordinating conjunction}
+\GermanText{\textbf{da} kann einen Grund einleiten. In dieser Bedeutung ist \textbf{da} eine unterordnende Konjunktion. Das konjugierte Verb steht am Ende des Nebensatzes.}
+\EnglishText{\textbf{da} can introduce a reason. In this meaning, \textbf{da} is a subordinating conjunction. The conjugated verb goes to the end of the subordinate clause.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Da ich krank bin, bleibe ich zu Hause.}{Since I am sick, I am staying at home.}
+    \ExampleItem{Da er keine Zeit hat, kommt er nicht.}{Since he has no time, he is not coming.}
+    \ExampleItem{Ich gehe früher, da ich morgen arbeiten muss.}{I am leaving earlier because I have to work tomorrow.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{da oder weil}{since or because}
+\GermanText{\textbf{da} klingt oft etwas schriftlicher oder erklärender als \textbf{weil}. \textbf{weil} ist in Alltagssprache sehr häufig. Beide können einen Grund ausdrücken.}
+\EnglishText{\textbf{da} often sounds a little more written or explanatory than \textbf{weil}. \textbf{weil} is very common in everyday language. Both can express a reason.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Da ich müde bin, gehe ich schlafen.}{Since I am tired, I am going to sleep.}
+    \ExampleItem{Ich gehe schlafen, weil ich müde bin.}{I am going to sleep because I am tired.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Wortstellung}
+
+\begin{grammarentry}{da als Adverb am Satzanfang}{verb-second word order}
+\GermanText{Wenn \textbf{da} als Adverb am Anfang steht, steht das konjugierte Verb auf Position 2.}
+\EnglishText{When \textbf{da} is an adverb at the beginning, the conjugated verb is in position 2.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Da ist ein Problem.}{There is a problem.}
+    \ExampleItem{Da wohne ich.}{I live there.}
+    \ExampleItem{Da habe ich keine Zeit.}{Then / in that situation I have no time.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{da als Konjunktion}{verb at the end}
+\GermanText{Wenn \textbf{da} einen Grundsatz einleitet, steht das konjugierte Verb am Ende des Nebensatzes. Wenn der Nebensatz zuerst kommt, steht im Hauptsatz das konjugierte Verb direkt danach.}
+\EnglishText{When \textbf{da} introduces a reason clause, the conjugated verb is at the end of the subordinate clause. If the subordinate clause comes first, the conjugated verb of the main clause follows directly after it.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Da ich keine Zeit habe, komme ich später.}{Since I have no time, I will come later.}
+    \ExampleItem{Ich komme später, da ich keine Zeit habe.}{I will come later because I have no time.}
+    \ExampleItem{Da er krank war, konnte er nicht kommen.}{Since he was sick, he could not come.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{da-Komposita}
+
+\begin{grammarentry}{da + Präposition}{there-/it- words}
+\GermanText{\textbf{da} kann mit Präpositionen zusammenstehen. Diese Wörter verweisen oft auf eine Sache, eine Idee oder einen ganzen Satz. Bei Personen benutzt man normalerweise nicht diese Form.}
+\EnglishText{\textbf{da} can combine with prepositions. These words often refer to a thing, an idea, or a whole clause. For people, one normally does not use this form.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich denke daran.}{I am thinking about it.}
+    \ExampleItem{Ich freue mich darauf.}{I am looking forward to it.}
+    \ExampleItem{Ich spreche darüber.}{I am talking about it.}
+    \ExampleItem{Ich bin damit einverstanden.}{I agree with it.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{wichtige da-Komposita}{common combinations}
+\GermanText{Einige häufige Formen sind: \textbf{daran}, \textbf{darauf}, \textbf{darüber}, \textbf{damit}, \textbf{dafür}, \textbf{dagegen}, \textbf{dabei}, \textbf{danach}, \textbf{davor}.}
+\EnglishText{Some common forms are: \textbf{daran}, \textbf{darauf}, \textbf{darüber}, \textbf{damit}, \textbf{dafür}, \textbf{dagegen}, \textbf{dabei}, \textbf{danach}, \textbf{davor}.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich warte darauf.}{I am waiting for it.}
+    \ExampleItem{Er ist dagegen.}{He is against it.}
+    \ExampleItem{Danach gehe ich nach Hause.}{After that, I am going home.}
+    \ExampleItem{Davor hatte ich Angst.}{I was afraid of that before / I was afraid of it.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Typische Ausdrücke}
+
+\begin{grammarentry}{Da hast du recht.}{You are right.}
+\GermanText{\textbf{Da hast du recht} bedeutet: In diesem Punkt hast du recht.}
+\EnglishText{\textbf{Da hast du recht} means: You are right about that point.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Da hast du recht.}{You are right.}
+    \ExampleItem{Ja, da hast du völlig recht.}{Yes, you are completely right about that.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Da bin ich mir nicht sicher.}{I am not sure about that.}
+\GermanText{\textbf{da} kann auf ein vorher genanntes Thema oder Problem zeigen.}
+\EnglishText{\textbf{da} can point to a previously mentioned topic or problem.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Da bin ich mir nicht sicher.}{I am not sure about that.}
+    \ExampleItem{Da kann ich dir nicht helfen.}{I cannot help you with that.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{da, dort und hier}
+
+\begin{grammarentry}{da vs. dort vs. hier}{place words}
+\GermanText{\textbf{hier} bedeutet klar: an diesem Ort. \textbf{dort} bedeutet klar: an jenem Ort. \textbf{da} ist flexibler und kann je nach Situation nahe oder weiter weg sein.}
+\EnglishText{\textbf{hier} clearly means: at this place. \textbf{dort} clearly means: at that place. \textbf{da} is more flexible and can be near or farther away depending on the situation.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich bin hier.}{I am here.}
+    \ExampleItem{Er wohnt dort.}{He lives there.}
+    \ExampleItem{Ich bin da.}{I am here / there.}
+    \ExampleItem{Da vorne ist der Bahnhof.}{The train station is over there in front.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Typische Fehler}
+
+\begin{grammarentry}{Fehler 1: falsche Wortstellung mit da als Konjunktion}{wrong word order}
+\GermanText{Wenn \textbf{da} \textbf{since/because} bedeutet, steht das konjugierte Verb am Ende des Nebensatzes.}
+\EnglishText{When \textbf{da} means \textbf{since/because}, the conjugated verb stands at the end of the subordinate clause.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Falsch: Da ich bin müde, gehe ich schlafen.}{Wrong: Since I am tired, I go to sleep.}
+    \ExampleItem{Richtig: Da ich müde bin, gehe ich schlafen.}{Correct: Since I am tired, I go to sleep.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Fehler 2: da-Komposita für Personen}{things, not people}
+\GermanText{\textbf{daran}, \textbf{darauf}, \textbf{darüber} usw. benutzt man normalerweise für Sachen oder Ideen, nicht für Personen.}
+\EnglishText{\textbf{daran}, \textbf{darauf}, \textbf{darüber}, etc. are normally used for things or ideas, not for people.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Falsch: Ich denke daran. = an meine Mutter}{Wrong if you mean: I am thinking about my mother.}
+    \ExampleItem{Richtig: Ich denke an meine Mutter.}{Correct: I am thinking about my mother.}
+    \ExampleItem{Richtig: Ich denke daran. = an das Problem}{Correct: I am thinking about it / about the problem.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Kurze Zusammenfassung}
+
+\begin{grammarentry}{da}{summary}
+\begin{itemize}
+    \item \GermanText{\textbf{da} kann \textbf{there}, \textbf{here}, \textbf{then} oder \textbf{since/because} bedeuten.}
+    \item \GermanText{Als Adverb steht \textbf{da} normal im Satz wie ein Satzteil. Am Anfang gilt Verbzweitstellung: \textbf{Da ist ein Problem}.}
+    \item \GermanText{Als Konjunktion für Grund bildet \textbf{da} einen Nebensatz: \textbf{Da ich müde bin, ...}.}
+    \item \GermanText{\textbf{da sein} bedeutet oft: anwesend sein oder angekommen sein.}
+    \item \GermanText{\textbf{da-Komposita} wie \textbf{daran}, \textbf{damit}, \textbf{darüber} verweisen oft auf Sachen, Ideen oder ganze Sätze.}
+\end{itemize}
+\end{grammarentry}
+
+\end{document}

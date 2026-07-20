@@ -1,0 +1,139 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{tipa}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{\textit{While} als Gegensatz im Deutschen}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+\section{Grundidee}
+
+\begin{grammarentry}{while}{Gegensatz: although / whereas}
+\GermanText{Das englische Wort \textit{while} kann im Deutschen verschiedene Bedeutungen haben. Wenn es einen Gegensatz ausdrückt, benutzt man meistens \textbf{obwohl}, \textbf{während} oder \textbf{wohingegen}.}
+\EnglishText{The English word \textit{while} can have different meanings in German. When it expresses contrast, German usually uses \textbf{obwohl}, \textbf{während}, or \textbf{wohingegen}.}
+\end{grammarentry}
+
+\section{Die wichtigsten Formen}
+
+\begin{grammarentry}{obwohl [\textipa{Op"vo:l}]}{Konjunktion, subordinierend}
+\GermanText{\textbf{Bedeutung:} drückt einen Gegensatz oder etwas Unerwartetes aus. Das konjugierte Verb steht am Ende des Nebensatzes.}
+\EnglishText{\textbf{Meaning:} expresses contrast or something unexpected. The conjugated verb stands at the end of the subordinate clause.}
+
+\GermanText{\textbf{Synonyme:} obgleich, auch wenn, trotzdem dass}
+\EnglishText{\textbf{Synonyms:} although, even though}
+
+\GermanText{\textbf{Gebrauch:} Wenn du im Englischen \textit{although / even though / while in contrast} meinst, ist \textbf{obwohl} oft die beste Wahl.}
+\EnglishText{\textbf{Usage:} When you mean \textit{although / even though / while in contrast} in English, \textbf{obwohl} is often the best choice.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Warum sprichst du so mit mir, obwohl ich immer höflich zu dir war?}{Why do you talk to me like that, although I have always been polite to you?}
+    \ExampleItem{Obwohl es regnet, gehe ich spazieren.}{Although it is raining, I go for a walk.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{während [\textipa{"vE:K@nt}]}{Konjunktion, subordinierend}
+\GermanText{\textbf{Bedeutung:} kann Zeit oder Gegensatz ausdrücken. Bei Zeit bedeutet es \textit{while}; bei Gegensatz bedeutet es \textit{whereas}.}
+\EnglishText{\textbf{Meaning:} can express time or contrast. For time it means \textit{while}; for contrast it means \textit{whereas}.}
+
+\GermanText{\textbf{Synonyme:} wohingegen, als, zur gleichen Zeit}
+\EnglishText{\textbf{Synonyms:} whereas, while, at the same time}
+
+\GermanText{\textbf{Gebrauch:} Benutze \textbf{während}, wenn zwei Dinge gleichzeitig passieren oder wenn zwei Situationen verglichen werden.}
+\EnglishText{\textbf{Usage:} Use \textbf{während} when two things happen at the same time or when two situations are compared.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich arbeite, während du schläfst.}{I work while you sleep.}
+    \ExampleItem{Ich bin ruhig, während er sehr nervös ist.}{I am calm, whereas he is very nervous.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{wohingegen [\textipa{vo"hInge:g@n}]}{Konjunktion, subordinierend}
+\GermanText{\textbf{Bedeutung:} drückt einen klaren Gegensatz zwischen zwei Aussagen aus. Es ist formeller als \textbf{während}.}
+\EnglishText{\textbf{Meaning:} expresses a clear contrast between two statements. It is more formal than \textbf{während}.}
+
+\GermanText{\textbf{Synonyme:} während, im Gegensatz dazu, dagegen}
+\EnglishText{\textbf{Synonyms:} whereas, in contrast, on the other hand}
+
+\GermanText{\textbf{Gebrauch:} Benutze \textbf{wohingegen}, wenn du zwei verschiedene Tatsachen oder Meinungen gegenüberstellst.}
+\EnglishText{\textbf{Usage:} Use \textbf{wohingegen} when you contrast two different facts or opinions.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich lerne regelmäßig, wohingegen er kaum lernt.}{I study regularly, whereas he hardly studies.}
+    \ExampleItem{Diese Lösung ist einfach, wohingegen die andere Lösung sehr kompliziert ist.}{This solution is simple, whereas the other solution is very complicated.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Merksatz}
+
+\begin{grammarentry}{Merksatz}{short rule}
+\GermanText{\textbf{obwohl} = obwohl etwas dagegen spricht.}
+\EnglishText{\textbf{obwohl} = although something speaks against it.}
+
+\GermanText{\textbf{während} = während etwas gleichzeitig passiert oder im Gegensatz dazu steht.}
+\EnglishText{\textbf{während} = while something happens at the same time or stands in contrast.}
+
+\GermanText{\textbf{wohingegen} = formeller Gegensatz zwischen zwei Aussagen.}
+\EnglishText{\textbf{wohingegen} = more formal contrast between two statements.}
+\end{grammarentry}
+
+\section{Korrekte Übersetzung deines Satzes}
+
+\begin{grammarentry}{Dein Satz}{your sentence}
+\GermanText{Warum sprichst du so mit mir, obwohl ich immer höflich zu dir war?}
+\EnglishText{Why do you talk to me like that, although I have always been polite to you?}
+\end{grammarentry}
+
+\end{document}

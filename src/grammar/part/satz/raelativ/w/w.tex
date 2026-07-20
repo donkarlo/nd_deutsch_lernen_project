@@ -1,0 +1,288 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Relativsätze mit der, die, das und wer, was, wo, wie}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+\section{Grundidee}
+
+\begin{grammarentry}{Normale Relativsätze mit der, die, das}{normal relative clauses}
+\GermanText{Die Relativpronomen \textbf{der, die, das} beziehen sich normalerweise auf ein konkretes Nomen im Hauptsatz. Dieses Nomen nennt man Bezugswort.}
+\EnglishText{The relative pronouns \textbf{der, die, das} normally refer to a concrete noun in the main clause. This noun is called the antecedent.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Das ist der Mann, der mir geholfen hat.}{That is the man who helped me.}
+    \ExampleItem{Ich kaufe das Buch, das du empfohlen hast.}{I buy the book that you recommended.}
+    \ExampleItem{Die Frau, mit der ich gesprochen habe, ist Ärztin.}{The woman with whom I spoke is a doctor.}
+\end{itemize}
+\end{exbox}
+
+\GermanText{Wichtig: Bei \textbf{der, die, das} muss man auf \textbf{Genus, Numerus und Kasus} achten.}
+\EnglishText{Important: With \textbf{der, die, das}, you must pay attention to \textbf{gender, number and case}.}
+\end{grammarentry}
+
+\begin{grammarentry}{Freie Relativsätze mit wer und was}{free relative clauses}
+\GermanText{\textbf{Wer} und \textbf{was} stehen oft ohne konkretes Bezugswort. Der Relativsatz selbst funktioniert dann wie ein Satzteil.}
+\EnglishText{\textbf{Wer} and \textbf{was} often stand without a concrete antecedent. The relative clause itself functions like a part of the sentence.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Wer viel lernt, besteht die Prüfung.}{Whoever studies a lot passes the exam.}
+    \ExampleItem{Was du sagst, ist richtig.}{What you say is correct.}
+    \ExampleItem{Ich verstehe, was du meinst.}{I understand what you mean.}
+\end{itemize}
+\end{exbox}
+
+\GermanText{Einfacher Unterschied: \textbf{der, die, das} beziehen sich meistens auf ein Nomen; \textbf{wer, was} können selbst ein ganzes unbestimmtes Nomen ersetzen.}
+\EnglishText{Simple difference: \textbf{der, die, das} usually refer to a noun; \textbf{wer, was} can themselves replace an entire indefinite noun.}
+\end{grammarentry}
+
+\section{Vergleich: der, die, das gegen wer und was}
+
+\begin{center}
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{tabular}{>{\bfseries}p{3.6cm}p{5.2cm}p{5.2cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Form} & \color{white}\textbf{Benutzung} & \color{white}\textbf{Beispiel} \\
+der, die, das & mit einem klaren Bezugswort & Der Mann, der dort steht, ist mein Lehrer. \\
+wer & ohne Bezugswort, für Personen allgemein & Wer Deutsch lernt, braucht Geduld. \\
+was & ohne Bezugswort, für Sachen, Ideen oder ganze Aussagen & Was du gesagt hast, war wichtig. \\
+was nach alles, etwas, nichts & nach unbestimmten Wörtern & Alles, was ich weiß, habe ich dir gesagt. \\
+was nach das Beste, das Erste, das Letzte & nach substantivierten Superlativen & Das Letzte, was ich gelernt habe, war ein Verb. \\
+wo & für Ort; oft statt in dem / in der & Das ist die Stadt, wo ich wohne. \\
+wie & für Art und Weise & Ich mag, wie du erklärst. \\
+\end{tabular}
+\end{center}
+
+\section{der, die, das als Relativpronomen}
+
+\begin{grammarentry}{der, die, das}{relative pronouns referring to nouns}
+\GermanText{\textbf{der, die, das} benutzt man, wenn es im Hauptsatz ein konkretes Nomen gibt. Das Relativpronomen passt im Genus und Numerus zum Bezugswort. Der Kasus kommt aber aus dem Relativsatz.}
+\EnglishText{You use \textbf{der, die, das} when there is a concrete noun in the main clause. The relative pronoun agrees with the antecedent in gender and number. But the case comes from the relative clause.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Der Mann, der dort sitzt, ist mein Nachbar.}{The man who is sitting there is my neighbor.}
+    \ExampleItem{Der Mann, den ich gesehen habe, ist mein Nachbar.}{The man whom I saw is my neighbor.}
+    \ExampleItem{Der Mann, dem ich geholfen habe, ist mein Nachbar.}{The man whom I helped is my neighbor.}
+\end{itemize}
+\end{exbox}
+
+\GermanText{In allen drei Beispielen ist das Bezugswort \textbf{der Mann}. Aber im Relativsatz ändert sich der Kasus: \textbf{der} = Nominativ, \textbf{den} = Akkusativ, \textbf{dem} = Dativ.}
+\EnglishText{In all three examples the antecedent is \textbf{der Mann}. But inside the relative clause the case changes: \textbf{der} = nominative, \textbf{den} = accusative, \textbf{dem} = dative.}
+\end{grammarentry}
+
+\section{wer als freies Relativpronomen}
+
+\begin{grammarentry}{wer, wen, wem, wessen}{whoever / the person who}
+\GermanText{\textbf{wer} benutzt man für Personen, wenn man kein bestimmtes Nomen nennt. Es bedeutet ungefähr: \textbf{die Person, die}.}
+\EnglishText{\textbf{wer} is used for people when no specific noun is named. It means roughly: \textbf{the person who} or \textbf{whoever}.}
+
+\begin{center}
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{tabular}{>{\bfseries}p{3cm}p{4cm}p{7cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Kasus} & \color{white}\textbf{Form} & \color{white}\textbf{Beispiel} \\
+Nominativ & wer & Wer ehrlich ist, hat keine Angst. \\
+Akkusativ & wen & Wen ich sehe, grüße ich. \\
+Dativ & wem & Wem ich vertraue, dem helfe ich. \\
+Genitiv & wessen & Wessen Name auf der Liste steht, darf eintreten. \\
+\end{tabular}
+\end{center}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Wer freundlich fragt, bekommt oft Hilfe.}{Whoever asks politely often gets help.}
+    \ExampleItem{Ich helfe, wem ich helfen kann.}{I help whoever I can help.}
+    \ExampleItem{Wen du einlädst, musst du selbst entscheiden.}{You must decide yourself whom you invite.}
+\end{itemize}
+\end{exbox}
+
+\GermanText{Vergleich: \textbf{Der Mann, der viel lernt, besteht die Prüfung.} Hier gibt es ein Bezugswort: \textbf{der Mann}. Aber: \textbf{Wer viel lernt, besteht die Prüfung.} Hier gibt es kein Bezugswort.}
+\EnglishText{Comparison: \textbf{Der Mann, der viel lernt, besteht die Prüfung.} Here there is an antecedent: \textbf{der Mann}. But: \textbf{Wer viel lernt, besteht die Prüfung.} Here there is no antecedent.}
+\end{grammarentry}
+
+\section{was als freies Relativpronomen}
+
+\begin{grammarentry}{was}{what / that which}
+\GermanText{\textbf{was} benutzt man für Sachen, Ideen, unbestimmte Dinge oder ganze Aussagen. Es bedeutet oft: \textbf{das, was}.}
+\EnglishText{\textbf{was} is used for things, ideas, indefinite things or whole statements. It often means: \textbf{that which} or \textbf{what}.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Was du sagst, ist logisch.}{What you say is logical.}
+    \ExampleItem{Ich glaube nicht alles, was ich höre.}{I do not believe everything that I hear.}
+    \ExampleItem{Das Letzte, was ich gelernt habe, war ein neues Verb.}{The last thing that I learned was a new verb.}
+\end{itemize}
+\end{exbox}
+
+\GermanText{Nach Wörtern wie \textbf{alles, etwas, nichts, vieles, wenig} benutzt man sehr oft \textbf{was}.}
+\EnglishText{After words like \textbf{alles, etwas, nichts, vieles, wenig}, German very often uses \textbf{was}.}
+
+\GermanText{Auch nach substantivierten Superlativen benutzt man sehr oft \textbf{was}: \textbf{das Beste, das Erste, das Letzte, das Wichtigste}.}
+\EnglishText{Also after substantivized superlatives German very often uses \textbf{was}: \textbf{the best thing, the first thing, the last thing, the most important thing}.}
+\end{grammarentry}
+
+\section{wo, wohin, woher als Relativadverbien}
+
+\begin{grammarentry}{wo}{where}
+\GermanText{\textbf{wo} benutzt man für Orte. In der gesprochenen Sprache ist \textbf{wo} sehr häufig. In formeller Standardsprache ist oft \textbf{in dem, in der, an dem, auf dem} genauer.}
+\EnglishText{\textbf{wo} is used for places. In spoken German it is very common. In formal standard German, \textbf{in dem, in der, an dem, auf dem} is often more precise.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Das ist die Stadt, wo ich wohne.}{That is the city where I live.}
+    \ExampleItem{Das ist die Stadt, in der ich wohne.}{That is the city in which I live.}
+    \ExampleItem{Ich suche einen Ort, wo ich ruhig lernen kann.}{I am looking for a place where I can study quietly.}
+\end{itemize}
+\end{exbox}
+
+\GermanText{Für B1 ist \textbf{wo} meistens verständlich und oft akzeptabel. Wenn du sehr sauber schreiben willst, benutze bei konkreten Nomen oft \textbf{in dem / in der}.}
+\EnglishText{For B1, \textbf{wo} is usually understandable and often acceptable. If you want to write very cleanly, often use \textbf{in dem / in der} with concrete nouns.}
+\end{grammarentry}
+
+\begin{grammarentry}{wohin und woher}{where to / where from}
+\GermanText{\textbf{wohin} benutzt man für Richtung zu einem Ort. \textbf{woher} benutzt man für Herkunft oder Bewegung von einem Ort.}
+\EnglishText{\textbf{wohin} is used for direction toward a place. \textbf{woher} is used for origin or movement from a place.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Das ist das Land, wohin ich reisen möchte.}{That is the country where I want to travel to.}
+    \ExampleItem{Das ist die Stadt, aus der ich komme.}{That is the city I come from.}
+    \ExampleItem{Ich weiß nicht, woher er kommt.}{I do not know where he comes from.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{wie als Relativadverb}
+
+\begin{grammarentry}{wie}{how / the way}
+\GermanText{\textbf{wie} benutzt man für die Art und Weise. Es steht oft nach Wörtern wie \textbf{Art, Weise, so, genauso}.}
+\EnglishText{\textbf{wie} is used for manner or way. It often appears after words like \textbf{Art, Weise, so, genauso}.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich mag, wie du Deutsch lernst.}{I like how you learn German.}
+    \ExampleItem{Die Art, wie er spricht, ist höflich.}{The way he speaks is polite.}
+    \ExampleItem{Mach es so, wie ich es dir gezeigt habe.}{Do it the way I showed you.}
+\end{itemize}
+\end{exbox}
+
+\GermanText{\textbf{wie} ist kein normales Relativpronomen wie \textbf{der, die, das}. Es beschreibt meistens die Methode, die Art oder die Weise.}
+\EnglishText{\textbf{wie} is not a normal relative pronoun like \textbf{der, die, das}. It usually describes the method, manner or way.}
+\end{grammarentry}
+
+\section{womit, worüber, wofür, woran}
+
+\begin{grammarentry}{wo-Formen mit Präposition}{pronominal adverbs}
+\GermanText{Wenn man über Sachen, Ideen oder Themen spricht, benutzt man oft \textbf{wo} + Präposition: \textbf{womit, worüber, wofür, woran, wobei}.}
+\EnglishText{When speaking about things, ideas or topics, German often uses \textbf{wo} + preposition: \textbf{womit, worüber, wofür, woran, wobei}.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Das ist das Thema, worüber wir gesprochen haben.}{That is the topic we talked about.}
+    \ExampleItem{Ich weiß nicht, womit ich anfangen soll.}{I do not know what I should start with.}
+    \ExampleItem{Das ist der Grund, wofür ich kämpfe.}{That is the reason I fight for.}
+\end{itemize}
+\end{exbox}
+
+\GermanText{Bei Personen benutzt man normalerweise nicht \textbf{wo-}, sondern Präposition + Relativpronomen.}
+\EnglishText{For people, you normally do not use \textbf{wo-}, but preposition + relative pronoun.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Der Mann, mit dem ich gesprochen habe, ist nett.}{The man with whom I spoke is nice.}
+    \ExampleItem{Nicht: Der Mann, womit ich gesprochen habe.}{Not: The man with which I spoke.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Kurze Regel zum Merken}
+
+\begin{grammarentry}{Merksatz}{memory rule}
+\GermanText{\textbf{der, die, das} benutzt du, wenn du ein klares Nomen im Hauptsatz hast.}
+\EnglishText{Use \textbf{der, die, das} when you have a clear noun in the main clause.}
+
+\GermanText{\textbf{wer} benutzt du für unbestimmte Personen ohne konkretes Nomen.}
+\EnglishText{Use \textbf{wer} for indefinite people without a concrete noun.}
+
+\GermanText{\textbf{was} benutzt du für unbestimmte Dinge, Ideen, ganze Aussagen und nach Wörtern wie \textbf{alles, etwas, nichts, das Beste, das Letzte}.}
+\EnglishText{Use \textbf{was} for indefinite things, ideas, whole statements and after words like \textbf{alles, etwas, nichts, das Beste, das Letzte}.}
+
+\GermanText{\textbf{wo, wohin, woher} benutzt du für Ort, Richtung und Herkunft.}
+\EnglishText{Use \textbf{wo, wohin, woher} for place, direction and origin.}
+
+\GermanText{\textbf{wie} benutzt du für Art und Weise.}
+\EnglishText{Use \textbf{wie} for manner and way.}
+\end{grammarentry}
+
+\section{Mini-Test}
+
+\begin{grammarentry}{Übung}{exercise}
+\GermanText{Setze \textbf{der, die, das, wer, was, wo, wie} ein.}
+\EnglishText{Insert \textbf{der, die, das, wer, was, wo, wie}.}
+
+\begin{enumerate}
+    \item Alles, \underline{\hspace{2cm}} ich gelernt habe, war wichtig.
+    \item Der Mann, \underline{\hspace{2cm}} mir geholfen hat, war sehr freundlich.
+    \item \underline{\hspace{2cm}} höflich fragt, bekommt meistens eine Antwort.
+    \item Das ist die Stadt, \underline{\hspace{2cm}} ich wohne.
+    \item Ich mag, \underline{\hspace{2cm}} du erklärst.
+    \item Das Letzte, \underline{\hspace{2cm}} mir Spaß gemacht hat, war ein Gespräch.
+\end{enumerate}
+
+\GermanText{Lösungen: 1 was, 2 der, 3 Wer, 4 wo / in der, 5 wie, 6 was}
+\EnglishText{Answers: 1 was, 2 der, 3 Wer, 4 wo / in der, 5 wie, 6 was}
+\end{grammarentry}
+
+\end{document}

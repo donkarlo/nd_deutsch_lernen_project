@@ -1,0 +1,780 @@
+\documentclass[a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{minted}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{todonotes}
+\usepackage{forest}
+\usepackage{xstring}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{xparse}
+\usepackage{natbib}
+
+\usetikzlibrary{graphs,graphdrawing}
+\usegdlibrary{layered}
+
+% Benötigt: \usepackage{xcolor}
+\definecolor{TranslationGray}{RGB}{120,120,120}
+\newcommand{\EN}[1]{\par{\small\textcolor{TranslationGray}{#1}}\vspace{0.4em}}
+
+% for external graphviz
+\input{/home/donkarlo/Dropbox/repo/nd_ai_project/src/nd_ai/knoweldge_representation/language/formal/computer/programming/tex/latex/code_clips/external_graphviz.tex}
+
+% for tags
+\input{/home/donkarlo/Dropbox/repo/nd_ai_project/src/nd_ai/knoweldge_representation/language/formal/computer/programming/tex/latex/parts/control_sequence/kind/semtag/semtag.tex}
+
+% for links
+\input{/home/donkarlo/Dropbox/repo/nd_ai_project/src/nd_ai/knoweldge_representation/language/formal/computer/programming/tex/latex/code_clips/seehere.tex}
+
+\title{Verben mit Dativ}
+\date{}
+
+\begin{document}
+    \maketitle
+    
+    
+    \section{Grundidee}
+        
+        \textbf{Im Deutschen gibt es Verben, die ein Objekt im Dativ verlangen.}
+        \EN{In German there are verbs that require an object in the dative.}
+        
+        \textbf{Diese Verben muss man oft direkt als Verb + Kasus lernen.}
+        \EN{These verbs often have to be learned directly as verb + case.}
+        
+        \textbf{Es gibt eine Bedeutungstendenz: Der Dativ bezeichnet oft eine Person, die betroffen ist, etwas bekommt, etwas erlebt oder zu der etwas gehört.}
+        \EN{There is a semantic tendency: the dative often refers to a person who is affected, receives something, experiences something, or to whom something belongs.}
+        
+        \textbf{Aber diese Bedeutungstendenz ist keine sichere Regel für alle Verben.}
+        \EN{But this semantic tendency is not a safe rule for all verbs.}
+        
+        \textbf{Deshalb ist die beste Methode: Verb + Dativ + Beispiel lernen.}
+        \EN{Therefore the best method is: learn verb + dative + example.}
+    
+    
+    \section{Dativformen}
+        
+        \textbf{Maskulin: dem Mann}
+        \EN{masculine: to the man / the man in dative}
+        
+        \textbf{Feminin: der Frau}
+        \EN{feminine: to the woman / the woman in dative}
+        
+        \textbf{Neutral: dem Kind}
+        \EN{neuter: to the child / the child in dative}
+        
+        \textbf{Plural: den Kindern}
+        \EN{plural: to the children / the children in dative}
+        
+        \textbf{Im Plural bekommt das Nomen im Dativ oft ein -n.}
+        \EN{In the plural, the noun often gets an -n in the dative.}
+        
+        \textbf{die Kinder: mit den Kindern}
+        \EN{the children: with the children}
+    
+    
+    \section{Wichtige Bedeutungsgruppen}
+        
+        \subsection{Hilfe, Nutzen und Schaden}
+            
+            \textbf{Bei vielen Verben bedeutet der Dativ: Für wen ist etwas gut oder schlecht?}
+            \EN{With many verbs the dative means: for whom is something good or bad?}
+            
+            \textbf{helfen + Dativ}
+            \EN{to help + dative}
+            
+            \textbf{Ich helfe dir.}
+            \EN{I help you.}
+            
+            \textbf{nützen / nutzen + Dativ}
+            \EN{to be useful to + dative}
+            
+            \textbf{Diese Methode nützt mir.}
+            \EN{This method is useful to me.}
+            
+            \textbf{schaden + Dativ}
+            \EN{to harm + dative}
+            
+            \textbf{Rauchen schadet der Gesundheit.}
+            \EN{Smoking harms health.}
+            
+            \textbf{wehtun + Dativ}
+            \EN{to hurt + dative}
+            
+            \textbf{Der Rücken tut mir weh.}
+            \EN{My back hurts.}
+        
+        \subsection{Antwort, Dank, Zustimmung und Widerspruch}
+            
+            \textbf{Bei diesen Verben ist der Dativ oft die Person, an die eine Reaktion gerichtet ist.}
+            \EN{With these verbs the dative is often the person to whom a reaction is directed.}
+            
+            \textbf{antworten + Dativ}
+            \EN{to answer + dative}
+            
+            \textbf{Ich antworte dem Professor.}
+            \EN{I answer the professor.}
+            
+            \textbf{danken + Dativ}
+            \EN{to thank + dative}
+            
+            \textbf{Ich danke dir.}
+            \EN{I thank you.}
+            
+            \textbf{zustimmen + Dativ}
+            \EN{to agree with + dative}
+            
+            \textbf{Ich stimme dir zu.}
+            \EN{I agree with you.}
+            
+            \textbf{widersprechen + Dativ}
+            \EN{to contradict + dative}
+            
+            \textbf{Er widerspricht mir.}
+            \EN{He contradicts me.}
+        
+        \subsection{Gefallen, Geschmack, Passung und Mangel}
+            
+            \textbf{Bei diesen Verben ist der Dativ oft die Person, die etwas empfindet oder erlebt.}
+            \EN{With these verbs the dative is often the person who feels or experiences something.}
+            
+            \textbf{gefallen + Dativ}
+            \EN{to please / to be liked by + dative}
+            
+            \textbf{Das Bild gefällt mir.}
+            \EN{I like the picture.}
+            
+            \textbf{schmecken + Dativ}
+            \EN{to taste good to + dative}
+            
+            \textbf{Der Kaffee schmeckt mir.}
+            \EN{The coffee tastes good to me.}
+            
+            \textbf{passen + Dativ}
+            \EN{to fit / to suit + dative}
+            
+            \textbf{Der Termin passt mir.}
+            \EN{The appointment suits me.}
+            
+            \textbf{fehlen + Dativ}
+            \EN{to be missing to + dative}
+            
+            \textbf{Du fehlst mir.}
+            \EN{I miss you.}
+        
+        \subsection{Besitz, Beziehung und Ähnlichkeit}
+            
+            \textbf{Bei diesen Verben ist der Dativ oft die Person oder Sache, zu der etwas gehört oder in Beziehung steht.}
+            \EN{With these verbs the dative is often the person or thing to which something belongs or is related.}
+            
+            \textbf{gehören + Dativ}
+            \EN{to belong to + dative}
+            
+            \textbf{Das Fahrrad gehört mir.}
+            \EN{The bicycle belongs to me.}
+            
+            \textbf{ähneln + Dativ}
+            \EN{to resemble + dative}
+            
+            \textbf{Er ähnelt seinem Vater.}
+            \EN{He resembles his father.}
+            
+            \textbf{gleichen + Dativ}
+            \EN{to be like / to resemble + dative}
+            
+            \textbf{Diese Situation gleicht einem Problem von früher.}
+            \EN{This situation resembles a problem from the past.}
+            
+            \textbf{entsprechen + Dativ}
+            \EN{to correspond to + dative}
+            
+            \textbf{Das entspricht der Wahrheit.}
+            \EN{That corresponds to the truth.}
+        
+        \subsection{Erfolg, Ereignis und Eindruck}
+            
+            \textbf{Bei diesen Verben ist der Dativ oft die Person, der etwas gelingt, passiert oder auffällt.}
+            \EN{With these verbs the dative is often the person to whom something succeeds, happens, or becomes noticeable.}
+            
+            \textbf{gelingen + Dativ}
+            \EN{to succeed for + dative}
+            
+            \textbf{Die Prüfung gelingt mir.}
+            \EN{The exam goes well for me.}
+            
+            \textbf{misslingen + Dativ}
+            \EN{to fail for + dative}
+            
+            \textbf{Der Versuch misslingt ihm.}
+            \EN{The attempt fails for him.}
+            
+            \textbf{passieren + Dativ}
+            \EN{to happen to + dative}
+            
+            \textbf{Das ist mir gestern passiert.}
+            \EN{That happened to me yesterday.}
+            
+            \textbf{auffallen + Dativ}
+            \EN{to stand out to / to be noticed by + dative}
+            
+            \textbf{Der Fehler fällt mir sofort auf.}
+            \EN{I notice the mistake immediately.}
+            
+            \textbf{einfallen + Dativ}
+            \EN{to occur to + dative}
+            
+            \textbf{Mir fällt ein gutes Beispiel ein.}
+            \EN{A good example occurs to me.}
+        
+        \subsection{Vertrauen, Glaube und Verzeihen}
+            
+            \textbf{Bei diesen Verben ist der Dativ oft die Person, der man innerlich etwas gibt: Vertrauen, Glauben oder Verzeihung.}
+            \EN{With these verbs the dative is often the person to whom one internally gives something: trust, belief, or forgiveness.}
+            
+            \textbf{vertrauen + Dativ}
+            \EN{to trust + dative}
+            
+            \textbf{Ich vertraue dir.}
+            \EN{I trust you.}
+            
+            \textbf{glauben + Dativ}
+            \EN{to believe + dative}
+            
+            \textbf{Ich glaube ihm nicht.}
+            \EN{I do not believe him.}
+            
+            \textbf{verzeihen + Dativ}
+            \EN{to forgive + dative}
+            
+            \textbf{Sie verzeiht ihrem Bruder.}
+            \EN{She forgives her brother.}
+            
+            \textbf{misstrauen + Dativ}
+            \EN{to distrust + dative}
+            
+            \textbf{Er misstraut den Politikern.}
+            \EN{He distrusts the politicians.}
+        
+        \subsection{Bewegung, Richtung und Kontakt}
+            
+            \textbf{Bei diesen Verben ist der Dativ oft die Person oder Sache, der man folgt, begegnet oder ausweicht.}
+            \EN{With these verbs the dative is often the person or thing that one follows, meets, or avoids.}
+            
+            \textbf{folgen + Dativ}
+            \EN{to follow + dative}
+            
+            \textbf{Ich folge dem Weg.}
+            \EN{I follow the path.}
+            
+            \textbf{begegnen + Dativ}
+            \EN{to meet / to encounter + dative}
+            
+            \textbf{Ich begegne meinem Nachbarn.}
+            \EN{I meet my neighbor.}
+            
+            \textbf{sich nähern + Dativ}
+            \EN{to approach + dative}
+            
+            \textbf{Der Zug nähert sich dem Bahnhof.}
+            \EN{The train approaches the station.}
+            
+            \textbf{ausweichen + Dativ}
+            \EN{to avoid / to dodge + dative}
+            
+            \textbf{Ich weiche dem Auto aus.}
+            \EN{I dodge the car.}
+            
+            \textbf{entkommen + Dativ}
+            \EN{to escape from + dative}
+            
+            \textbf{Der Dieb entkommt der Polizei.}
+            \EN{The thief escapes from the police.}
+    
+    
+    \section{Verben nur mit Dativ}
+        
+        \textbf{Die folgenden Verben haben normalerweise ein Dativobjekt und kein Akkusativobjekt.}
+        \EN{The following verbs normally have a dative object and no accusative object.}
+        
+        \subsection{Sehr häufige Verben}
+            
+            \textbf{ähneln + Dativ: Er ähnelt seinem Vater.}
+            \EN{to resemble + dative: He resembles his father.}
+            
+            \textbf{antworten + Dativ: Ich antworte der Lehrerin.}
+            \EN{to answer + dative: I answer the teacher.}
+            
+            \textbf{auffallen + Dativ: Das fällt mir auf.}
+            \EN{to be noticed by + dative: I notice that.}
+            
+            \textbf{begegnen + Dativ: Ich begegne einem Freund.}
+            \EN{to meet / to encounter + dative: I meet a friend.}
+            
+            \textbf{danken + Dativ: Ich danke dir.}
+            \EN{to thank + dative: I thank you.}
+            
+            \textbf{einfallen + Dativ: Mir fällt ein Wort ein.}
+            \EN{to occur to + dative: A word occurs to me.}
+            
+            \textbf{fehlen + Dativ: Meine Familie fehlt mir.}
+            \EN{to be missing to + dative: I miss my family.}
+            
+            \textbf{folgen + Dativ: Der Hund folgt seinem Besitzer.}
+            \EN{to follow + dative: The dog follows its owner.}
+            
+            \textbf{gefallen + Dativ: Das gefällt mir.}
+            \EN{to please / to be liked by + dative: I like that.}
+            
+            \textbf{gehören + Dativ: Das gehört mir.}
+            \EN{to belong to + dative: That belongs to me.}
+            
+            \textbf{gelingen + Dativ: Die Aufgabe gelingt mir.}
+            \EN{to succeed for + dative: The task succeeds for me.}
+            
+            \textbf{genügen + Dativ: Das genügt mir.}
+            \EN{to be enough for + dative: That is enough for me.}
+            
+            \textbf{glauben + Dativ: Ich glaube dir.}
+            \EN{to believe + dative: I believe you.}
+            
+            \textbf{gratulieren + Dativ: Ich gratuliere dir.}
+            \EN{to congratulate + dative: I congratulate you.}
+            
+            \textbf{helfen + Dativ: Ich helfe meinem Bruder.}
+            \EN{to help + dative: I help my brother.}
+            
+            \textbf{missfallen + Dativ: Dieses Verhalten missfällt mir.}
+            \EN{to displease + dative: I dislike this behavior.}
+            
+            \textbf{misslingen + Dativ: Der Plan misslingt uns.}
+            \EN{to fail for + dative: The plan fails for us.}
+            
+            \textbf{passen + Dativ: Die Hose passt mir.}
+            \EN{to fit / to suit + dative: The trousers fit me.}
+            
+            \textbf{passieren + Dativ: Was ist dir passiert?}
+            \EN{to happen to + dative: What happened to you?}
+            
+            \textbf{reichen + Dativ: Das Geld reicht mir.}
+            \EN{to be enough for + dative: The money is enough for me.}
+            
+            \textbf{schaden + Dativ: Stress schadet dem Körper.}
+            \EN{to harm + dative: Stress harms the body.}
+            
+            \textbf{schmecken + Dativ: Das Essen schmeckt mir.}
+            \EN{to taste good to + dative: The food tastes good to me.}
+            
+            \textbf{vertrauen + Dativ: Ich vertraue meiner Ärztin.}
+            \EN{to trust + dative: I trust my doctor.}
+            
+            \textbf{verzeihen + Dativ: Bitte verzeih mir.}
+            \EN{to forgive + dative: Please forgive me.}
+            
+            \textbf{wehtun + Dativ: Der Kopf tut mir weh.}
+            \EN{to hurt + dative: My head hurts.}
+            
+            \textbf{widersprechen + Dativ: Ich widerspreche dir.}
+            \EN{to contradict + dative: I contradict you.}
+            
+            \textbf{zuhören + Dativ: Ich höre dir zu.}
+            \EN{to listen to + dative: I listen to you.}
+            
+            \textbf{zustimmen + Dativ: Ich stimme dem Vorschlag zu.}
+            \EN{to agree with + dative: I agree with the suggestion.}
+        
+        \subsection{Weitere wichtige Verben}
+            
+            \textbf{abraten + Dativ: Ich rate dir davon ab.}
+            \EN{to advise against something + dative: I advise you against it.}
+            
+            \textbf{absagen + Dativ: Ich sage dem Freund ab.}
+            \EN{to cancel on + dative: I cancel on the friend.}
+            
+            \textbf{beipflichten + Dativ: Ich pflichte dir bei.}
+            \EN{to agree with + dative: I agree with you.}
+            
+            \textbf{beistehen + Dativ: Sie steht ihrem Bruder bei.}
+            \EN{to support / to stand by + dative: She supports her brother.}
+            
+            \textbf{beitreten + Dativ: Er tritt dem Verein bei.}
+            \EN{to join + dative: He joins the club.}
+            
+            \textbf{bekommen + Dativ: Das Essen bekommt mir gut.}
+            \EN{to agree with / to be good for + dative: The food agrees with me.}
+            
+            \textbf{dienen + Dativ: Diese Übung dient dem Lernen.}
+            \EN{to serve + dative: This exercise serves learning.}
+            
+            \textbf{drohen + Dativ: Der Mann droht seinem Nachbarn.}
+            \EN{to threaten + dative: The man threatens his neighbor.}
+            
+            \textbf{entfliehen + Dativ: Er entflieht der Stadt.}
+            \EN{to flee from + dative: He flees from the city.}
+            
+            \textbf{entgegenkommen + Dativ: Das Auto kommt mir entgegen.}
+            \EN{to come toward + dative: The car comes toward me.}
+            
+            \textbf{entkommen + Dativ: Er entkommt der Gefahr.}
+            \EN{to escape from + dative: He escapes from the danger.}
+            
+            \textbf{entsprechen + Dativ: Das entspricht meinen Erwartungen.}
+            \EN{to correspond to + dative: That corresponds to my expectations.}
+            
+            \textbf{erliegen + Dativ: Er erliegt seinen Schwächen.}
+            \EN{to succumb to + dative: He succumbs to his weaknesses.}
+            
+            \textbf{erwidern + Dativ: Sie erwidert dem Kritiker ruhig.}
+            \EN{to reply to + dative: She replies calmly to the critic.}
+            
+            \textbf{gleichen + Dativ: Das gleicht einem Wunder.}
+            \EN{to resemble / to be like + dative: That is like a miracle.}
+            
+            \textbf{huldigen + Dativ: Die Menschen huldigen dem König.}
+            \EN{to pay homage to + dative: The people pay homage to the king.}
+            
+            \textbf{missraten + Dativ: Der Kuchen ist mir missraten.}
+            \EN{to turn out badly for + dative: The cake turned out badly for me.}
+            
+            \textbf{misstrauen + Dativ: Ich misstraue dieser Aussage.}
+            \EN{to distrust + dative: I distrust this statement.}
+            
+            \textbf{nachlaufen + Dativ: Das Kind läuft dem Ball nach.}
+            \EN{to run after + dative: The child runs after the ball.}
+            
+            \textbf{nacheifern + Dativ: Er eifert seinem Vorbild nach.}
+            \EN{to emulate + dative: He emulates his role model.}
+            
+            \textbf{nachgeben + Dativ: Sie gibt dem Druck nach.}
+            \EN{to give in to + dative: She gives in to the pressure.}
+            
+            \textbf{nachgehen + Dativ: Ich gehe dieser Frage nach.}
+            \EN{to pursue / to investigate + dative: I investigate this question.}
+            
+            \textbf{nachkommen + Dativ: Er kommt seiner Pflicht nach.}
+            \EN{to fulfill / to comply with + dative: He fulfills his duty.}
+            
+            \textbf{nützen + Dativ: Das nützt niemandem.}
+            \EN{to be useful to + dative: That is useful to nobody.}
+            
+            \textbf{sich nähern + Dativ: Wir nähern uns dem Ziel.}
+            \EN{to approach + dative: We approach the goal.}
+            
+            \textbf{raten + Dativ: Ich rate dir zur Ruhe.}
+            \EN{to advise + dative: I advise you to rest.}
+            
+            \textbf{standhalten + Dativ: Das Material hält dem Druck stand.}
+            \EN{to withstand + dative: The material withstands the pressure.}
+            
+            \textbf{trotzen + Dativ: Sie trotzt dem Regen.}
+            \EN{to defy + dative: She defies the rain.}
+            
+            \textbf{unterliegen + Dativ: Er unterliegt einem Irrtum.}
+            \EN{to be subject to / to be mistaken because of + dative: He is subject to an error.}
+            
+            \textbf{unterlaufen + Dativ: Mir ist ein Fehler unterlaufen.}
+            \EN{to happen accidentally to + dative: I made a mistake accidentally.}
+            
+            \textbf{widerfahren + Dativ: Ihm widerfährt großes Unglück.}
+            \EN{to happen to + dative: Great misfortune happens to him.}
+            
+            \textbf{zusehen + Dativ: Ich sehe dem Spiel zu.}
+            \EN{to watch + dative: I watch the game.}
+            
+            \textbf{zuschauen + Dativ: Die Kinder schauen dem Zauberer zu.}
+            \EN{to watch + dative: The children watch the magician.}
+            
+            \textbf{zuwinken + Dativ: Ich winke dir zu.}
+            \EN{to wave to + dative: I wave to you.}
+    
+    
+    \section{Verben mit Dativ und Akkusativ}
+        
+        \textbf{Viele Verben haben zwei Objekte: eine Person im Dativ und eine Sache im Akkusativ.}
+        \EN{Many verbs have two objects: a person in the dative and a thing in the accusative.}
+        
+        \textbf{Die Person ist oft der Empfänger oder die betroffene Person.}
+        \EN{The person is often the receiver or the affected person.}
+        
+        \textbf{Die Sache ist oft das direkte Objekt im Akkusativ.}
+        \EN{The thing is often the direct object in the accusative.}
+        
+        \textbf{Form: jemandem etwas + Verb}
+        \EN{Form: to someone something + verb}
+        
+        \subsection{Geben, Schicken und Bringen}
+            
+            \textbf{geben + Dativ + Akkusativ: Ich gebe dir das Buch.}
+            \EN{to give + dative + accusative: I give you the book.}
+            
+            \textbf{schenken + Dativ + Akkusativ: Ich schenke meiner Mutter Blumen.}
+            \EN{to give as a present + dative + accusative: I give my mother flowers.}
+            
+            \textbf{bringen + Dativ + Akkusativ: Ich bringe dir einen Kaffee.}
+            \EN{to bring + dative + accusative: I bring you a coffee.}
+            
+            \textbf{schicken + Dativ + Akkusativ: Ich schicke dir eine Nachricht.}
+            \EN{to send + dative + accusative: I send you a message.}
+            
+            \textbf{senden + Dativ + Akkusativ: Ich sende Ihnen die Unterlagen.}
+            \EN{to send + dative + accusative: I send you the documents.}
+            
+            \textbf{reichen + Dativ + Akkusativ: Kannst du mir das Salz reichen?}
+            \EN{to pass / to hand + dative + accusative: Can you pass me the salt?}
+            
+            \textbf{überreichen + Dativ + Akkusativ: Der Direktor überreicht ihr den Preis.}
+            \EN{to hand over / to present + dative + accusative: The director presents her the prize.}
+        
+        \subsection{Sagen, Erklären und Zeigen}
+            
+            \textbf{sagen + Dativ + Akkusativ: Ich sage dir die Wahrheit.}
+            \EN{to tell + dative + accusative: I tell you the truth.}
+            
+            \textbf{erzählen + Dativ + Akkusativ: Sie erzählt dem Kind eine Geschichte.}
+            \EN{to tell + dative + accusative: She tells the child a story.}
+            
+            \textbf{erklären + Dativ + Akkusativ: Der Lehrer erklärt uns die Grammatik.}
+            \EN{to explain + dative + accusative: The teacher explains the grammar to us.}
+            
+            \textbf{zeigen + Dativ + Akkusativ: Ich zeige dir mein Zimmer.}
+            \EN{to show + dative + accusative: I show you my room.}
+            
+            \textbf{mitteilen + Dativ + Akkusativ: Die Firma teilt mir die Entscheidung mit.}
+            \EN{to inform / to communicate + dative + accusative: The company informs me of the decision.}
+            
+            \textbf{berichten + Dativ + Akkusativ: Er berichtet dem Arzt seine Beschwerden.}
+            \EN{to report / to tell + dative + accusative: He reports his symptoms to the doctor.}
+            
+            \textbf{beweisen + Dativ + Akkusativ: Ich beweise dir meine Idee.}
+            \EN{to prove + dative + accusative: I prove my idea to you.}
+        
+        \subsection{Leihen, Kaufen und Bezahlen}
+            
+            \textbf{leihen + Dativ + Akkusativ: Ich leihe dir mein Fahrrad.}
+            \EN{to lend + dative + accusative: I lend you my bicycle.}
+            
+            \textbf{borgen + Dativ + Akkusativ: Kannst du mir Geld borgen?}
+            \EN{to lend / to borrow + dative + accusative: Can you lend me money?}
+            
+            \textbf{kaufen + Dativ + Akkusativ: Ich kaufe meinem Bruder ein Geschenk.}
+            \EN{to buy + dative + accusative: I buy my brother a present.}
+            
+            \textbf{besorgen + Dativ + Akkusativ: Ich besorge dir die Tickets.}
+            \EN{to get / to obtain + dative + accusative: I get you the tickets.}
+            
+            \textbf{bezahlen + Dativ + Akkusativ: Ich bezahle dir den Kaffee.}
+            \EN{to pay for something for someone + dative + accusative: I pay for your coffee.}
+            
+            \textbf{bestellen + Dativ + Akkusativ: Ich bestelle mir eine Pizza.}
+            \EN{to order + dative + accusative: I order myself a pizza.}
+        
+        \subsection{Rat, Erlaubnis, Verbot und Empfehlung}
+            
+            \textbf{raten + Dativ + Akkusativ: Ich rate dir eine Pause.}
+            \EN{to advise + dative + accusative: I advise you to take a break.}
+            
+            \textbf{empfehlen + Dativ + Akkusativ: Ich empfehle dir diesen Kurs.}
+            \EN{to recommend + dative + accusative: I recommend this course to you.}
+            
+            \textbf{erlauben + Dativ + Akkusativ: Der Arzt erlaubt mir Sport.}
+            \EN{to allow + dative + accusative: The doctor allows me to do sports.}
+            
+            \textbf{verbieten + Dativ + Akkusativ: Der Arzt verbietet mir Zucker.}
+            \EN{to forbid + dative + accusative: The doctor forbids me sugar.}
+            
+            \textbf{vorschlagen + Dativ + Akkusativ: Ich schlage dir einen Plan vor.}
+            \EN{to suggest + dative + accusative: I suggest a plan to you.}
+            
+            \textbf{anbieten + Dativ + Akkusativ: Sie bietet mir Hilfe an.}
+            \EN{to offer + dative + accusative: She offers me help.}
+            
+            \textbf{versprechen + Dativ + Akkusativ: Ich verspreche dir meine Hilfe.}
+            \EN{to promise + dative + accusative: I promise you my help.}
+        
+        \subsection{Lernen und Vorstellen}
+            
+            \textbf{beibringen + Dativ + Akkusativ: Er bringt mir Python bei.}
+            \EN{to teach + dative + accusative: He teaches me Python.}
+            
+            \textbf{vorlesen + Dativ + Akkusativ: Ich lese dem Kind ein Buch vor.}
+            \EN{to read aloud + dative + accusative: I read a book to the child.}
+            
+            \textbf{vorspielen + Dativ + Akkusativ: Sie spielt uns ein Lied vor.}
+            \EN{to play for + dative + accusative: She plays us a song.}
+            
+            \textbf{vorstellen + Dativ + Akkusativ: Ich stelle dir meinen Freund vor.}
+            \EN{to introduce + dative + accusative: I introduce my friend to you.}
+            
+            \textbf{widmen + Dativ + Akkusativ: Er widmet seiner Mutter das Buch.}
+            \EN{to dedicate + dative + accusative: He dedicates the book to his mother.}
+    
+    
+    \section{Reflexive Dativkonstruktionen}
+        
+        \textbf{Manchmal steht das Reflexivpronomen im Dativ, wenn es zusätzlich ein Akkusativobjekt gibt.}
+        \EN{Sometimes the reflexive pronoun is in the dative when there is also an accusative object.}
+        
+        \textbf{Ich wasche mich.}
+        \EN{I wash myself.}
+        
+        \textbf{mich = Akkusativ, weil es kein anderes Akkusativobjekt gibt.}
+        \EN{mich = accusative because there is no other accusative object.}
+        
+        \textbf{Ich wasche mir die Hände.}
+        \EN{I wash my hands.}
+        
+        \textbf{mir = Dativ, die Hände = Akkusativ.}
+        \EN{mir = dative, the hands = accusative.}
+        
+        \subsection{Wichtige Beispiele}
+            
+            \textbf{sich etwas ansehen: Ich sehe mir den Film an.}
+            \EN{to watch / to look at something: I watch the film.}
+            
+            \textbf{sich etwas kaufen: Ich kaufe mir einen Kaffee.}
+            \EN{to buy oneself something: I buy myself a coffee.}
+            
+            \textbf{sich etwas vorstellen: Ich stelle mir eine Szene vor.}
+            \EN{to imagine something: I imagine a scene.}
+            
+            \textbf{sich etwas merken: Ich merke mir das Wort.}
+            \EN{to memorize something: I memorize the word.}
+            
+            \textbf{sich etwas wünschen: Ich wünsche mir mehr Ruhe.}
+            \EN{to wish for something for oneself: I wish for more peace.}
+            
+            \textbf{sich etwas leisten: Ich kann mir das nicht leisten.}
+            \EN{to afford something: I cannot afford that.}
+            
+            \textbf{sich etwas überlegen: Ich überlege mir einen Plan.}
+            \EN{to think up something: I think up a plan.}
+            
+            \textbf{sich etwas notieren: Ich notiere mir die Adresse.}
+            \EN{to note something down for oneself: I note down the address.}
+    
+    
+    \section{Dativ in festen Ausdrücken}
+        
+        \textbf{Einige wichtige Sätze mit Dativ funktionieren nicht wie normale Objektverben.}
+        \EN{Some important sentences with dative do not work like normal object verbs.}
+        
+        \textbf{Mir ist kalt.}
+        \EN{I am cold.}
+        
+        \textbf{Mir ist warm.}
+        \EN{I am warm.}
+        
+        \textbf{Mir ist schlecht.}
+        \EN{I feel sick.}
+        
+        \textbf{Mir geht es gut.}
+        \EN{I am doing well.}
+        
+        \textbf{Mir geht es schlecht.}
+        \EN{I am doing badly.}
+        
+        \textbf{Mir ist langweilig.}
+        \EN{I am bored.}
+        
+        \textbf{Mir ist etwas klar.}
+        \EN{Something is clear to me.}
+        
+        \textbf{Mir ist etwas wichtig.}
+        \EN{Something is important to me.}
+    
+    
+    \section{Häufige Fehler}
+        
+        \subsection{helfen}
+            
+            \textbf{Falsch: Ich helfe dich.}
+            \EN{Wrong: I help you.}
+            
+            \textbf{Richtig: Ich helfe dir.}
+            \EN{Correct: I help you.}
+            
+            \textbf{helfen braucht im Deutschen den Dativ.}
+            \EN{helfen requires the dative in German.}
+        
+        \subsection{gefallen}
+            
+            \textbf{Falsch: Ich gefalle das Bild.}
+            \EN{Wrong: I like the picture.}
+            
+            \textbf{Richtig: Das Bild gefällt mir.}
+            \EN{Correct: I like the picture.}
+            
+            \textbf{Die Sache ist das Subjekt, die Person steht im Dativ.}
+            \EN{The thing is the subject, the person is in the dative.}
+        
+        \subsection{fehlen}
+            
+            \textbf{Falsch: Ich fehle meine Familie.}
+            \EN{Wrong: I miss my family.}
+            
+            \textbf{Richtig: Meine Familie fehlt mir.}
+            \EN{Correct: I miss my family.}
+            
+            \textbf{Die vermisste Person oder Sache ist das Subjekt, die fühlende Person steht im Dativ.}
+            \EN{The missed person or thing is the subject, the feeling person is in the dative.}
+        
+        \subsection{gehören}
+            
+            \textbf{Falsch: Das Fahrrad gehört ich.}
+            \EN{Wrong: The bicycle belongs me.}
+            
+            \textbf{Richtig: Das Fahrrad gehört mir.}
+            \EN{Correct: The bicycle belongs to me.}
+            
+            \textbf{Nach gehören steht die besitzende Person im Dativ.}
+            \EN{After gehören, the owning person is in the dative.}
+        
+        \subsection{antworten}
+            
+            \textbf{Falsch: Ich antworte dich.}
+            \EN{Wrong: I answer you.}
+            
+            \textbf{Richtig: Ich antworte dir.}
+            \EN{Correct: I answer you.}
+            
+            \textbf{antworten braucht ein Dativobjekt.}
+            \EN{antworten requires a dative object.}
+    
+    
+    \section{Kurze Merkliste}
+        
+        \textbf{Dativ bei Person als Empfänger: Ich gebe dir das Buch.}
+        \EN{Dative for person as receiver: I give you the book.}
+        
+        \textbf{Dativ bei Person als Betroffene: Das passiert mir.}
+        \EN{Dative for person as affected person: That happens to me.}
+        
+        \textbf{Dativ bei Person als Besitzer: Das gehört mir.}
+        \EN{Dative for person as owner: That belongs to me.}
+        
+        \textbf{Dativ bei Person als Erlebende: Das gefällt mir.}
+        \EN{Dative for person as experiencer: I like that.}
+        
+        \textbf{Dativ bei vielen festen Verben: helfen, danken, folgen, vertrauen, widersprechen.}
+        \EN{Dative with many fixed verbs: to help, to thank, to follow, to trust, to contradict.}
+        
+        \textbf{Die Regel hilft, aber die Liste muss man lernen.}
+        \EN{The rule helps, but the list has to be learned.}
+    
+    
+    \section{Kompakte Lernliste}
+        
+        \textbf{Nur Dativ: ähneln, antworten, auffallen, begegnen, danken, dienen, drohen, einfallen, entkommen, entsprechen, fehlen, folgen, gefallen, gehören, gelingen, genügen, glauben, gratulieren, helfen, missfallen, misslingen, misstrauen, passen, passieren, raten, schaden, schmecken, vertrauen, verzeihen, wehtun, widersprechen, zuhören, zustimmen.}
+        \EN{Only dative: to resemble, to answer, to be noticed, to meet, to thank, to serve, to threaten, to occur to, to escape, to correspond to, to be missing, to follow, to please, to belong to, to succeed, to be enough, to believe, to congratulate, to help, to displease, to fail, to distrust, to fit, to happen, to advise, to harm, to taste good, to trust, to forgive, to hurt, to contradict, to listen to, to agree with.}
+        
+        \textbf{Dativ + Akkusativ: geben, schenken, bringen, schicken, senden, reichen, sagen, erzählen, erklären, zeigen, mitteilen, empfehlen, erlauben, verbieten, versprechen, anbieten, vorschlagen, leihen, borgen, kaufen, besorgen, bestellen, beibringen, vorlesen, vorspielen, vorstellen, widmen.}
+        \EN{Dative + accusative: to give, to give as a present, to bring, to send, to send, to pass, to tell, to tell, to explain, to show, to inform, to recommend, to allow, to forbid, to promise, to offer, to suggest, to lend, to lend / borrow, to buy, to obtain, to order, to teach, to read aloud, to play for, to introduce, to dedicate.}
+        
+        \nocite{*}
+        \bibliographystyle{plainnat}
+        \bibliography{/home/donkarlo/Dropbox/repo/nd_shared_research/bibliography/bibliography.bib}
+
+\end{document}

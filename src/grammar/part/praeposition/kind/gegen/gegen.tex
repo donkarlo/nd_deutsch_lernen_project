@@ -1,0 +1,304 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{colortbl}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\newcommand{\Correct}[1]{\textcolor{HeaderBlueDark}{\textbf{#1}}}
+\newcommand{\Wrong}[1]{\textcolor{red!70!black}{\textbf{#1}}}
+
+\title{Die Präposition \glqq gegen\grqq}
+\date{}
+
+\begin{document}
+    \selectlanguage{ngerman}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+\section{Kurze Grundregel}
+
+\begin{grammarentry}{gegen}{Präposition + Akkusativ}
+\GermanText{\glqq gegen\grqq ist als Präposition immer mit dem Akkusativ verbunden.}
+\EnglishText{As a preposition, \glqq gegen\grqq is always used with the accusative.}
+
+\GermanText{Die wichtigsten Grundideen sind: Richtung zu etwas hin, Widerstand/Konflikt, ungefährer Zeitpunkt, Vergleich/Austausch und Schutz vor etwas.}
+\EnglishText{The main basic ideas are: direction toward something, opposition/conflict, approximate time, comparison/exchange, and protection against something.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Er läuft gegen die Wand.}{He runs into the wall.}
+    \ExampleItem{Wir sind gegen diese Entscheidung.}{We are against this decision.}
+    \ExampleItem{Ich komme gegen acht Uhr.}{I will come around eight o'clock.}
+    \ExampleItem{Dieses Medikament hilft gegen Schmerzen.}{This medicine helps against pain.}
+\end{itemize}
+\end{exbox}
+
+\section{Kasus: gegen + Akkusativ}
+
+\GermanText{Nach \glqq gegen\grqq steht der Akkusativ.}
+\EnglishText{After \glqq gegen\grqq, the accusative is used.}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{0.23\textwidth}X X}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Genus} & \color{white}\textbf{Nominativ} & \color{white}\textbf{mit gegen + Akkusativ} \\
+maskulin & der Plan & gegen den Plan \\
+feminin & die Wand & gegen die Wand \\
+neutral & das Gesetz & gegen das Gesetz \\
+Plural & die Regeln & gegen die Regeln \\
+\end{tabularx}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich bin gegen den Plan.}{I am against the plan.}
+    \ExampleItem{Das Auto fährt gegen die Wand.}{The car drives into the wall.}
+    \ExampleItem{Das ist gegen das Gesetz.}{That is against the law.}
+    \ExampleItem{Er verstößt gegen die Regeln.}{He violates the rules.}
+\end{itemize}
+\end{exbox}
+
+\section{Bedeutung 1: Richtung und Kontakt}
+
+\begin{grammarentry}{gegen + Akkusativ}{against / into}
+\GermanText{\glqq gegen\grqq kann eine Bewegung in Richtung einer Sache zeigen, oft mit Kontakt oder Zusammenstoß.}
+\EnglishText{\glqq gegen\grqq can show movement toward something, often with contact or collision.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Der Ball fliegt gegen die Tür.}{The ball flies against the door.}
+    \ExampleItem{Ich stoße gegen den Tisch.}{I bump into the table.}
+    \ExampleItem{Das Auto fährt gegen einen Baum.}{The car drives into a tree.}
+    \ExampleItem{Er lehnt sich gegen die Wand.}{He leans against the wall.}
+\end{itemize}
+\end{exbox}
+
+\section{Bedeutung 2: Widerstand oder Meinung}
+
+\begin{grammarentry}{gegen + Akkusativ}{against}
+\GermanText{\glqq gegen\grqq bedeutet oft, dass man etwas ablehnt oder eine andere Meinung hat.}
+\EnglishText{\glqq gegen\grqq often means that one rejects something or has an opposing opinion.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich bin gegen diese Lösung.}{I am against this solution.}
+    \ExampleItem{Viele Menschen protestieren gegen die Entscheidung.}{Many people protest against the decision.}
+    \ExampleItem{Sie stimmt gegen den Vorschlag.}{She votes against the proposal.}
+    \ExampleItem{Wir kämpfen gegen Rassismus.}{We fight against racism.}
+\end{itemize}
+\end{exbox}
+
+\section{Bedeutung 3: Gegner im Spiel oder Kampf}
+
+\begin{grammarentry}{gegen + Akkusativ}{against an opponent}
+\GermanText{Bei Sport, Spiel, Streit oder Kampf zeigt \glqq gegen\grqq den Gegner.}
+\EnglishText{In sport, games, disputes, or fights, \glqq gegen\grqq shows the opponent.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Österreich spielt gegen Deutschland.}{Austria plays against Germany.}
+    \ExampleItem{Ich spiele Schach gegen meinen Bruder.}{I play chess against my brother.}
+    \ExampleItem{Der Anwalt kämpft gegen die Entscheidung.}{The lawyer fights against the decision.}
+\end{itemize}
+\end{exbox}
+
+\section{Bedeutung 4: ungefährer Zeitpunkt}
+
+\begin{grammarentry}{gegen + Uhrzeit}{around / approximately at}
+\GermanText{Mit Uhrzeiten bedeutet \glqq gegen\grqq ungefähr. Es ist nicht so genau wie \glqq um\grqq.}
+\EnglishText{With clock times, \glqq gegen\grqq means approximately. It is not as exact as \glqq um\grqq.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich komme gegen acht Uhr.}{I come around eight o'clock.}
+    \ExampleItem{Der Zug kommt gegen Mittag an.}{The train arrives around noon.}
+    \ExampleItem{Wir treffen uns gegen Abend.}{We meet toward evening / around evening.}
+\end{itemize}
+\end{exbox}
+
+\subsection{Unterschied: um und gegen}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{0.18\textwidth}X X}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Form} & \color{white}\textbf{Deutsch} & \color{white}\textbf{English} \\
+um & Ich komme um acht Uhr. & I come at eight o'clock. Exact or planned time. \\
+gegen & Ich komme gegen acht Uhr. & I come around eight o'clock. Approximate time. \\
+\end{tabularx}
+
+\section{Bedeutung 5: Schutz, Heilung oder Wirkung}
+
+\begin{grammarentry}{gegen + Akkusativ}{against / for treating}
+\GermanText{Mit Medikamenten, Schutz oder Maßnahmen bedeutet \glqq gegen\grqq: gegen ein Problem gerichtet.}
+\EnglishText{With medicine, protection, or measures, \glqq gegen\grqq means directed against a problem.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Dieses Medikament hilft gegen Kopfschmerzen.}{This medicine helps against headaches.}
+    \ExampleItem{Die Impfung schützt gegen die Krankheit.}{The vaccination protects against the disease.}
+    \ExampleItem{Wir brauchen Maßnahmen gegen Gewalt.}{We need measures against violence.}
+    \ExampleItem{Was kann ich gegen Rückenschmerzen tun?}{What can I do against back pain?}
+\end{itemize}
+\end{exbox}
+
+\section{Bedeutung 6: Austausch}
+
+\begin{grammarentry}{gegen + Akkusativ}{in exchange for}
+\GermanText{\glqq gegen\grqq kann auch einen Austausch zeigen: eine Sache für eine andere Sache.}
+\EnglishText{\glqq gegen\grqq can also show an exchange: one thing for another thing.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich tausche mein Fahrrad gegen dein Handy.}{I exchange my bicycle for your phone.}
+    \ExampleItem{Er verkauft das Auto gegen Bargeld.}{He sells the car for cash.}
+    \ExampleItem{Sie bekommt Hilfe gegen Bezahlung.}{She gets help in exchange for payment.}
+\end{itemize}
+\end{exbox}
+
+\section{Bedeutung 7: Vergleich}
+
+\begin{grammarentry}{gegen + Akkusativ}{compared with / versus}
+\GermanText{In Vergleichen kann \glqq gegen\grqq bedeuten, dass man zwei Dinge gegenüberstellt.}
+\EnglishText{In comparisons, \glqq gegen\grqq can mean that one contrasts two things.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Gegen früher ist das Leben heute schneller.}{Compared with the past, life today is faster.}
+    \ExampleItem{Gegen diesen Preis ist das Angebot gut.}{Compared with this price, the offer is good.}
+    \ExampleItem{Zehn Euro sind nichts gegen diese Kosten.}{Ten euros are nothing compared with these costs.}
+\end{itemize}
+\end{exbox}
+
+\section{Wichtige Verben und Ausdrücke mit gegen}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{0.35\textwidth}X}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Verb / Ausdruck} & \color{white}\textbf{Beispiel} \\
+sein gegen + Akk. & Ich bin gegen diesen Plan. \\
+protestieren gegen + Akk. & Sie protestieren gegen die Entscheidung. \\
+kämpfen gegen + Akk. & Wir kämpfen gegen Ungerechtigkeit. \\
+stimmen gegen + Akk. & Er stimmt gegen den Vorschlag. \\
+verstoßen gegen + Akk. & Das verstößt gegen die Regeln. \\
+helfen gegen + Akk. & Tee hilft gegen Halsschmerzen. \\
+schützen gegen + Akk. & Eine Jacke schützt gegen Kälte. \\
+tauschen gegen + Akk. & Ich tausche das Buch gegen ein anderes Buch. \\
+\end{tabularx}
+
+\section{Häufige Fehler}
+
+\begin{grammarentry}{Fehler 1}{Dativ nach gegen}
+\GermanText{Nach \glqq gegen\grqq benutzt man nicht den Dativ, sondern den Akkusativ.}
+\EnglishText{After \glqq gegen\grqq, one does not use the dative, but the accusative.}
+\begin{itemize}
+    \item \Wrong{Ich bin gegen dem Plan.}
+    \item \Correct{Ich bin gegen den Plan.}
+\end{itemize}
+\end{grammarentry}
+
+\begin{grammarentry}{Fehler 2}{gegen und um bei Uhrzeit}
+\GermanText{\glqq um acht Uhr\grqq ist normalerweise genau. \glqq gegen acht Uhr\grqq ist ungefähr.}
+\EnglishText{\glqq um acht Uhr\grqq is normally exact. \glqq gegen acht Uhr\grqq is approximate.}
+\begin{itemize}
+    \item \Correct{Der Termin beginnt um acht Uhr.} \hfill exact
+    \item \Correct{Ich komme gegen acht Uhr.} \hfill approximate
+\end{itemize}
+\end{grammarentry}
+
+\begin{grammarentry}{Fehler 3}{helfen mit Dativ, aber gegen mit Akkusativ}
+\GermanText{Das Verb \glqq helfen\grqq braucht Dativ für die Person. Die Präposition \glqq gegen\grqq braucht Akkusativ für das Problem.}
+\EnglishText{The verb \glqq helfen\grqq needs dative for the person. The preposition \glqq gegen\grqq needs accusative for the problem.}
+\begin{itemize}
+    \item \Correct{Der Arzt hilft mir.}
+    \item \Correct{Das Medikament hilft gegen die Schmerzen.}
+    \item \Correct{Der Arzt hilft mir gegen die Schmerzen.}
+\end{itemize}
+\end{grammarentry}
+
+\section{Mini-Zusammenfassung}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{0.28\textwidth}X X}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Funktion} & \color{white}\textbf{Deutsch} & \color{white}\textbf{English} \\
+Richtung / Kontakt & gegen die Wand laufen & to run into the wall \\
+Meinung / Widerstand & gegen den Plan sein & to be against the plan \\
+Gegner & gegen Deutschland spielen & to play against Germany \\
+ungefähre Zeit & gegen acht Uhr & around eight o'clock \\
+Schutz / Wirkung & gegen Schmerzen helfen & to help against pain \\
+Austausch & Geld gegen Ware & money in exchange for goods \\
+Vergleich & gegen früher & compared with the past \\
+\end{tabularx}
+
+\section{Kurze Übung}
+
+\GermanText{Ergänze die richtige Form nach \glqq gegen\grqq.}
+\EnglishText{Complete the correct form after \glqq gegen\grqq.}
+
+\begin{enumerate}
+    \item Ich bin gegen \underline{\hspace{2.5cm}} Plan. \hfill der Plan
+    \item Das Auto fährt gegen \underline{\hspace{2.5cm}} Wand. \hfill die Wand
+    \item Das verstößt gegen \underline{\hspace{2.5cm}} Gesetz. \hfill das Gesetz
+    \item Dieses Medikament hilft gegen \underline{\hspace{2.5cm}} Schmerzen. \hfill die Schmerzen
+\end{enumerate}
+
+\subsection{Lösung}
+
+\begin{enumerate}
+    \item Ich bin gegen \Correct{den} Plan.
+    \item Das Auto fährt gegen \Correct{die} Wand.
+    \item Das verstößt gegen \Correct{das} Gesetz.
+    \item Dieses Medikament hilft gegen \Correct{die} Schmerzen.
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,5 @@
+# It contains what is needed for to migrate from previous database to current one.
+entry_format:
+  meaning:
+    - there must be three indepenedent lines for searching, one for english, the next for persian and the last for pinglish
+

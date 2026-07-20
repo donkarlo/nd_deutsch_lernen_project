@@ -1,0 +1,147 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35e    m,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Wörter und Konstruktionen mit \glqq aus\grqq}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+\section{Grundidee}
+
+\begin{grammarentry}{aus}{preposition / prefix / part of fixed words}
+\GermanText{\glqq Aus\grqq ist meistens eine Präposition mit Dativ oder ein trennbarer Verbzusatz. Man kann damit nicht frei jedes Adverb bauen. Viele Wörter mit \glqq aus\grqq sind feste Wörter, die man als ganze Wörter lernen muss.}
+\EnglishText{\glqq Aus\grqq is mostly a preposition with dative or a separable verb prefix. You cannot freely build every adverb with it. Many words with \glqq aus\grqq are fixed words and must be learned as whole words.}
+\end{grammarentry}
+
+\section{auswendig}
+
+\begin{grammarentry}{auswendig}{adverb / adjective}
+\GermanText{\glqq Auswendig\grqq bedeutet: so gelernt, dass man etwas ohne Hilfe wiedergeben kann. Es ist ein festes Wort. Man konstruiert es im modernen Deutsch nicht frei aus \glqq aus\grqq + \glqq wendig\grqq.}
+\EnglishText{\glqq Auswendig\grqq means: learned so well that one can reproduce something without help. It is a fixed word. In modern German, it is not freely constructed from \glqq aus\grqq + \glqq wendig\grqq.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich lerne das Gedicht auswendig.}{I learn the poem by heart.}
+    \ExampleItem{Er kann den Text auswendig.}{He knows the text by heart.}
+    \ExampleItem{Sie hat die Antwort auswendig gelernt.}{She memorized the answer.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{aus + Dativ}
+
+\begin{grammarentry}{aus + Dativ}{from / out of / made of / because of}
+\GermanText{Als Präposition steht \glqq aus\grqq immer mit Dativ. Die wichtigsten Bedeutungen sind Herkunft, Bewegung von innen nach außen, Material und Grund.}
+\EnglishText{As a preposition, \glqq aus\grqq always takes the dative. The most important meanings are origin, movement from inside to outside, material, and reason.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich komme aus Österreich.}{I come from Austria.}
+    \ExampleItem{Er geht aus dem Zimmer.}{He goes out of the room.}
+    \ExampleItem{Der Tisch ist aus Holz.}{The table is made of wood.}
+    \ExampleItem{Aus Angst sagte sie nichts.}{Because of fear, she said nothing.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Pronominaladverbien mit aus}
+
+\begin{grammarentry}{daraus / woraus / hieraus}{from it / from what / from this}
+\GermanText{Bei Sachen benutzt man oft \glqq da + aus\grqq, \glqq wo + aus\grqq oder \glqq hier + aus\grqq. Diese Wörter heißen Pronominaladverbien. Für Personen benutzt man normalerweise nicht \glqq daraus\grqq, sondern \glqq aus ihm\grqq, \glqq aus ihr\grqq oder \glqq aus ihnen\grqq.}
+\EnglishText{With things, German often uses \glqq da + aus\grqq, \glqq wo + aus\grqq, or \glqq hier + aus\grqq. These words are called pronominal adverbs. For people, one normally does not use \glqq daraus\grqq, but \glqq aus ihm\grqq, \glqq aus ihr\grqq, or \glqq aus ihnen\grqq.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich lerne daraus.}{I learn from it.}
+    \ExampleItem{Woraus besteht das?}{What is that made of?}
+    \ExampleItem{Hieraus folgt ein Problem.}{A problem follows from this.}
+    \ExampleItem{Ich lerne aus ihm.}{I learn from him.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Richtungsadverbien mit raus, heraus und hinaus}
+
+\begin{grammarentry}{raus / heraus / hinaus}{out / outwards}
+\GermanText{\glqq Raus\grqq ist umgangssprachlich. \glqq Heraus\grqq und \glqq hinaus\grqq sind standardsprachlicher. Sie beschreiben eine Bewegung nach draußen.}
+\EnglishText{\glqq Raus\grqq is colloquial. \glqq Heraus\grqq and \glqq hinaus\grqq are more standard. They describe movement to the outside.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Geh bitte raus.}{Please go out.}
+    \ExampleItem{Komm aus dem Zimmer heraus.}{Come out of the room.}
+    \ExampleItem{Er schaut zum Fenster hinaus.}{He looks out of the window.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Trennbare Verben mit aus}
+
+\begin{grammarentry}{ausmachen / ausschalten / ausgehen / aussteigen}{separable verbs with aus}
+\GermanText{Bei vielen Verben ist \glqq aus\grqq ein trennbarer Zusatz. Im Hauptsatz steht der konjugierte Verbteil auf Position 2 und \glqq aus\grqq am Ende. Im Perfekt steht meistens \glqq ge\grqq zwischen \glqq aus\grqq und dem Verb: ausgemacht, ausgeschaltet, ausgegangen.}
+\EnglishText{In many verbs, \glqq aus\grqq is a separable prefix. In a main clause, the conjugated verb part is in position 2 and \glqq aus\grqq stands at the end. In the perfect tense, \glqq ge\grqq usually stands between \glqq aus\grqq and the verb: ausgemacht, ausgeschaltet, ausgegangen.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich mache das Licht aus.}{I turn off the light.}
+    \ExampleItem{Ich habe das Licht ausgemacht.}{I turned off the light.}
+    \ExampleItem{Wir steigen hier aus.}{We get off here.}
+    \ExampleItem{Der Motor ist ausgegangen.}{The engine went out / stopped.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Merksatz}
+
+\begin{grammarentry}{Regel}{rule}
+\GermanText{Lerne \glqq auswendig\grqq als festes Wort. Lerne \glqq aus + Dativ\grqq als Präposition. Lerne \glqq daraus, woraus, hieraus\grqq als Pronominaladverbien. Lerne Verben wie \glqq ausmachen\grqq und \glqq aussteigen\grqq als trennbare Verben.}
+\EnglishText{Learn \glqq auswendig\grqq as a fixed word. Learn \glqq aus + dative\grqq as a preposition. Learn \glqq daraus, woraus, hieraus\grqq as pronominal adverbs. Learn verbs like \glqq ausmachen\grqq and \glqq aussteigen\grqq as separable verbs.}
+\end{grammarentry}
+
+\end{document}

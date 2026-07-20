@@ -1,0 +1,328 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Relativpronomen}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+    
+    
+    \section{Grundidee}
+        
+        \begin{grammarentry}{Was ist ein Relativpronomen?}{What is a relative pronoun?}
+            \GermanText{Ein Relativpronomen verbindet einen Hauptsatz mit einem Relativsatz. Es bezieht sich auf ein Nomen im Hauptsatz.}
+            \EnglishText{A relative pronoun connects a main clause with a relative clause. It refers to a noun in the main clause.}
+            
+            \GermanText{Der Relativsatz erklärt dieses Nomen genauer.}
+            \EnglishText{The relative clause gives more information about this noun.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Das ist der Mann, der in Graz wohnt.}{This is the man who lives in Graz.}
+                    \ExampleItem{Das ist die Frau, die Deutsch lernt.}{This is the woman who learns German.}
+                    \ExampleItem{Das ist das Thema, das wichtig ist.}{This is the topic that is important.}
+                    \ExampleItem{Das sind Themen, die wichtig sind.}{These are topics that are important.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Relativsatz als Nebensatz}
+        
+        \begin{grammarentry}{Verb am Ende}{Verb at the end}
+            \GermanText{Ein Relativsatz ist ein Nebensatz. Darum steht das konjugierte Verb am Ende.}
+            \EnglishText{A relative clause is a subordinate clause. Therefore the conjugated verb is at the end.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Das ist ein Thema, das mich interessiert.}{This is a topic that interests me.}
+                    \ExampleItem{Das sind Menschen, die Englisch sprechen.}{These are people who speak English.}
+                    \ExampleItem{Ich kenne einen Mann, der in Wien arbeitet.}{I know a man who works in Vienna.}
+                    \ExampleItem{Ich habe eine Frau getroffen, die sehr freundlich war.}{I met a woman who was very friendly.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Die wichtigste Regel}
+        
+        \begin{grammarentry}{Genus und Numerus vom Bezugswort, Kasus aus dem Relativsatz}{Gender and number from the reference noun, case from the relative clause}
+            \GermanText{Das Relativpronomen bekommt Genus und Numerus vom Bezugswort.}
+            \EnglishText{The relative pronoun gets gender and number from the noun it refers to.}
+            
+            \GermanText{Aber der Kasus kommt aus der Rolle im Relativsatz.}
+            \EnglishText{But the case comes from the role inside the relative clause.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Der Mann, der dort steht, ist mein Freund.}{The man who is standing there is my friend.}
+                    \ExampleItem{Der Mann, den ich getroffen habe, ist mein Freund.}{The man whom I met is my friend.}
+                    \ExampleItem{Der Mann, dem ich geholfen habe, ist mein Freund.}{The man whom I helped is my friend.}
+                    \ExampleItem{Der Mann, dessen Auto kaputt ist, ist mein Freund.}{The man whose car is broken is my friend.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Tabelle der Relativpronomen}
+        
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{tabular}{>{\bfseries}p{2.7cm} p{2.7cm} p{2.7cm} p{2.7cm} p{2.7cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Kasus} & \color{white}\textbf{Maskulin} & \color{white}\textbf{Feminin} & \color{white}\textbf{Neutrum} & \color{white}\textbf{Plural} \\
+            Nominativ                   & der                            & die                           & das                           & die                          \\
+            Akkusativ                   & den                            & die                           & das                           & die                          \\
+            Dativ                       & dem                            & der                           & dem                           & denen                        \\
+            Genitiv                     & dessen                         & deren                         & dessen                        & deren                        \\
+        \end{tabular}
+    
+    
+    \section{Nominativ}
+        
+        \begin{grammarentry}{Relativpronomen als Subjekt}{Relative pronoun as subject}
+            \GermanText{Wenn das Relativpronomen im Relativsatz das Subjekt ist, steht es im Nominativ.}
+            \EnglishText{If the relative pronoun is the subject in the relative clause, it is in the nominative case.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Der Mann, der dort sitzt, ist mein Nachbar.}{The man who is sitting there is my neighbor.}
+                    \ExampleItem{Die Frau, die Deutsch spricht, kommt aus Österreich.}{The woman who speaks German comes from Austria.}
+                    \ExampleItem{Das Kind, das spielt, ist sehr laut.}{The child that is playing is very loud.}
+                    \ExampleItem{Die Menschen, die dort arbeiten, sind freundlich.}{The people who work there are friendly.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Akkusativ}
+        
+        \begin{grammarentry}{Relativpronomen als direktes Objekt}{Relative pronoun as direct object}
+            \GermanText{Wenn das Relativpronomen im Relativsatz das direkte Objekt ist, steht es im Akkusativ.}
+            \EnglishText{If the relative pronoun is the direct object in the relative clause, it is in the accusative case.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Der Mann, den ich gesehen habe, ist Arzt.}{The man whom I saw is a doctor.}
+                    \ExampleItem{Die Frau, die ich getroffen habe, war sehr nett.}{The woman whom I met was very nice.}
+                    \ExampleItem{Das Thema, das wir besprochen haben, war wichtig.}{The topic that we discussed was important.}
+                    \ExampleItem{Die Themen, die wir besprochen haben, waren wichtig.}{The topics that we discussed were important.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Dativ}
+        
+        \begin{grammarentry}{Relativpronomen als Dativobjekt}{Relative pronoun as dative object}
+            \GermanText{Wenn das Verb im Relativsatz Dativ braucht, steht das Relativpronomen im Dativ.}
+            \EnglishText{If the verb in the relative clause requires dative, the relative pronoun is in the dative case.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Der Mann, dem ich geholfen habe, wohnt in Graz.}{The man whom I helped lives in Graz.}
+                    \ExampleItem{Die Frau, der ich geantwortet habe, ist meine Kollegin.}{The woman whom I answered is my colleague.}
+                    \ExampleItem{Das Kind, dem ich ein Buch gegeben habe, ist glücklich.}{The child to whom I gave a book is happy.}
+                    \ExampleItem{Die Menschen, denen ich geholfen habe, waren dankbar.}{The people whom I helped were thankful.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Genitiv}
+        
+        \begin{grammarentry}{Relativpronomen mit Besitz}{Relative pronoun with possession}
+            \GermanText{Der Genitiv zeigt Besitz oder Zugehörigkeit. Im Relativsatz benutzt man dessen für maskulin und neutrum, und deren für feminin und plural.}
+            \EnglishText{The genitive shows possession or belonging. In relative clauses, German uses dessen for masculine and neuter, and deren for feminine and plural.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Der Mann, dessen Auto kaputt ist, ist mein Nachbar.}{The man whose car is broken is my neighbor.}
+                    \ExampleItem{Die Frau, deren Wohnung groß ist, arbeitet hier.}{The woman whose apartment is big works here.}
+                    \ExampleItem{Das Kind, dessen Mutter Ärztin ist, spielt im Garten.}{The child whose mother is a doctor is playing in the garden.}
+                    \ExampleItem{Die Menschen, deren Sprache ich nicht verstehe, sind freundlich.}{The people whose language I do not understand are friendly.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Relativpronomen mit Präposition}
+        
+        \begin{grammarentry}{Präposition + Relativpronomen}{Preposition + relative pronoun}
+            \GermanText{Wenn ein Verb oder Ausdruck eine Präposition braucht, steht die Präposition vor dem Relativpronomen.}
+            \EnglishText{If a verb or expression requires a preposition, the preposition stands before the relative pronoun.}
+            
+            \GermanText{Der Kasus hängt von der Präposition ab.}
+            \EnglishText{The case depends on the preposition.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Das sind Themen, über die wir gesprochen haben.}{These are topics that we talked about.}
+                    \ExampleItem{Das ist ein Thema, über das wir gesprochen haben.}{This is a topic that we talked about.}
+                    \ExampleItem{Das ist die Frage, auf die ich antworten muss.}{This is the question that I have to answer.}
+                    \ExampleItem{Das ist der Mann, mit dem ich gesprochen habe.}{This is the man whom I spoke with.}
+                    \ExampleItem{Das ist die Frau, mit der ich gesprochen habe.}{This is the woman whom I spoke with.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Relativpronomen oder Pronominaladverb}
+        
+        \begin{grammarentry}{über die oder darüber?}{über die or darüber?}
+            \GermanText{Nach einem konkreten Bezugswort benutzt man im Relativsatz normalerweise Präposition + Relativpronomen.}
+            \EnglishText{After a concrete reference noun, German normally uses preposition + relative pronoun in a relative clause.}
+            
+            \GermanText{Darüber benutzt man normalerweise in einem eigenen Hauptsatz oder ohne direktes Bezugswort vor dem Relativsatz.}
+            \EnglishText{Darüber is normally used in its own main clause or without a direct reference noun before the relative clause.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Richtig: Das sind Themen, über die wir schon gesprochen haben.}{Correct: These are topics that we have already talked about.}
+                    \ExampleItem{Falsch: Das sind Themen, darüber wir schon gesprochen haben.}{Wrong: These are topics, about it we have already talked.}
+                    \ExampleItem{Richtig: Wir haben darüber schon gesprochen.}{Correct: We have already talked about it.}
+                    \ExampleItem{Richtig: Das sind Themen. Darüber haben wir schon gesprochen.}{Correct: These are topics. We have already talked about them.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Relativpronomen was}
+        
+        \begin{grammarentry}{was nach etwas, nichts, alles, vieles}{was after etwas, nichts, alles, vieles}
+            \GermanText{Nach unbestimmten Wörtern wie etwas, nichts, alles und vieles benutzt man oft was.}
+            \EnglishText{After indefinite words like something, nothing, everything, and much, German often uses was.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Das ist etwas, was ich nicht verstehe.}{This is something that I do not understand.}
+                    \ExampleItem{Es gibt nichts, was mich stört.}{There is nothing that bothers me.}
+                    \ExampleItem{Alles, was du gesagt hast, ist wichtig.}{Everything that you said is important.}
+                    \ExampleItem{Vieles, was ich gelernt habe, war nützlich.}{Much of what I learned was useful.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Relativpronomen wo}
+        
+        \begin{grammarentry}{wo für Orte}{wo for places}
+            \GermanText{Für Orte benutzt man oft wo. Man kann aber auch Präposition + Relativpronomen benutzen.}
+            \EnglishText{For places, German often uses wo. But one can also use preposition + relative pronoun.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Das ist die Stadt, wo ich wohne.}{This is the city where I live.}
+                    \ExampleItem{Das ist die Stadt, in der ich wohne.}{This is the city in which I live.}
+                    \ExampleItem{Das ist das Restaurant, wo wir gegessen haben.}{This is the restaurant where we ate.}
+                    \ExampleItem{Das ist das Restaurant, in dem wir gegessen haben.}{This is the restaurant in which we ate.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Relativpronomen wer}
+        
+        \begin{grammarentry}{wer als allgemeines Relativpronomen für Personen}{wer as a general relative pronoun for people}
+            \GermanText{Wer kann als allgemeines Relativpronomen für Personen benutzt werden. Es bedeutet ungefähr: die Person, die.}
+            \EnglishText{Wer can be used as a general relative pronoun for people. It means roughly: the person who.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Wer Deutsch lernen will, muss regelmäßig üben.}{Whoever wants to learn German must practice regularly.}
+                    \ExampleItem{Wer viel liest, lernt viele Wörter.}{Whoever reads a lot learns many words.}
+                    \ExampleItem{Wen ich respektiere, den höre ich aufmerksam an.}{Whomever I respect, I listen to carefully.}
+                    \ExampleItem{Wem ich vertraue, dem erzähle ich mehr.}{Whomever I trust, I tell more.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Typische Fehler}
+        
+        \begin{grammarentry}{Fehler, die man vermeiden sollte}{Mistakes to avoid}
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Falsch: Das ist der Mann, die dort steht.}{Wrong gender: Mann is masculine.}
+                    \ExampleItem{Richtig: Das ist der Mann, der dort steht.}{Correct: The man who is standing there.}
+                    
+                    \ExampleItem{Falsch: Das ist der Mann, der ich gesehen habe.}{Wrong case: sehen needs accusative.}
+                    \ExampleItem{Richtig: Das ist der Mann, den ich gesehen habe.}{Correct: The man whom I saw.}
+                    
+                    \ExampleItem{Falsch: Das ist die Frau, dem ich geholfen habe.}{Wrong gender: Frau is feminine.}
+                    \ExampleItem{Richtig: Das ist die Frau, der ich geholfen habe.}{Correct: The woman whom I helped.}
+                    
+                    \ExampleItem{Falsch: Das sind Themen, darüber wir gesprochen haben.}{Wrong structure: darüber is not a relative pronoun.}
+                    \ExampleItem{Richtig: Das sind Themen, über die wir gesprochen haben.}{Correct: topics that we talked about.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Sehr kurze Zusammenfassung}
+        
+        \begin{grammarentry}{Merksatz}{Memory rule}
+            \GermanText{Das Relativpronomen bekommt Genus und Numerus vom Bezugswort, aber seinen Kasus aus dem Relativsatz.}
+            \EnglishText{The relative pronoun gets gender and number from the reference noun, but its case from the relative clause.}
+            
+            \GermanText{Der Relativsatz ist ein Nebensatz, deshalb steht das konjugierte Verb am Ende.}
+            \EnglishText{The relative clause is a subordinate clause, so the conjugated verb stands at the end.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Das ist der Mann, der dort wohnt.}{Nominativ}
+                    \ExampleItem{Das ist der Mann, den ich gesehen habe.}{Akkusativ}
+                    \ExampleItem{Das ist der Mann, dem ich geholfen habe.}{Dativ}
+                    \ExampleItem{Das ist der Mann, dessen Auto kaputt ist.}{Genitiv}
+                    \ExampleItem{Das sind Themen, über die wir gesprochen haben.}{Präposition + Relativpronomen}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+
+\end{document}

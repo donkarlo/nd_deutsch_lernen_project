@@ -1,0 +1,126 @@
+\documentclass[a4paper]{article}
+
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{minted}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{todonotes}
+\usepackage{forest}
+\usepackage{xstring}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{xparse}
+\usepackage{natbib}
+
+\usetikzlibrary{graphs,graphdrawing}
+\usegdlibrary{layered}
+
+% for external graphviz
+\input{/home/donkarlo/Dropbox/repo/nd_ai_project/src/nd_ai/knoweldge_representation/language/formal/computer/programming/tex/latex/code_clips/external_graphviz.tex}
+
+% for tags
+\input{/home/donkarlo/Dropbox/repo/nd_ai_project/src/nd_ai/knoweldge_representation/language/formal/computer/programming/tex/latex/parts/control_sequence/kind/semtag/semtag.tex}
+
+% for links
+\input{/home/donkarlo/Dropbox/repo/nd_ai_project/src/nd_ai/knoweldge_representation/language/formal/computer/programming/tex/latex/code_clips/seehere.tex}
+
+\title{}
+\date{}
+
+\begin{document}
+    \maketitle
+    
+    
+    \section{Zuallererst}
+        \textbf{Bedeutung:} ganz am Anfang; vor allen anderen Punkten.\\
+        \textbf{English:} first of all.\\
+        \textbf{ex:} Zuallererst möchte ich mich bei Ihnen bedanken: First of all, I would like to thank you.\\
+        \textbf{ex:} Zuallererst müssen wir das Problem genau verstehen: First of all, we have to understand the problem precisely.
+    
+    
+    \section{Zuerst}
+        \textbf{Bedeutung:} als erstes; vor den anderen Schritten.\\
+        \textbf{English:} first.\\
+        \textbf{ex:} Zuerst mache ich meine Hausaufgaben, dann koche ich: First I do my homework, then I cook.\\
+        \textbf{ex:} Lies zuerst den Text und beantworte dann die Fragen: First read the text and then answer the questions.
+    
+    
+    \section{Zunächst}
+        \textbf{Bedeutung:} am Anfang; als erster Schritt, oft etwas formeller.\\
+        \textbf{English:} initially; at first; first.\\
+        \textbf{ex:} Zunächst sollten wir alle Informationen sammeln: First, we should gather all the information.\\
+        \textbf{ex:} Ich war zunächst unsicher, aber dann habe ich zugesagt: At first I was unsure, but then I agreed.
+    
+    
+    \section{Erstens}
+        \textbf{Bedeutung:} der erste Punkt in einer Aufzählung oder Argumentation.\\
+        \textbf{English:} firstly; first.\\
+        \textbf{ex:} Erstens ist die Wohnung zu teuer: Firstly, the apartment is too expensive.\\
+        \textbf{ex:} Erstens brauchen wir mehr Zeit für dieses Projekt: Firstly, we need more time for this project.
+    
+    
+    \section{Zweitens}
+        \textbf{Bedeutung:} der zweite Punkt in einer Aufzählung oder Argumentation.\\
+        \textbf{English:} secondly.\\
+        \textbf{ex:} Zweitens ist die Lage nicht besonders gut: Secondly, the location is not especially good.\\
+        \textbf{ex:} Zweitens müssen wir auch die Kosten berücksichtigen: Secondly, we also have to consider the costs.
+    
+    
+    \section{Drittens}
+        \textbf{Bedeutung:} der dritte Punkt in einer Aufzählung oder Argumentation.\\
+        \textbf{English:} thirdly.\\
+        \textbf{ex:} Drittens fehlt uns noch die nötige Erfahrung: Thirdly, we still lack the necessary experience.\\
+        \textbf{ex:} Drittens sollte man die Risiken nicht unterschätzen: Thirdly, one should not underestimate the risks.
+    
+    
+    \section{Dann}
+        \textbf{Bedeutung:} nach einem anderen Schritt oder zu einem späteren Zeitpunkt.\\
+        \textbf{English:} then.\\
+        \textbf{ex:} Ich dusche und dann gehe ich zur Arbeit: I shower and then I go to work.\\
+        \textbf{ex:} Wenn du fertig bist, dann ruf mich an: When you are finished, then call me.
+    
+    
+    \section{Danach}
+        \textbf{Bedeutung:} nach diesem Zeitpunkt oder nach diesem Ereignis.\\
+        \textbf{English:} after that; afterwards.\\
+        \textbf{ex:} Wir haben gegessen und danach einen Spaziergang gemacht: We ate and after that we took a walk.\\
+        \textbf{ex:} Zuerst hatte ich Unterricht, danach bin ich nach Hause gegangen: First I had class, afterwards I went home.
+    
+    
+    \section{Anschließend}
+        \textbf{Bedeutung:} direkt danach; im Anschluss an etwas.\\
+        \textbf{English:} afterwards; subsequently.\\
+        \textbf{ex:} Wir hatten ein Meeting und anschließend ein gemeinsames Mittagessen: We had a meeting and afterwards a shared lunch.\\
+        \textbf{ex:} Er schrieb den Bericht und schickte ihn anschließend an den Chef: He wrote the report and subsequently sent it to the boss.
+    
+    
+    \section{Schließlich}
+        \textbf{Bedeutung:} am Ende einer Entwicklung; nach allem.\\
+        \textbf{English:} finally; eventually.\\
+        \textbf{ex:} Nach vielen Problemen haben wir schließlich eine Lösung gefunden: After many problems, we finally found a solution.\\
+        \textbf{ex:} Sie hat lange gesucht und schließlich die richtige Wohnung gefunden: She searched for a long time and finally found the right apartment.
+    
+    
+    \section{Letztlich}
+        \textbf{Bedeutung:} wenn man alles betrachtet; am Ende der Überlegung.\\
+        \textbf{English:} ultimately; in the end.\\
+        \textbf{ex:} Letztlich musst du selbst entscheiden: Ultimately, you have to decide yourself.\\
+        \textbf{ex:} Letztlich war die Reise doch eine gute Erfahrung: In the end, the trip was still a good experience.
+    
+    
+    \section{Zuletzt}
+        \textbf{Bedeutung:} als letzter Punkt oder am Ende einer Reihenfolge.\\
+        \textbf{English:} lastly; most recently.\\
+        \textbf{ex:} Zuletzt möchte ich noch etwas Wichtiges sagen: Lastly, I would like to say something important.\\
+        \textbf{ex:} Ich habe ihn zuletzt vor zwei Wochen gesehen: I saw him most recently two weeks ago.
+    
+    
+    \section{Abschließend}
+        \textbf{Bedeutung:} als Schlussbemerkung; zum Abschluss.\\
+        \textbf{English:} finally; in conclusion.\\
+        \textbf{ex:} Abschließend möchte ich noch einen Punkt betonen: In conclusion, I would like to emphasize one more point.\\
+        \textbf{ex:} Abschließend danke ich Ihnen für Ihre Aufmerksamkeit: Finally, I thank you for your attention.
+        \bibliographystyle{plainnat}
+        \bibliography{/home/donkarlo/Dropbox/repo/nd_shared_research/bibliography/bibliography.bib}
+\end{document}

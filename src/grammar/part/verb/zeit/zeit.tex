@@ -1,0 +1,155 @@
+\documentclass[a4paper]{article}
+
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{minted}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{todonotes}
+\usepackage{forest}
+\usepackage{xstring}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{xparse}
+\usepackage{natbib}
+
+\usetikzlibrary{graphs,graphdrawing}
+\usegdlibrary{layered}
+
+\input{/home/donkarlo/Dropbox/repo/nd_ai_project/src/nd_ai/knoweldge_representation/language/formal/computer/programming/tex/latex/code_clips/external_graphviz.tex}
+\input{/home/donkarlo/Dropbox/repo/nd_ai_project/src/nd_ai/knoweldge_representation/language/formal/computer/programming/tex/latex/parts/control_sequence/kind/semtag/semtag.tex}
+\input{/home/donkarlo/Dropbox/repo/nd_ai_project/src/nd_ai/knoweldge_representation/language/formal/computer/programming/tex/latex/code_clips/seehere.tex}
+
+\title{}
+\date{}
+
+\begin{document}
+    \maketitle
+    
+    
+    \section{Präsens}
+        \textbf{Verwendung}: Gegenwart, allgemeine Aussagen, Zukunft mit Zeitangabe.\\
+        \textbf{Form}: Subjekt + konjugiertes Verb.\\
+        ex: Ich lerne Deutsch: I learn German.\\
+        ex: Er arbeitet heute: He works today.\\
+    
+    
+    \section{Perfekt}
+        \textbf{Verwendung}: gesprochene Vergangenheit.\\
+        \textbf{Form}: Subjekt + haben/sein + Partizip II.\\
+        ex: Ich habe Deutsch gelernt: I have learned German.\\
+        ex: Er ist nach Hause gegangen: He has gone home.\\
+    
+    
+    \section{Präteritum}
+        \textbf{Verwendung}: schriftliche Vergangenheit.\\
+        \textbf{Form}: Subjekt + Präteritum.\\
+        ex: Ich lernte Deutsch: I learned German.\\
+        ex: Er ging nach Hause: He went home.\\
+    
+    
+    \section{Plusquamperfekt}
+        \textbf{Verwendung}: Handlung vor einer Vergangenheit.\\
+        \textbf{Form}: Subjekt + hatte/war + Partizip II.\\
+        ex: Ich hatte gegessen, bevor er kam: I had eaten before he came.\\
+        ex: Sie war gegangen: She had left.\\
+    
+    
+    \section{Futur I}
+        \textbf{Verwendung}: Zukunft, Vermutung.\\
+        \textbf{Form}: Subjekt + werden + Infinitiv.\\
+        ex: Ich werde lernen: I will learn.\\
+        ex: Er wird zu Hause sein: He is probably at home.\\
+    
+    
+    \section{Futur II}
+        \textbf{Verwendung}: abgeschlossene Zukunft, Vermutung über Vergangenheit.\\
+        \textbf{Form}: Subjekt + werden + Partizip II + haben/sein.\\
+        ex: Ich werde gelernt haben: I will have learned.\\
+        ex: Er wird angekommen sein: He will have arrived.\\
+    
+    
+    \section{Konjunktiv I}
+        
+        \subsection{Indirekte Rede}
+            \textbf{Verwendung}: indirekte Aussagen.\\
+            \textbf{Form}: Subjekt + Konjunktiv I.\\
+            ex: Er sagt, er sei krank: He says he is sick.\\
+            ex: Sie sagt, sie habe Zeit: She says she has time.\\
+    
+    
+    \section{Konjunktiv II}
+        
+        \subsection{Irrealer Wunsch}
+            \textbf{Verwendung}: unrealer Wunsch.\\
+            \textbf{Form}: würde + Infinitiv oder Präteritumform.\\
+            ex: Ich würde reisen: I would travel.\\
+            ex: Ich hätte mehr Zeit: I would have more time.\\
+        
+        \subsection{Bedingung}
+            \textbf{Verwendung}: hypothetische Bedingung.\\
+            \textbf{Form}: Wenn + Konjunktiv II, würde + Infinitiv.\\
+            ex: Wenn ich Zeit hätte, würde ich kommen: If I had time, I would come.\\
+            ex: Wenn er reich wäre, würde er ein Haus kaufen: If he were rich, he would buy a house.\\
+        
+        \subsection{Modalverben im Konjunktiv II}
+            \textbf{Wichtig}: Modalverben haben eigene Formen (ohne würde).\\
+            \textbf{können} $\rightarrow$ könnte\\
+            \textbf{müssen} $\rightarrow$ müsste\\
+            \textbf{dürfen} $\rightarrow$ dürfte\\
+            \textbf{sollen} $\rightarrow$ sollte\\
+            \textbf{wollen} $\rightarrow$ wollte\\
+            \textbf{mögen} $\rightarrow$ möchte\\
+            ex: Ich könnte kommen: I could come.\\
+            ex: Ich müsste arbeiten: I would have to work.\\
+            ex: Ich dürfte gehen: I would be allowed to go.\\
+            ex: Ich sollte mehr lernen: I should learn more.\\
+            ex: Ich wollte gehen: I wanted to go (oder höflich: would want).\\
+            ex: Ich möchte einen Kaffee: I would like a coffee.\\
+        
+        \subsection{Höflichkeit}
+            \textbf{Verwendung}: höfliche Fragen und Bitten.\\
+            ex: Könnten Sie mir helfen: Could you help me.\\
+            ex: Würden Sie das erklären: Would you explain that.\\
+        
+        \subsection{Irreale Vergangenheit}
+            \textbf{Form}: hätte/wäre + Partizip II.\\
+            ex: Ich hätte mehr gelernt: I would have learned more.\\
+            ex: Er wäre gekommen: He would have come.\\
+    
+    
+    \section{Imperativ}
+        \textbf{Verwendung}: Befehle und Bitten.\\
+        \textbf{Form}: Verb im Imperativ.\\
+        ex: Komm her: Come here.\\
+        ex: Gehen Sie bitte: Please go.\\
+    
+    
+    \section{Passiv}
+        
+        \subsection{Präsens}
+            \textbf{Form}: werden + Partizip II.\\
+            ex: Das Auto wird repariert: The car is being repaired.\\
+        
+        \subsection{Präteritum}
+            \textbf{Form}: wurde + Partizip II.\\
+            ex: Das Auto wurde repariert: The car was repaired.\\
+        
+        \subsection{Perfekt}
+            \textbf{Form}: ist + Partizip II + worden.\\
+            ex: Das Auto ist repariert worden: The car has been repaired.\\
+        
+        \subsection{Plusquamperfekt}
+            \textbf{Form}: war + Partizip II + worden.\\
+            ex: Das Auto war repariert worden: The car had been repaired.\\
+        
+        \subsection{Futur I}
+            \textbf{Form}: wird + Partizip II + werden.\\
+            ex: Das Auto wird repariert werden: The car will be repaired.\\
+    
+    
+    \section{Zusatz: Aktiv vs Passiv}
+        \textbf{Aktiv}: Der Mann repariert das Auto.\\
+        \textbf{Passiv}: Das Auto wird repariert.\\
+
+\end{document}

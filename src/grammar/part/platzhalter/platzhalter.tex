@@ -1,0 +1,483 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Platzhalter und Korrelat im Deutschen}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+    
+    
+    \section{Grundidee}
+        
+        \begin{grammarentry}{Platzhalter / Korrelat}{Grundbegriff}
+            \GermanText{Ein Platzhalter oder Korrelat ist ein Wort, das im Hauptsatz steht und auf einen späteren Nebensatz oder Infinitivsatz vorbereitet.}
+            \EnglishText{A placeholder or correlative is a word in the main clause that prepares for a following subordinate clause or infinitive clause.}
+            
+            Häufige Korrelate sind:
+            \begin{itemize}
+                \item \textbf{es}
+                \item \textbf{darauf}
+                \item \textbf{daran}
+                \item \textbf{damit}
+                \item \textbf{dafür}
+                \item \textbf{dazu}
+                \item \textbf{darüber}
+                \item \textbf{darum}
+            \end{itemize}
+            
+            Wichtig: Das Korrelat verweist oft nicht auf ein einzelnes Nomen, sondern auf eine ganze Handlung, einen ganzen Infinitivsatz oder einen ganzen Nebensatz.
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich bevorzuge es, früh aufzustehen.}{I prefer to get up early.}
+                \ExampleItem{Ich freue mich darauf, dich zu sehen.}{I look forward to seeing you.}
+                \ExampleItem{Es ist wichtig, Deutsch zu lernen.}{It is important to learn German.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Das Korrelat \textit{es}}
+        
+        \begin{grammarentry}{es als Platzhalter}{bei Infinitivsatz und dass-Satz}
+            \GermanText{\textbf{Es} kann auf einen späteren Infinitivsatz oder dass-Satz verweisen.}
+            \EnglishText{\textbf{Es} can refer forward to a later infinitive clause or dass-clause.}
+            
+            Struktur:
+            \begin{itemize}
+                \item \textbf{Ich finde es gut, ... zu ...}
+                \item \textbf{Ich halte es für wichtig, ... zu ...}
+                \item \textbf{Ich bevorzuge es, ... zu ...}
+                \item \textbf{Es ist wichtig, dass ...}
+                \item \textbf{Es freut mich, dass ...}
+            \end{itemize}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich finde es gut, jeden Tag Deutsch zu üben.}{I think it is good to practice German every day.}
+                \ExampleItem{Ich halte es für wichtig, pünktlich zu sein.}{I consider it important to be on time.}
+                \ExampleItem{Ich bevorzuge es, in einem ruhigen Land zu leben.}{I prefer to live in a quiet country.}
+                \ExampleItem{Es ist schade, dass du nicht kommen kannst.}{It is a pity that you cannot come.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{\textit{es} und der Infinitivsatz}
+        
+        \begin{grammarentry}{Ich bevorzuge es, ... zu ...}{wichtige Struktur}
+            \GermanText{Bei einigen Verben benutzt man oft \textbf{es}, wenn danach ein Infinitivsatz mit \textbf{zu} kommt.}
+            \EnglishText{With some verbs, \textbf{es} is often used when a following infinitive clause with \textbf{zu} comes after it.}
+            
+            Beispiel:
+            \begin{itemize}
+                \item \textbf{Ich bevorzuge es, allein zu arbeiten.}
+                \item Hier steht \textbf{es} für: \textbf{allein zu arbeiten}
+            \end{itemize}
+            
+            Das heißt:
+            \begin{itemize}
+                \item \textbf{Ich bevorzuge es, allein zu arbeiten.}
+                \item = \textbf{Ich bevorzuge allein zu arbeiten.}
+            \end{itemize}
+            
+            Die Version mit \textbf{es} klingt oft natürlicher und klarer.
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich bevorzuge es, morgens Kaffee zu trinken.}{I prefer to drink coffee in the morning.}
+                \ExampleItem{Sie liebt es, neue Sprachen zu lernen.}{She loves learning new languages.}
+                \ExampleItem{Er hasst es, lange zu warten.}{He hates waiting for a long time.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Das Korrelat bei Adjektiven}
+        
+        \begin{grammarentry}{es ist + Adjektiv + zu / dass}{sehr häufig}
+            \GermanText{Viele Sätze mit Adjektiven benutzen \textbf{es} als Platzhalter.}
+            \EnglishText{Many sentences with adjectives use \textbf{es} as a placeholder.}
+            
+            Struktur:
+            \begin{itemize}
+                \item \textbf{Es ist wichtig, ... zu ...}
+                \item \textbf{Es ist möglich, ... zu ...}
+                \item \textbf{Es ist schwer, ... zu ...}
+                \item \textbf{Es ist schön, dass ...}
+                \item \textbf{Es ist klar, dass ...}
+            \end{itemize}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Es ist wichtig, regelmäßig zu lernen.}{It is important to study regularly.}
+                \ExampleItem{Es ist schwer, diese Regel sofort zu verstehen.}{It is difficult to understand this rule immediately.}
+                \ExampleItem{Es ist klar, dass du mehr üben musst.}{It is clear that you have to practice more.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{\textit{es} kann manchmal wegfallen}
+        
+        \begin{grammarentry}{Infinitivsatz am Anfang}{ohne es}
+            \GermanText{Wenn der Infinitivsatz am Anfang steht, fällt \textbf{es} meistens weg.}
+            \EnglishText{When the infinitive clause is at the beginning, \textbf{es} usually disappears.}
+            
+            Vergleich:
+            \begin{itemize}
+                \item \textbf{Es ist wichtig, Deutsch zu lernen.}
+                \item \textbf{Deutsch zu lernen ist wichtig.}
+            \end{itemize}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Es ist gesund, viel Wasser zu trinken.}{It is healthy to drink a lot of water.}
+                \ExampleItem{Viel Wasser zu trinken ist gesund.}{Drinking a lot of water is healthy.}
+                \ExampleItem{Es macht Spaß, Deutsch zu sprechen.}{It is fun to speak German.}
+                \ExampleItem{Deutsch zu sprechen macht Spaß.}{Speaking German is fun.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Korrelate mit Präpositionen}
+        
+        \begin{grammarentry}{darauf, daran, damit, dafür, dazu}{Präposition + da}
+            \GermanText{Wenn ein Verb oder Adjektiv eine feste Präposition braucht, benutzt man oft ein Korrelat mit \textbf{da-}.}
+            \EnglishText{When a verb or adjective needs a fixed preposition, German often uses a correlative with \textbf{da-}.}
+            
+            Beispiele:
+            \begin{itemize}
+                \item \textbf{sich freuen auf} $\rightarrow$ \textbf{darauf}
+                \item \textbf{denken an} $\rightarrow$ \textbf{daran}
+                \item \textbf{rechnen mit} $\rightarrow$ \textbf{damit}
+                \item \textbf{sorgen für} $\rightarrow$ \textbf{dafür}
+                \item \textbf{beitragen zu} $\rightarrow$ \textbf{dazu}
+                \item \textbf{sich ärgern über} $\rightarrow$ \textbf{darüber}
+            \end{itemize}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich freue mich darauf, dich zu sehen.}{I look forward to seeing you.}
+                \ExampleItem{Ich denke daran, morgen einzukaufen.}{I am thinking about going shopping tomorrow.}
+                \ExampleItem{Ich rechne damit, dass er später kommt.}{I expect that he will come later.}
+                \ExampleItem{Ich sorge dafür, dass alles fertig ist.}{I make sure that everything is ready.}
+                \ExampleItem{Das trägt dazu bei, dass wir schneller lernen.}{That contributes to us learning faster.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Warum heißt es \textit{darauf} und nicht nur \textit{auf}?}
+        
+        \begin{grammarentry}{da + Präposition}{Verweis auf einen ganzen Satz}
+            \GermanText{\textbf{Darauf} bedeutet hier nicht immer wörtlich on it. Es verweist oft auf einen ganzen späteren Satz.}
+            \EnglishText{\textbf{Darauf} does not always literally mean on it. It often refers to an entire following clause.}
+            
+            Beispiel:
+            \begin{itemize}
+                \item \textbf{Ich freue mich darauf, dich zu sehen.}
+                \item \textbf{darauf} = \textbf{dich zu sehen}
+            \end{itemize}
+            
+            Ohne \textbf{darauf} hat der Satz oft eine andere Bedeutung oder klingt unvollständig.
+            
+            Vergleich:
+            \begin{itemize}
+                \item \textbf{Ich freue mich, dich zu sehen.}
+                \item Bedeutung: Ich bin jetzt froh, weil ich dich sehe.
+                \item \textbf{Ich freue mich darauf, dich zu sehen.}
+                \item Bedeutung: Ich freue mich auf etwas in der Zukunft.
+            \end{itemize}
+        \end{grammarentry}
+    
+    
+    \section{Korrelat mit dass-Satz}
+        
+        \begin{grammarentry}{Hauptsatz + Korrelat + dass-Satz}{häufige Struktur}
+            \GermanText{Ein Korrelat kann auch auf einen \textbf{dass-Satz} verweisen.}
+            \EnglishText{A correlative can also refer to a \textbf{dass-clause}.}
+            
+            Struktur:
+            \begin{itemize}
+                \item \textbf{Ich finde es gut, dass ...}
+                \item \textbf{Ich rechne damit, dass ...}
+                \item \textbf{Ich achte darauf, dass ...}
+                \item \textbf{Ich bin froh darüber, dass ...}
+            \end{itemize}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich finde es gut, dass du jeden Tag übst.}{I think it is good that you practice every day.}
+                \ExampleItem{Ich rechne damit, dass der Zug Verspätung hat.}{I expect that the train will be delayed.}
+                \ExampleItem{Ich achte darauf, dass ich keine Fehler mache.}{I pay attention to not making mistakes.}
+                \ExampleItem{Ich bin froh darüber, dass du hier bist.}{I am happy that you are here.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Korrelat mit Infinitivsatz}
+        
+        \begin{grammarentry}{Hauptsatz + Korrelat + Infinitivsatz}{zu + Infinitiv}
+            \GermanText{Ein Korrelat kann auf einen Infinitivsatz mit \textbf{zu} verweisen.}
+            \EnglishText{A correlative can refer to an infinitive clause with \textbf{zu}.}
+            
+            Struktur:
+            \begin{itemize}
+                \item \textbf{Ich habe vor, ... zu ...}
+                \item \textbf{Ich freue mich darauf, ... zu ...}
+                \item \textbf{Ich achte darauf, ... zu ...}
+                \item \textbf{Ich versuche es, ... zu ...}
+            \end{itemize}
+            
+            Wichtig: Bei Infinitivsätzen steht \textbf{zu} direkt vor dem Infinitiv.
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich freue mich darauf, nach Graz zu kommen.}{I look forward to coming to Graz.}
+                \ExampleItem{Ich achte darauf, langsam zu sprechen.}{I pay attention to speaking slowly.}
+                \ExampleItem{Ich finde es schwer, schnell Deutsch zu sprechen.}{I find it difficult to speak German quickly.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Wichtige Verben mit Korrelat}
+        
+        \begin{grammarentry}{Typische Verben}{lernen als feste Struktur}
+            \GermanText{Viele deutsche Verben sollte man zusammen mit ihrer Präposition und ihrem Korrelat lernen.}
+            \EnglishText{Many German verbs should be learned together with their preposition and their correlative.}
+            
+            \begin{itemize}
+                \item \textbf{sich freuen auf + Akk.} $\rightarrow$ \textbf{sich darauf freuen, ...}
+                \item \textbf{denken an + Akk.} $\rightarrow$ \textbf{daran denken, ...}
+                \item \textbf{warten auf + Akk.} $\rightarrow$ \textbf{darauf warten, ...}
+                \item \textbf{achten auf + Akk.} $\rightarrow$ \textbf{darauf achten, ...}
+                \item \textbf{rechnen mit + Dat.} $\rightarrow$ \textbf{damit rechnen, ...}
+                \item \textbf{sorgen für + Akk.} $\rightarrow$ \textbf{dafür sorgen, ...}
+                \item \textbf{sich beschäftigen mit + Dat.} $\rightarrow$ \textbf{sich damit beschäftigen, ...}
+                \item \textbf{sich ärgern über + Akk.} $\rightarrow$ \textbf{sich darüber ärgern, ...}
+            \end{itemize}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich warte darauf, dass du antwortest.}{I am waiting for you to answer.}
+                \ExampleItem{Ich achte darauf, langsam zu sprechen.}{I pay attention to speaking slowly.}
+                \ExampleItem{Ich beschäftige mich damit, bessere Sätze zu schreiben.}{I am dealing with writing better sentences.}
+                \ExampleItem{Er ärgert sich darüber, dass der Bus wieder zu spät kommt.}{He is annoyed that the bus is late again.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Wichtige Adjektive mit Korrelat}
+        
+        \begin{grammarentry}{Adjektiv + Präposition}{feste Verbindung}
+            \GermanText{Auch viele Adjektive brauchen eine feste Präposition. Dann benutzt man oft ein da-Korrelat.}
+            \EnglishText{Many adjectives also need a fixed preposition. Then German often uses a da-correlative.}
+            
+            Beispiele:
+            \begin{itemize}
+                \item \textbf{interessiert an + Dat.} $\rightarrow$ \textbf{daran interessiert}
+                \item \textbf{stolz auf + Akk.} $\rightarrow$ \textbf{darauf stolz}
+                \item \textbf{zufrieden mit + Dat.} $\rightarrow$ \textbf{damit zufrieden}
+                \item \textbf{verantwortlich für + Akk.} $\rightarrow$ \textbf{dafür verantwortlich}
+                \item \textbf{froh über + Akk.} $\rightarrow$ \textbf{darüber froh}
+            \end{itemize}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich bin daran interessiert, Deutsch besser zu verstehen.}{I am interested in understanding German better.}
+                \ExampleItem{Ich bin stolz darauf, dass ich jeden Tag übe.}{I am proud that I practice every day.}
+                \ExampleItem{Ich bin damit zufrieden, wie viel ich gelernt habe.}{I am satisfied with how much I have learned.}
+                \ExampleItem{Du bist dafür verantwortlich, pünktlich zu kommen.}{You are responsible for coming on time.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Unterschied zwischen \textit{es} und da-Korrelaten}
+        
+        \begin{grammarentry}{es oder darauf / daran / damit?}{wichtiger Unterschied}
+            \GermanText{\textbf{Es} benutzt man oft, wenn kein festes Präpositionsverb im Hauptsatz steht. Da-Korrelate benutzt man oft, wenn das Verb oder Adjektiv eine feste Präposition braucht.}
+            \EnglishText{\textbf{Es} is often used when there is no fixed prepositional verb in the main clause. Da-correlatives are often used when the verb or adjective needs a fixed preposition.}
+            
+            Vergleich:
+            \begin{itemize}
+                \item \textbf{Ich finde es gut, Deutsch zu lernen.}
+                \item \textbf{finden} braucht hier keine feste Präposition.
+                \item \textbf{Ich freue mich darauf, Deutsch zu lernen.}
+                \item \textbf{sich freuen auf} braucht die Präposition \textbf{auf}.
+            \end{itemize}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich finde es wichtig, viel zu sprechen.}{I find it important to speak a lot.}
+                \ExampleItem{Ich freue mich darauf, viel zu sprechen.}{I look forward to speaking a lot.}
+                \ExampleItem{Ich halte es für sinnvoll, jeden Tag zu üben.}{I consider it useful to practice every day.}
+                \ExampleItem{Ich denke daran, jeden Tag zu üben.}{I think about practicing every day.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Position im Satz}
+        
+        \begin{grammarentry}{Wo steht das Korrelat?}{Wortstellung}
+            \GermanText{Das Korrelat steht normalerweise im Hauptsatz. Der Infinitivsatz oder dass-Satz kommt danach.}
+            \EnglishText{The correlative usually stands in the main clause. The infinitive clause or dass-clause comes after it.}
+            
+            Struktur:
+            \begin{itemize}
+                \item \textbf{Hauptsatz + Korrelat + Komma + Nebensatz}
+                \item \textbf{Hauptsatz + Korrelat + Komma + Infinitivsatz}
+            \end{itemize}
+            
+            Beispiele:
+            \begin{itemize}
+                \item \textbf{Ich finde es gut, dass du lernst.}
+                \item \textbf{Ich finde es gut, Deutsch zu lernen.}
+                \item \textbf{Ich freue mich darauf, dass du kommst.}
+                \item \textbf{Ich freue mich darauf, dich zu sehen.}
+            \end{itemize}
+        \end{grammarentry}
+    
+    
+    \section{Komma bei Korrelat-Sätzen}
+        
+        \begin{grammarentry}{Komma vor dass und zu}{sehr wichtig}
+            \GermanText{Vor einem \textbf{dass-Satz} steht immer ein Komma. Vor einem erweiterten Infinitivsatz mit \textbf{zu} steht normalerweise auch ein Komma.}
+            \EnglishText{Before a \textbf{dass-clause}, there is always a comma. Before an extended infinitive clause with \textbf{zu}, there is usually also a comma.}
+            
+            Beispiele:
+            \begin{itemize}
+                \item \textbf{Ich weiß, dass du kommst.}
+                \item \textbf{Ich finde es gut, dass du kommst.}
+                \item \textbf{Ich versuche, Deutsch zu sprechen.}
+                \item \textbf{Ich finde es wichtig, jeden Tag Deutsch zu üben.}
+            \end{itemize}
+        \end{grammarentry}
+    
+    
+    \section{Typische Fehler}
+        
+        \begin{grammarentry}{Fehler 1: falscher Artikel}{eine Frau}
+            \GermanText{Bei femininen Nomen steht im Akkusativ \textbf{eine}, nicht \textbf{ein}.}
+            \EnglishText{With feminine nouns, the accusative form is \textbf{eine}, not \textbf{ein}.}
+            
+            \begin{itemize}
+                \item falsch: \textbf{Wenn ich ein Frau hätte}
+                \item richtig: \textbf{Wenn ich eine Frau hätte}
+            \end{itemize}
+        \end{grammarentry}
+        
+        \begin{grammarentry}{Fehler 2: bevorzugen mit falscher Präposition}{kein in}
+            \GermanText{Das Verb \textbf{bevorzugen} braucht normalerweise ein Akkusativobjekt ohne Präposition.}
+            \EnglishText{The verb \textbf{bevorzugen} normally takes an accusative object without a preposition.}
+            
+            \begin{itemize}
+                \item falsch: \textbf{Ich würde in ein Land bevorzugen.}
+                \item richtig: \textbf{Ich würde ein Land bevorzugen.}
+                \item besser: \textbf{Ich würde es bevorzugen, in einem Land zu leben.}
+            \end{itemize}
+        \end{grammarentry}
+        
+        \begin{grammarentry}{Fehler 3: Korrelat vergessen}{es / darauf / damit}
+            \GermanText{Bei manchen Verben klingt der Satz ohne Korrelat unvollständig oder unnatürlich.}
+            \EnglishText{With some verbs, the sentence sounds incomplete or unnatural without the correlative.}
+            
+            \begin{itemize}
+                \item besser: \textbf{Ich freue mich darauf, dich zu sehen.}
+                \item besser: \textbf{Ich rechne damit, dass er kommt.}
+                \item besser: \textbf{Ich bevorzuge es, früh aufzustehen.}
+            \end{itemize}
+        \end{grammarentry}
+        
+        \begin{grammarentry}{Fehler 4: falsches Korrelat}{Präposition beachten}
+            \GermanText{Das Korrelat hängt von der Präposition des Verbs oder Adjektivs ab.}
+            \EnglishText{The correlative depends on the preposition of the verb or adjective.}
+            
+            Beispiele:
+            \begin{itemize}
+                \item \textbf{sich freuen auf} $\rightarrow$ \textbf{darauf}
+                \item \textbf{denken an} $\rightarrow$ \textbf{daran}
+                \item \textbf{rechnen mit} $\rightarrow$ \textbf{damit}
+                \item \textbf{sorgen für} $\rightarrow$ \textbf{dafür}
+            \end{itemize}
+        \end{grammarentry}
+    
+    
+    \section{Kurze Zusammenfassung}
+        
+        \begin{grammarentry}{Merksätze}{wichtig}
+            \GermanText{Ein Korrelat ist ein kleines Wort, das auf einen späteren Satz verweist.}
+            \EnglishText{A correlative is a small word that refers forward to a later clause.}
+            
+            \begin{itemize}
+                \item \textbf{es} steht oft vor Infinitivsätzen und dass-Sätzen.
+                \item \textbf{darauf, daran, damit, dafür, dazu} benutzt man oft bei Verben mit fester Präposition.
+                \item Das Korrelat verweist oft nicht auf ein einzelnes Nomen, sondern auf eine ganze Handlung oder einen ganzen Satz.
+                \item Bei Infinitivsätzen steht das Verb am Ende mit \textbf{zu}.
+                \item Bei dass-Sätzen steht das konjugierte Verb am Ende.
+                \item Die Präposition des Verbs bestimmt oft das richtige da-Korrelat.
+            \end{itemize}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich bevorzuge es, in einem sicheren Land zu leben.}{I prefer to live in a safe country.}
+                \ExampleItem{Ich freue mich darauf, Deutsch besser zu sprechen.}{I look forward to speaking German better.}
+                \ExampleItem{Ich achte darauf, richtige Artikel zu benutzen.}{I pay attention to using correct articles.}
+                \ExampleItem{Es ist wichtig, diese Strukturen oft zu üben.}{It is important to practice these structures often.}
+            \end{itemize}
+        \end{exbox}
+
+\end{document}

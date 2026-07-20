@@ -1,0 +1,233 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Die Konjunktion \glqq sondern\grqq}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+\section{Grundbedeutung}
+
+\begin{grammarentry}{sondern}{coordinating conjunction / nebenordnende Konjunktion}
+\GermanText{\textbf{sondern} benutzt man, wenn der erste Teil verneint ist und der zweite Teil die richtige Alternative zeigt.}
+\EnglishText{\textbf{sondern} is used when the first part is negated and the second part gives the correct alternative.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich trinke nicht Kaffee, sondern Tee.}{I do not drink coffee, but tea.}
+    \ExampleItem{Er wohnt nicht in Wien, sondern in Graz.}{He does not live in Vienna, but in Graz.}
+    \ExampleItem{Das ist kein Fehler, sondern eine Regel.}{That is not a mistake, but a rule.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Die wichtigste Struktur}
+
+\begin{grammarentry}{nicht A, sondern B}{not A, but B}
+\GermanText{Die normale Struktur ist: \textbf{nicht A, sondern B}. Der zweite Teil ersetzt den ersten Teil.}
+\EnglishText{The normal structure is: \textbf{not A, but B}. The second part replaces the first part.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich komme nicht heute, sondern morgen.}{I am not coming today, but tomorrow.}
+    \ExampleItem{Sie kauft nicht ein Auto, sondern ein Fahrrad.}{She is not buying a car, but a bicycle.}
+    \ExampleItem{Wir sprechen nicht über Politik, sondern über Grammatik.}{We are not talking about politics, but about grammar.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{kein A, sondern B}{no / not a A, but B}
+\GermanText{Auch \textbf{kein} ist eine Verneinung. Deshalb kann danach \textbf{sondern} stehen.}
+\EnglishText{\textbf{kein} is also a negation. Therefore, \textbf{sondern} can follow it.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich habe keinen Bruder, sondern eine Schwester.}{I do not have a brother, but a sister.}
+    \ExampleItem{Das ist keine Frage, sondern eine Antwort.}{That is not a question, but an answer.}
+    \ExampleItem{Er braucht kein Taxi, sondern einen Bus.}{He does not need a taxi, but a bus.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Wortstellung}
+
+\begin{grammarentry}{sondern und Wortstellung}{word order}
+\GermanText{\textbf{sondern} ist eine nebenordnende Konjunktion. Es verbindet zwei gleiche Teile. Es verändert die Wortstellung nicht.}
+\EnglishText{\textbf{sondern} is a coordinating conjunction. It connects two equal parts. It does not change the word order.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich gehe nicht nach Hause, sondern ich bleibe hier.}{I am not going home, but I am staying here.}
+    \ExampleItem{Er lernt nicht Deutsch, sondern er lernt Englisch.}{He is not learning German, but he is learning English.}
+    \ExampleItem{Wir fahren nicht mit dem Zug, sondern wir fahren mit dem Bus.}{We are not going by train, but we are going by bus.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Ellipse mit sondern}{omitting repeated words}
+\GermanText{Wenn Wörter im zweiten Teil gleich sind, kann man sie oft weglassen.}
+\EnglishText{If words in the second part are the same, they can often be omitted.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich gehe nicht nach Hause, sondern ins Büro.}{I am not going home, but to the office.}
+    \ExampleItem{Er lernt nicht Deutsch, sondern Englisch.}{He is not learning German, but English.}
+    \ExampleItem{Wir fahren nicht mit dem Zug, sondern mit dem Bus.}{We are not going by train, but by bus.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Komma}
+
+\begin{grammarentry}{Komma vor sondern}{comma before sondern}
+\GermanText{Vor \textbf{sondern} steht normalerweise ein Komma.}
+\EnglishText{There is normally a comma before \textbf{sondern}.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich will nicht schlafen, sondern arbeiten.}{I do not want to sleep, but to work.}
+    \ExampleItem{Das Buch ist nicht teuer, sondern billig.}{The book is not expensive, but cheap.}
+    \ExampleItem{Sie ist nicht müde, sondern krank.}{She is not tired, but sick.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{sondern oder aber?}
+
+\begin{grammarentry}{sondern}{correction after negation}
+\GermanText{Man benutzt \textbf{sondern}, wenn der erste Teil verneint ist und der zweite Teil die richtige Alternative ist.}
+\EnglishText{Use \textbf{sondern} when the first part is negated and the second part is the correct alternative.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich komme nicht am Montag, sondern am Dienstag.}{I am not coming on Monday, but on Tuesday.}
+    \ExampleItem{Das ist nicht mein Handy, sondern dein Handy.}{That is not my phone, but your phone.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{aber}{contrast}
+\GermanText{Man benutzt \textbf{aber}, wenn es nur einen Gegensatz gibt. Der erste Teil muss nicht falsch sein.}
+\EnglishText{Use \textbf{aber} when there is only a contrast. The first part does not have to be wrong.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich bin müde, aber ich arbeite weiter.}{I am tired, but I keep working.}
+    \ExampleItem{Das Auto ist teuer, aber gut.}{The car is expensive, but good.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{typischer Unterschied}{typical difference}
+\GermanText{\textbf{aber} zeigt oft einen Gegensatz. \textbf{sondern} korrigiert oft eine falsche Alternative nach einer Verneinung.}
+\EnglishText{\textbf{aber} often shows a contrast. \textbf{sondern} often corrects a wrong alternative after a negation.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich bin müde, aber glücklich.}{I am tired, but happy.}
+    \ExampleItem{Ich bin nicht müde, sondern krank.}{I am not tired, but sick.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{nicht nur \ldots{}, sondern auch}
+
+\begin{grammarentry}{nicht nur A, sondern auch B}{not only A, but also B}
+\GermanText{Die Struktur \textbf{nicht nur A, sondern auch B} bedeutet: A ist richtig und B ist auch richtig.}
+\EnglishText{The structure \textbf{not only A, but also B} means: A is true and B is also true.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Er spricht nicht nur Deutsch, sondern auch Englisch.}{He speaks not only German, but also English.}
+    \ExampleItem{Sie arbeitet nicht nur schnell, sondern auch genau.}{She works not only fast, but also accurately.}
+    \ExampleItem{Das ist nicht nur wichtig, sondern auch dringend.}{That is not only important, but also urgent.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Typische Fehler}
+
+\begin{grammarentry}{Fehler 1: sondern ohne Verneinung}{wrong use without negation}
+\GermanText{\textbf{sondern} braucht normalerweise eine Verneinung im ersten Teil. Ohne Verneinung benutzt man meistens \textbf{aber}.}
+\EnglishText{\textbf{sondern} normally needs a negation in the first part. Without negation, one usually uses \textbf{aber}.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Falsch: Ich bin müde, sondern ich arbeite.}{Wrong: I am tired, but I work.}
+    \ExampleItem{Richtig: Ich bin müde, aber ich arbeite.}{Correct: I am tired, but I work.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Fehler 2: falsche Wortstellung}{wrong word order}
+\GermanText{Nach \textbf{sondern} kommt keine Inversion wie nach manchen Adverbien.}
+\EnglishText{After \textbf{sondern}, there is no inversion as after some adverbs.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Falsch: Ich gehe nicht nach Hause, sondern bleibe ich hier.}{Wrong: I am not going home, but stay I here.}
+    \ExampleItem{Richtig: Ich gehe nicht nach Hause, sondern ich bleibe hier.}{Correct: I am not going home, but I am staying here.}
+    \ExampleItem{Auch richtig: Ich gehe nicht nach Hause, sondern bleibe hier.}{Also correct: I am not going home, but stay here.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Kurze Zusammenfassung}
+
+\begin{grammarentry}{sondern}{summary}
+\begin{itemize}
+    \item \GermanText{\textbf{sondern} bedeutet: nicht A, sondern B.}
+    \item \GermanText{Der erste Teil ist normalerweise verneint: \textbf{nicht}, \textbf{kein}, \textbf{nie}, \textbf{niemand}.}
+    \item \GermanText{Vor \textbf{sondern} steht normalerweise ein Komma.}
+    \item \GermanText{\textbf{sondern} verändert die Wortstellung nicht.}
+    \item \GermanText{\textbf{aber} = Gegensatz; \textbf{sondern} = Korrektur nach Verneinung.}
+\end{itemize}
+\end{grammarentry}
+
+\end{document}

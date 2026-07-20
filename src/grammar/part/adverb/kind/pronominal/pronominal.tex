@@ -1,0 +1,243 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Pronominaladverbien}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+    
+    
+    \section{Grundidee}
+        
+        \begin{grammarentry}{Was ist ein Pronominaladverb?}{What is a pronominal adverb?}
+            \GermanText{Ein Pronominaladverb ersetzt eine Präposition mit einem Pronomen, wenn man über Dinge, Themen, Situationen oder abstrakte Sachen spricht.}
+            \EnglishText{A pronominal adverb replaces a preposition plus a pronoun when we talk about things, topics, situations, or abstract matters.}
+            
+            \GermanText{Die Form ist meistens: da + Präposition. Wenn die Präposition mit einem Vokal beginnt, benutzt man dar + Präposition.}
+            \EnglishText{The form is usually: da + preposition. If the preposition begins with a vowel, German uses dar + preposition.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{über + das = darüber}{about it / about that}
+                    \ExampleItem{auf + das = darauf}{on it / about it / for it, depending on the verb}
+                    \ExampleItem{mit + das = damit}{with it / by means of it}
+                    \ExampleItem{an + das = daran}{on it / about it, depending on the verb}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Die wichtigste Regel}
+        
+        \begin{grammarentry}{Für Sachen, nicht für Personen}{For things, not for people}
+            \GermanText{Pronominaladverbien benutzt man normalerweise für Sachen, Themen, Situationen und abstrakte Ideen. Für Personen benutzt man normalerweise Präposition + Personalpronomen.}
+            \EnglishText{Pronominal adverbs are normally used for things, topics, situations, and abstract ideas. For people, German normally uses preposition + personal pronoun.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich spreche darüber.}{I am talking about it.}
+                    \ExampleItem{Ich spreche über ihn.}{I am talking about him.}
+                    \ExampleItem{Ich denke daran.}{I am thinking about it.}
+                    \ExampleItem{Ich denke an sie.}{I am thinking about her.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{darüber und über die}
+        
+        \begin{grammarentry}{Warum ist ``Themen, darüber wir gesprochen haben'' falsch?}{Why is ``Themen, darüber wir gesprochen haben'' wrong?}
+            \GermanText{Darüber ist kein Relativpronomen. Darum kann es in einem Relativsatz nicht direkt nach dem Bezugswort stehen.}
+            \EnglishText{Darüber is not a relative pronoun. Therefore it cannot directly follow the noun in a relative clause.}
+            
+            \GermanText{In einem Relativsatz braucht man Präposition + Relativpronomen: über die, über das, über den, über dem usw.}
+            \EnglishText{In a relative clause, German needs preposition + relative pronoun: über die, über das, über den, über dem, etc.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Das sind Themen, über die wir schon gesprochen haben.}{These are topics that we have already talked about.}
+                    \ExampleItem{Das ist ein Thema, über das wir schon gesprochen haben.}{This is a topic that we have already talked about.}
+                    \ExampleItem{Wir haben darüber schon gesprochen.}{We have already talked about it.}
+                    \ExampleItem{Das sind Themen. Darüber haben wir schon gesprochen.}{These are topics. We have already talked about them.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Hauptsatz und Relativsatz}
+        
+        \begin{grammarentry}{Der Unterschied in der Wortstellung}{The difference in word order}
+            \GermanText{Mit darüber bildet man meistens einen normalen Hauptsatz. In einem Hauptsatz steht das konjugierte Verb auf Position 2.}
+            \EnglishText{With darüber, we usually form a normal main clause. In a main clause, the conjugated verb is in position 2.}
+            
+            \GermanText{Mit über die / über das bildet man oft einen Relativsatz. In einem Relativsatz steht das konjugierte Verb am Ende.}
+            \EnglishText{With über die / über das, we often form a relative clause. In a relative clause, the conjugated verb is at the end.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Darüber haben wir gesprochen.}{We talked about that.}
+                    \ExampleItem{Das ist das Thema, über das wir gesprochen haben.}{This is the topic that we talked about.}
+                    \ExampleItem{Darauf warte ich.}{I am waiting for that.}
+                    \ExampleItem{Das ist die Antwort, auf die ich warte.}{This is the answer that I am waiting for.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Tabelle der wichtigsten Formen}
+        
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{tabular}{>{\bfseries}p{3cm} p{4cm} p{7cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Form} & \color{white}\textbf{Bedeutung} & \color{white}\textbf{Beispiel}  \\
+            darüber                    & about it / about that           & Wir sprechen darüber.           \\
+            darauf                     & on it / for it / about it       & Ich warte darauf.               \\
+            daran                      & on it / about it                & Ich denke daran.                \\
+            damit                      & with it / by means of it        & Ich bin damit zufrieden.        \\
+            dafür                      & for it / in favor of it         & Ich bin dafür.                  \\
+            dagegen                    & against it                      & Ich bin dagegen.                \\
+            davon                      & from it / of it / about it      & Ich habe davon gehört.          \\
+            dazu                       & to it / about it / for it       & Ich sage nichts dazu.           \\
+            darin                      & in it                           & Darin liegt das Problem.        \\
+            daraus                     & out of it / from it             & Daraus habe ich viel gelernt.   \\
+            davor                      & before it / in front of it      & Ich habe Angst davor.           \\
+            danach                     & after it / according to it      & Danach gehe ich nach Hause.     \\
+            darunter                   & under it / among them           & Viele Menschen leiden darunter. \\
+        \end{tabular}
+    
+    
+    \section{Frageformen mit wo}
+        
+        \begin{grammarentry}{wo + Präposition}{wo + preposition}
+            \GermanText{Für Fragen benutzt man oft wo + Präposition. Wenn die Präposition mit einem Vokal beginnt, benutzt man wor + Präposition.}
+            \EnglishText{For questions, German often uses wo + preposition. If the preposition begins with a vowel, German uses wor + preposition.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Worüber sprichst du?}{What are you talking about?}
+                    \ExampleItem{Worauf wartest du?}{What are you waiting for?}
+                    \ExampleItem{Woran denkst du?}{What are you thinking about?}
+                    \ExampleItem{Womit bist du zufrieden?}{What are you satisfied with?}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Antwortformen mit da}
+        
+        \begin{grammarentry}{da + Präposition als Antwort}{da + preposition as an answer}
+            \GermanText{Die Antwort auf eine wo-Frage ist oft ein Pronominaladverb mit da.}
+            \EnglishText{The answer to a wo-question is often a pronominal adverb with da.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Worüber sprichst du? -- Ich spreche darüber.}{What are you talking about? -- I am talking about it.}
+                    \ExampleItem{Worauf wartest du? -- Ich warte darauf.}{What are you waiting for? -- I am waiting for it.}
+                    \ExampleItem{Woran denkst du? -- Ich denke daran.}{What are you thinking about? -- I am thinking about it.}
+                    \ExampleItem{Womit arbeitest du? -- Ich arbeite damit.}{What are you working with? -- I am working with it.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Relativsätze mit Präposition}
+        
+        \begin{grammarentry}{über die, über das, auf die, worüber}{about which, for which}
+            \GermanText{Wenn das Bezugswort direkt vor dem Relativsatz steht, benutzt man normalerweise Präposition + Relativpronomen.}
+            \EnglishText{If the reference noun stands directly before the relative clause, German normally uses preposition + relative pronoun.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Das sind Themen, über die wir sprechen können.}{These are topics that we can talk about.}
+                    \ExampleItem{Das ist ein Problem, über das ich nachdenken muss.}{This is a problem that I have to think about.}
+                    \ExampleItem{Das ist eine Frage, auf die ich keine Antwort habe.}{This is a question that I have no answer to.}
+                    \ExampleItem{Das ist etwas, worüber ich oft nachdenke.}{This is something that I often think about.}
+                \end{itemize}
+            \end{exbox}
+            
+            \GermanText{Bei etwas, nichts, alles und vieles benutzt man oft worüber, woran, worauf usw.}
+            \EnglishText{With etwas, nichts, alles, and vieles, German often uses worüber, woran, worauf, etc.}
+        \end{grammarentry}
+    
+    
+    \section{Typische Fehler}
+        
+        \begin{grammarentry}{Fehler, die man vermeiden sollte}{Mistakes to avoid}
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Falsch: Das sind Themen, darüber wir gesprochen haben.}{Wrong: These are topics, about it we have talked.}
+                    \ExampleItem{Richtig: Das sind Themen, über die wir gesprochen haben.}{Correct: These are topics that we have talked about.}
+                    \ExampleItem{Falsch: Ich spreche über das.}{Usually wrong or unnatural when ``das'' means a general thing.}
+                    \ExampleItem{Richtig: Ich spreche darüber.}{Correct: I am talking about it.}
+                    \ExampleItem{Falsch: Ich denke daran meine Mutter.}{Wrong: I think about it my mother.}
+                    \ExampleItem{Richtig: Ich denke an meine Mutter.}{Correct: I think about my mother.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Sehr kurze Zusammenfassung}
+        
+        \begin{grammarentry}{Merksatz}{Memory rule}
+            \GermanText{Wenn du über eine Sache sprichst und keinen Relativsatz baust, benutze oft darüber, darauf, daran, damit usw.}
+            \EnglishText{If you talk about a thing and you are not building a relative clause, often use darüber, darauf, daran, damit, etc.}
+            
+            \GermanText{Wenn du einen Relativsatz nach einem Nomen baust, benutze Präposition + Relativpronomen: über die, über das, auf die, an den usw.}
+            \EnglishText{If you build a relative clause after a noun, use preposition + relative pronoun: über die, über das, auf die, an den, etc.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Wir haben darüber gesprochen.}{We talked about it.}
+                    \ExampleItem{Das sind Themen, über die wir gesprochen haben.}{These are topics that we talked about.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+
+\end{document}

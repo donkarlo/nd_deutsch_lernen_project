@@ -1,0 +1,383 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{longtable}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Das Passiv in verschiedenen Zeitformen}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+\section{Grundidee}
+
+\begin{grammarentry}{Passiv}{passive voice}
+\GermanText{Im Passiv ist die Handlung oder der Zustand wichtig. Die Person, die etwas macht, ist oft nicht wichtig oder unbekannt.}
+\EnglishText{In the passive voice, the action or state is important. The person who does something is often not important or unknown.}
+
+\GermanText{Es gibt zwei wichtige Arten: \textbf{Vorgangspassiv} und \textbf{Zustandspassiv}.}
+\EnglishText{There are two important types: \textbf{process passive} and \textbf{state passive}.}
+\end{grammarentry}
+
+\section{Vorgangspassiv: werden + Partizip II}
+
+\begin{grammarentry}{Bildung}{formation}
+\GermanText{Das Vorgangspassiv zeigt eine Handlung oder einen Prozess.}
+\EnglishText{The process passive shows an action or a process.}
+
+\GermanText{Form: \textbf{werden + Partizip II}}
+\EnglishText{Form: \textbf{werden + past participle}}
+
+\begin{center}
+\begin{tabular}{lll}
+\textbf{Aktiv} & \textbf{Passiv} & \textbf{English} \\
+\hline
+Der Mann öffnet die Tür. & Die Tür wird geöffnet. & The door is opened. \\
+Sie schreibt den Text. & Der Text wird geschrieben. & The text is written. \\
+Die Medien beeinflussen die Gesellschaft. & Die Gesellschaft wird beeinflusst. & Society is influenced. \\
+\end{tabular}
+\end{center}
+\end{grammarentry}
+
+\section{Zeitformen im Vorgangspassiv}
+
+\begin{grammarentry}{Übersicht}{overview}
+\GermanText{Das Partizip II bleibt gleich. Die Zeit sieht man an der Form von \textbf{werden} oder an der Hilfsverbform.}
+\EnglishText{The past participle stays the same. The tense is shown by the form of \textbf{werden} or by the auxiliary verb form.}
+
+\begin{center}
+\begin{tabular}{lll}
+\textbf{Zeit} & \textbf{Form} & \textbf{English} \\
+\hline
+Präsens & Die Tür wird geöffnet. & The door is opened. \\
+Präteritum & Die Tür wurde geöffnet. & The door was opened. \\
+Perfekt & Die Tür ist geöffnet worden. & The door has been opened. \\
+Plusquamperfekt & Die Tür war geöffnet worden. & The door had been opened. \\
+Futur I & Die Tür wird geöffnet werden. & The door will be opened. \\
+Futur II & Die Tür wird geöffnet worden sein. & The door will have been opened. \\
+\end{tabular}
+\end{center}
+\end{grammarentry}
+
+\subsection{Präsens}
+
+\begin{grammarentry}{wird/werden + Partizip II}{present passive}
+\GermanText{Form: \textbf{werden im Präsens + Partizip II}}
+\EnglishText{Form: \textbf{werden in present tense + past participle}}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Die Tür wird geöffnet.}{The door is opened.}
+    \ExampleItem{Der Text wird korrigiert.}{The text is corrected.}
+    \ExampleItem{Die Massenmedien werden kritisiert.}{The mass media are criticized.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\subsection{Präteritum}
+
+\begin{grammarentry}{wurde/wurden + Partizip II}{simple past passive}
+\GermanText{Form: \textbf{werden im Präteritum + Partizip II}}
+\EnglishText{Form: \textbf{werden in simple past + past participle}}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Die Tür wurde geöffnet.}{The door was opened.}
+    \ExampleItem{Der Text wurde korrigiert.}{The text was corrected.}
+    \ExampleItem{Die Massenmedien wurden kritisiert.}{The mass media were criticized.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\subsection{Perfekt}
+
+\begin{grammarentry}{ist/sind + Partizip II + worden}{perfect passive}
+\GermanText{Form: \textbf{sein im Präsens + Partizip II + worden}}
+\EnglishText{Form: \textbf{sein in present tense + past participle + worden}}
+
+\GermanText{Im Perfekt-Passiv benutzt man \textbf{worden}, nicht \textbf{geworden}.}
+\EnglishText{In the perfect passive, use \textbf{worden}, not \textbf{geworden}.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Die Tür ist geöffnet worden.}{The door has been opened.}
+    \ExampleItem{Der Text ist korrigiert worden.}{The text has been corrected.}
+    \ExampleItem{Die Massenmedien sind kritisiert worden.}{The mass media have been criticized.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\subsection{Plusquamperfekt}
+
+\begin{grammarentry}{war/waren + Partizip II + worden}{pluperfect passive}
+\GermanText{Form: \textbf{sein im Präteritum + Partizip II + worden}}
+\EnglishText{Form: \textbf{sein in simple past + past participle + worden}}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Die Tür war geöffnet worden.}{The door had been opened.}
+    \ExampleItem{Der Text war korrigiert worden.}{The text had been corrected.}
+    \ExampleItem{Die Massenmedien waren kritisiert worden.}{The mass media had been criticized.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\subsection{Futur I}
+
+\begin{grammarentry}{wird/werden + Partizip II + werden}{future passive}
+\GermanText{Form: \textbf{werden im Präsens + Partizip II + werden}}
+\EnglishText{Form: \textbf{werden in present tense + past participle + werden}}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Die Tür wird geöffnet werden.}{The door will be opened.}
+    \ExampleItem{Der Text wird korrigiert werden.}{The text will be corrected.}
+    \ExampleItem{Die Massenmedien werden kritisiert werden.}{The mass media will be criticized.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\subsection{Futur II}
+
+\begin{grammarentry}{wird/werden + Partizip II + worden sein}{future perfect passive}
+\GermanText{Form: \textbf{werden im Präsens + Partizip II + worden sein}}
+\EnglishText{Form: \textbf{werden in present tense + past participle + worden sein}}
+
+\GermanText{Futur II Passiv ist möglich, aber im Alltag selten.}
+\EnglishText{The future perfect passive is possible, but rare in everyday language.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Die Tür wird geöffnet worden sein.}{The door will have been opened.}
+    \ExampleItem{Der Text wird korrigiert worden sein.}{The text will have been corrected.}
+    \ExampleItem{Die Massenmedien werden kritisiert worden sein.}{The mass media will have been criticized.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Vorgangspassiv mit Modalverben}
+
+\begin{grammarentry}{Modalverb + Partizip II + werden}{passive with modal verbs}
+\GermanText{Mit Modalverben steht im einfachen Satz am Ende: \textbf{Partizip II + werden}.}
+\EnglishText{With modal verbs, the end of a simple sentence is: \textbf{past participle + werden}.}
+
+\begin{center}
+\begin{tabular}{lll}
+\textbf{Zeit} & \textbf{Form} & \textbf{English} \\
+\hline
+Präsens & Die Tür muss geöffnet werden. & The door must be opened. \\
+Präteritum & Die Tür musste geöffnet werden. & The door had to be opened. \\
+Perfekt & Die Tür hat geöffnet werden müssen. & The door has had to be opened. \\
+Plusquamperfekt & Die Tür hatte geöffnet werden müssen. & The door had had to be opened. \\
+Futur I & Die Tür wird geöffnet werden müssen. & The door will have to be opened. \\
+\end{tabular}
+\end{center}
+\end{grammarentry}
+
+\begin{grammarentry}{Beispiele mit Modalverben}{examples with modal verbs}
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Der Text kann korrigiert werden.}{The text can be corrected.}
+    \ExampleItem{Der Text konnte korrigiert werden.}{The text could be corrected.}
+    \ExampleItem{Der Text hat korrigiert werden können.}{The text has been able to be corrected.}
+    \ExampleItem{Die Regel soll erklärt werden.}{The rule should be explained.}
+    \ExampleItem{Die Regel sollte erklärt werden.}{The rule was supposed to be explained.}
+    \ExampleItem{Die Regel hat erklärt werden sollen.}{The rule has been supposed to be explained.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Zustandspassiv: sein + Partizip II}
+
+\begin{grammarentry}{Bildung}{formation}
+\GermanText{Das Zustandspassiv zeigt einen Zustand nach einer Handlung.}
+\EnglishText{The state passive shows a state after an action.}
+
+\GermanText{Form: \textbf{sein + Partizip II}}
+\EnglishText{Form: \textbf{sein + past participle}}
+
+\begin{center}
+\begin{tabular}{lll}
+\textbf{Vorgangspassiv} & \textbf{Zustandspassiv} & \textbf{English} \\
+\hline
+Die Tür wird geöffnet. & Die Tür ist geöffnet. & The door is open. \\
+Das Fenster wird geschlossen. & Das Fenster ist geschlossen. & The window is closed. \\
+Die Aufgabe wird erledigt. & Die Aufgabe ist erledigt. & The task is done. \\
+\end{tabular}
+\end{center}
+\end{grammarentry}
+
+\section{Zeitformen im Zustandspassiv}
+
+\begin{grammarentry}{Übersicht}{overview}
+\GermanText{Beim Zustandspassiv zeigt die Form von \textbf{sein} die Zeit.}
+\EnglishText{In the state passive, the form of \textbf{sein} shows the tense.}
+
+\begin{center}
+\begin{tabular}{lll}
+\textbf{Zeit} & \textbf{Form} & \textbf{English} \\
+\hline
+Präsens & Die Tür ist geöffnet. & The door is open. \\
+Präteritum & Die Tür war geöffnet. & The door was open. \\
+Perfekt & Die Tür ist geöffnet gewesen. & The door has been open. \\
+Plusquamperfekt & Die Tür war geöffnet gewesen. & The door had been open. \\
+Futur I & Die Tür wird geöffnet sein. & The door will be open. \\
+Futur II & Die Tür wird geöffnet gewesen sein. & The door will have been open. \\
+\end{tabular}
+\end{center}
+\end{grammarentry}
+
+\subsection{Präsens im Zustandspassiv}
+
+\begin{grammarentry}{ist/sind + Partizip II}{present state passive}
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Die Tür ist geöffnet.}{The door is open.}
+    \ExampleItem{Der Text ist korrigiert.}{The text is corrected / finished.}
+    \ExampleItem{Die Aufgabe ist erledigt.}{The task is done.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\subsection{Präteritum im Zustandspassiv}
+
+\begin{grammarentry}{war/waren + Partizip II}{simple past state passive}
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Die Tür war geöffnet.}{The door was open.}
+    \ExampleItem{Der Text war korrigiert.}{The text was corrected / finished.}
+    \ExampleItem{Die Aufgabe war erledigt.}{The task was done.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\subsection{Perfekt im Zustandspassiv}
+
+\begin{grammarentry}{ist/sind + Partizip II + gewesen}{perfect state passive}
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Die Tür ist geöffnet gewesen.}{The door has been open.}
+    \ExampleItem{Der Text ist korrigiert gewesen.}{The text has been corrected / finished.}
+    \ExampleItem{Die Aufgabe ist erledigt gewesen.}{The task has been done.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\subsection{Plusquamperfekt im Zustandspassiv}
+
+\begin{grammarentry}{war/waren + Partizip II + gewesen}{pluperfect state passive}
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Die Tür war geöffnet gewesen.}{The door had been open.}
+    \ExampleItem{Der Text war korrigiert gewesen.}{The text had been corrected / finished.}
+    \ExampleItem{Die Aufgabe war erledigt gewesen.}{The task had been done.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\subsection{Futur I im Zustandspassiv}
+
+\begin{grammarentry}{wird/werden + Partizip II + sein}{future state passive}
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Die Tür wird geöffnet sein.}{The door will be open.}
+    \ExampleItem{Der Text wird korrigiert sein.}{The text will be corrected / finished.}
+    \ExampleItem{Die Aufgabe wird erledigt sein.}{The task will be done.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\subsection{Futur II im Zustandspassiv}
+
+\begin{grammarentry}{wird/werden + Partizip II + gewesen sein}{future perfect state passive}
+\GermanText{Futur II im Zustandspassiv ist grammatisch möglich, aber sehr selten.}
+\EnglishText{The future perfect of the state passive is grammatically possible, but very rare.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Die Tür wird geöffnet gewesen sein.}{The door will have been open.}
+    \ExampleItem{Der Text wird korrigiert gewesen sein.}{The text will have been corrected / finished.}
+    \ExampleItem{Die Aufgabe wird erledigt gewesen sein.}{The task will have been done.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Nebensatz mit Passiv}
+
+\begin{grammarentry}{Verb am Ende}{subordinate clause}
+\GermanText{Im Nebensatz steht die konjugierte Verbform am Ende.}
+\EnglishText{In a subordinate clause, the conjugated verb form goes to the end.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich weiß, dass die Tür geöffnet wird.}{I know that the door is opened.}
+    \ExampleItem{Ich weiß, dass die Tür geöffnet wurde.}{I know that the door was opened.}
+    \ExampleItem{Ich weiß, dass die Tür geöffnet worden ist.}{I know that the door has been opened.}
+    \ExampleItem{Ich weiß, dass die Tür geöffnet werden wird.}{I know that the door will be opened.}
+    \ExampleItem{Ich weiß, dass die Tür geöffnet werden muss.}{I know that the door must be opened.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Kurze Zusammenfassung}
+
+\begin{grammarentry}{Passiv-Zeitformen}{summary}
+\GermanText{Vorgangspassiv: \textbf{werden + Partizip II}.}
+\EnglishText{Process passive: \textbf{werden + past participle}.}
+
+\GermanText{Zustandspassiv: \textbf{sein + Partizip II}.}
+\EnglishText{State passive: \textbf{sein + past participle}.}
+
+\GermanText{Perfekt und Plusquamperfekt im Vorgangspassiv benutzen \textbf{worden}, nicht \textbf{geworden}.}
+\EnglishText{The perfect and pluperfect of the process passive use \textbf{worden}, not \textbf{geworden}.}
+
+\GermanText{In dieser Datei hat jedes normale Zeitkapitel mindestens drei Beispiele.}
+\EnglishText{In this file, each normal tense chapter has at least three examples.}
+\end{grammarentry}
+
+\end{document}

@@ -1,0 +1,206 @@
+\documentclass[a4paper]{article}
+
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{minted}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{todonotes}
+\usepackage{forest}
+\usepackage{xstring}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{xparse}
+\usepackage{natbib}
+
+\usetikzlibrary{graphs,graphdrawing}
+\usegdlibrary{layered}
+
+% for external graphviz
+\input{/home/donkarlo/Dropbox/repo/nd_ai_project/src/nd_ai/knoweldge_representation/language/formal/computer/programming/tex/latex/code_clips/external_graphviz.tex}
+
+% for tags
+\input{/home/donkarlo/Dropbox/repo/nd_ai_project/src/nd_ai/knoweldge_representation/language/formal/computer/programming/tex/latex/parts/control_sequence/kind/semtag/semtag.tex}
+
+% for links
+\input{/home/donkarlo/Dropbox/repo/nd_ai_project/src/nd_ai/knoweldge_representation/language/formal/computer/programming/tex/latex/code_clips/seehere.tex}
+
+\title{Kausal}
+\date{}
+
+\begin{document}
+    \maketitle
+    
+    
+    \section{Einleitung}
+        
+        Diese Wörter und Ausdrücke verwendet man, wenn man einen Grund, eine Ursache oder eine Begründung ausdrücken will. Sie beantworten oft die Frage: „Warum?“
+    
+    
+    \section{Unterordnende Konjunktionen}
+        
+        \subsection{weil}
+            
+            \textbf{Grammatische Rolle:} unterordnende Konjunktion
+            
+            \textbf{Gebrauch:} \emph{weil} leitet einen Nebensatz ein. Das konjugierte Verb steht am Ende.
+            
+            \textbf{Beispiele:}
+            \begin{itemize}
+                \item Ich bleibe zu Hause, weil ich krank bin.
+                \item Er lernt Deutsch, weil er in Österreich arbeitet.
+            \end{itemize}
+        
+        \subsection{da}
+            
+            \textbf{Grammatische Rolle:} unterordnende Konjunktion
+            
+            \textbf{Gebrauch:} \emph{da} leitet ebenfalls einen Nebensatz ein. Das konjugierte Verb steht am Ende. Oft klingt \emph{da} etwas schriftlicher oder formeller als \emph{weil}.
+            
+            \textbf{Beispiele:}
+            \begin{itemize}
+                \item Da ich krank bin, bleibe ich zu Hause.
+                \item Ich kann heute nicht kommen, da ich einen Termin habe.
+            \end{itemize}
+    
+    
+    \section{Beiordnende Konjunktion}
+        
+        \subsection{denn}
+            
+            \textbf{Grammatische Rolle:} beiordnende Konjunktion
+            
+            \textbf{Gebrauch:} \emph{denn} verbindet zwei Hauptsätze. Die normale Wortstellung bleibt erhalten.
+            
+            \textbf{Beispiele:}
+            \begin{itemize}
+                \item Ich bleibe zu Hause, denn ich bin krank.
+                \item Er geht früh schlafen, denn er ist müde.
+            \end{itemize}
+    
+    
+    \section{Konjunktionaladverbien}
+        
+        \subsection{deshalb}
+            
+            \textbf{Grammatische Rolle:} Konjunktionaladverb
+            
+            \textbf{Gebrauch:} \emph{deshalb} steht im Hauptsatz. Meistens steht das Verb direkt danach.
+            
+            \textbf{Beispiele:}
+            \begin{itemize}
+                \item Ich bin krank, deshalb bleibe ich zu Hause.
+                \item Er hat wenig Zeit, deshalb arbeitet er sehr schnell.
+            \end{itemize}
+        
+        \subsection{deswegen}
+            
+            \textbf{Grammatische Rolle:} Konjunktionaladverb
+            
+            \textbf{Gebrauch:} \emph{deswegen} ist sehr ähnlich wie \emph{deshalb} und kommt oft in der gesprochenen Sprache vor.
+            
+            \textbf{Beispiele:}
+            \begin{itemize}
+                \item Ich habe Kopfschmerzen, deswegen gehe ich ins Bett.
+                \item Sie war müde, deswegen ist sie früh nach Hause gegangen.
+            \end{itemize}
+        
+        \subsection{daher}
+            
+            \textbf{Grammatische Rolle:} Konjunktionaladverb
+            
+            \textbf{Gebrauch:} \emph{daher} drückt eine Folge aus und wirkt oft etwas schriftlicher.
+            
+            \textbf{Beispiele:}
+            \begin{itemize}
+                \item Es hat die ganze Nacht geregnet, daher ist die Straße nass.
+                \item Er hat lange geübt, daher spricht er jetzt besser Deutsch.
+            \end{itemize}
+        
+        \subsection{darum}
+            
+            \textbf{Grammatische Rolle:} Konjunktionaladverb
+            
+            \textbf{Gebrauch:} \emph{darum} bedeutet hier „aus diesem Grund“.
+            
+            \textbf{Beispiele:}
+            \begin{itemize}
+                \item Ich habe morgen eine Prüfung, darum lerne ich heute Abend.
+                \item Sie fühlt sich nicht gut, darum bleibt sie heute zu Hause.
+            \end{itemize}
+    
+    
+    \section{Präpositionen und feste Ausdrücke}
+        
+        \subsection{aus diesem Grund}
+            
+            \textbf{Grammatische Rolle:} fester Ausdruck
+            
+            \textbf{Gebrauch:} \emph{aus diesem Grund} ist eher formell und kommt oft in schriftlichen Texten vor.
+            
+            \textbf{Beispiele:}
+            \begin{itemize}
+                \item Er hat die Frist verpasst. Aus diesem Grund wurde der Antrag abgelehnt.
+                \item Das Produkt war beschädigt. Aus diesem Grund habe ich es zurückgeschickt.
+            \end{itemize}
+        
+        \subsection{wegen + Genitiv}
+            
+            \textbf{Grammatische Rolle:} Präposition
+            
+            \textbf{Gebrauch:} \emph{wegen} steht mit einem Nomen und drückt einen Grund aus.
+            
+            \textbf{Beispiele:}
+            \begin{itemize}
+                \item Wegen des schlechten Wetters bleiben wir zu Hause.
+                \item Das Spiel wurde wegen eines technischen Problems abgesagt.
+            \end{itemize}
+        
+        \subsection{aufgrund + Genitiv}
+            
+            \textbf{Grammatische Rolle:} Präposition
+            
+            \textbf{Gebrauch:} \emph{aufgrund} ist eher formell und häufig in offiziellen oder schriftlichen Texten.
+            
+            \textbf{Beispiele:}
+            \begin{itemize}
+                \item Aufgrund eines Unfalls kam es zu einer Verspätung.
+                \item Aufgrund seiner Erfahrung bekam er die Stelle.
+            \end{itemize}
+        
+        \subsection{aus ... Gründen}
+            
+            \textbf{Grammatische Rolle:} Präpositionalgruppe
+            
+            \textbf{Gebrauch:} Diese Struktur wird mit verschiedenen Adjektiven verwendet, zum Beispiel: \emph{aus gesundheitlichen Gründen}, \emph{aus privaten Gründen}.
+            
+            \textbf{Beispiele:}
+            \begin{itemize}
+                \item Aus gesundheitlichen Gründen konnte er nicht kommen.
+                \item Sie hat aus privaten Gründen abgesagt.
+            \end{itemize}
+    
+    
+    \section{Kurzer Überblick}
+        
+        \begin{itemize}
+            \item \textbf{weil, da}: unterordnende Konjunktionen; sie leiten einen Nebensatz ein, das Verb steht am Ende.
+            \item \textbf{denn}: beiordnende Konjunktion; sie verbindet Hauptsätze, die Wortstellung bleibt normal.
+            \item \textbf{deshalb, deswegen, daher, darum}: Konjunktionaladverbien; sie stehen im Hauptsatz.
+            \item \textbf{wegen, aufgrund}: Präpositionen; sie stehen mit einem Nomen.
+        \end{itemize}
+    
+    
+    \section{Vergleich}
+        
+        \begin{itemize}
+            \item Ich bleibe zu Hause, weil ich krank bin.
+            \item Da ich krank bin, bleibe ich zu Hause.
+            \item Ich bleibe zu Hause, denn ich bin krank.
+            \item Ich bin krank, deshalb bleibe ich zu Hause.
+            \item Wegen meiner Krankheit bleibe ich zu Hause.
+        \end{itemize}
+    
+    %\bibliographystyle{plainnat}
+    %\bibliography{/home/donkarlo/Dropbox/repo/nd_shared_research/bibliography/bibliography.bib}
+\end{document}

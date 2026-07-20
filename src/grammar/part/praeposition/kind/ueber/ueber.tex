@@ -1,0 +1,328 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{colortbl}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\newcommand{\Correct}[1]{\textcolor{HeaderBlueDark}{\textbf{#1}}}
+\newcommand{\Wrong}[1]{\textcolor{red!70!black}{\textbf{#1}}}
+
+\title{Die Präposition \glqq über\grqq}
+\date{}
+
+\begin{document}
+    \selectlanguage{ngerman}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+\section{Kurze Grundregel}
+
+\begin{grammarentry}{über}{Präposition + Akkusativ oder Dativ}
+\GermanText{\glqq über\grqq ist eine Wechselpräposition. Bei Ort ohne Richtung steht meistens der Dativ. Bei Richtung oder Bewegung über eine Grenze steht meistens der Akkusativ.}
+\EnglishText{\glqq über\grqq is a two-way preposition. For location without direction, German usually uses the dative. For direction or movement across a boundary, German usually uses the accusative.}
+
+\GermanText{Außerdem benutzt man \glqq über + Akkusativ\grqq sehr oft für ein Thema: über Politik sprechen, über ein Problem nachdenken.}
+\EnglishText{German also often uses \glqq über + accusative\grqq for a topic: to talk about politics, to think about a problem.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Die Lampe hängt über dem Tisch.}{The lamp is hanging above the table.}
+    \ExampleItem{Ich hänge die Lampe über den Tisch.}{I hang the lamp above the table.}
+    \ExampleItem{Wir sprechen über die Prüfung.}{We speak about the exam.}
+    \ExampleItem{Das Flugzeug fliegt über die Stadt.}{The plane flies over the city.}
+\end{itemize}
+\end{exbox}
+
+\section{Kasus 1: über + Dativ}
+
+\begin{grammarentry}{Wo? über + Dativ}{position above something}
+\GermanText{Wenn man fragt \glqq Wo?\grqq und eine Position beschreibt, benutzt man bei \glqq über\grqq normalerweise den Dativ.}
+\EnglishText{When asking \glqq where?\grqq and describing a position, German normally uses the dative with \glqq über\grqq.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{0.23\textwidth}X X}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Genus} & \color{white}\textbf{Nominativ} & \color{white}\textbf{mit über + Dativ} \\
+maskulin & der Tisch & über dem Tisch \\
+feminin & die Tür & über der Tür \\
+neutral & das Bett & über dem Bett \\
+Plural & die Häuser & über den Häusern \\
+\end{tabularx}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Das Bild hängt über dem Sofa.}{The picture is hanging above the sofa.}
+    \ExampleItem{Über der Tür steht ein Name.}{There is a name above the door.}
+    \ExampleItem{Die Wolken sind über den Bergen.}{The clouds are above the mountains.}
+    \ExampleItem{Eine Lampe hängt über dem Bett.}{A lamp is hanging above the bed.}
+\end{itemize}
+\end{exbox}
+
+\section{Kasus 2: über + Akkusativ}
+
+\begin{grammarentry}{Wohin? über + Akkusativ}{direction across / above something}
+\GermanText{Wenn man fragt \glqq Wohin?\grqq und eine Richtung oder Bewegung über etwas beschreibt, benutzt man meistens den Akkusativ.}
+\EnglishText{When asking \glqq where to?\grqq and describing direction or movement over/across something, German usually uses the accusative.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{0.23\textwidth}X X}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Genus} & \color{white}\textbf{Nominativ} & \color{white}\textbf{mit über + Akkusativ} \\
+maskulin & der Fluss & über den Fluss \\
+feminin & die Straße & über die Straße \\
+neutral & das Haus & über das Haus / übers Haus \\
+Plural & die Berge & über die Berge \\
+\end{tabularx}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Wir gehen über die Straße.}{We go across the street.}
+    \ExampleItem{Das Kind springt über den Zaun.}{The child jumps over the fence.}
+    \ExampleItem{Das Flugzeug fliegt über die Alpen.}{The plane flies over the Alps.}
+    \ExampleItem{Er legt die Decke über das Kind.}{He puts the blanket over the child.}
+\end{itemize}
+\end{exbox}
+
+\section{Bedeutung 1: oberhalb von etwas}
+
+\begin{grammarentry}{räumliche Position}{above something}
+\GermanText{\glqq über\grqq kann bedeuten, dass etwas höher als eine andere Sache ist, ohne sie zu berühren.}
+\EnglishText{\glqq über\grqq can mean that something is higher than another thing without touching it.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Die Lampe hängt über dem Tisch.}{The lamp is hanging above the table.}
+    \ExampleItem{Über dem Haus fliegen Vögel.}{Birds are flying above the house.}
+    \ExampleItem{Der Spiegel hängt über dem Waschbecken.}{The mirror is hanging above the sink.}
+\end{itemize}
+\end{exbox}
+
+\section{Bedeutung 2: überqueren / auf die andere Seite}
+
+\begin{grammarentry}{Bewegung über eine Linie oder Fläche}{across / over}
+\GermanText{Bei Bewegung von einer Seite auf die andere Seite benutzt man oft \glqq über + Akkusativ\grqq.}
+\EnglishText{For movement from one side to the other side, German often uses \glqq über + accusative\grqq.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich gehe über die Brücke.}{I walk across the bridge.}
+    \ExampleItem{Wir fahren über die Grenze.}{We drive across the border.}
+    \ExampleItem{Sie läuft über den Platz.}{She runs across the square.}
+    \ExampleItem{Der Ball fliegt über den Zaun.}{The ball flies over the fence.}
+\end{itemize}
+\end{exbox}
+
+\section{Bedeutung 3: Thema}
+
+\begin{grammarentry}{über + Akkusativ}{about / concerning a topic}
+\GermanText{Für ein Thema benutzt man sehr oft \glqq über + Akkusativ\grqq. Das ist besonders wichtig nach Verben wie sprechen, reden, diskutieren, schreiben, nachdenken.}
+\EnglishText{For a topic, German very often uses \glqq über + accusative\grqq. This is especially important after verbs such as speak, talk, discuss, write, think.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{0.34\textwidth}X}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Verb / Ausdruck} & \color{white}\textbf{Beispiel} \\
+sprechen über + Akk. & Wir sprechen über die Demokratie. \\
+reden über + Akk. & Er redet über seine Arbeit. \\
+diskutieren über + Akk. & Sie diskutieren über das Problem. \\
+schreiben über + Akk. & Ich schreibe über soziale Medien. \\
+nachdenken über + Akk. & Wir denken über eine Lösung nach. \\
+sich freuen über + Akk. & Ich freue mich über deine Nachricht. \\
+sich ärgern über + Akk. & Sie ärgert sich über den Fehler. \\
+\end{tabularx}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Heute sprechen wir über die Präpositionen.}{Today we speak about the prepositions.}
+    \ExampleItem{Ich denke über meine Zukunft nach.}{I think about my future.}
+    \ExampleItem{Sie schreibt einen Text über Massenmedien.}{She writes a text about mass media.}
+    \ExampleItem{Wir diskutieren über eine bessere Demokratie.}{We discuss a better democracy.}
+\end{itemize}
+\end{exbox}
+
+\section{Bedeutung 4: mehr als}
+
+\begin{grammarentry}{über + Zahl}{more than / over}
+\GermanText{Mit Zahlen bedeutet \glqq über\grqq oft \glqq mehr als\grqq. Danach steht die Zahl im Akkusativ, wenn ein Artikel oder Adjektiv dekliniert wird.}
+\EnglishText{With numbers, \glqq über\grqq often means \glqq more than\grqq. The number phrase is treated as accusative when an article or adjective is declined.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Über hundert Menschen waren dort.}{More than one hundred people were there.}
+    \ExampleItem{Das kostet über zwanzig Euro.}{That costs over twenty euros.}
+    \ExampleItem{Er ist über achtzig Jahre alt.}{He is over eighty years old.}
+    \ExampleItem{Die Diskussion dauerte über eine Stunde.}{The discussion lasted over one hour.}
+\end{itemize}
+\end{exbox}
+
+\section{Bedeutung 5: Mittel oder Weg}
+
+\begin{grammarentry}{über + Akkusativ}{via / through / by means of}
+\GermanText{\glqq über\grqq kann auch den Weg, Kanal oder das Mittel zeigen, durch das etwas passiert.}
+\EnglishText{\glqq über\grqq can also show the route, channel, or means through which something happens.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich habe die Information über das Internet gefunden.}{I found the information via the internet.}
+    \ExampleItem{Wir haben über WhatsApp gesprochen.}{We spoke via WhatsApp.}
+    \ExampleItem{Die Nachricht kam über einen Freund.}{The message came through a friend.}
+\end{itemize}
+\end{exbox}
+
+\section{Bedeutung 6: während eines Zeitraums}
+
+\begin{grammarentry}{über + Zeitraum}{over / during}
+\GermanText{Mit einem Zeitraum kann \glqq über\grqq bedeuten, dass etwas während der ganzen oder fast ganzen Zeit dauert.}
+\EnglishText{With a period of time, \glqq über\grqq can mean that something lasts during all or almost all of that time.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Über das Wochenende bleibe ich zu Hause.}{Over the weekend, I stay at home.}
+    \ExampleItem{Über Jahre hat sich die Situation verändert.}{Over the years, the situation changed.}
+    \ExampleItem{Über Nacht wurde es kalt.}{It became cold overnight.}
+\end{itemize}
+\end{exbox}
+
+\section{Kontraktion: übers}
+
+\begin{grammarentry}{übers}{über + das}
+\GermanText{\glqq übers\grqq ist die Kurzform von \glqq über das\grqq. Sie ist in der Alltagssprache sehr häufig.}
+\EnglishText{\glqq übers\grqq is the short form of \glqq über das\grqq. It is very common in everyday language.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Wir sprechen übers Wetter.}{We speak about the weather.}
+    \ExampleItem{Das Flugzeug fliegt übers Meer.}{The plane flies over the sea.}
+    \ExampleItem{Ich habe es übers Internet bestellt.}{I ordered it via the internet.}
+\end{itemize}
+\end{exbox}
+
+\section{Unterschied: über, auf, um}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{0.16\textwidth}X X}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Form} & \color{white}\textbf{Deutsch} & \color{white}\textbf{English} \\
+über & Die Lampe hängt über dem Tisch. & The lamp is above the table. \\
+auf & Das Buch liegt auf dem Tisch. & The book is on the table. \\
+um & Wir sitzen um den Tisch. & We sit around the table. \\
+\end{tabularx}
+
+\section{Häufige Fehler}
+
+\begin{grammarentry}{Fehler 1}{Dativ statt Akkusativ bei Thema}
+\GermanText{Bei einem Thema benutzt man normalerweise \glqq über + Akkusativ\grqq, nicht Dativ.}
+\EnglishText{For a topic, German normally uses \glqq über + accusative\grqq, not dative.}
+\begin{itemize}
+    \item \Wrong{Wir sprechen über dem Problem.}
+    \item \Correct{Wir sprechen über das Problem.}
+\end{itemize}
+\end{grammarentry}
+
+\begin{grammarentry}{Fehler 2}{Akkusativ statt Dativ bei Position}
+\GermanText{Wenn nur die Position gemeint ist, benutzt man den Dativ.}
+\EnglishText{If only the position is meant, German uses the dative.}
+\begin{itemize}
+    \item \Wrong{Die Lampe hängt über den Tisch.}
+    \item \Correct{Die Lampe hängt über dem Tisch.}
+\end{itemize}
+\end{grammarentry}
+
+\begin{grammarentry}{Fehler 3}{falsches Verb am Satzende}
+\GermanText{In Nebensätzen mit \glqq dass\grqq oder \glqq weil\grqq steht das konjugierte Verb am Ende.}
+\EnglishText{In subordinate clauses with \glqq dass\grqq or \glqq weil\grqq, the conjugated verb stands at the end.}
+\begin{itemize}
+    \item \Wrong{Ich denke, dass wir über dieses Thema sprechen müssen nicht.}
+    \item \Correct{Ich denke, dass wir über dieses Thema nicht sprechen müssen.}
+\end{itemize}
+\end{grammarentry}
+
+\section{Mini-Zusammenfassung}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{0.28\textwidth}X X}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Funktion} & \color{white}\textbf{Deutsch} & \color{white}\textbf{English} \\
+Position & über dem Tisch & above the table \\
+Richtung & über den Fluss & across the river \\
+Thema & über Demokratie sprechen & to speak about democracy \\
+Zahl & über hundert Menschen & more than one hundred people \\
+Mittel / Kanal & über das Internet & via the internet \\
+Zeitraum & über das Wochenende & over the weekend \\
+\end{tabularx}
+
+\section{Kurze Übung}
+
+\GermanText{Ergänze die richtige Form nach \glqq über\grqq.}
+\EnglishText{Complete the correct form after \glqq über\grqq.}
+
+\begin{enumerate}
+    \item Die Lampe hängt über \underline{\hspace{2.5cm}} Tisch. \hfill der Tisch
+    \item Wir sprechen über \underline{\hspace{2.5cm}} Prüfung. \hfill die Prüfung
+    \item Das Kind springt über \underline{\hspace{2.5cm}} Zaun. \hfill der Zaun
+    \item Ich habe es über \underline{\hspace{2.5cm}} Internet gefunden. \hfill das Internet
+\end{enumerate}
+
+\subsection{Lösung}
+
+\begin{enumerate}
+    \item Die Lampe hängt über \Correct{dem} Tisch.
+    \item Wir sprechen über \Correct{die} Prüfung.
+    \item Das Kind springt über \Correct{den} Zaun.
+    \item Ich habe es über \Correct{das} Internet gefunden.
+\end{enumerate}
+
+\end{document}

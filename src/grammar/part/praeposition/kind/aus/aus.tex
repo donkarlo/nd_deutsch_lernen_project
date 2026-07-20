@@ -1,0 +1,231 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Die Präposition \textit{aus}}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+\section{Grundbedeutung}
+
+\begin{grammarentry}{aus}{preposition; always with Dativ}
+\GermanText{\textbf{aus} bedeutet meistens \textit{from}, \textit{out of} oder \textit{because of}.}
+\EnglishText{\textbf{aus} usually means \textit{from}, \textit{out of}, or \textit{because of}.}
+
+\GermanText{\textbf{Grammatik:} aus + Dativ}
+\EnglishText{\textbf{Grammar:} aus + dative}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich komme aus dem Iran.}{I come from Iran.}
+    \ExampleItem{Er geht aus dem Haus.}{He goes out of the house.}
+    \ExampleItem{Sie nimmt das Buch aus der Tasche.}{She takes the book out of the bag.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Dativ nach \textit{aus}}
+
+\begin{grammarentry}{aus + Dativ}{case rule}
+\GermanText{Nach \textbf{aus} steht immer der Dativ.}
+\EnglishText{After \textbf{aus}, the noun or pronoun is always in the dative case.}
+
+\begin{center}
+\begin{tabular}{lll}
+\textbf{Nominativ} & \textbf{Dativ nach aus} & \textbf{English} \\
+\hline
+\textit{der} Mann & aus \textbf{dem} Mann & from the man \\
+\textit{die} Tasche & aus \textbf{der} Tasche & from/out of the bag \\
+\textit{das} Haus & aus \textbf{dem} Haus & from/out of the house \\
+\textit{die} Länder & aus \textbf{den} Ländern & from the countries \\
+\end{tabular}
+\end{center}
+
+\GermanText{Bei Plural im Dativ bekommt das Nomen oft ein \textbf{-n}: aus den Länder\textbf{n}.}
+\EnglishText{In plural dative, the noun often gets \textbf{-n}: aus den Länder\textbf{n}.}
+\end{grammarentry}
+
+\section{Wichtige Bedeutungen von \textit{aus}}
+
+\begin{grammarentry}{Herkunft}{origin; from}
+\GermanText{\textbf{aus} zeigt die Herkunft einer Person oder Sache.}
+\EnglishText{\textbf{aus} shows where a person or thing comes from.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich komme aus Österreich.}{I come from Austria.}
+    \ExampleItem{Das Auto kommt aus Deutschland.}{The car comes from Germany.}
+    \ExampleItem{Er ist aus Wien.}{He is from Vienna.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Bewegung von innen nach außen}{out of}
+\GermanText{\textbf{aus} zeigt eine Bewegung von innen nach außen.}
+\EnglishText{\textbf{aus} shows movement from inside to outside.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich gehe aus dem Zimmer.}{I go out of the room.}
+    \ExampleItem{Er nimmt das Geld aus der Tasche.}{He takes the money out of the pocket.}
+    \ExampleItem{Sie steigt aus dem Auto.}{She gets out of the car.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Material}{made of}
+\GermanText{\textbf{aus} zeigt das Material.}
+\EnglishText{\textbf{aus} shows the material something is made of.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Der Tisch ist aus Holz.}{The table is made of wood.}
+    \ExampleItem{Die Flasche ist aus Glas.}{The bottle is made of glass.}
+    \ExampleItem{Der Ring ist aus Gold.}{The ring is made of gold.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Grund oder Motiv}{because of; out of}
+\GermanText{\textbf{aus} kann auch einen Grund oder ein Motiv zeigen.}
+\EnglishText{\textbf{aus} can also show a reason or motive.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Er hilft ihr aus Freundschaft.}{He helps her out of friendship.}
+    \ExampleItem{Sie sagt nichts aus Angst.}{She says nothing out of fear.}
+    \ExampleItem{Ich habe es aus Versehen gemacht.}{I did it by accident.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Pronomen nach \textit{aus}}
+
+\begin{grammarentry}{aus + Dativpronomen}{from me, from you, from them}
+\GermanText{Nach \textbf{aus} benutzt man Dativpronomen.}
+\EnglishText{After \textbf{aus}, dative pronouns are used.}
+
+\begin{center}
+\begin{tabular}{lll}
+\textbf{Deutsch} & \textbf{Beispiel} & \textbf{English} \\
+\hline
+mir & aus mir & from me / out of me \\
+dir & aus dir & from you / out of you \\
+ihm & aus ihm & from him/it / out of him/it \\
+ihr & aus ihr & from her/it / out of her/it \\
+uns & aus uns & from us / out of us \\
+euch & aus euch & from you / out of you \\
+ihnen & aus ihnen & from them / out of them \\
+\end{tabular}
+\end{center}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Was wird aus ihm?}{What will become of him?}
+    \ExampleItem{Ich mache das aus Liebe zu ihr.}{I do that out of love for her.}
+    \ExampleItem{Viele Informationen kommen aus den Massenmedien.}{Much information comes from the mass media.}
+    \ExampleItem{Viele Informationen kommen aus ihnen.}{Much information comes from them.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Unterschied zwischen \textit{aus} und \textit{von}}
+
+\begin{grammarentry}{aus vs. von}{from}
+\GermanText{\textbf{aus} benutzt man oft für Herkunft, Innenraum, Material oder Grund.}
+\EnglishText{\textbf{aus} is often used for origin, inside-to-outside movement, material, or reason.}
+
+\GermanText{\textbf{von} benutzt man oft für Personen, Orte als Startpunkt oder Besitz/Quelle.}
+\EnglishText{\textbf{von} is often used for people, places as a starting point, or possession/source.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich komme aus dem Iran.}{I come from Iran.}
+    \ExampleItem{Ich komme vom Arzt.}{I come from the doctor.}
+    \ExampleItem{Das Geschenk ist von meiner Schwester.}{The gift is from my sister.}
+    \ExampleItem{Der Tisch ist aus Holz.}{The table is made of wood.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{\textit{aus} als Verbpräfix}
+
+\begin{grammarentry}{aus-}{separable verb prefix}
+\GermanText{\textbf{aus-} kann auch ein trennbares Verbpräfix sein.}
+\EnglishText{\textbf{aus-} can also be a separable verb prefix.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich schalte das Licht aus.}{I turn off the light.}
+    \ExampleItem{Er geht heute Abend aus.}{He goes out this evening.}
+    \ExampleItem{Der Kurs fällt aus.}{The course is cancelled.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Kurze Zusammenfassung}
+
+\begin{grammarentry}{aus}{summary}
+\GermanText{\textbf{aus} ist eine Präposition mit Dativ.}
+\EnglishText{\textbf{aus} is a preposition with dative.}
+
+\GermanText{Hauptbedeutungen: Herkunft, Bewegung von innen nach außen, Material, Grund/Motiv.}
+\EnglishText{Main meanings: origin, movement from inside to outside, material, reason/motive.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{aus dem Haus}{out of the house}
+    \ExampleItem{aus Österreich}{from Austria}
+    \ExampleItem{aus Holz}{made of wood}
+    \ExampleItem{aus Angst}{out of fear}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\end{document}

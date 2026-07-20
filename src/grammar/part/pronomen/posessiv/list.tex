@@ -1,0 +1,47 @@
+\documentclass[a4paper]{article}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\usepackage{minted}
+\usepackage{multirow}
+
+\title{}
+\date{}
+\begin{document}
+    \maketitle
+    \begin{table}[h]
+        \centering
+        \resizebox{\textwidth}{!}{%
+            \begin{tabular}{|l|l|c|c|c|c|c|c|c|c|}
+                \hline
+                \textbf{Case} &      & \textbf{Ich} & \textbf{Du} & \textbf{Er} & \textbf{Sie} & \textbf{Es} & \textbf{Wir} & \textbf{Ihr} & \textbf{Sie} \\
+                \hline
+                \multirow{2}{*}{Nominativ}
+                & m/n  & mein         & dein        & sein        & ihr          & sein        & unser        & euer         & ihr          \\
+                \cline{2-10}
+                & f/pl & meine        & deine       & seine       & ihre         & seine       & unsere       & eure         & ihre         \\
+                \hline
+                \multirow{2}{*}{Genitiv}
+                & m/n  & meines       & deines      & seines      & ihres        & seines      & unseres      & eures        & ihres        \\
+                \cline{2-10}
+                & f/pl & meiner       & deiner      & seiner      & ihrer        & seiner      & unserer      & eurer        & ihrer        \\
+                \hline
+                \multirow{3}{*}{Dativ}
+                & m/n  & meinem       & deinem      & seinem      & ihrem        & seinem      & unserem      & eurem        & ihrem        \\
+                \cline{2-10}
+                & f    & meiner       & deiner      & seiner      & ihrer        & seiner      & unserer      & eurer        & ihrer        \\
+                \cline{2-10}
+                & pl   & meinen       & deinen      & seinen      & ihren        & seinen      & unseren      & euren        & ihren        \\
+                \hline
+                \multirow{3}{*}{Akkusativ}
+                & m    & meinen       & deinen      & seinen      & ihren        & seinen      & unseren      & euren        & ihren        \\
+                \cline{2-10}
+                & n    & mein         & dein        & sein        & ihr          & sein        & unser        & euer         & ihr          \\
+                \cline{2-10}
+                & f/pl & meine        & deine       & seine       & ihre         & seine       & unsere       & eure         & ihre         \\
+                \hline
+            \end{tabular}
+        }
+    \end{table}
+
+\end{document}

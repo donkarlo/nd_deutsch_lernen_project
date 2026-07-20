@@ -1,0 +1,251 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Substantivierte Adjektive}
+\date{}
+
+\begin{document}
+    
+    \maketitle
+    \tableofcontents
+    \newpage
+    
+    
+    \section{Was sind substantivierte Adjektive?}
+        
+        \begin{grammarentry}{Definition}{Definition}
+            
+            \GermanText{
+                Ein substantiviertes Adjektiv ist ein Adjektiv, das wie ein Nomen verwendet wird.
+                Es wird deshalb gro{\ss}geschrieben und kann Artikel, Pronomen oder andere Begleiter haben.
+            }
+            
+            \EnglishText{
+                A substantivized adjective is an adjective that is used as a noun.
+                Therefore, it is written with a capital letter and can be used with articles, pronouns, and determiners.
+            }
+            
+            \GermanText{
+                Beispiele:
+                \begin{itemize}
+                    \item gut $\rightarrow$ das Gute
+                    \item neu $\rightarrow$ etwas Neues
+                    \item alt $\rightarrow$ der Alte
+                    \item jung $\rightarrow$ die Junge
+                \end{itemize}
+            }
+            
+            \EnglishText{
+                Examples:
+                \begin{itemize}
+                    \item good $\rightarrow$ the good
+                    \item new $\rightarrow$ something new
+                    \item old $\rightarrow$ the old man
+                    \item young $\rightarrow$ the young woman
+                \end{itemize}
+            }
+        
+        \end{grammarentry}
+    
+    
+    \section{Warum sagt man ``etwas Abstraktes''?}
+        
+        \begin{grammarentry}{Etwas + substantiviertes Adjektiv}{Something + substantivized adjective}
+            
+            \GermanText{
+                Nach W\"ortern wie \textit{etwas}, \textit{nichts}, \textit{viel}, \textit{wenig} und \textit{manches}
+                steht oft ein substantiviertes Adjektiv.
+            }
+            
+            \EnglishText{
+                After words such as \textit{something}, \textit{nothing}, \textit{much},
+                \textit{little}, and \textit{some}, German often uses a substantivized adjective.
+            }
+            
+            \GermanText{
+                Deshalb sagt man:
+                \begin{itemize}
+                    \item etwas Neues
+                    \item etwas Interessantes
+                    \item etwas Sch\"ones
+                    \item etwas Abstraktes
+                \end{itemize}
+            }
+            
+            \EnglishText{
+                Therefore German says:
+                \begin{itemize}
+                    \item something new
+                    \item something interesting
+                    \item something beautiful
+                    \item something abstract
+                \end{itemize}
+            }
+            
+            \GermanText{
+                In dem Satz \glqq Leitung ist oft etwas Abstraktes\grqq{}
+                ist \glqq Abstraktes\grqq{} kein Genitiv.
+                Es ist ein substantiviertes Adjektiv.
+            }
+            
+            \EnglishText{
+                In the sentence ``Leitung ist oft etwas Abstraktes'',
+                ``Abstraktes'' is not a genitive form.
+                It is a substantivized adjective.
+            }
+        
+        \end{grammarentry}
+    
+    
+    \section{Typische Beispiele}
+        
+        \begin{exbox}
+            
+            \begin{itemize}
+                
+                \ExampleItem
+                {Ich habe etwas Neues gelernt.}
+                {I learned something new.}
+                
+                \ExampleItem
+                {Heute ist nichts Besonderes passiert.}
+                {Nothing special happened today.}
+                
+                \ExampleItem
+                {Das Gute an Deutsch ist die klare Grammatik.}
+                {The good thing about German is the clear grammar.}
+                
+                \ExampleItem
+                {Sie sucht etwas Interessantes zum Lesen.}
+                {She is looking for something interesting to read.}
+                
+                \ExampleItem
+                {Leitung ist oft etwas Abstraktes.}
+                {Leadership or management is often something abstract.}
+            
+            \end{itemize}
+        
+        \end{exbox}
+    
+    
+    \section{Substantivierte Adjektive mit Artikeln}
+        
+        \begin{grammarentry}{Mit bestimmtem Artikel}{With definite article}
+            
+            \GermanText{
+                Substantivierte Adjektive k\"onnen auch mit Artikeln verwendet werden.
+            }
+            
+            \EnglishText{
+                Substantivized adjectives can also be used with articles.
+            }
+            
+            \begin{exbox}
+                
+                \begin{itemize}
+                    
+                    \ExampleItem
+                    {Der Alte wohnt nebenan.}
+                    {The old man lives next door.}
+                    
+                    \ExampleItem
+                    {Die Junge liest ein Buch.}
+                    {The young woman is reading a book.}
+                    
+                    \ExampleItem
+                    {Das Gute bleibt bestehen.}
+                    {The good remains.}
+                    
+                    \ExampleItem
+                    {Die Reichen zahlen viele Steuern.}
+                    {The rich pay many taxes.}
+                    
+                    \ExampleItem
+                    {Die Armen brauchen Hilfe.}
+                    {The poor need help.}
+                
+                \end{itemize}
+            
+            \end{exbox}
+        
+        \end{grammarentry}
+    
+    
+    \section{Wichtiger Hinweis}
+        
+        \begin{grammarentry}{Merke}{Remember}
+            
+            \GermanText{
+                Wenn ein Adjektiv als Nomen benutzt wird,
+                schreibt man es gro{\ss}.
+                
+                Beispiele:
+                \begin{itemize}
+                    \item etwas Neues
+                    \item nichts Wichtiges
+                    \item das Gute
+                    \item die Reichen
+                    \item der Alte
+                \end{itemize}
+            }
+            
+            \EnglishText{
+                When an adjective is used as a noun,
+                it is written with a capital letter.
+                
+                Examples:
+                \begin{itemize}
+                    \item something new
+                    \item nothing important
+                    \item the good
+                    \item the rich
+                    \item the old man
+                \end{itemize}
+            }
+        
+        \end{grammarentry}
+
+\end{document}

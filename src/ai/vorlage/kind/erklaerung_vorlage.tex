@@ -1,0 +1,192 @@
+% Diese datei bewahrt was ein Beischpiel für die Erklerungen über ein Deutschsprachethema
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Das Adverb \glqq dahin\grqq}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+    
+    
+    \section{Grundbedeutung}
+        
+        \begin{grammarentry}{dahin}{Adverb, Lokaladverb, direktional}
+            \GermanText{\textbf{dahin} bedeutet: zu diesem Ort, in diese Richtung oder zu diesem Ziel. Es beantwortet normalerweise die Frage \glqq Wohin?\grqq.}
+            \EnglishText{\textbf{dahin} means: to that place, in that direction, or toward that destination. It normally answers the question ``Where to?''}
+            
+            \GermanText{Aussprache: Betonung auf der zweiten Silbe: da-HIN.}
+            \EnglishText{Pronunciation: stress on the second syllable: da-HIN.}
+            
+            \GermanText{Das Wort ist nicht steigerbar.}
+            \EnglishText{The word cannot be compared.}
+        \end{grammarentry}
+    
+    
+    \section{Grammatische Funktion}
+        
+        \begin{grammarentry}{Adverbart}{Art und Funktion}
+            \GermanText{\textbf{dahin} ist ein direktionales Lokaladverb. Es bezeichnet keine feste Position, sondern eine Richtung oder ein Ziel.}
+            \EnglishText{\textbf{dahin} is a directional adverb of place. It does not describe a fixed position, but rather a direction or destination.}
+            
+            \GermanText{Fragewort: \textbf{Wohin?}}
+            \EnglishText{Question word: \textbf{Where to?}}
+        \end{grammarentry}
+    
+    
+    \section{Unterschied zwischen \glqq dort\grqq, \glqq dorthin\grqq und \glqq dahin\grqq}
+        
+        \begin{grammarentry}{Vergleich}{Ort und Richtung}
+            \GermanText{\textbf{dort} beantwortet die Frage \glqq Wo?\grqq und bezeichnet einen Ort ohne Bewegung.}
+            \EnglishText{\textbf{dort} answers the question ``Where?'' and describes a place without movement.}
+            
+            \GermanText{\textbf{dahin} und \textbf{dorthin} beantworten die Frage \glqq Wohin?\grqq und bezeichnen eine Richtung oder ein Ziel.}
+            \EnglishText{\textbf{dahin} and \textbf{dorthin} answer the question ``Where to?'' and describe a direction or destination.}
+            
+            \GermanText{\textbf{dorthin} ist oft etwas genauer oder stärker betont als \textbf{dahin}. In vielen Sätzen sind beide möglich.}
+            \EnglishText{\textbf{dorthin} is often slightly more precise or more strongly emphasized than \textbf{dahin}. In many sentences, both are possible.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich bin dort.}{I am there.}
+                \ExampleItem{Ich gehe dahin.}{I am going there.}
+                \ExampleItem{Ich fahre dorthin, wo meine Eltern wohnen.}{I am going to the place where my parents live.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Räumliche Verwendung}
+        
+        \begin{grammarentry}{Bewegung zu einem Ort}{wörtliche Bedeutung}
+            \GermanText{Bei der räumlichen Verwendung bezeichnet \textbf{dahin} ein Ziel, auf das sich eine Person oder eine Sache zubewegt.}
+            \EnglishText{In its spatial use, \textbf{dahin} describes a destination toward which a person or thing moves.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich stelle die Tasche dahin.}{I put the bag there.}
+                \ExampleItem{Wir gehen dahin, wo es ruhiger ist.}{We are going to where it is quieter.}
+                \ExampleItem{Leg das Buch bitte dahin.}{Please put the book there.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Übertragene Verwendung}
+        
+        \begin{grammarentry}{Entwicklung zu einem Ergebnis}{übertragene Bedeutung}
+            \GermanText{\textbf{dahin} kann auch eine Entwicklung zu einem Zustand, Ergebnis oder einer Schlussfolgerung ausdrücken.}
+            \EnglishText{\textbf{dahin} can also express a development toward a state, result, or conclusion.}
+            
+            \GermanText{Eine häufige Struktur ist: \textbf{sich dahin entwickeln, dass ...}}
+            \EnglishText{A common structure is: \textbf{sich dahin entwickeln, dass ...} (to develop to the point that ...)}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Die Situation hat sich dahin entwickelt, dass wir handeln müssen.}{The situation has developed to the point that we must act.}
+                \ExampleItem{Die Diskussion ging dahin, dass eine neue Lösung notwendig ist.}{The discussion moved toward the conclusion that a new solution is necessary.}
+                \ExampleItem{Seine Gedanken gehen dahin, das Projekt zu beenden.}{His thoughts are moving toward ending the project.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Wichtige Verbindungen}
+        
+        \begin{grammarentry}{Typische Kombinationen}{Kollokationen}
+            \GermanText{\textbf{dahin gehen} = zu diesem Ort gehen}
+            \EnglishText{\textbf{dahin gehen} = to go there}
+            
+            \GermanText{\textbf{dahin fahren} = zu diesem Ort fahren}
+            \EnglishText{\textbf{dahin fahren} = to travel or drive there}
+            
+            \GermanText{\textbf{etwas dahin stellen oder legen} = etwas an diesen Ort stellen oder legen}
+            \EnglishText{\textbf{etwas dahin stellen oder legen} = to put something there}
+            
+            \GermanText{\textbf{sich dahin entwickeln, dass ...} = sich bis zu einem bestimmten Ergebnis entwickeln}
+            \EnglishText{\textbf{sich dahin entwickeln, dass ...} = to develop to the point that ...}
+            
+            \GermanText{\textbf{dahin kommen, dass ...} = einen Zustand oder eine Schlussfolgerung erreichen}
+            \EnglishText{\textbf{dahin kommen, dass ...} = to reach a state or conclusion where ...}
+        \end{grammarentry}
+    
+    
+    \section{Abgrenzung zu einem Pronomen}
+        
+        \begin{grammarentry}{Kein Ersatz für ein Nomen}{wichtiger Hinweis}
+            \GermanText{\textbf{dahin} ist kein Pronomen und ersetzt normalerweise kein Nomen wie \glqq die Frage\grqq. Es bezeichnet vielmehr die Richtung oder das Ziel einer Veränderung.}
+            \EnglishText{\textbf{dahin} is not a pronoun and normally does not replace a noun such as ``the question.'' Instead, it describes the direction or goal of a change.}
+            
+            \GermanText{In dem Satz \glqq Die Frage hat sich dahin verändert, dass ...\grqq bezeichnet \textbf{dahin} das Ergebnis oder die Richtung der Veränderung.}
+            \EnglishText{In the sentence ``The question changed to the point that ...'', \textbf{dahin} describes the result or direction of the change.}
+        \end{grammarentry}
+    
+    
+    \section{Synonyme und nahe Ausdrücke}
+        
+        \begin{grammarentry}{Ähnliche Wörter}{je nach Kontext}
+            \GermanText{Mögliche ähnliche Ausdrücke sind: \textbf{dorthin}, \textbf{in diese Richtung}, \textbf{zu diesem Punkt}, \textbf{zu diesem Ziel}.}
+            \EnglishText{Possible similar expressions are: \textbf{dorthin}, \textbf{in this direction}, \textbf{to this point}, \textbf{toward this goal}.}
+            
+            \GermanText{Diese Ausdrücke sind nicht in jedem Satz vollständig austauschbar.}
+            \EnglishText{These expressions are not completely interchangeable in every sentence.}
+        \end{grammarentry}
+    
+    
+    \section{Zusammenfassung}
+        
+        \begin{grammarentry}{Merksatz}{kurz und wichtig}
+            \GermanText{\textbf{dort} = Wo? \quad \textbf{dahin / dorthin} = Wohin?}
+            \EnglishText{\textbf{dort} = Where? \quad \textbf{dahin / dorthin} = Where to?}
+            
+            \GermanText{\textbf{dahin} bezeichnet entweder eine räumliche Richtung oder eine übertragene Entwicklung zu einem Ergebnis.}
+            \EnglishText{\textbf{dahin} describes either a spatial direction or a figurative development toward a result.}
+        \end{grammarentry}
+
+\end{document}

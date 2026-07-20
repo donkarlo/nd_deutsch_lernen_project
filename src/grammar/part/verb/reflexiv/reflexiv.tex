@@ -1,0 +1,407 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{colortbl}
+\usepackage{longtable}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\newcommand{\HeaderCell}[1]{\cellcolor{HeaderBlueDark}\color{white}\bfseries #1}
+
+\title{Wann benutzt man \glqq sich\grqq{} im Deutschen?}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+    
+    
+    \section{Grundidee}
+        
+        \begin{grammarentry}{sich als Reflexivpronomen}{sich as a reflexive pronoun}
+            \GermanText{Man benutzt \textbf{sich}, wenn die Handlung auf das Subjekt selbst zurückgeht oder wenn ein Verb im Deutschen reflexiv gebaut wird.}
+            \EnglishText{You use \textbf{sich} when the action goes back to the subject itself, or when a German verb is grammatically reflexive.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich wasche mich.}{I wash myself.}
+                    \ExampleItem{Er setzt sich an den Tisch.}{He sits down at the table.}
+                    \ExampleItem{Sie interessiert sich für Medizin.}{She is interested in medicine.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Die Formen von sich}
+        
+        \begin{grammarentry}{Reflexivpronomen im Akkusativ und Dativ}{reflexive pronouns in accusative and dative}
+            \GermanText{In der dritten Person benutzt man \textbf{sich}. In der ersten und zweiten Person ändern sich die Formen.}
+            \EnglishText{In the third person German uses \textbf{sich}. In the first and second person the forms change.}
+            
+            \rowcolors{2}{RowBlueLight}{RowBlueDark}
+            \begin{longtable}{>{\raggedright\arraybackslash}p{0.23\textwidth}>{\raggedright\arraybackslash}p{0.28\textwidth}>{\raggedright\arraybackslash}p{0.28\textwidth}}
+                \HeaderCell{Person} & \HeaderCell{Akkusativ} & \HeaderCell{Dativ} \\
+                ich & mich & mir \\
+                du & dich & dir \\
+                er/sie/es & sich & sich \\
+                wir & uns & uns \\
+                ihr & euch & euch \\
+                sie/Sie & sich & sich \\
+            \end{longtable}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich wasche mich.}{I wash myself.}
+                    \ExampleItem{Ich wasche mir die Hände.}{I wash my hands.}
+                    \ExampleItem{Sie erinnert sich an ihre Kindheit.}{She remembers her childhood.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Fall 1: Die Handlung trifft dieselbe Person}
+        
+        \begin{grammarentry}{echte reflexive Handlung}{true reflexive action}
+            \GermanText{Wenn Subjekt und Objekt dieselbe Person sind, benutzt man oft ein Reflexivpronomen. Das bedeutet: Die Person macht etwas mit sich selbst.}
+            \EnglishText{When the subject and the object are the same person, German often uses a reflexive pronoun. This means: the person does something to himself or herself.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich rasiere mich.}{I shave myself.}
+                    \ExampleItem{Sie schminkt sich.}{She puts makeup on herself.}
+                    \ExampleItem{Er verletzt sich.}{He injures himself.}
+                    \ExampleItem{Ich ziehe mich an.}{I get dressed.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Fall 2: Bewegung in eine neue Körperposition}
+        
+        \begin{grammarentry}{sich setzen, sich legen, sich stellen}{to sit down, to lie down, to stand somewhere}
+            \GermanText{Bei Verben wie \textbf{sich setzen}, \textbf{sich legen} und \textbf{sich stellen} beschreibt man eine Bewegung in eine neue Position. Deshalb steht oft \textbf{sich}.}
+            \EnglishText{With verbs like \textbf{sich setzen}, \textbf{sich legen}, and \textbf{sich stellen}, you describe movement into a new position. Therefore German often uses \textbf{sich}.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich setze mich an den Tisch.}{I sit down at the table.}
+                    \ExampleItem{Ich sitze am Tisch.}{I am sitting at the table.}
+                    \ExampleItem{Er legt sich ins Bett.}{He lies down in bed.}
+                    \ExampleItem{Er liegt im Bett.}{He is lying in bed.}
+                \end{itemize}
+            \end{exbox}
+            
+            \GermanText{Wichtig: \textbf{sich setzen} ist die Handlung. \textbf{sitzen} ist der Zustand.}
+            \EnglishText{Important: \textbf{sich setzen} is the action. \textbf{sitzen} is the state.}
+        \end{grammarentry}
+    
+    
+    \section{Fall 3: Feste reflexive Verben}
+        
+        \begin{grammarentry}{Verben, die immer oder fast immer reflexiv sind}{verbs that are always or almost always reflexive}
+            \GermanText{Einige Verben brauchen im Deutschen fast immer ein Reflexivpronomen. Hier ist \textbf{sich} nicht nur Betonung, sondern Teil der Grammatik.}
+            \EnglishText{Some German verbs almost always need a reflexive pronoun. Here \textbf{sich} is not only emphasis; it is part of the grammar.}
+            
+            \rowcolors{2}{RowBlueLight}{RowBlueDark}
+            \begin{longtable}{>{\raggedright\arraybackslash}p{0.31\textwidth}>{\raggedright\arraybackslash}p{0.31\textwidth}>{\raggedright\arraybackslash}p{0.23\textwidth}}
+                \HeaderCell{Deutsch} & \HeaderCell{Beispiel} & \HeaderCell{English} \\
+                sich beeilen & Ich beeile mich. & I hurry. \\
+                sich erinnern an + Akk. & Ich erinnere mich an dich. & I remember you. \\
+                sich interessieren für + Akk. & Ich interessiere mich für Deutsch. & I am interested in German. \\
+                sich kümmern um + Akk. & Ich kümmere mich um das Kind. & I take care of the child. \\
+                sich freuen auf + Akk. & Ich freue mich auf den Urlaub. & I am looking forward to the vacation. \\
+                sich freuen über + Akk. & Ich freue mich über die Nachricht. & I am happy about the message. \\
+                sich entscheiden für + Akk. & Ich entscheide mich für das Land. & I decide in favor of the countryside. \\
+                sich beschweren über + Akk. & Ich beschwere mich über den Lärm. & I complain about the noise. \\
+                sich ausruhen & Ich ruhe mich aus. & I rest. \\
+                sich erholen & Ich erhole mich. & I recover. \\
+            \end{longtable}
+        \end{grammarentry}
+    
+    
+    \section{Fall 4: Dativreflexiv bei Körperteilen und Kleidung}
+        
+        \begin{grammarentry}{mir, dir, sich mit einem Akkusativobjekt}{dative reflexive pronoun with an accusative object}
+            \GermanText{Wenn es schon ein direktes Objekt im Akkusativ gibt, steht das Reflexivpronomen oft im Dativ: \textbf{mir, dir, sich}. Das passiert oft bei Körperteilen und Kleidung.}
+            \EnglishText{When there is already a direct object in the accusative, the reflexive pronoun is often in the dative: \textbf{mir, dir, sich}. This often happens with body parts and clothes.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich wasche mir die Hände.}{I wash my hands.}
+                    \ExampleItem{Er putzt sich die Zähne.}{He brushes his teeth.}
+                    \ExampleItem{Sie zieht sich die Jacke an.}{She puts on the jacket.}
+                    \ExampleItem{Ich kämme mir die Haare.}{I comb my hair.}
+                \end{itemize}
+            \end{exbox}
+            
+            \GermanText{Aber: Wenn es kein anderes Akkusativobjekt gibt, benutzt man normalerweise den Akkusativ: \textbf{Ich wasche mich.}}
+            \EnglishText{But: If there is no other accusative object, you normally use the accusative: \textbf{Ich wasche mich.}}
+        \end{grammarentry}
+    
+    
+    \section{Fall 5: Die Handlung ist für die Person selbst}
+        
+        \begin{grammarentry}{sich etwas kaufen, sich etwas ansehen, sich etwas überlegen}{doing something for oneself}
+            \GermanText{Manchmal zeigt \textbf{sich} im Dativ, dass die Person etwas für sich selbst macht oder innerlich mit der Handlung beschäftigt ist. Das ist sehr häufig im Deutschen.}
+            \EnglishText{Sometimes \textbf{sich} in the dative shows that the person does something for himself or herself, or is internally involved in the action. This is very common in German.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich kaufe mir ein Auto.}{I buy myself a car.}
+                    \ExampleItem{Ich sehe mir den Film an.}{I watch the film for myself / I take a look at the film.}
+                    \ExampleItem{Ich überlege mir eine Lösung.}{I think of a solution for myself.}
+                    \ExampleItem{Er nimmt sich Zeit.}{He takes time for himself.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Fall 6: Gegenseitige Handlung}
+        
+        \begin{grammarentry}{reziproker Gebrauch}{reciprocal use}
+            \GermanText{Bei mehreren Personen kann \textbf{sich} auch bedeuten: einander. Dann machen Personen etwas gegenseitig.}
+            \EnglishText{With several people, \textbf{sich} can also mean: each other. Then people do something mutually.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Wir treffen uns morgen.}{We will meet each other tomorrow.}
+                    \ExampleItem{Sie unterhalten sich über das Wetter.}{They talk with each other about the weather.}
+                    \ExampleItem{Die Freunde helfen sich.}{The friends help each other.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Fall 7: Verben mit anderer Bedeutung}
+        
+        \begin{grammarentry}{mit sich ändert sich oft die Bedeutung}{with sich the meaning often changes}
+            \GermanText{Bei manchen Verben ändert \textbf{sich} die Bedeutung des Verbs. Deshalb muss man das Verb als eigene Struktur lernen.}
+            \EnglishText{With some verbs, \textbf{sich} changes the meaning of the verb. Therefore you have to learn the verb as a separate structure.}
+            
+            \rowcolors{2}{RowBlueLight}{RowBlueDark}
+            \begin{longtable}{>{\raggedright\arraybackslash}p{0.25\textwidth}>{\raggedright\arraybackslash}p{0.30\textwidth}>{\raggedright\arraybackslash}p{0.30\textwidth}}
+                \HeaderCell{Verb} & \HeaderCell{ohne sich} & \HeaderCell{mit sich} \\
+                setzen / sich setzen & Ich setze das Kind auf den Stuhl. & Ich setze mich auf den Stuhl. \\
+                vorstellen / sich vorstellen & Ich stelle dir meinen Freund vor. & Ich stelle mich vor. \\
+                fragen / sich fragen & Ich frage den Lehrer. & Ich frage mich, ob das richtig ist. \\
+                fühlen / sich fühlen & Ich fühle den Schmerz. & Ich fühle mich müde. \\
+            \end{longtable}
+        \end{grammarentry}
+    
+    
+
+    \section{Die Stellung des Reflexivpronomens im Satz}
+
+        \begin{grammarentry}{Grundregel im Hauptsatz}{basic rule in a main clause}
+            \GermanText{Das Reflexivpronomen steht normalerweise im Mittelfeld und möglichst früh. Wenn das Subjekt an erster Stelle steht, folgt das Reflexivpronomen meistens nach dem konjugierten Verb und nach dem Subjekt.}
+            \EnglishText{The reflexive pronoun normally stands in the middle field and as early as possible. When the subject is in first position, the reflexive pronoun usually follows the conjugated verb and the subject.}
+
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich wasche mich jeden Morgen.}{I wash myself every morning.}
+                    \ExampleItem{Der Mann setzt sich an den Tisch.}{The man sits down at the table.}
+                    \ExampleItem{Wir interessieren uns für Politik.}{We are interested in politics.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Wenn ein anderes Satzglied an erster Stelle steht}{when another element is in first position}
+            \GermanText{Steht nicht das Subjekt, sondern zum Beispiel eine Zeitangabe an erster Stelle, kommt das konjugierte Verb an die zweite Stelle. Bei einem Subjekt als Pronomen steht zuerst das Subjektpronomen und danach das Reflexivpronomen. Bei einem Subjekt als Nomen steht das Reflexivpronomen in der neutralen Wortstellung meistens vor dem Subjekt.}
+            \EnglishText{If the first position is occupied not by the subject but, for example, by a time expression, the conjugated verb comes second. With a pronoun subject, the subject pronoun comes first and the reflexive pronoun follows it. With a noun subject, the reflexive pronoun normally comes before the subject in neutral word order.}
+
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Heute wäscht er sich früh.}{Today he washes himself early.}
+                    \ExampleItem{Heute wäscht sich der Mann früh.}{Today the man washes himself early.}
+                    \ExampleItem{Danach setzt sie sich an den Tisch.}{After that she sits down at the table.}
+                    \ExampleItem{Danach setzt sich die Frau an den Tisch.}{After that the woman sits down at the table.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Präsens und Präteritum}{present and simple past}
+            \GermanText{Im Präsens und Präteritum steht das konjugierte Verb an zweiter Stelle. Das Reflexivpronomen steht danach im Mittelfeld.}
+            \EnglishText{In the present and simple past, the conjugated verb stands in second position. The reflexive pronoun follows it in the middle field.}
+
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Die Frage verändert sich langsam.}{The question is changing slowly.}
+                    \ExampleItem{Die Frage veränderte sich langsam.}{The question changed slowly.}
+                    \ExampleItem{Gestern erinnerte ich mich an das Gespräch.}{Yesterday I remembered the conversation.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Perfekt und Plusquamperfekt}{present perfect and past perfect}
+            \GermanText{Im Perfekt und Plusquamperfekt steht das Hilfsverb an zweiter Stelle. Das Reflexivpronomen steht im Mittelfeld und damit vor dem Partizip II am Satzende.}
+            \EnglishText{In the present perfect and past perfect, the auxiliary verb stands in second position. The reflexive pronoun stands in the middle field and therefore before the past participle at the end of the clause.}
+
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Die Frage hat sich verändert.}{The question has changed.}
+                    \ExampleItem{Die Raupe hat sich in einen Schmetterling verwandelt.}{The caterpillar has transformed into a butterfly.}
+                    \ExampleItem{Die Situation hatte sich bereits verbessert.}{The situation had already improved.}
+                    \ExampleItem{Gestern hat er sich über die Nachricht gefreut.}{Yesterday he was pleased about the news.}
+                \end{itemize}
+            \end{exbox}
+
+            \GermanText{Falsch ist: \textbf{Die Frage hat verändert sich.} Richtig ist: \textbf{Die Frage hat sich verändert.}}
+            \EnglishText{Wrong: \textbf{Die Frage hat verändert sich.} Correct: \textbf{Die Frage hat sich verändert.}}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Futur I und Sätze mit Modalverb}{future and sentences with modal verbs}
+            \GermanText{Bei Futur I und bei Modalverben steht das konjugierte Verb an zweiter Stelle. Das Reflexivpronomen steht im Mittelfeld; der Infinitiv steht am Satzende.}
+            \EnglishText{In the future tense and with modal verbs, the conjugated verb stands in second position. The reflexive pronoun stands in the middle field, while the infinitive stands at the end of the sentence.}
+
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich werde mich morgen ausruhen.}{I will rest tomorrow.}
+                    \ExampleItem{Die Situation wird sich bald verändern.}{The situation will change soon.}
+                    \ExampleItem{Ich muss mich beeilen.}{I have to hurry.}
+                    \ExampleItem{Er möchte sich für den Kurs anmelden.}{He would like to register for the course.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Trennbare reflexive Verben}{separable reflexive verbs}
+            \GermanText{Bei einem trennbaren reflexiven Verb steht der konjugierte Verbteil an zweiter Stelle, das Reflexivpronomen im Mittelfeld und die Vorsilbe am Satzende. Im Perfekt steht das Reflexivpronomen vor dem Partizip II.}
+            \EnglishText{With a separable reflexive verb, the conjugated verb part stands in second position, the reflexive pronoun in the middle field, and the prefix at the end. In the perfect tense, the reflexive pronoun stands before the past participle.}
+
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich ziehe mich schnell an.}{I get dressed quickly.}
+                    \ExampleItem{Sie ruht sich am Nachmittag aus.}{She rests in the afternoon.}
+                    \ExampleItem{Ich habe mich schnell angezogen.}{I got dressed quickly.}
+                    \ExampleItem{Sie hat sich am Nachmittag ausgeruht.}{She rested in the afternoon.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Nebensätze}{subordinate clauses}
+            \GermanText{Im Nebensatz steht das konjugierte Verb am Ende. Das Reflexivpronomen steht normalerweise früh nach dem Subjekt. Wenn das Subjekt ein Nomen ist, kann das Reflexivpronomen in neutraler Wortstellung auch vor dem Subjekt stehen, besonders wenn der Nebensatz mit einem anderen Satzglied beginnt.}
+            \EnglishText{In a subordinate clause, the conjugated verb stands at the end. The reflexive pronoun normally stands early after the subject. When the subject is a noun, the reflexive pronoun can also stand before the subject in neutral word order, especially when the subordinate clause begins with another element.}
+
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich bleibe zu Hause, weil ich mich ausruhen muss.}{I am staying at home because I have to rest.}
+                    \ExampleItem{Ich weiß, dass er sich dafür interessiert.}{I know that he is interested in it.}
+                    \ExampleItem{Ich sehe, dass sich die Situation verändert.}{I see that the situation is changing.}
+                    \ExampleItem{Sie sagte, dass sie sich bereits angemeldet hat.}{She said that she had already registered.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Infinitivgruppen mit zu}{infinitive clauses with zu}
+            \GermanText{In einer Infinitivgruppe steht das Reflexivpronomen vor dem Infinitiv mit \textbf{zu}. Bei trennbaren Verben steht \textbf{zu} zwischen Vorsilbe und Verbstamm.}
+            \EnglishText{In an infinitive clause, the reflexive pronoun stands before the infinitive with \textbf{zu}. With separable verbs, \textbf{zu} stands between the prefix and the verb stem.}
+
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich versuche, mich besser auszudrücken.}{I am trying to express myself better.}
+                    \ExampleItem{Er hat vergessen, sich anzumelden.}{He forgot to register.}
+                    \ExampleItem{Sie hofft, sich bald zu erholen.}{She hopes to recover soon.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Fragen und Imperativ}{questions and imperative}
+            \GermanText{In einer Ja-Nein-Frage steht das konjugierte Verb an erster Stelle. Danach kommen das Subjekt und das Reflexivpronomen. Im Imperativ steht das Reflexivpronomen nach dem Imperativverb.}
+            \EnglishText{In a yes-no question, the conjugated verb stands in first position. It is followed by the subject and the reflexive pronoun. In the imperative, the reflexive pronoun stands after the imperative verb.}
+
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Interessierst du dich für Politik?}{Are you interested in politics?}
+                    \ExampleItem{Hat er sich schon angemeldet?}{Has he already registered?}
+                    \ExampleItem{Beeil dich!}{Hurry up!}
+                    \ExampleItem{Setzen Sie sich bitte!}{Please sit down!}
+                    \ExampleItem{Ruht euch aus!}{Have a rest!}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Stellung bei weiteren Objekten}{position with additional objects}
+            \GermanText{Ein Reflexivpronomen steht normalerweise vor einem Nomen als Objekt. Ist das andere Objekt selbst ein Pronomen, steht dieses Pronomen häufig vor dem reflexiven Dativpronomen.}
+            \EnglishText{A reflexive pronoun normally stands before a noun object. If the other object is itself a pronoun, that pronoun frequently stands before a reflexive dative pronoun.}
+
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich wasche mir die Hände.}{I wash my hands.}
+                    \ExampleItem{Ich kaufe mir ein neues Buch.}{I buy myself a new book.}
+                    \ExampleItem{Ich kaufe es mir morgen.}{I will buy it for myself tomorrow.}
+                    \ExampleItem{Er sieht sich den Film an.}{He watches the film.}
+                    \ExampleItem{Er sieht ihn sich heute an.}{He watches it today.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Betonung und markierte Wortstellung}{emphasis and marked word order}
+            \GermanText{Das Reflexivpronomen steht in neutralen Sätzen früh im Mittelfeld. Eine spätere Stellung ist manchmal möglich, wenn man das Reflexivpronomen besonders betont oder einen starken Gegensatz bildet. Für normales Standarddeutsch und für eine B1-Prüfung ist die frühe Stellung die sicherste Wahl.}
+            \EnglishText{In neutral sentences, the reflexive pronoun stands early in the middle field. A later position is sometimes possible when the reflexive pronoun is strongly emphasized or contrasted. For normal standard German and for a B1 exam, the early position is the safest choice.}
+
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Neutral: Heute hat sich mein Bruder angemeldet.}{Neutral: My brother registered today.}
+                    \ExampleItem{Neutral: Mein Bruder hat sich heute angemeldet.}{Neutral: My brother registered today.}
+                    \ExampleItem{Für die Prüfung sicher: Die Frage hat sich verändert.}{Safe for the exam: The question has changed.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+
+    \section{Wichtig: sich ist nicht nur Betonung}
+        
+        \begin{grammarentry}{nicht frei benutzen}{do not use it freely}
+            \GermanText{Man darf \textbf{sich} nicht einfach überall benutzen, nur um die Handlung zu betonen. Es muss grammatisch passen: reflexive Handlung, festes reflexives Verb, Dativ für sich selbst oder gegenseitige Handlung.}
+            \EnglishText{You cannot use \textbf{sich} everywhere only to emphasize the action. It must fit grammatically: reflexive action, fixed reflexive verb, dative for oneself, or reciprocal action.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Falsch: Ich sitze mich am Tisch.}{Wrong: I sit myself at the table.}
+                    \ExampleItem{Richtig: Ich sitze am Tisch.}{Correct: I am sitting at the table.}
+                    \ExampleItem{Richtig: Ich setze mich an den Tisch.}{Correct: I sit down at the table.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+
+
+\end{document}

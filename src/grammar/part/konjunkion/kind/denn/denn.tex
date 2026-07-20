@@ -1,0 +1,138 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Das Wort \glqq denn\grqq}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+\section{Grundbedeutungen}
+
+\begin{grammarentry}{denn}{Konjunktion / Partikel}
+\GermanText{\textbf{denn} kann zwei wichtige Funktionen haben:}
+\EnglishText{\textbf{denn} can have two important functions.}
+
+\begin{itemize}
+    \item \textbf{denn = weil / da} \quad Grund: \textit{chon / zira}
+    \item \textbf{denn} in Fragen \quad Betonung: \textit{pas / akhar / magar}
+\end{itemize}
+\end{grammarentry}
+
+\section{denn als Konjunktion}
+
+\begin{grammarentry}{denn = weil / da}{Grund angeben}
+\GermanText{Als Konjunktion gibt \textbf{denn} einen Grund an.}
+\EnglishText{As a conjunction, \textbf{denn} gives a reason.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich bleibe zu Hause, denn ich bin krank.}{I am staying at home because I am sick.}
+    \ExampleItem{Er kommt nicht, denn er hat keine Zeit.}{He is not coming because he has no time.}
+    \ExampleItem{Wir gehen jetzt, denn es ist spaet.}{We are leaving now because it is late.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Wortstellung nach denn}{Verbposition}
+\GermanText{Nach \textbf{denn} bleibt die Wortstellung wie in einem normalen Hauptsatz. Das konjugierte Verb steht auf Position 2.}
+\EnglishText{After \textbf{denn}, the word order stays like in a normal main clause. The conjugated verb is in position 2.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich bleibe zu Hause, denn ich \textbf{bin} krank.}{I am staying at home because I am sick.}
+    \ExampleItem{Nicht: Ich bleibe zu Hause, denn ich krank \textbf{bin}.}{Not: I am staying at home because I sick am.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{denn in Fragen}
+
+\begin{grammarentry}{denn als Partikel}{Betonung in Fragen}
+\GermanText{In Fragen macht \textbf{denn} die Frage oft weicher, neugieriger oder staerker. Es hat dann keine direkte eigene Information.}
+\EnglishText{In questions, \textbf{denn} often makes the question softer, more curious, or stronger. It does not add separate factual information.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Was machst du denn?}{So what are you doing? / What are you doing then?}
+    \ExampleItem{Wo bist du denn?}{So where are you? / Where are you then?}
+    \ExampleItem{Was soll das denn?}{What is that supposed to mean? / What is this?}
+    \ExampleItem{Wie heisst du denn?}{So what is your name?}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Unterschied zwischen denn und weil}
+
+\begin{grammarentry}{denn vs. weil}{Wortstellung}
+\GermanText{\textbf{denn} und \textbf{weil} koennen beide einen Grund angeben, aber die Wortstellung ist anders.}
+\EnglishText{\textbf{denn} and \textbf{weil} can both give a reason, but the word order is different.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich bleibe zu Hause, denn ich \textbf{bin} krank.}{I am staying at home because I am sick.}
+    \ExampleItem{Ich bleibe zu Hause, weil ich krank \textbf{bin}.}{I am staying at home because I am sick.}
+\end{itemize}
+\end{exbox}
+
+\GermanText{Nach \textbf{denn}: Verb auf Position 2. Nach \textbf{weil}: Verb am Ende.}
+\EnglishText{After \textbf{denn}: verb in position 2. After \textbf{weil}: verb at the end.}
+\end{grammarentry}
+
+\section{Kurze Zusammenfassung}
+
+\begin{grammarentry}{Merken}{Kurzregel}
+\begin{itemize}
+    \item \textbf{denn} als Konjunktion: \textit{chon / zira}.
+    \item Nach \textbf{denn} steht das konjugierte Verb auf Position 2.
+    \item \textbf{denn} in Fragen: \textit{pas / akhar / magar}, oft nur zur Betonung.
+    \item \textbf{denn} veraendert in Fragen oft den Ton, aber nicht den Grundinhalt der Frage.
+\end{itemize}
+\end{grammarentry}
+
+\end{document}

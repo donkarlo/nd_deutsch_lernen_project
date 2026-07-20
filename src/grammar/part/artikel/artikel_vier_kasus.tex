@@ -1,0 +1,101 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[a4paper,margin=1.15cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.22}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\newcommand{\TableHeader}[1]{\color{white}\textbf{#1}}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{0.2em}{0.35em}
+
+\titleformat{\subsection}[block]
+{\normalsize\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{0.75em}{0.25em}
+
+\title{\vspace{-1.4cm}\textcolor{HeaderBlueDark}{Artikel in den vier Kasus}\\[-1mm]
+{\large\color{SoftGray}Articles in the four cases}}
+\date{}
+
+\begin{document}
+\maketitle
+\vspace{-1.25cm}
+
+\section{Datentabelle / Data table}
+
+\subsection{Bestimmter Artikel / Definite article}
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{3.1cm} YYYY}
+\rowcolor{HeaderBlueDark}
+\TableHeader{Kasus / Case} & \TableHeader{Maskulin} & \TableHeader{Feminin} & \TableHeader{Neutrum} & \TableHeader{Plural} \\
+Nominativ & der & die & das & die \\
+Akkusativ & den & die & das & die \\
+Dativ & dem & der & dem & den \\
+Genitiv & des & der & des & der \\
+\end{tabularx}
+
+\subsection{Unbestimmter Artikel / Indefinite article}
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{3.1cm} YYYY}
+\rowcolor{HeaderBlueDark}
+\TableHeader{Kasus / Case} & \TableHeader{Maskulin} & \TableHeader{Feminin} & \TableHeader{Neutrum} & \TableHeader{Plural} \\
+Nominativ & ein & eine & ein & -- \\
+Akkusativ & einen & eine & ein & -- \\
+Dativ & einem & einer & einem & -- \\
+Genitiv & eines & einer & eines & -- \\
+\end{tabularx}
+
+\subsection{Negativartikel / Negative article}
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{3.1cm} YYYY}
+\rowcolor{HeaderBlueDark}
+\TableHeader{Kasus / Case} & \TableHeader{Maskulin} & \TableHeader{Feminin} & \TableHeader{Neutrum} & \TableHeader{Plural} \\
+Nominativ & kein & keine & kein & keine \\
+Akkusativ & keinen & keine & kein & keine \\
+Dativ & keinem & keiner & keinem & keinen \\
+Genitiv & keines & keiner & keines & keiner \\
+\end{tabularx}
+
+
+
+\subsection{jeder/jede/jedes-Familie / every-each family}
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{3.1cm} YYYY}
+\rowcolor{HeaderBlueDark}
+\TableHeader{Kasus / Case} & \TableHeader{Maskulin} & \TableHeader{Feminin} & \TableHeader{Neutrum} & \TableHeader{Plural} \\
+Nominativ & jeder & jede & jedes & -- \\
+Akkusativ & jeden & jede & jedes & -- \\
+Dativ & jedem & jeder & jedem & -- \\
+Genitiv & jedes & jeder & jedes & -- \\
+\end{tabularx}
+
+\vspace{0.35em}
+{\small\color{SoftGray}\textbf{Grammatische Rolle / Grammatical role:} Vor einem Nomen ist \textbf{jeder/jede/jedes} ein indefinites Artikelwort beziehungsweise Determinativ. Allein benutzt ist es ein Indefinitpronomen. / Before a noun, \textbf{jeder/jede/jedes} is an indefinite article word or determiner. Used alone, it is an indefinite pronoun.}
+
+\vspace{0.35em}
+{\small\color{SoftGray}\textbf{Hinweis / Note:} \textbf{jeder/jede/jedes} wird normalerweise mit Singular benutzt. Fuer Plural benutzt man meistens \textbf{alle}. / \textbf{jeder/jede/jedes} is normally used with singular. For plural, German usually uses \textbf{alle}.}
+
+\vspace{0.5em}
+{\small\color{SoftGray}\textbf{Hinweis / Note:} Der unbestimmte Artikel hat keinen Plural. / The indefinite article has no plural form.}
+
+\end{document}

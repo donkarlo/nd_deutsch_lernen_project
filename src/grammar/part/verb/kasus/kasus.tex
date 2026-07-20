@@ -1,0 +1,150 @@
+\documentclass[a4paper]{article}
+
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{minted}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{todonotes}
+\usepackage{forest}
+\usepackage{xstring}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{xparse}
+\usepackage{natbib}
+
+\usetikzlibrary{graphs,graphdrawing}
+\usegdlibrary{layered}
+
+% Benötigt: \usepackage{xcolor}
+\definecolor{TranslationGray}{RGB}{120,120,120}
+\newcommand{\EN}[1]{\par{\small\textcolor{TranslationGray}{#1}}\vspace{0.4em}}
+
+% for external graphviz
+\input{/home/donkarlo/Dropbox/repo/nd_ai_project/src/nd_ai/knoweldge_representation/language/formal/computer/programming/tex/latex/code_clips/external_graphviz.tex}
+
+% for tags
+\input{/home/donkarlo/Dropbox/repo/nd_ai_project/src/nd_ai/knoweldge_representation/language/formal/computer/programming/tex/latex/parts/control_sequence/kind/semtag/semtag.tex}
+
+% for links
+\input{/home/donkarlo/Dropbox/repo/nd_ai_project/src/nd_ai/knoweldge_representation/language/formal/computer/programming/tex/latex/code_clips/seehere.tex}
+
+
+
+\title{Kasus}
+\date{}
+
+\begin{document}
+    \maketitle
+    
+    
+    \section{Kasus bei deutschen Verben}
+        
+        \textbf{Im Deutschen reicht es nicht immer, nur direktes und indirektes Objekt zu erkennen.}
+        \EN{In German, it is not always enough to recognize only direct and indirect objects.}
+        
+        \textbf{Oft bestimmt das Verb selbst, welchen Kasus das Objekt bekommt.}
+        \EN{Often the verb itself determines which case the object takes.}
+        
+        \textbf{Deshalb sollte man viele Verben zusammen mit ihrem Kasus lernen.}
+        \EN{Therefore, many verbs should be learned together with their case.}
+        
+        \subsection{Verben mit Dativ}
+            
+            \textbf{Einige Verben brauchen immer oder meistens den Dativ.}
+            \EN{Some verbs always or usually require the dative.}
+            
+            \textbf{helfen + Dativ}
+            \EN{to help + dative}
+            
+            \textbf{Ich helfe dir.}
+            \EN{I help you.}
+            
+            \textbf{danken + Dativ}
+            \EN{to thank + dative}
+            
+            \textbf{Ich danke dem Großvater.}
+            \EN{I thank the grandfather.}
+            
+            \textbf{antworten + Dativ}
+            \EN{to answer + dative}
+            
+            \textbf{Ich antworte der Lehrerin.}
+            \EN{I answer the teacher.}
+            
+            \textbf{gehören + Dativ}
+            \EN{to belong to + dative}
+            
+            \textbf{Das Buch gehört mir.}
+            \EN{The book belongs to me.}
+        
+        \subsection{Verben mit Akkusativ}
+            
+            \textbf{Die meisten Verben mit Objekt brauchen den Akkusativ.}
+            \EN{Most verbs with an object require the accusative.}
+            
+            \textbf{sehen + Akkusativ}
+            \EN{to see + accusative}
+            
+            \textbf{Ich sehe dich.}
+            \EN{I see you.}
+            
+            \textbf{haben + Akkusativ}
+            \EN{to have + accusative}
+            
+            \textbf{Ich habe einen Kaffee.}
+            \EN{I have a coffee.}
+            
+            \textbf{kaufen + Akkusativ}
+            \EN{to buy + accusative}
+            
+            \textbf{Ich kaufe das Brot.}
+            \EN{I buy the bread.}
+        
+        \subsection{Verben mit zwei Objekten}
+            
+            \textbf{Wenn ein Satz zwei Objekte hat, ist die Person oft Dativ und die Sache Akkusativ.}
+            \EN{When a sentence has two objects, the person is often dative and the thing is accusative.}
+            
+            \textbf{Ich gebe dir das Buch.}
+            \EN{I give you the book.}
+            
+            \textbf{dir = Dativ}
+            \EN{to you = dative}
+            
+            \textbf{das Buch = Akkusativ}
+            \EN{the book = accusative}
+            
+            \textbf{Ich werfe dir den Ball zu.}
+            \EN{I throw the ball to you.}
+            
+            \textbf{dir = Dativ}
+            \EN{to you / receiver = dative}
+            
+            \textbf{den Ball = Akkusativ}
+            \EN{the ball = accusative}
+        
+        \subsection{Wichtige Regel}
+            
+            \textbf{Für Deutsch muss man zuerst lernen, welchen Kasus ein Verb verlangt.}
+            \EN{For German, one must first learn which case a verb requires.}
+            
+            \textbf{Direktes und indirektes Objekt helfen beim Verstehen, aber sie reichen nicht immer aus.}
+            \EN{Direct and indirect objects help with understanding, but they are not always enough.}
+            
+            \textbf{Die beste Methode ist: Verb + Kasus + Beispiel lernen.}
+            \EN{The best method is: learn verb + case + example.}
+            
+            \textbf{helfen + Dativ: Ich helfe dir.}
+            \EN{to help + dative: I help you.}
+            
+            \textbf{sehen + Akkusativ: Ich sehe dich.}
+            \EN{to see + accusative: I see you.}
+            
+            \textbf{geben + Dativ + Akkusativ: Ich gebe dir das Buch.}
+            \EN{to give + dative + accusative: I give you the book.}
+            
+            \nocite{*}
+            \bibliographystyle{plainnat}
+            \bibliography{/home/donkarlo/Dropbox/repo/nd_shared_research/bibliography/bibliography.bib}
+\end{document}

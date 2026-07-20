@@ -1,0 +1,337 @@
+% Verbstamm - gestaltet nach der Erklaerungsvorlage
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage{xparse}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{6pt}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Der Verbstamm und wichtige Verbformen}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+    \section{Infinitiv}
+
+        \begin{grammarentry}{Infinitiv}{Grundform des Verbs}
+            \GermanText{Der Infinitiv ist die Grundform des Verbs. So findet man das Verb normalerweise im Wörterbuch.}
+            \EnglishText{The infinitive is the basic form of the verb. This is the form in which a verb is normally found in a dictionary.}
+
+            \GermanText{Bildung: \textbf{Verbstamm + \texttt{-en}} oder \textbf{Verbstamm + \texttt{-n}}.}
+            \EnglishText{Formation: \textbf{verb stem + \texttt{-en}} or \textbf{verb stem + \texttt{-n}}.}
+
+            \GermanText{Der Infinitiv wird zum Beispiel nach Modalverben und mit \texttt{zu} benutzt.}
+            \EnglishText{The infinitive is used, for example, after modal verbs and with \texttt{zu}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{mach-en}{mach-en}
+                \ExampleItem{lern-en}{learn}
+                \ExampleItem{wander-n}{hike / wander}
+                \ExampleItem{Ich muss lernen.}{I must learn.}
+                \ExampleItem{Ich versuche zu schlafen.}{I try to sleep.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Verbstamm}
+
+        \begin{grammarentry}{Verbstamm}{Grundlage des Verbs}
+            \GermanText{Der Verbstamm ist der Teil des Verbs ohne die Endung \texttt{-en} oder \texttt{-n}. Er ist die Grundlage für viele andere Formen.}
+            \EnglishText{The verb stem is the part of the verb without the ending \texttt{-en} or \texttt{-n}. It is the basis for many other forms.}
+
+            \GermanText{Bildung: \textbf{Infinitiv minus \texttt{-en} oder \texttt{-n}}.}
+            \EnglishText{Formation: \textbf{infinitive minus \texttt{-en} or \texttt{-n}}.}
+
+            \GermanText{Mit dem Verbstamm bildet man viele Formen des Verbs.}
+            \EnglishText{Many forms of the verb are formed with the verb stem.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{lernen $\rightarrow$ lern-}{lernen $\rightarrow$ lern-}
+                \ExampleItem{machen $\rightarrow$ mach-}{machen $\rightarrow$ mach-}
+                \ExampleItem{arbeiten $\rightarrow$ arbeit-}{arbeiten $\rightarrow$ arbeit-}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Präsensstamm}
+
+        \begin{grammarentry}{Präsensstamm}{Bildung des Präsens}
+            \GermanText{Der Präsensstamm ist meistens gleich dem Verbstamm. Mit ihm bildet man das Präsens.}
+            \EnglishText{The present-tense stem is usually the same as the verb stem. It is used to form the present tense.}
+
+            \GermanText{Bildung: \textbf{Stamm + Personalendung}.}
+            \EnglishText{Formation: \textbf{stem + personal ending}.}
+
+            \GermanText{Bei manchen starken Verben verändert sich der Stamm im Präsens.}
+            \EnglishText{With some strong verbs, the stem changes in the present tense.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{lern- + e $\rightarrow$ ich lerne}{lern- + e $\rightarrow$ I learn}
+                \ExampleItem{mach- + st $\rightarrow$ du machst}{mach- + st $\rightarrow$ you make}
+                \ExampleItem{arbeit- + et $\rightarrow$ ihr arbeitet}{arbeit- + et $\rightarrow$ you work}
+                \ExampleItem{fahren $\rightarrow$ du fährst}{to drive $\rightarrow$ you drive}
+                \ExampleItem{lesen $\rightarrow$ er liest}{to read $\rightarrow$ he reads}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Präteritumstamm}
+
+        \begin{grammarentry}{Schwache Verben}{regelmäßige Bildung}
+            \GermanText{Der Präteritumstamm wird für das Präteritum benutzt. Bei schwachen Verben lautet die Bildung: \textbf{Verbstamm + \texttt{-te}}.}
+            \EnglishText{The simple-past stem is used for the simple past. With weak verbs, it is formed as follows: \textbf{verb stem + \texttt{-te}}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{lernen $\rightarrow$ lernte}{to learn $\rightarrow$ learned}
+                \ExampleItem{machen $\rightarrow$ machte}{to make $\rightarrow$ made}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Starke Verben}{Stammveränderung}
+            \GermanText{Bei starken Verben verändert sich der Stamm oft.}
+            \EnglishText{With strong verbs, the stem often changes.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{gehen $\rightarrow$ ging}{to go $\rightarrow$ went}
+                \ExampleItem{finden $\rightarrow$ fand}{to find $\rightarrow$ found}
+                \ExampleItem{schreiben $\rightarrow$ schrieb}{to write $\rightarrow$ wrote}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Konjunktiv-II-Stamm}
+
+        \begin{grammarentry}{Konjunktiv II}{Irreales, Wünsche, Bedingungen und Höflichkeit}
+            \GermanText{Der Konjunktiv-II-Stamm wird für Irreales, Wünsche, Bedingungen und Höflichkeit benutzt.}
+            \EnglishText{The subjunctive-II stem is used for unreal situations, wishes, conditions, and politeness.}
+
+            \GermanText{Bei schwachen Verben ist er oft gleich der Präteritumform.}
+            \EnglishText{With weak verbs, it is often identical to the simple-past form.}
+
+            \GermanText{Bei starken Verben kommt oft ein Umlaut hinzu.}
+            \EnglishText{With strong verbs, an umlaut is often added.}
+
+            \GermanText{Oft benutzt man auch die Form \textbf{würde + Infinitiv}.}
+            \EnglishText{The form \textbf{würde + infinitive} is also often used.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{machen $\rightarrow$ machte}{to make $\rightarrow$ would make}
+                \ExampleItem{lernen $\rightarrow$ lernte}{to learn $\rightarrow$ would learn}
+                \ExampleItem{fand $\rightarrow$ fände}{found $\rightarrow$ would find}
+                \ExampleItem{kam $\rightarrow$ käme}{came $\rightarrow$ would come}
+                \ExampleItem{ging $\rightarrow$ ginge}{went $\rightarrow$ would go}
+                \ExampleItem{Ich würde kommen.}{I would come.}
+                \ExampleItem{Ich würde lernen.}{I would learn.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Imperativform}
+
+        \begin{grammarentry}{Imperativ}{Befehle, Bitten und Aufforderungen}
+            \GermanText{Die Imperativform wird für Befehle, Bitten und Aufforderungen benutzt.}
+            \EnglishText{The imperative form is used for commands, requests, and prompts.}
+
+            \GermanText{Sie wird meistens aus dem Präsensstamm gebildet.}
+            \EnglishText{It is usually formed from the present-tense stem.}
+
+            \GermanText{Bei manchen Verben mit Vokalwechsel gibt es besondere Formen.}
+            \EnglishText{Some verbs with a vowel change have special forms.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{machen $\rightarrow$ Mach!}{to make $\rightarrow$ Make!}
+                \ExampleItem{kommen $\rightarrow$ Komm!}{to come $\rightarrow$ Come!}
+                \ExampleItem{lernen $\rightarrow$ Lern!}{to learn $\rightarrow$ Learn!}
+                \ExampleItem{geben $\rightarrow$ Gib!}{to give $\rightarrow$ Give!}
+                \ExampleItem{lesen $\rightarrow$ Lies!}{to read $\rightarrow$ Read!}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Partizip I}
+
+        \begin{grammarentry}{Partizip I}{gleichzeitige Handlung oder adjektivische Funktion}
+            \GermanText{Das Partizip I beschreibt oft eine gleichzeitig ablaufende Handlung oder funktioniert wie ein Adjektiv.}
+            \EnglishText{The present participle often describes an action occurring at the same time or functions like an adjective.}
+
+            \GermanText{Bildung: \textbf{Infinitiv + \texttt{-d}}.}
+            \EnglishText{Formation: \textbf{infinitive + \texttt{-d}}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{lernen $\rightarrow$ lernend}{to learn $\rightarrow$ learning}
+                \ExampleItem{schlafen $\rightarrow$ schlafend}{to sleep $\rightarrow$ sleeping}
+                \ExampleItem{Das schlafende Kind ist ruhig.}{The sleeping child is quiet.}
+                \ExampleItem{die laufende Maschine}{the running machine}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Partizip II}
+
+        \begin{grammarentry}{Partizip II}{Perfekt, Plusquamperfekt, Futur II und Passiv}
+            \GermanText{Das Partizip II wird für Perfekt, Plusquamperfekt, Futur II und Passiv gebraucht.}
+            \EnglishText{The past participle is used for the present perfect, past perfect, future perfect, and passive voice.}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Schwache Verben}{regelmäßige Bildung}
+            \GermanText{Bildung: \textbf{\texttt{ge-} + Stamm + \texttt{-t}}.}
+            \EnglishText{Formation: \textbf{\texttt{ge-} + stem + \texttt{-t}}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{machen $\rightarrow$ gemacht}{to make $\rightarrow$ made}
+                \ExampleItem{lernen $\rightarrow$ gelernt}{to learn $\rightarrow$ learned}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Starke Verben}{häufige Bildung}
+            \GermanText{Bildung: oft \textbf{\texttt{ge-} + veränderter Stamm + \texttt{-en}}.}
+            \EnglishText{Formation: often \textbf{\texttt{ge-} + changed stem + \texttt{-en}}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{gehen $\rightarrow$ gegangen}{to go $\rightarrow$ gone}
+                \ExampleItem{schreiben $\rightarrow$ geschrieben}{to write $\rightarrow$ written}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Untrennbare Präfixe}{kein \texttt{ge-}}
+            \GermanText{Bei Verben mit einem untrennbaren Präfix steht normalerweise kein \texttt{ge-}.}
+            \EnglishText{Verbs with an inseparable prefix normally do not take \texttt{ge-}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{besuchen $\rightarrow$ besucht}{to visit $\rightarrow$ visited}
+                \ExampleItem{verstehen $\rightarrow$ verstanden}{to understand $\rightarrow$ understood}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Zu-Infinitiv}
+
+        \begin{grammarentry}{Zu-Infinitiv}{Infinitiv mit \texttt{zu}}
+            \GermanText{Der Zu-Infinitiv wird nach bestimmten Verben, Adjektiven und Ausdrücken benutzt.}
+            \EnglishText{The infinitive with \texttt{zu} is used after certain verbs, adjectives, and expressions.}
+
+            \GermanText{Bei einfachen und untrennbaren Verben lautet die Bildung: \textbf{\texttt{zu} + Infinitiv}.}
+            \EnglishText{With simple and inseparable verbs, the formation is: \textbf{\texttt{zu} + infinitive}.}
+
+            \GermanText{Bei trennbaren Verben steht \texttt{zu} zwischen dem Präfix und dem Verbstamm. Präfix, \texttt{zu} und Verbstamm werden zusammengeschrieben.}
+            \EnglishText{With separable verbs, \texttt{zu} stands between the prefix and the verb stem. The prefix, \texttt{zu}, and the verb stem are written together as one word.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{zu lernen}{to learn}
+                \ExampleItem{zu schlafen}{to sleep}
+                \ExampleItem{anfangen $\rightarrow$ anzufangen}{to begin $\rightarrow$ to begin}
+                \ExampleItem{aufstehen $\rightarrow$ aufzustehen}{to get up $\rightarrow$ to get up}
+                \ExampleItem{Ich hoffe, bald anzufangen.}{I hope to start soon.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Drei Stammformen}
+
+        \begin{grammarentry}{Infinitiv -- Präteritum -- Partizip II}{wichtige Lernformen}
+            \GermanText{Beim Lernen deutscher Verben sind besonders drei Formen wichtig: Infinitiv, Präteritum und Partizip II.}
+            \EnglishText{When learning German verbs, three forms are especially important: the infinitive, the simple past, and the past participle.}
+
+            \GermanText{Diese drei Formen helfen beim Bilden vieler anderer Zeitformen.}
+            \EnglishText{These three forms help with forming many other tenses.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{gehen -- ging -- gegangen}{to go -- went -- gone}
+                \ExampleItem{sehen -- sah -- gesehen}{to see -- saw -- seen}
+                \ExampleItem{machen -- machte -- gemacht}{to make -- made -- made}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Übersicht}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{3.2cm}|p{5.2cm}|p{6.0cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Form} &
+            \color{white}\textbf{Bildung oder Grundlage} &
+            \color{white}\textbf{English} \\
+            Infinitiv & Verbstamm + \texttt{-en} oder \texttt{-n} & verb stem + \texttt{-en} or \texttt{-n} \\
+            Verbstamm & Infinitiv ohne \texttt{-en} oder \texttt{-n} & infinitive without \texttt{-en} or \texttt{-n} \\
+            Präsens & Stamm + Personalendung & stem + personal ending \\
+            Präteritum, schwach & Verbstamm + \texttt{-te} & verb stem + \texttt{-te} \\
+            Partizip I & Infinitiv + \texttt{-d} & infinitive + \texttt{-d} \\
+            Partizip II, schwach & \texttt{ge-} + Stamm + \texttt{-t} & \texttt{ge-} + stem + \texttt{-t} \\
+            Zu-Infinitiv, trennbar & Präfix + \texttt{zu} + Verbstamm & prefix + \texttt{zu} + verb stem \\
+        \end{longtable}
+
+    \section{Wichtiger Hinweis}
+
+        \begin{grammarentry}{Stamm und Verbform}{grammatische Abgrenzung}
+            \GermanText{Streng grammatisch ist der Stamm die eigentliche Grundlage des Verbs.}
+            \EnglishText{Strictly speaking, the stem is the actual grammatical basis of the verb.}
+
+            \GermanText{Infinitiv, Präteritum, Konjunktiv II, Imperativ, Partizip I und Partizip II sind Formen, die aus dem Stamm oder aus einer Stammform gebildet werden.}
+            \EnglishText{The infinitive, simple past, subjunctive II, imperative, present participle, and past participle are forms created from the stem or from a principal form.}
+        \end{grammarentry}
+
+\end{document}

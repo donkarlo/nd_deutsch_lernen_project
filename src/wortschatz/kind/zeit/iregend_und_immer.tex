@@ -1,0 +1,243 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Irgendwann, immer wenn und wann immer}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+\section{Grundidee}
+
+\begin{grammarentry}{Die drei Ausdrücke sind nicht gleich}{the three expressions are not the same}
+\GermanText{\textbf{irgendwann}, \textbf{immer wenn} und \textbf{wann immer} sehen ähnlich aus, aber sie haben unterschiedliche Bedeutungen.}
+\EnglishText{\textbf{irgendwann}, \textbf{immer wenn} and \textbf{wann immer} look similar, but they have different meanings.}
+
+\begin{center}
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{tabular}{>{\bfseries}p{3.5cm}p{5cm}p{5.5cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Ausdruck} & \color{white}\textbf{Bedeutung} & \color{white}\textbf{Englisch} \\
+irgendwann & ein unbestimmter Zeitpunkt & sometime / at some point \\
+immer wenn & jedes Mal, wenn etwas passiert & whenever / every time when \\
+wann immer & zu jedem Zeitpunkt, zu dem etwas möglich ist & whenever / at any time when \\
+\end{tabular}
+\end{center}
+
+\GermanText{\textbf{immerwann} ist kein normales deutsches Wort. Man sagt \textbf{irgendwann}, \textbf{immer wenn} oder \textbf{wann immer}.}
+\EnglishText{\textbf{immerwann} is not a normal German word. You say \textbf{irgendwann}, \textbf{immer wenn} or \textbf{wann immer}.}
+\end{grammarentry}
+
+\section{Irgendwann}
+
+\begin{grammarentry}{irgendwann}{sometime / at some point}
+\GermanText{\textbf{irgendwann} benutzt man, wenn der genaue Zeitpunkt unbekannt, unwichtig oder noch nicht bestimmt ist.}
+\EnglishText{You use \textbf{irgendwann} when the exact time is unknown, unimportant or not decided yet.}
+
+\GermanText{\textbf{irgendwann} ist ein Adverb. Es bildet keinen Nebensatz. Das Verb bleibt also an der normalen Position im Satz.}
+\EnglishText{\textbf{irgendwann} is an adverb. It does not create a subordinate clause. So the verb stays in the normal position in the sentence.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich werde irgendwann nach Deutschland reisen.}{I will travel to Germany sometime.}
+    \ExampleItem{Irgendwann möchte ich ein Haus kaufen.}{At some point I want to buy a house.}
+    \ExampleItem{Irgendwann habe ich verstanden, dass Deutsch Zeit braucht.}{At some point I understood that German needs time.}
+\end{itemize}
+\end{exbox}
+
+\GermanText{Wichtig: \textbf{irgendwann} bedeutet nicht \textbf{immer}. Es bedeutet nur: zu einem unbestimmten Zeitpunkt.}
+\EnglishText{Important: \textbf{irgendwann} does not mean \textbf{always}. It only means: at an unspecified time.}
+\end{grammarentry}
+
+\section{Immer wenn}
+
+\begin{grammarentry}{immer wenn}{whenever / every time when}
+\GermanText{\textbf{immer wenn} benutzt man, wenn etwas jedes Mal passiert, wenn eine bestimmte Situation eintritt.}
+\EnglishText{You use \textbf{immer wenn} when something happens every time a certain situation occurs.}
+
+\GermanText{\textbf{immer wenn} leitet einen Nebensatz ein. Deshalb steht das konjugierte Verb im Nebensatz am Ende.}
+\EnglishText{\textbf{immer wenn} introduces a subordinate clause. Therefore, the conjugated verb in the subordinate clause stands at the end.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Immer wenn ich müde bin, mache ich Fehler.}{Whenever I am tired, I make mistakes.}
+    \ExampleItem{Ich trinke Kaffee, immer wenn ich lernen muss.}{I drink coffee whenever I have to study.}
+    \ExampleItem{Immer wenn er Deutsch spricht, wird er sicherer.}{Every time he speaks German, he becomes more confident.}
+\end{itemize}
+\end{exbox}
+
+\GermanText{Man kann \textbf{immer wenn} oft mit \textbf{jedes Mal, wenn} ersetzen.}
+\EnglishText{You can often replace \textbf{immer wenn} with \textbf{jedes Mal, wenn}.}
+\end{grammarentry}
+
+\section{Wann immer}
+
+\begin{grammarentry}{wann immer}{whenever / at any time when}
+\GermanText{\textbf{wann immer} bedeutet: egal zu welchem Zeitpunkt. Es klingt etwas formeller oder schriftlicher als \textbf{immer wenn}.}
+\EnglishText{\textbf{wann immer} means: no matter at what time. It sounds a little more formal or written than \textbf{immer wenn}.}
+
+\GermanText{\textbf{wann immer} leitet auch einen Nebensatz ein. Das konjugierte Verb steht am Ende des Nebensatzes.}
+\EnglishText{\textbf{wann immer} also introduces a subordinate clause. The conjugated verb stands at the end of the subordinate clause.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Du kannst mich anrufen, wann immer du Hilfe brauchst.}{You can call me whenever you need help.}
+    \ExampleItem{Ich helfe dir, wann immer ich kann.}{I help you whenever I can.}
+    \ExampleItem{Komm vorbei, wann immer du willst.}{Come by whenever you want.}
+\end{itemize}
+\end{exbox}
+
+\GermanText{\textbf{wann immer} betont Freiheit oder Offenheit: Der Zeitpunkt ist egal.}
+\EnglishText{\textbf{wann immer} emphasizes freedom or openness: the time does not matter.}
+\end{grammarentry}
+
+\section{Direkter Vergleich}
+
+\begin{grammarentry}{Unterschied in einfachen Sätzen}{difference in simple sentences}
+\GermanText{Diese drei Sätze zeigen den Unterschied sehr klar.}
+\EnglishText{These three sentences show the difference very clearly.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich besuche dich irgendwann.}{I will visit you sometime.}
+    \ExampleItem{Ich besuche dich immer, wenn ich in Graz bin.}{I visit you whenever I am in Graz.}
+    \ExampleItem{Ich besuche dich, wann immer du willst.}{I will visit you whenever you want.}
+\end{itemize}
+\end{exbox}
+
+\GermanText{\textbf{irgendwann}: ein unbestimmter Zeitpunkt.}
+\EnglishText{\textbf{irgendwann}: an unspecified time.}
+
+\GermanText{\textbf{immer wenn}: jedes Mal bei einer Bedingung.}
+\EnglishText{\textbf{immer wenn}: every time under a condition.}
+
+\GermanText{\textbf{wann immer}: egal wann; jeder passende Zeitpunkt ist möglich.}
+\EnglishText{\textbf{wann immer}: no matter when; any suitable time is possible.}
+\end{grammarentry}
+
+\section{Satzstellung}
+
+\begin{grammarentry}{Verbposition}{verb position}
+\GermanText{\textbf{irgendwann} ist nur ein Adverb. Es verändert die Satzstruktur nicht stark.}
+\EnglishText{\textbf{irgendwann} is only an adverb. It does not strongly change the sentence structure.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich werde irgendwann Deutsch sehr gut sprechen.}{I will speak German very well at some point.}
+    \ExampleItem{Irgendwann werde ich Deutsch sehr gut sprechen.}{At some point I will speak German very well.}
+\end{itemize}
+\end{exbox}
+
+\GermanText{\textbf{immer wenn} und \textbf{wann immer} bilden einen Nebensatz. Im Nebensatz steht das konjugierte Verb am Ende.}
+\EnglishText{\textbf{immer wenn} and \textbf{wann immer} form a subordinate clause. In the subordinate clause, the conjugated verb stands at the end.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Immer wenn ich Deutsch spreche, lerne ich etwas Neues.}{Whenever I speak German, I learn something new.}
+    \ExampleItem{Ich frage dich, wann immer ich etwas nicht verstehe.}{I ask you whenever I do not understand something.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Typische Fehler}
+
+\begin{grammarentry}{Was man nicht sagen sollte}{what one should not say}
+\GermanText{\textbf{immerwann} ist falsch oder zumindest nicht normales Standarddeutsch.}
+\EnglishText{\textbf{immerwann} is wrong, or at least not normal standard German.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Nicht: Ich werde immerwann ein Auto kaufen.}{Not: I will buy a car sometime.}
+    \ExampleItem{Richtig: Ich werde irgendwann ein Auto kaufen.}{Correct: I will buy a car sometime.}
+    \ExampleItem{Nicht: Immerwann ich müde bin, mache ich Fehler.}{Not: Whenever I am tired, I make mistakes.}
+    \ExampleItem{Richtig: Immer wenn ich müde bin, mache ich Fehler.}{Correct: Whenever I am tired, I make mistakes.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Kurze Regel zum Merken}
+
+\begin{grammarentry}{Merksatz}{memory rule}
+\GermanText{\textbf{irgendwann} = ein unbestimmter Zeitpunkt.}
+\EnglishText{\textbf{irgendwann} = an unspecified time.}
+
+\GermanText{\textbf{immer wenn} = jedes Mal, wenn etwas passiert.}
+\EnglishText{\textbf{immer wenn} = every time something happens.}
+
+\GermanText{\textbf{wann immer} = egal wann; zu jedem passenden Zeitpunkt.}
+\EnglishText{\textbf{wann immer} = no matter when; at any suitable time.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Irgendwann lerne ich das.}{At some point I will learn that.}
+    \ExampleItem{Immer wenn ich übe, werde ich besser.}{Whenever I practice, I get better.}
+    \ExampleItem{Du kannst fragen, wann immer du willst.}{You can ask whenever you want.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Mini-Test}
+
+\begin{grammarentry}{Übung}{exercise}
+\GermanText{Setze \textbf{irgendwann}, \textbf{immer wenn} oder \textbf{wann immer} ein.}
+\EnglishText{Insert \textbf{irgendwann}, \textbf{immer wenn} or \textbf{wann immer}.}
+
+\begin{enumerate}
+    \item Ich möchte \underline{\hspace{3cm}} nach Wien fahren.
+    \item \underline{\hspace{3cm}} ich nervös bin, spreche ich schneller.
+    \item Du kannst mir schreiben, \underline{\hspace{3cm}} du Hilfe brauchst.
+    \item \underline{\hspace{3cm}} werde ich diese Grammatik verstehen.
+    \item Ich mache Notizen, \underline{\hspace{3cm}} ich ein neues Wort lerne.
+\end{enumerate}
+
+\GermanText{Lösungen: 1 irgendwann, 2 immer wenn, 3 wann immer, 4 irgendwann, 5 immer wenn}
+\EnglishText{Answers: 1 irgendwann, 2 immer wenn, 3 wann immer, 4 irgendwann, 5 immer wenn}
+\end{grammarentry}
+
+\end{document}

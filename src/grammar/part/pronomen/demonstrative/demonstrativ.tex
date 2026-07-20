@@ -1,0 +1,242 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{array}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\newcommand{\HeaderRow}{\rowcolor{HeaderBlueDark}\color{white}\bfseries Fall & \color{white}\bfseries Maskulin & \color{white}\bfseries Feminin & \color{white}\bfseries Neutrum & \color{white}\bfseries Plural \\}
+\newcommand{\DeclTable}[4]{%
+\begin{center}
+\begin{tabular}{|>{\centering\arraybackslash}m{2.2cm}|>{\centering\arraybackslash}m{2.5cm}|>{\centering\arraybackslash}m{2.5cm}|>{\centering\arraybackslash}m{2.5cm}|>{\centering\arraybackslash}m{2.5cm}|}
+\hline
+\HeaderRow
+\hline
+\rowcolor{RowBlueLight}Nominativ & #1 \\
+\hline
+\rowcolor{RowBlueDark}Akkusativ & #2 \\
+\hline
+\rowcolor{RowBlueLight}Dativ & #3 \\
+\hline
+\rowcolor{RowBlueDark}Genitiv & #4 \\
+\hline
+\end{tabular}
+\end{center}}
+
+\title{Demonstrativpronomen und verwandte Formen}
+\date{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Überblick}
+\begin{grammarentry}{Grammatische Rolle}{Pronomen und Artikelwörter}
+\GermanText{Wörter wie \textbf{dieser}, \textbf{jener}, \textbf{derselbe} und \textbf{derjenige} können als Demonstrativpronomen verwendet werden. Sie weisen besonders auf eine bestimmte Person, Sache oder Gruppe hin.}
+\EnglishText{Words such as \textbf{dieser}, \textbf{jener}, \textbf{derselbe}, and \textbf{derjenige} can be used as demonstrative pronouns. They point specifically to a particular person, thing, or group.}
+\GermanText{Stehen sie vor einem Nomen, werden sie oft als Demonstrativartikel oder demonstrative Artikelwörter bezeichnet.}
+\EnglishText{When they stand before a noun, they are often called demonstrative determiners or demonstrative article words.}
+\end{grammarentry}
+
+\section{Dieser und jener}
+\begin{grammarentry}{dieser / jener}{Demonstrativpronomen, deklinierbar}
+\GermanText{\textbf{dieser} verweist meist auf etwas Näheres; \textbf{jener} verweist meist auf etwas Weiteres oder zeitlich Entferntes. \textbf{jener} wirkt häufig schriftsprachlich oder gehoben.}
+\EnglishText{\textbf{dieser} usually refers to something nearer; \textbf{jener} usually refers to something farther away or more distant in time. \textbf{jener} often sounds literary or formal.}
+\end{grammarentry}
+
+\begin{center}
+\begin{tabular}{|>{\centering\arraybackslash}m{2.2cm}|>{\centering\arraybackslash}m{2.5cm}|>{\centering\arraybackslash}m{2.5cm}|>{\centering\arraybackslash}m{2.5cm}|>{\centering\arraybackslash}m{2.5cm}|}
+\hline
+\HeaderRow
+\hline
+\rowcolor{RowBlueLight}Nominativ & dieser / jener & diese / jene & dieses / jenes & diese / jene \\
+\hline
+\rowcolor{RowBlueDark}Akkusativ & diesen / jenen & diese / jene & dieses / jenes & diese / jene \\
+\hline
+\rowcolor{RowBlueLight}Dativ & diesem / jenem & dieser / jener & diesem / jenem & diesen / jenen \\
+\hline
+\rowcolor{RowBlueDark}Genitiv & dieses / jenes & dieser / jener & dieses / jenes & dieser / jener \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Dieser Mann arbeitet hier.}{This man works here.}
+\ExampleItem{An jenem Tag begann alles.}{Everything began on that day.}
+\ExampleItem{In jenem Moment wusste ich es.}{At that moment, I knew it.}
+\end{itemize}
+\end{exbox}
+
+\section{Der, die und das demonstrativ gebraucht}
+\begin{grammarentry}{der / die / das}{demonstrativ gebraucht}
+\GermanText{Die bestimmten Artikel \textbf{der}, \textbf{die} und \textbf{das} können auch demonstrativ gebraucht werden. Dann werden sie stärker betont und bedeuten ungefähr \glqq dieser / diese / dieses\grqq.}
+\EnglishText{The definite articles \textbf{der}, \textbf{die}, and \textbf{das} can also be used demonstratively. They are then stressed more strongly and mean approximately ``this one'' or ``that one.''}
+\end{grammarentry}
+
+\begin{center}
+\begin{tabular}{|>{\centering\arraybackslash}m{2.2cm}|>{\centering\arraybackslash}m{2.5cm}|>{\centering\arraybackslash}m{2.5cm}|>{\centering\arraybackslash}m{2.5cm}|>{\centering\arraybackslash}m{2.5cm}|}
+\hline
+\HeaderRow
+\hline
+\rowcolor{RowBlueLight}Nominativ & der & die & das & die \\
+\hline
+\rowcolor{RowBlueDark}Akkusativ & den & die & das & die \\
+\hline
+\rowcolor{RowBlueLight}Dativ & dem & der & dem & den \\
+\hline
+\rowcolor{RowBlueDark}Genitiv & dessen & deren & dessen & deren \\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Derselbe}
+\begin{grammarentry}{derselbe}{Identität: genau dieselbe Person oder Sache}
+\GermanText{\textbf{derselbe}, \textbf{dieselbe} und \textbf{dasselbe} bedeuten, dass zwei Bezugnahmen genau dieselbe Person oder Sache meinen.}
+\EnglishText{\textbf{derselbe}, \textbf{dieselbe}, and \textbf{dasselbe} mean that two references concern exactly the same person or thing.}
+\end{grammarentry}
+
+\begin{center}
+\begin{tabular}{|>{\centering\arraybackslash}m{2.2cm}|>{\centering\arraybackslash}m{2.5cm}|>{\centering\arraybackslash}m{2.5cm}|>{\centering\arraybackslash}m{2.5cm}|>{\centering\arraybackslash}m{2.5cm}|}
+\hline
+\HeaderRow
+\hline
+\rowcolor{RowBlueLight}Nominativ & derselbe & dieselbe & dasselbe & dieselben \\
+\hline
+\rowcolor{RowBlueDark}Akkusativ & denselben & dieselbe & dasselbe & dieselben \\
+\hline
+\rowcolor{RowBlueLight}Dativ & demselben & derselben & demselben & denselben \\
+\hline
+\rowcolor{RowBlueDark}Genitiv & desselben & derselben & desselben & derselben \\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Derjenige}
+\begin{grammarentry}{derjenige}{Demonstrativpronomen, häufig mit Relativsatz}
+\GermanText{\textbf{derjenige}, \textbf{diejenige}, \textbf{dasjenige} und \textbf{diejenigen} bezeichnen eine bestimmte Person oder Sache aus einer Gruppe. Danach folgt sehr häufig ein Relativsatz.}
+\EnglishText{\textbf{derjenige}, \textbf{diejenige}, \textbf{dasjenige}, and \textbf{diejenigen} identify a particular person or thing from a group. They are very often followed by a relative clause.}
+\end{grammarentry}
+
+\begin{center}
+\begin{tabular}{|>{\centering\arraybackslash}m{2.2cm}|>{\centering\arraybackslash}m{2.5cm}|>{\centering\arraybackslash}m{2.5cm}|>{\centering\arraybackslash}m{2.5cm}|>{\centering\arraybackslash}m{2.5cm}|}
+\hline
+\HeaderRow
+\hline
+\rowcolor{RowBlueLight}Nominativ & derjenige & diejenige & dasjenige & diejenigen \\
+\hline
+\rowcolor{RowBlueDark}Akkusativ & denjenigen & diejenige & dasjenige & diejenigen \\
+\hline
+\rowcolor{RowBlueLight}Dativ & demjenigen & derjenigen & demjenigen & denjenigen \\
+\hline
+\rowcolor{RowBlueDark}Genitiv & desjenigen & derjenigen & desjenigen & derjenigen \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Diejenige, die dort steht, ist meine Schwester.}{The one who is standing there is my sister.}
+\ExampleItem{Ich helfe demjenigen, der mich darum gebeten hat.}{I help the person who asked me to do so.}
+\ExampleItem{Das sind diejenigen, die gewonnen haben.}{Those are the ones who won.}
+\end{itemize}
+\end{exbox}
+
+\section{Solcher}
+\begin{grammarentry}{solcher}{Hinweis auf eine Art oder Beschaffenheit}
+\GermanText{\textbf{solcher}, \textbf{solche} und \textbf{solches} weisen auf eine bestimmte Art, Beschaffenheit oder Gruppe hin.}
+\EnglishText{\textbf{solcher}, \textbf{solche}, and \textbf{solches} point to a certain type, quality, or group.}
+\end{grammarentry}
+
+\begin{center}
+\begin{tabular}{|>{\centering\arraybackslash}m{2.2cm}|>{\centering\arraybackslash}m{2.5cm}|>{\centering\arraybackslash}m{2.5cm}|>{\centering\arraybackslash}m{2.5cm}|>{\centering\arraybackslash}m{2.5cm}|}
+\hline
+\HeaderRow
+\hline
+\rowcolor{RowBlueLight}Nominativ & solcher & solche & solches & solche \\
+\hline
+\rowcolor{RowBlueDark}Akkusativ & solchen & solche & solches & solche \\
+\hline
+\rowcolor{RowBlueLight}Dativ & solchem & solcher & solchem & solchen \\
+\hline
+\rowcolor{RowBlueDark}Genitiv & solchen & solcher & solchen & solcher \\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Mancher}
+\begin{grammarentry}{mancher}{Indefinitpronomen oder Artikelwort}
+\GermanText{\textbf{mancher}, \textbf{manche} und \textbf{manches} bezeichnen eine unbestimmte einzelne Person oder Sache beziehungsweise mehrere unbestimmte Personen oder Sachen.}
+\EnglishText{\textbf{mancher}, \textbf{manche}, and \textbf{manches} refer to an unspecified individual person or thing, or to several unspecified people or things.}
+\GermanText{Grammatisch gehört \textbf{mancher} normalerweise zu den Indefinitpronomen und nicht zu den Demonstrativpronomen.}
+\EnglishText{Grammatically, \textbf{mancher} normally belongs to the indefinite pronouns, not to the demonstrative pronouns.}
+\end{grammarentry}
+
+\begin{center}
+\begin{tabular}{|>{\centering\arraybackslash}m{2.2cm}|>{\centering\arraybackslash}m{2.5cm}|>{\centering\arraybackslash}m{2.5cm}|>{\centering\arraybackslash}m{2.5cm}|>{\centering\arraybackslash}m{2.5cm}|}
+\hline
+\HeaderRow
+\hline
+\rowcolor{RowBlueLight}Nominativ & mancher & manche & manches & manche \\
+\hline
+\rowcolor{RowBlueDark}Akkusativ & manchen & manche & manches & manche \\
+\hline
+\rowcolor{RowBlueLight}Dativ & manchem & mancher & manchem & manchen \\
+\hline
+\rowcolor{RowBlueDark}Genitiv & manchen & mancher & manchen & mancher \\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Zusammenfassung}
+\begin{grammarentry}{Merksatz}{kurz und wichtig}
+\GermanText{\textbf{dieser / jener}, \textbf{derselbe} und \textbf{derjenige} können demonstrativ gebraucht werden. \textbf{mancher} ist dagegen normalerweise ein Indefinitpronomen.}
+\EnglishText{\textbf{dieser / jener}, \textbf{derselbe}, and \textbf{derjenige} can be used demonstratively. \textbf{mancher}, by contrast, is normally an indefinite pronoun.}
+\GermanText{Alle diese Formen werden nach Kasus, Genus und Numerus dekliniert.}
+\EnglishText{All these forms are declined according to case, gender, and number.}
+\end{grammarentry}
+
+\end{document}

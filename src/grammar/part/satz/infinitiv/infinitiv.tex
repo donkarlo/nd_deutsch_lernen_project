@@ -1,0 +1,377 @@
+% Aktualisierte Erklärung zum Infinitiv und zum Infinitivsatz
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Der Infinitiv und der Infinitivsatz}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+
+    \section{Grundform des Infinitivs}
+
+        \begin{grammarentry}{Infinitiv}{Grundform des Verbs}
+            \GermanText{Der Infinitiv ist die Grundform eines Verbs, zum Beispiel \textbf{lernen}, \textbf{arbeiten}, \textbf{fliegen}, \textbf{aufstehen} oder \textbf{zumarschieren}.}
+            \EnglishText{The infinitive is the basic form of a verb, for example \textbf{lernen}, \textbf{arbeiten}, \textbf{fliegen}, \textbf{aufstehen}, or \textbf{zumarschieren}.}
+
+            \GermanText{Ein Infinitiv kann entweder \textbf{ohne zu} oder \textbf{mit zu} stehen. Welche Form notwendig ist, hängt von der grammatischen Struktur und besonders vom vorhergehenden Verb ab.}
+            \EnglishText{An infinitive can appear either \textbf{without zu} or \textbf{with zu}. The required form depends on the grammatical structure and especially on the preceding verb.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Monika will morgen nach Rom fliegen.}{Monika wants to fly to Rome tomorrow.}
+                \ExampleItem{Monika versucht, morgen nach Rom zu fliegen.}{Monika tries to fly to Rome tomorrow.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Der Infinitivsatz mit \glqq zu\grqq}
+
+        \begin{grammarentry}{Definition}{zu + Infinitiv}
+            \GermanText{Ein Infinitivsatz ist eine Wortgruppe mit \textbf{zu + Infinitiv}. Er hat normalerweise kein eigenes Subjekt.}
+            \EnglishText{An infinitive clause is a group of words with \textbf{zu + infinitive}. It normally has no subject of its own.}
+
+            \GermanText{Das Subjekt des Infinitivs ist meistens aus dem Hauptsatz klar.}
+            \EnglishText{The subject of the infinitive is usually clear from the main clause.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich versuche, Deutsch zu lernen.}{I try to learn German.}
+                \ExampleItem{Ich habe keine Zeit, heute zu lernen.}{I have no time to study today.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Grundform}{Stellung des Infinitivs}
+            \GermanText{Die häufige Grundform lautet: \textbf{Hauptsatz + Komma + zu + Infinitiv}. Der Infinitiv steht am Ende des Infinitivsatzes.}
+            \EnglishText{The common basic form is: \textbf{main clause + comma + zu + infinitive}. The infinitive stands at the end of the infinitive clause.}
+        \end{grammarentry}
+
+
+    \section{Infinitiv ohne \glqq zu\grqq{} nach Modalverben}
+
+        \begin{grammarentry}{Modalverb + Infinitiv}{kein zu}
+            \GermanText{Nach einem konjugierten Modalverb steht der zweite Infinitiv \textbf{ohne zu}.}
+            \EnglishText{After a conjugated modal verb, the second infinitive is used \textbf{without zu}.}
+
+            \GermanText{Die wichtigsten Modalverben sind: \textbf{dürfen, können, mögen, müssen, sollen} und \textbf{wollen}. \textbf{möchten} ist eine Form von \textbf{mögen} und folgt derselben Regel.}
+            \EnglishText{The main modal verbs are: \textbf{dürfen, können, mögen, müssen, sollen}, and \textbf{wollen}. \textbf{möchten} is a form of \textbf{mögen} and follows the same rule.}
+
+            \GermanText{Struktur: \textbf{Subjekt + konjugiertes Modalverb + weitere Satzteile + Infinitiv ohne zu}.}
+            \EnglishText{Structure: \textbf{subject + conjugated modal verb + other sentence elements + infinitive without zu}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Monika will morgen nach Rom fliegen.}{Monika wants to fly to Rome tomorrow.}
+                \ExampleItem{Ich kann gut schwimmen.}{I can swim well.}
+                \ExampleItem{Er muss heute arbeiten.}{He must work today.}
+                \ExampleItem{Wir dürfen jetzt gehen.}{We may leave now.}
+                \ExampleItem{Du sollst mehr lernen.}{You should study more.}
+                \ExampleItem{Sie möchte ein neues Buch kaufen.}{She would like to buy a new book.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Richtig und falsch}{Monika will fliegen}
+            \GermanText{Richtig ist: \textbf{Monika will morgen nach Rom fliegen.}}
+            \EnglishText{Correct: \textbf{Monika will morgen nach Rom fliegen.}}
+
+            \GermanText{Falsch ist: \textbf{Monika will morgen nach Rom zu fliegen.}}
+            \EnglishText{Incorrect: \textbf{Monika will morgen nach Rom zu fliegen.}}
+
+            \GermanText{Der Grund ist nicht das Verb \textbf{fliegen}, sondern das vorhergehende Modalverb \textbf{will}. Das Modalverb verlangt hier einen Infinitiv ohne \textbf{zu}.}
+            \EnglishText{The reason is not the verb \textbf{fliegen}, but the preceding modal verb \textbf{will}. Here, the modal verb requires an infinitive without \textbf{zu}.}
+        \end{grammarentry}
+
+        \subsection{Modalverb im Nebensatz}
+
+            \begin{grammarentry}{Verbgruppe am Satzende}{weiterhin ohne zu}
+                \GermanText{Auch in einem Nebensatz bleibt der Infinitiv nach einem Modalverb ohne \textbf{zu}. Die gesamte Verbgruppe steht am Ende.}
+                \EnglishText{In a subordinate clause, the infinitive after a modal verb also remains without \textbf{zu}. The entire verb group stands at the end.}
+            \end{grammarentry}
+
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich weiß, dass Monika morgen nach Rom fliegen will.}{I know that Monika wants to fly to Rome tomorrow.}
+                    \ExampleItem{Er bleibt zu Hause, weil er arbeiten muss.}{He stays at home because he has to work.}
+                \end{itemize}
+            \end{exbox}
+
+        \subsection{Modalverb innerhalb eines Infinitivsatzes}
+
+            \begin{grammarentry}{Infinitivgruppe mit Modalverb}{zu vor dem Modalverb}
+                \GermanText{Wenn eine Infinitivgruppe selbst ein Modalverb enthält, bleibt das andere Verb im einfachen Infinitiv. Das Infinitiv-\textbf{zu} steht vor dem Modalverb.}
+                \EnglishText{When an infinitive group itself contains a modal verb, the other verb remains in the plain infinitive. The infinitive marker \textbf{zu} stands before the modal verb.}
+
+                \GermanText{Struktur: \textbf{anderer Infinitiv + zu + Modalverb}.}
+                \EnglishText{Structure: \textbf{other infinitive + zu + modal verb}.}
+            \end{grammarentry}
+
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich lerne Deutsch, um besser sprechen zu können.}{I am learning German in order to be able to speak better.}
+                    \ExampleItem{Monika hofft, morgen nach Rom fliegen zu können.}{Monika hopes to be able to fly to Rome tomorrow.}
+                    \ExampleItem{Er versucht, früher gehen zu dürfen.}{He tries to be allowed to leave earlier.}
+                \end{itemize}
+            \end{exbox}
+
+            \begin{grammarentry}{Wichtiger Unterschied}{kann sprechen / sprechen zu können}
+                \GermanText{Im Hauptsatz steht: \textbf{Ich kann sprechen.} Hier ist \textbf{kann} konjugiert; deshalb steht \textbf{sprechen} ohne \textbf{zu}.}
+                \EnglishText{In the main clause: \textbf{Ich kann sprechen.} Here, \textbf{kann} is conjugated; therefore, \textbf{sprechen} is used without \textbf{zu}.}
+
+                \GermanText{Im Infinitivsatz steht: \textbf{um sprechen zu können}. Hier ist \textbf{können} selbst der Infinitiv mit \textbf{zu}; \textbf{sprechen} bleibt ohne \textbf{zu}.}
+                \EnglishText{In the infinitive clause: \textbf{um sprechen zu können}. Here, \textbf{können} itself is the infinitive with \textbf{zu}; \textbf{sprechen} remains without \textbf{zu}.}
+            \end{grammarentry}
+
+
+    \section{Infinitivsatz nach bestimmten Verben}
+
+        \begin{grammarentry}{Verben mit zu-Infinitiv}{häufige Verben}
+            \GermanText{Viele andere Verben werden häufig mit einem Infinitivsatz mit \textbf{zu} verwendet, zum Beispiel \textbf{versuchen, hoffen, planen, vorhaben, vergessen} und \textbf{beginnen}.}
+            \EnglishText{Many other verbs are commonly used with an infinitive clause with \textbf{zu}, for example \textbf{versuchen, hoffen, planen, vorhaben, vergessen}, and \textbf{beginnen}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich versuche, ruhig zu bleiben.}{I try to stay calm.}
+                \ExampleItem{Ich hoffe, die Prüfung zu bestehen.}{I hope to pass the exam.}
+                \ExampleItem{Ich plane, am Wochenende zu lernen.}{I plan to study at the weekend.}
+                \ExampleItem{Ich habe vor, morgen früh aufzustehen.}{I plan to get up early tomorrow.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Abgrenzung}{Modalverb oder anderes Verb}
+            \GermanText{Man muss auf das vorhergehende Verb achten: \textbf{wollen} verlangt den Infinitiv ohne \textbf{zu}; \textbf{versuchen} verlangt in dieser Konstruktion einen Infinitivsatz mit \textbf{zu}.}
+            \EnglishText{One must pay attention to the preceding verb: \textbf{wollen} requires the infinitive without \textbf{zu}; \textbf{versuchen} requires an infinitive clause with \textbf{zu} in this construction.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Monika will nach Rom fliegen.}{Monika wants to fly to Rome.}
+                \ExampleItem{Monika versucht, nach Rom zu fliegen.}{Monika tries to fly to Rome.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Infinitiv mit trennbaren Verben}
+
+        \begin{grammarentry}{Trennbares Verb mit zu}{zu im Verb}
+            \GermanText{Bei einem trennbaren Verb steht das Infinitiv-\textbf{zu} zwischen dem trennbaren Präfix und dem Verbstamm. Das Ergebnis wird als ein Wort geschrieben.}
+            \EnglishText{With a separable verb, the infinitive marker \textbf{zu} stands between the separable prefix and the verb stem. The result is written as one word.}
+
+            \GermanText{Formel: \textbf{Präfix + zu + Verbstamm}.}
+            \EnglishText{Formula: \textbf{prefix + zu + verb stem}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{anfangen $\rightarrow$ anzufangen}{to begin $\rightarrow$ to begin with zu}
+                \ExampleItem{aufstehen $\rightarrow$ aufzustehen}{to get up $\rightarrow$ to get up with zu}
+                \ExampleItem{einkaufen $\rightarrow$ einzukaufen}{to shop $\rightarrow$ to shop with zu}
+                \ExampleItem{Ich habe vor, morgen früh aufzustehen.}{I plan to get up early tomorrow.}
+                \ExampleItem{Er versucht, mit dem Rauchen aufzuhören.}{He is trying to stop smoking.}
+            \end{itemize}
+        \end{exbox}
+
+        \subsection{Trennbare Verben mit dem Präfix \glqq zu-\grqq}
+
+            \begin{grammarentry}{zu- + zu + Verbstamm}{zwei zu direkt nacheinander}
+                \GermanText{Bei Verben wie \textbf{zumarschieren} gehört das erste \textbf{zu-} bereits zum Verb. Für den Infinitiv mit \textbf{zu} wird ein zweites \textbf{zu} zwischen Präfix und Verbstamm eingesetzt. Alles wird zusammengeschrieben.}
+                \EnglishText{In verbs such as \textbf{zumarschieren}, the first \textbf{zu-} already belongs to the verb. For the infinitive with \textbf{zu}, a second \textbf{zu} is inserted between the prefix and the verb stem. Everything is written together.}
+
+                \GermanText{Bildung: \textbf{zu- + zu + marschieren = zuzumarschieren}.}
+                \EnglishText{Formation: \textbf{zu- + zu + marschieren = zuzumarschieren}.}
+            \end{grammarentry}
+
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Die Soldaten beginnen, auf die Stadt zuzumarschieren.}{The soldiers begin to march toward the city.}
+                    \ExampleItem{Die Demonstranten scheinen auf das Parlament zuzumarschieren.}{The demonstrators seem to be marching toward the parliament.}
+                \end{itemize}
+            \end{exbox}
+
+
+    \section{Infinitivsatz ohne eigenes Subjekt}
+
+        \begin{grammarentry}{Gleiches Subjekt}{Subjekt aus dem Hauptsatz}
+            \GermanText{Ein Infinitivsatz hat normalerweise kein ausdrücklich genanntes eigenes Subjekt. Das gemeinte Subjekt ist meistens das Subjekt oder ein Objekt des Hauptsatzes.}
+            \EnglishText{An infinitive clause normally has no explicitly stated subject of its own. The intended subject is usually the subject or an object of the main clause.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich versuche, Deutsch zu sprechen.}{I try to speak German.}
+                \ExampleItem{Ich bitte dich, leise zu sein.}{I ask you to be quiet.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Infinitivsatz oder dass-Satz}
+
+        \begin{grammarentry}{Gleiches oder verschiedenes Subjekt}{Auswahl der Konstruktion}
+            \GermanText{Wenn das Subjekt in beiden Satzteilen gleich ist, kann man oft einen Infinitivsatz benutzen.}
+            \EnglishText{When the subject is the same in both parts of the sentence, one can often use an infinitive clause.}
+
+            \GermanText{Wenn die Subjekte verschieden sind, benutzt man meistens einen \textbf{dass}-Satz.}
+            \EnglishText{When the subjects are different, one usually uses a \textbf{dass}-clause.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich hoffe, die Prüfung zu bestehen.}{I hope to pass the exam.}
+                \ExampleItem{Ich hoffe, dass du kommst.}{I hope that you come.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Nicht korrekt}{verschiedene Subjekte}
+            \GermanText{Nicht korrekt ist: \textbf{Ich hoffe, du zu kommen.}}
+            \EnglishText{Incorrect: \textbf{Ich hoffe, du zu kommen.}}
+        \end{grammarentry}
+
+
+    \section{Infinitivsatz nach Ausdrücken mit \glqq es\grqq}
+
+        \begin{grammarentry}{es + Ausdruck}{Adjektive und feste Ausdrücke}
+            \GermanText{Infinitivsätze stehen oft nach unpersönlichen Ausdrücken mit \textbf{es}, zum Beispiel \textbf{es ist wichtig}, \textbf{es ist schwer} oder \textbf{es macht Spaß}.}
+            \EnglishText{Infinitive clauses often follow impersonal expressions with \textbf{es}, for example \textbf{es ist wichtig}, \textbf{es ist schwer}, or \textbf{es macht Spaß}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Es ist wichtig, regelmäßig zu üben.}{It is important to practise regularly.}
+                \ExampleItem{Es ist schwer, eine neue Sprache zu lernen.}{It is difficult to learn a new language.}
+                \ExampleItem{Es macht Spaß, Deutsch zu sprechen.}{It is fun to speak German.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Infinitivsatz mit \glqq um zu\grqq}
+
+        \begin{grammarentry}{Ziel oder Zweck}{um + zu}
+            \GermanText{Mit \textbf{um zu} beschreibt man ein Ziel oder einen Zweck. Das Subjekt des Hauptsatzes und das gemeinte Subjekt des Infinitivsatzes müssen normalerweise gleich sein.}
+            \EnglishText{With \textbf{um zu}, one describes a goal or purpose. The subject of the main clause and the intended subject of the infinitive clause must normally be the same.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich lerne Deutsch, um in Österreich zu arbeiten.}{I am learning German in order to work in Austria.}
+                \ExampleItem{Ich gehe früh ins Bett, um morgen fit zu sein.}{I go to bed early in order to be fit tomorrow.}
+                \ExampleItem{Ich lerne Deutsch, um besser sprechen zu können.}{I am learning German in order to be able to speak better.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Infinitivsatz mit \glqq ohne zu\grqq}
+
+        \begin{grammarentry}{etwas passiert nicht}{ohne + zu}
+            \GermanText{Mit \textbf{ohne zu} beschreibt man, dass eine erwartete oder mögliche Handlung nicht passiert.}
+            \EnglishText{With \textbf{ohne zu}, one describes that an expected or possible action does not happen.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Er geht aus dem Zimmer, ohne etwas zu sagen.}{He leaves the room without saying anything.}
+                \ExampleItem{Sie fährt weg, ohne sich zu verabschieden.}{She drives away without saying goodbye.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Infinitivsatz mit \glqq statt zu\grqq}
+
+        \begin{grammarentry}{Alternative Handlung}{statt + zu}
+            \GermanText{Mit \textbf{statt zu} beschreibt man, dass jemand etwas anderes macht als erwartet oder vorgesehen.}
+            \EnglishText{With \textbf{statt zu}, one describes that someone does something different from what is expected or intended.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Er spielt am Handy, statt zu lernen.}{He plays on his phone instead of studying.}
+                \ExampleItem{Sie bleibt zu Hause, statt zur Arbeit zu gehen.}{She stays at home instead of going to work.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Komma beim Infinitivsatz}
+
+        \begin{grammarentry}{Komma ist obligatorisch}{um zu, ohne zu, statt zu}
+            \GermanText{Bei Infinitivsätzen mit \textbf{um zu}, \textbf{ohne zu} und \textbf{statt zu} steht immer ein Komma.}
+            \EnglishText{A comma is always used with infinitive clauses containing \textbf{um zu}, \textbf{ohne zu}, and \textbf{statt zu}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich lerne Deutsch, um besser sprechen zu können.}{I am learning German in order to be able to speak better.}
+                \ExampleItem{Er ging weg, ohne ein Wort zu sagen.}{He went away without saying a word.}
+                \ExampleItem{Sie liest ein Buch, statt fernzusehen.}{She reads a book instead of watching TV.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Zusammenfassung}
+
+        \begin{grammarentry}{Merksätze}{kurz und wichtig}
+            \GermanText{Nach einem konjugierten Modalverb steht der zweite Infinitiv \textbf{ohne zu}: \textbf{Monika will fliegen.}}
+            \EnglishText{After a conjugated modal verb, the second infinitive is used \textbf{without zu}: \textbf{Monika will fliegen.}}
+
+            \GermanText{Nach Verben wie \textbf{versuchen}, \textbf{hoffen} und \textbf{planen} steht häufig ein Infinitivsatz mit \textbf{zu}: \textbf{Monika versucht, zu fliegen.}}
+            \EnglishText{After verbs such as \textbf{versuchen}, \textbf{hoffen}, and \textbf{planen}, an infinitive clause with \textbf{zu} is often used: \textbf{Monika versucht, zu fliegen.}}
+
+            \GermanText{Bei trennbaren Verben steht \textbf{zu} zwischen Präfix und Verbstamm: \textbf{aufzustehen}.}
+            \EnglishText{With separable verbs, \textbf{zu} stands between the prefix and the verb stem: \textbf{aufzustehen}.}
+
+            \GermanText{Bei einem trennbaren Verb mit dem Präfix \textbf{zu-} können zwei \textbf{zu} direkt nacheinander stehen: \textbf{zuzumarschieren}.}
+            \EnglishText{With a separable verb containing the prefix \textbf{zu-}, two occurrences of \textbf{zu} can stand directly next to each other: \textbf{zuzumarschieren}.}
+
+            \GermanText{Enthält ein Infinitivsatz ein Modalverb, lautet die Reihenfolge: \textbf{sprechen zu können}.}
+            \EnglishText{When an infinitive clause contains a modal verb, the order is: \textbf{sprechen zu können}.}
+        \end{grammarentry}
+
+\end{document}

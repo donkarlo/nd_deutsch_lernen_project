@@ -1,0 +1,1653 @@
+
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[a4paper,margin=1.35cm]{geometry}
+\usepackage{fontspec}
+\usepackage[table]{xcolor}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{microtype}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage[bidi=basic,ngerman]{babel}
+\babelprovide[import,onchar=ids fonts]{persian}
+\babelfont{rm}{Noto Sans}
+\babelfont[persian]{rm}[Renderer=HarfBuzz]{DejaVu Sans}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{RowLineBlue}{RGB}{145,185,225}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.42}
+\linespread{1.18}
+\AtBeginDocument{\fontsize{12pt}{16pt}\selectfont}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.0em}{0.5em}
+
+\newcommand{\Fa}[1]{\foreignlanguage{persian}{#1}}
+\newcommand{\DeEntry}[2]{\begin{minipage}[t]{\linewidth}\raggedright #1\\[-1pt]{\fontsize{10pt}{12pt}\selectfont\color{SoftGray}\raggedright #2}\end{minipage}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+\title{Wortliste mit persischer Bedeutung}
+\author{}
+\date{}
+
+
+\begin{document}
+\maketitle
+
+\section{Wortliste mit persischer Bedeutung}
+\Fa{در این نسخه واژه‌ها با معنی فارسی آمده‌اند و ترتیب ردیف‌ها تصادفی شده است.}
+
+\arrayrulecolor{RowLineBlue}
+\setlength{\arrayrulewidth}{0.45pt}
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{C{0.08\textwidth} L{0.50\textwidth} R{0.36\textwidth}}
+\rowcolor{HeaderBlueDark}
+\textcolor{white}{\textbf{Nr.}} & \textcolor{white}{\textbf{Deutsch}} & \textcolor{white}{\textbf{\Fa{معنی فارسی}}} \\
+\hline
+\endfirsthead
+\rowcolor{HeaderBlueDark}
+\textcolor{white}{\textbf{Nr.}} & \textcolor{white}{\textbf{Deutsch}} & \textcolor{white}{\textbf{\Fa{معنی فارسی}}} \\
+\hline
+\endhead
+1 & \DeEntry{geduldig (Adjektiv, Komparativ {\small\color{SoftGray}[ɡəˈdʊldɪç]}}{Sie ist sehr geduldig mit den Kindern} & \Fa{صبور} \\
+\hline
+2 & \DeEntry{der Betrag (¨-e) {\small\color{SoftGray}[bəˈtʁaːk]}}{Der Betrag ist zu hoch} & \Fa{مبلغ} \\
+\hline
+3 & \DeEntry{fahren}{---} & \Fa{رفتن با وسیله؛ راندن} \\
+\hline
+4 & \DeEntry{das Getränk (-s, -e) {\small\color{SoftGray}[ɡəˈtʁɛŋk]}}{Ich bestelle ein Getränk} & \Fa{نوشیدنی} \\
+\hline
+5 & \DeEntry{der Ausgang (-s, ¨-e) {\small\color{SoftGray}[ˈaʊ̯sˌɡaŋ]}}{Der Ausgang ist dort links} & \Fa{خروجی} \\
+\hline
+6 & \DeEntry{das wald}{---} & \Fa{جنگل} \\
+\hline
+7 & \DeEntry{unterschiedlich}{Menschen haben unterschiedliche Meinungen} & \Fa{متفاوت} \\
+\hline
+8 & \DeEntry{der Herbst}{---} & \Fa{پاییز} \\
+\hline
+9 & \DeEntry{kommen}{---} & \Fa{آمدن} \\
+\hline
+10 & \DeEntry{sich beeilen}{---} & \Fa{عجله کردن} \\
+\hline
+11 & \DeEntry{normal}{---} & \Fa{عادی} \\
+\hline
+12 & \DeEntry{bleiben}{Ich bleibe zu Hause} & \Fa{ماندن} \\
+\hline
+13 & \DeEntry{genau (Adverb) {\small\color{SoftGray}[ɡəˈnaʊ̯]}}{Das ist genau richtig} & \Fa{دقیق} \\
+\hline
+14 & \DeEntry{neutral}{---} & \Fa{خنثی، بی‌طرف} \\
+\hline
+15 & \DeEntry{inzwischen (Adverb, nicht steigerbar) {\small\color{SoftGray}[ɪnˈtsvɪʃn̩]}}{Ich lerne Deutsch, und inzwischen arbeitet mein Freund} & \Fa{در این میان، حالا دیگر} \\
+\hline
+16 & \DeEntry{das Ziel}{---} & \Fa{هدف} \\
+\hline
+17 & \DeEntry{dort (Adverb) {\small\color{SoftGray}[dɔʁt]}}{Die Pflegekräfte arbeiten dort} & \Fa{آنجا} \\
+\hline
+18 & \DeEntry{als (Konjunktion) {\small\color{SoftGray}[als]}}{Ich habe gesprochen, als der Anruf abgebrochen ist} & \Fa{وقتی که در گذشته؛ به عنوان} \\
+\hline
+19 & \DeEntry{traurig}{---} & \Fa{غمگین} \\
+\hline
+20 & \DeEntry{die Freude (-, -n) {\small\color{SoftGray}[ˈfʁɔʏ̯də]}}{Die Nachricht brachte ihm große Freude} & \Fa{شادی} \\
+\hline
+21 & \DeEntry{der Kopfhörer}{---} & \Fa{هدفون} \\
+\hline
+22 & \DeEntry{die Oberschule {\small\color{SoftGray}[ˈoːbɐˌʃuːlə]}}{Er besucht eine Oberschule in Wien} & \Fa{دبیرستان} \\
+\hline
+23 & \DeEntry{werfen (etw.Akk \textasciitilde{})}{---} & \Fa{پرتاب کردن} \\
+\hline
+24 & \DeEntry{also}{---} & \Fa{پس، بنابراین} \\
+\hline
+25 & \DeEntry{der Anfang {\small\color{SoftGray}[ˈanfaŋ]}}{Am Anfang eines langen Weges ist alles neu} & \Fa{آغاز} \\
+\hline
+26 & \DeEntry{schmutzig (Adjektiv, Komparativ {\small\color{SoftGray}[ˈʃmʊt͡sɪç]}}{Meine Schuhe sind schmutzig} & \Fa{کثیف} \\
+\hline
+27 & \DeEntry{eng (Adjektiv, Komparativ {\small\color{SoftGray}[ɛŋ]}}{Diese Straße ist enger als die andere} & \Fa{تنگ} \\
+\hline
+28 & \DeEntry{die Tochter {\small\color{SoftGray}[ˈtɔxtɐ]}}{Meine Tochter lernt Deutsch} & \Fa{دختر خانواده} \\
+\hline
+29 & \DeEntry{schrecklich}{---} & \Fa{وحشتناک، بد} \\
+\hline
+30 & \DeEntry{die Mitte {\small\color{SoftGray}[ˈmɪtə]}}{Der Tisch steht in der Mitte des Zimmers} & \Fa{وسط} \\
+\hline
+31 & \DeEntry{der Gehweg {\small\color{SoftGray}[ˈɡeːveːk]}}{Kinder spielen auf dem Gehweg} & \Fa{پیاده‌رو} \\
+\hline
+32 & \DeEntry{die Dauer (-, -n) {\small\color{SoftGray}[ˈdaʊ̯ɐ]}}{Die Dauer des Films ist zwei Stunden} & \Fa{مدت، طول زمان} \\
+\hline
+33 & \DeEntry{der Keller}{Ich bewahre meine Werkzeuge im Keller auf.} & \Fa{زیرزمین، انباری} \\
+\hline
+34 & \DeEntry{strom}{---} & \Fa{برق؛ جریان} \\
+\hline
+35 & \DeEntry{ordentlich}{Dein Zimmer sieht sehr ordentlich aus} & \Fa{مرتب، منظم} \\
+\hline
+36 & \DeEntry{der Koffer (-s, -) {\small\color{SoftGray}[ˈkɔfɐ]}}{Ich packe meinen Koffer} & \Fa{چمدان} \\
+\hline
+37 & \DeEntry{die Freude (pl}{Ich empfinde große Freude über deine Nachricht. – \textbackslash{}textit\{I feel great joy about your message.\}} & \Fa{شادی} \\
+\hline
+38 & \DeEntry{ruhig (Adjektiv, Komparativ {\small\color{SoftGray}[ˈʁuːɪç]}}{Das Zimmer ist sehr ruhig} & \Fa{آرام} \\
+\hline
+39 & \DeEntry{wertvoll (Adjektiv, Komparativ {\small\color{SoftGray}[ˈveːɐ̯tfɔl]}}{Das ist ein wertvoller Ring} & \Fa{باارزش} \\
+\hline
+40 & \DeEntry{sich erinnern (an + Akk.) {\small\color{SoftGray}[zɪç ɛɐ̯ˈʔɪnɐn]}}{Ich erinnere mich an seinen Namen} & \Fa{به یاد آوردن} \\
+\hline
+41 & \DeEntry{die Arbeit {\small\color{SoftGray}[ˈaʁbaɪ̯t]}}{Ich gehe jeden Morgen zur Arbeit} & \Fa{کار} \\
+\hline
+42 & \DeEntry{die Chance}{---} & \Fa{شانس، فرصت} \\
+\hline
+43 & \DeEntry{die Toilette}{---} & \Fa{توالت} \\
+\hline
+44 & \DeEntry{bringen (transitiv) {\small\color{SoftGray}[ˈbʁɪŋən]}}{Ich bringe dir einen Kaffee} & \Fa{رساندن یا آوردن به جایی} \\
+\hline
+45 & \DeEntry{der Wortschatz {\small\color{SoftGray}[ˈvɔʁtʃats]}}{Ich möchte meinen Wortschatz verbessern} & \Fa{دایره لغات} \\
+\hline
+46 & \DeEntry{heißen (etw.Akk \textasciitilde{})}{---} & \Fa{نام داشتن؛ معنی دادن} \\
+\hline
+47 & \DeEntry{die Auswahl (pl. die Auswahlen)}{Wir haben eine große Auswahl} & \Fa{انتخاب} \\
+\hline
+48 & \DeEntry{das Licht}{---} & \Fa{نور، چراغ} \\
+\hline
+49 & \DeEntry{abschließen}{---} & \Fa{قفل کردن؛ تمام کردن؛ قرارداد بستن} \\
+\hline
+50 & \DeEntry{stattfinden (trennbar, intransitiv) {\small\color{SoftGray}[ˈʃtatˌfɪndən]}}{Das Treffen findet morgen statt} & \Fa{برگزار شدن} \\
+\hline
+51 & \DeEntry{der boden}{---} & \Fa{زمین، کف اتاق} \\
+\hline
+52 & \DeEntry{das Dach}{Das Dach ist beschädigt} & \Fa{سقف بیرونی خانه} \\
+\hline
+53 & \DeEntry{sich vorstellen (jdn./etw.Akk \textasciitilde{})}{Ich stelle mir eine bessere Zukunft vor} & \Fa{خود را معرفی کردن} \\
+\hline
+54 & \DeEntry{der Mantel}{---} & \Fa{پالتو} \\
+\hline
+55 & \DeEntry{die Kosten (Plural) {\small\color{SoftGray}[ˈkɔstn̩]}}{Die Kosten sind sehr hoch} & \Fa{هزینه‌ها} \\
+\hline
+56 & \DeEntry{die Aufmerksamkeit {\small\color{SoftGray}[ˈaʊ̯fˌmɛʁkzaːmkaɪ̯t]}}{Bitte schenke dem Unterricht deine volle Aufmerksamkeit} & \Fa{توجه} \\
+\hline
+57 & \DeEntry{das Formular {\small\color{SoftGray}[fɔʁmuˈlaːɐ̯]}}{Ich muss das Formular ausfüllen} & \Fa{فرم} \\
+\hline
+58 & \DeEntry{allgemein}{---} & \Fa{عمومی، کلی} \\
+\hline
+59 & \DeEntry{stabil}{---} & \Fa{پایدار، محکم} \\
+\hline
+60 & \DeEntry{das Beispiel (-s, -e) {\small\color{SoftGray}[ˈbaɪ̯ʃpiːl]}}{Kannst du ein Beispiel geben} & \Fa{مثال} \\
+\hline
+61 & \DeEntry{einsam}{---} & \Fa{تنها، منزوی} \\
+\hline
+62 & \DeEntry{die Erde}{---} & \Fa{زمین، خاک} \\
+\hline
+63 & \DeEntry{das Messer}{---} & \Fa{چاقو} \\
+\hline
+64 & \DeEntry{informieren (jdn.über etw.Akk) {\small\color{SoftGray}[ɪnfɔʁˈmiːʁən]}}{Ich informiere dich über die Änderung} & \Fa{اطلاع دادن} \\
+\hline
+65 & \DeEntry{das Wort (¨-er / -e) {\small\color{SoftGray}[vɔʁt]}}{Ich lerne jeden Tag ein neues Wort} & \Fa{کلمه} \\
+\hline
+66 & \DeEntry{das Glas {\small\color{SoftGray}[ɡlaːs]}}{Ich trinke ein Glas Wasser} & \Fa{لیوان؛ شیشه} \\
+\hline
+67 & \DeEntry{gleich (Adverb) {\small\color{SoftGray}[ɡlaɪ̯ç]}}{Wir teilen das Geld gleich} & \Fa{همان، یکسان؛ فوراً} \\
+\hline
+68 & \DeEntry{das Taxi (-s, -s) {\small\color{SoftGray}[ˈtaksi]}}{Ich rufe ein Taxi} & \Fa{تاکسی} \\
+\hline
+69 & \DeEntry{pessimistisch (Adjektiv, Komparativ {\small\color{SoftGray}[pɛsimiˈstɪʃ]}}{Er ist sehr pessimistisch} & \Fa{بدبین} \\
+\hline
+70 & \DeEntry{interessant (Adjektiv, Komparativ {\small\color{SoftGray}[ɪntəʁɛˈsant]}}{Das Buch ist sehr interessant} & \Fa{جالب} \\
+\hline
+71 & \DeEntry{die Karte}{---} & \Fa{کارت؛ نقشه} \\
+\hline
+72 & \DeEntry{der Schrank (¨-e) {\small\color{SoftGray}[ʃʁaŋk]}}{Ich lege die Kleidung in den Schrank} & \Fa{کمد} \\
+\hline
+73 & \DeEntry{verlieren (transitiv, untrennbar) {\small\color{SoftGray}[fɛɐ̯ˈliːʁən]}}{Ich verliere oft meinen Schlüssel} & \Fa{گم کردن، از دست دادن} \\
+\hline
+74 & \DeEntry{leicht (Adverb, nicht steigerbar) {\small\color{SoftGray}[laɪ̯çt]}}{Es ist leicht kalt heute} & \Fa{آسان؛ سبک} \\
+\hline
+75 & \DeEntry{logisch {\small\color{SoftGray}[ˈloːɡɪʃ]}}{Deine Erklärung ist logisch} & \Fa{منطقی} \\
+\hline
+76 & \DeEntry{der Stuhl (-s, Stühle) {\small\color{SoftGray}[ʃtuːl]}}{Der Stuhl ist aus Holz} & \Fa{صندلی} \\
+\hline
+77 & \DeEntry{der Rock}{---} & \Fa{دامن} \\
+\hline
+78 & \DeEntry{die Verbindung}{---} & \Fa{اتصال، ارتباط} \\
+\hline
+79 & \DeEntry{vergessen (transitiv/intransitiv) {\small\color{SoftGray}[fɛɐ̯ˈɡɛsn̩]}}{Ich habe deinen Namen vergessen} & \Fa{فراموش کردن} \\
+\hline
+80 & \DeEntry{vor (Präposition + Dat./Akk.) {\small\color{SoftGray}[foːɐ̯]}}{Vor der Prüfung war ich nervös} & \Fa{جلوی، قبل از} \\
+\hline
+81 & \DeEntry{die folge}{---} & \Fa{نتیجه، پیامد} \\
+\hline
+82 & \DeEntry{der Lebenslauf}{---} & \Fa{رزومه} \\
+\hline
+83 & \DeEntry{kosten}{---} & \Fa{قیمت داشتن} \\
+\hline
+84 & \DeEntry{erwarten (transitiv) {\small\color{SoftGray}[ɛɐ̯ˈvaʁtn̩]}}{Ich erwarte morgen ein Paket} & \Fa{انتظار داشتن} \\
+\hline
+85 & \DeEntry{das Fieber {\small\color{SoftGray}[ˈfiːbɐ]}}{Ich habe hohes Fieber} & \Fa{تب} \\
+\hline
+86 & \DeEntry{drucken}{---} & \Fa{چاپ کردن} \\
+\hline
+87 & \DeEntry{die Bedingung (pl. die Bedingungen) {\small\color{SoftGray}[bəˈdɪŋʊŋ]}}{Gute Arbeitsbedingungen sind wichtig} & \Fa{شرط} \\
+\hline
+88 & \DeEntry{der Baum (-s, Bäume) {\small\color{SoftGray}[baʊ̯m]}}{Der Baum ist sehr hoch} & \Fa{درخت} \\
+\hline
+89 & \DeEntry{das Schaf}{---} & \Fa{گوسفند} \\
+\hline
+90 & \DeEntry{der Morgen {\small\color{SoftGray}[ˈmɔʁɡn̩]}}{Am Morgen trinke ich Kaffee} & \Fa{صبح} \\
+\hline
+91 & \DeEntry{die Schule (-, -n) {\small\color{SoftGray}[ˈʃuːlə]}}{Die Schule beginnt um acht Uhr} & \Fa{مدرسه} \\
+\hline
+92 & \DeEntry{vorübergehend (Adjektiv/Adverb, nicht steigerbar) {\small\color{SoftGray}[foˈʁyːbɐˌɡeːənd]}}{Das ist nur eine vorübergehende Lösung} & \Fa{موقت، گذرا} \\
+\hline
+93 & \DeEntry{verrückt (Adjektiv, Komparativ {\small\color{SoftGray}[fɛɐ̯ˈʁʏkt]}}{Das ist eine verrückte Idee} & \Fa{دیوانه، عجیب} \\
+\hline
+94 & \DeEntry{die Bestätigung {\small\color{SoftGray}[bəˈʃtɛːtɪɡʊŋ]}}{Ich habe eine Bestätigung per E-Mail bekommen} & \Fa{تأییدیه} \\
+\hline
+95 & \DeEntry{das Moment}{---} & \Fa{لحظه} \\
+\hline
+96 & \DeEntry{dumm (Adjektiv, Komparativ {\small\color{SoftGray}[dʊm]}}{Das war eine dumme Entscheidung} & \Fa{احمقانه، کم‌هوش} \\
+\hline
+97 & \DeEntry{die Tür}{---} & \Fa{در} \\
+\hline
+98 & \DeEntry{arm (Adjektiv, Komparativ {\small\color{SoftGray}[aʁm]}}{Der arme Mann wusste nicht, dass er zu spät angekommen war} & \Fa{فقیر} \\
+\hline
+99 & \DeEntry{die Berechtigung {\small\color{SoftGray}[bəˈʁɛçtɪɡʊŋ]}}{Ich habe keine Berechtigung für diesen Bereich} & \Fa{اجازه دسترسی} \\
+\hline
+100 & \DeEntry{der Rand (-es, ¨-er) {\small\color{SoftGray}[ʁant]}}{Am Rand der Straße wachsen Blumen} & \Fa{لبه، حاشیه} \\
+\hline
+101 & \DeEntry{der Strand}{---} & \Fa{ساحل} \\
+\hline
+102 & \DeEntry{verletzen}{---} & \Fa{آسیب زدن؛ مجروح کردن} \\
+\hline
+103 & \DeEntry{die Krankenversicherung {\small\color{SoftGray}[ˈkʁaŋkn̩fɛɐ̯ˌzɪçɐʁʊŋ]}}{In Österreich hat jeder eine Krankenversicherung} & \Fa{بیمه درمانی} \\
+\hline
+104 & \DeEntry{einladen (jdn. Akk zu etw. Dat)}{Ich lade dich zur Party ein} & \Fa{دعوت کردن} \\
+\hline
+105 & \DeEntry{der Donnerstag (pl. die Donnerstage)}{Am Donnerstag habe ich eine Vorlesung} & \Fa{پنجشنبه} \\
+\hline
+106 & \DeEntry{essen (etw AKK. trennbar {\small\color{SoftGray}[ˈɛsn̩]}}{Ich esse einen Apfel} & \Fa{غذا خوردن؛ غذا} \\
+\hline
+107 & \DeEntry{die Lampe}{---} & \Fa{چراغ} \\
+\hline
+108 & \DeEntry{raten (transitiv/intransitiv) {\small\color{SoftGray}[ˈʁaːtn̩]}}{Ich rate die Antwort} & \Fa{نصیحت یا توصیه کردن} \\
+\hline
+109 & \DeEntry{das Video (pl. die Videos)}{Ich habe ein interessantes Video gesehen} & \Fa{ویدئو} \\
+\hline
+110 & \DeEntry{das Auge {\small\color{SoftGray}[ˈaʊ̯ɡə]}}{Mein Auge tut weh} & \Fa{چشم} \\
+\hline
+111 & \DeEntry{sich ausruhen}{Ich ruhe mich nach der Arbeit aus} & \Fa{استراحت کردن} \\
+\hline
+112 & \DeEntry{dabei}{---} & \Fa{در کنار آن؛ هنگام آن} \\
+\hline
+113 & \DeEntry{das Kapitel}{---} & \Fa{فصل کتاب} \\
+\hline
+114 & \DeEntry{die Kraft {\small\color{SoftGray}[kraft]}}{Nach der Arbeit habe ich keine Kraft mehr} & \Fa{نیرو، قدرت} \\
+\hline
+115 & \DeEntry{der Himmel}{---} & \Fa{آسمان} \\
+\hline
+116 & \DeEntry{erhöhen (etw.Akk \textasciitilde{})}{---} & \Fa{افزایش دادن} \\
+\hline
+117 & \DeEntry{ziehen (Akk.) {\small\color{SoftGray}[ˈtsiːən]}}{Ich ziehe die Tür auf} & \Fa{کشیدن} \\
+\hline
+118 & \DeEntry{schrecklich (Adjektiv, Komparativ {\small\color{SoftGray}[ˈʃʁɛklɪç]}}{Das war ein schrecklicher Tag} & \Fa{وحشتناک، بد} \\
+\hline
+119 & \DeEntry{die Freundschaft}{---} & \Fa{دوستی} \\
+\hline
+120 & \DeEntry{buchen (transitiv) {\small\color{SoftGray}[ˈbuːxn̩]}}{Ich buche ein Hotelzimmer für zwei Nächte} & \Fa{رزرو کردن} \\
+\hline
+121 & \DeEntry{der Hunger (kein Plural)}{Ich habe großen Hunger} & \Fa{گرسنگی} \\
+\hline
+122 & \DeEntry{die wirtschaftlich}{---} & \Fa{اقتصادی} \\
+\hline
+123 & \DeEntry{die Art (pl. die Arten)}{Diese Art von Musik gefällt mir} & \Fa{نوع، شیوه} \\
+\hline
+124 & \DeEntry{der Preis (-es, -e) {\small\color{SoftGray}[pʁaɪ̯s]}}{Der Preis ist zu hoch} & \Fa{قیمت} \\
+\hline
+125 & \DeEntry{die Zeitung {\small\color{SoftGray}[ˈt͡saɪ̯tʊŋ]}}{Ich lese jeden Morgen die Zeitung} & \Fa{روزنامه} \\
+\hline
+126 & \DeEntry{kämen}{---} & \Fa{شانه کردن} \\
+\hline
+127 & \DeEntry{im Moment(nt)}{---} & \Fa{در حال حاضر} \\
+\hline
+128 & \DeEntry{unbekannt}{---} & \Fa{ناشناخته} \\
+\hline
+129 & \DeEntry{deswegen}{---} & \Fa{به همین دلیل} \\
+\hline
+130 & \DeEntry{das stimmt {\small\color{SoftGray}[das ʃtɪmt]}}{Ja, das stimmt} & \Fa{درست است} \\
+\hline
+131 & \DeEntry{die Münze}{---} & \Fa{سکه} \\
+\hline
+132 & \DeEntry{umtauschen}{---} & \Fa{تعویض کردن کالا} \\
+\hline
+133 & \DeEntry{der Handschuh}{---} & \Fa{دستکش} \\
+\hline
+134 & \DeEntry{bitter (Adjektiv, Komparativ {\small\color{SoftGray}[ˈbɪtɐ]}}{Der Kaffee ist zu bitter} & \Fa{تلخ} \\
+\hline
+135 & \DeEntry{falsch (Adjektiv, Komparativ {\small\color{SoftGray}[falʃ]}}{Deine Antwort ist falsch} & \Fa{غلط} \\
+\hline
+136 & \DeEntry{der Mond {\small\color{SoftGray}[moːnt]}}{Der Mond scheint heute sehr hell} & \Fa{ماه آسمان} \\
+\hline
+137 & \DeEntry{groß}{---} & \Fa{بزرگ} \\
+\hline
+138 & \DeEntry{die Chance (Plural}{---} & \Fa{شانس، فرصت} \\
+\hline
+139 & \DeEntry{die Methode}{---} & \Fa{روش} \\
+\hline
+140 & \DeEntry{oft (Adverb, nicht steigerbar) {\small\color{SoftGray}[ɔft]}}{Ich gehe oft spazieren} & \Fa{اغلب} \\
+\hline
+141 & \DeEntry{die Hochzeit}{---} & \Fa{عروسی} \\
+\hline
+142 & \DeEntry{auf keinen Fall}{---} & \Fa{به هیچ وجه} \\
+\hline
+143 & \DeEntry{darstellen (trennbar, transitiv) {\small\color{SoftGray}[ˈdaːɐ̯ˌʃtɛlən]}}{Die Grafik stellt die Ergebnisse dar} & \Fa{نشان دادن، نمایش دادن} \\
+\hline
+144 & \DeEntry{das Büro (-s, -s) {\small\color{SoftGray}[byˈʁoː]}}{Ich arbeite im Büro} & \Fa{دفتر کار} \\
+\hline
+145 & \DeEntry{die Gebühr (pl. die Gebühren)}{Für diesen Service gibt es eine Gebühr} & \Fa{هزینه اداری} \\
+\hline
+146 & \DeEntry{das Sein}{---} & \Fa{بودن} \\
+\hline
+147 & \DeEntry{obwohl (Konjunktion, subordinierend + Verb am Ende) {\small\color{SoftGray}[ɔpˈvoːl]}}{Ich gehe spazieren, obwohl es regnet} & \Fa{اگرچه} \\
+\hline
+148 & \DeEntry{sauer (Adjektiv, Komparativ {\small\color{SoftGray}[ˈzaʊ̯ɐ]}}{Die Zitrone schmeckt sehr sauer} & \Fa{ترش؛ عصبانی} \\
+\hline
+149 & \DeEntry{laut (Präposition + Dativ/Genitiv) {\small\color{SoftGray}[laʊ̯t]}}{Laut dem Bericht ist das Problem gelöst} & \Fa{بلند، پرصدا} \\
+\hline
+150 & \DeEntry{das Thema}{---} & \Fa{موضوع} \\
+\hline
+151 & \DeEntry{die Wirkung {\small\color{SoftGray}[ˈvɪʁkʊŋ]}}{Das Medikament hat eine schnelle Wirkung} & \Fa{اثر} \\
+\hline
+152 & \DeEntry{technisch (Adjektiv, Komparativ {\small\color{SoftGray}[ˈtɛçnɪʃ]}}{Das ist ein technisches Problem} & \Fa{فنی، تکنیکی} \\
+\hline
+153 & \DeEntry{faul (Adjektiv, Komparativ {\small\color{SoftGray}[faʊ̯l]}}{Er ist zu faul, um zu arbeiten} & \Fa{تنبل} \\
+\hline
+154 & \DeEntry{böse (Adjektiv, Komparativ {\small\color{SoftGray}[ˈbøːzə]}}{Der böse Mann hat das Kind erschreckt} & \Fa{عصبانی؛ بدجنس} \\
+\hline
+155 & \DeEntry{das Stück {\small\color{SoftGray}[ʃtʏk]}}{Ich brauche ein Stück Papier} & \Fa{تکه، قطعه} \\
+\hline
+156 & \DeEntry{nehmen (transitiv) {\small\color{SoftGray}[ˈneːmən]}}{Ich nehme den Bus zur Arbeit} & \Fa{گرفتن، برداشتن} \\
+\hline
+157 & \DeEntry{verschieden}{---} & \Fa{متفاوت، گوناگون} \\
+\hline
+158 & \DeEntry{die Prüfung (pl. die Prüfungen)}{Ich habe morgen eine wichtige Prüfung} & \Fa{امتحان} \\
+\hline
+159 & \DeEntry{die Sonderausstellung {\small\color{SoftGray}[ˈzɔndɐˌʔaʊ̯sʃtɛlʊŋ]}}{Ich besuche heute eine Sonderausstellung im Museum} & \Fa{نمایشگاه ویژه} \\
+\hline
+160 & \DeEntry{merken}{---} & \Fa{متوجه شدن؛ به خاطر سپردن} \\
+\hline
+161 & \DeEntry{das Transparent (-s, -e) {\small\color{SoftGray}[tʁanspaˈʁɛnt]}}{Die Demonstranten trugen große Transparente} & \Fa{شفاف} \\
+\hline
+162 & \DeEntry{berühren (transitiv) {\small\color{SoftGray}[bəˈʁyːʁən]}}{Bitte berühre das Glas nicht} & \Fa{لمس کردن} \\
+\hline
+163 & \DeEntry{das Haus (-es, Häuser) {\small\color{SoftGray}[haʊ̯s]}}{Das Haus ist sehr groß} & \Fa{خانه} \\
+\hline
+164 & \DeEntry{der Hund}{---} & \Fa{سگ} \\
+\hline
+165 & \DeEntry{die Bibliothek}{---} & \Fa{کتابخانه} \\
+\hline
+166 & \DeEntry{die Regel}{---} & \Fa{قاعده، قانون} \\
+\hline
+167 & \DeEntry{deutlich (Adjektiv, Komparativ {\small\color{SoftGray}[ˈdɔɪ̯tlɪç]}}{Seine Antwort war sehr deutlich} & \Fa{واضح} \\
+\hline
+168 & \DeEntry{durch (+ Akkusativ)}{Er erreichte sein Ziel durch harte Arbeit} & \Fa{از میان، از طریق} \\
+\hline
+169 & \DeEntry{völlig (Adverb) {\small\color{SoftGray}[ˈfœlɪç]}}{Ich bin völlig müde} & \Fa{کاملاً} \\
+\hline
+170 & \DeEntry{der Vertrag}{---} & \Fa{قرارداد} \\
+\hline
+171 & \DeEntry{die Wand {\small\color{SoftGray}[vant]}}{Das Bild hängt an der Wand} & \Fa{دیوار} \\
+\hline
+172 & \DeEntry{der Müll}{---} & \Fa{زباله} \\
+\hline
+173 & \DeEntry{echt}{---} & \Fa{واقعی، اصل} \\
+\hline
+174 & \DeEntry{zu viel}{das ist zu viel} & \Fa{بیش از حد، خیلی زیاد} \\
+\hline
+175 & \DeEntry{aufstehen (trennbar, intransitiv) {\small\color{SoftGray}[ˈaʊ̯fˌʃteːən]}}{Ich stehe jeden Tag um 7 Uhr auf} & \Fa{بلند شدن، بیدار شدن} \\
+\hline
+176 & \DeEntry{die Sorge}{Mach dir keine Sorgen!} & \Fa{نگرانی} \\
+\hline
+177 & \DeEntry{interessant}{---} & \Fa{جالب} \\
+\hline
+178 & \DeEntry{plaudern}{---} & \Fa{گپ زدن} \\
+\hline
+179 & \DeEntry{frei}{---} & \Fa{آزاد؛ خالی} \\
+\hline
+180 & \DeEntry{die Uhr}{---} & \Fa{ساعت} \\
+\hline
+181 & \DeEntry{bauen (etw.Akk \textasciitilde{})}{---} & \Fa{ساختن} \\
+\hline
+182 & \DeEntry{steigen (Verb, intransitiv) {\small\color{SoftGray}[ˈʃtaɪ̯ɡn̩]}}{Die Benzinpreise steigen} & \Fa{بالا رفتن} \\
+\hline
+183 & \DeEntry{der Erzieher {\small\color{SoftGray}[ɛɐ̯ˈtsiːɐ]}}{Der Erzieher arbeitet in der Krippe} & \Fa{مربی کودک مرد} \\
+\hline
+184 & \DeEntry{kündigen (etw.Akk \textasciitilde{}, jdm. \textasciitilde{})}{---} & \Fa{فسخ کردن؛ استعفا دادن} \\
+\hline
+185 & \DeEntry{der Löffel (-s, -) {\small\color{SoftGray}[ˈlœfl̩]}}{Ich esse die Suppe mit einem Löffel} & \Fa{قاشق} \\
+\hline
+186 & \DeEntry{die Haut}{---} & \Fa{پوست} \\
+\hline
+187 & \DeEntry{selbstbewusst (Adjektiv, Komparativ {\small\color{SoftGray}[ˈzɛlpstbəˌvʊst]}}{Er wirkt sehr selbstbewusst} & \Fa{بااعتمادبه‌نفس} \\
+\hline
+188 & \DeEntry{begrüßen (transitiv) {\small\color{SoftGray}[bəˈɡʁyːsən]}}{Ich begrüße meinen Freund am Bahnhof} & \Fa{سلام و خوشامد گفتن} \\
+\hline
+189 & \DeEntry{die Nacht}{---} & \Fa{شب} \\
+\hline
+190 & \DeEntry{letzte}{---} & \Fa{آخرین} \\
+\hline
+191 & \DeEntry{die Stadt (-, Städte) {\small\color{SoftGray}[ʃtat]}}{Wien ist eine schöne Stadt} & \Fa{شهر} \\
+\hline
+192 & \DeEntry{weiter}{---} & \Fa{ادامه، جلوتر} \\
+\hline
+193 & \DeEntry{feststellen (transitiv, trennbar) {\small\color{SoftGray}[ˈfɛstˌʃtɛlən]}}{Der Arzt stellt die Ursache der Schmerzen fest} & \Fa{تشخیص دادن، متوجه شدن} \\
+\hline
+194 & \DeEntry{heiß}{---} & \Fa{داغ} \\
+\hline
+195 & \DeEntry{weich (Adjektiv, Komparativ {\small\color{SoftGray}[vaɪ̯ç]}}{Das Kissen ist sehr weich} & \Fa{نرم} \\
+\hline
+196 & \DeEntry{der Kalender (pl. die Kalender)}{Ich schreibe den Termin in meinen Kalender} & \Fa{تقویم} \\
+\hline
+197 & \DeEntry{die Ampel}{---} & \Fa{چراغ راهنمایی} \\
+\hline
+198 & \DeEntry{das Glück}{---} & \Fa{خوشبختی؛ شانس} \\
+\hline
+199 & \DeEntry{gesund (Adjektiv, Komparativ {\small\color{SoftGray}[ɡəˈzʊnt]}}{Er lebt gesund} & \Fa{سالم} \\
+\hline
+200 & \DeEntry{die Jacke {\small\color{SoftGray}[ˈjakə]}}{Ich ziehe meine Jacke an} & \Fa{ژاکت، کاپشن} \\
+\hline
+201 & \DeEntry{der Beruf (-s, -e) {\small\color{SoftGray}[bəˈʁuːf]}}{Was ist dein Beruf} & \Fa{شغل} \\
+\hline
+202 & \DeEntry{messen}{---} & \Fa{اندازه گرفتن} \\
+\hline
+203 & \DeEntry{erreichbar}{---} & \Fa{قابل دسترسی} \\
+\hline
+204 & \DeEntry{unbewusst (Adverb, auch als Adjektiv) {\small\color{SoftGray}[ˈʊnbəˌvʊst]}}{Er hat unbewusst gelächelt} & \Fa{ناخودآگاه} \\
+\hline
+205 & \DeEntry{die Tabelle {\small\color{SoftGray}[taˈbɛlə]}}{Ich erstelle eine Tabelle in Excel} & \Fa{جدول} \\
+\hline
+206 & \DeEntry{besonders {\small\color{SoftGray}[bəˈzɔndɐs]}}{Ich mag besonders diesen Film} & \Fa{خاص؛ به‌خصوص} \\
+\hline
+207 & \DeEntry{schmecken (etw.Akk \textasciitilde{})}{---} & \Fa{مزه دادن، خوشمزه بودن برای کسی} \\
+\hline
+208 & \DeEntry{öffentlich}{---} & \Fa{عمومی، دولتی یا عمومی} \\
+\hline
+209 & \DeEntry{verdienen (etw.Akk \textasciitilde{})}{Er verdient eine zweite Chance} & \Fa{درآمد داشتن؛ سزاوار بودن} \\
+\hline
+210 & \DeEntry{tragen (etw. Akk \textasciitilde{})}{Ich trage eine Tasche} & \Fa{حمل کردن؛ پوشیدن} \\
+\hline
+211 & \DeEntry{das Reich}{---} & \Fa{ثروتمند، غنی} \\
+\hline
+212 & \DeEntry{die Entwicklung {\small\color{SoftGray}[ɛntˈvɪklʊŋ]}}{Die Entwicklung der Technologie ist sehr schnell} & \Fa{توسعه، رشد} \\
+\hline
+213 & \DeEntry{das ist mir wichtig}{---} & \Fa{این برایم مهم است} \\
+\hline
+214 & \DeEntry{sonst (Adverb) {\small\color{SoftGray}[zɔnst]}}{Beeil dich, sonst verpasst du den Zug} & \Fa{وگرنه، در غیر این صورت، جز این} \\
+\hline
+215 & \DeEntry{der Aufenthaltstitel {\small\color{SoftGray}[ˈaʊ̯fˌʔɛnthaltsˌtɪtl̩]}}{Ich muss meinen Aufenthaltstitel verlängern} & \Fa{عنوان یا مدرک اقامت} \\
+\hline
+216 & \DeEntry{der Schmerz}{---} & \Fa{درد} \\
+\hline
+217 & \DeEntry{die Tablette {\small\color{SoftGray}[taˈblɛtə]}}{Ich nehme jeden Morgen eine Tablette} & \Fa{قرص} \\
+\hline
+218 & \DeEntry{tief}{---} & \Fa{عمیق، پایین} \\
+\hline
+219 & \DeEntry{die Ehe {\small\color{SoftGray}[ˈeːə]}}{Sie führen eine glückliche Ehe} & \Fa{ازدواج} \\
+\hline
+220 & \DeEntry{die Fahrkarte}{---} & \Fa{بلیط سفر} \\
+\hline
+221 & \DeEntry{somit (Adverb) {\small\color{SoftGray}[ˈzoːmɪt]}}{Es regnet, somit bleiben wir zu Hause} & \Fa{بنابراین، در نتیجه} \\
+\hline
+222 & \DeEntry{einfach}{---} & \Fa{ساده؛ فقط} \\
+\hline
+223 & \DeEntry{scharf (Adjektiv, Komparativ {\small\color{SoftGray}[ʃaʁf]}}{Das Messer ist sehr scharf} & \Fa{تیز؛ تند} \\
+\hline
+224 & \DeEntry{Ihrer Freizeit}{---} & \Fa{در وقت آزاد او/شما} \\
+\hline
+225 & \DeEntry{die Nachricht}{---} & \Fa{پیام؛ خبر} \\
+\hline
+226 & \DeEntry{breit}{---} & \Fa{عریض} \\
+\hline
+227 & \DeEntry{der Teller}{---} & \Fa{بشقاب} \\
+\hline
+228 & \DeEntry{der Wein}{---} & \Fa{شراب} \\
+\hline
+229 & \DeEntry{zumachen}{---} & \Fa{بستن} \\
+\hline
+230 & \DeEntry{schätzen (jdn./etw.Akk \textasciitilde{})}{Ich schätze dich sehr} & \Fa{تخمین زدن؛ ارزش قائل شدن} \\
+\hline
+231 & \DeEntry{der Stein}{---} & \Fa{سنگ} \\
+\hline
+232 & \DeEntry{zuständig}{---} & \Fa{مسئول یا مربوط به کاری} \\
+\hline
+233 & \DeEntry{natürlich}{---} & \Fa{طبیعی؛ البته} \\
+\hline
+234 & \DeEntry{bereit}{---} & \Fa{آماده} \\
+\hline
+235 & \DeEntry{der Vormittag, e}{---} & \Fa{قبل از ظهر} \\
+\hline
+236 & \DeEntry{der Knoblauch {\small\color{SoftGray}[ˈknoːplaʊ̯x]}}{Ich esse gern Knoblauch} & \Fa{سیر} \\
+\hline
+237 & \DeEntry{weinen}{---} & \Fa{گریه کردن} \\
+\hline
+238 & \DeEntry{klein}{---} & \Fa{کوچک} \\
+\hline
+239 & \DeEntry{der Tisch (-es, -e) {\small\color{SoftGray}[tɪʃ]}}{Wir sitzen am Tisch} & \Fa{میز} \\
+\hline
+240 & \DeEntry{lila (Adjektiv, nicht steigerbar) {\small\color{SoftGray}[ˈliːla]}}{Sie trägt ein lila Kleid} & \Fa{بنفش} \\
+\hline
+241 & \DeEntry{neutral (Adjektiv, Komparativ {\small\color{SoftGray}[nɔʏ̯ˈtʁaːl]}}{Er bleibt in der Diskussion neutral} & \Fa{خنثی، بی‌طرف} \\
+\hline
+242 & \DeEntry{satt (Adjektiv, Komparativ {\small\color{SoftGray}[zat]}}{Ich bin satt} & \Fa{سیر} \\
+\hline
+243 & \DeEntry{begegnen}{---} & \Fa{برخورد کردن، ملاقات اتفاقی} \\
+\hline
+244 & \DeEntry{heutzutage (Adverb, nicht steigerbar) {\small\color{SoftGray}[ˈhɔʏ̯təˌtsaːɡə]}}{Heutzutage benutzen viele Menschen Smartphones} & \Fa{امروزه} \\
+\hline
+245 & \DeEntry{der Tod (-es, -e) {\small\color{SoftGray}[toːt]}}{Der Tod seines Vaters war sehr traurig} & \Fa{مرگ} \\
+\hline
+246 & \DeEntry{drücken}{---} & \Fa{فشار دادن} \\
+\hline
+247 & \DeEntry{die Ausbildung {\small\color{SoftGray}[ˈaʊ̯sˌbɪldʊŋ]}}{Ich mache eine Ausbildung zum Koch} & \Fa{آموزش حرفه‌ای} \\
+\hline
+248 & \DeEntry{der inhalt}{---} & \Fa{محتوا} \\
+\hline
+249 & \DeEntry{überall}{---} & \Fa{همه جا} \\
+\hline
+250 & \DeEntry{stellen}{---} & \Fa{گذاشتن ایستاده} \\
+\hline
+251 & \DeEntry{verwenden (etw.Akk \textasciitilde{})}{---} & \Fa{به کار بردن} \\
+\hline
+252 & \DeEntry{herunterladen (trennbar, transitiv) {\small\color{SoftGray}[hɛˈʁʊntɐˌlaːdn̩]}}{Ich lade die Datei aus dem Internet herunter} & \Fa{دانلود کردن} \\
+\hline
+253 & \DeEntry{zeigen (trennbar, transitiv) {\small\color{SoftGray}[ˈt͡saɪ̯ɡn̩]}}{Ich zeige dir mein neues Buch} & \Fa{نشان دادن} \\
+\hline
+254 & \DeEntry{sondern}{Ich trinke keinen Kaffee, sondern Tee} & \Fa{بلکه} \\
+\hline
+255 & \DeEntry{Nachricht}{---} & \Fa{پیام؛ خبر} \\
+\hline
+256 & \DeEntry{unnötig (Adjektiv) {\small\color{SoftGray}[ˈʊnˌnøːtɪç]}}{Das ist unnötig} & \Fa{غیرضروری} \\
+\hline
+257 & \DeEntry{billig}{---} & \Fa{ارزان} \\
+\hline
+258 & \DeEntry{der Osten (pl. —)}{Der Osten des Landes ist sehr kalt} & \Fa{شرق} \\
+\hline
+259 & \DeEntry{Schwierigkeit}{---} & \Fa{سختی، مشکل} \\
+\hline
+260 & \DeEntry{die Reise {\small\color{SoftGray}[ˈʁaɪ̯zə]}}{Die Reise war lang} & \Fa{سفر} \\
+\hline
+261 & \DeEntry{die Geschwister(pl)}{---} & \Fa{خواهر و برادرها} \\
+\hline
+262 & \DeEntry{der Pullover (-s, -) {\small\color{SoftGray}[ˈpʊlˌoːvɐ]}}{Ich ziehe einen warmen Pullover an} & \Fa{پلیور} \\
+\hline
+263 & \DeEntry{Luft}{---} & \Fa{هوا} \\
+\hline
+264 & \DeEntry{solange (Konjunktion, subordinierend + Verb am Ende) {\small\color{SoftGray}[zoˈlaŋə]}}{Solange ich schreibe, fühle ich mich gut} & \Fa{تا وقتی که} \\
+\hline
+265 & \DeEntry{das Konto {\small\color{SoftGray}[ˈkɔnto]}}{Ich habe ein Konto bei Amazon erstellt} & \Fa{حساب بانکی} \\
+\hline
+266 & \DeEntry{ausmachen (trennbar, transitiv) {\small\color{SoftGray}[ˈaʊ̯sˌmaxn̩]}}{Bitte mach das Licht aus} & \Fa{خاموش کردن؛ قرار گذاشتن} \\
+\hline
+267 & \DeEntry{schlecht}{---} & \Fa{بد} \\
+\hline
+268 & \DeEntry{bei (Präposition + Dativ) {\small\color{SoftGray}[baɪ̯]}}{Ich bleibe ein paar Tage bei dir} & \Fa{نزدِ، پیشِ، هنگامِ} \\
+\hline
+269 & \DeEntry{der Stift}{---} & \Fa{خودکار، قلم} \\
+\hline
+270 & \DeEntry{winzig (Adjektiv, Komparativ {\small\color{SoftGray}[ˈvɪnʦɪç]}}{Das ist ein winziges Detail} & \Fa{ریز، بسیار کوچک} \\
+\hline
+271 & \DeEntry{die Datei}{---} & \Fa{فایل} \\
+\hline
+272 & \DeEntry{die Bescheinigung {\small\color{SoftGray}[bəˈʃaɪ̯nɪɡʊŋ]}}{Ich brauche eine Bescheinigung vom Arzt} & \Fa{گواهی‌نامه، تأییدیه} \\
+\hline
+273 & \DeEntry{spannend (Adjektiv, Komparativ {\small\color{SoftGray}[ˈʃpanənt]}}{Der Film war sehr spannend} & \Fa{هیجان‌انگیز} \\
+\hline
+274 & \DeEntry{die Einladung (pl. die Einladungen)}{Ich habe eine Einladung bekommen} & \Fa{دعوت‌نامه} \\
+\hline
+275 & \DeEntry{die Zeitschrift {\small\color{SoftGray}[ˈtsaɪ̯tˌʃʁɪft]}}{Ich lese eine deutsche Zeitschrift} & \Fa{مجله} \\
+\hline
+276 & \DeEntry{die Ecke (pl. die Ecken)}{---} & \Fa{گوشه} \\
+\hline
+277 & \DeEntry{die Ausstellung {\small\color{SoftGray}[ˈaʊ̯sʃtɛlʊŋ]}}{Ich besuche morgen eine Ausstellung im Museum} & \Fa{نمایشگاه} \\
+\hline
+278 & \DeEntry{das Fahrrad (-s, -räder) {\small\color{SoftGray}[ˈfaːʁʁaːt]}}{Ich fahre jeden Tag mit dem Fahrrad} & \Fa{دوچرخه} \\
+\hline
+279 & \DeEntry{voll}{Der Müll ist voll} & \Fa{پر} \\
+\hline
+280 & \DeEntry{das Frühstück {\small\color{SoftGray}[ˈfʁyːʃtʏk]}}{Ich esse jeden Morgen ein großes Frühstück} & \Fa{صبحانه} \\
+\hline
+281 & \DeEntry{geschieden}{---} & \Fa{طلاق‌گرفته} \\
+\hline
+282 & \DeEntry{glücklich (Adjektiv, Komparativ {\small\color{SoftGray}[ˈɡlʏklɪç]}}{Er ist ein glücklicher Mensch} & \Fa{خوشحال؛ خوشبخت} \\
+\hline
+283 & \DeEntry{planen (etw.Akk \textasciitilde{})}{Ich plane eine Reise nach Berlin} & \Fa{برنامه‌ریزی کردن} \\
+\hline
+284 & \DeEntry{die Hose {\small\color{SoftGray}[ˈhoːzə]}}{Ich trage heute eine schwarze Hose} & \Fa{شلوار} \\
+\hline
+285 & \DeEntry{der Einfluss {\small\color{SoftGray}[ˈaɪ̯nˌflʊs]}}{Seine Worte haben großen Einfluss auf mich} & \Fa{تأثیر} \\
+\hline
+286 & \DeEntry{das Schreiben}{---} & \Fa{نوشتن} \\
+\hline
+287 & \DeEntry{verstehen (jdn./etw.Akk \textasciitilde{})}{---} & \Fa{فهمیدن} \\
+\hline
+288 & \DeEntry{mitnehmen}{---} & \Fa{همراه بردن} \\
+\hline
+289 & \DeEntry{helfen (Dat.) {\small\color{SoftGray}[ˈhɛlfən]}}{Ich helfe meinem Freund bei den Hausaufgaben} & \Fa{کمک کردن} \\
+\hline
+290 & \DeEntry{pünktlich (Adjektiv, Komparativ {\small\color{SoftGray}[ˈpʏŋktlɪç]}}{Er ist immer pünktlich} & \Fa{سر وقت} \\
+\hline
+291 & \DeEntry{das Warten}{---} & \Fa{منتظر بودن} \\
+\hline
+292 & \DeEntry{der Hut}{---} & \Fa{کلاه} \\
+\hline
+293 & \DeEntry{überweisen}{---} & \Fa{حواله یا انتقال پول کردن} \\
+\hline
+294 & \DeEntry{backen}{---} & \Fa{پختن در فر} \\
+\hline
+295 & \DeEntry{betreuen (transitiv) {\small\color{SoftGray}[bəˈtʁɔʏ̯ən]}}{Die Erzieher betreuen die Kinder in der Krippe} & \Fa{مراقبت و رسیدگی کردن} \\
+\hline
+296 & \DeEntry{der Erfolg (-s, -e) {\small\color{SoftGray}[ɛɐ̯ˈfɔlk]}}{Er hat großen Erfolg im Studium} & \Fa{موفقیت} \\
+\hline
+297 & \DeEntry{singen}{---} & \Fa{آواز خواندن} \\
+\hline
+298 & \DeEntry{illegal (Adjektiv, Komparativ {\small\color{SoftGray}[ileˈɡaːl]}}{Das ist eine illegale Handlung} & \Fa{غیرقانونی} \\
+\hline
+299 & \DeEntry{weg (Adverb, nicht steigerbar) {\small\color{SoftGray}[vɛk]}}{Das Haus ist weit weg} & \Fa{راه، مسیر} \\
+\hline
+300 & \DeEntry{die Kamera {\small\color{SoftGray}[kaˈmeːʁa]}}{Ich habe eine neue Kamera gekauft} & \Fa{دوربین} \\
+\hline
+301 & \DeEntry{wegen (Präposition + Genitiv, umgangssprachlich auch Dativ)}{Wegen des Regens bleiben wir zu Hause} & \Fa{به خاطرِ} \\
+\hline
+302 & \DeEntry{der Glas}{---} & \Fa{لیوان؛ شیشه} \\
+\hline
+303 & \DeEntry{der Führerschein}{---} & \Fa{گواهینامه رانندگی} \\
+\hline
+304 & \DeEntry{der Schatten {\small\color{SoftGray}[ˈʃatn̩]}}{Der Baum wirft einen langen Schatten} & \Fa{سایه} \\
+\hline
+305 & \DeEntry{nach}{---} & \Fa{بعد از، به سمتِ شهر یا کشور} \\
+\hline
+306 & \DeEntry{kennen (jdn./etw.) {\small\color{SoftGray}[ˈkɛnən]}}{Ich kenne ihn} & \Fa{شناختن} \\
+\hline
+307 & \DeEntry{das Essen}{---} & \Fa{غذا خوردن؛ غذا} \\
+\hline
+308 & \DeEntry{innerhalb (Präposition + Genitiv) {\small\color{SoftGray}[ˈɪnɐhalp]}}{Ich werde innerhalb einer Woche antworten} & \Fa{داخلِ، ظرفِ} \\
+\hline
+309 & \DeEntry{absichtlich}{Er hat das absichtlich gemacht} & \Fa{عمدی، عمداً} \\
+\hline
+310 & \DeEntry{schützen (jdn./etw.Akk \textasciitilde{})}{---} & \Fa{حفاظت کردن} \\
+\hline
+311 & \DeEntry{schlimm (Adjektiv, Komparativ {\small\color{SoftGray}[ʃlɪm]}}{Das ist nicht schlimm} & \Fa{بد، وخیم} \\
+\hline
+312 & \DeEntry{halten (etw.Akk \textasciitilde{})}{---} & \Fa{نگه داشتن؛ توقف کردن} \\
+\hline
+313 & \DeEntry{niedrig (Adjektiv, Komparativ {\small\color{SoftGray}[ˈniːdʁɪç]}}{Der Preis ist niedrig} & \Fa{پایین، کم‌ارتفاع} \\
+\hline
+314 & \DeEntry{die Tasche {\small\color{SoftGray}[ˈtaʃə]}}{Ich trage meine Tasche zur Arbeit} & \Fa{کیف} \\
+\hline
+315 & \DeEntry{wissen (etw.Akk \textasciitilde{})}{---} & \Fa{دانستن} \\
+\hline
+316 & \DeEntry{überraschen (Akk.) {\small\color{SoftGray}[ˈyːbɐˌʁaʃn̩]}}{Die Nachricht überrascht mich} & \Fa{غافلگیر کردن} \\
+\hline
+317 & \DeEntry{klar}{---} & \Fa{واضح؛ روشن} \\
+\hline
+318 & \DeEntry{gründen (etw.Akk \textasciitilde{})}{---} & \Fa{تأسیس کردن} \\
+\hline
+319 & \DeEntry{gewöhnlich (Adverb, auch Adjektiv) {\small\color{SoftGray}[ɡəˈvøːnlɪç]}}{Ich stehe gewöhnlich um sieben Uhr auf} & \Fa{معمولی} \\
+\hline
+320 & \DeEntry{die Küche}{---} & \Fa{آشپزخانه} \\
+\hline
+321 & \DeEntry{das Vertrauen (pl. die Vertrauen)}{Ich habe Vertrauen in dich} & \Fa{اعتماد} \\
+\hline
+322 & \DeEntry{dumm}{Er ist dumm} & \Fa{احمقانه، کم‌هوش} \\
+\hline
+323 & \DeEntry{einschalten (trennbar, transitiv) {\small\color{SoftGray}[ˈaɪ̯nˌʃaltən]}}{Ich schalte das Licht ein} & \Fa{روشن کردن} \\
+\hline
+324 & \DeEntry{nutzen (jdn./etw.Akk \textasciitilde{})}{---} & \Fa{استفاده کردن، بهره بردن} \\
+\hline
+325 & \DeEntry{das Jahr {\small\color{SoftGray}[jaːɐ̯]}}{Ich lebe seit einem Jahr in Paris} & \Fa{سال} \\
+\hline
+326 & \DeEntry{selten}{---} & \Fa{به ندرت} \\
+\hline
+327 & \DeEntry{Vermutlich}{---} & \Fa{احتمالاً} \\
+\hline
+328 & \DeEntry{die Einfahrt {\small\color{SoftGray}[ˈaɪ̯nˌfaːɐ̯t]}}{Die Einfahrt ist blockiert} & \Fa{ورودی خودرو} \\
+\hline
+329 & \DeEntry{das Gesicht (pl. die Gesichter) {\small\color{SoftGray}[ɡəˈzɪçt]}}{Er hat ein freundliches Gesicht} & \Fa{صورت} \\
+\hline
+330 & \DeEntry{der Akku}{---} & \Fa{باتری شارژی} \\
+\hline
+331 & \DeEntry{die Umwelt {\small\color{SoftGray}[ˈʊmˌvɛlt]}}{Wir müssen die Umwelt schützen} & \Fa{محیط زیست} \\
+\hline
+332 & \DeEntry{aktuell}{---} & \Fa{فعلی، به‌روز} \\
+\hline
+333 & \DeEntry{der Fall (-es, Fälle) {\small\color{SoftGray}[fal]}}{In diesem Fall müssen wir vorsichtig sein} & \Fa{مورد؛ سقوط} \\
+\hline
+334 & \DeEntry{eigentlich (Adverb) {\small\color{SoftGray}[ˈaɪ̯ɡn̩tlɪç]}}{Eigentlich wollte ich heute zu Hause bleiben} & \Fa{در واقع، اصولاً} \\
+\hline
+335 & \DeEntry{braten (trennbar, transitiv) {\small\color{SoftGray}[ˈbʁaːtn̩]}}{Ich brate das Fleisch in der Pfanne} & \Fa{سرخ کردن} \\
+\hline
+336 & \DeEntry{bitten}{---} & \Fa{درخواست کردن از کسی} \\
+\hline
+337 & \DeEntry{allerdings}{Es ist teuer, allerdings sehr gut} & \Fa{البته، با این حال} \\
+\hline
+338 & \DeEntry{furchterregend (Adjektiv, Komparativ {\small\color{SoftGray}[ˈfʊʁçtʔɛɐ̯ˌʁeːɡn̩t]}}{Der Film war furchterregend} & \Fa{ترسناک، وحشت‌آور} \\
+\hline
+339 & \DeEntry{zuordonen}{---} & \Fa{اختصاص دادن، نسبت دادن} \\
+\hline
+340 & \DeEntry{wobei (Konjunktion / Pronominaladverb) {\small\color{SoftGray}[voˈbaɪ̯]}}{Er erklärte mir die Regel, wobei er ein Beispiel gab} & \Fa{که در آن؛ در حالی که} \\
+\hline
+341 & \DeEntry{erlauben}{---} & \Fa{اجازه دادن} \\
+\hline
+342 & \DeEntry{verkaufen}{---} & \Fa{فروختن} \\
+\hline
+343 & \DeEntry{die Liste {\small\color{SoftGray}[ˈlɪstə]}}{Ich schreibe eine Liste für den Einkauf} & \Fa{لیست} \\
+\hline
+344 & \DeEntry{langsam (Adjektiv, Komparativ {\small\color{SoftGray}[ˈlaŋzaːm]}}{Der Zug ist sehr langsam} & \Fa{آهسته} \\
+\hline
+345 & \DeEntry{die Struktur}{---} & \Fa{ساختار} \\
+\hline
+346 & \DeEntry{die Maus {\small\color{SoftGray}[maʊ̯s]}}{Ich benutze die Maus am Computer} & \Fa{ماوس؛ موش} \\
+\hline
+347 & \DeEntry{der Apfel (-s, Äpfel) {\small\color{SoftGray}[ˈapfəl]}}{Ich esse einen Apfel} & \Fa{سیب} \\
+\hline
+348 & \DeEntry{der Rücken}{---} & \Fa{کمر، پشت} \\
+\hline
+349 & \DeEntry{das Bett}{---} & \Fa{تختخواب} \\
+\hline
+350 & \DeEntry{verschreiben}{---} & \Fa{نسخه دادن، تجویز کردن} \\
+\hline
+351 & \DeEntry{gemeinsam}{---} & \Fa{مشترک} \\
+\hline
+352 & \DeEntry{die Idee {\small\color{SoftGray}[iˈdeːə]}}{Ich habe eine neue Idee für mein Projekt} & \Fa{ایده} \\
+\hline
+353 & \DeEntry{ähnlich (Adjektiv, nicht steigerbar) {\small\color{SoftGray}[ˈɛːnlɪç]}}{Die beiden Häuser sind sich sehr ähnlich} & \Fa{شبیه} \\
+\hline
+354 & \DeEntry{der Lohn (pl. die Löhne)}{Der Lohn ist pro Stunde berechnet} & \Fa{دستمزد} \\
+\hline
+355 & \DeEntry{unter}{---} & \Fa{زیر، میان} \\
+\hline
+356 & \DeEntry{das Vorstellungsgespräch {\small\color{SoftGray}[ˈfoːɐ̯ʃtɛlʊŋsɡəˌʃpʁɛːç]}}{Ich habe morgen ein Vorstellungsgespräch} & \Fa{مصاحبه کاری} \\
+\hline
+357 & \DeEntry{die Gesellschaft}{---} & \Fa{جامعه} \\
+\hline
+358 & \DeEntry{die Geduld}{---} & \Fa{صبر} \\
+\hline
+359 & \DeEntry{das Fenster}{---} & \Fa{پنجره} \\
+\hline
+360 & \DeEntry{bald (Adjektiv, nicht steigerbar) {\small\color{SoftGray}[balt]}}{Er ist schon mit dreißig Jahren bald} & \Fa{به‌زودی} \\
+\hline
+361 & \DeEntry{flach}{Das ist vor langer Zeit passiert} & \Fa{مسطح، کم‌عمق} \\
+\hline
+362 & \DeEntry{(etw.Akk) liefern}{---} & \Fa{تحویل دادن} \\
+\hline
+363 & \DeEntry{gern (Adverb, nicht steigerbar) {\small\color{SoftGray}[ɡɛʁn]}}{Ich helfe dir gern} & \Fa{با میل، دوست داشتن انجام کاری} \\
+\hline
+364 & \DeEntry{deshalb}{---} & \Fa{به همین دلیل} \\
+\hline
+365 & \DeEntry{die Richtung {\small\color{SoftGray}[ˈʁɪçtʊŋ]}}{Wir gehen in die falsche Richtung} & \Fa{جهت} \\
+\hline
+366 & \DeEntry{das Angebot}{---} & \Fa{پیشنهاد؛ تخفیف ویژه} \\
+\hline
+367 & \DeEntry{abfahren (trennbar, intransitiv) {\small\color{SoftGray}[ˈapˌfaːʁən]}}{Der Zug fährt um 8 Uhr ab} & \Fa{حرکت کردن، راه افتادن وسیله} \\
+\hline
+368 & \DeEntry{die Insel}{---} & \Fa{جزیره} \\
+\hline
+369 & \DeEntry{der Arbeitgeber (-s, -) {\small\color{SoftGray}[ˈaʁbaɪ̯tˌɡeːbɐ]}}{Mein Arbeitgeber bietet flexible Arbeitszeiten} & \Fa{کارفرما} \\
+\hline
+370 & \DeEntry{der Glauben}{---} & \Fa{حرف کسی را باور کردن} \\
+\hline
+371 & \DeEntry{fern (Adjektiv, Komparativ {\small\color{SoftGray}[fɛʁn]}}{Das ferne Land interessiert mich sehr} & \Fa{دور} \\
+\hline
+372 & \DeEntry{stolz (Adjektiv, Komparativ {\small\color{SoftGray}[ʃtɔlts]}}{Ich bin stolz auf dich} & \Fa{مغرور، مفتخر} \\
+\hline
+373 & \DeEntry{notwendig (Adjektiv, Komparativ {\small\color{SoftGray}[ˈnoːtvɛndɪç]}}{Das ist eine notwendige Entscheidung} & \Fa{ضروری} \\
+\hline
+374 & \DeEntry{vorsichtig (Adjektiv, Komparativ {\small\color{SoftGray}[ˈfoːɐ̯ˌzɪçtɪç]}}{Sei vorsichtig auf der Straße} & \Fa{محتاط، با احتیاط} \\
+\hline
+375 & \DeEntry{unabhängig (Adjektiv, Komparativ {\small\color{SoftGray}[ˈʊnaˌbˌhɛŋɪç]}}{Er ist finanziell unabhängig} & \Fa{مستقل} \\
+\hline
+376 & \DeEntry{heilen}{---} & \Fa{درمان کردن؛ خوب شدن} \\
+\hline
+377 & \DeEntry{die Versicherung (pl. die Versicherungen)}{Ich habe eine Krankenversicherung} & \Fa{بیمه} \\
+\hline
+378 & \DeEntry{bestehen (trennbar, transitiv/intransitiv) {\small\color{SoftGray}[bəˈʃteːən]}}{Ich habe die Prüfung bestanden} & \Fa{قبول شدن در امتحان؛ پافشاری کردن} \\
+\hline
+379 & \DeEntry{der Fehler}{---} & \Fa{اشتباه} \\
+\hline
+380 & \DeEntry{untersuchen}{Der Arzt untersucht mich} & \Fa{معاینه یا بررسی کردن} \\
+\hline
+381 & \DeEntry{starten}{---} & \Fa{شروع کردن؛ استارت زدن} \\
+\hline
+382 & \DeEntry{schwer}{---} & \Fa{سخت؛ سنگین} \\
+\hline
+383 & \DeEntry{krank}{Ich bin krank} & \Fa{بیمار} \\
+\hline
+384 & \DeEntry{günstig}{---} & \Fa{مقرون‌به‌صرفه، مناسب قیمت} \\
+\hline
+385 & \DeEntry{das Tag}{---} & \Fa{روز} \\
+\hline
+386 & \DeEntry{lang}{---} & \Fa{بلند، طولانی} \\
+\hline
+387 & \DeEntry{die Etage {\small\color{SoftGray}[eˈtaːʒə]}}{Ich wohne in der ersten Etage} & \Fa{طبقه} \\
+\hline
+388 & \DeEntry{der Verein}{---} & \Fa{انجمن، باشگاه} \\
+\hline
+389 & \DeEntry{die Woche {\small\color{SoftGray}[ˈvɔxə]}}{Ich arbeite fünf Tage pro Woche} & \Fa{هفته} \\
+\hline
+390 & \DeEntry{hochladen (trennbar, transitiv) {\small\color{SoftGray}[ˈhoːxˌlaːdn̩]}}{Ich lade das Dokument auf die Website hoch} & \Fa{آپلود کردن} \\
+\hline
+391 & \DeEntry{die Zeit {\small\color{SoftGray}[tsaɪ̯t]}}{Ich habe heute keine Zeit} & \Fa{زمان، وقت} \\
+\hline
+392 & \DeEntry{angeblich (Adverb) {\small\color{SoftGray}[ˈanˌɡeːplɪç]}}{Er ist angeblich krank} & \Fa{ظاهراً، به ادعا} \\
+\hline
+393 & \DeEntry{feiern (jdn. \textasciitilde{})}{---} & \Fa{جشن گرفتن} \\
+\hline
+394 & \DeEntry{fallen (etw.Akk \textasciitilde{})}{---} & \Fa{افتادن} \\
+\hline
+395 & \DeEntry{die Traube {\small\color{SoftGray}[ˈtʁaʊ̯bə]}}{Ich esse gern rote Trauben} & \Fa{انگور} \\
+\hline
+396 & \DeEntry{bis}{---} & \Fa{تا} \\
+\hline
+397 & \DeEntry{die Kuh {\small\color{SoftGray}[kuː]}}{Die Kuh steht auf der Wiese} & \Fa{گاو ماده} \\
+\hline
+398 & \DeEntry{unsicher}{---} & \Fa{نامطمئن؛ ناامن} \\
+\hline
+399 & \DeEntry{bunt (Adjektiv, Komparativ {\small\color{SoftGray}[bʊnt]}}{Das Bild ist sehr bunt} & \Fa{رنگارنگ} \\
+\hline
+400 & \DeEntry{typisch}{---} & \Fa{معمول، تیپیک} \\
+\hline
+401 & \DeEntry{die Entscheidung}{---} & \Fa{تصمیم} \\
+\hline
+402 & \DeEntry{sicher (Adjektiv, Komparativ {\small\color{SoftGray}[ˈzɪçɐ]}}{Ich bin nicht sicher} & \Fa{حتماً؛ امن} \\
+\hline
+403 & \DeEntry{beschäftigt (Adjektiv, Komparativ {\small\color{SoftGray}[bəˈʃɛftɪçt]}}{Ich bin heute beschäftigt} & \Fa{مشغول} \\
+\hline
+404 & \DeEntry{das Mittagessen}{---} & \Fa{ناهار} \\
+\hline
+405 & \DeEntry{rufen}{---} & \Fa{صدا زدن} \\
+\hline
+406 & \DeEntry{die Menge {\small\color{SoftGray}[ˈmɛŋə]}}{Eine große Menge Wasser ist im Glas} & \Fa{مقدار، جمعیت} \\
+\hline
+407 & \DeEntry{die Meinung}{---} & \Fa{نظر} \\
+\hline
+408 & \DeEntry{das Papier}{---} & \Fa{کاغذ} \\
+\hline
+409 & \DeEntry{damals (Adverb, nicht steigerbar) {\small\color{SoftGray}[ˈdaːmaːls]}}{Damals war ich Student} & \Fa{آن زمان، در گذشته} \\
+\hline
+410 & \DeEntry{optimistisch (Adjektiv, Komparativ {\small\color{SoftGray}[ɔptiˈmɪstɪʃ]}}{Er ist sehr optimistisch} & \Fa{خوش‌بین} \\
+\hline
+411 & \DeEntry{die Ordnung {\small\color{SoftGray}[ˈɔʁdnʊŋ]}}{In meinem Zimmer herrscht Ordnung} & \Fa{نظم؛ ترتیب} \\
+\hline
+412 & \DeEntry{unten}{---} & \Fa{پایین} \\
+\hline
+413 & \DeEntry{denn (Konjunktion, koordinierend) {\small\color{SoftGray}[dɛn]}}{Ich bleibe zu Hause, denn ich bin krank} & \Fa{زیرا، چون} \\
+\hline
+414 & \DeEntry{der Unterschied (-s, -e) {\small\color{SoftGray}[ˈʊntɐʃiːt]}}{Es gibt einen großen Unterschied zwischen Theorie und Praxis} & \Fa{تفاوت} \\
+\hline
+415 & \DeEntry{peinlich}{---} & \Fa{خجالت‌آور} \\
+\hline
+416 & \DeEntry{der Flughafen}{---} & \Fa{فرودگاه} \\
+\hline
+417 & \DeEntry{worüber}{---} & \Fa{درباره‌ی چه چیزی} \\
+\hline
+418 & \DeEntry{wirklich (Adverb / Adjektiv) {\small\color{SoftGray}[ˈvɪʁklɪç]}}{Das ist wirklich wichtig} & \Fa{واقعاً} \\
+\hline
+419 & \DeEntry{der Zusammenhang {\small\color{SoftGray}[ˈt͡suːzamənˌhaŋ]}}{Ich verstehe den Zusammenhang nicht} & \Fa{ارتباط، زمینه} \\
+\hline
+420 & \DeEntry{die Aussprache {\small\color{SoftGray}[ˈaʊ̯sʃpraːxə]}}{Die Aussprache dieses Wortes ist schwierig} & \Fa{تلفظ} \\
+\hline
+421 & \DeEntry{die Hoffnung {\small\color{SoftGray}[ˈhɔfnʊŋ]}}{Ich habe Hoffnung auf eine bessere Zukunft} & \Fa{امید} \\
+\hline
+422 & \DeEntry{gratulieren}{---} & \Fa{تبریک گفتن به کسی} \\
+\hline
+423 & \DeEntry{anschließend (Adverb) {\small\color{SoftGray}[ˈanʃliːsənt]}}{Wir essen und gehen anschließend spazieren} & \Fa{سپس، بعد از آن} \\
+\hline
+424 & \DeEntry{chaotisch}{---} & \Fa{آشفته، بی‌نظم} \\
+\hline
+425 & \DeEntry{das Pferd}{---} & \Fa{اسب} \\
+\hline
+426 & \DeEntry{das Huhn}{---} & \Fa{مرغ} \\
+\hline
+427 & \DeEntry{der Winter (pl. die Winter)}{Der Winter ist sehr kalt} & \Fa{زمستان} \\
+\hline
+428 & \DeEntry{teuer (Adjektiv, Komparativ {\small\color{SoftGray}[ˈtɔʏ̯ɐ]}}{Dieses Auto ist sehr teuer} & \Fa{گران} \\
+\hline
+429 & \DeEntry{aussteigen (trennbar, intransitiv) {\small\color{SoftGray}[ˈaʊ̯sˌʃtaɪ̯ɡən]}}{Ich steige an der nächsten Haltestelle aus} & \Fa{پیاده شدن} \\
+\hline
+430 & \DeEntry{statt (Präposition + Genitiv / umgangssprachlich auch + Dativ)}{Statt eines Autos kaufe ich ein Fahrrad} & \Fa{به جایِ} \\
+\hline
+431 & \DeEntry{sauer}{---} & \Fa{ترش؛ عصبانی} \\
+\hline
+432 & \DeEntry{die Brille(f)}{---} & \Fa{عینک} \\
+\hline
+433 & \DeEntry{der Lehrer (-s, -) {\small\color{SoftGray}[ˈleːʁɐ]}}{Der Lehrer erklärt die Grammatik} & \Fa{معلم مرد} \\
+\hline
+434 & \DeEntry{der Berg}{---} & \Fa{کوه} \\
+\hline
+435 & \DeEntry{gefährlich}{---} & \Fa{خطرناک} \\
+\hline
+436 & \DeEntry{mieten (etw.Akk \textasciitilde{})}{---} & \Fa{اجاره کردن} \\
+\hline
+437 & \DeEntry{der Eingang (-s, ¨-e) {\small\color{SoftGray}[ˈaɪ̯nˌɡaŋ]}}{Der Eingang ist auf der rechten Seite} & \Fa{ورودی} \\
+\hline
+438 & \DeEntry{sich setzen {\small\color{SoftGray}[zɪç ˈzɛtsn̩]}}{Ich setze mich auf den Stuhl} & \Fa{نشستن} \\
+\hline
+439 & \DeEntry{dennoch}{---} & \Fa{با این وجود} \\
+\hline
+440 & \DeEntry{der Platz (¨-e) {\small\color{SoftGray}[plats]}}{Ist dieser Platz noch frei} & \Fa{میدان، جا} \\
+\hline
+441 & \DeEntry{der Mund (pl. die Münder)}{Öffne bitte den Mund} & \Fa{دهان} \\
+\hline
+442 & \DeEntry{schlafen}{---} & \Fa{خوابیدن} \\
+\hline
+443 & \DeEntry{wohingegen (Konjunktion, subordinierend + Verb am Ende) {\small\color{SoftGray}[voˈhɪnɡeːɡn̩]}}{Ich lerne gern Deutsch, wohingegen mein Bruder lieber Englisch lernt} & \Fa{در حالی که، در مقابل} \\
+\hline
+444 & \DeEntry{trotz (+ Genitiv)}{Trotz des Regens gehe ich spazieren} & \Fa{با وجودِ} \\
+\hline
+445 & \DeEntry{ganz}{---} & \Fa{کل؛ کاملاً} \\
+\hline
+446 & \DeEntry{lecker}{---} & \Fa{خوشمزه} \\
+\hline
+447 & \DeEntry{der Bleistift}{---} & \Fa{مداد} \\
+\hline
+448 & \DeEntry{gültig}{---} & \Fa{معتبر} \\
+\hline
+449 & \DeEntry{kontrollieren}{---} & \Fa{کنترل کردن} \\
+\hline
+450 & \DeEntry{ankommen}{Ich komme am Ziel an} & \Fa{رسیدن} \\
+\hline
+451 & \DeEntry{klug (Adjektiv, Komparativ {\small\color{SoftGray}[kluːk]}}{Es ist klug, Toilettenpapier mitzunehmen} & \Fa{باهوش} \\
+\hline
+452 & \DeEntry{das Lächeln {\small\color{SoftGray}[ˈlɛçəln̩]}}{Ihr Lächeln war sehr freundlich} & \Fa{لبخند زدن} \\
+\hline
+453 & \DeEntry{bevor (Konjunktion, subordinierend + Verb am Ende) {\small\color{SoftGray}[bəˈfoːɐ̯]}}{Ich esse etwas, bevor ich spazieren gehe} & \Fa{قبل از اینکه} \\
+\hline
+454 & \DeEntry{das Bargeld}{---} & \Fa{پول نقد} \\
+\hline
+455 & \DeEntry{sich freuen}{---} & \Fa{خوشحال بودن} \\
+\hline
+456 & \DeEntry{der Topf}{---} & \Fa{قابلمه} \\
+\hline
+457 & \DeEntry{umsteigen (auf etw.Akk) {\small\color{SoftGray}[ˈʊmˌʃtaɪ̯ɡn̩]}}{Ich steige in Wien um} & \Fa{خط عوض کردن، وسیله عوض کردن} \\
+\hline
+458 & \DeEntry{der Fahrer}{---} & \Fa{راننده مرد} \\
+\hline
+459 & \DeEntry{über}{---} & \Fa{بالای، درباره‌ی} \\
+\hline
+460 & \DeEntry{der Grund}{---} & \Fa{دلیل؛ زمین} \\
+\hline
+461 & \DeEntry{der Kredit (-s, -e) {\small\color{SoftGray}[kreˈdiːt]}}{Ich habe einen Kredit bei der Bank aufgenommen} & \Fa{وام، اعتبار} \\
+\hline
+462 & \DeEntry{lieben (tr.) {\small\color{SoftGray}[ˈliːbn̩]}}{Ich liebe dich} & \Fa{عاشق بودن، دوست داشتن} \\
+\hline
+463 & \DeEntry{hart (Adjektiv, Komparativ {\small\color{SoftGray}[haʁt]}}{Der Tisch ist hart} & \Fa{سخت، سفت} \\
+\hline
+464 & \DeEntry{reichen}{---} & \Fa{کافی بودن؛ دادن به دست کسی} \\
+\hline
+465 & \DeEntry{aufräumen (transitiv / intransitiv, trennbar) {\small\color{SoftGray}[ˈaʊ̯fˌʁɔɪ̯mən]}}{Ich räume mein Zimmer auf} & \Fa{مرتب کردن} \\
+\hline
+466 & \DeEntry{die Seite (pl. die Seiten)}{Die rechte Seite des Buches ist leer} & \Fa{صفحه؛ طرف} \\
+\hline
+467 & \DeEntry{die Bewerbung}{---} & \Fa{درخواست کار} \\
+\hline
+468 & \DeEntry{gewinnen (transitiv, intransitiv) {\small\color{SoftGray}[ɡəˈvɪnən]}}{Unsere Mannschaft gewinnt das Spiel} & \Fa{بردن، برنده شدن} \\
+\hline
+469 & \DeEntry{durchfallen (bei + Dat) {\small\color{SoftGray}[ˈdʊʁçˌfalən]}}{Ich bin bei der Prüfung durchgefallen} & \Fa{رد شدن در امتحان} \\
+\hline
+470 & \DeEntry{fangen}{---} & \Fa{گرفتن، گرفتنِ چیزی که پرتاب شده} \\
+\hline
+471 & \DeEntry{der Rabatt (-s, -e) {\small\color{SoftGray}[ʁaˈbat]}}{Ich bekomme einen Rabatt von zehn Prozent} & \Fa{تخفیف} \\
+\hline
+472 & \DeEntry{vor allem}{Vor allem brauche ich mehr Ruhe} & \Fa{به‌خصوص، مهم‌تر از همه} \\
+\hline
+473 & \DeEntry{daran (Adverb, Pronominaladverb) {\small\color{SoftGray}[daˈʁan]}}{Ich arbeite daran} & \Fa{به آن، روی آن} \\
+\hline
+474 & \DeEntry{sparen (Verb, trennbar/intransitiv + Akk.) {\small\color{SoftGray}[ˈʃpaːʁən]}}{Ich spare Geld für ein Auto} & \Fa{پس‌انداز کردن} \\
+\hline
+475 & \DeEntry{die Hitze}{---} & \Fa{گرما} \\
+\hline
+476 & \DeEntry{üben (etw.Akk) {\small\color{SoftGray}[ˈyːbn̩]}}{Ich übe Deutsch jeden Tag} & \Fa{تمرین کردن} \\
+\hline
+477 & \DeEntry{richtig}{---} & \Fa{درست} \\
+\hline
+478 & \DeEntry{die Zwiebel {\small\color{SoftGray}[ˈt͡sviːbl̩]}}{Ich schneide eine Zwiebel für die Suppe} & \Fa{پیاز} \\
+\hline
+479 & \DeEntry{die Grammatik}{---} & \Fa{گرامر} \\
+\hline
+480 & \DeEntry{dick}{---} & \Fa{ضخیم؛ چاق} \\
+\hline
+481 & \DeEntry{der Schrägstrich {\small\color{SoftGray}[ˈʃʁɛːkʃtʁɪç]}}{Schreib bitte einen Schrägstrich zwischen die Wörter} & \Fa{خط مورب، اسلش} \\
+\hline
+482 & \DeEntry{regelmäßig (Adverb) {\small\color{SoftGray}[ˈʁeːɡl̩ˌmɛːsɪç]}}{Ich lerne regelmäßig Deutsch} & \Fa{منظم؛ به طور منظم} \\
+\hline
+483 & \DeEntry{die Gefahr}{---} & \Fa{خطر} \\
+\hline
+484 & \DeEntry{um ehrlich zu sein}{Um ehrlich zu sein, habe ich das nicht verstanden} & \Fa{راستش را بخواهی} \\
+\hline
+485 & \DeEntry{die Erfahrung}{---} & \Fa{تجربه} \\
+\hline
+486 & \DeEntry{unhöflich}{---} & \Fa{بی‌ادبانه} \\
+\hline
+487 & \DeEntry{der Brief (-s, -e) {\small\color{SoftGray}[bʁiːf]}}{Ich schreibe einen Brief an meinen Freund} & \Fa{نامه} \\
+\hline
+488 & \DeEntry{lächeln}{---} & \Fa{لبخند زدن} \\
+\hline
+489 & \DeEntry{ansehen}{---} & \Fa{نگاه کردن به، تماشا کردن} \\
+\hline
+490 & \DeEntry{rechtzeitig}{---} & \Fa{به موقع} \\
+\hline
+491 & \DeEntry{das Gepäck (kein Plural) {\small\color{SoftGray}[ɡəˈpɛk]}}{Ich habe mein Gepäck am Bahnhof vergessen} & \Fa{بار سفر} \\
+\hline
+492 & \DeEntry{zustimmen (jdm./etw.Dat) {\small\color{SoftGray}[tsuːˈʃtɪmən]}}{Ich stimme dir zu} & \Fa{موافقت کردن با} \\
+\hline
+493 & \DeEntry{schnell}{---} & \Fa{سریع} \\
+\hline
+494 & \DeEntry{die Dusche (-, -n) {\small\color{SoftGray}[ˈdʊʃə]}}{Ich nehme jeden Morgen eine Dusche} & \Fa{دوش} \\
+\hline
+495 & \DeEntry{sichtbar (Adjektiv, Komparativ {\small\color{SoftGray}[ˈzɪçtbaːɐ̯]}}{Der Fehler ist deutlich sichtbar} & \Fa{قابل دیدن} \\
+\hline
+496 & \DeEntry{erreichen (Verb, transitiv) {\small\color{SoftGray}[ɛɐ̯ˈʁaɪ̯çn̩]}}{Ich erreiche den Bahnhof in zehn Minuten} & \Fa{رسیدن به؛ دست یافتن به} \\
+\hline
+497 & \DeEntry{holen (transitiv) {\small\color{SoftGray}[ˈhoːlən]}}{Ich hole ein Glas Wasser} & \Fa{آوردن از جایی، رفتن و گرفتن} \\
+\hline
+498 & \DeEntry{deutlich (Adverb) {\small\color{SoftGray}[ˈdɔɪ̯tlɪç]}}{Er spricht deutlich} & \Fa{واضح} \\
+\hline
+499 & \DeEntry{der Mut {\small\color{SoftGray}[muːt]}}{Sie hatte den Mut, die Wahrheit zu sagen} & \Fa{شجاعت} \\
+\hline
+500 & \DeEntry{die Sonne}{---} & \Fa{خورشید} \\
+\hline
+501 & \DeEntry{reparieren (tr.) {\small\color{SoftGray}[ʁepaˈʁiːʁən]}}{Der Zahnarzt repariert meinen Zahn} & \Fa{تعمیر کردن} \\
+\hline
+502 & \DeEntry{der Aufzug}{---} & \Fa{آسانسور} \\
+\hline
+503 & \DeEntry{verlängern}{Ich verlängere den Vertrag} & \Fa{تمدید کردن} \\
+\hline
+504 & \DeEntry{der Bildschirm (-s, -e) {\small\color{SoftGray}[ˈbɪltʃɪʁm]}}{Der Bildschirm meines Laptops ist sehr hell} & \Fa{صفحه‌نمایش} \\
+\hline
+505 & \DeEntry{der Herd (-es, -e) {\small\color{SoftGray}[heːɐ̯t]}}{Der Herd ist neu} & \Fa{اجاق} \\
+\hline
+506 & \DeEntry{der Film}{---} & \Fa{فیلم} \\
+\hline
+507 & \DeEntry{zwar (Adverb/Konjunktionaladverb) {\small\color{SoftGray}[tsvaːɐ̯]}}{Das Auto ist zwar teuer, aber sehr zuverlässig} & \Fa{البته، هرچند} \\
+\hline
+508 & \DeEntry{bestellen}{---} & \Fa{سفارش دادن} \\
+\hline
+509 & \DeEntry{die Gruppe {\small\color{SoftGray}[ˈɡʁʊpə]}}{Eine Gruppe von Studenten wartet vor der Tür} & \Fa{گروه} \\
+\hline
+510 & \DeEntry{das Gesetz {\small\color{SoftGray}[ɡəˈzɛts]}}{Das Gesetz gilt für alle Menschen} & \Fa{قانون} \\
+\hline
+511 & \DeEntry{weder ... noch (Konjunktion, koordinierend)}{Er hat weder Zeit noch Lust} & \Fa{نه ... و نه} \\
+\hline
+512 & \DeEntry{sauber}{---} & \Fa{تمیز} \\
+\hline
+513 & \DeEntry{der Bescheid (pl. die Bescheide) {\small\color{SoftGray}[bəˈʃaɪ̯t]}}{Ich habe noch keinen Bescheid bekommen} & \Fa{نامه یا تصمیم رسمی اداره} \\
+\hline
+514 & \DeEntry{leer}{Die Seite ist leer} & \Fa{خالی} \\
+\hline
+515 & \DeEntry{kompliziert}{---} & \Fa{پیچیده} \\
+\hline
+516 & \DeEntry{umziehen (intransitiv) {\small\color{SoftGray}[ˈʊmˌt͡siːən]}}{Wir ziehen nächsten Monat um} & \Fa{اسباب‌کشی کردن} \\
+\hline
+517 & \DeEntry{irgendwo (Adverb, Lokaladverb) {\small\color{SoftGray}[ˈɪʁɡn̩tˌvoː]}}{Kann ich mich irgendwo hinsetzen} & \Fa{یک جایی، جایی} \\
+\hline
+518 & \DeEntry{das Kino}{---} & \Fa{سینما} \\
+\hline
+519 & \DeEntry{sobald}{Sag mir Bescheid, so bald wie du ankommst} & \Fa{به محض اینکه} \\
+\hline
+520 & \DeEntry{noch (Adverb) {\small\color{SoftGray}[nɔx]}}{Der Iran ist noch im Krieg} & \Fa{هنوز، باز هم} \\
+\hline
+521 & \DeEntry{nass}{---} & \Fa{خیس} \\
+\hline
+522 & \DeEntry{kalt}{---} & \Fa{سرد} \\
+\hline
+523 & \DeEntry{vorstellen (jdn./etw.Akk \textasciitilde{}, jdn. jdm. \textasciitilde{}, jdm. etw.Akk \textasciitilde{})}{---} & \Fa{معرفی کردن؛ تصور کردن} \\
+\hline
+524 & \DeEntry{teilen}{---} & \Fa{تقسیم کردن، شریک شدن} \\
+\hline
+525 & \DeEntry{schreiben (Akk.) {\small\color{SoftGray}[ˈʃʁaɪ̯bn̩]}}{Ich schreibe jeden Tag auf Deutsch} & \Fa{نوشتن} \\
+\hline
+526 & \DeEntry{bequem (Adjektiv, Komparativ {\small\color{SoftGray}[bəˈkveːm]}}{Der Stuhl ist sehr bequem} & \Fa{راحت} \\
+\hline
+527 & \DeEntry{die Übersetzung}{---} & \Fa{ترجمه} \\
+\hline
+528 & \DeEntry{das Bein}{---} & \Fa{پا} \\
+\hline
+529 & \DeEntry{weniger}{---} & \Fa{کمتر} \\
+\hline
+530 & \DeEntry{das Motorrad}{---} & \Fa{موتورسیکلت} \\
+\hline
+531 & \DeEntry{professionell (Adjektiv, Komparativ {\small\color{SoftGray}[pʁofɛsjoˈnɛl]}}{Er arbeitet sehr professionell} & \Fa{حرفه‌ای} \\
+\hline
+532 & \DeEntry{der Frühling}{---} & \Fa{بهار} \\
+\hline
+533 & \DeEntry{übersetzen}{---} & \Fa{ترجمه کردن} \\
+\hline
+534 & \DeEntry{gerade}{---} & \Fa{صاف، مستقیم} \\
+\hline
+535 & \DeEntry{verantwortlich (Adjektiv, Komparativ {\small\color{SoftGray}[fɛɐ̯ˈʔantvɔʁtlɪç]}}{Er ist für dieses Projekt verantwortlich} & \Fa{مسئول} \\
+\hline
+536 & \DeEntry{spät (Adjektiv, Komparativ {\small\color{SoftGray}[ʃpɛːt]}}{Es ist schon spät} & \Fa{دیر} \\
+\hline
+537 & \DeEntry{hoch}{---} & \Fa{بلند، بالا} \\
+\hline
+538 & \DeEntry{Großbritannien}{---} & \Fa{بریتانیا} \\
+\hline
+539 & \DeEntry{der Spiegel}{---} & \Fa{آینه} \\
+\hline
+540 & \DeEntry{der Teil}{---} & \Fa{بخش، قسمت} \\
+\hline
+541 & \DeEntry{das T-Shirt}{---} & \Fa{تی‌شرت} \\
+\hline
+542 & \DeEntry{bezahlen (jdn./etw.Akk \textasciitilde{})}{---} & \Fa{پرداخت کردن} \\
+\hline
+543 & \DeEntry{mindestens (Adverb) {\small\color{SoftGray}[ˈmɪndəstəns]}}{Ich hoffe, dass es mindestens nicht länger als drei Wochen dauert} & \Fa{حداقل} \\
+\hline
+544 & \DeEntry{kochen (transitiv, intransitiv) {\small\color{SoftGray}[ˈkɔxən]}}{Ich koche das Abendessen} & \Fa{پختن، آشپزی کردن} \\
+\hline
+545 & \DeEntry{das Fragezeichen {\small\color{SoftGray}[ˈfʁaːɡəˌtsaɪ̯çn̩]}}{Am Ende der Frage steht ein Fragezeichen} & \Fa{علامت سؤال} \\
+\hline
+546 & \DeEntry{schaffen (transitiv / intransitiv) {\small\color{SoftGray}[ˈʃafn̩]}}{Ich schaffe die Prüfung} & \Fa{موفق شدن؛ انجام دادن} \\
+\hline
+547 & \DeEntry{reich (Adjektiv, Komparativ {\small\color{SoftGray}[ʁaɪ̯ç]}}{Er ist ein reicher Mann} & \Fa{ثروتمند، غنی} \\
+\hline
+548 & \DeEntry{herstellen (trennbar, transitiv) {\small\color{SoftGray}[ˈheːɐ̯ˌʃtɛlən]}}{Die Firma stellt Autos her} & \Fa{تولید کردن} \\
+\hline
+549 & \DeEntry{höflich}{---} & \Fa{مودبانه} \\
+\hline
+550 & \DeEntry{die Überweisung {\small\color{SoftGray}[ˈyːbɐˌvaɪ̯zʊŋ]}}{Ich habe eine Überweisung zum Hautarzt bekommen} & \Fa{حواله، انتقال پول} \\
+\hline
+551 & \DeEntry{wollen (Modalverb) {\small\color{SoftGray}[ˈvɔlən]}}{Ich will Deutsch lernen} & \Fa{خواستن} \\
+\hline
+552 & \DeEntry{der Bahnhof}{---} & \Fa{ایستگاه قطار} \\
+\hline
+553 & \DeEntry{fürchten (jdn./etw.Akk \textasciitilde{})}{---} & \Fa{ترسیدن از} \\
+\hline
+554 & \DeEntry{schüchtern (Adjektiv, Komparativ {\small\color{SoftGray}[ˈʃʏçtɐn]}}{Er ist sehr schüchtern} & \Fa{خجالتی} \\
+\hline
+555 & \DeEntry{zu (Partikel/Infinitivmarker) {\small\color{SoftGray}[tsuː]}}{Ich versuche, das zu verstehen} & \Fa{به سویِ، نزدِ} \\
+\hline
+556 & \DeEntry{anmachen (jdn./etw.Akk \textasciitilde{})}{---} & \Fa{روشن کردن؛ وصل کردن} \\
+\hline
+557 & \DeEntry{der Respekt}{---} & \Fa{احترام} \\
+\hline
+558 & \DeEntry{ausfüllen (etw.Akk \textasciitilde{})}{Ich fülle das Formular aus} & \Fa{پر کردن فرم} \\
+\hline
+559 & \DeEntry{lokal}{---} & \Fa{محلی} \\
+\hline
+560 & \DeEntry{das fitnessstudio}{---} & \Fa{باشگاه ورزشی} \\
+\hline
+561 & \DeEntry{der Schlüssel (pl. die Schlüssel)}{Ich habe meinen Schlüssel verloren} & \Fa{کلید} \\
+\hline
+562 & \DeEntry{die Regierung (pl. die Regierungen) {\small\color{SoftGray}[ʁeˈɡiːʁʊŋ]}}{The government announced new laws} & \Fa{دولت، حکومت} \\
+\hline
+563 & \DeEntry{leise (Adjektiv, Komparativ {\small\color{SoftGray}[ˈlaɪ̯zə]}}{Bitte sprich leise} & \Fa{آرام، کم‌صدا} \\
+\hline
+564 & \DeEntry{zufrieden}{---} & \Fa{راضی} \\
+\hline
+565 & \DeEntry{die Ursache {\small\color{SoftGray}[ˈuːɐ̯ˌzaxə]}}{Die Ursache des Problems ist noch unklar} & \Fa{علت} \\
+\hline
+566 & \DeEntry{die Welt}{---} & \Fa{جهان} \\
+\hline
+567 & \DeEntry{lernen}{---} & \Fa{یاد گرفتن} \\
+\hline
+568 & \DeEntry{ängstlich {\small\color{SoftGray}[ˈɛŋstlɪç]}}{Das Kind ist ängstlich} & \Fa{ترسو، مضطرب} \\
+\hline
+569 & \DeEntry{aufwachen (intr. \textasciitilde{})}{Ich wache um sechs Uhr auf} & \Fa{بیدار شدن} \\
+\hline
+570 & \DeEntry{setzen}{---} & \Fa{نشاندن؛ نشستن} \\
+\hline
+571 & \DeEntry{erinnern (an + Akk., reflexiv möglich) {\small\color{SoftGray}[ɛɐ̯ˈʔɪnɐn]}}{Ich erinnere dich an den Termin} & \Fa{به یاد آوردن} \\
+\hline
+572 & \DeEntry{sammeln}{---} & \Fa{جمع کردن، کلکسیون کردن} \\
+\hline
+573 & \DeEntry{umziehen (trennbar, intransitiv; auch reflexiv {\small\color{SoftGray}[ˈʊmˌtsiːən]}}{Ich ziehe nächste Woche nach Wien um} & \Fa{اسباب‌کشی کردن} \\
+\hline
+574 & \DeEntry{funktionieren}{---} & \Fa{کار کردن، عمل کردن} \\
+\hline
+575 & \DeEntry{meinen}{---} & \Fa{منظور داشتن، نظر داشتن} \\
+\hline
+576 & \DeEntry{nun (Adverb) {\small\color{SoftGray}[nuːn]}}{Nun gehe ich nach Hause} & \Fa{اکنون، حالا} \\
+\hline
+577 & \DeEntry{die Universität {\small\color{SoftGray}[univɛʁziˈtɛːt]}}{Ich studiere an der Universität Graz} & \Fa{دانشگاه} \\
+\hline
+578 & \DeEntry{schauen (Verb, intransitiv/transitiv) {\small\color{SoftGray}[ˈʃaʊ̯ən]}}{Ich schaue aus dem Fenster} & \Fa{نگاه کردن} \\
+\hline
+579 & \DeEntry{ungültig}{---} & \Fa{نامعتبر} \\
+\hline
+580 & \DeEntry{die Fähigkeit (pl. die Fähigkeiten)}{Er hat die Fähigkeit, schnell zu lernen} & \Fa{توانایی} \\
+\hline
+581 & \DeEntry{nirgendwo (Adverb, Lokaladverb) {\small\color{SoftGray}[ˈnɪʁɡn̩tˌvoː]}}{Ich finde meinen Schlüssel nirgendwo} & \Fa{هیچ جا} \\
+\hline
+582 & \DeEntry{das Ergebnis (pl. die Ergebnisse)}{---} & \Fa{نتیجه} \\
+\hline
+583 & \DeEntry{arm}{Er ist sehr arm} & \Fa{فقیر} \\
+\hline
+584 & \DeEntry{die Stimme (-, -n) {\small\color{SoftGray}[ˈʃtɪmə]}}{Sie hat eine schöne Stimme} & \Fa{صدا} \\
+\hline
+585 & \DeEntry{getrennt}{---} & \Fa{جدا} \\
+\hline
+586 & \DeEntry{der Zugang (-s, ¨-e) {\small\color{SoftGray}[ˈtsuːɡaŋ]}}{Viele Menschen haben keinen Zugang zu guter medizinischer Versorgung} & \Fa{دسترسی، ورودی} \\
+\hline
+587 & \DeEntry{die Hälfte {\small\color{SoftGray}[ˈhɛlftə]}}{Ich esse nur die Hälfte des Kuchens} & \Fa{نصف} \\
+\hline
+588 & \DeEntry{ruhig}{---} & \Fa{آرام} \\
+\hline
+589 & \DeEntry{erkennen (jdn./etw.Akk \textasciitilde{})}{---} & \Fa{تشخیص دادن، شناختن} \\
+\hline
+590 & \DeEntry{nennen (transitiv) {\small\color{SoftGray}[ˈnɛnən]}}{Wie nennt man das auf Deutsch?} & \Fa{نامیدن} \\
+\hline
+591 & \DeEntry{draußen}{---} & \Fa{بیرون} \\
+\hline
+592 & \DeEntry{tatsächlich (Adverb) {\small\color{SoftGray}[ˈtaːt͡sɛxlɪç]}}{Tatsächlich war das Problem kleiner als ich dachte} & \Fa{واقعاً، در واقع} \\
+\hline
+593 & \DeEntry{der Vorschlag}{---} & \Fa{پیشنهاد} \\
+\hline
+594 & \DeEntry{unehrlich}{---} & \Fa{ناصادق} \\
+\hline
+595 & \DeEntry{die Krippe {\small\color{SoftGray}[ˈkʁɪpə]}}{Das Baby liegt in der Krippe} & \Fa{گهواره؛ آخور؛ مهدکودک کودک خیلی کوچک} \\
+\hline
+596 & \DeEntry{glücklich}{---} & \Fa{خوشحال؛ خوشبخت} \\
+\hline
+597 & \DeEntry{der Staubsauger {\small\color{SoftGray}[ˈʃtaʊ̯pˌzaʊ̯ɡɐ]}}{Ich benutze den Staubsauger jeden Tag} & \Fa{جاروبرقی} \\
+\hline
+598 & \DeEntry{verlassen (etw.Akk \textasciitilde{})}{Ich verlasse das Haus früh am Morgen} & \Fa{ترک کردن، رها کردن} \\
+\hline
+599 & \DeEntry{der Balkon}{---} & \Fa{بالکن} \\
+\hline
+600 & \DeEntry{indirekt (Adjektiv, Adverb) {\small\color{SoftGray}[ˌɪndiˈʁɛkt]}}{Das hat einen indirekten Effekt auf die Wirtschaft} & \Fa{غیرمستقیم} \\
+\hline
+601 & \DeEntry{die Temperatur {\small\color{SoftGray}[tɛmpəʁaˈtuːɐ̯]}}{Die Temperatur beträgt heute 25 Grad Celsius} & \Fa{دما} \\
+\hline
+602 & \DeEntry{wenn (Konjunktion, subordinierend + Verb am Ende) {\small\color{SoftGray}[vɛn]}}{Wenn die Sonne aufgeht, lobe ich Gott} & \Fa{اگر؛ وقتی} \\
+\hline
+603 & \DeEntry{hässlich}{---} & \Fa{زشت} \\
+\hline
+604 & \DeEntry{leicht (Adjektiv, Komparativ {\small\color{SoftGray}[laɪ̯çt]}}{Diese Aufgabe ist leicht} & \Fa{آسان؛ سبک} \\
+\hline
+605 & \DeEntry{nett}{---} & \Fa{خوب، مهربان} \\
+\hline
+606 & \DeEntry{vielleicht}{---} & \Fa{شاید} \\
+\hline
+607 & \DeEntry{sprechen (mit + Dat., über + Akk.) {\small\color{SoftGray}[ˈʃprɛçn]}}{Ich spreche mit meinem Freund} & \Fa{صحبت کردن} \\
+\hline
+608 & \DeEntry{vermeiden (transitiv) {\small\color{SoftGray}[fɛɐ̯ˈmaɪ̯dən]}}{Ich möchte einen Fehler vermeiden} & \Fa{اجتناب کردن} \\
+\hline
+609 & \DeEntry{die Decke}{---} & \Fa{سقف؛ پتو} \\
+\hline
+610 & \DeEntry{einschlafen (intransitiv) {\small\color{SoftGray}[ˈaɪ̯nˌʃlaːfn̩]}}{Ich schlafe schnell ein} & \Fa{به خواب رفتن} \\
+\hline
+611 & \DeEntry{weit}{---} & \Fa{دور} \\
+\hline
+612 & \DeEntry{genehmigen (Verb, trennbar, transitiv) {\small\color{SoftGray}[ɡəˈneːmɪɡn̩]}}{Die Firma genehmigt den Antrag} & \Fa{اجازه دادن، تصویب کردن} \\
+\hline
+613 & \DeEntry{ziemlich (Adverb, nicht steigerbar) {\small\color{SoftGray}[ˈtsiːmlɪç]}}{Ich bin ziemlich müde} & \Fa{نسبتاً، خیلی} \\
+\hline
+614 & \DeEntry{wach}{---} & \Fa{بیدار} \\
+\hline
+615 & \DeEntry{der Saft (-es, Säfte) {\small\color{SoftGray}[zaft]}}{Ich trinke jeden Morgen Orangensaft} & \Fa{آب‌میوه} \\
+\hline
+616 & \DeEntry{bevorzugen (trennbar, transitiv) {\small\color{SoftGray}[bəˈfoːɐ̯ˌtsuːɡən]}}{Ich bevorzuge Kaffee statt Tee} & \Fa{ترجیح دادن} \\
+\hline
+617 & \DeEntry{die Behörde (-, -n) {\small\color{SoftGray}[bəˈhøːɐ̯də]}}{Ich muss morgen zur Behörde gehen} & \Fa{اداره دولتی} \\
+\hline
+618 & \DeEntry{die Gesundheit}{---} & \Fa{سلامتی} \\
+\hline
+619 & \DeEntry{die Frist (-, -en) {\small\color{SoftGray}[fʁɪst]}}{Die Frist endet morgen} & \Fa{مهلت} \\
+\hline
+620 & \DeEntry{speichern}{Ich speichere die Datei} & \Fa{ذخیره کردن} \\
+\hline
+621 & \DeEntry{finden}{---} & \Fa{یافتن؛ نظر داشتن} \\
+\hline
+622 & \DeEntry{brauchen (transitiv + Akk.) {\small\color{SoftGray}[ˈbʁaʊ̯xən]}}{Ich brauche Hilfe} & \Fa{نیاز داشتن} \\
+\hline
+623 & \DeEntry{zuletzt (Adverb) {\small\color{SoftGray}[tsuˈlɛtst]}}{Zuletzt habe ich in Graz gewohnt} & \Fa{در آخر} \\
+\hline
+624 & \DeEntry{der erste}{---} & \Fa{اولین} \\
+\hline
+625 & \DeEntry{sicher}{---} & \Fa{حتماً؛ امن} \\
+\hline
+626 & \DeEntry{schwach (Adjektiv, Komparativ {\small\color{SoftGray}[ʃvax]}}{Ich fühle mich schwach} & \Fa{ضعیف} \\
+\hline
+627 & \DeEntry{berichten}{---} & \Fa{گزارش دادن} \\
+\hline
+628 & \DeEntry{der Schichtplan {\small\color{SoftGray}[ˈʃɪçtˌplaːn]}}{Der Schichtplan hängt im Pausenraum} & \Fa{برنامه شیفت} \\
+\hline
+629 & \DeEntry{sorgfältig (Adjektiv, Komparativ {\small\color{SoftGray}[ˈzɔʁkˌfɛltɪç]}}{Sie macht eine sorgfältige Arbeit} & \Fa{با دقت، دقیق} \\
+\hline
+630 & \DeEntry{trotzdem (Adverb) {\small\color{SoftGray}[ˈtʁɔtsdeːm]}}{Es regnet, trotzdem gehe ich spazieren} & \Fa{با وجود این، با این حال} \\
+\hline
+631 & \DeEntry{das Wissen}{---} & \Fa{دانستن} \\
+\hline
+632 & \DeEntry{der Spaß (pl. die Späße)}{Das macht mir viel Spaß} & \Fa{تفریح، خوشی} \\
+\hline
+633 & \DeEntry{der Kopf (¨-e) {\small\color{SoftGray}[kɔpf]}}{Mein Kopf tut weh} & \Fa{سر} \\
+\hline
+634 & \DeEntry{mündlich}{---} & \Fa{شفاهی} \\
+\hline
+635 & \DeEntry{gehen (intransitiv) {\small\color{SoftGray}[ˈɡeːən]}}{Ich gehe von zu Hause zur Universität} & \Fa{رفتن} \\
+\hline
+636 & \DeEntry{meiner Meinung nach}{Meiner Meinung nach ist das richtig} & \Fa{به نظر من} \\
+\hline
+637 & \DeEntry{gefallen (jdm. Dat)}{Das Buch gefällt mir} & \Fa{خوش آمدن} \\
+\hline
+638 & \DeEntry{der Kuchen {\small\color{SoftGray}[ˈkuːxn̩]}}{Ich esse ein Stück Kuchen} & \Fa{کیک} \\
+\hline
+639 & \DeEntry{die Spalte {\small\color{SoftGray}[ˈʃpaltə]}}{Die Tabelle hat fünf Spalten} & \Fa{ستون} \\
+\hline
+640 & \DeEntry{besonders (Adjektiv, Komparativ {\small\color{SoftGray}[bəˈzɔndɐs]}}{Das ist ein besonderer Tag} & \Fa{خاص؛ به‌خصوص} \\
+\hline
+641 & \DeEntry{die Aufgabe}{---} & \Fa{وظیفه، تمرین} \\
+\hline
+642 & \DeEntry{danach (Adverb, nicht steigerbar) {\small\color{SoftGray}[daˈnaːx]}}{Zuerst esse ich Frühstück, danach gehe ich zur Arbeit} & \Fa{بعد از آن} \\
+\hline
+643 & \DeEntry{das Geschäft (pl. die Geschäfte) {\small\color{SoftGray}[ɡəˈʃɛft]}}{Besuchen Sie unser Geschäft} & \Fa{مغازه؛ کسب‌وکار} \\
+\hline
+644 & \DeEntry{außerdem}{Außerdem möchte ich noch etwas sagen} & \Fa{علاوه بر این} \\
+\hline
+645 & \DeEntry{sich (Akk) anmelden}{---} & \Fa{ثبت‌نام کردن} \\
+\hline
+646 & \DeEntry{insgesamt (Adverb) {\small\color{SoftGray}[ɪnsɡəˈzamt]}}{Insgesamt habe ich 20 Euro bezahlt} & \Fa{در مجموع} \\
+\hline
+647 & \DeEntry{seltsam (Adjektiv, Komparativ {\small\color{SoftGray}[ˈzɛlt͡saːm]}}{Das ist eine seltsame Geschichte} & \Fa{عجیب} \\
+\hline
+648 & \DeEntry{übrigens (Adverb, nicht steigerbar) {\small\color{SoftGray}[ˈyːbʁɪɡn̩s]}}{Übrigens, ich habe morgen frei} & \Fa{راستی، ضمناً} \\
+\hline
+649 & \DeEntry{erhalten (etw.Akk \textasciitilde{})}{---} & \Fa{دریافت کردن} \\
+\hline
+650 & \DeEntry{stehen}{---} & \Fa{ایستادن؛ قرار داشتن} \\
+\hline
+651 & \DeEntry{die Möglichkeit {\small\color{SoftGray}[ˈmøːklɪçkaɪ̯t]}}{Es gibt viele Möglichkeiten, Deutsch zu lernen} & \Fa{امکان} \\
+\hline
+652 & \DeEntry{die Adresse {\small\color{SoftGray}[aˈdʁɛsə]}}{Kannst du mir deine Adresse geben} & \Fa{آدرس} \\
+\hline
+653 & \DeEntry{praktisch}{---} & \Fa{عملی، کاربردی} \\
+\hline
+654 & \DeEntry{die Wut {\small\color{SoftGray}[vuːt]}}{Ich spüre große Wut} & \Fa{خشم} \\
+\hline
+655 & \DeEntry{häufig}{---} & \Fa{مکرر؛ اغلب} \\
+\hline
+656 & \DeEntry{folglich}{---} & \Fa{در نتیجه} \\
+\hline
+657 & \DeEntry{verbessern (Akk.) {\small\color{SoftGray}[fɛɐ̯ˈbɛsɐn]}}{Ich versuche jeden Tag, mein Deutsch auf das Niveau B2 zu verbessern} & \Fa{بهبود دادن؛ اصلاح کردن} \\
+\hline
+658 & \DeEntry{weise}{---} & \Fa{روش، شیوه} \\
+\hline
+659 & \DeEntry{der Ärger {\small\color{SoftGray}[ˈɛʁɡɐ]}}{Ich habe Ärger wegen dieser Situation} & \Fa{ناراحتی، عصبانیت} \\
+\hline
+660 & \DeEntry{nächste}{---} & \Fa{بعدی، آینده} \\
+\hline
+661 & \DeEntry{auf jeden Fall}{---} & \Fa{حتماً، در هر صورت} \\
+\hline
+662 & \DeEntry{der See (-s, -n) {\small\color{SoftGray}[zeː]}}{Am Wochenende fahre ich an den See} & \Fa{دریاچه} \\
+\hline
+663 & \DeEntry{das Ding {\small\color{SoftGray}[dɪŋ]}}{Gib mir bitte das Ding} & \Fa{چیز} \\
+\hline
+664 & \DeEntry{täglich}{---} & \Fa{روزانه} \\
+\hline
+665 & \DeEntry{die Gabel}{---} & \Fa{چنگال} \\
+\hline
+666 & \DeEntry{einsteigen (in + Akk., trennbar, intransitiv) {\small\color{SoftGray}[ˈaɪ̯nˌʃtaɪ̯ɡn̩]}}{Ich steige in den Bus ein} & \Fa{سوار شدن} \\
+\hline
+667 & \DeEntry{fleißig (Adjektiv, Komparativ {\small\color{SoftGray}[ˈflaɪ̯sɪç]}}{Er ist ein fleißiger Arbeiter} & \Fa{کوشا} \\
+\hline
+668 & \DeEntry{das Regal (pl. die Regale)}{Ich stelle das Buch ins Regal} & \Fa{قفسه} \\
+\hline
+669 & \DeEntry{entspannt (Adjektiv, Komparativ {\small\color{SoftGray}[ɛntˈʃpant]}}{Ich bin heute sehr entspannt} & \Fa{آرام، ریلکس} \\
+\hline
+670 & \DeEntry{weit (Adjektiv, Komparativ {\small\color{SoftGray}[vaɪ̯t]}}{Der Weg ist weit} & \Fa{دور} \\
+\hline
+671 & \DeEntry{sodass}{Er spricht laut, sodass alle ihn hören können} & \Fa{طوری که، به‌طوری که} \\
+\hline
+672 & \DeEntry{das Wind}{---} & \Fa{باد} \\
+\hline
+673 & \DeEntry{kreativ}{---} & \Fa{خلاق} \\
+\hline
+674 & \DeEntry{geben (Dat. + Akk., unregelmäßig) {\small\color{SoftGray}[ˈɡeːbn̩]}}{Ich gebe dem Mann das Buch} & \Fa{دادن} \\
+\hline
+675 & \DeEntry{eher}{---} & \Fa{بیشتر، ترجیحاً، نسبتاً} \\
+\hline
+676 & \DeEntry{vertrauen (jdm./etw.Dat \textasciitilde{})}{---} & \Fa{اعتماد} \\
+\hline
+677 & \DeEntry{der Vogel}{---} & \Fa{پرنده} \\
+\hline
+678 & \DeEntry{passen}{---} & \Fa{اندازه بودن؛ مناسب بودن} \\
+\hline
+679 & \DeEntry{leider}{---} & \Fa{متأسفانه} \\
+\hline
+680 & \DeEntry{das Gespräch {\small\color{SoftGray}[ɡəˈʃpʁɛːç]}}{Wir hatten gestern ein interessantes Gespräch} & \Fa{گفت‌وگو} \\
+\hline
+681 & \DeEntry{die Hilfe {\small\color{SoftGray}[ˈhɪlfə]}}{Ich brauche deine Hilfe} & \Fa{کمک} \\
+\hline
+682 & \DeEntry{gelb}{---} & \Fa{زرد} \\
+\hline
+683 & \DeEntry{wiegen (transitiv/intransitiv) {\small\color{SoftGray}[ˈviːɡn̩]}}{Ich wiege 74,6 Kilo} & \Fa{وزن کردن؛ وزن داشتن} \\
+\hline
+684 & \DeEntry{sozial (Adjektiv, Komparativ {\small\color{SoftGray}[zoˈtsi̯aːl]}}{Sie ist sehr sozial und hilft anderen gern} & \Fa{اجتماعی} \\
+\hline
+685 & \DeEntry{transparent (Adjektiv, Komparativ {\small\color{SoftGray}[tʁanspaˈʁɛnt]}}{Die Bank braucht transparente finanzielle Aktivitäten} & \Fa{شفاف} \\
+\hline
+686 & \DeEntry{teilweise (Adverb) {\small\color{SoftGray}[ˈtaɪ̯lˌvaɪ̯zə]}}{Das ist teilweise richtig} & \Fa{تا حدی، بخشی} \\
+\hline
+687 & \DeEntry{der Vorhang}{---} & \Fa{پرده} \\
+\hline
+688 & \DeEntry{küssen (Akk.) {\small\color{SoftGray}[ˈkʏsn̩]}}{Er küsst seine Frau vor der Arbeit} & \Fa{بوسیدن} \\
+\hline
+689 & \DeEntry{der Ausweis}{---} & \Fa{کارت شناسایی} \\
+\hline
+690 & \DeEntry{der Hinweis (pl. die Hinweise)}{Der Lehrer gibt einen wichtigen Hinweis} & \Fa{نکته، اشاره} \\
+\hline
+691 & \DeEntry{während (Konjunktion, subordinierend + Verb am Ende) {\small\color{SoftGray}[ˈvɛːʁənt]}}{Ich arbeite viel, während er den ganzen Tag schläft} & \Fa{در حالی که؛ هنگامِ} \\
+\hline
+692 & \DeEntry{die Waschmaschine}{---} & \Fa{ماشین لباس‌شویی} \\
+\hline
+693 & \DeEntry{bereits}{---} & \Fa{قبلاً، همین حالا} \\
+\hline
+694 & \DeEntry{die Schuld {\small\color{SoftGray}[ʃʊlt]}}{Ich fühle Schuld nach dem Streit} & \Fa{تقصیر؛ بدهی} \\
+\hline
+695 & \DeEntry{gebraucht (Adjektiv, Komparativ {\small\color{SoftGray}[ɡəˈbʁaʊ̯xt]}}{Ich habe ein gebrauchtes Auto gekauft} & \Fa{دست‌دوم، استفاده‌شده} \\
+\hline
+696 & \DeEntry{schwanger (Adjektiv, nicht steigerbar) {\small\color{SoftGray}[ˈʃvaŋɐ]}}{Sie ist schwanger} & \Fa{باردار} \\
+\hline
+697 & \DeEntry{hassen}{---} & \Fa{متنفر بودن} \\
+\hline
+698 & \DeEntry{zusammen (Adverb, nicht steigerbar) {\small\color{SoftGray}[t͡suˈzamən]}}{Wir gehen zusammen ins Kino} & \Fa{با هم} \\
+\hline
+699 & \DeEntry{anfassen (transitiv, trennbar) {\small\color{SoftGray}[ˈanˌfasən]}}{Fass das Messer nicht an} & \Fa{دست زدن به} \\
+\hline
+700 & \DeEntry{das Geschehen {\small\color{SoftGray}[ɡəˈʃeːən]}}{Niemand verstand das ganze Geschehen} & \Fa{رخ دادن} \\
+\hline
+701 & \DeEntry{das Meer (-e) {\small\color{SoftGray}[meːɐ̯]}}{Ich möchte im Sommer ans Meer fahren} & \Fa{دریا} \\
+\hline
+702 & \DeEntry{der Hintergrund {\small\color{SoftGray}[ˈhɪntɐˌɡʁʊnt]}}{Im Hintergrund sieht man Berge} & \Fa{پس‌زمینه؛ زمینه} \\
+\hline
+703 & \DeEntry{die Liebe}{---} & \Fa{عشق} \\
+\hline
+704 & \DeEntry{der Durst {\small\color{SoftGray}[dʊʁst]}}{Ich habe Durst} & \Fa{تشنگی} \\
+\hline
+705 & \DeEntry{erstaunlich}{---} & \Fa{شگفت‌انگیز} \\
+\hline
+706 & \DeEntry{der abschnitt}{---} & \Fa{بخش} \\
+\hline
+707 & \DeEntry{die Mannschaft {\small\color{SoftGray}[ˈmanʃaft]}}{Die Mannschaft hat das Spiel gewonnen} & \Fa{تیم} \\
+\hline
+708 & \DeEntry{die Einstellung {\small\color{SoftGray}[ˈaɪ̯nʃtɛlʊŋ]}}{Ich muss die Einstellungen meines Handys ändern} & \Fa{تنظیم؛ نگرش} \\
+\hline
+709 & \DeEntry{kaum (Adverb/Partikel) {\small\color{SoftGray}[kaʊ̯m]}}{Ich habe kaum Zeit} & \Fa{به سختی، تقریباً نه} \\
+\hline
+710 & \DeEntry{direkt (Adjektiv, Adverb) {\small\color{SoftGray}[diˈʁɛkt]}}{Das hat einen direkten Effekt auf den Preis} & \Fa{مستقیم} \\
+\hline
+711 & \DeEntry{der Fluss}{---} & \Fa{رودخانه} \\
+\hline
+712 & \DeEntry{der arbeitsvertrag}{---} & \Fa{قرارداد کار} \\
+\hline
+713 & \DeEntry{die Pfanne}{---} & \Fa{ماهی‌تابه} \\
+\hline
+714 & \DeEntry{das Lesen {\small\color{SoftGray}[ˈleːzn̩]}}{Das Lesen hilft mir beim Deutschlernen} & \Fa{خواندن} \\
+\hline
+715 & \DeEntry{verpassen (trennbar? nein, transitiv) {\small\color{SoftGray}[fɛɐ̯ˈpasn̩]}}{Ich habe den Bus verpasst} & \Fa{از دست دادن، جا ماندن از} \\
+\hline
+716 & \DeEntry{die Erlaubnis {\small\color{SoftGray}[ɛɐ̯ˈlaʊ̯bnɪs]}}{Ohne Erlaubnis darfst du hier nicht fotografieren} & \Fa{اجازه} \\
+\hline
+717 & \DeEntry{das Gefühl (-s, -e) {\small\color{SoftGray}[ɡəˈfyːl]}}{Ich habe ein gutes Gefühl dabei} & \Fa{احساس} \\
+\hline
+718 & \DeEntry{da (Konjunktion, subordinierend + Verb am Ende) {\small\color{SoftGray}[daː]}}{Ich bleibe zu Hause, da ich krank bin} & \Fa{آنجا؛ چون در کاربرد رسمی} \\
+\hline
+719 & \DeEntry{endgültig (Adjektiv, nicht oder kaum steigerbar) {\small\color{SoftGray}[ˈɛntˌɡʏltɪç]}}{Das ist meine endgültige Entscheidung} & \Fa{نهایی، قطعی} \\
+\hline
+720 & \DeEntry{das Bild}{---} & \Fa{تصویر، عکس} \\
+\hline
+721 & \DeEntry{früher}{---} & \Fa{قبلاً، در گذشته} \\
+\hline
+722 & \DeEntry{komplett}{---} & \Fa{کامل، کاملاً} \\
+\hline
+723 & \DeEntry{versuchen (etw.Akk \textasciitilde{})}{Ich versuche mein Bestes} & \Fa{تلاش کردن} \\
+\hline
+724 & \DeEntry{Zuerst}{---} & \Fa{اول} \\
+\hline
+725 & \DeEntry{das Datum (-s, Daten) {\small\color{SoftGray}[ˈdaːtʊm]}}{Welches Datum haben wir heute} & \Fa{تاریخ} \\
+\hline
+726 & \DeEntry{der Schnee (pl. —)}{Heute liegt viel Schnee} & \Fa{برف} \\
+\hline
+727 & \DeEntry{anziehen (Verb, trennbar, transitiv/reflexiv) {\small\color{SoftGray}[ˈanˌtsiːən]}}{Ich ziehe eine Jacke an} & \Fa{پوشیدن لباس؛ لباس پوشاندن} \\
+\hline
+728 & \DeEntry{wahrscheinlich (Adverb) {\small\color{SoftGray}[vaːɐ̯ˈʃaɪ̯nlɪç]}}{Ich komme wahrscheinlich morgen} & \Fa{احتمالاً} \\
+\hline
+729 & \DeEntry{langsam (Adverb) {\small\color{SoftGray}[ˈlaŋzaːm]}}{Er geht langsam nach Hause} & \Fa{آهسته} \\
+\hline
+730 & \DeEntry{fröhlich}{---} & \Fa{شاد} \\
+\hline
+731 & \DeEntry{die Seife}{---} & \Fa{صابون} \\
+\hline
+732 & \DeEntry{die Forschung}{---} & \Fa{پژوهش} \\
+\hline
+733 & \DeEntry{die Sache {\small\color{SoftGray}[ˈzaxə]}}{Das ist eine wichtige Sache} & \Fa{چیز، موضوع} \\
+\hline
+734 & \DeEntry{vorher (Adverb, nicht steigerbar) {\small\color{SoftGray}[ˈfoːɐ̯heːɐ̯]}}{Ich habe vorher gegessen} & \Fa{قبل از آن} \\
+\hline
+735 & \DeEntry{das Flugzeug}{---} & \Fa{هواپیما} \\
+\hline
+736 & \DeEntry{entwickeln (etw.Akk \textasciitilde{})}{---} & \Fa{توسعه دادن؛ توسعه یافتن} \\
+\hline
+737 & \DeEntry{persönlich}{---} & \Fa{شخصی؛ شخصاً} \\
+\hline
+738 & \DeEntry{das Gehalt (pl. die Gehälter)}{Sie bekommt ein gutes Gehalt} & \Fa{حقوق ماهانه} \\
+\hline
+739 & \DeEntry{wütend}{---} & \Fa{خشمگین} \\
+\hline
+740 & \DeEntry{das Heft}{---} & \Fa{دفترچه} \\
+\hline
+741 & \DeEntry{die Natur {\small\color{SoftGray}[naˈtuːɐ̯]}}{Der Mensch ist von Natur aus neugierig} & \Fa{طبیعت} \\
+\hline
+742 & \DeEntry{die Weise (pl. die Weisen)}{Er hat es auf diese Weise erklärt} & \Fa{روش، شیوه} \\
+\hline
+743 & \DeEntry{abholen}{---} & \Fa{دنبال کسی یا چیزی رفتن} \\
+\hline
+744 & \DeEntry{der Kurs (pl. die Kurse)}{Ich mache einen Deutschkurs} & \Fa{دوره آموزشی} \\
+\hline
+745 & \DeEntry{probieren}{Ich probiere das neue Essen} & \Fa{امتحان کردن، چشیدن} \\
+\hline
+746 & \DeEntry{der Streit {\small\color{SoftGray}[ʃtʁaɪ̯t]}}{Wir hatten gestern einen Streit} & \Fa{دعوا، بحث} \\
+\hline
+747 & \DeEntry{sogar (Adverb) {\small\color{SoftGray}[zoˈɡaːɐ̯]}}{Er kam sogar am Sonntag zur Arbeit} & \Fa{حتی} \\
+\hline
+748 & \DeEntry{die Form (-, -en) {\small\color{SoftGray}[fɔʁm]}}{Der Tisch hat eine runde Form} & \Fa{شکل، فرم} \\
+\hline
+749 & \DeEntry{damit}{---} & \Fa{تا اینکه، برای اینکه} \\
+\hline
+750 & \DeEntry{Hinter}{---} & \Fa{پشت} \\
+\hline
+751 & \DeEntry{das Einkaufszentrum (-s, -zentren) {\small\color{SoftGray}[ˈaɪ̯nkaʊ̯fsˌtsɛntrʊm]}}{Ich gehe heute ins Einkaufszentrum} & \Fa{مرکز خرید} \\
+\hline
+752 & \DeEntry{das Schweigen}{---} & \Fa{سکوت کردن} \\
+\hline
+753 & \DeEntry{die Geschichte}{---} & \Fa{تاریخ؛ داستان} \\
+\hline
+754 & \DeEntry{vergleichen}{---} & \Fa{مقایسه کردن} \\
+\hline
+755 & \DeEntry{ändern (transitiv) {\small\color{SoftGray}[ˈɛndɐn]}}{Ich möchte meine Adresse ändern} & \Fa{تغییر دادن} \\
+\hline
+756 & \DeEntry{die Tastatur {\small\color{SoftGray}[ˈtastaˌtuːɐ̯]}}{Ich schreibe auf der Tastatur} & \Fa{کیبورد} \\
+\hline
+757 & \DeEntry{fast (Adverb, nicht steigerbar) {\small\color{SoftGray}[fast]}}{Ich bin fast fertig} & \Fa{تقریباً} \\
+\hline
+758 & \DeEntry{zusätzlich (Adverb) {\small\color{SoftGray}[ˈtsuːzɛtslɪç]}}{Zusätzlich musst du warme Kleidung mitbringen} & \Fa{اضافه بر آن} \\
+\hline
+759 & \DeEntry{die Messe {\small\color{SoftGray}[ˈmɛsə]}}{Nächste Woche besuche ich eine Messe in Wien} & \Fa{نمایشگاه تجاری؛ مراسم عشای ربانی} \\
+\hline
+760 & \DeEntry{mögen (etw./jdn.Akk \textasciitilde{})}{Ich mag Kaffee} & \Fa{دوست داشتن} \\
+\hline
+761 & \DeEntry{original (Adjektiv, Komparativ {\small\color{SoftGray}[oʁiɡiˈnaːl]}}{Das ist das originale Dokument} & \Fa{اصلی} \\
+\hline
+762 & \DeEntry{die Lösung {\small\color{SoftGray}[ˈløːzʊŋ]}}{Ich finde die Lösung der Aufgabe} & \Fa{راه‌حل} \\
+\hline
+763 & \DeEntry{das Land}{---} & \Fa{کشور؛ روستا یا زمین} \\
+\hline
+764 & \DeEntry{flexibel (Adjektiv, Komparativ {\small\color{SoftGray}[flɛkˈziːbl̩]}}{Er ist sehr flexibel bei der Arbeit} & \Fa{منعطف} \\
+\hline
+765 & \DeEntry{mutig (Adjektiv, Komparativ {\small\color{SoftGray}[ˈmuːtɪç]}}{Er ist ein mutiger Soldat} & \Fa{شجاع} \\
+\hline
+766 & \DeEntry{der Husten}{---} & \Fa{سرفه} \\
+\hline
+767 & \DeEntry{stark (Adjektiv, Komparativ {\small\color{SoftGray}[ʃtaʁk]}}{Der Wind ist stark} & \Fa{قوی} \\
+\hline
+768 & \DeEntry{dringend}{---} & \Fa{فوری، اضطراری} \\
+\hline
+769 & \DeEntry{gegenüber (Präposition mit Dativ / Adverb) {\small\color{SoftGray}[ˈɡeːɡn̩ˌʔyːbɐ]}}{Die Tankstelle liegt dem Bahnhof gegenüber} & \Fa{روبرویِ} \\
+\hline
+770 & \DeEntry{nachdem}{---} & \Fa{بعد از اینکه} \\
+\hline
+771 & \DeEntry{trennen (transitiv) {\small\color{SoftGray}[ˈtʁɛnən]}}{Ich trenne das Kabel vom Computer} & \Fa{جدا کردن} \\
+\hline
+772 & \DeEntry{der Kontext {\small\color{SoftGray}[ˈkɔntɛkst]}}{Man muss das Wort im Kontext verstehen} & \Fa{بافت، زمینه} \\
+\hline
+773 & \DeEntry{das Kind {\small\color{SoftGray}[kɪnt]}}{Das Kind spielt im Garten} & \Fa{بچه} \\
+\hline
+774 & \DeEntry{pessimistisch}{Er hat eine pessimistische Einstellung} & \Fa{بدبین} \\
+\hline
+775 & \DeEntry{die Erinnerung {\small\color{SoftGray}[ɛɐ̯ˈʔɪnəʁʊŋ]}}{Meine Erinnerung ist nicht gut} & \Fa{خاطره؛ یادآوری} \\
+\hline
+776 & \DeEntry{das Treffen}{---} & \Fa{ملاقات کردن؛ برخورد کردن} \\
+\hline
+777 & \DeEntry{hoch (Adjektiv, Komparativ {\small\color{SoftGray}[hoːx]}}{Der Turm ist sehr hoch} & \Fa{بلند، بالا} \\
+\hline
+778 & \DeEntry{kurz}{---} & \Fa{کوتاه} \\
+\hline
+779 & \DeEntry{der Braten {\small\color{SoftGray}[ˈbʁaːtn̩]}}{Der Braten ist sehr lecker} & \Fa{سرخ کردن} \\
+\hline
+780 & \DeEntry{die Praxis}{---} & \Fa{مطب؛ تمرین} \\
+\hline
+781 & \DeEntry{die Mütze {\small\color{SoftGray}[ˈmʏt͡sə]}}{Im Winter trage ich eine warme Mütze} & \Fa{کلاه پشمی} \\
+\hline
+782 & \DeEntry{zunächst (Adverb, nicht steigerbar) {\small\color{SoftGray}[t͡suˈnɛːçst]}}{Zunächst müssen wir das Problem verstehen} & \Fa{در ابتدا، نخست} \\
+\hline
+783 & \DeEntry{der Körper (-s, -) {\small\color{SoftGray}[ˈkœʁpɐ]}}{Regelmäßiger Sport ist gut für den Körper} & \Fa{بدن} \\
+\hline
+784 & \DeEntry{das Leben}{---} & \Fa{زندگی} \\
+\hline
+785 & \DeEntry{der Norden {\small\color{SoftGray}[ˈnɔʁdn̩]}}{Der Norden ist kälter als der Süden} & \Fa{شمال} \\
+\hline
+786 & \DeEntry{der Urlaub (-s, -e) {\small\color{SoftGray}[ˈuːɐ̯laʊ̯p]}}{Ich mache Urlaub in Italien} & \Fa{تعطیلات} \\
+\hline
+787 & \DeEntry{die Beziehung}{---} & \Fa{رابطه} \\
+\hline
+788 & \DeEntry{das Hemd {\small\color{SoftGray}[hɛmt]}}{Ich trage heute ein blaues Hemd} & \Fa{پیراهن مردانه} \\
+\hline
+789 & \DeEntry{absolut (Adjektiv, Komparativ {\small\color{SoftGray}[ˌapzoˈluːt]}}{Das ist die absolut richtige Entscheidung} & \Fa{کاملاً، مطلقاً} \\
+\hline
+790 & \DeEntry{fühlen (Verb, reflexiv oder transitiv) {\small\color{SoftGray}[ˈfyːlən]}}{Ich fühle mich müde} & \Fa{احساس کردن} \\
+\hline
+791 & \DeEntry{der Künstler {\small\color{SoftGray}[ˈkʏnstlɐ]}}{Er ist ein bekannter Künstler} & \Fa{هنرمند} \\
+\hline
+792 & \DeEntry{ungefähr}{---} & \Fa{تقریباً، حدوداً} \\
+\hline
+793 & \DeEntry{die Reihenfolge {\small\color{SoftGray}[ˈʁaɪ̯ənˌfɔlɡə]}}{Bitte bring die Sätze in die richtige Reihenfolge} & \Fa{ترتیب} \\
+\hline
+794 & \DeEntry{bestimmt}{---} & \Fa{حتماً؛ مشخص} \\
+\hline
+\end{longtable}
+\end{document}

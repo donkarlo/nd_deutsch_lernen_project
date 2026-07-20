@@ -1,0 +1,297 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Das Wort \glqq dann\grqq}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+\section{Grundbedeutung}
+
+\begin{grammarentry}{dann}{adverb}
+\GermanText{\textbf{dann} bedeutet meistens \textbf{then}, \textbf{after that} oder \textbf{in that case}. Es zeigt oft eine Zeitfolge oder eine Folge.}
+\EnglishText{\textbf{dann} usually means \textbf{then}, \textbf{after that}, or \textbf{in that case}. It often shows a sequence in time or a consequence.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich esse zuerst. Dann gehe ich schlafen.}{I eat first. Then I go to sleep.}
+    \ExampleItem{Wenn du Zeit hast, dann komm bitte.}{If you have time, then please come.}
+    \ExampleItem{Dann machen wir morgen weiter.}{Then we will continue tomorrow.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{dann als Zeitangabe}
+
+\begin{grammarentry}{dann = then / at that time}{time}
+\GermanText{\textbf{dann} kann einen Zeitpunkt meinen. Die Bedeutung ist: zu dieser Zeit, danach oder in diesem Moment.}
+\EnglishText{\textbf{dann} can refer to a time. The meaning is: at that time, after that, or at that moment.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich war damals Student. Dann hatte ich wenig Geld.}{I was a student at that time. Then I had little money.}
+    \ExampleItem{Wir treffen uns um acht. Dann sprechen wir darüber.}{We meet at eight. Then we talk about it.}
+    \ExampleItem{Ich war sehr müde. Dann bin ich nach Hause gegangen.}{I was very tired. Then I went home.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{zuerst ... dann}{first ... then}
+\GermanText{Mit \textbf{zuerst ... dann} beschreibt man eine Reihenfolge.}
+\EnglishText{With \textbf{zuerst ... dann}, one describes an order or sequence.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Zuerst trinke ich Kaffee, dann arbeite ich.}{First I drink coffee, then I work.}
+    \ExampleItem{Zuerst lernen wir die Regel, dann machen wir Beispiele.}{First we learn the rule, then we do examples.}
+    \ExampleItem{Er liest zuerst den Text und dann beantwortet er die Fragen.}{He first reads the text and then answers the questions.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{dann als Folge}
+
+\begin{grammarentry}{dann = in that case / therefore}{consequence}
+\GermanText{\textbf{dann} kann auch eine Folge ausdrücken. Die Bedeutung ist: wenn das so ist, passiert als Folge etwas anderes.}
+\EnglishText{\textbf{dann} can also express a consequence. The meaning is: if this is the case, something else happens as a result.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Du bist krank? Dann bleib zu Hause.}{You are sick? Then stay at home.}
+    \ExampleItem{Es regnet. Dann nehme ich den Bus.}{It is raining. Then I will take the bus.}
+    \ExampleItem{Du hast keine Zeit? Dann machen wir es morgen.}{You have no time? Then we will do it tomorrow.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{wenn ... dann}
+
+\begin{grammarentry}{wenn ..., dann ...}{if ..., then ...}
+\GermanText{In Konditionalsätzen steht oft \textbf{wenn ..., dann ...}. \textbf{wenn} leitet die Bedingung ein. \textbf{dann} zeigt die Folge.}
+\EnglishText{In conditional sentences, one often uses \textbf{wenn ..., dann ...}. \textbf{wenn} introduces the condition. \textbf{dann} shows the consequence.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Wenn ich Zeit habe, dann komme ich.}{If I have time, then I will come.}
+    \ExampleItem{Wenn du müde bist, dann schlaf ein bisschen.}{If you are tired, then sleep a little.}
+    \ExampleItem{Wenn es morgen regnet, dann bleiben wir zu Hause.}{If it rains tomorrow, then we will stay at home.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{dann ist oft optional}{optional dann}
+\GermanText{Nach einem \textbf{wenn}-Nebensatz ist \textbf{dann} oft möglich, aber nicht immer nötig. Ohne \textbf{dann} bleibt der Satz auch korrekt.}
+\EnglishText{After a \textbf{wenn}-clause, \textbf{dann} is often possible, but not always necessary. Without \textbf{dann}, the sentence is still correct.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Wenn ich Zeit habe, dann komme ich.}{If I have time, then I will come.}
+    \ExampleItem{Wenn ich Zeit habe, komme ich.}{If I have time, I will come.}
+    \ExampleItem{Wenn du willst, können wir anfangen.}{If you want, we can start.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Wortstellung}
+
+\begin{grammarentry}{dann am Satzanfang}{verb-second word order}
+\GermanText{Wenn \textbf{dann} am Anfang eines Hauptsatzes steht, steht das konjugierte Verb auf Position 2.}
+\EnglishText{When \textbf{dann} is at the beginning of a main clause, the conjugated verb is in position 2.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Dann gehe ich nach Hause.}{Then I go home.}
+    \ExampleItem{Dann müssen wir warten.}{Then we have to wait.}
+    \ExampleItem{Dann kann ich dir helfen.}{Then I can help you.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{wenn-Nebensatz + dann-Hauptsatz}{subordinate clause + main clause}
+\GermanText{Im \textbf{wenn}-Nebensatz steht das konjugierte Verb am Ende. Im Hauptsatz steht das konjugierte Verb direkt nach \textbf{dann}.}
+\EnglishText{In the \textbf{wenn}-subordinate clause, the conjugated verb is at the end. In the main clause, the conjugated verb comes directly after \textbf{dann}.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Wenn ich fertig bin, dann rufe ich dich an.}{If I am finished, then I will call you.}
+    \ExampleItem{Wenn du das verstehst, dann ist die Regel leicht.}{If you understand that, then the rule is easy.}
+    \ExampleItem{Wenn er morgen kommt, dann sprechen wir mit ihm.}{If he comes tomorrow, then we will speak with him.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{dann im Satzinneren}
+
+\begin{grammarentry}{Position nach dem Verb}{inside the sentence}
+\GermanText{\textbf{dann} kann auch im Satzinneren stehen. Oft steht es nach dem konjugierten Verb oder nach dem Subjekt.}
+\EnglishText{\textbf{dann} can also stand inside the sentence. It often stands after the conjugated verb or after the subject.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich gehe dann nach Hause.}{I will then go home.}
+    \ExampleItem{Wir können dann anfangen.}{We can then start.}
+    \ExampleItem{Du kannst mir dann schreiben.}{You can then write to me.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{dann und danach}
+
+\begin{grammarentry}{dann vs. danach}{then vs. after that}
+\GermanText{\textbf{dann} ist allgemeiner. \textbf{danach} bedeutet stärker: nach diesem Ereignis. Wenn man klar \textbf{after that} sagen will, ist \textbf{danach} oft genauer.}
+\EnglishText{\textbf{dann} is more general. \textbf{danach} means more clearly: after this event. If one clearly wants to say \textbf{after that}, \textbf{danach} is often more precise.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich esse. Dann arbeite ich.}{I eat. Then I work.}
+    \ExampleItem{Ich esse. Danach arbeite ich.}{I eat. After that I work.}
+    \ExampleItem{Wir sehen zuerst den Film. Danach gehen wir nach Hause.}{First we watch the movie. After that we go home.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{dann und da}
+
+\begin{grammarentry}{dann vs. da}{then vs. there / then / since}
+\GermanText{\textbf{dann} ist normalerweise klar zeitlich oder folgernd: then / in that case. \textbf{da} hat mehr Bedeutungen: Ort, Zeit, Situation oder Grund.}
+\EnglishText{\textbf{dann} is normally clearly temporal or consequential: then / in that case. \textbf{da} has more meanings: place, time, situation, or reason.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Dann habe ich den Fehler gesehen.}{Then I saw the mistake.}
+    \ExampleItem{Da habe ich den Fehler gesehen.}{Then / in that situation I saw the mistake.}
+    \ExampleItem{Da ich müde bin, gehe ich schlafen.}{Since I am tired, I am going to sleep.}
+    \ExampleItem{Da steht mein Fahrrad.}{There is my bicycle.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Typische Ausdrücke}
+
+\begin{grammarentry}{Na dann}{well then}
+\GermanText{\textbf{Na dann} benutzt man oft, wenn man etwas akzeptiert oder zum nächsten Schritt übergeht.}
+\EnglishText{\textbf{Na dann} is often used when one accepts something or moves to the next step.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Na dann, bis morgen.}{Well then, see you tomorrow.}
+    \ExampleItem{Na dann, fangen wir an.}{Well then, let us start.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{bis dann}{see you then}
+\GermanText{\textbf{Bis dann} bedeutet: bis zu diesem späteren Zeitpunkt. Man sagt es oft beim Abschied.}
+\EnglishText{\textbf{Bis dann} means: until that later time. It is often said when saying goodbye.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Bis dann!}{See you then!}
+    \ExampleItem{Okay, bis dann.}{Okay, see you then.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{dann eben}{then just / in that case}
+\GermanText{\textbf{dann eben} benutzt man, wenn man eine andere Möglichkeit akzeptiert, manchmal mit leichter Unzufriedenheit.}
+\EnglishText{\textbf{dann eben} is used when one accepts another option, sometimes with slight dissatisfaction.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Wenn du nicht kommen willst, dann eben nicht.}{If you do not want to come, then just do not.}
+    \ExampleItem{Dann eben morgen.}{Then tomorrow, I guess.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Typische Fehler}
+
+\begin{grammarentry}{Fehler 1: falsche Wortstellung nach dann}{wrong word order}
+\GermanText{Wenn \textbf{dann} am Satzanfang steht, muss das konjugierte Verb direkt danach kommen.}
+\EnglishText{When \textbf{dann} is at the beginning of the sentence, the conjugated verb must come directly after it.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Falsch: Dann ich gehe nach Hause.}{Wrong: Then I go home.}
+    \ExampleItem{Richtig: Dann gehe ich nach Hause.}{Correct: Then I go home.}
+    \ExampleItem{Falsch: Dann wir können anfangen.}{Wrong: Then we can start.}
+    \ExampleItem{Richtig: Dann können wir anfangen.}{Correct: Then we can start.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Fehler 2: dann als Grund}{not because}
+\GermanText{\textbf{dann} bedeutet nicht \textbf{because}. Für einen Grund benutzt man meistens \textbf{weil} oder \textbf{da}.}
+\EnglishText{\textbf{dann} does not mean \textbf{because}. For a reason, one usually uses \textbf{weil} or \textbf{da}.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Falsch: Ich bleibe zu Hause, dann ich krank bin.}{Wrong: I stay at home, then I am sick.}
+    \ExampleItem{Richtig: Ich bleibe zu Hause, weil ich krank bin.}{Correct: I stay at home because I am sick.}
+    \ExampleItem{Richtig: Da ich krank bin, bleibe ich zu Hause.}{Correct: Since I am sick, I am staying at home.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Kurze Zusammenfassung}
+
+\begin{grammarentry}{dann}{summary}
+\GermanText{\textbf{dann} ist ein Adverb. Es steht oft für Zeitfolge oder Folge. Wenn \textbf{dann} am Satzanfang steht, folgt direkt das konjugierte Verb.}
+\EnglishText{\textbf{dann} is an adverb. It often stands for sequence in time or consequence. When \textbf{dann} is at the beginning of the sentence, the conjugated verb follows directly.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Zuerst lerne ich, dann schreibe ich.}{First I study, then I write.}
+    \ExampleItem{Wenn ich Zeit habe, dann komme ich.}{If I have time, then I will come.}
+    \ExampleItem{Dann ist alles klar.}{Then everything is clear.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\end{document}

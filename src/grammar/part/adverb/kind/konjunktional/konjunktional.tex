@@ -1,0 +1,254 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Konjunktionaladverbien}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+    
+    
+    \section{Grundidee}
+        
+        \begin{grammarentry}{Was ist ein Konjunktionaladverb?}{What is a conjunctive adverb?}
+            \GermanText{Ein Konjunktionaladverb ist ein Adverb, das zwei Sätze oder Gedanken logisch miteinander verbindet.}
+            \EnglishText{A conjunctive adverb is an adverb that logically connects two sentences or ideas.}
+            
+            \GermanText{Es ist keine echte Konjunktion wie aber, und oder oder. Es funktioniert grammatisch wie ein Satzglied und kann deshalb Position 1 im Hauptsatz besetzen.}
+            \EnglishText{It is not a real conjunction like aber, und, or oder. Grammatically, it behaves like a sentence element and can therefore occupy position 1 in a main clause.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich bin müde, trotzdem lerne ich Deutsch.}{I am tired; nevertheless, I am studying German.}
+                    \ExampleItem{Es regnet, deshalb bleibe ich zu Hause.}{It is raining; therefore, I am staying at home.}
+                    \ExampleItem{Ich habe wenig Zeit, außerdem bin ich krank.}{I have little time; besides, I am sick.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Die wichtigste Wortstellung}
+        
+        \begin{grammarentry}{Konjunktionaladverb auf Position 1}{Conjunctive adverb in position 1}
+            \GermanText{Wenn ein Konjunktionaladverb am Anfang des zweiten Hauptsatzes steht, ist es Position 1. Das konjugierte Verb muss dann sofort auf Position 2 stehen.}
+            \EnglishText{If a conjunctive adverb stands at the beginning of the second main clause, it is position 1. The conjugated verb must then immediately stand in position 2.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich bin müde, trotzdem lerne ich Deutsch.}{I am tired; nevertheless, I am studying German.}
+                    \ExampleItem{Ich habe keine Zeit, deshalb komme ich nicht.}{I have no time; therefore, I am not coming.}
+                    \ExampleItem{Er war krank, trotzdem ist er zur Arbeit gegangen.}{He was sick; nevertheless, he went to work.}
+                \end{itemize}
+            \end{exbox}
+            
+            \GermanText{Das ist der wichtigste Unterschied zu aber.}
+            \EnglishText{This is the most important difference from aber.}
+        \end{grammarentry}
+    
+    
+    \section{Vergleich mit aber und obwohl}
+        
+        \begin{grammarentry}{Drei verschiedene Gruppen}{Three different groups}
+            \GermanText{Aber ist eine nebenordnende Konjunktion. Trotzdem ist ein Konjunktionaladverb. Obwohl ist eine Subjunktion.}
+            \EnglishText{Aber is a coordinating conjunction. Trotzdem is a conjunctive adverb. Obwohl is a subordinating conjunction.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich bin müde, aber ich lerne Deutsch.}{I am tired, but I am studying German.}
+                    \ExampleItem{Ich bin müde, trotzdem lerne ich Deutsch.}{I am tired; nevertheless, I am studying German.}
+                    \ExampleItem{Obwohl ich müde bin, lerne ich Deutsch.}{Although I am tired, I am studying German.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Tabelle: Konjunktion, Konjunktionaladverb, Subjunktion}
+        
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{tabular}{>{\bfseries}p{3.2cm} p{3.6cm} p{3.8cm} p{4.2cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Typ} & \color{white}\textbf{Beispiele}   & \color{white}\textbf{Verbposition} & \color{white}\textbf{Beispiel} \\
+            nebenordnende Konjunktion & aber, denn, oder, sondern, und    & normale Hauptsatzstellung & Ich bin müde, aber ich lerne. \\
+            Konjunktionaladverb       & trotzdem, deshalb, dann, außerdem & Verb auf Position 2                & Ich bin müde, trotzdem lerne ich. \\
+            Subjunktion               & weil, obwohl, dass, wenn          & Verb am Ende                       & Ich lerne, obwohl ich müde bin.   \\
+        \end{tabular}
+    
+    
+    \section{Konjunktionaladverbien im Mittelfeld}
+        
+        \begin{grammarentry}{Nicht immer Position 1}{Not always position 1}
+            \GermanText{Ein Konjunktionaladverb muss nicht immer am Anfang stehen. Es kann auch in der Mitte des Satzes stehen.}
+            \EnglishText{A conjunctive adverb does not always have to stand at the beginning. It can also stand in the middle of the sentence.}
+            
+            \GermanText{Wenn es nicht auf Position 1 steht, bleibt die normale Hauptsatzstellung erhalten.}
+            \EnglishText{If it is not in position 1, the normal main clause word order remains.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich lerne trotzdem Deutsch.}{I am nevertheless studying German.}
+                    \ExampleItem{Ich komme deshalb nicht.}{That is why I am not coming.}
+                    \ExampleItem{Er hat außerdem viel Erfahrung.}{Besides, he has a lot of experience.}
+                    \ExampleItem{Wir gehen danach nach Hause.}{After that, we are going home.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Häufige Konjunktionaladverbien}
+        
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{tabular}{>{\bfseries}p{3cm} p{4cm} p{7cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Wort} & \color{white}\textbf{Bedeutung} & \color{white}\textbf{Beispiel}                                     \\
+            deshalb                    & therefore / for that reason     & Ich bin krank, deshalb bleibe ich zu Hause.                        \\
+            deswegen                   & therefore / because of that     & Ich habe keine Zeit, deswegen komme ich später.                    \\
+            darum                      & therefore / that is why         & Es ist spät, darum gehe ich schlafen.                              \\
+            daher                      & therefore / hence               & Er hat viel gelernt, daher hat er bestanden.                       \\
+            trotzdem                   & nevertheless                    & Es regnet, trotzdem gehe ich spazieren.                            \\
+            dennoch                    & nevertheless / still            & Die Aufgabe ist schwer, dennoch versuche ich es.                   \\
+            außerdem                   & besides / furthermore           & Ich bin müde, außerdem habe ich Kopfschmerzen.                     \\
+            dann                       & then                            & Ich esse zuerst, dann lerne ich Deutsch.                           \\
+            danach                     & after that                      & Ich gehe zur Physiotherapie, danach treffe ich Freunde.            \\
+            sonst                      & otherwise                       & Beeil dich, sonst kommst du zu spät.                               \\
+            folglich                   & consequently                    & Er hat nicht gelernt, folglich hat er die Prüfung nicht bestanden. \\
+            allerdings                 & however / admittedly            & Das ist möglich, allerdings ist es schwierig.                      \\
+        \end{tabular}
+    
+    
+    \section{Semantische Gruppen}
+        
+        \begin{grammarentry}{Welche logische Beziehung zeigen sie?}{What logical relation do they show?}
+            \GermanText{Konjunktionaladverbien zeigen die logische Beziehung zwischen zwei Aussagen.}
+            \EnglishText{Conjunctive adverbs show the logical relation between two statements.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Grund / Folge: deshalb, deswegen, daher, darum, folglich}{reason / consequence: therefore, because of that, hence, consequently}
+                    \ExampleItem{Gegensatz: trotzdem, dennoch, allerdings}{contrast: nevertheless, still, however}
+                    \ExampleItem{Addition: außerdem, zudem, darüber hinaus}{addition: besides, moreover, furthermore}
+                    \ExampleItem{Zeit: dann, danach, inzwischen, anschließend}{time: then, after that, meanwhile, afterwards}
+                    \ExampleItem{Alternative oder Bedingung: sonst, andernfalls}{alternative or condition: otherwise}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Komma und Satzzeichen}
+        
+        \begin{grammarentry}{Komma ist möglich, Punkt oder Semikolon auch}{Comma is possible, period or semicolon too}
+            \GermanText{Zwischen zwei Hauptsätzen mit Konjunktionaladverb kann ein Komma stehen. Oft ist auch ein Punkt oder Semikolon möglich.}
+            \EnglishText{Between two main clauses with a conjunctive adverb, a comma can stand. Often a period or semicolon is also possible.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich bin müde, trotzdem lerne ich Deutsch.}{I am tired; nevertheless, I am studying German.}
+                    \ExampleItem{Ich bin müde. Trotzdem lerne ich Deutsch.}{I am tired. Nevertheless, I am studying German.}
+                    \ExampleItem{Ich bin müde; trotzdem lerne ich Deutsch.}{I am tired; nevertheless, I am studying German.}
+                \end{itemize}
+            \end{exbox}
+            
+            \GermanText{Wichtig ist nicht das Satzzeichen, sondern die Wortstellung: trotzdem lerne ich.}
+            \EnglishText{The important thing is not the punctuation, but the word order: trotzdem lerne ich.}
+        \end{grammarentry}
+    
+    
+    \section{Typische Fehler}
+        
+        \begin{grammarentry}{Fehler, die man vermeiden sollte}{Mistakes to avoid}
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Falsch: Ich bin müde, trotzdem ich lerne Deutsch.}{Wrong: trotzdem does not make a subordinate clause.}
+                    \ExampleItem{Richtig: Ich bin müde, trotzdem lerne ich Deutsch.}{Correct: trotzdem is position 1, so the verb is position 2.}
+                    
+                    \ExampleItem{Falsch: Ich bin krank, deshalb ich bleibe zu Hause.}{Wrong: deshalb is position 1, so the verb must come next.}
+                    \ExampleItem{Richtig: Ich bin krank, deshalb bleibe ich zu Hause.}{Correct: deshalb bleibe ich.}
+                    
+                    \ExampleItem{Falsch: Obwohl ich bin müde, lerne ich Deutsch.}{Wrong: obwohl makes a subordinate clause, so the verb goes to the end.}
+                    \ExampleItem{Richtig: Obwohl ich müde bin, lerne ich Deutsch.}{Correct: obwohl ich müde bin.}
+                    
+                    \ExampleItem{Falsch: Ich bin müde, aber lerne ich Deutsch.}{Wrong: aber is not position 1.}
+                    \ExampleItem{Richtig: Ich bin müde, aber ich lerne Deutsch.}{Correct: after aber, normal main clause order remains.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Sehr wichtige Unterscheidung}
+        
+        \begin{grammarentry}{trotzdem oder obwohl?}{trotzdem or obwohl?}
+            \GermanText{Trotzdem ist ein Konjunktionaladverb und steht in einem Hauptsatz. Obwohl ist eine Subjunktion und leitet einen Nebensatz ein.}
+            \EnglishText{Trotzdem is a conjunctive adverb and stands in a main clause. Obwohl is a subordinating conjunction and introduces a subordinate clause.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich bin müde, trotzdem lerne ich Deutsch.}{I am tired; nevertheless, I am studying German.}
+                    \ExampleItem{Obwohl ich müde bin, lerne ich Deutsch.}{Although I am tired, I am studying German.}
+                    \ExampleItem{Ich habe wenig Zeit, trotzdem komme ich.}{I have little time; nevertheless, I am coming.}
+                    \ExampleItem{Obwohl ich wenig Zeit habe, komme ich.}{Although I have little time, I am coming.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Sehr kurze Zusammenfassung}
+        
+        \begin{grammarentry}{Merksatz}{Memory rule}
+            \GermanText{Konjunktionaladverbien sind Adverbien mit Verbindungsfunktion. Wenn sie am Anfang des Hauptsatzes stehen, besetzen sie Position 1. Deshalb steht das konjugierte Verb direkt danach auf Position 2.}
+            \EnglishText{Conjunctive adverbs are adverbs with a connecting function. If they stand at the beginning of a main clause, they occupy position 1. Therefore the conjugated verb stands directly after them in position 2.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{aber: Ich bin müde, aber ich lerne Deutsch.}{coordinating conjunction: normal word order}
+                    \ExampleItem{trotzdem: Ich bin müde, trotzdem lerne ich Deutsch.}{conjunctive adverb: verb in position 2}
+                    \ExampleItem{obwohl: Obwohl ich müde bin, lerne ich Deutsch.}{subjunction: verb at the end of the subordinate clause}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+
+\end{document}

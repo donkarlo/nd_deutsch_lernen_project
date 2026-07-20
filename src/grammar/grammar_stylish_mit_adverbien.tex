@@ -1,0 +1,1784 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+  {\Large\bfseries\color{HeaderBlueDark}}
+  {}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+  {\large\bfseries\color{HeaderBlueDark}}
+  {}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+  \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+  \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\color{SoftGray}#2}}
+
+\title{Grammatikthemen im Deutschen}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+\section{Verben {\small (Verbs)}}
+
+\subsection{Verbformen und Konjugation {\small (Verb Forms and Conjugation)}}
+
+\begin{grammarentry}{Konjugation im Präsens}{Conjugation in the Present Tense}
+    \GermanText{Im Präsens wird das Verb an Person und Numerus angepasst. Diese Form wird für Gegenwart, allgemeine Aussagen und manchmal auch für zukünftige Handlungen verwendet.}
+    \EnglishText{In the present tense, the verb changes according to person and number. This form is used for the present, general statements, and sometimes also for future actions.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich lerne jeden Tag Deutsch.}{I learn German every day.}
+            \ExampleItem{Du arbeitest heute sehr schnell.}{You are working very quickly today.}
+            \ExampleItem{Er wohnt seit zwei Jahren in Wien.}{He has been living in Vienna for two years.}
+            \ExampleItem{Wir fahren morgen nach Graz.}{We are going to Graz tomorrow.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Starke und schwache Verben}{Strong and Weak Verbs}
+    \GermanText{Schwache Verben bilden ihre Formen regelmäßig, während starke Verben oft den Stammvokal ändern. Dieser Unterschied ist besonders in den Vergangenheitsformen wichtig.}
+    \EnglishText{Weak verbs form their tenses regularly, while strong verbs often change their stem vowel. This distinction is especially important in past forms.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich machte die Tür zu.}{I closed the door.}
+            \ExampleItem{Er kaufte ein neues Buch.}{He bought a new book.}
+            \ExampleItem{Sie ging nach Hause.}{She went home.}
+            \ExampleItem{Wir fanden die Lösung schnell.}{We found the solution quickly.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Gemischte Verben}{Mixed Verbs}
+    \GermanText{Gemischte Verben verbinden Merkmale starker und schwacher Verben. Sie ändern oft den Stammvokal, haben aber schwache Endungen.}
+    \EnglishText{Mixed verbs combine features of strong and weak verbs. They often change the stem vowel but still take weak endings.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich dachte lange darüber nach.}{I thought about it for a long time.}
+            \ExampleItem{Er brachte mir die Unterlagen.}{He brought me the documents.}
+            \ExampleItem{Sie kannte die Antwort schon.}{She already knew the answer.}
+            \ExampleItem{Wir nannten ihn beim Vornamen.}{We called him by his first name.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Trennbare und nicht trennbare Verben}{Separable and Inseparable Verbs}
+    \GermanText{Trennbare Verben teilen sich im Hauptsatz, während nicht trennbare Verben zusammenbleiben. Die Bedeutung ändert sich oft mit dem Präfix.}
+    \EnglishText{Separable verbs split in main clauses, whereas inseparable verbs remain together. The meaning often changes with the prefix.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich stehe jeden Morgen um sechs Uhr auf.}{I get up at six every morning.}
+            \ExampleItem{Er ruft seine Mutter später an.}{He calls his mother later.}
+            \ExampleItem{Sie versteht die Frage nicht.}{She does not understand the question.}
+            \ExampleItem{Wir besuchen unsere Freunde am Wochenende.}{We visit our friends on the weekend.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Reflexive Verben}{Reflexive Verbs}
+    \GermanText{Reflexive Verben stehen mit einem Reflexivpronomen. Manche Verben sind immer reflexiv, andere nur in bestimmten Bedeutungen.}
+    \EnglishText{Reflexive verbs are used with a reflexive pronoun. Some verbs are always reflexive, while others are reflexive only in certain meanings.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich interessiere mich für Geschichte.}{I am interested in history.}
+            \ExampleItem{Du erinnerst dich an den Termin.}{You remember the appointment.}
+            \ExampleItem{Er setzt sich auf den Stuhl.}{He sits down on the chair.}
+            \ExampleItem{Wir freuen uns auf den Urlaub.}{We are looking forward to the vacation.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Modalverben}{Modal Verbs}
+    \GermanText{Modalverben verändern die Bedeutung eines Vollverbs und drücken Möglichkeit, Notwendigkeit, Erlaubnis, Wunsch oder Pflicht aus.}
+    \EnglishText{Modal verbs modify the meaning of a main verb and express possibility, necessity, permission, desire, or obligation.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich muss heute länger arbeiten.}{I have to work longer today.}
+            \ExampleItem{Du darfst hier nicht rauchen.}{You may not smoke here.}
+            \ExampleItem{Er kann sehr gut schwimmen.}{He can swim very well.}
+            \ExampleItem{Wir wollen bald umziehen.}{We want to move soon.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\subsection{Zeiten {\small (Tenses)}}
+
+\begin{grammarentry}{Präsens}{Present}
+    \GermanText{Das Präsens beschreibt Gegenwart, Gewohnheiten, allgemeine Tatsachen und in vielen Fällen auch Zukunft.}
+    \EnglishText{The present tense describes the present, habits, general facts, and in many cases also the future.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich lese gerade einen Artikel.}{I am reading an article right now.}
+            \ExampleItem{Sie arbeitet im Krankenhaus.}{She works in a hospital.}
+            \ExampleItem{Wasser kocht bei hundert Grad.}{Water boils at one hundred degrees.}
+            \ExampleItem{Morgen fahre ich nach Linz.}{Tomorrow I am going to Linz.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Perfekt}{Perfect}
+    \GermanText{Das Perfekt wird in der gesprochenen Sprache sehr oft für Vergangenes verwendet. Es wird mit \textit{haben} oder \textit{sein} und dem Partizip II gebildet.}
+    \EnglishText{The perfect tense is very often used in spoken language for past events. It is formed with \textit{haben} or \textit{sein} and the past participle.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich habe den Brief geschrieben.}{I have written the letter.}
+            \ExampleItem{Er hat den Schlüssel verloren.}{He has lost the key.}
+            \ExampleItem{Sie ist sehr früh angekommen.}{She arrived very early.}
+            \ExampleItem{Wir haben lange auf dich gewartet.}{We waited for you for a long time.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Präteritum}{Simple Past}
+    \GermanText{Das Präteritum wird häufig in schriftlichen Texten und bei bestimmten Verben wie \textit{sein}, \textit{haben} und den Modalverben verwendet.}
+    \EnglishText{The simple past is frequently used in written texts and with certain verbs such as \textit{sein}, \textit{haben}, and the modal verbs.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich war gestern zu Hause.}{I was at home yesterday.}
+            \ExampleItem{Er hatte keine Zeit.}{He had no time.}
+            \ExampleItem{Sie konnte die Aufgabe nicht lösen.}{She could not solve the task.}
+            \ExampleItem{Wir gingen am Abend spazieren.}{We went for a walk in the evening.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Plusquamperfekt}{Past Perfect}
+    \GermanText{Das Plusquamperfekt beschreibt eine Vorvergangenheit, also etwas, das vor einem anderen vergangenen Ereignis passiert war.}
+    \EnglishText{The past perfect describes an action that happened before another action in the past.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich hatte schon gegessen, bevor er kam.}{I had already eaten before he came.}
+            \ExampleItem{Sie war gegangen, als ich anrief.}{She had left when I called.}
+            \ExampleItem{Wir hatten die Arbeit beendet, bevor der Chef kam.}{We had finished the work before the boss arrived.}
+            \ExampleItem{Er hatte das Buch gelesen, bevor der Film erschien.}{He had read the book before the film came out.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Futur I}{Future I}
+    \GermanText{Das Futur I wird für Zukunft, Vermutung oder Absicht verwendet. Oft wird aber auch Präsens mit Zeitangabe benutzt.}
+    \EnglishText{Future I is used for future actions, assumptions, or intentions. However, the present tense with a time expression is also often used.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich werde morgen anrufen.}{I will call tomorrow.}
+            \ExampleItem{Er wird später kommen.}{He will come later.}
+            \ExampleItem{Sie wird das schon wissen.}{She probably knows that already.}
+            \ExampleItem{Wir werden bald fertig sein.}{We will be finished soon.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Futur II}{Future Perfect}
+    \GermanText{Das Futur II drückt aus, dass etwas in der Zukunft abgeschlossen sein wird, oder es dient zur Vermutung über Vergangenes.}
+    \EnglishText{Future II expresses that something will have been completed in the future, or it is used to make assumptions about the past.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich werde die Arbeit bis morgen beendet haben.}{I will have finished the work by tomorrow.}
+            \ExampleItem{Er wird schon angekommen sein.}{He will probably have arrived already.}
+            \ExampleItem{Sie wird das Buch gelesen haben.}{She will have read the book.}
+            \ExampleItem{Wir werden bis dahin umgezogen sein.}{We will have moved by then.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\subsection{Konjunktiv {\small (Subjunctive)}}
+
+\begin{grammarentry}{Konjunktiv II}{Subjunctive II}
+    \GermanText{Der Konjunktiv II wird für Irrealität, Wünsche, Höflichkeit und vorsichtige Aussagen verwendet.}
+    \EnglishText{The subjunctive II is used for unreality, wishes, politeness, and cautious statements.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Wenn ich mehr Zeit hätte, würde ich mehr lesen.}{If I had more time, I would read more.}
+            \ExampleItem{Ich wäre jetzt gern am Meer.}{I would like to be at the sea now.}
+            \ExampleItem{Könnten Sie mir bitte helfen?}{Could you please help me?}
+            \ExampleItem{An deiner Stelle würde ich früher anfangen.}{If I were you, I would start earlier.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Konjunktiv II der Vergangenheit}{Past Subjunctive II}
+    \GermanText{Diese Form drückt aus, dass etwas in der Vergangenheit anders hätte sein können oder sollen.}
+    \EnglishText{This form expresses that something in the past could or should have been different.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich hätte früher kommen sollen.}{I should have come earlier.}
+            \ExampleItem{Er wäre fast gestürzt.}{He almost would have fallen.}
+            \ExampleItem{Wir hätten das wissen müssen.}{We should have known that.}
+            \ExampleItem{Sie hätte die Prüfung bestehen können.}{She could have passed the exam.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Konjunktiv I}{Subjunctive I}
+    \GermanText{Der Konjunktiv I wird besonders in der indirekten Rede verwendet. Er schafft Distanz zum Gesagten und ist typisch für Berichte und Nachrichten.}
+    \EnglishText{Subjunctive I is used especially in indirect speech. It creates distance from what is being said and is typical in reports and news.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Er sagte, er sei krank.}{He said that he was ill.}
+            \ExampleItem{Sie meinte, sie habe keine Zeit.}{She said that she had no time.}
+            \ExampleItem{Der Zeuge erklärte, er habe nichts gesehen.}{The witness stated that he had seen nothing.}
+            \ExampleItem{Die Zeitung berichtet, der Minister trete zurück.}{The newspaper reports that the minister is resigning.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Irreale Konditionalsätze}{Unreal Conditional Clauses}
+    \GermanText{Irreale Konditionalsätze zeigen eine Bedingung, die nicht erfüllt ist oder nur vorgestellt wird.}
+    \EnglishText{Unreal conditional clauses show a condition that is not fulfilled or only imagined.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Wenn ich reich wäre, würde ich mehr reisen.}{If I were rich, I would travel more.}
+            \ExampleItem{Wenn wir früher losgefahren wären, hätten wir den Zug erreicht.}{If we had left earlier, we would have caught the train.}
+            \ExampleItem{Wenn sie besser Deutsch könnte, fände sie leichter Arbeit.}{If she spoke better German, she would find work more easily.}
+            \ExampleItem{Wenn er mich gefragt hätte, hätte ich geholfen.}{If he had asked me, I would have helped.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Wunschsätze}{Wish Sentences}
+    \GermanText{Wunschsätze drücken einen oft unerfüllbaren oder unwahrscheinlichen Wunsch aus.}
+    \EnglishText{Wish sentences express a wish that is often unrealizable or unlikely.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Wenn ich doch mehr Zeit hätte.}{If only I had more time.}
+            \ExampleItem{Wäre ich jetzt nur zu Hause.}{If only I were at home now.}
+            \ExampleItem{Hätte er mich doch angerufen.}{If only he had called me.}
+            \ExampleItem{Wenn es morgen bloß nicht regnen würde.}{If only it would not rain tomorrow.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\subsection{Verbmuster und Ergänzungen {\small (Verb Patterns and Complements)}}
+
+\begin{grammarentry}{Verben mit Akkusativobjekt}{Verbs with an Accusative Object}
+    \GermanText{Viele Verben verlangen ein direktes Objekt im Akkusativ.}
+    \EnglishText{Many verbs require a direct object in the accusative case.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich lese das Buch.}{I am reading the book.}
+            \ExampleItem{Sie kauft einen Mantel.}{She is buying a coat.}
+            \ExampleItem{Er sucht seinen Schlüssel.}{He is looking for his key.}
+            \ExampleItem{Wir brauchen eine Lösung.}{We need a solution.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Verben mit Dativobjekt}{Verbs with a Dative Object}
+    \GermanText{Einige Verben stehen mit einem Objekt im Dativ.}
+    \EnglishText{Some verbs take an object in the dative case.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich helfe meinem Bruder.}{I help my brother.}
+            \ExampleItem{Sie dankt ihrer Lehrerin.}{She thanks her teacher.}
+            \ExampleItem{Er folgt dem Arzt.}{He follows the doctor.}
+            \ExampleItem{Wir vertrauen dem System nicht.}{We do not trust the system.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Verben mit Dativ- und Akkusativobjekt}{Verbs with Dative and Accusative Objects}
+    \GermanText{Bestimmte Verben verbinden zwei Objekte miteinander. Häufig steht eine Person im Dativ und eine Sache im Akkusativ.}
+    \EnglishText{Certain verbs combine two objects. Often a person is in the dative and a thing is in the accusative.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich gebe dem Kind ein Buch.}{I give the child a book.}
+            \ExampleItem{Sie erklärt mir die Aufgabe.}{She explains the task to me.}
+            \ExampleItem{Er schickt seiner Mutter eine Nachricht.}{He sends his mother a message.}
+            \ExampleItem{Wir zeigen den Gästen die Stadt.}{We show the guests the city.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Verben mit Präpositionalobjekt}{Verbs with Prepositional Objects}
+    \GermanText{Viele Verben stehen fest mit einer bestimmten Präposition.}
+    \EnglishText{Many verbs are fixed with a specific preposition.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich warte auf den Bus.}{I am waiting for the bus.}
+            \ExampleItem{Sie interessiert sich für Kunst.}{She is interested in art.}
+            \ExampleItem{Er denkt an seine Kindheit.}{He thinks about his childhood.}
+            \ExampleItem{Wir sprechen über das Problem.}{We are talking about the problem.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Verben mit Pronominaladverbien}{Verbs with Pronominal Adverbs}
+    \GermanText{Pronominaladverbien wie \textit{darauf}, \textit{damit}, \textit{woran} ersetzen Präpositionalobjekte mit Sachen.}
+    \EnglishText{Pronominal adverbs such as \textit{darauf}, \textit{damit}, \textit{woran} replace prepositional objects referring to things.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich warte darauf.}{I am waiting for that.}
+            \ExampleItem{Sie spricht oft darüber.}{She often talks about it.}
+            \ExampleItem{Woran denkst du?}{What are you thinking about?}
+            \ExampleItem{Damit bin ich nicht einverstanden.}{I do not agree with that.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Verben mit festen Ergänzungsmustern}{Verbs with Fixed Complement Patterns}
+    \GermanText{Manche Verben haben feste Strukturen, zum Beispiel mit Infinitiv, Nebensatz oder bestimmten Präpositionen.}
+    \EnglishText{Some verbs have fixed structures, for example with an infinitive, a subordinate clause, or specific prepositions.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich bitte dich, mir zu helfen.}{I ask you to help me.}
+            \ExampleItem{Sie hofft, dass alles gut geht.}{She hopes that everything goes well.}
+            \ExampleItem{Er beginnt, Deutsch zu lernen.}{He begins to learn German.}
+            \ExampleItem{Wir hindern ihn daran, sofort zu gehen.}{We prevent him from leaving immediately.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\subsection{Verbale Spezialthemen {\small (Special Verb Topics)}}
+
+\begin{grammarentry}{Bedeutung und Funktion von \textit{werden}}{Meaning and Function of \textit{werden}}
+    \GermanText{\textit{Werden} kann Zukunft, Veränderung oder Passiv ausdrücken. Es ist eines der zentralen Verben der deutschen Grammatik.}
+    \EnglishText{\textit{Werden} can express future, change, or passive voice. It is one of the central verbs in German grammar.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich werde morgen anrufen.}{I will call tomorrow.}
+            \ExampleItem{Es wird kalt.}{It is getting cold.}
+            \ExampleItem{Das Haus wird renoviert.}{The house is being renovated.}
+            \ExampleItem{Er wird Arzt.}{He becomes a doctor.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{\textit{brauchen} und \textit{sich lassen}}{\textit{brauchen} and \textit{sich lassen}}
+    \GermanText{\textit{Brauchen} mit \textit{zu} erscheint oft in Verneinung. \textit{Sich lassen} drückt Möglichkeit oder Machbarkeit aus.}
+    \EnglishText{\textit{Brauchen} with \textit{zu} often appears in negation. \textit{Sich lassen} expresses possibility or feasibility.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Du brauchst heute nicht zu kommen.}{You do not need to come today.}
+            \ExampleItem{Man braucht das nicht extra zu erklären.}{There is no need to explain that separately.}
+            \ExampleItem{Das Problem lässt sich lösen.}{The problem can be solved.}
+            \ExampleItem{Die Tür lässt sich nicht öffnen.}{The door cannot be opened.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Nomen-Verb-Verbindungen}{Noun-Verb Combinations}
+    \GermanText{Nomen-Verb-Verbindungen sind häufig und oft stilistisch wichtig. Manche sind frei, andere fest oder idiomatisch.}
+    \EnglishText{Noun-verb combinations are common and often important stylistically. Some are free, others fixed or idiomatic.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{eine Entscheidung treffen}{to make a decision}
+            \ExampleItem{in Frage kommen}{to be considered}
+            \ExampleItem{Abschied nehmen}{to say goodbye}
+            \ExampleItem{zur Verfügung stehen}{to be available}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Funktionsverbgefüge}{Light Verb Constructions}
+    \GermanText{Funktionsverbgefüge sind feste Verbindungen aus Verb und Nomen. Sie sind besonders häufig in formellen Texten.}
+    \EnglishText{Light verb constructions are fixed combinations of a verb and a noun. They are especially common in formal texts.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{eine Rolle spielen}{to play a role}
+            \ExampleItem{zur Anwendung kommen}{to be applied}
+            \ExampleItem{eine Entscheidung treffen}{to make a decision}
+            \ExampleItem{in Betracht ziehen}{to take into consideration}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{\textit{haben/sein} + \textit{zu} + Infinitiv}{\textit{have/to be} + infinitive}
+    \GermanText{Diese Konstruktion drückt Notwendigkeit, Verpflichtung oder Möglichkeit aus.}
+    \EnglishText{This construction expresses necessity, obligation, or possibility.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich habe noch viel zu erledigen.}{I still have a lot to do.}
+            \ExampleItem{Der Bericht ist bis Freitag zu schreiben.}{The report is to be written by Friday.}
+            \ExampleItem{Das Problem ist nicht leicht zu lösen.}{The problem is not easy to solve.}
+            \ExampleItem{Sie hat morgen einen Vortrag zu halten.}{She has to give a presentation tomorrow.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{\textit{scheinen} + \textit{zu} + Infinitiv}{\textit{seem} + infinitive}
+    \GermanText{Mit \textit{scheinen} formuliert man vorsichtige Einschätzungen oder Beobachtungen.}
+    \EnglishText{With \textit{scheinen}, one formulates cautious assessments or observations.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Er scheint müde zu sein.}{He seems to be tired.}
+            \ExampleItem{Sie scheint die Antwort zu kennen.}{She seems to know the answer.}
+            \ExampleItem{Das Problem scheint größer zu werden.}{The problem seems to be getting bigger.}
+            \ExampleItem{Die Lage scheint sich zu beruhigen.}{The situation seems to be calming down.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\section{Nomen und Artikel {\small (Nouns and Articles)}}
+
+\subsection{Nomen {\small (Nouns)}}
+
+\begin{grammarentry}{Bedeutung und Form der Nomen}{Meaning and Form of Nouns}
+    \GermanText{Nomen bezeichnen Personen, Dinge, Begriffe oder Sachverhalte. Im Deutschen werden sie großgeschrieben.}
+    \EnglishText{Nouns refer to people, things, concepts, or states of affairs. In German, they are capitalized.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{der Tisch}{the table}
+            \ExampleItem{die Hoffnung}{hope}
+            \ExampleItem{das Studium}{studies}
+            \ExampleItem{die Entscheidung}{decision}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Genus}{Gender}
+    \GermanText{Jedes Nomen hat ein grammatisches Geschlecht: maskulin, feminin oder neutral. Das Genus muss oft mit dem Artikel gelernt werden.}
+    \EnglishText{Every noun has a grammatical gender: masculine, feminine, or neuter. The gender often has to be learned together with the article.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{der Tag}{the day}
+            \ExampleItem{die Sprache}{the language}
+            \ExampleItem{das Problem}{the problem}
+            \ExampleItem{der Gedanke}{the thought}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Numerus}{Number}
+    \GermanText{Nomen können im Singular oder im Plural stehen. Die Pluralbildung ist im Deutschen vielfältig und muss oft mitgelernt werden.}
+    \EnglishText{Nouns can appear in the singular or plural. Plural formation in German is varied and often has to be learned individually.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{das Buch -- die Bücher}{the book -- the books}
+            \ExampleItem{die Frau -- die Frauen}{the woman -- the women}
+            \ExampleItem{der Student -- die Studenten}{the student -- the students}
+            \ExampleItem{das Kind -- die Kinder}{the child -- the children}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Kasus}{Case}
+    \GermanText{Nomen verändern zusammen mit Artikeln und Adjektiven ihre Form je nach Funktion im Satz.}
+    \EnglishText{Nouns change their form together with articles and adjectives according to their function in the sentence.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Der Mann kommt.}{The man is coming.}
+            \ExampleItem{Ich sehe den Mann.}{I see the man.}
+            \ExampleItem{Ich helfe dem Mann.}{I help the man.}
+            \ExampleItem{Das Auto des Mannes ist neu.}{The man's car is new.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{n-Deklination}{n-Declension}
+    \GermanText{Bestimmte maskuline Nomen bekommen in fast allen Fällen außer dem Nominativ Singular die Endung \textit{-n} oder \textit{-en}.}
+    \EnglishText{Certain masculine nouns take the ending \textit{-n} or \textit{-en} in almost all cases except the nominative singular.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{der Student -- des Studenten}{the student -- of the student}
+            \ExampleItem{der Kollege -- dem Kollegen}{the colleague -- to the colleague}
+            \ExampleItem{Ich sehe den Jungen.}{I see the boy.}
+            \ExampleItem{Er spricht mit dem Kunden.}{He speaks with the customer.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Komposita}{Compound Nouns}
+    \GermanText{Im Deutschen lassen sich viele Nomen zu einem neuen Wort verbinden. Meistens bestimmt das letzte Element das Genus.}
+    \EnglishText{In German, many nouns can be combined into a new word. Usually, the last element determines the gender.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{das Wörterbuch}{dictionary}
+            \ExampleItem{die Fahrkarte}{ticket}
+            \ExampleItem{der Sprachkurs}{language course}
+            \ExampleItem{das Arbeitszimmer}{study room}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Nominalisierung}{Nominalization}
+    \GermanText{Verben und Adjektive können zu Nomen gemacht werden. Diese Form ist besonders häufig in formeller Sprache.}
+    \EnglishText{Verbs and adjectives can be turned into nouns. This form is especially frequent in formal language.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{das Lesen}{reading}
+            \ExampleItem{beim Schreiben}{while writing}
+            \ExampleItem{das Gute}{the good}
+            \ExampleItem{das Lernen fällt mir leicht.}{Learning is easy for me.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\subsection{Artikel {\small (Articles)}}
+
+\begin{grammarentry}{Bestimmte Artikel}{Definite Articles}
+    \GermanText{Der bestimmte Artikel verweist auf etwas Bekanntes oder konkret Gemeintes.}
+    \EnglishText{The definite article refers to something known or specific.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Der Lehrer ist krank.}{The teacher is ill.}
+            \ExampleItem{Ich nehme den Bus.}{I am taking the bus.}
+            \ExampleItem{Die Wohnung ist groß.}{The apartment is big.}
+            \ExampleItem{Das Problem ist bekannt.}{The problem is known.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Unbestimmte Artikel}{Indefinite Articles}
+    \GermanText{Der unbestimmte Artikel nennt etwas Neues oder Nichtgenaues.}
+    \EnglishText{The indefinite article introduces something new or nonspecific.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich suche eine Wohnung.}{I am looking for an apartment.}
+            \ExampleItem{Er hat ein Auto gekauft.}{He bought a car.}
+            \ExampleItem{Sie braucht einen Termin.}{She needs an appointment.}
+            \ExampleItem{Wir haben einen Arzt gefunden.}{We found a doctor.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Nullartikel}{Zero Article}
+    \GermanText{In bestimmten Fällen steht kein Artikel, besonders bei Stoffnamen, Berufen nach \textit{sein} oder bei abstrakten Begriffen.}
+    \EnglishText{In certain cases, no article is used, especially with materials, professions after \textit{sein}, or abstract concepts.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Er ist Arzt.}{He is a doctor.}
+            \ExampleItem{Ich trinke Wasser.}{I drink water.}
+            \ExampleItem{Liebe ist wichtig.}{Love is important.}
+            \ExampleItem{Wir lernen Deutsch.}{We are learning German.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Negation mit \textit{kein}}{Negation with \textit{kein}}
+    \GermanText{\textit{Kein} verneint Nomen mit unbestimmtem Artikel oder ohne Artikel.}
+    \EnglishText{\textit{Kein} negates nouns with an indefinite article or without an article.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich habe kein Auto.}{I do not have a car.}
+            \ExampleItem{Sie trinkt keinen Kaffee.}{She does not drink coffee.}
+            \ExampleItem{Er hat keine Zeit.}{He has no time.}
+            \ExampleItem{Wir machen keinen Fehler.}{We are making no mistake.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\section{Pronomen und Artikelwörter {\small (Pronouns and Determiners)}}
+
+\subsection{Personalpronomen {\small (Personal Pronouns)}}
+
+\begin{grammarentry}{Personalpronomen im Nominativ, Akkusativ und Dativ}{Personal Pronouns in Nominative, Accusative, and Dative}
+    \GermanText{Personalpronomen ersetzen Nomen und verändern ihre Form nach Kasus.}
+    \EnglishText{Personal pronouns replace nouns and change their form according to case.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich kenne ihn gut.}{I know him well.}
+            \ExampleItem{Sie gibt mir das Buch.}{She gives me the book.}
+            \ExampleItem{Wir sehen euch morgen.}{We will see you tomorrow.}
+            \ExampleItem{Kannst du uns helfen?}{Can you help us?}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Possessivartikel}{Possessive Determiners}
+    \GermanText{Possessivartikel zeigen Besitz oder Zugehörigkeit an und passen sich an das Nomen an.}
+    \EnglishText{Possessive determiners show possession or belonging and agree with the noun.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Das ist mein Buch.}{That is my book.}
+            \ExampleItem{Sie sucht ihre Tasche.}{She is looking for her bag.}
+            \ExampleItem{Wir besuchen unsere Freunde.}{We are visiting our friends.}
+            \ExampleItem{Er hat seinen Pass verloren.}{He lost his passport.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Demonstrativartikel und Demonstrativpronomen}{Demonstrative Determiners and Pronouns}
+    \GermanText{Demonstrativformen heben etwas hervor oder verweisen auf etwas Bestimmtes.}
+    \EnglishText{Demonstrative forms emphasize something or refer to something specific.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Dieser Film ist interessant.}{This film is interesting.}
+            \ExampleItem{Diese Frage ist wichtig.}{This question is important.}
+            \ExampleItem{Das gefällt mir nicht.}{I do not like that.}
+            \ExampleItem{Derjenige, der fragt, lernt.}{The one who asks learns.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Unbestimmte Pronomen und Artikel}{Indefinite Pronouns and Determiners}
+    \GermanText{Diese Formen bezeichnen unbestimmte Personen, Dinge oder Mengen.}
+    \EnglishText{These forms refer to indefinite persons, things, or quantities.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Jemand wartet vor der Tür.}{Someone is waiting at the door.}
+            \ExampleItem{Niemand wusste die Antwort.}{Nobody knew the answer.}
+            \ExampleItem{Einige Studenten fehlen heute.}{Some students are absent today.}
+            \ExampleItem{Alles war ruhig.}{Everything was quiet.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Pronominaladverbien}{Pronominal Adverbs}
+    \GermanText{Pronominaladverbien ersetzen Präposition + Sache. Sie sind im Deutschen sehr häufig.}
+    \EnglishText{Pronominal adverbs replace preposition + thing. They are very common in German.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Daran denke ich oft.}{I often think about that.}
+            \ExampleItem{Darüber sprechen wir morgen.}{We will talk about that tomorrow.}
+            \ExampleItem{Womit schreibst du?}{What are you writing with?}
+            \ExampleItem{Darauf freue ich mich.}{I am looking forward to that.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Relativpronomen}{Relative Pronouns}
+    \GermanText{Relativpronomen leiten Relativsätze ein und beziehen sich auf ein Nomen im Hauptsatz.}
+    \EnglishText{Relative pronouns introduce relative clauses and refer back to a noun in the main clause.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Das ist die Frau, die hier arbeitet.}{That is the woman who works here.}
+            \ExampleItem{Das ist der Mann, den ich gestern gesehen habe.}{That is the man I saw yesterday.}
+            \ExampleItem{Das ist das Haus, in dem ich wohne.}{That is the house in which I live.}
+            \ExampleItem{Das ist die Kollegin, deren Bruder Arzt ist.}{That is the colleague whose brother is a doctor.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\section{Adjektive und Steigerung {\small (Adjectives and Comparison)}}
+
+\subsection{Adjektive {\small (Adjectives)}}
+
+\begin{grammarentry}{Adjektive und Adjektivdeklination}{Adjectives and Adjective Declension}
+    \GermanText{Adjektive beschreiben Eigenschaften. Vor Nomen werden sie dekliniert, nach \textit{sein} oder \textit{werden} bleiben sie unverändert.}
+    \EnglishText{Adjectives describe qualities. Before nouns they are declined; after \textit{sein} or \textit{werden} they remain unchanged.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Das ist ein interessantes Buch.}{That is an interesting book.}
+            \ExampleItem{Sie trägt einen langen Mantel.}{She is wearing a long coat.}
+            \ExampleItem{Der Film war spannend.}{The film was exciting.}
+            \ExampleItem{Wir wohnen in einer kleinen Wohnung.}{We live in a small apartment.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Komparativ}{Comparative}
+    \GermanText{Der Komparativ vergleicht zwei Dinge oder Personen miteinander.}
+    \EnglishText{The comparative compares two things or people.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Dieses Buch ist interessanter als das andere.}{This book is more interesting than the other one.}
+            \ExampleItem{Er arbeitet schneller als ich.}{He works faster than I do.}
+            \ExampleItem{Die Aufgabe ist leichter als erwartet.}{The task is easier than expected.}
+            \ExampleItem{Heute ist es wärmer als gestern.}{Today it is warmer than yesterday.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Superlativ}{Superlative}
+    \GermanText{Der Superlativ bezeichnet den höchsten Grad einer Eigenschaft.}
+    \EnglishText{The superlative expresses the highest degree of a quality.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Das ist der beste Vorschlag.}{That is the best suggestion.}
+            \ExampleItem{Sie ist am schnellsten gelaufen.}{She ran the fastest.}
+            \ExampleItem{Dieser Weg ist der kürzeste.}{This path is the shortest.}
+            \ExampleItem{Heute ist es am kältesten.}{Today it is the coldest.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Vergleichsformen mit \textit{so ... wie} und \textit{als}}{Comparison with \textit{so ... wie} and \textit{als}}
+    \GermanText{Mit \textit{so ... wie} vergleicht man Gleichheit, mit \textit{als} Ungleichheit.}
+    \EnglishText{\textit{So ... wie} is used for equality, and \textit{als} for inequality.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Er ist so groß wie sein Bruder.}{He is as tall as his brother.}
+            \ExampleItem{Sie spricht besser Deutsch als ich.}{She speaks German better than I do.}
+            \ExampleItem{Das Auto ist nicht so teuer wie gedacht.}{The car is not as expensive as thought.}
+            \ExampleItem{Heute bin ich müder als gestern.}{Today I am more tired than yesterday.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Vergleich mit \textit{je ... desto/umso}}{Comparison with \textit{the ... the}}
+    \GermanText{Diese Struktur zeigt eine proportionale Entwicklung zwischen zwei Sachverhalten.}
+    \EnglishText{This structure shows a proportional development between two situations.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Je mehr du lernst, desto sicherer wirst du.}{The more you study, the more confident you become.}
+            \ExampleItem{Je länger ich warte, umso ungeduldiger werde ich.}{The longer I wait, the more impatient I become.}
+            \ExampleItem{Je früher wir losfahren, desto besser ist es.}{The earlier we leave, the better it is.}
+            \ExampleItem{Je älter er wird, desto ruhiger wird er.}{The older he gets, the calmer he becomes.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Partizip I und Partizip II als Adjektive}{Present and Past Participles as Adjectives}
+    \GermanText{Partizipien können wie Adjektive verwendet werden und sind besonders in schriftlicher Sprache häufig.}
+    \EnglishText{Participles can be used like adjectives and are especially common in written language.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{das schlafende Kind}{the sleeping child}
+            \ExampleItem{die steigenden Preise}{the rising prices}
+            \ExampleItem{der geschriebene Text}{the written text}
+            \ExampleItem{die geschlossene Tür}{the closed door}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Erweiterte Partizipialattribute}{Extended Participial Attributes}
+    \GermanText{Erweiterte Partizipialattribute verdichten Informationen und sind typisch für formellere Texte.}
+    \EnglishText{Extended participial attributes condense information and are typical of more formal texts.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{der in Wien geborene Musiker}{the musician born in Vienna}
+            \ExampleItem{die gestern abgeschickte E-Mail}{the email sent yesterday}
+            \ExampleItem{die seit Jahren steigenden Kosten}{the costs rising for years}
+            \ExampleItem{die von vielen Experten kritisierte Entscheidung}{the decision criticized by many experts}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+
+\section{Adverbien {\small (Adverbs)}}
+
+\subsection{Funktion und Stellung der Adverbien {\small (Function and Position of Adverbs)}}
+
+\begin{grammarentry}{Adverbien im Satz}{Adverbs in the Sentence}
+    \GermanText{Adverbien beschreiben Umstände einer Handlung oder einer Aussage. Sie können Zeit, Ort, Art und Weise, Grund, Häufigkeit, Grad oder Einschätzung ausdrücken. Anders als Adjektive werden sie nicht dekliniert.}
+    \EnglishText{Adverbs describe circumstances of an action or a statement. They can express time, place, manner, reason, frequency, degree, or assessment. Unlike adjectives, they are not declined.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich komme heute.}{I am coming today.}
+            \ExampleItem{Sie arbeitet dort.}{She works there.}
+            \ExampleItem{Er spricht langsam.}{He speaks slowly.}
+            \ExampleItem{Wahrscheinlich regnet es morgen.}{It will probably rain tomorrow.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Stellung der Adverbien}{Position of Adverbs}
+    \GermanText{Adverbien können im Vorfeld oder im Mittelfeld stehen. Wenn ein Adverb am Satzanfang steht, steht das konjugierte Verb direkt danach.}
+    \EnglishText{Adverbs can appear in the first position or in the middle field. If an adverb stands at the beginning of the sentence, the conjugated verb comes directly after it.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich lerne heute Deutsch.}{I am learning German today.}
+            \ExampleItem{Heute lerne ich Deutsch.}{Today I am learning German.}
+            \ExampleItem{Morgen muss ich früh aufstehen.}{Tomorrow I have to get up early.}
+            \ExampleItem{Leider habe ich keine Zeit.}{Unfortunately I have no time.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\subsection{Zeitadverbien {\small (Adverbs of Time)}}
+
+\begin{grammarentry}{Zeitadverbien}{Adverbs of Time}
+    \GermanText{Zeitadverbien geben an, wann, wie oft, wie lange oder seit wann etwas passiert. Sie beantworten Fragen wie \textit{wann?}, \textit{wie oft?}, \textit{wie lange?} und \textit{seit wann?}.}
+    \EnglishText{Adverbs of time indicate when, how often, how long, or since when something happens. They answer questions such as \textit{when?}, \textit{how often?}, \textit{how long?}, and \textit{since when?}.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich habe gestern viel gelernt.}{I studied a lot yesterday.}
+            \ExampleItem{Wir treffen uns morgen.}{We will meet tomorrow.}
+            \ExampleItem{Sie arbeitet schon lange hier.}{She has been working here for a long time.}
+            \ExampleItem{Er ruft mich manchmal an.}{He sometimes calls me.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Adverbien für Zeitpunkt}{Adverbs for a Point in Time}
+    \GermanText{Diese Adverbien sagen, wann etwas passiert: \textit{heute}, \textit{gestern}, \textit{morgen}, \textit{jetzt}, \textit{damals}, \textit{früher}, \textit{später}, \textit{bald}, \textit{sofort}.}
+    \EnglishText{These adverbs say when something happens: \textit{today}, \textit{yesterday}, \textit{tomorrow}, \textit{now}, \textit{back then}, \textit{earlier}, \textit{later}, \textit{soon}, \textit{immediately}.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Heute bleibe ich zu Hause.}{Today I am staying at home.}
+            \ExampleItem{Gestern war ich sehr müde.}{Yesterday I was very tired.}
+            \ExampleItem{Morgen schreibe ich eine Prüfung.}{Tomorrow I am taking an exam.}
+            \ExampleItem{Damals wohnte ich in einer kleinen Wohnung.}{Back then I lived in a small apartment.}
+            \ExampleItem{Ich komme später zurück.}{I will come back later.}
+            \ExampleItem{Bitte ruf mich sofort an.}{Please call me immediately.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Adverbien für Häufigkeit}{Adverbs of Frequency}
+    \GermanText{Diese Adverbien sagen, wie oft etwas passiert: \textit{nie}, \textit{selten}, \textit{manchmal}, \textit{oft}, \textit{meistens}, \textit{immer}.}
+    \EnglishText{These adverbs say how often something happens: \textit{never}, \textit{rarely}, \textit{sometimes}, \textit{often}, \textit{usually}, \textit{always}.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich rauche nie.}{I never smoke.}
+            \ExampleItem{Er kommt selten zu spät.}{He rarely comes late.}
+            \ExampleItem{Manchmal gehe ich abends spazieren.}{Sometimes I go for a walk in the evening.}
+            \ExampleItem{Ich lese oft deutsche Texte.}{I often read German texts.}
+            \ExampleItem{Meistens stehe ich früh auf.}{I usually get up early.}
+            \ExampleItem{Sie ist immer freundlich.}{She is always friendly.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Skala der Häufigkeit}{Scale of Frequency}
+    \GermanText{Häufigkeitsadverbien kann man ungefähr von null bis hundert Prozent ordnen: \textit{nie / niemals}, \textit{kaum / sehr selten / fast nie}, \textit{manchmal / ab und zu / hin und wieder}, \textit{oft / häufig}, \textit{meistens / fast immer / zumeist}, \textit{immer / ständig}.}
+    \EnglishText{Adverbs of frequency can roughly be ordered from zero to one hundred percent: \textit{never}, \textit{hardly ever}, \textit{sometimes}, \textit{often}, \textit{usually}, \textit{always}.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich gehe nie ins Fitnessstudio.}{I never go to the gym.}
+            \ExampleItem{Ich gehe kaum ins Fitnessstudio.}{I hardly ever go to the gym.}
+            \ExampleItem{Ich gehe manchmal ins Fitnessstudio.}{I sometimes go to the gym.}
+            \ExampleItem{Ich gehe oft ins Fitnessstudio.}{I often go to the gym.}
+            \ExampleItem{Ich gehe meistens ins Fitnessstudio.}{I usually go to the gym.}
+            \ExampleItem{Ich gehe immer ins Fitnessstudio.}{I always go to the gym.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Adverbien für Dauer}{Adverbs of Duration}
+    \GermanText{Diese Adverbien sagen, wie lange etwas dauert: \textit{lange}, \textit{kurz}, \textit{dauerhaft}, \textit{vorübergehend}, \textit{ständig}, \textit{den ganzen Tag}.}
+    \EnglishText{These adverbs say how long something lasts: \textit{for a long time}, \textit{briefly}, \textit{permanently}, \textit{temporarily}, \textit{constantly}, \textit{all day}.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich habe lange gewartet.}{I waited for a long time.}
+            \ExampleItem{Wir haben nur kurz gesprochen.}{We only talked briefly.}
+            \ExampleItem{Sie bleibt vorübergehend bei ihrer Schwester.}{She is temporarily staying with her sister.}
+            \ExampleItem{Er arbeitet den ganzen Tag.}{He works all day.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Adverbien für Wiederholung}{Adverbs of Repetition}
+    \GermanText{Diese Adverbien zeigen, dass etwas wieder oder mehrmals passiert: \textit{wieder}, \textit{nochmals}, \textit{erneut}, \textit{mehrmals}, \textit{oftmals}.}
+    \EnglishText{These adverbs show that something happens again or several times: \textit{again}, \textit{once again}, \textit{again/anew}, \textit{several times}, \textit{often}.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich habe ihn wieder gesehen.}{I saw him again.}
+            \ExampleItem{Sie hat die Prüfung nochmals gemacht.}{She took the exam once again.}
+            \ExampleItem{Wir haben das Thema erneut besprochen.}{We discussed the topic again.}
+            \ExampleItem{Er hat mich mehrmals angerufen.}{He called me several times.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{
+\textit{schon}, \textit{noch}, \textit{erst}, \textit{bereits}
+}{Already, Still, Only, Already}
+    \GermanText{Diese kleinen Zeitadverbien sind sehr wichtig, weil sie die zeitliche Perspektive ändern. \textit{Schon} und \textit{bereits} bedeuten, dass etwas früher als erwartet passiert ist. \textit{Noch} bedeutet, dass etwas weiterhin gilt. \textit{Erst} bedeutet, dass etwas später oder weniger ist als erwartet.}
+    \EnglishText{These small time adverbs are very important because they change the temporal perspective. \textit{Schon} and \textit{bereits} mean that something happened earlier than expected. \textit{Noch} means that something is still true. \textit{Erst} means that something is later or less than expected.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich bin schon fertig.}{I am already finished.}
+            \ExampleItem{Ich bin noch nicht fertig.}{I am not finished yet.}
+            \ExampleItem{Es ist erst acht Uhr.}{It is only eight o'clock.}
+            \ExampleItem{Der Zug ist bereits abgefahren.}{The train has already departed.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\subsection{Lokal-, Modal-, Kausal- und Gradadverbien {\small (Other Types of Adverbs)}}
+
+\begin{grammarentry}{Lokaladverbien}{Adverbs of Place}
+    \GermanText{Lokaladverbien geben Ort oder Richtung an. Typische Formen sind \textit{hier}, \textit{dort}, \textit{oben}, \textit{unten}, \textit{links}, \textit{rechts}, \textit{drinnen}, \textit{draußen}, \textit{hin} und \textit{her}.}
+    \EnglishText{Adverbs of place indicate location or direction. Typical forms are \textit{here}, \textit{there}, \textit{upstairs/above}, \textit{downstairs/below}, \textit{left}, \textit{right}, \textit{inside}, \textit{outside}, \textit{to there}, and \textit{to here}.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich warte hier.}{I am waiting here.}
+            \ExampleItem{Der Schlüssel liegt dort.}{The key is lying there.}
+            \ExampleItem{Oben ist es sehr warm.}{It is very warm upstairs.}
+            \ExampleItem{Komm bitte her.}{Please come here.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Modaladverbien}{Adverbs of Manner}
+    \GermanText{Modaladverbien beschreiben, wie etwas geschieht. Sie beantworten die Frage \textit{wie?}.}
+    \EnglishText{Adverbs of manner describe how something happens. They answer the question \textit{how?}.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Er spricht langsam.}{He speaks slowly.}
+            \ExampleItem{Sie arbeitet sorgfältig.}{She works carefully.}
+            \ExampleItem{Das Kind lacht laut.}{The child laughs loudly.}
+            \ExampleItem{Wir haben gemeinsam gelernt.}{We studied together.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Kausaladverbien}{Causal Adverbs}
+    \GermanText{Kausaladverbien drücken Grund, Folge oder Zweck aus. Wichtige Wörter sind \textit{deshalb}, \textit{darum}, \textit{deswegen}, \textit{folglich} und \textit{trotzdem}.}
+    \EnglishText{Causal adverbs express reason, consequence, or purpose. Important words are \textit{therefore}, \textit{that's why}, \textit{therefore}, \textit{consequently}, and \textit{nevertheless}.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich bin krank, deshalb bleibe ich zu Hause.}{I am sick; therefore I am staying at home.}
+            \ExampleItem{Er hatte wenig Zeit, darum war er nervös.}{He had little time; that's why he was nervous.}
+            \ExampleItem{Es regnet. Trotzdem gehe ich spazieren.}{It is raining. Nevertheless, I am going for a walk.}
+            \ExampleItem{Sie hat viel gelernt, folglich hat sie bestanden.}{She studied a lot; consequently, she passed.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Grad- und Fokusadverbien}{Adverbs of Degree and Focus}
+    \GermanText{Gradadverbien verstärken oder schwächen eine Aussage. Fokusadverbien heben einen Teil der Aussage hervor.}
+    \EnglishText{Adverbs of degree strengthen or weaken a statement. Focus adverbs emphasize one part of the statement.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Das ist sehr wichtig.}{That is very important.}
+            \ExampleItem{Ich bin ziemlich müde.}{I am quite tired.}
+            \ExampleItem{Er hat nur zehn Minuten Zeit.}{He only has ten minutes.}
+            \ExampleItem{Sogar mein Bruder hat geholfen.}{Even my brother helped.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Satzadverbien}{Sentence Adverbs}
+    \GermanText{Satzadverbien beziehen sich auf die ganze Aussage und zeigen Einschätzung, Sicherheit, Unsicherheit oder Haltung.}
+    \EnglishText{Sentence adverbs refer to the whole statement and show assessment, certainty, uncertainty, or attitude.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Wahrscheinlich kommt er später.}{He will probably come later.}
+            \ExampleItem{Vielleicht habe ich mich geirrt.}{Maybe I was wrong.}
+            \ExampleItem{Leider habe ich den Termin vergessen.}{Unfortunately I forgot the appointment.}
+            \ExampleItem{Zum Glück ist nichts passiert.}{Fortunately nothing happened.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\subsection{Besondere Adverbien und Wortpaare {\small (Special Adverbs and Pairs)}}
+
+\begin{grammarentry}{
+\textit{dahin}, \textit{daher}, \textit{hierhin}, \textit{hierher}
+}{There/Here with Direction}
+    \GermanText{Bei Richtungsadverbien ist der Unterschied zwischen \textit{hin} und \textit{her} wichtig. \textit{Hin} bedeutet Bewegung vom Sprecher weg, \textit{her} bedeutet Bewegung zum Sprecher hin.}
+    \EnglishText{With directional adverbs, the difference between \textit{hin} and \textit{her} is important. \textit{Hin} means movement away from the speaker; \textit{her} means movement toward the speaker.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich gehe dahin.}{I am going there.}
+            \ExampleItem{Komm bitte hierher.}{Please come here.}
+            \ExampleItem{Woher kommst du?}{Where do you come from?}
+            \ExampleItem{Wohin gehst du?}{Where are you going?}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Pronominaladverbien als Adverbien}{Pronominal Adverbs as Adverbs}
+    \GermanText{Pronominaladverbien wie \textit{darauf}, \textit{damit}, \textit{woran} und \textit{worüber} verbinden eine Präposition mit \textit{da-} oder \textit{wo-}. Sie beziehen sich meistens auf Sachen, Ideen oder ganze Aussagen.}
+    \EnglishText{Pronominal adverbs such as \textit{darauf}, \textit{damit}, \textit{woran}, and \textit{worüber} combine a preposition with \textit{da-} or \textit{wo-}. They mostly refer to things, ideas, or whole statements.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich warte darauf.}{I am waiting for it.}
+            \ExampleItem{Woran denkst du?}{What are you thinking about?}
+            \ExampleItem{Damit bin ich einverstanden.}{I agree with that.}
+            \ExampleItem{Worüber sprichst du?}{What are you talking about?}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+
+\section{Kasus {\small (Cases)}}
+
+\subsection{Nominativ, Akkusativ, Dativ und Genitiv {\small (Nominative, Accusative, Dative, and Genitive)}}
+
+\begin{grammarentry}{Nominativ}{Nominative}
+    \GermanText{Der Nominativ steht meist beim Subjekt oder nach bestimmten Verben wie \textit{sein}.}
+    \EnglishText{The nominative usually appears with the subject or after certain verbs such as \textit{sein}.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Der Student liest.}{The student is reading.}
+            \ExampleItem{Die Frau ist Ärztin.}{The woman is a doctor.}
+            \ExampleItem{Das Wetter ist schön.}{The weather is nice.}
+            \ExampleItem{Mein Bruder kommt später.}{My brother is coming later.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Akkusativ}{Accusative}
+    \GermanText{Der Akkusativ steht oft beim direkten Objekt und nach bestimmten Präpositionen.}
+    \EnglishText{The accusative often appears with the direct object and after certain prepositions.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich sehe den Mann.}{I see the man.}
+            \ExampleItem{Sie kauft eine Tasche.}{She buys a bag.}
+            \ExampleItem{Wir gehen durch den Park.}{We walk through the park.}
+            \ExampleItem{Er besucht seinen Freund.}{He visits his friend.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Temporaler Akkusativ}{Temporal Accusative}
+    \GermanText{Der temporale Akkusativ drückt Zeitdauer oder Zeitpunkt ohne Präposition aus.}
+    \EnglishText{The temporal accusative expresses duration or time without a preposition.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich warte den ganzen Tag.}{I am waiting the whole day.}
+            \ExampleItem{Er bleibt eine Woche in Wien.}{He stays in Vienna for a week.}
+            \ExampleItem{Wir arbeiten jeden Abend.}{We work every evening.}
+            \ExampleItem{Sie schlief die ganze Nacht nicht.}{She did not sleep all night.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Dativ}{Dative}
+    \GermanText{Der Dativ steht oft beim indirekten Objekt oder nach bestimmten Präpositionen und Verben.}
+    \EnglishText{The dative often appears with the indirect object or after certain prepositions and verbs.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich gebe dem Kind einen Apfel.}{I give the child an apple.}
+            \ExampleItem{Sie hilft ihrem Vater.}{She helps her father.}
+            \ExampleItem{Er wohnt bei seinen Eltern.}{He lives with his parents.}
+            \ExampleItem{Wir danken Ihnen für Ihre Hilfe.}{We thank you for your help.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Freier Dativ}{Free Dative}
+    \GermanText{Der freie Dativ drückt Beteiligung, Interesse oder Betroffenheit aus.}
+    \EnglishText{The free dative expresses involvement, interest, or affectedness.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Mach mir bitte die Tür zu.}{Please close the door for me.}
+            \ExampleItem{Er ist mir zu laut.}{He is too loud for me.}
+            \ExampleItem{Der Hund ist mir weggelaufen.}{My dog ran away on me.}
+            \ExampleItem{Schreib mir bald.}{Write to me soon.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Genitiv}{Genitive}
+    \GermanText{Der Genitiv drückt oft Zugehörigkeit oder nähere Bestimmung aus und erscheint auch nach bestimmten Präpositionen.}
+    \EnglishText{The genitive often expresses possession or specification and also appears after certain prepositions.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Das Auto des Arztes ist neu.}{The doctor's car is new.}
+            \ExampleItem{Wegen des Regens bleiben wir zu Hause.}{Because of the rain we stay at home.}
+            \ExampleItem{Trotz des Problems machten wir weiter.}{Despite the problem we continued.}
+            \ExampleItem{Die Bedeutung dieser Frage ist groß.}{The importance of this question is great.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\section{Präpositionen {\small (Prepositions)}}
+
+\subsection{Präpositionen nach Kasus und Bedeutung {\small (Prepositions by Case and Meaning)}}
+
+\begin{grammarentry}{Präpositionen mit Dativ}{Prepositions with Dative}
+    \GermanText{Einige Präpositionen verlangen immer den Dativ.}
+    \EnglishText{Some prepositions always require the dative.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich wohne bei meinen Eltern.}{I live with my parents.}
+            \ExampleItem{Sie fährt mit dem Bus.}{She goes by bus.}
+            \ExampleItem{Er kommt aus der Schweiz.}{He comes from Switzerland.}
+            \ExampleItem{Wir sprechen seit dem Morgen darüber.}{We have been talking about it since the morning.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Präpositionen mit Akkusativ}{Prepositions with Accusative}
+    \GermanText{Andere Präpositionen stehen immer mit dem Akkusativ.}
+    \EnglishText{Other prepositions always take the accusative.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Wir gehen durch den Wald.}{We are walking through the forest.}
+            \ExampleItem{Er arbeitet für einen Arzt.}{He works for a doctor.}
+            \ExampleItem{Sie geht ohne ihren Bruder.}{She goes without her brother.}
+            \ExampleItem{Ich komme gegen acht Uhr.}{I am coming around eight o'clock.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Präpositionen mit Dativ und Akkusativ}{Two-Way Prepositions}
+    \GermanText{Wechselpräpositionen stehen mit Dativ bei Ort und mit Akkusativ bei Richtung.}
+    \EnglishText{Two-way prepositions take the dative for location and the accusative for direction.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Das Buch liegt auf dem Tisch.}{The book is lying on the table.}
+            \ExampleItem{Ich lege das Buch auf den Tisch.}{I put the book on the table.}
+            \ExampleItem{Sie sitzt in der Küche.}{She is sitting in the kitchen.}
+            \ExampleItem{Er geht in die Küche.}{He goes into the kitchen.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Präpositionen mit Genitiv}{Prepositions with Genitive}
+    \GermanText{Einige Präpositionen verlangen den Genitiv, besonders in formeller Sprache.}
+    \EnglishText{Some prepositions require the genitive, especially in formal language.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Während des Gesprächs blieb er ruhig.}{During the conversation he remained calm.}
+            \ExampleItem{Trotz des Wetters gingen wir spazieren.}{Despite the weather we went for a walk.}
+            \ExampleItem{Wegen eines Fehlers wurde alles verschoben.}{Because of an error everything was postponed.}
+            \ExampleItem{Innerhalb eines Jahres hat sich viel verändert.}{Within one year a lot changed.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Lokale Präpositionen}{Local Prepositions}
+    \GermanText{Lokale Präpositionen beschreiben Ort oder Richtung.}
+    \EnglishText{Local prepositions describe place or direction.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Das Bild hängt an der Wand.}{The picture is hanging on the wall.}
+            \ExampleItem{Er geht an die Wand.}{He goes to the wall.}
+            \ExampleItem{Sie steht vor dem Haus.}{She is standing in front of the house.}
+            \ExampleItem{Wir laufen hinter das Gebäude.}{We run behind the building.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Temporale Präpositionen}{Temporal Prepositions}
+    \GermanText{Temporale Präpositionen ordnen Ereignisse zeitlich ein.}
+    \EnglishText{Temporal prepositions place events in time.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Am Montag habe ich keine Zeit.}{On Monday I have no time.}
+            \ExampleItem{Im Winter bleibe ich lieber zu Hause.}{In winter I prefer to stay at home.}
+            \ExampleItem{Seit einem Jahr lernt er Deutsch.}{He has been learning German for a year.}
+            \ExampleItem{Nach dem Essen trinken wir Tee.}{After the meal we drink tea.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Kausale und modale Präpositionen}{Causal and Modal Prepositions}
+    \GermanText{Diese Präpositionen drücken Grund oder Art und Weise aus.}
+    \EnglishText{These prepositions express reason or manner.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Wegen der Krankheit blieb sie zu Hause.}{Because of the illness she stayed at home.}
+            \ExampleItem{Dank deiner Hilfe war alles einfacher.}{Thanks to your help everything was easier.}
+            \ExampleItem{Mit großer Freude nahm er das Angebot an.}{He accepted the offer with great joy.}
+            \ExampleItem{Ohne viel zu sagen, ging er weg.}{Without saying much, he left.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\section{Satzbau {\small (Sentence Structure)}}
+
+\subsection{Wortstellung und Satzarten {\small (Word Order and Sentence Types)}}
+
+\begin{grammarentry}{Aussagesatz und Verbzweitstellung}{Declarative Sentences and Verb-Second Position}
+    \GermanText{Im Hauptsatz steht das konjugierte Verb normalerweise an zweiter Stelle.}
+    \EnglishText{In the main clause, the conjugated verb normally stands in second position.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich gehe heute ins Kino.}{I am going to the cinema today.}
+            \ExampleItem{Heute gehe ich ins Kino.}{Today I am going to the cinema.}
+            \ExampleItem{Morgen arbeitet er zu Hause.}{Tomorrow he is working from home.}
+            \ExampleItem{Seit gestern wohnt sie in Wien.}{Since yesterday she has been living in Vienna.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Fragesatz}{Interrogative Sentence}
+    \GermanText{Im Entscheidungsfragesatz steht das Verb an erster Stelle, bei W-Fragen nach dem Fragewort.}
+    \EnglishText{In yes-no questions, the verb stands first; in wh-questions, it follows the question word.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Kommst du morgen?}{Are you coming tomorrow?}
+            \ExampleItem{Hast du das gesehen?}{Did you see that?}
+            \ExampleItem{Warum bist du so müde?}{Why are you so tired?}
+            \ExampleItem{Wann beginnt der Kurs?}{When does the course begin?}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Satzklammer}{Sentence Bracket}
+    \GermanText{Viele deutsche Sätze haben eine Satzklammer: ein Verbteil steht früh, der andere am Ende.}
+    \EnglishText{Many German sentences have a sentence bracket: one verb part appears early, the other at the end.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich habe das Buch gestern gekauft.}{I bought the book yesterday.}
+            \ExampleItem{Er wird morgen ankommen.}{He will arrive tomorrow.}
+            \ExampleItem{Sie möchte heute nicht ausgehen.}{She does not want to go out today.}
+            \ExampleItem{Wir haben lange darüber nachgedacht.}{We thought about it for a long time.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Stellung von Satzgliedern}{Position of Sentence Elements}
+    \GermanText{Die Reihenfolge im Mittelfeld ist flexibel, aber Informationsstruktur und Betonung spielen eine große Rolle.}
+    \EnglishText{The order in the middle field is flexible, but information structure and emphasis play a major role.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich habe ihm das Buch gegeben.}{I gave him the book.}
+            \ExampleItem{Ich habe das Buch ihm gegeben.}{I gave the book to him.}
+            \ExampleItem{Heute habe ich ihm das Buch gegeben.}{Today I gave him the book.}
+            \ExampleItem{Wahrscheinlich hat er es schon gelesen.}{He has probably already read it.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Negation mit \textit{nicht} und \textit{kein}}{Negation with \textit{nicht} and \textit{kein}}
+    \GermanText{\textit{Nicht} negiert oft Verben, Adjektive oder Satzteile; \textit{kein} negiert Nomen.}
+    \EnglishText{\textit{Nicht} often negates verbs, adjectives, or parts of the sentence; \textit{kein} negates nouns.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich komme heute nicht.}{I am not coming today.}
+            \ExampleItem{Das ist nicht einfach.}{That is not easy.}
+            \ExampleItem{Ich habe kein Geld.}{I have no money.}
+            \ExampleItem{Sie trinkt keinen Kaffee.}{She drinks no coffee.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Aufforderungssatz}{Imperative Sentence}
+    \GermanText{Der Imperativ drückt Bitte, Aufforderung, Rat oder Befehl aus.}
+    \EnglishText{The imperative expresses a request, instruction, advice, or command.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Komm bitte herein.}{Please come in.}
+            \ExampleItem{Seien Sie vorsichtig.}{Be careful.}
+            \ExampleItem{Nehmt eure Bücher heraus.}{Take out your books.}
+            \ExampleItem{Lass mich in Ruhe.}{Leave me alone.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\section{Nebensätze und Satzverbindungen {\small (Subordinate Clauses and Sentence Connections)}}
+
+\subsection{Grundtypen von Nebensätzen {\small (Basic Types of Subordinate Clauses)}}
+
+\begin{grammarentry}{\textit{dass}-Sätze}{\textit{that}-clauses}
+    \GermanText{\textit{Dass}-Sätze stehen oft nach Verben des Sagens, Denkens, Wissens oder Fühlens.}
+    \EnglishText{\textit{Dass}-clauses often follow verbs of saying, thinking, knowing, or feeling.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich glaube, dass er recht hat.}{I think that he is right.}
+            \ExampleItem{Sie weiß, dass wir kommen.}{She knows that we are coming.}
+            \ExampleItem{Er sagt, dass er keine Zeit hat.}{He says that he has no time.}
+            \ExampleItem{Wir hoffen, dass alles gut wird.}{We hope that everything will turn out well.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{\textit{ob}-Sätze}{\textit{whether}-clauses}
+    \GermanText{\textit{Ob}-Sätze drücken eine indirekte Ja-Nein-Frage aus.}
+    \EnglishText{\textit{Ob}-clauses express an indirect yes-no question.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich weiß nicht, ob er kommt.}{I do not know whether he is coming.}
+            \ExampleItem{Sie fragt, ob ich Zeit habe.}{She asks whether I have time.}
+            \ExampleItem{Wir müssen klären, ob das möglich ist.}{We need to clarify whether that is possible.}
+            \ExampleItem{Er überlegt, ob er umziehen soll.}{He is considering whether he should move.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Indirekte Fragesätze}{Indirect Questions}
+    \GermanText{Indirekte Fragesätze beginnen mit einem Fragewort und haben Verbendstellung.}
+    \EnglishText{Indirect questions begin with a question word and have verb-final order.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich weiß nicht, warum er so spät kommt.}{I do not know why he is coming so late.}
+            \ExampleItem{Sie fragt, wann der Kurs beginnt.}{She asks when the course starts.}
+            \ExampleItem{Er erklärt, wie das Gerät funktioniert.}{He explains how the device works.}
+            \ExampleItem{Wir wissen nicht, wo sie wohnt.}{We do not know where she lives.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Relativsätze}{Relative Clauses}
+    \GermanText{Relativsätze geben zusätzliche Informationen zu einem Nomen.}
+    \EnglishText{Relative clauses provide additional information about a noun.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Das ist der Mann, der hier arbeitet.}{That is the man who works here.}
+            \ExampleItem{Ich kenne die Frau, die dort steht.}{I know the woman who is standing there.}
+            \ExampleItem{Das ist das Buch, das du suchst.}{That is the book you are looking for.}
+            \ExampleItem{Wir besuchen Freunde, die in Graz wohnen.}{We are visiting friends who live in Graz.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Relativsätze mit Präposition}{Relative Clauses with Prepositions}
+    \GermanText{Wenn das Bezugswort eine Präposition verlangt, erscheint sie im Relativsatz vor dem Relativpronomen.}
+    \EnglishText{If the reference word requires a preposition, it appears before the relative pronoun in the relative clause.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Das ist die Frau, mit der ich gesprochen habe.}{That is the woman I spoke with.}
+            \ExampleItem{Das ist das Thema, über das wir diskutieren.}{That is the topic we are discussing.}
+            \ExampleItem{Hier ist der Stuhl, auf dem ich saß.}{Here is the chair on which I sat.}
+            \ExampleItem{Das ist der Grund, aus dem er gegangen ist.}{That is the reason why he left.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Relativsätze im Genitiv}{Genitive Relative Clauses}
+    \GermanText{Mit \textit{dessen} und \textit{deren} drückt man Besitz oder Zugehörigkeit im Relativsatz aus.}
+    \EnglishText{With \textit{dessen} and \textit{deren}, one expresses possession or belonging in a relative clause.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Das ist der Mann, dessen Auto gestohlen wurde.}{That is the man whose car was stolen.}
+            \ExampleItem{Sie ist die Frau, deren Bruder Arzt ist.}{She is the woman whose brother is a doctor.}
+            \ExampleItem{Das ist das Kind, dessen Mutter Lehrerin ist.}{That is the child whose mother is a teacher.}
+            \ExampleItem{Wir kennen den Autor, dessen Buch berühmt wurde.}{We know the author whose book became famous.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Infinitivsätze mit \textit{zu}}{Infinitive Clauses with \textit{zu}}
+    \GermanText{Infinitivsätze mit \textit{zu} verdichten Informationen und treten oft nach bestimmten Verben, Adjektiven und Nomen auf.}
+    \EnglishText{Infinitive clauses with \textit{zu} condense information and often occur after certain verbs, adjectives, and nouns.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich versuche, pünktlich zu kommen.}{I try to come on time.}
+            \ExampleItem{Er hofft, die Prüfung zu bestehen.}{He hopes to pass the exam.}
+            \ExampleItem{Es ist wichtig, genug zu schlafen.}{It is important to sleep enough.}
+            \ExampleItem{Sie hat keine Lust, heute zu kochen.}{She does not feel like cooking today.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Verkürzte Relativsätze und Partizipialkonstruktionen}{Reduced Relative Clauses and Participial Constructions}
+    \GermanText{In schriftlichen Texten werden Relativsätze oft durch Partizipialkonstruktionen verkürzt.}
+    \EnglishText{In written texts, relative clauses are often reduced by participial constructions.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{die gestern angekommenen Gäste}{the guests who arrived yesterday}
+            \ExampleItem{die im Zentrum liegende Wohnung}{the apartment located in the center}
+            \ExampleItem{die von vielen kritisierte Entscheidung}{the decision criticized by many}
+            \ExampleItem{die ständig steigenden Preise}{the constantly rising prices}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\subsection{Adverbiale Nebensätze {\small (Adverbial Clauses)}}
+
+\begin{grammarentry}{Kausale Nebensätze}{Causal Clauses}
+    \GermanText{Kausale Nebensätze geben einen Grund an.}
+    \EnglishText{Causal clauses express a reason.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich bleibe zu Hause, weil ich krank bin.}{I stay at home because I am ill.}
+            \ExampleItem{Da es regnet, nehmen wir ein Taxi.}{Since it is raining, we take a taxi.}
+            \ExampleItem{Weil er müde war, ging er früh ins Bett.}{Because he was tired, he went to bed early.}
+            \ExampleItem{Da ich keine Zeit hatte, sagte ich ab.}{Since I had no time, I canceled.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Konzessive Nebensätze}{Concessive Clauses}
+    \GermanText{Konzessive Nebensätze drücken einen Gegensatz oder eine Einschränkung aus.}
+    \EnglishText{Concessive clauses express contrast or concession.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Obwohl es spät war, arbeitete sie weiter.}{Although it was late, she kept working.}
+            \ExampleItem{Auch wenn du recht hast, musst du ruhig bleiben.}{Even if you are right, you must stay calm.}
+            \ExampleItem{Obgleich er krank war, kam er zur Arbeit.}{Although he was ill, he came to work.}
+            \ExampleItem{Selbst wenn es regnet, gehen wir spazieren.}{Even if it rains, we will go for a walk.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Konditionale Nebensätze}{Conditional Clauses}
+    \GermanText{Konditionale Nebensätze nennen eine Bedingung.}
+    \EnglishText{Conditional clauses state a condition.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Wenn ich Zeit habe, komme ich vorbei.}{If I have time, I will come by.}
+            \ExampleItem{Falls du Hilfe brauchst, ruf mich an.}{If you need help, call me.}
+            \ExampleItem{Sofern alles klappt, reisen wir morgen ab.}{Provided everything works out, we leave tomorrow.}
+            \ExampleItem{Wenn er fragt, sage ich die Wahrheit.}{If he asks, I will tell the truth.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Modale Nebensätze}{Modal Clauses}
+    \GermanText{Modale Nebensätze beschreiben die Art und Weise eines Vorgangs.}
+    \EnglishText{Modal clauses describe the manner in which something happens.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Er sah mich an, als ob er mich kennen würde.}{He looked at me as if he knew me.}
+            \ExampleItem{Sie spricht, indem sie langsam und deutlich formuliert.}{She speaks by formulating slowly and clearly.}
+            \ExampleItem{Ohne dass er etwas sagte, ging er weg.}{Without saying anything, he left.}
+            \ExampleItem{Anstatt dass sie wartet, beginnt sie sofort.}{Instead of waiting, she starts immediately.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Temporale Nebensätze}{Temporal Clauses}
+    \GermanText{Temporale Nebensätze ordnen Handlungen zeitlich.}
+    \EnglishText{Temporal clauses arrange actions in time.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Als ich klein war, wohnte ich auf dem Land.}{When I was little, I lived in the countryside.}
+            \ExampleItem{Wenn ich nach Hause komme, koche ich.}{When I come home, I cook.}
+            \ExampleItem{Nachdem wir gegessen hatten, gingen wir spazieren.}{After we had eaten, we went for a walk.}
+            \ExampleItem{Bevor du gehst, ruf mich bitte an.}{Before you go, please call me.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{\textit{seitdem}, \textit{bis}, \textit{sobald}, \textit{solange}, \textit{während}}{Specific Temporal Connectors}
+    \GermanText{Diese Konjunktionen geben genauere zeitliche Beziehungen an.}
+    \EnglishText{These conjunctions express more specific temporal relations.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Seitdem ich hier wohne, bin ich ruhiger.}{Since I have lived here, I have become calmer.}
+            \ExampleItem{Warte hier, bis ich zurückkomme.}{Wait here until I come back.}
+            \ExampleItem{Sobald er ankommt, beginnen wir.}{As soon as he arrives, we begin.}
+            \ExampleItem{Solange du lernst, wirst du Fortschritte machen.}{As long as you study, you will make progress.}
+            \ExampleItem{Während ich arbeite, höre ich Musik.}{While I work, I listen to music.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Konsekutive Nebensätze}{Consecutive Clauses}
+    \GermanText{Konsekutive Nebensätze zeigen eine Folge oder ein Ergebnis.}
+    \EnglishText{Consecutive clauses show a consequence or result.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Er war so müde, dass er sofort einschlief.}{He was so tired that he fell asleep immediately.}
+            \ExampleItem{Sie sprach so leise, dass niemand sie verstand.}{She spoke so quietly that nobody understood her.}
+            \ExampleItem{Es war zu spät, als dass wir noch hätten beginnen können.}{It was too late for us to still begin.}
+            \ExampleItem{Der Film war so spannend, dass wir die Zeit vergaßen.}{The film was so exciting that we forgot the time.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Adversative Nebensätze und Verbindungen}{Adversative Clauses and Connections}
+    \GermanText{Adversative Verbindungen stellen Gegensätze oder Unterschiede dar.}
+    \EnglishText{Adversative structures present contrast or difference.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Während er gern reist, bleibt sie lieber zu Hause.}{While he likes to travel, she prefers to stay at home.}
+            \ExampleItem{Wohingegen sie Ruhe sucht, liebt er das Stadtleben.}{Whereas she seeks peace, he loves city life.}
+            \ExampleItem{Er ist freundlich, aber sehr direkt.}{He is friendly, but very direct.}
+            \ExampleItem{Sie wollte kommen, jedoch war sie krank.}{She wanted to come, however she was ill.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Finalsätze}{Purpose Clauses}
+    \GermanText{Finalsätze drücken Zweck oder Ziel aus.}
+    \EnglishText{Purpose clauses express aim or purpose.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich lerne Deutsch, damit ich in Österreich arbeiten kann.}{I am learning German so that I can work in Austria.}
+            \ExampleItem{Er spart Geld, um ein Auto zu kaufen.}{He is saving money in order to buy a car.}
+            \ExampleItem{Sie wiederholt alles, damit sie nichts vergisst.}{She repeats everything so that she forgets nothing.}
+            \ExampleItem{Wir fahren früh los, um pünktlich anzukommen.}{We leave early in order to arrive on time.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\subsection{Konjunktionen und Konnektoren {\small (Conjunctions and Connectors)}}
+
+\begin{grammarentry}{Nebenordnende und unterordnende Konjunktionen}{Coordinating and Subordinating Conjunctions}
+    \GermanText{Nebenordnende Konjunktionen verbinden gleichrangige Satzteile, unterordnende leiten Nebensätze ein.}
+    \EnglishText{Coordinating conjunctions connect elements of equal rank, subordinating ones introduce subordinate clauses.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Ich komme, aber er bleibt zu Hause.}{I am coming, but he is staying at home.}
+            \ExampleItem{Sie arbeitet viel und lernt zusätzlich Deutsch.}{She works a lot and also learns German.}
+            \ExampleItem{Er geht nicht, weil er krank ist.}{He is not going because he is ill.}
+            \ExampleItem{Obwohl es regnet, fahren wir los.}{Although it is raining, we set off.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Satzverbindende Konnektoren}{Sentence-Linking Connectors}
+    \GermanText{Konnektoren strukturieren Texte und machen Beziehungen zwischen Aussagen klar.}
+    \EnglishText{Connectors structure texts and clarify relationships between statements.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Es regnete. Deshalb blieben wir zu Hause.}{It rained. Therefore we stayed at home.}
+            \ExampleItem{Er war krank. Trotzdem kam er zur Arbeit.}{He was ill. Nevertheless he came to work.}
+            \ExampleItem{Die Idee ist gut. Allerdings ist sie teuer.}{The idea is good. However, it is expensive.}
+            \ExampleItem{Einerseits ist die Lage schwierig, andererseits gibt es Hoffnung.}{On the one hand the situation is difficult, on the other hand there is hope.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Mehrteilige Konnektoren}{Multi-Part Connectors}
+    \GermanText{Mehrteilige Konnektoren sind besonders wichtig für klare Argumentation und gehobenen Stil.}
+    \EnglishText{Multi-part connectors are especially important for clear argumentation and a more advanced style.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Sowohl der Lehrer als auch die Studenten waren zufrieden.}{Both the teacher and the students were satisfied.}
+            \ExampleItem{Er ist zwar jung, aber sehr erfahren.}{He is indeed young, but very experienced.}
+            \ExampleItem{Weder der Arzt noch die Apotheke war erreichbar.}{Neither the doctor nor the pharmacy was reachable.}
+            \ExampleItem{Nicht nur die Grammatik, sondern auch der Wortschatz ist wichtig.}{Not only grammar but also vocabulary is important.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\section{Passiv {\small (Passive Voice)}}
+
+\subsection{Vorgangspassiv und Zustandspassiv {\small (Process Passive and State Passive)}}
+
+\begin{grammarentry}{Vorgangspassiv}{Process Passive}
+    \GermanText{Das Vorgangspassiv beschreibt eine Handlung oder einen Vorgang. Es wird mit \textit{werden} und Partizip II gebildet.}
+    \EnglishText{The process passive describes an action or process. It is formed with \textit{werden} and the past participle.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Das Haus wird gebaut.}{The house is being built.}
+            \ExampleItem{Die E-Mail wurde gestern geschickt.}{The email was sent yesterday.}
+            \ExampleItem{Die Straße wird repariert.}{The street is being repaired.}
+            \ExampleItem{Die Regeln werden erklärt.}{The rules are being explained.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Vorgangspassiv mit Modalverben}{Process Passive with Modal Verbs}
+    \GermanText{Auch im Passiv können Modalverben stehen.}
+    \EnglishText{Modal verbs can also be used in the passive.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Die Aufgabe muss heute erledigt werden.}{The task must be completed today.}
+            \ExampleItem{Das Problem kann schnell gelöst werden.}{The problem can be solved quickly.}
+            \ExampleItem{Der Antrag soll morgen bearbeitet werden.}{The application is supposed to be processed tomorrow.}
+            \ExampleItem{Die Daten dürfen nicht weitergegeben werden.}{The data may not be passed on.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Zustandspassiv}{State Passive}
+    \GermanText{Das Zustandspassiv beschreibt einen Zustand als Ergebnis einer Handlung. Es wird mit \textit{sein} und Partizip II gebildet.}
+    \EnglishText{The state passive describes a state as the result of an action. It is formed with \textit{sein} and the past participle.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Die Tür ist geschlossen.}{The door is closed.}
+            \ExampleItem{Das Fenster ist geöffnet.}{The window is open.}
+            \ExampleItem{Der Brief ist unterschrieben.}{The letter is signed.}
+            \ExampleItem{Die Aufgabe ist erledigt.}{The task is completed.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Passiversatzformen}{Passive Alternatives}
+    \GermanText{Im Deutschen gibt es mehrere aktive oder halbpassive Alternativen zum Passiv.}
+    \EnglishText{In German there are several active or semi-passive alternatives to the passive.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Man baut das Haus neu.}{They are rebuilding the house.}
+            \ExampleItem{Das Haus lässt sich leicht renovieren.}{The house can be renovated easily.}
+            \ExampleItem{Der Bericht ist noch zu schreiben.}{The report still has to be written.}
+            \ExampleItem{Ich bekam die Unterlagen zugeschickt.}{I was sent the documents.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\section{Modalität {\small (Modality)}}
+
+\subsection{Objektive und subjektive Modalität {\small (Objective and Subjective Modality)}}
+
+\begin{grammarentry}{Objektive Bedeutung der Modalverben}{Objective Meaning of Modal Verbs}
+    \GermanText{Hier geht es um reale Fähigkeit, Erlaubnis, Notwendigkeit oder Verpflichtung.}
+    \EnglishText{Here, the focus is on real ability, permission, necessity, or obligation.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Du darfst jetzt gehen.}{You may go now.}
+            \ExampleItem{Ich muss morgen arbeiten.}{I have to work tomorrow.}
+            \ExampleItem{Sie kann sehr schnell lesen.}{She can read very quickly.}
+            \ExampleItem{Wir sollen pünktlich sein.}{We are supposed to be on time.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Subjektive Bedeutung der Modalverben}{Subjective Meaning of Modal Verbs}
+    \GermanText{Subjektive Modalität drückt Vermutung, Unsicherheit oder Schlussfolgerung aus.}
+    \EnglishText{Subjective modality expresses assumption, uncertainty, or inference.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Er muss schon zu Hause sein.}{He must already be at home.}
+            \ExampleItem{Sie dürfte etwa dreißig sein.}{She is probably about thirty.}
+            \ExampleItem{Das kann nicht stimmen.}{That cannot be right.}
+            \ExampleItem{Er will krank sein.}{He claims to be ill.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Satzadverbien der Einschätzung}{Sentence Adverbs of Assessment}
+    \GermanText{Mit Satzadverbien kann man Sicherheit, Unsicherheit oder Bewertung ausdrücken.}
+    \EnglishText{With sentence adverbs one can express certainty, uncertainty, or evaluation.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Wahrscheinlich kommt er später.}{He will probably come later.}
+            \ExampleItem{Offenbar wusste niemand Bescheid.}{Apparently nobody knew about it.}
+            \ExampleItem{Möglicherweise hat sie den Zug verpasst.}{She may have missed the train.}
+            \ExampleItem{Jedenfalls müssen wir handeln.}{In any case, we must act.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\section{Umformungen und Stil {\small (Transformations and Style)}}
+
+\subsection{Stilistische und syntaktische Umformungen {\small (Stylistic and Syntactic Transformations)}}
+
+\begin{grammarentry}{Nominalisierung}{Nominalization}
+    \GermanText{Nominalisierungen verdichten Informationen und sind typisch für wissenschaftliche oder formelle Sprache.}
+    \EnglishText{Nominalizations condense information and are typical of academic or formal language.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{die Entscheidung des Gerichts}{the decision of the court}
+            \ExampleItem{nach der Ankunft}{after the arrival}
+            \ExampleItem{beim Lesen des Textes}{while reading the text}
+            \ExampleItem{die Verbesserung der Situation}{the improvement of the situation}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Verbalisierung}{Verbalization}
+    \GermanText{Bei der Verbalisierung werden nominale Ausdrücke in verbalere Strukturen umgewandelt.}
+    \EnglishText{In verbalization, nominal expressions are transformed into more verbal structures.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Nach der Ankunft begann die Sitzung.}{After the arrival, the meeting began.}
+            \ExampleItem{Nachdem wir angekommen waren, begann die Sitzung.}{After we had arrived, the meeting began.}
+            \ExampleItem{Die Entscheidung des Teams überraschte alle.}{The team's decision surprised everyone.}
+            \ExampleItem{Dass das Team so entschied, überraschte alle.}{That the team decided so surprised everyone.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Umwandlung von Präpositionalgruppen in Nebensätze}{Transformation of Prepositional Phrases into Subordinate Clauses}
+    \GermanText{Präpositionalgruppen können oft durch Nebensätze ersetzt werden.}
+    \EnglishText{Prepositional phrases can often be replaced by subordinate clauses.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Wegen des Regens blieben wir zu Hause.}{Because of the rain we stayed at home.}
+            \ExampleItem{Weil es regnete, blieben wir zu Hause.}{Because it was raining, we stayed at home.}
+            \ExampleItem{Trotz seiner Müdigkeit arbeitete er weiter.}{Despite his tiredness he kept working.}
+            \ExampleItem{Obwohl er müde war, arbeitete er weiter.}{Although he was tired, he kept working.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Umformung von Nebensätzen in Infinitivkonstruktionen}{Transforming Subordinate Clauses into Infinitive Constructions}
+    \GermanText{Wenn das Subjekt gleich bleibt, kann ein Nebensatz oft in einen Infinitivsatz umgeformt werden.}
+    \EnglishText{If the subject remains the same, a subordinate clause can often be transformed into an infinitive clause.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Er ging früh, um pünktlich zu sein.}{He left early in order to be on time.}
+            \ExampleItem{Er ging früh, damit er pünktlich war.}{He left early so that he would be on time.}
+            \ExampleItem{Sie öffnete das Fenster, ohne etwas zu sagen.}{She opened the window without saying anything.}
+            \ExampleItem{Anstatt zu warten, begann sie sofort.}{Instead of waiting, she started immediately.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Umformung von Aktiv und Passiv}{Transformation between Active and Passive}
+    \GermanText{Aktiv und Passiv setzen unterschiedliche Schwerpunkte im Satz.}
+    \EnglishText{Active and passive voice place emphasis differently in a sentence.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Der Arzt untersucht den Patienten.}{The doctor examines the patient.}
+            \ExampleItem{Der Patient wird vom Arzt untersucht.}{The patient is examined by the doctor.}
+            \ExampleItem{Man diskutiert das Problem intensiv.}{People are discussing the problem intensively.}
+            \ExampleItem{Das Problem wird intensiv diskutiert.}{The problem is being discussed intensively.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Indirekte Rede}{Indirect Speech}
+    \GermanText{Indirekte Rede gibt Aussagen anderer Personen wieder, oft im Konjunktiv I.}
+    \EnglishText{Indirect speech reports what other people have said, often using Subjunctive I.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Er sagte, er habe keine Zeit.}{He said that he had no time.}
+            \ExampleItem{Sie erklärte, sie werde später kommen.}{She explained that she would come later.}
+            \ExampleItem{Der Zeuge meinte, er sei zu Hause gewesen.}{The witness said that he had been at home.}
+            \ExampleItem{Die Presse berichtet, die Lage habe sich beruhigt.}{The press reports that the situation has calmed down.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Berichtsstil und Distanzierung}{Report Style and Distancing}
+    \GermanText{Mit bestimmten Formen schafft man Distanz und vermeidet, eine Aussage als eigene Meinung darzustellen.}
+    \EnglishText{With certain forms, one creates distance and avoids presenting a statement as one's own opinion.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Es wird berichtet, dass die Zahlen steigen.}{It is reported that the numbers are increasing.}
+            \ExampleItem{Angeblich war niemand informiert.}{Allegedly nobody was informed.}
+            \ExampleItem{Dem Bericht zufolge hat sich die Lage verbessert.}{According to the report, the situation has improved.}
+            \ExampleItem{Wie es heißt, soll das Projekt gestoppt werden.}{According to reports, the project is to be stopped.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\section{Weitere zentrale Bereiche {\small (Further Central Areas)}}
+
+\subsection{Wortbildung {\small (Word Formation)}}
+
+\begin{grammarentry}{Präfixe, Suffixe und Wortfamilien}{Prefixes, Suffixes, and Word Families}
+    \GermanText{Wortbildung hilft beim Verstehen neuer Wörter und beim Aufbau eines präzisen Wortschatzes.}
+    \EnglishText{Word formation helps in understanding new words and building precise vocabulary.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{möglich -- unmöglich}{possible -- impossible}
+            \ExampleItem{Freund -- freundlich -- Freundlichkeit}{friend -- friendly -- friendliness}
+            \ExampleItem{fahren -- Abfahrt -- Fahrer -- Fahrzeug}{drive -- departure -- driver -- vehicle}
+            \ExampleItem{sicher -- unsicher -- Sicherheit}{secure -- insecure -- security}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\subsection{Wortstellung im erweiterten Satz {\small (Word Order in Extended Sentences)}}
+
+\begin{grammarentry}{Informationsstruktur und Schwerpunktsetzung}{Information Structure and Focus}
+    \GermanText{Die Stellung einzelner Satzteile kann den Schwerpunkt der Aussage verändern.}
+    \EnglishText{The position of individual sentence parts can change the focus of the statement.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Heute habe ich den Bericht geschrieben.}{Today I wrote the report.}
+            \ExampleItem{Den Bericht habe ich heute geschrieben.}{It was the report that I wrote today.}
+            \ExampleItem{Ich habe heute den Bericht geschrieben.}{I wrote the report today.}
+            \ExampleItem{Geschrieben habe ich den Bericht heute noch nicht.}{Written the report I have not yet today.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\subsection{Ellipsen und verkürzte Strukturen {\small (Ellipses and Reduced Structures)}}
+
+\begin{grammarentry}{Auslassungen in gesprochener und schriftlicher Sprache}{Omissions in Spoken and Written Language}
+    \GermanText{Nicht immer wird ein vollständiger Satz verwendet. In Gesprächen und in bestimmten Textsorten sind Ellipsen häufig.}
+    \EnglishText{A full sentence is not always used. In conversations and certain text types, ellipses are frequent.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Noch Fragen?}{Any more questions?}
+            \ExampleItem{Alles klar.}{Everything clear.}
+            \ExampleItem{Je früher, desto besser.}{The sooner, the better.}
+            \ExampleItem{Wenn möglich, morgen.}{If possible, tomorrow.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\subsection{Stilregister und Ausdruck {\small (Registers and Expression)}}
+
+\begin{grammarentry}{Alltagssprache, Standardsprache und formeller Stil}{Everyday Language, Standard Language, and Formal Style}
+    \GermanText{Deutsch kann je nach Situation direkter, neutraler oder formeller klingen. Ein bewusster Wechsel des Registers ist wichtig.}
+    \EnglishText{German can sound more direct, neutral, or formal depending on the situation. A conscious change of register is important.}
+    \begin{exbox}
+        \begin{itemize}
+            \ExampleItem{Kannst du mir helfen?}{Can you help me?}
+            \ExampleItem{Könnten Sie mir bitte helfen?}{Could you please help me?}
+            \ExampleItem{Ich möchte Sie höflich darum bitten, mir behilflich zu sein.}{I would politely like to ask you to assist me.}
+            \ExampleItem{Das ist nicht gut. / Das ist problematisch.}{That is not good. / That is problematic.}
+        \end{itemize}
+    \end{exbox}
+\end{grammarentry}
+
+\end{document}

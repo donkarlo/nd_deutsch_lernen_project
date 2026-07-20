@@ -1,0 +1,213 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{array}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.25em,topsep=0.25em}
+\linespread{1.03}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.0em}{0.5em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{0.7em}{0.35em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Der Nebensatz}
+\date{}
+
+\begin{document}
+    \maketitle
+    
+    
+    \section{Grundregel}
+        
+        \begin{grammarentry}{Nebensatz}{subordinate clause}
+            \GermanText{Ein Nebensatz ist ein Satzteil, der nicht allein stehen kann. Das konjugierte Verb steht normalerweise am Ende.}
+            \EnglishText{A subordinate clause is a clause that usually cannot stand alone. The conjugated verb normally goes to the end.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich warte, bis die Sonne die Himmelmitte erreicht.}{I wait until the sun reaches the middle of the sky.}
+                    \ExampleItem{Weil ich krank bin, bleibe ich zu Hause.}{Because I am sick, I stay at home.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Wodurch wird ein Nebensatz gebildet?}
+        
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{tabular}{>{\raggedright\arraybackslash}p{0.25\textwidth}
+                >{\raggedright\arraybackslash}p{0.34\textwidth}
+                >{\raggedright\arraybackslash}p{0.31\textwidth}}
+            \rowcolor{HeaderBlueDark}
+            {\color{white}\bfseries Art} &
+                {\color{white}\bfseries Wörter} &
+                {\color{white}\bfseries Beispiel} \\
+            
+            Unterordnende Konjunktionen &
+            weil, dass, wenn, als, obwohl, damit, bevor, nachdem, während, bis, seitdem, sobald, falls, da &
+            Ich bleibe hier, bis du kommst. \\
+            
+            Indirekte Fragen &
+            ob, wer, was, wann, wo, warum, wie, wohin, woher &
+            Ich weiß nicht, ob er heute kommt. \\
+            
+            Relativpronomen &
+            der, die, das, den, dem, dessen, deren &
+            Das ist der Mann, der hier arbeitet. \\
+            
+            Relativadverbien &
+            wo, wohin, woher, warum &
+            Das ist der Ort, wo ich früher gewohnt habe. \\
+            
+            Infinitivsatz mit zu &
+            um \ldots zu, ohne \ldots zu, statt \ldots zu, einfaches zu &
+            Ich lerne Deutsch, um in Österreich zu arbeiten. \\
+        \end{tabular}
+    
+    
+    \section{Wichtige Typen}
+        
+        \begin{grammarentry}{Konjunktionaler Nebensatz}{with subordinating conjunction}
+            \GermanText{Diese Nebensätze beginnen mit einer Konjunktion. Das Verb steht am Ende.}
+            \EnglishText{These clauses begin with a conjunction. The verb goes to the end.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich gehe auf den Bauernhof, weil ich arbeiten muss.}{I go to the farm because I have to work.}
+                    \ExampleItem{Ich arbeite, bis die Sonne die Himmelmitte erreicht.}{I work until the sun reaches the middle of the sky.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+        
+        \begin{grammarentry}{Indirekte Frage}{indirect question}
+            \GermanText{Eine indirekte Frage ist auch ein Nebensatz. Sie beginnt oft mit ob oder einem Fragewort.}
+            \EnglishText{An indirect question is also a subordinate clause. It often starts with ob or a question word.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich weiß nicht, ob ich morgen Zeit habe.}{I do not know whether I have time tomorrow.}
+                    \ExampleItem{Kannst du mir sagen, warum er nicht kommt?}{Can you tell me why he is not coming?}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+        
+        \begin{grammarentry}{Relativsatz}{relative clause}
+            \GermanText{Ein Relativsatz beschreibt ein Nomen genauer. Er beginnt oft mit der, die oder das.}
+            \EnglishText{A relative clause describes a noun more precisely. It often starts with der, die, or das.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Das ist der Bauernhof, den ich besuchen möchte.}{That is the farm that I would like to visit.}
+                    \ExampleItem{Die Frau, die dort arbeitet, ist sehr freundlich.}{The woman who works there is very friendly.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Wortstellung}
+        
+        \begin{grammarentry}{Position des Verbs}{verb position}
+            \GermanText{Wenn der Nebensatz nach dem Hauptsatz steht, bleibt der Hauptsatz normal. Wenn der Nebensatz zuerst steht, kommt das Verb im Hauptsatz direkt nach dem Komma.}
+            \EnglishText{If the subordinate clause comes after the main clause, the main clause stays normal. If the subordinate clause comes first, the verb in the main clause comes directly after the comma.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich bleibe zu Hause, weil ich müde bin.}{I stay at home because I am tired.}
+                    \ExampleItem{Weil ich müde bin, bleibe ich zu Hause.}{Because I am tired, I stay at home.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+
+
+    \section{Trennbare Verben im Nebensatz}
+        
+        \begin{grammarentry}{Trennbare Verben}{separable verbs}
+            \GermanText{In einem Hauptsatz wird das Präfix eines trennbaren Verbs oft getrennt und steht am Ende. In einem Nebensatz wird das Verb nicht getrennt. Das ganze konjugierte Verb steht am Ende.}
+            \EnglishText{In a main clause, the prefix of a separable verb is often separated and stands at the end. In a subordinate clause, the verb is not separated. The whole conjugated verb stands at the end.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Hauptsatz: Ich stehe früh auf.}{Main clause: I get up early.}
+                    \ExampleItem{Nebensatz: Ich bleibe leise, weil ich früh aufstehe.}{Subordinate clause: I stay quiet because I get up early.}
+                    \ExampleItem{Hauptsatz: Ich rufe dich morgen an.}{Main clause: I will call you tomorrow.}
+                    \ExampleItem{Nebensatz: Ich sage dir Bescheid, wenn ich dich morgen anrufe.}{Subordinate clause: I will let you know when I call you tomorrow.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+        
+        \begin{grammarentry}{Modalverb und trennbares Verb}{modal verb and separable verb}
+            \GermanText{Wenn im Nebensatz ein Modalverb steht, kommt das Modalverb ganz am Ende. Der Infinitiv des trennbaren Verbs steht davor und bleibt zusammengeschrieben.}
+            \EnglishText{If there is a modal verb in the subordinate clause, the modal verb stands at the very end. The infinitive of the separable verb stands before it and remains written as one word.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich bleibe zu Hause, weil ich früh aufstehen muss.}{I stay at home because I have to get up early.}
+                    \ExampleItem{Ich bin ruhig, weil ich dich nicht anrufen will.}{I am quiet because I do not want to call you.}
+                    \ExampleItem{Ich lerne, damit ich die Aufgabe abgeben kann.}{I study so that I can submit the assignment.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+        
+        \begin{grammarentry}{Perfekt mit trennbaren Verben}{perfect tense with separable verbs}
+            \GermanText{Im Perfekt steht das Partizip II eines trennbaren Verbs im Nebensatz vor dem Hilfsverb. Das Hilfsverb steht am Ende.}
+            \EnglishText{In the perfect tense, the past participle of a separable verb stands before the auxiliary verb in the subordinate clause. The auxiliary verb stands at the end.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich bin müde, weil ich früh aufgestanden bin.}{I am tired because I got up early.}
+                    \ExampleItem{Ich weiß, dass er dich angerufen hat.}{I know that he called you.}
+                    \ExampleItem{Sie ist glücklich, weil sie die Aufgabe abgegeben hat.}{She is happy because she submitted the assignment.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+        
+        \begin{grammarentry}{Typische Fehler}{typical mistakes}
+            \GermanText{Im Nebensatz darf das Präfix eines trennbaren Verbs nicht getrennt am Ende stehen. Das ganze Verb steht zusammen am Ende.}
+            \EnglishText{In a subordinate clause, the prefix of a separable verb must not stand separated at the end. The whole verb stands together at the end.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Falsch: Ich bleibe leise, weil ich früh stehe auf.}{Wrong: the separable prefix is incorrectly separated.}
+                    \ExampleItem{Richtig: Ich bleibe leise, weil ich früh aufstehe.}{Correct: the whole conjugated verb stands at the end.}
+                    \ExampleItem{Falsch: Ich weiß, dass er dich ruft an.}{Wrong: the prefix is separated in the subordinate clause.}
+                    \ExampleItem{Richtig: Ich weiß, dass er dich anruft.}{Correct: the verb remains together.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+
+\end{document}

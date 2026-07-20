@@ -1,0 +1,232 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[a4paper,margin=1.35cm]{geometry}
+\usepackage{fontspec}
+\usepackage[table]{xcolor}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{microtype}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage[bidi=basic,ngerman]{babel}
+\babelprovide[import,onchar=ids fonts]{persian}
+\babelfont{rm}{Noto Sans}
+\babelfont[persian]{rm}{Noto Sans Arabic}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{RowLineBlue}{RGB}{145,185,225}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.40}
+\linespread{1.4}
+\AtBeginDocument{\fontsize{13pt}{18.2pt}\selectfont}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.0em}{0.5em}
+
+\newcommand{\Fa}[1]{\foreignlanguage{persian}{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+\title{Wichtige deutsche Wörter zur Fahrprüfung und zum Auto}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Wortliste}
+\Fa{این نسخه شامل واژه‌ها و عبارت‌های فایل اول در همان سبک فایل ۲۰۰۰ کلمه است. معنی‌ها فارسی شده‌اند و تلفظ‌ها کنار واژه‌های آلمانی آمده‌اند.}
+
+\arrayrulecolor{RowLineBlue}
+\setlength{\arrayrulewidth}{0.45pt}
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{C{0.08\textwidth} L{0.42\textwidth} R{0.44\textwidth}}
+\rowcolor{HeaderBlueDark}
+\textcolor{white}{\textbf{Nr.}} & \textcolor{white}{\textbf{Deutsch}} & \textcolor{white}{\textbf{\Fa{معنی فارسی}}} \\
+\hline
+\endfirsthead
+\rowcolor{HeaderBlueDark}
+\textcolor{white}{\textbf{Nr.}} & \textcolor{white}{\textbf{Deutsch}} & \textcolor{white}{\textbf{\Fa{معنی فارسی}}} \\
+\hline
+\endhead
+1 & der Kreisverkehr {\small\color{SoftGray}[ˈkʁaɪ̯sfɛɐ̯ˌkeːɐ̯]} (m) & \Fa{میدان، فلکه} \\
+\hline
+2 & die Vorrangstraße {\small\color{SoftGray}[ˈfoːɐ̯ʁaŋˌʃtʁaːsə]} (f; Österreich) & \Fa{خیابان دارای حق تقدم، خیابان اصلی} \\
+\hline
+3 & der Vorrang {\small\color{SoftGray}[ˈfoːɐ̯ʁaŋ]} (m) & \Fa{حق تقدم، حق عبور} \\
+\hline
+4 & das Tempolimit-Schild {\small\color{SoftGray}[ˈtɛmpoˌlɪmɪt ʃɪlt]} (n) & \Fa{تابلوی محدودیت سرعت} \\
+\hline
+5 & der Zebrastreifen {\small\color{SoftGray}[ˈt͡seːbʁaˌʃtʁaɪ̯fn̩]} (m) & \Fa{خط عابر پیاده} \\
+\hline
+6 & das Vorrang-geben-Schild {\small\color{SoftGray}[ˈfoːɐ̯ʁaŋ ˈɡeːbn̩ ʃɪlt]} (n) & \Fa{تابلوی حق تقدم بدهید} \\
+\hline
+7 & Vorrang haben {\small\color{SoftGray}[ˈfoːɐ̯ʁaŋ ˈhaːbn̩]} (Ausdruck) & \Fa{حق تقدم داشتن} \\
+\hline
+8 & langsamer werden {\small\color{SoftGray}[ˈlaŋzaːmɐ ˈveːɐ̯dn̩]} (Ausdruck) & \Fa{آهسته‌تر شدن، سرعت کم کردن} \\
+\hline
+9 & abbremsen {\small\color{SoftGray}[ˈapˌbʁɛmsn̩]} (trennbar, intransitiv/transitiv) & \Fa{ترمز گرفتن، سرعت کم کردن} \\
+\hline
+10 & das Verkehrszeichen {\small\color{SoftGray}[fɛɐ̯ˈkeːɐ̯sˌtsaɪ̯çn̩]} (n) & \Fa{تابلوی راهنمایی و رانندگی، علامت ترافیکی} \\
+\hline
+11 & das Auto starten {\small\color{SoftGray}[ˈaʊ̯to ˈʃtaʁtn̩]} (transitiv) & \Fa{ماشین را روشن کردن} \\
+\hline
+12 & bremsen {\small\color{SoftGray}[ˈbʁɛmsn̩]} (transitiv/intransitiv) & \Fa{ترمز کردن} \\
+\hline
+13 & das Reifenprofil {\small\color{SoftGray}[ˈʁaɪ̯fn̩ˌpʁoːfiːl]} (n; -s, -e) & \Fa{آج لاستیک} \\
+\hline
+14 & die Profiltiefe {\small\color{SoftGray}[pʁoˈfiːlˌtiːfə]} (f) & \Fa{عمق آج لاستیک} \\
+\hline
+15 & die Felge {\small\color{SoftGray}[ˈfɛlɡə]} (f) & \Fa{رینگ چرخ} \\
+\hline
+16 & die Felge {\small\color{SoftGray}[ˈfɛlɡə]} (f) & \Fa{رینگ چرخ} \\
+\hline
+17 & die Kupplung {\small\color{SoftGray}[ˈkʊplʊŋ]} (f) & \Fa{کلاچ} \\
+\hline
+18 & 1,6 (Zahl) & \Fa{یک ممیز شش} \\
+\hline
+19 & die Höhe {\small\color{SoftGray}[ˈhøːə]} (f) & \Fa{ارتفاع} \\
+\hline
+20 & die Breite {\small\color{SoftGray}[ˈbʁaɪ̯tə]} (f) & \Fa{عرض} \\
+\hline
+21 & in den zweiten Gang schalten {\small\color{SoftGray}[ɪn deːn ˈtsvaɪ̯tn̩ gaŋ ˈʃaltn̩]} (trennbar, intransitiv) & \Fa{به دنده دو رفتن} \\
+\hline
+22 & Nehmen Sie im Kreisverkehr die zweite Ausfahrt (Ausdruck) & \Fa{در میدان از خروجی دوم خارج شوید} \\
+\hline
+23 & treten {\small\color{SoftGray}[ˈtʁeːtn̩]} (Akk., unregelmäßig, transitiv/intransitiv) & \Fa{پا گذاشتن، لگد زدن، پدال را فشار دادن} \\
+\hline
+24 & das Pedal {\small\color{SoftGray}[peˈdaːl]} (n; -s, -e) & \Fa{پدال} \\
+\hline
+25 & das Gaspedal {\small\color{SoftGray}[ˈɡaːspeˌdaːl]} (n; -s, -e) & \Fa{پدال گاز} \\
+\hline
+26 & das Leck {\small\color{SoftGray}[lɛk]} (n; -s, -s) & \Fa{نشتی، سوراخ نشتی} \\
+\hline
+27 & undicht {\small\color{SoftGray}[ˈʊnˌdɪçt]} (Adjektiv, Komparativ: undichter, Superlativ: am undichtesten) & \Fa{نشتی‌دار، آب‌بندی‌نشده} \\
+\hline
+28 & das Bremspedal {\small\color{SoftGray}[ˈbʁɛmspeˌdaːl]} (n; -s, -e) & \Fa{پدال ترمز} \\
+\hline
+29 & fest {\small\color{SoftGray}[fɛst]} (Adjektiv, Komparativ: fester, Superlativ: am festesten) & \Fa{محکم، سفت، ثابت} \\
+\hline
+30 & der Verbandskasten {\small\color{SoftGray}[fɛɐ̯ˈbantsˌkastn̩]} (m; -s, ¨-) & \Fa{جعبه کمک‌های اولیه} \\
+\hline
+31 & das Dreieck {\small\color{SoftGray}[ˈdʁaɪ̯ˌʔɛk]} (n; -s, -e) & \Fa{مثلث} \\
+\hline
+32 & das Kupplungspedal {\small\color{SoftGray}[ˈkʊplʊŋspeˌdaːl]} (n; -s, -e) & \Fa{پدال کلاچ} \\
+\hline
+33 & schalten {\small\color{SoftGray}[ˈʃaltən]} (intransitiv/transitiv) & \Fa{دنده عوض کردن} \\
+\hline
+34 & die Spiegel einstellen {\small\color{SoftGray}[ˈʃpiːɡl̩ ˈaɪ̯nʃtɛlən]} (Ausdruck) & \Fa{آینه‌ها را تنظیم کردن} \\
+\hline
+35 & den Autositz einstellen {\small\color{SoftGray}[deːn ˈaʊ̯toˌzɪts ˈaɪ̯nʃtɛlən]} (Ausdruck) & \Fa{صندلی ماشین را تنظیم کردن} \\
+\hline
+36 & das Motoröl {\small\color{SoftGray}[ˈmoːtoːɐ̯ˌʔøːl]} (n) & \Fa{روغن موتور} \\
+\hline
+37 & die Bremsflüssigkeit {\small\color{SoftGray}[ˈbʁɛmsˌflʏsɪçkaɪ̯t]} (f) & \Fa{روغن ترمز} \\
+\hline
+38 & das Frostschutzmittel {\small\color{SoftGray}[ˈfʁɔstʃʊtsˌmɪtl̩]} (n) & \Fa{ضدیخ} \\
+\hline
+39 & die Fahrzeugprüfung {\small\color{SoftGray}[ˈfaːɐ̯t͡sɔɪ̯kˌpʁyːfʊŋ]} (f) & \Fa{معاینه فنی خودرو} \\
+\hline
+40 & der Reifen {\small\color{SoftGray}[ˈʁaɪ̯fn̩]} (m) & \Fa{لاستیک} \\
+\hline
+41 & die Profiltiefe {\small\color{SoftGray}[pʁoˈfiːlˌtiːfə]} (f) & \Fa{عمق آج لاستیک} \\
+\hline
+42 & die Windschutzscheibe {\small\color{SoftGray}[ˈvɪntʃʊtsˌʃaɪ̯bə]} (f) & \Fa{شیشه جلو} \\
+\hline
+43 & die Kreuzung {\small\color{SoftGray}[ˈkʁɔʏ̯tsʊŋ]} (f) & \Fa{چهارراه، تقاطع} \\
+\hline
+44 & geradeaus fahren {\small\color{SoftGray}[ɡəˈʁaːdəʔaʊ̯s ˈfaːʁən]} (intransitiv) & \Fa{مستقیم رانندگی کردن} \\
+\hline
+45 & blinken {\small\color{SoftGray}[ˈblɪŋkn̩]} (intransitiv) & \Fa{راهنما زدن، علامت دادن} \\
+\hline
+46 & die Spur wechseln {\small\color{SoftGray}[diː ʃpuːɐ̯ ˈvɛksl̩n]} (Ausdruck) & \Fa{لاین عوض کردن} \\
+\hline
+47 & parallel einparken {\small\color{SoftGray}[paʁaˈleːl ˈaɪ̯npaʁkn̩]} (trennbar, intransitiv) & \Fa{پارک موازی کردن} \\
+\hline
+48 & rückwärts einparken {\small\color{SoftGray}[ˈʁʏkvɛʁts ˈaɪ̯npaʁkn̩]} (trennbar, intransitiv) & \Fa{دنده‌عقب پارک کردن} \\
+\hline
+49 & die Fußgängerzone {\small\color{SoftGray}[ˈfuːsˌɡɛŋɐˌt͡soːnə]} (f) & \Fa{منطقه پیاده‌رو، پیاده‌راه} \\
+\hline
+50 & die Begegnungszone {\small\color{SoftGray}[bəˈɡeːɡnʊŋsˌt͡soːnə]} (f) & \Fa{منطقه مشترک عبور} \\
+\hline
+51 & die Wohnstraße {\small\color{SoftGray}[ˈvoːnˌʃtʁaːsə]} (f) & \Fa{خیابان مسکونی} \\
+\hline
+52 & die durchgezogene Linie {\small\color{SoftGray}[ˈdʊʁçɡəˌt͡soːɡənə ˈliːni̯ə]} (f) & \Fa{خط ممتد} \\
+\hline
+53 & die unterbrochene Linie {\small\color{SoftGray}[ˈʊntɐˌbʁɔxənə ˈliːni̯ə]} (f) & \Fa{خط بریده، خط‌چین} \\
+\hline
+54 & überholen {\small\color{SoftGray}[yːbɐˈhoːlən]} (Akk., transitiv) & \Fa{سبقت گرفتن} \\
+\hline
+55 & die Haltelinie {\small\color{SoftGray}[ˈhaltəˌliːni̯ə]} (f) & \Fa{خط توقف} \\
+\hline
+56 & die Ordnungslinie {\small\color{SoftGray}[ˈɔʁdnʊŋsˌliːni̯ə]} (f) & \Fa{خط حق تقدم، خط انتظار} \\
+\hline
+57 & der Bordstein {\small\color{SoftGray}[ˈbɔʁtˌʃtaɪ̯n]} (m; -s, -e) & \Fa{جدول خیابان، لبه جدول} \\
+\hline
+58 & die Schranke {\small\color{SoftGray}[ˈʃʁaŋkə]} (f) & \Fa{راه‌بند، مانع} \\
+\hline
+59 & die Eisenbahn {\small\color{SoftGray}[ˈaɪ̯zn̩ˌbaːn]} (f; -, -en) & \Fa{راه‌آهن} \\
+\hline
+60 & der Bahnübergang {\small\color{SoftGray}[ˈbaːnˌyːbɐˌɡaŋ]} (m; -s, ¨-e) & \Fa{گذرگاه راه‌آهن، تقاطع راه‌آهن} \\
+\hline
+61 & parken {\small\color{SoftGray}[ˈpaʁkn̩]} (intransitiv) & \Fa{پارک کردن} \\
+\hline
+62 & rückwärtsfahren {\small\color{SoftGray}[ˈʁʏkvɛʁtsˌfaːʁən]} (trennbar, intransitiv) & \Fa{دنده‌عقب رفتن} \\
+\hline
+63 & der Bahnhof {\small\color{SoftGray}[ˈbaːnˌhoːf]} (m; ¨-e) & \Fa{ایستگاه قطار} \\
+\hline
+64 & die Werkstatt {\small\color{SoftGray}[ˈvɛʁkʃtat]} (f; Werkstätten) & \Fa{تعمیرگاه} \\
+\hline
+65 & das Abblendlicht {\small\color{SoftGray}[ˈapblɛntˌlɪçt]} (n; -s, -er) & \Fa{نور پایین} \\
+\hline
+66 & den Schnee vom Auto entfernen (Ausdruck) & \Fa{برف را از ماشین پاک کردن} \\
+\hline
+67 & die Windschutzscheibe freimachen {\small\color{SoftGray}[ˈvɪntʃʊt͡sˌʃaɪ̯bə ˈfʁaɪ̯ˌmaxn̩]} (Ausdruck) & \Fa{شیشه جلو را پاک کردن} \\
+\hline
+68 & die Warnweste {\small\color{SoftGray}[ˈvaʁnˌvɛstə]} (f) & \Fa{جلیقه هشدار} \\
+\hline
+69 & das Warndreieck {\small\color{SoftGray}[ˈvaʁnˌdʁaɪ̯ɛk]} (n) & \Fa{مثلث هشدار} \\
+\hline
+70 & abschleppen {\small\color{SoftGray}[ˈapˌʃlɛpn̩]} (Akk., trennbar, transitiv) & \Fa{بکسل کردن} \\
+\hline
+71 & der Keilriemen {\small\color{SoftGray}[ˈkaɪ̯lˌʁiːmən]} (m; -s, -) & \Fa{تسمه پروانه، تسمه محرک} \\
+\hline
+72 & reißen {\small\color{SoftGray}[ˈʁaɪ̯sn̩]} (intransitiv/transitiv) & \Fa{پاره شدن، گسستن} \\
+\hline
+73 & füllen {\small\color{SoftGray}[ˈfʏlən]} (Akk., transitiv) & \Fa{پر کردن دندان} \\
+\hline
+74 & das Pickerl {\small\color{SoftGray}[ˈpɪkɐl]} (n; österreichisch) & \Fa{برچسب معاینه فنی اتریش، پیکرل} \\
+\hline
+75 & das Ablaufdatum {\small\color{SoftGray}[ˈaplaʊ̯fˌdaːtʊm]} (n) & \Fa{تاریخ انقضا} \\
+\hline
+76 & das Standlicht {\small\color{SoftGray}[ˈʃtantˌlɪçt]} (n; -s, -er) & \Fa{چراغ پارک، چراغ موقعیت} \\
+\hline
+77 & vorsichtig {\small\color{SoftGray}[ˈfoːɐ̯ˌzɪçtɪç]} (Adverb / Adjektiv) & \Fa{با احتیاط، محتاط} \\
+\hline
+78 & das Fernlicht {\small\color{SoftGray}[ˈfɛʁnˌlɪçt]} (n; -s, -er) & \Fa{نور بالا} \\
+\hline
+79 & die Spur wechseln {\small\color{SoftGray}[ʃpuːɐ̯ ˈvɛksl̩n]} (Verb) & \Fa{لاین عوض کردن} \\
+\hline
+80 & die Sperrfläche {\small\color{SoftGray}[ˈʃpɛɐ̯ˌflɛçə]} (f) & \Fa{محدوده هاشورخورده ممنوع} \\
+\hline
+81 & schlechte Sicht {\small\color{SoftGray}[ˈʃlɛçtə zɪçt]} (Ausdruck) & \Fa{دید کم، دید نامناسب} \\
+\hline
+82 & umkehren {\small\color{SoftGray}[ˈʊmˌkeːʁən]} (intransitiv) & \Fa{دور زدن، برگشتن} \\
+\hline
+83 & wenden {\small\color{SoftGray}[ˈvɛndn̩]} (transitiv/intransitiv) & \Fa{دور زدن، یوترن زدن} \\
+\hline
+84 & anhalten {\small\color{SoftGray}[ˈanhaltən]} (trennbar, intransitiv) & \Fa{توقف کردن، کنار زدن} \\
+\hline
+85 & die Autowerkstatt {\small\color{SoftGray}[ˈaʊ̯toˌvɛʁkʃtat]} (f; Autowerkstätten) & \Fa{تعمیرگاه خودرو} \\
+\hline
+\end{longtable}
+\end{document}

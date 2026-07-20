@@ -1,0 +1,228 @@
+% Erklärung zur Konjunktion "bevor" und Vergleich mit der Präposition "vor"
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\renewcommand{\arraystretch}{1.45}
+\setlength{\tabcolsep}{6pt}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Die Konjunktion \glqq bevor\grqq{} und der Vergleich mit \glqq vor\grqq}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+    \section{Grundbedeutung von \glqq bevor\grqq}
+
+        \begin{grammarentry}{bevor}{temporale, subordinierende Konjunktion}
+            \GermanText{\textbf{bevor} bedeutet, dass eine Handlung früher als eine andere Handlung geschieht.}
+            \EnglishText{\textbf{bevor} means that one action happens earlier than another action.}
+
+            \GermanText{\textbf{bevor} verbindet einen Hauptsatz mit einem Nebensatz. Im Nebensatz steht das konjugierte Verb am Ende.}
+            \EnglishText{\textbf{bevor} connects a main clause with a subordinate clause. In the subordinate clause, the conjugated verb stands at the end.}
+
+            \GermanText{Grundstruktur: \textbf{Hauptsatz, bevor + Subjekt + weitere Satzteile + Verb.}}
+            \EnglishText{Basic structure: \textbf{main clause, before + subject + other sentence elements + verb.}}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich wasche meine Hände, bevor ich esse.}{I wash my hands before I eat.}
+                \ExampleItem{Sie prüft die Adresse, bevor sie den Brief abschickt.}{She checks the address before she sends the letter.}
+                \ExampleItem{Wir kaufen die Fahrkarten, bevor wir in den Zug steigen.}{We buy the tickets before we get on the train.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Zeitliche Beziehung der beiden Handlungen}
+
+        \begin{grammarentry}{Welche Handlung geschieht zuerst?}{zeitliche Reihenfolge}
+            \GermanText{Die Handlung im Hauptsatz geschieht normalerweise zuerst. Die Handlung im \textbf{bevor}-Satz geschieht danach.}
+            \EnglishText{The action in the main clause normally happens first. The action in the \textbf{bevor} clause happens afterward.}
+
+            \GermanText{Im Satz \glqq Ich wasche meine Hände, bevor ich esse\grqq{} geschieht das Händewaschen zuerst und das Essen danach.}
+            \EnglishText{In the sentence ``I wash my hands before I eat,'' washing the hands happens first and eating happens afterward.}
+        \end{grammarentry}
+
+    \section{Stellung des \glqq bevor\grqq-Satzes}
+
+        \begin{grammarentry}{Nebensatz nach dem Hauptsatz}{normale Reihenfolge}
+            \GermanText{Wenn der \textbf{bevor}-Satz nach dem Hauptsatz steht, steht vor \textbf{bevor} ein Komma.}
+            \EnglishText{When the \textbf{bevor} clause comes after the main clause, a comma stands before \textbf{bevor}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich rufe dich an, bevor ich losfahre.}{I call you before I leave.}
+                \ExampleItem{Er liest den Vertrag, bevor er ihn unterschreibt.}{He reads the contract before he signs it.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Nebensatz vor dem Hauptsatz}{Verb im Hauptsatz an zweiter Stelle}
+            \GermanText{Der \textbf{bevor}-Satz kann auch am Anfang stehen. Danach folgt ein Komma. Im folgenden Hauptsatz steht das konjugierte Verb direkt nach dem Komma.}
+            \EnglishText{The \textbf{bevor} clause can also stand at the beginning. A comma follows it. In the following main clause, the conjugated verb stands directly after the comma.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Bevor ich losfahre, rufe ich dich an.}{Before I leave, I call you.}
+                \ExampleItem{Bevor er den Vertrag unterschreibt, liest er ihn.}{Before he signs the contract, he reads it.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Grundbedeutung von \glqq vor\grqq}
+
+        \begin{grammarentry}{vor}{temporale Präposition mit Dativ}
+            \GermanText{Bei einer Zeitangabe ist \textbf{vor} eine Präposition. Danach steht normalerweise ein Nomen oder eine Nomengruppe im Dativ.}
+            \EnglishText{With a time expression, \textbf{vor} is a preposition. It is normally followed by a noun or noun phrase in the dative case.}
+
+            \GermanText{Grundstruktur: \textbf{vor + Dativ}.}
+            \EnglishText{Basic structure: \textbf{before + dative}.}
+
+            \GermanText{\textbf{vor} leitet keinen Nebensatz ein. Deshalb steht direkt nach \textbf{vor} normalerweise kein vollständiger Satz mit Subjekt und konjugiertem Verb.}
+            \EnglishText{\textbf{vor} does not introduce a subordinate clause. Therefore, it is normally not followed directly by a complete clause with a subject and a conjugated verb.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Vor dem Essen wasche ich meine Hände.}{Before the meal, I wash my hands.}
+                \ExampleItem{Sie prüft die Adresse vor dem Abschicken des Briefes.}{She checks the address before sending the letter.}
+                \ExampleItem{Wir kaufen die Fahrkarten vor der Abfahrt.}{We buy the tickets before the departure.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Vergleich zwischen \glqq bevor\grqq{} und \glqq vor\grqq}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{3.1cm}|p{5.2cm}|p{5.2cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Merkmal} &
+            \color{white}\textbf{bevor} &
+            \color{white}\textbf{vor} \\
+            Wortart & subordinierende Konjunktion & Präposition \\
+            Englische Bedeutung & before & before \\
+            Was folgt danach? & ein Nebensatz mit Subjekt und Verb & ein Nomen oder eine Nomengruppe \\
+            Verbposition & das konjugierte Verb steht am Ende des Nebensatzes & keine besondere Verbposition; \textbf{vor} bildet keinen Nebensatz \\
+            Kasus & kein Kasus & bei zeitlicher Bedeutung: Dativ \\
+            Grundstruktur & bevor ich esse & vor dem Essen \\
+            Beispielsatz & Ich wasche meine Hände, bevor ich esse. & Vor dem Essen wasche ich meine Hände. \\
+        \end{longtable}
+
+        \begin{grammarentry}{Hauptunterschied}{Satz oder Nomen}
+            \GermanText{Benutze \textbf{bevor}, wenn danach ein vollständiger Nebensatz mit einem eigenen Subjekt und Verb folgt.}
+            \EnglishText{Use \textbf{bevor} when it is followed by a complete subordinate clause with its own subject and verb.}
+
+            \GermanText{Benutze \textbf{vor}, wenn danach ein Nomen oder eine Nomengruppe folgt.}
+            \EnglishText{Use \textbf{vor} when it is followed by a noun or noun phrase.}
+        \end{grammarentry}
+
+    \section{Umformung von \glqq vor\grqq{} zu \glqq bevor\grqq}
+
+        \begin{grammarentry}{Nomengruppe und Nebensatz}{gleiche zeitliche Bedeutung}
+            \GermanText{Eine Verbindung mit \textbf{vor + Nomen} kann häufig in einen \textbf{bevor}-Satz umgeformt werden. Dabei muss aus dem Nomen eine Handlung mit Subjekt und Verb werden.}
+            \EnglishText{A construction with \textbf{vor + noun} can often be changed into a \textbf{bevor} clause. In this process, the noun must become an action with a subject and a verb.}
+        \end{grammarentry}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{p{6.5cm}|p{7cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{vor + Nomen} &
+            \color{white}\textbf{bevor + Nebensatz} \\
+            Vor dem Essen wasche ich meine Hände. & Bevor ich esse, wasche ich meine Hände. \\
+            Vor der Abfahrt kontrollieren wir die Fahrkarten. & Bevor wir abfahren, kontrollieren wir die Fahrkarten. \\
+            Vor seinem Anruf schrieb er eine E-Mail. & Bevor er anrief, schrieb er eine E-Mail. \\
+            Vor der Prüfung wiederholt sie den Stoff. & Bevor sie die Prüfung schreibt, wiederholt sie den Stoff. \\
+        \end{longtable}
+
+    \newpage
+    \section{Häufige Fehler}
+
+        \begin{grammarentry}{Falsch: \glqq vor ich gehe\grqq}{nach \glqq vor\grqq{} kein Nebensatz}
+            \GermanText{Falsch: \textbf{Vor ich gehe, rufe ich dich an.}}
+            \EnglishText{Incorrect: \textbf{Before I go, I call you.}}
+
+            \GermanText{Richtig mit Nebensatz: \textbf{Bevor ich gehe, rufe ich dich an.}}
+            \EnglishText{Correct with a subordinate clause: \textbf{Before I go, I call you.}}
+
+            \GermanText{Richtig mit Nomen: \textbf{Vor meinem Weggehen rufe ich dich an.}}
+            \EnglishText{Correct with a noun: \textbf{Before my departure, I call you.}}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Falsch: \glqq bevor dem Essen\grqq}{nach \glqq bevor\grqq{} braucht man einen Nebensatz}
+            \GermanText{Falsch: \textbf{Bevor dem Essen wasche ich meine Hände.}}
+            \EnglishText{Incorrect: \textbf{Before the meal, I wash my hands.}}
+
+            \GermanText{Richtig mit Nomen: \textbf{Vor dem Essen wasche ich meine Hände.}}
+            \EnglishText{Correct with a noun: \textbf{Before the meal, I wash my hands.}}
+
+            \GermanText{Richtig mit Nebensatz: \textbf{Bevor ich esse, wasche ich meine Hände.}}
+            \EnglishText{Correct with a subordinate clause: \textbf{Before I eat, I wash my hands.}}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Falsche Verbposition}{Verb am Ende des Nebensatzes}
+            \GermanText{Falsch: \textbf{Ich rufe dich an, bevor ich gehe nach Hause.}}
+            \EnglishText{Incorrect: \textbf{I call you before I go home.}}
+
+            \GermanText{Richtig: \textbf{Ich rufe dich an, bevor ich nach Hause gehe.}}
+            \EnglishText{Correct: \textbf{I call you before I go home.}}
+        \end{grammarentry}
+
+    \section{Zusammenfassung}
+
+        \begin{grammarentry}{Merksatz}{kurz und wichtig}
+            \GermanText{\textbf{bevor + Satz}: Bevor ich esse, wasche ich meine Hände.}
+            \EnglishText{\textbf{before + clause}: Before I eat, I wash my hands.}
+
+            \GermanText{\textbf{vor + Nomen im Dativ}: Vor dem Essen wasche ich meine Hände.}
+            \EnglishText{\textbf{before + noun in the dative}: Before the meal, I wash my hands.}
+
+            \GermanText{Merke: \textbf{bevor} braucht einen Nebensatz; temporales \textbf{vor} braucht normalerweise ein Nomen im Dativ.}
+            \EnglishText{Remember: \textbf{bevor} requires a subordinate clause; temporal \textbf{vor} normally requires a noun in the dative.}
+        \end{grammarentry}
+
+\end{document}

@@ -1,0 +1,318 @@
+\documentclass[a4paper]{article}
+
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{minted}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{todonotes}
+\usepackage{forest}
+\usepackage{xstring}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{xparse}
+\usepackage{natbib}
+
+\usetikzlibrary{graphs,graphdrawing}
+\usegdlibrary{layered}
+
+% for external graphviz
+\input{/home/donkarlo/Dropbox/repo/nd_ai_project/src/nd_ai/knoweldge_representation/language/formal/computer/programming/tex/latex/code_clips/external_graphviz.tex}
+
+% for tags
+\input{/home/donkarlo/Dropbox/repo/nd_ai_project/src/nd_ai/knoweldge_representation/language/formal/computer/programming/tex/latex/parts/control_sequence/kind/semtag/semtag.tex}
+
+% for links
+\input{/home/donkarlo/Dropbox/repo/nd_ai_project/src/nd_ai/knoweldge_representation/language/formal/computer/programming/tex/latex/code_clips/seehere.tex}
+
+\title{}
+\date{}
+
+\begin{document}
+    \maketitle
+    
+    
+    \section{Grammatikthemen im Deutschen}
+        
+        \begin{itemize}
+            \item Verben
+            \begin{itemize}
+                \item Verbformen und Konjugation
+                \begin{itemize}
+                    \item Konjugation im Präsens
+                    \item starke und schwache Verben
+                    \item gemischte Verben
+                    \item trennbare und nicht trennbare Verben
+                    \item reflexive Verben
+                    \item Modalverben
+                \end{itemize}
+                
+                \item Zeiten
+                \begin{itemize}
+                    \item Präsens
+                    \item Perfekt
+                    \item Präteritum
+                    \item Plusquamperfekt
+                    \item Futur I
+                \end{itemize}
+                
+                \item Konjunktiv
+                \begin{itemize}
+                    \item Konjunktiv II
+                    \begin{itemize}
+                        \item hätte, wäre, würde
+                        \item Konjunktiv II der Vergangenheit
+                        \item Konjunktiv II mit Modalverben
+                        \item irreale Konditionalsätze
+                        \item irreale Wunschsätze
+                        \item Höflichkeit
+                        \item vorsichtige Aussagen
+                    \end{itemize}
+                    \item Konjunktiv I
+                    \begin{itemize}
+                        \item Bildung
+                        \item Funktionen
+                    \end{itemize}
+                \end{itemize}
+                
+                \item Verbmuster und Ergänzungen
+                \begin{itemize}
+                    \item Verben mit Akkusativobjekt
+                    \item Verben mit Dativobjekt
+                    \item Verben mit Dativ- und Akkusativobjekt
+                    \item Verben mit Präpositionalobjekt
+                    \item Verben mit Pronominaladverbien
+                    \item Verben mit festen Ergänzungsmustern
+                \end{itemize}
+                
+                \item Verbale Spezialthemen
+                \begin{itemize}
+                    \item Bedeutung und Funktion von \textit{werden}
+                    \item \textit{brauchen} und \textit{sich lassen}
+                    \item Nomen-Verb-Verbindungen
+                    \begin{itemize}
+                        \item freie Nomen-Verb-Verbindungen
+                        \item Funktionsverbgefüge
+                        \item figurative Nomen-Verb-Verbindungen
+                    \end{itemize}
+                \end{itemize}
+            \end{itemize}
+            
+            \item Nomen und Artikel
+            \begin{itemize}
+                \item Nomen
+                \begin{itemize}
+                    \item Bedeutung und Form der Nomen
+                    \item Genus
+                    \item Numerus
+                    \item Kasus
+                    \item n-Deklination
+                    \item Komposita
+                \end{itemize}
+                
+                \item Artikel
+                \begin{itemize}
+                    \item bestimmte Artikel
+                    \item unbestimmte Artikel
+                    \item Nullartikel
+                    \item Negation mit \textit{kein}
+                \end{itemize}
+            \end{itemize}
+            
+            \item Pronomen und Artikelwörter
+            \begin{itemize}
+                \item Personalpronomen
+                \begin{itemize}
+                    \item Nominativ
+                    \item Akkusativ
+                    \item Dativ
+                \end{itemize}
+                
+                \item Possessivartikel
+                \item Demonstrativartikel und Demonstrativpronomen
+                \item unbestimmte Pronomen und Artikel
+                \item Pronominaladverbien
+            \end{itemize}
+            
+            \item Adjektive und Steigerung
+            \begin{itemize}
+                \item Adjektive
+                \item Adjektivdeklination
+                \item Komparativ
+                \item Superlativ
+                \item Vergleichsformen
+                \begin{itemize}
+                    \item \textit{so \dots wie}
+                    \item \textit{als}
+                \end{itemize}
+            \end{itemize}
+            
+            \item Kasus
+            \begin{itemize}
+                \item Nominativ
+                \begin{itemize}
+                    \item Subjekt
+                    \item Prädikativ
+                \end{itemize}
+                
+                \item Akkusativ
+                \begin{itemize}
+                    \item direktes Objekt
+                    \item Akkusativ nach Präpositionen
+                    \item temporaler Akkusativ
+                \end{itemize}
+                
+                \item Dativ
+                \begin{itemize}
+                    \item indirektes Objekt
+                    \item Dativ nach Präpositionen
+                    \item freier Dativ
+                \end{itemize}
+                
+                \item Genitiv
+                \begin{itemize}
+                    \item Genitiv als Attribut
+                    \item Genitiv bei Namen
+                    \item Präpositionen mit Genitiv
+                \end{itemize}
+            \end{itemize}
+            
+            \item Präpositionen
+            \begin{itemize}
+                \item Präpositionen mit Dativ
+                \item Präpositionen mit Akkusativ
+                \item Präpositionen mit Dativ und Akkusativ
+                \item Präpositionen mit Genitiv
+                \item lokale Präpositionen
+                \item temporale Präpositionen
+            \end{itemize}
+            
+            \item Satzbau
+            \begin{itemize}
+                \item Wortstellung
+                \begin{itemize}
+                    \item Aussagesatz
+                    \item Fragesatz
+                    \item Satzklammer
+                    \item Stellung von Satzgliedern
+                \end{itemize}
+                
+                \item Satzarten
+                \begin{itemize}
+                    \item Aussagesatz
+                    \item Fragesatz
+                    \item Aufforderungssatz
+                    \item Wunschsatz
+                    \item Ausrufesatz
+                \end{itemize}
+                
+                \item Satzglieder
+                \begin{itemize}
+                    \item Prädikat
+                    \item Subjekt
+                    \item Akkusativobjekt
+                    \item Dativobjekt
+                    \item Präpositionalobjekt
+                    \item Adverbiale
+                \end{itemize}
+                
+                \item Negation
+                \begin{itemize}
+                    \item \textit{nicht}
+                    \item \textit{kein}
+                    \item pauschale Negation
+                    \item Negationswörter
+                \end{itemize}
+            \end{itemize}
+            
+            \item Nebensätze und Satzverbindungen
+            \begin{itemize}
+                \item Grundtypen
+                \begin{itemize}
+                    \item dass-Sätze
+                    \item ob-Sätze
+                    \item Fragesätze als Nebensätze
+                    \item Relativsätze
+                    \item Infinitivsätze mit \textit{zu}
+                \end{itemize}
+                
+                \item adverbiale Nebensätze
+                \begin{itemize}
+                    \item kausale Nebensätze
+                    \item konzessive Nebensätze
+                    \item konditionale Nebensätze
+                    \item modale Nebensätze
+                    \item temporale Nebensätze
+                    \begin{itemize}
+                        \item \textit{wenn} und \textit{als}
+                        \item \textit{seit[dem]} und \textit{bis}
+                        \item \textit{während}
+                        \item \textit{nachdem}
+                        \item \textit{bevor} und \textit{ehe}
+                        \item \textit{sobald}
+                        \item \textit{solange}
+                    \end{itemize}
+                    \item konsekutive Nebensätze
+                    \item adversative Nebensätze
+                    \item Finalsätze
+                    \begin{itemize}
+                        \item finale Nebensätze
+                        \item finale Infinitivsätze
+                        \item \textit{damit}-Sätze
+                    \end{itemize}
+                \end{itemize}
+                
+                \item Konjunktionen
+                \begin{itemize}
+                    \item nebenordnende Konjunktionen
+                    \item unterordnende Konjunktionen
+                \end{itemize}
+            \end{itemize}
+            
+            \item Passiv
+            \begin{itemize}
+                \item Vorgangspassiv
+                \begin{itemize}
+                    \item mit Subjekt
+                    \item ohne Subjekt
+                    \item Zeiten im Vorgangspassiv
+                    \item Vorgangspassiv mit Modalverben
+                    \item Vorgangspassiv ohne Täter
+                \end{itemize}
+                
+                \item Zustandspassiv
+            \end{itemize}
+            
+            \item Modalität
+            \begin{itemize}
+                \item objektive Bedeutungen der Modalverben
+                \begin{itemize}
+                    \item Möglichkeit
+                    \item Fähigkeit
+                    \item Erlaubnis
+                    \item Verbot
+                    \item Notwendigkeit
+                    \item Pflicht
+                    \item Wunsch
+                    \item Wille
+                \end{itemize}
+                
+                \item subjektive Bedeutungen der Modalverben
+                \begin{itemize}
+                    \item Vermutung
+                    \item Unsicherheit
+                    \item Gerücht
+                    \item Empfehlung
+                \end{itemize}
+            \end{itemize}
+            
+            \item Umformungen und Stil
+            \begin{itemize}
+                \item Nominalisierung
+                \item Verbalisierung
+                \item Umwandlung adverbialer Präpositionalgruppen in Nebensätze
+            \end{itemize}
+        \end{itemize}
+%    \bibliographystyle{plainnat}
+%    \bibliography{/home/donkarlo/Dropbox/repo/nd_shared_research/bibliography/bibliography.bib}
+\end{document}

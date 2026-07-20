@@ -1,0 +1,154 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage[table]{xcolor}
+\usepackage{tcolorbox}
+\geometry{margin=1.2cm}
+
+\definecolor{lightblue}{RGB}{230,240,255}
+\definecolor{midblue}{RGB}{200,220,255}
+\definecolor{darkblue}{RGB}{0,70,140}
+
+\tcbset{
+    tensebox/.style={
+        colback=lightblue,
+        colframe=darkblue,
+        boxrule=0.8pt,
+        arc=2pt,
+        left=4pt,
+        right=4pt,
+        top=4pt,
+        bottom=4pt
+    }
+}
+
+\title{Konjugation von \textit{machen}}
+\date{}
+
+\begin{document}
+    \maketitle
+    \small
+    \begin{multicols}{3}
+        
+        \begin{tcolorbox}[tensebox,title=Präsens]
+            \rowcolors{2}{midblue}{lightblue}
+            \begin{tabular}{>{\bfseries}l l}
+                ich       & mache  \\
+                du        & machst \\
+                er/sie/es & macht  \\
+                wir       & machen \\
+                ihr       & macht  \\
+                sie/Sie   & machen \\
+            \end{tabular}
+        \end{tcolorbox}
+        
+        \begin{tcolorbox}[tensebox,title=Präteritum]
+            \rowcolors{2}{midblue}{lightblue}
+            \begin{tabular}{>{\bfseries}l l}
+                ich       & machte   \\
+                du        & machtest \\
+                er/sie/es & machte   \\
+                wir       & machten  \\
+                ihr       & machtet  \\
+                sie/Sie   & machten  \\
+            \end{tabular}
+        \end{tcolorbox}
+        
+        \begin{tcolorbox}[tensebox,title=Perfekt]
+            \rowcolors{2}{midblue}{lightblue}
+            \begin{tabular}{>{\bfseries}l l}
+                ich       & habe gemacht  \\
+                du        & hast gemacht  \\
+                er/sie/es & hat gemacht   \\
+                wir       & haben gemacht \\
+                ihr       & habt gemacht  \\
+                sie/Sie   & haben gemacht \\
+            \end{tabular}
+        \end{tcolorbox}
+        
+        \begin{tcolorbox}[tensebox,title=Plusquamperfekt]
+            \rowcolors{2}{midblue}{lightblue}
+            \begin{tabular}{>{\bfseries}l l}
+                ich       & hatte gemacht   \\
+                du        & hattest gemacht \\
+                er/sie/es & hatte gemacht   \\
+                wir       & hatten gemacht  \\
+                ihr       & hattet gemacht  \\
+                sie/Sie   & hatten gemacht  \\
+            \end{tabular}
+        \end{tcolorbox}
+        
+        \begin{tcolorbox}[tensebox,title=Futur I]
+            \rowcolors{2}{midblue}{lightblue}
+            \begin{tabular}{>{\bfseries}l l}
+                ich       & werde machen  \\
+                du        & wirst machen  \\
+                er/sie/es & wird machen   \\
+                wir       & werden machen \\
+                ihr       & werdet machen \\
+                sie/Sie   & werden machen \\
+            \end{tabular}
+        \end{tcolorbox}
+        
+        \begin{tcolorbox}[tensebox,title=Futur II]
+            \rowcolors{2}{midblue}{lightblue}
+            \begin{tabular}{>{\bfseries}l l}
+                ich       & werde gemacht haben  \\
+                du        & wirst gemacht haben  \\
+                er/sie/es & wird gemacht haben   \\
+                wir       & werden gemacht haben \\
+                ihr       & werdet gemacht haben \\
+                sie/Sie   & werden gemacht haben \\
+            \end{tabular}
+        \end{tcolorbox}
+        
+        \begin{tcolorbox}[tensebox,title=Konjunktiv I]
+            \rowcolors{2}{midblue}{lightblue}
+            \begin{tabular}{>{\bfseries}l l}
+                ich       & mache   \\
+                du        & machest \\
+                er/sie/es & mache   \\
+                wir       & machen  \\
+                ihr       & machet  \\
+                sie/Sie   & machen  \\
+            \end{tabular}
+        \end{tcolorbox}
+        
+        \begin{tcolorbox}[tensebox,title=Konjunktiv II]
+            \rowcolors{2}{midblue}{lightblue}
+            \begin{tabular}{>{\bfseries}l l}
+                ich       & machte   \\
+                du        & machtest \\
+                er/sie/es & machte   \\
+                wir       & machten  \\
+                ihr       & machtet  \\
+                sie/Sie   & machten  \\
+            \end{tabular}
+        \end{tcolorbox}
+        
+        \begin{tcolorbox}[tensebox,title=Konjunktiv II (würde)]
+            \rowcolors{2}{midblue}{lightblue}
+            \begin{tabular}{>{\bfseries}l l}
+                ich       & würde machen   \\
+                du        & würdest machen \\
+                er/sie/es & würde machen   \\
+                wir       & würden machen  \\
+                ihr       & würdet machen  \\
+                sie/Sie   & würden machen  \\
+            \end{tabular}
+        \end{tcolorbox}
+        
+        \begin{tcolorbox}[tensebox,title=Imperativ]
+            \rowcolors{2}{midblue}{lightblue}
+            \begin{tabular}{>{\bfseries}l l}
+                du  & mach!       \\
+                ihr & macht!      \\
+                Sie & machen Sie! \\
+            \end{tabular}
+        \end{tcolorbox}
+    
+    \end{multicols}
+\end{document}

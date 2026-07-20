@@ -1,0 +1,186 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{colortbl}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Verbklassen im Deutschen}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+\section{Existiert der Begriff?}
+
+\begin{grammarentry}{die Verbklasse}{verb class}
+\GermanText{Ja, der Begriff \textbf{Verbklasse} existiert in der deutschen Grammatik.}
+\EnglishText{Yes, the term \textbf{verb class} exists in German grammar.}
+
+\GermanText{Er bedeutet: eine Gruppe von Verben, die nach bestimmten grammatischen Eigenschaften zusammengehört, besonders nach ihrer Konjugation.}
+\EnglishText{It means: a group of verbs that belong together according to certain grammatical properties, especially according to their conjugation.}
+
+\GermanText{Im Deutschunterricht sagt man oft auch \textbf{Verbgruppe} oder \textbf{Konjugationsklasse}.}
+\EnglishText{In German lessons, people often also say \textbf{verb group} or \textbf{conjugation class}.}
+\end{grammarentry}
+
+\section{Wichtigste Verbklassen nach der Konjugation}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{3.4cm}X X}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Verbklasse} & \color{white}\textbf{Deutsch} & \color{white}\textbf{English} \\
+Schwache Verben & regelmäßige Verben; Präteritum mit \textbf{-te}; Partizip II meistens mit \textbf{ge-...-t} & regular verbs; simple past with \textbf{-te}; past participle usually with \textbf{ge-...-t} \\
+Starke Verben & unregelmäßige Verben mit Vokalwechsel; Partizip II meistens mit \textbf{ge-...-en} & irregular verbs with vowel change; past participle usually with \textbf{ge-...-en} \\
+Gemischte Verben & Verben mit Vokalwechsel wie starke Verben, aber mit \textbf{-te} und \textbf{-t} wie schwache Verben & verbs with vowel change like strong verbs, but with \textbf{-te} and \textbf{-t} like regular verbs \\
+Modalverben & Verben wie \textbf{können, müssen, wollen}; sie verbinden sich oft mit einem Infinitiv & modal verbs like \textbf{can, must, want}; they often combine with an infinitive \\
+Hilfsverben & \textbf{haben, sein, werden}; sie bilden Zeiten, Passiv oder andere Konstruktionen & auxiliary verbs; they form tenses, passive voice, or other constructions \\
+\end{tabularx}
+\rowcolors{2}{}{}
+
+\section{Schwache Verben}
+
+\begin{grammarentry}{schwache Verben}{regular verbs}
+\GermanText{Schwache Verben sind regelmäßig. Das Präteritum endet auf \textbf{-te}, und das Partizip II endet meistens auf \textbf{-t}.}
+\EnglishText{Regular verbs are regular. The simple past ends in \textbf{-te}, and the past participle usually ends in \textbf{-t}.}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{machen -- machte -- gemacht}{to do/make -- did/made -- done/made}
+\ExampleItem{lernen -- lernte -- gelernt}{to learn -- learned -- learned}
+\ExampleItem{kaufen -- kaufte -- gekauft}{to buy -- bought -- bought}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Starke Verben}
+
+\begin{grammarentry}{starke Verben}{irregular verbs with vowel change}
+\GermanText{Starke Verben ändern oft den Stammvokal. Das Partizip II endet meistens auf \textbf{-en}.}
+\EnglishText{Strong verbs often change the stem vowel. The past participle usually ends in \textbf{-en}.}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{gehen -- ging -- gegangen}{to go -- went -- gone}
+\ExampleItem{finden -- fand -- gefunden}{to find -- found -- found}
+\ExampleItem{schreiben -- schrieb -- geschrieben}{to write -- wrote -- written}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Gemischte Verben}
+
+\begin{grammarentry}{gemischte Verben}{mixed verbs}
+\GermanText{Gemischte Verben sind eine Mischung aus schwachen und starken Verben. Sie haben oft einen Vokalwechsel, aber im Präteritum die Endung \textbf{-te} und im Partizip II die Endung \textbf{-t}.}
+\EnglishText{Mixed verbs are a mixture of regular and strong verbs. They often have a vowel change, but in the simple past they take \textbf{-te}, and in the past participle they take \textbf{-t}.}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{bringen -- brachte -- gebracht}{to bring -- brought -- brought}
+\ExampleItem{denken -- dachte -- gedacht}{to think -- thought -- thought}
+\ExampleItem{kennen -- kannte -- gekannt}{to know -- knew -- known}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Modalverben}
+
+\begin{grammarentry}{Modalverben}{modal verbs}
+\GermanText{Modalverben verändern die Bedeutung eines anderen Verbs. Sie stehen oft mit einem Infinitiv am Satzende.}
+\EnglishText{Modal verbs modify the meaning of another verb. They often appear with an infinitive at the end of the sentence.}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich muss heute lernen.}{I must study today.}
+\ExampleItem{Er kann gut Deutsch sprechen.}{He can speak German well.}
+\ExampleItem{Wir wollen morgen kommen.}{We want to come tomorrow.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Hilfsverben}
+
+\begin{grammarentry}{Hilfsverben}{auxiliary verbs}
+\GermanText{Hilfsverben helfen beim Bilden grammatischer Formen, zum Beispiel Perfekt, Futur oder Passiv.}
+\EnglishText{Auxiliary verbs help form grammatical constructions, for example perfect tense, future tense, or passive voice.}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich habe gelernt.}{I have learned.}
+\ExampleItem{Ich bin gegangen.}{I have gone.}
+\ExampleItem{Das Haus wird gebaut.}{The house is being built.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Verbklasse oder Verbform?}
+
+\begin{grammarentry}{Unterschied}{difference}
+\GermanText{Eine \textbf{Verbklasse} ist eine Kategorie von Verben. Eine \textbf{Verbform} ist eine konkrete Form eines Verbs.}
+\EnglishText{A \textbf{verb class} is a category of verbs. A \textbf{verb form} is a concrete form of a verb.}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{3cm}X X}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Begriff} & \color{white}\textbf{Deutsch} & \color{white}\textbf{English} \\
+Verbklasse & schwach, stark, gemischt, modal, Hilfsverb & weak, strong, mixed, modal, auxiliary \\
+Verbform & ich gehe, ich ging, ich bin gegangen & I go, I went, I have gone \\
+\end{tabularx}
+\rowcolors{2}{}{}
+\end{grammarentry}
+
+\section{Kurzregel}
+
+\begin{grammarentry}{Merksatz}{rule to remember}
+\GermanText{\textbf{Gemischte Verben} sind keine Verbform, sondern eine Verbklasse.}
+\EnglishText{\textbf{Mixed verbs} are not a verb form, but a verb class.}
+
+\GermanText{Die Formen eines gemischten Verbs sind zum Beispiel: \textbf{ich bringe}, \textbf{ich brachte}, \textbf{ich habe gebracht}.}
+\EnglishText{The forms of a mixed verb are for example: \textbf{I bring}, \textbf{I brought}, \textbf{I have brought}.}
+\end{grammarentry}
+
+\end{document}

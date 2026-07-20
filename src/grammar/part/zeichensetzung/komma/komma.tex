@@ -1,0 +1,121 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Die Zeichensetzung}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+    
+    
+    \section{Komma}
+        
+        \begin{grammarentry}{Komma zwischen Hauptsatz und Nebensatz}{comma between a main clause and a subordinate clause}
+            \GermanText{Ein Komma ist erforderlich, wenn ein Nebensatz mit einem Hauptsatz verbunden wird. Typische Wörter sind: \textbf{dass, weil, wenn, ob, obwohl, damit}.}
+            \EnglishText{A comma is required when a subordinate clause is connected to a main clause. Typical words are: \textbf{dass, weil, wenn, ob, obwohl, damit}.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich glaube, dass er heute kommt.}{I believe that he is coming today.}
+                    \ExampleItem{Wenn ich Zeit habe, rufe ich dich an.}{If I have time, I will call you.}
+                    \ExampleItem{Kannst du mir sagen, ob das richtig ist?}{Can you tell me whether this is correct?}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+        
+        \begin{grammarentry}{Komma vor aber, sondern und denn}{comma before aber, sondern and denn}
+            \GermanText{Vor \textbf{aber}, \textbf{sondern} und \textbf{denn} steht normalerweise ein Komma, wenn zwei Hauptsätze verbunden werden.}
+            \EnglishText{A comma is normally placed before \textbf{aber}, \textbf{sondern} and \textbf{denn} when two main clauses are connected.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich komme, aber ich bleibe nicht lange.}{I am coming, but I will not stay long.}
+                    \ExampleItem{Das ist nicht teuer, sondern billig.}{That is not expensive, but cheap.}
+                    \ExampleItem{Ich bleibe zu Hause, denn ich bin krank.}{I am staying at home, because I am sick.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+        
+        \begin{grammarentry}{Komma bei Infinitivsätzen mit zu}{comma with infinitive clauses with zu}
+            \GermanText{Bei Infinitivsätzen mit \textbf{zu} setzt man oft ein Komma. Besonders wichtig ist es bei \textbf{um ... zu}, \textbf{ohne ... zu} und \textbf{statt ... zu}.}
+            \EnglishText{With infinitive clauses with \textbf{zu}, a comma is often used. It is especially important with \textbf{um ... zu}, \textbf{ohne ... zu} and \textbf{statt ... zu}.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich lerne Deutsch, um in Österreich zu arbeiten.}{I am learning German in order to work in Austria.}
+                    \ExampleItem{Er ging weg, ohne etwas zu sagen.}{He left without saying anything.}
+                    \ExampleItem{Sie blieb zu Hause, statt ins Kino zu gehen.}{She stayed at home instead of going to the cinema.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+        
+        \begin{grammarentry}{Komma bei Aufzählungen}{comma in lists}
+            \GermanText{Bei Aufzählungen trennt man die einzelnen Teile mit Kommas. Vor \textbf{und} steht normalerweise kein Komma.}
+            \EnglishText{In lists, the individual parts are separated with commas. Before \textbf{und}, there is normally no comma.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich kaufe Brot, Milch, Käse und Eier.}{I buy bread, milk, cheese and eggs.}
+                    \ExampleItem{Er spricht Deutsch, Englisch und Persisch.}{He speaks German, English and Persian.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+        
+        \begin{grammarentry}{Komma bei zusätzlichen Erklärungen}{comma with extra explanatory parts in a sentence}
+            \GermanText{Wenn ein Teil des Satzes eine zusätzliche Erklärung gibt, setzt man Kommas. Diese Erklärung ist nicht unbedingt notwendig, aber sie gibt mehr Information.}
+            \EnglishText{When a part of the sentence gives extra information, commas are used. This extra explanation is not absolutely necessary, but it gives more information.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Mein Bruder, der in Graz lebt, besucht mich morgen.}{My brother, who lives in Graz, is visiting me tomorrow.}
+                    \ExampleItem{Deutsch, eine sehr genaue Sprache, hat viele Kommaregeln.}{German, a very precise language, has many comma rules.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+
+\end{document}

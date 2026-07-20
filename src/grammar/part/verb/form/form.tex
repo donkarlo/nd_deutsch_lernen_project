@@ -1,0 +1,437 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{booktabs}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\setcounter{tocdepth}{2}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\newcommand{\TableHeader}[1]{\rowcolor{HeaderBlueDark}\color{white}\textbf{#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\title{Alle wichtigen Verbformen im Deutschen}
+\author{}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+\section{Grundidee: Zeitform oder Verbform?}
+
+\begin{grammarentry}{Perfekt und Partizip II}{basic difference}
+\GermanText{Das Perfekt ist eine \textbf{Zeitform}. Das Partizip II ist eine \textbf{Verbform}.}
+\EnglishText{The perfect tense is a tense. The past participle is a verb form.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich habe die Aufgabe gemacht.}{I have done the task.}
+    \ExampleItem{gemacht = Partizip II; habe gemacht = Perfekt}{gemacht = past participle; habe gemacht = perfect tense}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Merksatz}{important rule}
+\GermanText{Eine Zeitform kann aus mehreren Teilen bestehen. Eine Verbform ist ein einzelner Baustein.}
+\EnglishText{A tense can consist of several parts. A verb form is one single building block.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich bin nach Hause gegangen.}{I went home. / I have gone home.}
+    \ExampleItem{bin = Hilfsverb; gegangen = Partizip II; bin gegangen = Perfekt}{bin = auxiliary verb; gegangen = past participle; bin gegangen = perfect tense}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Die zwei großen Gruppen}
+
+\begin{grammarentry}{Finite und infinite Verbformen}{personal or not personal}
+\GermanText{Eine \textbf{finite Verbform} ist konjugiert und passt zu einer Person: ich gehe, du gehst, er geht.}
+\EnglishText{A finite verb form is conjugated and agrees with a person: ich gehe, du gehst, er geht.}
+\GermanText{Eine \textbf{infinite Verbform} ist nicht nach Person konjugiert: gehen, gehend, gegangen.}
+\EnglishText{A non-finite verb form is not conjugated according to person: gehen, gehend, gegangen.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{L{3.2cm}L{4cm}L{4.2cm}L{4.2cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Gruppe} & \color{white}\textbf{Form} & \color{white}\textbf{Deutsch} & \color{white}\textbf{English} \\
+\endfirsthead
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Gruppe} & \color{white}\textbf{Form} & \color{white}\textbf{Deutsch} & \color{white}\textbf{English} \\
+\endhead
+finit & Personalform & ich lerne, du lernst, er lernt & I learn, you learn, he learns \\
+infinite & Infinitiv & lernen & to learn \\
+infinite & Partizip I & lernend & learning \\
+infinite & Partizip II & gelernt & learned \\
+finit & Imperativ & Lern! Lernt! Lernen Sie! & Learn! \\
+finit & Konjunktiv I & er lerne & he supposedly learns / he learn \\
+finit & Konjunktiv II & ich lernte / ich würde lernen & I would learn \\
+\end{longtable}
+\rowcolors{2}{}{}
+
+\section{Infinitiv}
+
+\begin{grammarentry}{Infinitiv}{basic form}
+\GermanText{Der Infinitiv ist die Grundform des Verbs. Im Wörterbuch steht das Verb meistens im Infinitiv.}
+\EnglishText{The infinitive is the basic form of the verb. In a dictionary, the verb is usually written in the infinitive.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{lernen, gehen, machen, waschen}{to learn, to go, to do, to wash}
+    \ExampleItem{Ich möchte Deutsch lernen.}{I want to learn German.}
+    \ExampleItem{Ich versuche, jeden Tag zu schreiben.}{I try to write every day.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Infinitiv mit zu}{to-infinitive}
+\GermanText{Bei vielen Konstruktionen benutzt man \textbf{zu + Infinitiv}. Bei trennbaren Verben steht \textbf{zu} zwischen Präfix und Verb.}
+\EnglishText{In many constructions, German uses zu + infinitive. With separable verbs, zu stands between the prefix and the verb.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich habe Zeit, Deutsch zu lernen.}{I have time to learn German.}
+    \ExampleItem{Ich fange an, regelmäßig aufzustehen.}{I begin to get up regularly.}
+    \ExampleItem{Er versucht, die Tür aufzumachen.}{He tries to open the door.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Personalform: konjugierte Verbform}
+
+\begin{grammarentry}{Personalform}{conjugated form}
+\GermanText{Die Personalform zeigt Person und Numerus: ich, du, er/sie/es, wir, ihr, sie/Sie.}
+\EnglishText{The conjugated form shows person and number: I, you, he/she/it, we, you plural, they/formal you.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{L{3cm}L{4.5cm}L{4.5cm}L{4cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Person} & \color{white}\textbf{lernen} & \color{white}\textbf{gehen} & \color{white}\textbf{English} \\
+\endfirsthead
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Person} & \color{white}\textbf{lernen} & \color{white}\textbf{gehen} & \color{white}\textbf{English} \\
+\endhead
+ich & ich lerne & ich gehe & I learn / I go \\
+du & du lernst & du gehst & you learn / you go \\
+er/sie/es & er lernt & er geht & he learns / he goes \\
+wir & wir lernen & wir gehen & we learn / we go \\
+ihr & ihr lernt & ihr geht & you learn / you go \\
+sie/Sie & sie lernen / Sie lernen & sie gehen / Sie gehen & they learn / you go \\
+\end{longtable}
+\rowcolors{2}{}{}
+
+\section{Partizip I}
+
+\begin{grammarentry}{Partizip I}{present participle}
+\GermanText{Das Partizip I bildet man meistens mit \textbf{Infinitiv + d}: gehen → gehend, lachen → lachend, schreiben → schreibend.}
+\EnglishText{The present participle is usually formed with infinitive + d: gehen → gehend, lachen → lachend, schreiben → schreibend.}
+\GermanText{Es beschreibt oft eine Handlung, die gleichzeitig passiert.}
+\EnglishText{It often describes an action happening at the same time.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Der lachende Mann sitzt im Café.}{The laughing man is sitting in the café.}
+    \ExampleItem{Die schreibende Studentin trinkt Kaffee.}{The writing student is drinking coffee.}
+    \ExampleItem{Er ging schweigend aus dem Zimmer.}{He left the room silently.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Partizip II}
+
+\begin{grammarentry}{Partizip II}{past participle}
+\GermanText{Das Partizip II ist eine wichtige Verbform. Man braucht es für Perfekt, Plusquamperfekt und Passiv.}
+\EnglishText{The past participle is an important verb form. It is needed for the perfect tense, pluperfect tense, and passive voice.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{machen → gemacht}{to do → done}
+    \ExampleItem{gehen → gegangen}{to go → gone}
+    \ExampleItem{waschen → gewaschen}{to wash → washed}
+    \ExampleItem{bringen → gebracht}{to bring → brought}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{L{3.2cm}L{4.2cm}L{4.2cm}L{4.2cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Verwendung} & \color{white}\textbf{Formel} & \color{white}\textbf{Deutsch} & \color{white}\textbf{English} \\
+\endfirsthead
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Verwendung} & \color{white}\textbf{Formel} & \color{white}\textbf{Deutsch} & \color{white}\textbf{English} \\
+\endhead
+Perfekt & haben/sein + Partizip II & Ich habe gelernt. & I learned. / I have learned. \\
+Plusquamperfekt & hatte/war + Partizip II & Ich hatte gelernt. & I had learned. \\
+Passiv & werden + Partizip II & Die Tür wird geschlossen. & The door is being closed. \\
+Zustandspassiv & sein + Partizip II & Die Tür ist geschlossen. & The door is closed. \\
+Adjektiv & Partizip II vor Nomen & die geschlossene Tür & the closed door \\
+\end{longtable}
+\rowcolors{2}{}{}
+
+\section{Imperativ}
+
+\begin{grammarentry}{Imperativ}{command form}
+\GermanText{Der Imperativ ist die Befehlsform oder Aufforderungsform. Man benutzt ihn für Bitten, Aufforderungen und Anweisungen.}
+\EnglishText{The imperative is the command form. It is used for requests, instructions, and commands.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Lern bitte diese Wörter.}{Please learn these words.}
+    \ExampleItem{Gehen Sie bitte nach rechts.}{Please go to the right.}
+    \ExampleItem{Wasch dir die Hände.}{Wash your hands.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{L{3cm}L{4cm}L{4cm}L{4cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Person} & \color{white}\textbf{lernen} & \color{white}\textbf{gehen} & \color{white}\textbf{English} \\
+\endfirsthead
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Person} & \color{white}\textbf{lernen} & \color{white}\textbf{gehen} & \color{white}\textbf{English} \\
+\endhead
+du & Lern! & Geh! & Learn! / Go! \\
+ihr & Lernt! & Geht! & Learn! / Go! \\
+Sie & Lernen Sie! & Gehen Sie! & Learn! / Go! \\
+wir & Lernen wir! & Gehen wir! & Let us learn! / Let us go! \\
+\end{longtable}
+\rowcolors{2}{}{}
+
+\section{Konjunktiv I}
+
+\begin{grammarentry}{Konjunktiv I}{reported speech}
+\GermanText{Konjunktiv I benutzt man vor allem in indirekter Rede, besonders in Nachrichten, Berichten und formeller Sprache.}
+\EnglishText{Konjunktiv I is mainly used in reported speech, especially in news, reports, and formal language.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Er sagt, er sei krank.}{He says that he is sick.}
+    \ExampleItem{Sie sagt, sie habe keine Zeit.}{She says that she has no time.}
+    \ExampleItem{Der Minister erklärte, die Lage sei ernst.}{The minister explained that the situation was serious.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{L{3cm}L{4cm}L{4cm}L{4cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Verb} & \color{white}\textbf{Indikativ} & \color{white}\textbf{Konjunktiv I} & \color{white}\textbf{English} \\
+\endfirsthead
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Verb} & \color{white}\textbf{Indikativ} & \color{white}\textbf{Konjunktiv I} & \color{white}\textbf{English} \\
+\endhead
+sein & er ist & er sei & he is / he supposedly is \\
+haben & er hat & er habe & he has / he supposedly has \\
+gehen & er geht & er gehe & he goes / he supposedly goes \\
+lernen & er lernt & er lerne & he learns / he supposedly learns \\
+\end{longtable}
+\rowcolors{2}{}{}
+
+\section{Konjunktiv II}
+
+\begin{grammarentry}{Konjunktiv II}{unreal, polite, hypothetical}
+\GermanText{Konjunktiv II benutzt man für Wünsche, höfliche Bitten, irreale Situationen und Möglichkeiten.}
+\EnglishText{Konjunktiv II is used for wishes, polite requests, unreal situations, and possibilities.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich hätte gern einen Kaffee.}{I would like a coffee.}
+    \ExampleItem{Wenn ich Zeit hätte, würde ich spazieren gehen.}{If I had time, I would go for a walk.}
+    \ExampleItem{Könntest du mir bitte helfen?}{Could you please help me?}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{L{3cm}L{4cm}L{4cm}L{4cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Verb} & \color{white}\textbf{Präteritum} & \color{white}\textbf{Konjunktiv II} & \color{white}\textbf{English} \\
+\endfirsthead
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Verb} & \color{white}\textbf{Präteritum} & \color{white}\textbf{Konjunktiv II} & \color{white}\textbf{English} \\
+\endhead
+sein & ich war & ich wäre & I would be \\
+haben & ich hatte & ich hätte & I would have \\
+gehen & ich ging & ich ginge / ich würde gehen & I would go \\
+lernen & ich lernte & ich lernte / ich würde lernen & I would learn \\
+können & ich konnte & ich könnte & I could \\
+müssen & ich musste & ich müsste & I would have to \\
+wollen & ich wollte & ich wollte & I would want \\
+\end{longtable}
+\rowcolors{2}{}{}
+
+\section{Zeitformen als Kombinationen}
+
+\begin{grammarentry}{Zeitformen}{tenses}
+\GermanText{Zeitformen sind Formen, die zeigen, wann etwas passiert: Gegenwart, Vergangenheit oder Zukunft.}
+\EnglishText{Tenses are forms that show when something happens: present, past, or future.}
+\GermanText{Viele Zeitformen bestehen aus einem Hilfsverb und einer anderen Verbform.}
+\EnglishText{Many tenses consist of an auxiliary verb and another verb form.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{L{3.2cm}L{4.8cm}L{4.8cm}L{3.6cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Zeitform} & \color{white}\textbf{Formel} & \color{white}\textbf{Deutsch} & \color{white}\textbf{English} \\
+\endfirsthead
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Zeitform} & \color{white}\textbf{Formel} & \color{white}\textbf{Deutsch} & \color{white}\textbf{English} \\
+\endhead
+Präsens & konjugiertes Verb & Ich lerne Deutsch. & I learn German. \\
+Präteritum & einfache Vergangenheitsform & Ich lernte Deutsch. & I learned German. \\
+Perfekt & haben/sein + Partizip II & Ich habe Deutsch gelernt. & I learned German. \\
+Plusquamperfekt & hatte/war + Partizip II & Ich hatte Deutsch gelernt. & I had learned German. \\
+Futur I & werden + Infinitiv & Ich werde Deutsch lernen. & I will learn German. \\
+Futur II & werden + Partizip II + haben/sein & Ich werde Deutsch gelernt haben. & I will have learned German. \\
+\end{longtable}
+\rowcolors{2}{}{}
+
+\section{Aktiv und Passiv}
+
+\begin{grammarentry}{Aktiv}{active voice}
+\GermanText{Im Aktiv ist die handelnde Person oder Sache wichtig.}
+\EnglishText{In active voice, the acting person or thing is important.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Der Lehrer erklärt die Regel.}{The teacher explains the rule.}
+    \ExampleItem{Ich öffne die Tür.}{I open the door.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Passiv}{passive voice}
+\GermanText{Im Passiv ist die Handlung oder das Ergebnis wichtiger als die handelnde Person.}
+\EnglishText{In passive voice, the action or the result is more important than the acting person.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{L{3.2cm}L{4.8cm}L{4.8cm}L{3.6cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Form} & \color{white}\textbf{Formel} & \color{white}\textbf{Deutsch} & \color{white}\textbf{English} \\
+\endfirsthead
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Form} & \color{white}\textbf{Formel} & \color{white}\textbf{Deutsch} & \color{white}\textbf{English} \\
+\endhead
+Aktiv & Person + Verb + Objekt & Der Arzt behandelt den Patienten. & The doctor treats the patient. \\
+Vorgangspassiv Präsens & werden + Partizip II & Der Patient wird behandelt. & The patient is being treated. \\
+Vorgangspassiv Präteritum & wurde + Partizip II & Der Patient wurde behandelt. & The patient was treated. \\
+Vorgangspassiv Perfekt & ist + Partizip II + worden & Der Patient ist behandelt worden. & The patient has been treated. \\
+Zustandspassiv & sein + Partizip II & Die Tür ist geschlossen. & The door is closed. \\
+\end{longtable}
+\rowcolors{2}{}{}
+
+\section{Schwache, starke und gemischte Verben}
+
+\begin{grammarentry}{Warum ist Partizip II manchmal anders?}{verb classes}
+\GermanText{Die Form von Präteritum und Partizip II hängt oft davon ab, ob ein Verb schwach, stark oder gemischt ist.}
+\EnglishText{The form of the preterite and past participle often depends on whether a verb is weak, strong, or mixed.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{L{3cm}L{3cm}L{3.3cm}L{3.3cm}L{3cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Typ} & \color{white}\textbf{Infinitiv} & \color{white}\textbf{Präteritum} & \color{white}\textbf{Partizip II} & \color{white}\textbf{English} \\
+\endfirsthead
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Typ} & \color{white}\textbf{Infinitiv} & \color{white}\textbf{Präteritum} & \color{white}\textbf{Partizip II} & \color{white}\textbf{English} \\
+\endhead
+schwach & lernen & lernte & gelernt & learned \\
+schwach & machen & machte & gemacht & done \\
+stark & gehen & ging & gegangen & gone \\
+stark & waschen & wusch & gewaschen & washed \\
+gemischt & bringen & brachte & gebracht & brought \\
+gemischt & denken & dachte & gedacht & thought \\
+\end{longtable}
+\rowcolors{2}{}{}
+
+\section{Kurzer Überblick zum Lernen}
+
+\begin{grammarentry}{Was muss ich zuerst lernen?}{practical order}
+\GermanText{Für B1 sind diese Formen besonders wichtig: Infinitiv, Präsens, Perfekt, Präteritum von wichtigen Verben, Partizip II, Imperativ, Konjunktiv II mit würde und die wichtigsten Passivformen.}
+\EnglishText{For B1, these forms are especially important: infinitive, present tense, perfect tense, preterite of important verbs, past participle, imperative, Konjunktiv II with würde, and the most important passive forms.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{L{4cm}L{5.5cm}L{5.5cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Frage} & \color{white}\textbf{Antwort} & \color{white}\textbf{English} \\
+\endfirsthead
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Frage} & \color{white}\textbf{Antwort} & \color{white}\textbf{English} \\
+\endhead
+Was ist Perfekt? & eine Zeitform & a tense \\
+Was ist Partizip II? & eine Verbform & a verb form \\
+Was ist Infinitiv? & die Grundform des Verbs & the basic form of the verb \\
+Was ist Personalform? & die konjugierte Form & the conjugated form \\
+Was ist Imperativ? & die Befehlsform & the command form \\
+Was ist Konjunktiv II? & Form für Wunsch, Höflichkeit und irreale Situation & form for wishes, politeness, and unreal situations \\
+Was ist Passiv? & Form, bei der die Handlung im Vordergrund steht & form in which the action is in the foreground \\
+\end{longtable}
+\rowcolors{2}{}{}
+
+\section{Mini-Zusammenfassung}
+
+\begin{grammarentry}{Ein Satz zum Erinnern}{summary}
+\GermanText{Verbformen sind Bausteine: Infinitiv, Personalform, Partizip I, Partizip II, Imperativ, Konjunktiv I und Konjunktiv II. Zeitformen benutzen diese Bausteine, um Gegenwart, Vergangenheit oder Zukunft auszudrücken.}
+\EnglishText{Verb forms are building blocks: infinitive, conjugated form, present participle, past participle, imperative, Konjunktiv I, and Konjunktiv II. Tenses use these building blocks to express present, past, or future.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich lerne.}{I learn.}
+    \ExampleItem{Ich habe gelernt.}{I learned. / I have learned.}
+    \ExampleItem{Lern bitte.}{Please learn.}
+    \ExampleItem{Wenn ich mehr Zeit hätte, würde ich mehr lernen.}{If I had more time, I would learn more.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\end{document}

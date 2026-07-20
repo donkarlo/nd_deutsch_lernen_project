@@ -1,0 +1,211 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Die Präposition \textit{ohne}}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+\section{Grundbedeutung}
+
+\begin{grammarentry}{ohne}{Präposition + Akkusativ}
+\GermanText{\textit{ohne} bedeutet: nicht mit; etwas oder jemand fehlt.}
+\EnglishText{\textit{ohne} means: without; something or someone is missing.}
+
+\begin{itemize}
+    \item \textbf{Kasus:} immer Akkusativ
+    \item \textbf{Form:} ohne + Akkusativ
+    \item \textbf{Englisch:} without
+    \item \textbf{Gegenteil:} mit + Dativ
+\end{itemize}
+\end{grammarentry}
+
+\section{ohne + Akkusativ}
+
+\begin{grammarentry}{Kasus}{Akkusativ}
+\GermanText{Nach \textit{ohne} steht das Nomen oder Pronomen im Akkusativ.}
+\EnglishText{After \textit{ohne}, the noun or pronoun is in the accusative case.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich gehe ohne den Schlüssel aus dem Haus.}{I leave the house without the key.}
+    \ExampleItem{Sie kommt ohne ihre Tasche.}{She comes without her bag.}
+    \ExampleItem{Wir fahren ohne das Auto.}{We go without the car.}
+    \ExampleItem{Er arbeitet ohne einen Plan.}{He works without a plan.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Artikel nach \textit{ohne}}
+
+\begin{grammarentry}{Artikel}{Akkusativformen}
+\GermanText{Weil \textit{ohne} Akkusativ verlangt, ändern sich besonders maskuline Artikel.}
+\EnglishText{Because \textit{ohne} requires accusative, especially masculine articles change.}
+
+\begin{center}
+\begin{tabular}{lll}
+\textbf{Genus} & \textbf{Nominativ} & \textbf{nach ohne} \\
+Maskulin & der Schlüssel & ohne den Schlüssel \\
+Feminin & die Tasche & ohne die Tasche \\
+Neutral & das Auto & ohne das Auto \\
+Plural & die Bücher & ohne die Bücher \\
+\end{tabular}
+\end{center}
+\end{grammarentry}
+
+\section{ohne + Pronomen}
+
+\begin{grammarentry}{Pronomen}{Akkusativ}
+\GermanText{Auch Pronomen stehen nach \textit{ohne} im Akkusativ.}
+\EnglishText{Pronouns after \textit{ohne} are also in the accusative case.}
+
+\begin{center}
+\begin{tabular}{ll}
+\textbf{Deutsch} & \textbf{English} \\
+ich & ohne mich \\
+du & ohne dich \\
+er & ohne ihn \\
+sie & ohne sie \\
+es & ohne es \\
+wir & ohne uns \\
+ihr & ohne euch \\
+sie/Sie & ohne sie/Sie \\
+\end{tabular}
+\end{center}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ohne mich kannst du nicht anfangen.}{You cannot start without me.}
+    \ExampleItem{Ich mache das ohne dich.}{I do that without you.}
+    \ExampleItem{Wir gehen nicht ohne ihn.}{We do not go without him.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{ohne Artikel}
+
+\begin{grammarentry}{Nullartikel}{without article}
+\GermanText{\textit{ohne} kann auch direkt vor einem Nomen ohne Artikel stehen.}
+\EnglishText{\textit{ohne} can also stand directly before a noun without an article.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich trinke Kaffee ohne Zucker.}{I drink coffee without sugar.}
+    \ExampleItem{Er lebt ohne Angst.}{He lives without fear.}
+    \ExampleItem{Sie arbeitet ohne Pause.}{She works without a break.}
+    \ExampleItem{Ich kann ohne Hilfe nicht weitermachen.}{I cannot continue without help.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{ohne zu + Infinitiv}
+
+\begin{grammarentry}{Infinitivgruppe}{without doing something}
+\GermanText{\textit{ohne zu + Infinitiv} bedeutet: jemand macht etwas nicht, während eine andere Handlung passiert.}
+\EnglishText{\textit{ohne zu + infinitive} means: someone does not do something while another action happens.}
+
+\begin{itemize}
+    \item \textbf{Form:} ohne + zu + Infinitiv
+    \item \textbf{Subjekt:} meistens dasselbe Subjekt wie im Hauptsatz
+\end{itemize}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Er geht weg, ohne etwas zu sagen.}{He leaves without saying anything.}
+    \ExampleItem{Sie arbeitet, ohne eine Pause zu machen.}{She works without taking a break.}
+    \ExampleItem{Ich habe geantwortet, ohne lange nachzudenken.}{I answered without thinking for a long time.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{ohne dass + Nebensatz}
+
+\begin{grammarentry}{Nebensatz}{without that}
+\GermanText{\textit{ohne dass} leitet einen Nebensatz ein. Das konjugierte Verb steht am Ende.}
+\EnglishText{\textit{ohne dass} introduces a subordinate clause. The conjugated verb is at the end.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Er ging weg, ohne dass ich es bemerkte.}{He left without me noticing it.}
+    \ExampleItem{Sie hat geholfen, ohne dass jemand sie gefragt hat.}{She helped without anyone asking her.}
+    \ExampleItem{Ich kann das nicht entscheiden, ohne dass du mir mehr Informationen gibst.}{I cannot decide that without you giving me more information.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Häufige Fehler}
+
+\begin{grammarentry}{Fehler}{wrong / correct}
+\GermanText{Nach \textit{ohne} kommt kein Dativ, sondern Akkusativ. Bei \textit{ohne zu} steht das Verb im Infinitiv.}
+\EnglishText{After \textit{ohne}, use accusative, not dative. With \textit{ohne zu}, the verb is in the infinitive.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Falsch: Ich gehe ohne dem Schlüssel.}{Wrong: Dative after \textit{ohne}.}
+    \ExampleItem{Richtig: Ich gehe ohne den Schlüssel.}{Correct: Accusative after \textit{ohne}.}
+    \ExampleItem{Falsch: Er geht weg, ohne sagt etwas.}{Wrong: finite verb after \textit{ohne}.}
+    \ExampleItem{Richtig: Er geht weg, ohne etwas zu sagen.}{Correct: \textit{ohne zu + Infinitiv}.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Kurze Zusammenfassung}
+
+\begin{grammarentry}{Merken}{summary}
+\begin{itemize}
+    \item \textit{ohne} ist eine Präposition.
+    \item \textit{ohne} verlangt immer Akkusativ.
+    \item Grundbedeutung: \textit{without}.
+    \item Gegenteil: \textit{mit + Dativ}.
+    \item \textit{ohne zu + Infinitiv} benutzt man für Handlungen.
+    \item \textit{ohne dass} leitet einen Nebensatz ein.
+\end{itemize}
+\end{grammarentry}
+
+\end{document}

@@ -1,0 +1,76 @@
+oeif_pruefung:
+  schriftliche_pruefung:
+    lesen:
+      dauer_min: 90
+      teile:
+        teil_1:
+          name: Globalverstehen
+          aufgaben:
+            typ: Zuordnungsaufgaben
+            anzahl: 5
+        teil_2:
+          name: Detailverstehen
+          aufgaben:
+            typ: Multiple-Choice-Aufgaben
+            anzahl: 5
+        teil_3:
+          name: Selektives Verstehen
+          aufgaben:
+            typ: Zuordnungsaufgaben
+            anzahl: 10
+
+    sprachbausteine:
+      teile:
+        teil_1:
+          aufgaben:
+            typ: Multiple-Choice-Aufgaben
+            anzahl: 10
+        teil_2:
+          aufgaben:
+            typ: Zuordnungsaufgaben
+            anzahl: 10
+
+    pause:
+      dauer_min: 20
+
+    hoeren:
+      dauer_min: 25
+      ungefaehr: true
+      teile:
+        teil_1:
+          name: Globalverstehen
+          aufgaben:
+            typ: Richtig-Falsch-Aufgaben
+            anzahl: 5
+        teil_2:
+          name: Detailverstehen
+          aufgaben:
+            typ: Richtig-Falsch-Aufgaben
+            anzahl: 10
+        teil_3:
+          name: Selektives Verstehen
+          aufgaben:
+            typ: Richtig-Falsch-Aufgaben
+            anzahl: 5
+
+    schreiben:
+      dauer_min: 30
+      aufgabe:
+        beschreibung: Zwei Themen stehen zur Auswahl
+
+  muendliche_pruefung:
+    vorbereitungszeit:
+      dauer_min: 20
+    sprechen:
+      dauer_min:
+        - 15
+        - 25
+      ungefaehr: true
+      teile:
+        teil_1:
+          name: Präsentation
+        teil_2:
+          name: Diskussion
+          beschreibung: Prüfungsgespräch mit zwei oder drei Kandidaten
+        teil_3:
+          name: Problemlösung

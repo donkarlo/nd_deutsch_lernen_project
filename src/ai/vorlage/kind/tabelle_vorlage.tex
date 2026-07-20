@@ -1,0 +1,130 @@
+% Diese datei bewahrt was ein Beischpiel für tabellarisch Daten
+
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[margin=1.8cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[table]{xcolor}
+
+\renewcommand{\arraystretch}{1.5}
+\setlength{\tabcolsep}{6pt}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+
+\begin{document}
+    
+    \section{Personalpronomen}
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{2.4cm}|*{9}{>{\centering\arraybackslash}p{1.2cm}}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Kasus} &
+            \color{white}\textbf{ich} &
+            \color{white}\textbf{du} &
+            \color{white}\textbf{er} &
+            \color{white}\textbf{sie} &
+            \color{white}\textbf{es} &
+            \color{white}\textbf{wir} &
+            \color{white}\textbf{ihr} &
+            \color{white}\textbf{sie} &
+            \color{white}\textbf{Sie} \\
+            Nominativ & ich & du & er & sie & es & wir & ihr & sie & Sie \\
+            Akkusativ & mich & dich & ihn & sie & es & uns & euch & sie & Sie \\
+            Dativ & mir & dir & ihm & ihr & ihm & uns & euch & ihnen & Ihnen \\
+            Genitiv & meiner & deiner & seiner & ihrer & seiner & unser & euer & ihrer & Ihrer \\
+        \end{longtable}
+    
+    
+    \section{Possessivpronomen / Possessivartikel}
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{2.4cm}|*{9}{>{\centering\arraybackslash}p{1.2cm}}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Kasus} &
+            \color{white}\textbf{ich} &
+            \color{white}\textbf{du} &
+            \color{white}\textbf{er} &
+            \color{white}\textbf{sie} &
+            \color{white}\textbf{es} &
+            \color{white}\textbf{wir} &
+            \color{white}\textbf{ihr} &
+            \color{white}\textbf{sie} &
+            \color{white}\textbf{Sie} \\
+            Nominativ & mein & dein & sein & ihr & sein & unser & euer & ihr & Ihr \\
+            Akkusativ & meinen & deinen & seinen & ihren & sein & unseren & euren & ihren & Ihren \\
+            Dativ & meinem & deinem & seinem & ihrem & seinem & unserem & eurem & ihrem & Ihrem \\
+            Genitiv & meines & deines & seines & ihres & seines & unseres & eures & ihres & Ihres \\
+        \end{longtable}
+    
+    
+    \section{Reflexivpronomen}
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{2.4cm}|*{9}{>{\centering\arraybackslash}p{1.2cm}}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Kasus} &
+            \color{white}\textbf{ich} &
+            \color{white}\textbf{du} &
+            \color{white}\textbf{er} &
+            \color{white}\textbf{sie} &
+            \color{white}\textbf{es} &
+            \color{white}\textbf{wir} &
+            \color{white}\textbf{ihr} &
+            \color{white}\textbf{sie} &
+            \color{white}\textbf{Sie} \\
+            Akkusativ & mich & dich & sich & sich & sich & uns & euch & sich & sich \\
+            Dativ & mir & dir & sich & sich & sich & uns & euch & sich & sich \\
+        \end{longtable}
+    
+    
+    \section{Demonstrativpronomen: dieser}
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{2.4cm}|*{4}{>{\centering\arraybackslash}p{2.2cm}}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Kasus} &
+            \color{white}\textbf{Maskulin} &
+            \color{white}\textbf{Feminin} &
+            \color{white}\textbf{Neutrum} &
+            \color{white}\textbf{Plural} \\
+            Nominativ & dieser & diese & dieses & diese \\
+            Akkusativ & diesen & diese & dieses & diese \\
+            Dativ & diesem & dieser & diesem & diesen \\
+            Genitiv & dieses & dieser & dieses & dieser \\
+        \end{longtable}
+    
+    
+    \section{Relativpronomen}
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{2.4cm}|*{4}{>{\centering\arraybackslash}p{2.2cm}}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Kasus} &
+            \color{white}\textbf{Maskulin} &
+            \color{white}\textbf{Feminin} &
+            \color{white}\textbf{Neutrum} &
+            \color{white}\textbf{Plural} \\
+            Nominativ & der & die & das & die \\
+            Akkusativ & den & die & das & die \\
+            Dativ & dem & der & dem & denen \\
+            Genitiv & dessen & deren & dessen & deren \\
+        \end{longtable}
+    
+    
+    \section{Fragepronomen: welcher}
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{2.4cm}|*{4}{>{\centering\arraybackslash}p{2.2cm}}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Kasus} &
+            \color{white}\textbf{Maskulin} &
+            \color{white}\textbf{Feminin} &
+            \color{white}\textbf{Neutrum} &
+            \color{white}\textbf{Plural} \\
+            Nominativ & welcher & welche & welches & welche \\
+            Akkusativ & welchen & welche & welches & welche \\
+            Dativ & welchem & welcher & welchem & welchen \\
+            Genitiv & welches & welcher & welches & welcher \\
+        \end{longtable}
+
+\end{document}

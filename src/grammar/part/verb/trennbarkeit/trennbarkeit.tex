@@ -1,0 +1,493 @@
+% Trennbare und untrennbare Verben: Infinitiv, Satzstellung und wichtige Sonderfälle
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\newtcolorbox{warningbox}{enhanced,breakable,colback=RowBlueLight,colframe=HeaderBlueDark,boxrule=0.8pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,title={Besonders wichtig \textnormal{(Especially important)}},fonttitle=\bfseries,colbacktitle=HeaderBlueDark,coltitle=white}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+\title{Trennbare und untrennbare Verben}
+\author{}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+    \section{Grundidee}
+
+        \begin{grammarentry}{Was bedeutet \glqq trennbar\grqq?}{Grundregel}
+            \GermanText{Ein trennbares Verb besteht aus einem trennbaren Präfix und einem Verbstamm. In bestimmten Satzformen wird das Präfix vom konjugierten Verb getrennt und steht am Satzende.}
+            \EnglishText{A separable verb consists of a separable prefix and a verb stem. In certain sentence structures, the prefix is separated from the conjugated verb and stands at the end of the sentence.}
+
+            \GermanText{Beispiel: \textbf{aufstehen} = \textbf{auf-} + \textbf{stehen}. Im Hauptsatz heißt es: \glqq Ich \textbf{stehe} früh \textbf{auf}.\grqq}
+            \EnglishText{Example: \textbf{aufstehen} = \textbf{auf-} + \textbf{stehen}. In a main clause, it becomes: ``I \textbf{get} up early.''}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Was bedeutet \glqq untrennbar\grqq?}{Grundregel}
+            \GermanText{Bei einem untrennbaren Verb bleiben Präfix und Verbstamm in allen grammatischen Formen zusammen. Das Präfix wird nie allein ans Satzende gestellt.}
+            \EnglishText{With an inseparable verb, the prefix and verb stem remain together in all grammatical forms. The prefix is never placed alone at the end of the sentence.}
+
+            \GermanText{Beispiel: \textbf{verstehen}. Man sagt: \glqq Ich \textbf{verstehe} dich.\grqq, nicht: \glqq Ich stehe dich ver.\grqq}
+            \EnglishText{Example: \textbf{verstehen}. One says: ``I understand you,'' not: ``I stand you ver.''}
+        \end{grammarentry}
+
+
+    \section{Typische Präfixe}
+
+        \subsection{Häufig trennbare Präfixe}
+
+        \begin{grammarentry}{Typische trennbare Präfixe}{meist betont}
+            \GermanText{Häufige trennbare Präfixe sind: \textbf{ab-, an-, auf-, aus-, bei-, ein-, fest-, fort-, her-, hin-, los-, mit-, nach-, statt-, teil-, vor-, weg-, weiter-, zu-, zurück-, zusammen-}.}
+            \EnglishText{Common separable prefixes are: \textbf{ab-, an-, auf-, aus-, bei-, ein-, fest-, fort-, her-, hin-, los-, mit-, nach-, statt-, teil-, vor-, weg-, weiter-, zu-, zurück-, zusammen-}.}
+
+            \GermanText{Bei trennbaren Verben wird das Präfix normalerweise betont: \textbf{AUFstehen}, \textbf{EINladen}, \textbf{ZUkommen}.}
+            \EnglishText{With separable verbs, the prefix is normally stressed: \textbf{AUFstehen}, \textbf{EINladen}, \textbf{ZUkommen}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{ankommen: Der Zug kommt um acht Uhr an.}{to arrive: The train arrives at eight o'clock.}
+                \ExampleItem{mitnehmen: Ich nehme meinen Ausweis mit.}{to take along: I take my ID with me.}
+                \ExampleItem{einladen: Sie lädt ihre Freunde ein.}{to invite: She invites her friends.}
+                \ExampleItem{zumachen: Bitte mach das Fenster zu.}{to close: Please close the window.}
+            \end{itemize}
+        \end{exbox}
+
+        \subsection{Immer untrennbare Präfixe}
+
+        \begin{grammarentry}{Typische untrennbare Präfixe}{unbetont}
+            \GermanText{Die Präfixe \textbf{be-, emp-, ent-, er-, ge-, miss-, ver-, zer-} sind untrennbar. Sie werden normalerweise nicht betont.}
+            \EnglishText{The prefixes \textbf{be-, emp-, ent-, er-, ge-, miss-, ver-, zer-} are inseparable. They are normally unstressed.}
+
+            \GermanText{Beispiele: \textbf{bekommen}, \textbf{empfehlen}, \textbf{entdecken}, \textbf{erklären}, \textbf{gefallen}, \textbf{missverstehen}, \textbf{verkaufen}, \textbf{zerstören}.}
+            \EnglishText{Examples: \textbf{to receive}, \textbf{to recommend}, \textbf{to discover}, \textbf{to explain}, \textbf{to please}, \textbf{to misunderstand}, \textbf{to sell}, \textbf{to destroy}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich verstehe dich.}{I understand you.}
+                \ExampleItem{Der Lehrer erklärt die Regel.}{The teacher explains the rule.}
+                \ExampleItem{Sie verkauft ihr Auto.}{She sells her car.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Wann wird ein trennbares Verb getrennt?}
+
+        \begin{grammarentry}{Finite einfache Verbform im Hauptsatz}{Präsens und Präteritum}
+            \GermanText{Steht ein trennbares Verb als konjugierte einfache Verbform in einem Hauptsatz, wird es getrennt. Der Verbstamm steht an der normalen Verbposition; das Präfix steht am Ende des Satzes.}
+            \EnglishText{When a separable verb is used as a conjugated simple verb form in a main clause, it is separated. The verb stem stands in the normal verb position; the prefix stands at the end of the sentence.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich stehe jeden Tag um sieben Uhr auf.}{I get up at seven o'clock every day.}
+                \ExampleItem{Gestern stand ich um sieben Uhr auf.}{Yesterday I got up at seven o'clock.}
+                \ExampleItem{Der Zug kommt bald an.}{The train will arrive soon.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Fragen und Imperativ}{ebenfalls getrennt}
+            \GermanText{Auch in Ja-Nein-Fragen, W-Fragen und im Imperativ wird die einfache konjugierte Form getrennt.}
+            \EnglishText{The simple conjugated form is also separated in yes-no questions, W-questions, and the imperative.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Stehst du morgen früh auf?}{Are you getting up early tomorrow?}
+                \ExampleItem{Wann stehst du auf?}{When do you get up?}
+                \ExampleItem{Steh bitte auf!}{Please get up!}
+                \ExampleItem{Macht das Fenster zu!}{Close the window!}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Wann wird ein trennbares Verb nicht getrennt?}
+
+        \begin{grammarentry}{Nebensatz}{das konjugierte Verb steht am Ende}
+            \GermanText{In einem Nebensatz bleibt das trennbare Verb zusammengeschrieben. Das vollständig konjugierte Verb steht am Ende des Nebensatzes.}
+            \EnglishText{In a subordinate clause, the separable verb remains written as one word. The fully conjugated verb stands at the end of the subordinate clause.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich weiß, dass du morgen früh aufstehst.}{I know that you are getting up early tomorrow.}
+                \ExampleItem{Wir warten, bis der Zug ankommt.}{We are waiting until the train arrives.}
+                \ExampleItem{Weil sie mich einlädt, komme ich gern.}{Because she invites me, I am happy to come.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Mit Modalverb}{Infinitiv ohne \glqq zu\grqq}
+            \GermanText{Nach einem Modalverb steht der Infinitiv ohne \textbf{zu}. Das trennbare Verb bleibt als vollständiger Infinitiv zusammen.}
+            \EnglishText{After a modal verb, the infinitive is used without \textbf{zu}. The separable verb remains together as a complete infinitive.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich muss morgen früh aufstehen.}{I have to get up early tomorrow.}
+                \ExampleItem{Du kannst deine Freunde mitnehmen.}{You can take your friends along.}
+                \ExampleItem{Wir wollen auf das Rathaus zumarschieren.}{We want to march toward the town hall.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Futur I und \glqq würde\grqq-Form}{Infinitiv bleibt zusammen}
+            \GermanText{Im Futur I und in der Form mit \textbf{würde} steht das trennbare Verb als vollständiger Infinitiv am Satzende. Es wird nicht getrennt.}
+            \EnglishText{In the future tense and in the form with \textbf{würde}, the separable verb stands as a complete infinitive at the end of the sentence. It is not separated.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich werde morgen früh aufstehen.}{I will get up early tomorrow.}
+                \ExampleItem{Ich würde früher aufstehen.}{I would get up earlier.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Wie bildet man den Infinitiv?}
+
+        \subsection{Infinitiv ohne \glqq zu\grqq}
+
+        \begin{grammarentry}{Ein Wort}{Grundform des Verbs}
+            \GermanText{Der normale Infinitiv eines trennbaren Verbs wird zusammengeschrieben: \textbf{aufstehen}, \textbf{einkaufen}, \textbf{zuhören}, \textbf{zumarschieren}.}
+            \EnglishText{The normal infinitive of a separable verb is written as one word: \textbf{to get up}, \textbf{to shop}, \textbf{to listen}, \textbf{to march toward}.}
+
+            \GermanText{Auch der Infinitiv eines untrennbaren Verbs ist ein Wort: \textbf{verstehen}, \textbf{bekommen}, \textbf{erklären}.}
+            \EnglishText{The infinitive of an inseparable verb is also one word: \textbf{to understand}, \textbf{to receive}, \textbf{to explain}.}
+        \end{grammarentry}
+
+        \subsection{Infinitiv mit \glqq zu\grqq bei trennbaren Verben}
+
+        \begin{grammarentry}{Präfix + zu + Verbstamm}{alles wird zusammengeschrieben}
+            \GermanText{Bei einem trennbaren Verb wird das Infinitivzeichen \textbf{zu} zwischen das trennbare Präfix und den Verbstamm gesetzt. Die gesamte Form wird als ein Wort geschrieben.}
+            \EnglishText{With a separable verb, the infinitive marker \textbf{zu} is inserted between the separable prefix and the verb stem. The entire form is written as one word.}
+
+            \GermanText{Formel: \textbf{trennbares Präfix + zu + Verbstamm}.}
+            \EnglishText{Formula: \textbf{separable prefix + zu + verb stem}.}
+        \end{grammarentry}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{tabularx}{\textwidth}{>{\bfseries}Y Y Y}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Infinitiv} & \color{white}\textbf{Aufbau} & \color{white}\textbf{Infinitiv mit \glqq zu\grqq} \\
+            aufstehen & auf- + stehen & aufzustehen \\
+            einkaufen & ein- + kaufen & einzukaufen \\
+            mitnehmen & mit- + nehmen & mitzunehmen \\
+            zuhören & zu- + hören & zuzuhören \\
+            zumachen & zu- + machen & zuzumachen \\
+            zumarschieren & zu- + marschieren & zuzumarschieren \\
+        \end{tabularx}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich versuche, früh aufzustehen.}{I try to get up early.}
+                \ExampleItem{Sie hat vergessen, Brot einzukaufen.}{She forgot to buy bread.}
+                \ExampleItem{Du musst lernen, genau zuzuhören.}{You must learn to listen carefully.}
+            \end{itemize}
+        \end{exbox}
+
+        \subsection{Infinitiv mit \glqq zu\grqq bei untrennbaren Verben}
+
+        \begin{grammarentry}{\glqq zu\grqq steht vor dem Verb}{zwei Wörter}
+            \GermanText{Bei untrennbaren Verben wird \textbf{zu} nicht in das Verb eingefügt. Es steht als eigenes Wort vor dem vollständigen Infinitiv.}
+            \EnglishText{With inseparable verbs, \textbf{zu} is not inserted into the verb. It stands as a separate word before the complete infinitive.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich versuche, dich zu verstehen.}{I try to understand you.}
+                \ExampleItem{Er hofft, eine Antwort zu bekommen.}{He hopes to receive an answer.}
+                \ExampleItem{Sie beginnt, die Regel zu erklären.}{She begins to explain the rule.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Der besondere Fall: \glqq zuzumarschieren\grqq}
+
+        \begin{warningbox}
+            \GermanText{Das Verb heißt \textbf{zumarschieren}. Das erste \textbf{zu-} ist ein trennbares Präfix und gehört bereits zum Verb. Für den Infinitiv mit \textbf{zu} kommt ein zweites \textbf{zu} hinzu. Dieses zweite \textbf{zu} wird zwischen Präfix und Verbstamm gesetzt.}
+            \EnglishText{The verb is \textbf{zumarschieren}. The first \textbf{zu-} is a separable prefix and already belongs to the verb. For the infinitive with \textbf{zu}, a second \textbf{zu} is added. This second \textbf{zu} is inserted between the prefix and the verb stem.}
+
+            \GermanText{Aufbau: \textbf{zu- + zu + marschieren = zuzumarschieren}.}
+            \EnglishText{Structure: \textbf{zu- + zu + marschieren = zuzumarschieren}.}
+
+            \GermanText{Die Form \textbf{zu zumarschieren} ist falsch, weil der Infinitiv mit \textbf{zu} bei trennbaren Verben als ein Wort geschrieben wird.}
+            \EnglishText{The form \textbf{zu zumarschieren} is incorrect because the infinitive with \textbf{zu} is written as one word with separable verbs.}
+        \end{warningbox}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Die Demonstranten beginnen, auf das Parlament zuzumarschieren.}{The demonstrators begin to march toward the parliament.}
+                \ExampleItem{Die Soldaten versuchen, auf die Stadt zuzumarschieren.}{The soldiers try to march toward the city.}
+                \ExampleItem{Wir wollen auf das Gebäude zumarschieren.}{We want to march toward the building. Here there is no infinitive marker \textbf{zu}, because \textbf{wollen} is a modal verb.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Nicht jedes \glqq zu\grqq ist das Infinitivzeichen}{Bedeutungsunterschied}
+            \GermanText{In \textbf{zumarschieren} bedeutet das Präfix \textbf{zu-} ungefähr \glqq auf ein Ziel hin\grqq. Es ist ein Teil des Verbs. In \textbf{zuzumarschieren} ist das mittlere \textbf{zu} dagegen das grammatische Infinitivzeichen.}
+            \EnglishText{In \textbf{zumarschieren}, the prefix \textbf{zu-} means approximately ``toward a destination.'' It is part of the verb. In \textbf{zuzumarschieren}, however, the middle \textbf{zu} is the grammatical infinitive marker.}
+        \end{grammarentry}
+
+
+    \section{Perfekt und Partizip II}
+
+        \subsection{Trennbare Verben}
+
+        \begin{grammarentry}{Präfix + ge + Verbstamm}{normale Bildung}
+            \GermanText{Bei vielen trennbaren Verben wird \textbf{ge} zwischen das Präfix und den Verbstamm gesetzt.}
+            \EnglishText{With many separable verbs, \textbf{ge} is inserted between the prefix and the verb stem.}
+
+            \GermanText{Formel: \textbf{trennbares Präfix + ge + Verbstamm + Endung}.}
+            \EnglishText{Formula: \textbf{separable prefix + ge + verb stem + ending}.}
+        \end{grammarentry}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{tabularx}{\textwidth}{>{\bfseries}Y Y Y}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Infinitiv} & \color{white}\textbf{Partizip II} & \color{white}\textbf{Perfekt} \\
+            aufstehen & aufgestanden & ich bin aufgestanden \\
+            einkaufen & eingekauft & ich habe eingekauft \\
+            mitnehmen & mitgenommen & ich habe mitgenommen \\
+            zuhören & zugehört & ich habe zugehört \\
+            zumachen & zugemacht & ich habe zugemacht \\
+        \end{tabularx}
+
+        \subsection{Verben auf \glqq -ieren\grqq}
+
+        \begin{warningbox}
+            \GermanText{Verben auf \textbf{-ieren} bilden das Partizip II ohne \textbf{ge}. Das gilt auch dann, wenn das Verb trennbar ist. Deshalb heißt das Partizip II von \textbf{zumarschieren}: \textbf{zumarschiert}, nicht \textbf{zugemarschiert}.}
+            \EnglishText{Verbs ending in \textbf{-ieren} form the past participle without \textbf{ge}. This also applies when the verb is separable. Therefore, the past participle of \textbf{zumarschieren} is \textbf{zumarschiert}, not \textbf{zugemarschiert}.}
+        \end{warningbox}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Die Soldaten sind auf die Stadt zumarschiert.}{The soldiers marched toward the city.}
+                \ExampleItem{Die Truppen sind in das Gebiet einmarschiert.}{The troops marched into the area.}
+                \ExampleItem{Wir haben die neue Methode ausprobiert.}{We tried the new method.}
+            \end{itemize}
+        \end{exbox}
+
+        \subsection{Untrennbare Verben}
+
+        \begin{grammarentry}{Kein \glqq ge\grqq}{Präfix bleibt unverändert}
+            \GermanText{Untrennbare Verben mit \textbf{be-, emp-, ent-, er-, ge-, miss-, ver-, zer-} bilden das Partizip II ohne zusätzliches \textbf{ge}.}
+            \EnglishText{Inseparable verbs with \textbf{be-, emp-, ent-, er-, ge-, miss-, ver-, zer-} form the past participle without an additional \textbf{ge}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{verstehen: Ich habe dich verstanden.}{to understand: I understood you.}
+                \ExampleItem{bekommen: Ich habe eine E-Mail bekommen.}{to receive: I received an email.}
+                \ExampleItem{erklären: Sie hat die Regel erklärt.}{to explain: She explained the rule.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Infinitiv Perfekt}
+
+        \begin{grammarentry}{Partizip II + haben oder sein + zu}{Vergangenheit im Infinitivsatz}
+            \GermanText{Der Infinitiv Perfekt bezeichnet eine Handlung, die vor der Handlung des Hauptsatzes passiert ist. Er besteht aus dem Partizip II und \textbf{zu haben} oder \textbf{zu sein}.}
+            \EnglishText{The perfect infinitive describes an action that happened before the action of the main clause. It consists of the past participle and \textbf{zu haben} or \textbf{zu sein}.}
+
+            \GermanText{Die Trennbarkeit verändert diese Struktur nicht. Entscheidend ist die korrekte Form des Partizips II.}
+            \EnglishText{Separability does not change this structure. What matters is the correct form of the past participle.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Er behauptet, früh aufgestanden zu sein.}{He claims to have gotten up early.}
+                \ExampleItem{Sie glaubt, alles verstanden zu haben.}{She believes she has understood everything.}
+                \ExampleItem{Die Gruppe behauptet, auf das Gebäude zumarschiert zu sein.}{The group claims to have marched toward the building.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Verben, die je nach Bedeutung trennbar oder untrennbar sind}
+
+        \begin{grammarentry}{Wechselpräfixe}{Bedeutung und Betonung entscheiden}
+            \GermanText{Einige Präfixe können trennbar oder untrennbar sein, besonders \textbf{durch-, über-, um-, unter-}. Dann entscheiden Bedeutung und Betonung. Bei trennbarer Verwendung wird das Präfix meist betont; bei untrennbarer Verwendung wird meist der Verbstamm betont.}
+            \EnglishText{Some prefixes can be separable or inseparable, especially \textbf{durch-, über-, um-, unter-}. In such cases, meaning and stress determine the form. In separable use, the prefix is usually stressed; in inseparable use, the verb stem is usually stressed.}
+        \end{grammarentry}
+
+        \subsection{\glqq umfahren\grqq}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{trennbar, \textbf{UMfahren}: Er fährt den Pfosten um. Er hat den Pfosten umgefahren.}{separable, to knock over with a vehicle: He knocks the post over. He knocked the post over.}
+                \ExampleItem{untrennbar, um\textbf{FAHREN}: Er umfährt die Baustelle. Er hat die Baustelle umfahren.}{inseparable, to drive around or avoid: He drives around the construction site. He drove around the construction site.}
+            \end{itemize}
+        \end{exbox}
+
+        \subsection{\glqq übersetzen\grqq}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{trennbar, \textbf{ÜBERsetzen}: Der Fährmann setzt uns über. Er hat uns übergesetzt.}{separable, to ferry across: The ferryman takes us across. He took us across.}
+                \ExampleItem{untrennbar, über\textbf{SETZEN}: Sie übersetzt den Text. Sie hat den Text übersetzt.}{inseparable, to translate: She translates the text. She translated the text.}
+            \end{itemize}
+        \end{exbox}
+
+        \subsection{\glqq unterstellen\grqq}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{trennbar, \textbf{UNTERstellen}: Ich stelle das Fahrrad unter. Ich habe es untergestellt.}{separable, to put under shelter: I put the bicycle under shelter. I put it under shelter.}
+                \ExampleItem{untrennbar, unter\textbf{STELLEN}: Er unterstellt mir eine Lüge. Er hat mir eine Lüge unterstellt.}{inseparable, to accuse or allege: He accuses me of lying. He accused me of lying.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{warningbox}
+            \GermanText{Bei solchen Verben reicht die Schreibweise des Infinitivs allein nicht aus. Man muss die Bedeutung, die Betonung und die Formen im Wörterbuch prüfen.}
+            \EnglishText{With such verbs, the spelling of the infinitive alone is not enough. One must check the meaning, the stress, and the forms in a dictionary.}
+        \end{warningbox}
+
+
+    \section{\glqq wieder-\grqq und \glqq wider-\grqq}
+
+        \begin{grammarentry}{Nicht verwechseln}{zwei verschiedene Präfixe}
+            \GermanText{Das Präfix \textbf{wieder-} bedeutet meistens \glqq noch einmal\grqq oder \glqq zurück\grqq und ist häufig trennbar: \textbf{wiederkommen}, \textbf{wiedersehen}, \textbf{wiederaufbauen}.}
+            \EnglishText{The prefix \textbf{wieder-} usually means ``again'' or ``back'' and is often separable: \textbf{to come back}, \textbf{to see again}, \textbf{to rebuild}.}
+
+            \GermanText{Das Präfix \textbf{wider-} bedeutet \glqq gegen\grqq und ist untrennbar: \textbf{widersprechen}, \textbf{widerlegen}, \textbf{widerrufen}.}
+            \EnglishText{The prefix \textbf{wider-} means ``against'' and is inseparable: \textbf{to contradict}, \textbf{to refute}, \textbf{to revoke}.}
+
+            \GermanText{Eine wichtige Ausnahme ist \textbf{wiederholen}. Dieses Verb ist untrennbar: \glqq Ich wiederhole den Satz.\grqq, \glqq Ich habe den Satz wiederholt.\grqq}
+            \EnglishText{An important exception is \textbf{wiederholen}. This verb is inseparable: ``I repeat the sentence,'' ``I repeated the sentence.''}
+        \end{grammarentry}
+
+
+    \section{Mehrere Präfixe in einem Verb}
+
+        \begin{grammarentry}{Das äußerste trennbare Element entscheidet}{komplexe Verben}
+            \GermanText{Ein Verb kann mehr als ein Präfix enthalten. Bei der Satztrennung wird normalerweise das äußerste trennbare Element abgetrennt.}
+            \EnglishText{A verb can contain more than one prefix. In sentence separation, the outermost separable element is normally separated.}
+
+            \GermanText{Beispiel: \textbf{wiederaufbauen}. Hauptsatz: \glqq Wir bauen die Brücke wieder auf.\grqq Infinitiv mit \textbf{zu}: \textbf{wiederaufzubauen}. Partizip II: \textbf{wiederaufgebaut}.}
+            \EnglishText{Example: \textbf{wiederaufbauen}. Main clause: ``We rebuild the bridge.'' Infinitive with \textbf{zu}: \textbf{wiederaufzubauen}. Past participle: \textbf{wiederaufgebaut}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Wir bauen das Haus wieder auf.}{We rebuild the house.}
+                \ExampleItem{Wir versuchen, das Haus wiederaufzubauen.}{We try to rebuild the house.}
+                \ExampleItem{Das Haus wurde wiederaufgebaut.}{The house was rebuilt.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Gesamtübersicht}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{tabularx}{\textwidth}{>{\bfseries}Y Y Y}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Form} & \color{white}\textbf{Trennbar: aufstehen} & \color{white}\textbf{Untrennbar: verstehen} \\
+            Infinitiv ohne \glqq zu\grqq & aufstehen & verstehen \\
+            Hauptsatz im Präsens & ich stehe auf & ich verstehe \\
+            Hauptsatz im Präteritum & ich stand auf & ich verstand \\
+            Nebensatz & weil ich aufstehe & weil ich verstehe \\
+            Modalverb & ich muss aufstehen & ich muss verstehen \\
+            Infinitiv mit \glqq zu\grqq & aufzustehen & zu verstehen \\
+            Partizip II & aufgestanden & verstanden \\
+            Perfekt & ich bin aufgestanden & ich habe verstanden \\
+            Futur I & ich werde aufstehen & ich werde verstehen \\
+            Imperativ & steh auf! & versteh! / verstehe! \\
+        \end{tabularx}
+
+
+    \section{Häufige Fehler}
+
+        \begin{grammarentry}{Falsche und richtige Formen}{Fehler vermeiden}
+            \GermanText{Falsch: \textbf{Ich muss früh auf zu stehen.} Richtig: \textbf{Ich muss früh aufstehen.} Nach einem Modalverb steht kein Infinitivzeichen \textbf{zu}.}
+            \EnglishText{Incorrect: \textbf{Ich muss früh auf zu stehen.} Correct: \textbf{Ich muss früh aufstehen.} After a modal verb, there is no infinitive marker \textbf{zu}.}
+
+            \GermanText{Falsch: \textbf{Ich versuche, zu aufstehen.} Richtig: \textbf{Ich versuche, aufzustehen.} Bei einem trennbaren Verb steht \textbf{zu} zwischen Präfix und Verbstamm.}
+            \EnglishText{Incorrect: \textbf{Ich versuche, zu aufstehen.} Correct: \textbf{Ich versuche, aufzustehen.} With a separable verb, \textbf{zu} stands between the prefix and the verb stem.}
+
+            \GermanText{Falsch: \textbf{Ich versuche, zu zumarschieren.} Richtig: \textbf{Ich versuche, zuzumarschieren.}}
+            \EnglishText{Incorrect: \textbf{Ich versuche, zu zumarschieren.} Correct: \textbf{Ich versuche, zuzumarschieren.}}
+
+            \GermanText{Falsch: \textbf{weil ich früh stehe auf}. Richtig: \textbf{weil ich früh aufstehe}. Im Nebensatz bleibt das Verb zusammen und steht am Ende.}
+            \EnglishText{Incorrect: \textbf{weil ich früh stehe auf}. Correct: \textbf{weil ich früh aufstehe}. In a subordinate clause, the verb remains together and stands at the end.}
+
+            \GermanText{Falsch: \textbf{ich habe verstanden ge}. Richtig: \textbf{ich habe verstanden}. Untrennbare Verben erhalten kein zusätzliches \textbf{ge}.}
+            \EnglishText{Incorrect: \textbf{ich habe verstanden ge}. Correct: \textbf{ich habe verstanden}. Inseparable verbs do not receive an additional \textbf{ge}.}
+        \end{grammarentry}
+
+
+    \section{Entscheidungshilfe}
+
+        \begin{grammarentry}{Schritt für Schritt}{praktische Methode}
+            \GermanText{1. Prüfe, ob das Verb trennbar oder untrennbar ist. Achte auf das Präfix, die Betonung und die Bedeutung.}
+            \EnglishText{1. Check whether the verb is separable or inseparable. Pay attention to the prefix, stress, and meaning.}
+
+            \GermanText{2. Prüfe, welche Verbform du brauchst: einfache konjugierte Form, Infinitiv, Infinitiv mit \textbf{zu}, Partizip II oder Nebensatzform.}
+            \EnglishText{2. Check which verb form you need: simple conjugated form, infinitive, infinitive with \textbf{zu}, past participle, or subordinate-clause form.}
+
+            \GermanText{3. Trenne ein trennbares Verb nur bei einer einfachen konjugierten Verbform im Hauptsatz, in Fragen und im Imperativ.}
+            \EnglishText{3. Separate a separable verb only when it is a simple conjugated verb form in a main clause, in questions, and in the imperative.}
+
+            \GermanText{4. Im Nebensatz, im Infinitiv, im Partizip II sowie nach Modalverben bleibt die relevante Verbform zusammen. Beim Infinitiv mit \textbf{zu} wird \textbf{zu} in ein trennbares Verb eingefügt.}
+            \EnglishText{4. In subordinate clauses, in the infinitive, in the past participle, and after modal verbs, the relevant verb form remains together. In the infinitive with \textbf{zu}, \textbf{zu} is inserted into a separable verb.}
+        \end{grammarentry}
+
+
+    \section{Zusammenfassung}
+
+        \begin{warningbox}
+            \GermanText{Trennbare Verben werden in einfachen Hauptsätzen getrennt: \textbf{Ich stehe auf}. In Nebensätzen bleiben sie zusammen: \textbf{weil ich aufstehe}.}
+            \EnglishText{Separable verbs are separated in simple main clauses: \textbf{Ich stehe auf}. In subordinate clauses, they remain together: \textbf{weil ich aufstehe}.}
+
+            \GermanText{Beim Infinitiv mit \textbf{zu} steht \textbf{zu} zwischen Präfix und Verbstamm: \textbf{aufzustehen}. Hat das Verb bereits das Präfix \textbf{zu-}, entstehen zwei direkt aufeinanderfolgende \textbf{zu}: \textbf{zuzuhören}, \textbf{zuzumachen}, \textbf{zuzumarschieren}. Alles wird zusammengeschrieben.}
+            \EnglishText{In the infinitive with \textbf{zu}, \textbf{zu} stands between the prefix and the verb stem: \textbf{aufzustehen}. If the verb already has the prefix \textbf{zu-}, two consecutive instances of \textbf{zu} appear: \textbf{zuzuhören}, \textbf{zuzumachen}, \textbf{zuzumarschieren}. Everything is written as one word.}
+
+            \GermanText{Untrennbare Verben werden nie getrennt. Beim Infinitiv mit \textbf{zu} steht \textbf{zu} vor dem Verb: \textbf{zu verstehen}. Im Partizip II erhalten sie kein zusätzliches \textbf{ge}: \textbf{verstanden}.}
+            \EnglishText{Inseparable verbs are never separated. In the infinitive with \textbf{zu}, \textbf{zu} stands before the verb: \textbf{zu verstehen}. In the past participle, they receive no additional \textbf{ge}: \textbf{verstanden}.}
+        \end{warningbox}
+
+\end{document}

@@ -1,0 +1,361 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{colortbl}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\newcommand{\Correct}[1]{\textcolor{HeaderBlueDark}{\textbf{#1}}}
+\newcommand{\Wrong}[1]{\textcolor{red!70!black}{\textbf{#1}}}
+
+\title{Die Präposition \glqq um\grqq}
+\date{}
+
+\begin{document}
+    \selectlanguage{ngerman}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+\section{Kurze Grundregel}
+
+\begin{grammarentry}{um [um]}{Präposition + Akkusativ}
+\GermanText{\glqq um\grqq ist als Präposition immer mit dem Akkusativ verbunden.}
+\EnglishText{As a preposition, \glqq um\grqq is always used with the accusative.}
+
+\GermanText{Die wichtigste Grundidee ist: rund um etwas, zu einem Zeitpunkt, ungefähr bei einer Zahl oder mit einem Ziel/Interesse.}
+\EnglishText{The main basic ideas are: around something, at a time, approximately around a number, or with a goal/interest.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Wir sitzen um den Tisch.}{We are sitting around the table.}
+    \ExampleItem{Der Kurs beginnt um acht Uhr.}{The course begins at eight o'clock.}
+    \ExampleItem{Die Preise steigen um zehn Prozent.}{The prices increase by ten percent.}
+    \ExampleItem{Ich kümmere mich um die Dokumente.}{I take care of the documents.}
+\end{itemize}
+\end{exbox}
+
+\section{Kasus: um + Akkusativ}
+
+\GermanText{Nach \glqq um\grqq steht der Akkusativ.}
+\EnglishText{After \glqq um\grqq, the accusative is used.}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{0.23\textwidth}X X}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Genus} & \color{white}\textbf{Nominativ} & \color{white}\textbf{mit um + Akkusativ} \\
+maskulin & der Tisch & um den Tisch \\
+feminin & die Stadt & um die Stadt \\
+neutral & das Haus & um das Haus / ums Haus \\
+Plural & die Häuser & um die Häuser \\
+\end{tabularx}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich laufe um den See.}{I walk/run around the lake.}
+    \ExampleItem{Wir fahren um die Stadt.}{We drive around the city.}
+    \ExampleItem{Die Kinder laufen um das Haus.}{The children run around the house.}
+    \ExampleItem{Sie gehen um die Häuser.}{They go around the houses.}
+\end{itemize}
+\end{exbox}
+
+\section{Bedeutung 1: rund um etwas}
+
+\begin{grammarentry}{räumliche Bedeutung}{around something}
+\GermanText{\glqq um\grqq kann bedeuten, dass etwas rund um ein Objekt ist oder sich rund um ein Objekt bewegt.}
+\EnglishText{\glqq um\grqq can mean that something is around an object or moves around an object.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Die Familie sitzt um den Tisch.}{The family sits around the table.}
+    \ExampleItem{Er läuft um den Park.}{He runs around the park.}
+    \ExampleItem{Wir gehen um die Ecke.}{We go around the corner.}
+    \ExampleItem{Ein Zaun steht um den Garten.}{A fence stands around the garden.}
+\end{itemize}
+\end{exbox}
+
+\section{Bedeutung 2: genaue Uhrzeit}
+
+\begin{grammarentry}{um + Uhrzeit}{at a specific time}
+\GermanText{Für eine genaue Uhrzeit benutzt man \glqq um\grqq.}
+\EnglishText{For an exact clock time, German uses \glqq um\grqq.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich komme um sieben Uhr.}{I come at seven o'clock.}
+    \ExampleItem{Der Termin ist um 14:30 Uhr.}{The appointment is at 2:30 p.m.}
+    \ExampleItem{Der Unterricht beginnt um neun Uhr.}{The lesson begins at nine o'clock.}
+\end{itemize}
+\end{exbox}
+
+\subsection{Unterschied: um und gegen}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{0.18\textwidth}X X}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Form} & \color{white}\textbf{Deutsch} & \color{white}\textbf{English} \\
+um & Ich komme um acht Uhr. & I come at eight o'clock. Exact or planned time. \\
+gegen & Ich komme gegen acht Uhr. & I come around eight o'clock. Approximate time. \\
+\end{tabularx}
+
+\section{Bedeutung 3: ungefähr bei Zahlen}
+
+\begin{grammarentry}{um die + Zahl}{about / around}
+\GermanText{Mit Zahlen kann \glqq um die\grqq ungefähr bedeuten.}
+\EnglishText{With numbers, \glqq um die\grqq can mean about or around.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Das kostet um die zwanzig Euro.}{That costs around twenty euros.}
+    \ExampleItem{Es waren um die fünfzig Personen dort.}{There were about fifty people there.}
+    \ExampleItem{Um das Jahr 1900 lebten hier viele Arbeiter.}{Around the year 1900, many workers lived here.}
+\end{itemize}
+\end{exbox}
+
+\GermanText{In der Standardsprache ist auch \glqq ungefähr\grqq sehr klar und neutral.}
+\EnglishText{In standard language, \glqq ungefähr\grqq is also very clear and neutral.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Das kostet ungefähr zwanzig Euro.}{That costs approximately twenty euros.}
+    \ExampleItem{Es waren ungefähr fünfzig Personen dort.}{There were approximately fifty people there.}
+\end{itemize}
+\end{exbox}
+
+\section{Bedeutung 4: Veränderung um einen Betrag}
+
+\begin{grammarentry}{um + Zahl / Betrag}{by an amount}
+\GermanText{Bei einer Veränderung benutzt man \glqq um\grqq, wenn man sagt, wie groß die Veränderung ist.}
+\EnglishText{With a change, \glqq um\grqq is used to say by how much something changes.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Der Preis steigt um zehn Prozent.}{The price increases by ten percent.}
+    \ExampleItem{Die Miete wurde um fünfzig Euro erhöht.}{The rent was increased by fifty euros.}
+    \ExampleItem{Die Temperatur sinkt um drei Grad.}{The temperature falls by three degrees.}
+    \ExampleItem{Er hat sein Gewicht um zwei Kilo reduziert.}{He reduced his weight by two kilos.}
+\end{itemize}
+\end{exbox}
+
+\section{Bedeutung 5: Ziel, Interesse oder Kampf}
+
+\begin{grammarentry}{Verben mit um + Akkusativ}{for / about / concerning}
+\GermanText{Viele Verben stehen mit \glqq um + Akkusativ\grqq, wenn es um ein Ziel, ein Interesse oder eine Sache geht.}
+\EnglishText{Many verbs are used with \glqq um + accusative\grqq when the meaning is a goal, an interest, or a matter.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{0.32\textwidth}X}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Verb / Ausdruck} & \color{white}\textbf{Beispiel} \\
+sich kümmern um + Akk. & Ich kümmere mich um die Rechnung. \\
+bitten um + Akk. & Er bittet um Hilfe. \\
+kämpfen um + Akk. & Sie kämpfen um ihre Rechte. \\
+sich bewerben um + Akk. & Ich bewerbe mich um eine Stelle. \\
+es geht um + Akk. & Es geht um deine Zukunft. \\
+sich bemühen um + Akk. & Er bemüht sich um eine Lösung. \\
+\end{tabularx}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich kümmere mich um meine Familie.}{I take care of my family.}
+    \ExampleItem{Sie bittet um eine Antwort.}{She asks for an answer.}
+    \ExampleItem{Wir kämpfen um mehr Gerechtigkeit.}{We fight for more justice.}
+    \ExampleItem{Es geht um ein wichtiges Problem.}{It is about an important problem.}
+\end{itemize}
+\end{exbox}
+
+\section{Bedeutung 6: Thema mit \glqq es geht um\grqq}
+
+\begin{grammarentry}{es geht um + Akkusativ}{it is about}
+\GermanText{Wenn man ein Thema nennt, kann man \glqq es geht um + Akkusativ\grqq benutzen.}
+\EnglishText{When naming a topic, one can use \glqq es geht um + accusative\grqq.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{In diesem Text geht es um soziale Medien.}{This text is about social media.}
+    \ExampleItem{Bei der Diskussion geht es um Demokratie.}{The discussion is about democracy.}
+    \ExampleItem{Es geht nicht um mich, sondern um das Problem.}{It is not about me, but about the problem.}
+\end{itemize}
+\end{exbox}
+
+\GermanText{Achtung: Nach \glqq sprechen\grqq benutzt man meistens \glqq über + Akkusativ\grqq.}
+\EnglishText{Attention: After \glqq sprechen\grqq, German usually uses \glqq über + accusative\grqq.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Wir sprechen über Demokratie.}{We speak about democracy.}
+    \ExampleItem{In dem Text geht es um Demokratie.}{The text is about democracy.}
+\end{itemize}
+\end{exbox}
+
+\section{Bedeutung 7: Verlust oder Gefahr}
+
+\begin{grammarentry}{um etwas kommen / bringen}{to lose / deprive of something}
+\GermanText{In einigen festen Ausdrücken zeigt \glqq um\grqq einen Verlust oder eine Gefahr.}
+\EnglishText{In some fixed expressions, \glqq um\grqq indicates loss or danger.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Er ist ums Leben gekommen.}{He lost his life. / He died.}
+    \ExampleItem{Der Fehler hat ihn um seine Chance gebracht.}{The mistake deprived him of his chance.}
+    \ExampleItem{Sie fürchtet um ihre Zukunft.}{She fears for her future.}
+\end{itemize}
+\end{exbox}
+
+\section{\glqq um ... zu\grqq ist keine Präposition}
+
+\begin{grammarentry}{um ... zu + Infinitiv}{in order to}
+\GermanText{\glqq um ... zu\grqq ist eine Infinitivkonstruktion. Sie zeigt ein Ziel oder einen Zweck. Hier ist \glqq um\grqq nicht einfach eine Präposition mit Akkusativ.}
+\EnglishText{\glqq um ... zu\grqq is an infinitive construction. It shows a goal or purpose. Here, \glqq um\grqq is not simply a preposition with accusative.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich lerne Deutsch, um in Österreich besser zu leben.}{I learn German in order to live better in Austria.}
+    \ExampleItem{Wir benutzen Medien, um besser informiert zu werden.}{We use media in order to become better informed.}
+    \ExampleItem{Er spart Geld, um ein Auto zu kaufen.}{He saves money in order to buy a car.}
+\end{itemize}
+\end{exbox}
+
+\subsection{Regel für \glqq um ... zu\grqq}
+
+\GermanText{Das Subjekt im Hauptsatz und im Infinitivsatz ist normalerweise gleich.}
+\EnglishText{The subject in the main clause and in the infinitive clause is normally the same.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich lerne Deutsch, um eine Prüfung zu bestehen.}{I learn German in order to pass an exam.}
+    \ExampleItem{Die Menschen nutzen soziale Medien, um sich auszudrücken.}{People use social media in order to express themselves.}
+\end{itemize}
+\end{exbox}
+
+\section{Kontraktion: ums}
+
+\begin{grammarentry}{ums}{um + das}
+\GermanText{\glqq ums\grqq ist die Kurzform von \glqq um das\grqq. Sie kommt oft in festen Ausdrücken vor.}
+\EnglishText{\glqq ums\grqq is the short form of \glqq um das\grqq. It often appears in fixed expressions.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Die Kinder laufen ums Haus.}{The children run around the house.}
+    \ExampleItem{Es geht ums Geld.}{It is about the money.}
+    \ExampleItem{Er ist ums Leben gekommen.}{He lost his life. / He died.}
+\end{itemize}
+\end{exbox}
+
+\section{Häufige Fehler}
+
+\begin{grammarentry}{Fehler 1}{Dativ nach um}
+\GermanText{Nach \glqq um\grqq benutzt man nicht den Dativ, sondern den Akkusativ.}
+\EnglishText{After \glqq um\grqq, one does not use the dative, but the accusative.}
+\begin{itemize}
+    \item \Wrong{Ich laufe um dem See.}
+    \item \Correct{Ich laufe um den See.}
+\end{itemize}
+\end{grammarentry}
+
+\begin{grammarentry}{Fehler 2}{um für ungefähre Uhrzeit}
+\GermanText{\glqq um acht Uhr\grqq ist normalerweise genau. Für ungefähr benutzt man oft \glqq gegen acht Uhr\grqq.}
+\EnglishText{\glqq um acht Uhr\grqq is normally exact. For approximate time, one often uses \glqq gegen acht Uhr\grqq.}
+\begin{itemize}
+    \item \Correct{Der Termin ist um acht Uhr.} \hfill exact
+    \item \Correct{Ich komme gegen acht Uhr.} \hfill approximate
+\end{itemize}
+\end{grammarentry}
+
+\begin{grammarentry}{Fehler 3}{Thema mit sprechen}
+\GermanText{Man sagt meistens \glqq über ein Thema sprechen\grqq, aber \glqq es geht um ein Thema\grqq.}
+\EnglishText{One usually says \glqq über ein Thema sprechen\grqq, but \glqq es geht um ein Thema\grqq.}
+\begin{itemize}
+    \item \Correct{Wir sprechen über die Demokratie.}
+    \item \Correct{In dem Text geht es um die Demokratie.}
+\end{itemize}
+\end{grammarentry}
+
+\section{Mini-Zusammenfassung}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{0.28\textwidth}X X}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Funktion} & \color{white}\textbf{Deutsch} & \color{white}\textbf{English} \\
+Ort / Bewegung & um den Tisch & around the table \\
+Uhrzeit & um acht Uhr & at eight o'clock \\
+ungefähre Zahl & um die zwanzig Euro & around twenty euros \\
+Veränderung & um zehn Prozent steigen & to increase by ten percent \\
+Ziel / Interesse & um Hilfe bitten & to ask for help \\
+Thema & es geht um Demokratie & it is about democracy \\
+Zweck & um Deutsch zu lernen & in order to learn German \\
+\end{tabularx}
+
+\section{Kurze Übung}
+
+\GermanText{Ergänze die richtige Form nach \glqq um\grqq.}
+\EnglishText{Complete the correct form after \glqq um\grqq.}
+
+\begin{enumerate}
+    \item Ich gehe um \underline{\hspace{2.5cm}} Ecke. \hfill die Ecke
+    \item Wir sitzen um \underline{\hspace{2.5cm}} Tisch. \hfill der Tisch
+    \item Es geht um \underline{\hspace{2.5cm}} Problem. \hfill das Problem
+    \item Die Preise steigen um \underline{\hspace{2.5cm}} Prozent. \hfill zehn Prozent
+\end{enumerate}
+
+\subsection{Lösung}
+
+\begin{enumerate}
+    \item Ich gehe um \Correct{die} Ecke. 
+    \item Wir sitzen um \Correct{den} Tisch.
+    \item Es geht um \Correct{das} Problem.
+    \item Die Preise steigen um \Correct{zehn} Prozent.
+\end{enumerate}
+
+\end{document}

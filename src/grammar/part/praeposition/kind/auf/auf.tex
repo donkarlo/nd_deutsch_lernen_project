@@ -1,0 +1,237 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Die Präposition \glqq auf\grqq}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+    \section{Grundidee}
+
+    \begin{grammarentry}{auf}{on; onto; at}
+        \GermanText{\glqq Auf\grqq bedeutet sehr oft: etwas befindet sich oben auf einer Fläche oder bewegt sich dorthin.}
+        \EnglishText{\glqq Auf\grqq often means: something is on top of a surface or moves onto it.}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Das Buch liegt auf dem Tisch.}{The book is lying on the table.}
+                \ExampleItem{Ich lege das Buch auf den Tisch.}{I put the book onto the table.}
+            \end{itemize}
+        \end{exbox}
+    \end{grammarentry}
+
+    \section{Wechselpräposition: Dativ oder Akkusativ}
+
+    \begin{grammarentry}{auf + Dativ}{where? location; no direction}
+        \GermanText{Wenn man fragt \glqq wo?\grqq, benutzt man normalerweise den Dativ. Es geht um Position oder Ruhe.}
+        \EnglishText{When the question is \glqq where?\grqq, German normally uses the dative. It is about position or rest.}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Die Tasse steht auf dem Tisch.}{The cup is on the table.}
+                \ExampleItem{Wir sitzen auf der Bank.}{We are sitting on the bench.}
+                \ExampleItem{Das Kind spielt auf dem Boden.}{The child is playing on the floor.}
+            \end{itemize}
+        \end{exbox}
+    \end{grammarentry}
+
+    \begin{grammarentry}{auf + Akkusativ}{where to? direction; movement toward a place}
+        \GermanText{Wenn man fragt \glqq wohin?\grqq, benutzt man normalerweise den Akkusativ. Es geht um Richtung oder Bewegung zu einem Ziel.}
+        \EnglishText{When the question is \glqq where to?\grqq, German normally uses the accusative. It is about direction or movement toward a target.}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich stelle die Tasse auf den Tisch.}{I put the cup onto the table.}
+                \ExampleItem{Wir setzen uns auf die Bank.}{We sit down on the bench.}
+                \ExampleItem{Das Kind legt sich auf den Boden.}{The child lies down on the floor.}
+            \end{itemize}
+        \end{exbox}
+    \end{grammarentry}
+
+    \section{Sehr wichtige Regel}
+
+    \begin{grammarentry}{Position oder Richtung}{location vs. direction}
+        \GermanText{Nicht jedes Verb der Bewegung bedeutet automatisch Akkusativ. Wichtig ist: Bleibt die Handlung an demselben Ort oder geht sie zu einem neuen Ziel?}
+        \EnglishText{Not every verb of movement automatically means accusative. The important question is: Does the action stay in the same place, or does it move toward a new target?}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich laufe auf dem Platz.}{I am running on the square.}
+                \ExampleItem{Ich laufe auf den Platz.}{I am running onto the square.}
+                \ExampleItem{Die Kinder springen auf dem Bett.}{The children are jumping on the bed.}
+                \ExampleItem{Die Kinder springen auf das Bett.}{The children jump onto the bed.}
+            \end{itemize}
+        \end{exbox}
+    \end{grammarentry}
+
+    \section{Artikel mit Dativ und Akkusativ}
+
+    \begin{grammarentry}{Artikel nach auf}{articles after auf}
+        \GermanText{Bei Dativ und Akkusativ ändern sich die Artikel. Das ist besonders wichtig bei maskulin und neutral.}
+        \EnglishText{The articles change in dative and accusative. This is especially important with masculine and neuter nouns.}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{der Tisch: auf dem Tisch / auf den Tisch}{the table: on the table / onto the table}
+                \ExampleItem{die Bank: auf der Bank / auf die Bank}{the bench: on the bench / onto the bench}
+                \ExampleItem{das Bett: auf dem Bett / auf das Bett}{the bed: on the bed / onto the bed}
+                \ExampleItem{die Stühle: auf den Stühlen / auf die Stühle}{the chairs: on the chairs / onto the chairs}
+            \end{itemize}
+        \end{exbox}
+    \end{grammarentry}
+
+    \section{Auf bei Orten und Veranstaltungen}
+
+    \begin{grammarentry}{auf der Party, auf dem Markt}{at events and public places}
+        \GermanText{Bei manchen Orten oder Veranstaltungen benutzt man im Deutschen oft \glqq auf\grqq, nicht \glqq in\grqq.}
+        \EnglishText{For some places or events, German often uses \glqq auf\grqq, not \glqq in\grqq.}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich bin auf der Party.}{I am at the party.}
+                \ExampleItem{Ich gehe auf die Party.}{I am going to the party.}
+                \ExampleItem{Sie kauft Gemüse auf dem Markt.}{She buys vegetables at the market.}
+                \ExampleItem{Wir gehen auf den Markt.}{We are going to the market.}
+                \ExampleItem{Er arbeitet auf der Baustelle.}{He works at the construction site.}
+                \ExampleItem{Er geht auf die Baustelle.}{He goes to the construction site.}
+            \end{itemize}
+        \end{exbox}
+    \end{grammarentry}
+
+    \section{Häufige feste Verbindungen mit auf + Akkusativ}
+
+    \begin{grammarentry}{Verben mit auf + Akkusativ}{fixed verb patterns}
+        \GermanText{Viele Verben verlangen fest \glqq auf + Akkusativ\grqq. Hier geht es nicht immer um eine echte Richtung. Man muss diese Verbindungen lernen.}
+        \EnglishText{Many verbs require the fixed pattern \glqq auf + accusative\grqq. This is not always about real physical direction. These patterns must be learned.}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich warte auf den Bus.}{I am waiting for the bus.}
+                \ExampleItem{Ich hoffe auf eine gute Note.}{I hope for a good grade.}
+                \ExampleItem{Ich freue mich auf den Urlaub.}{I am looking forward to the vacation.}
+                \ExampleItem{Achte bitte auf den Verkehr.}{Please pay attention to the traffic.}
+                \ExampleItem{Ich konzentriere mich auf diese Aufgabe.}{I concentrate on this task.}
+                \ExampleItem{Er reagiert auf meine Frage.}{He reacts to my question.}
+            \end{itemize}
+        \end{exbox}
+    \end{grammarentry}
+
+    \section{Häufige Adjektive und Nomen mit auf + Akkusativ}
+
+    \begin{grammarentry}{stolz auf, Lust auf, Einfluss auf}{adjectives and nouns with auf}
+        \GermanText{Auch einige Adjektive und Nomen stehen oft mit \glqq auf + Akkusativ\grqq.}
+        \EnglishText{Some adjectives and nouns are also often used with \glqq auf + accusative\grqq.}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich bin stolz auf dich.}{I am proud of you.}
+                \ExampleItem{Ich habe Lust auf Kaffee.}{I feel like having coffee.}
+                \ExampleItem{Das hat Einfluss auf meine Entscheidung.}{That has an influence on my decision.}
+                \ExampleItem{Er ist wütend auf seinen Bruder.}{He is angry at his brother.}
+                \ExampleItem{Ich bin gespannt auf das Ergebnis.}{I am excited/curious about the result.}
+            \end{itemize}
+        \end{exbox}
+    \end{grammarentry}
+
+    \section{Häufige feste Ausdrücke}
+
+    \begin{grammarentry}{feste Ausdrücke mit auf}{fixed expressions with auf}
+        \GermanText{In vielen Ausdrücken hat \glqq auf\grqq keine einfache wörtliche Bedeutung. Diese Ausdrücke sollte man als ganze Einheit lernen.}
+        \EnglishText{In many expressions, \glqq auf\grqq does not have a simple literal meaning. These expressions should be learned as whole units.}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{auf Deutsch}{in German}
+                \ExampleItem{auf jeden Fall}{in any case; definitely}
+                \ExampleItem{auf einmal}{suddenly; all at once}
+                \ExampleItem{auf Dauer}{in the long run}
+                \ExampleItem{auf diese Weise}{in this way}
+                \ExampleItem{auf den ersten Blick}{at first glance}
+                \ExampleItem{auf dem Weg}{on the way}
+            \end{itemize}
+        \end{exbox}
+    \end{grammarentry}
+
+    \section{Typische Fehler}
+
+    \begin{grammarentry}{Fehler 1: falscher Kasus}{wrong case}
+        \GermanText{Nach \glqq auf\grqq muss man bei Ort und Richtung den Unterschied zwischen Dativ und Akkusativ beachten.}
+        \EnglishText{After \glqq auf\grqq, you must pay attention to the difference between dative and accusative for location and direction.}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Falsch: Ich lege das Buch auf dem Tisch.}{Wrong: I put the book on the table.}
+                \ExampleItem{Richtig: Ich lege das Buch auf den Tisch.}{Correct: I put the book onto the table.}
+                \ExampleItem{Falsch: Das Buch liegt auf den Tisch.}{Wrong: The book is lying on the table.}
+                \ExampleItem{Richtig: Das Buch liegt auf dem Tisch.}{Correct: The book is lying on the table.}
+            \end{itemize}
+        \end{exbox}
+    \end{grammarentry}
+
+    \begin{grammarentry}{Fehler 2: Englisch direkt übersetzen}{translating English directly}
+        \GermanText{Englisch \glqq at\grqq ist nicht immer \glqq bei\grqq oder \glqq in\grqq. Manchmal ist es im Deutschen \glqq auf\grqq.}
+        \EnglishText{English \glqq at\grqq is not always \glqq bei\grqq or \glqq in\grqq. Sometimes German uses \glqq auf\grqq.}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich bin auf einer Hochzeit.}{I am at a wedding.}
+                \ExampleItem{Sie ist auf einer Konferenz.}{She is at a conference.}
+                \ExampleItem{Wir sind auf dem Markt.}{We are at the market.}
+            \end{itemize}
+        \end{exbox}
+    \end{grammarentry}
+
+    \section{Kurze Zusammenfassung}
+
+    \begin{grammarentry}{Merksatz}{memory rule}
+        \GermanText{Bei \glqq auf\grqq als Wechselpräposition gilt: Wo? = Dativ. Wohin? = Akkusativ. Viele feste Verbindungen, besonders mit Verben wie \glqq warten\grqq, \glqq hoffen\grqq, \glqq achten\grqq und \glqq sich freuen\grqq, brauchen \glqq auf + Akkusativ\grqq.}
+        \EnglishText{With \glqq auf\grqq as a two-way preposition: Where? = dative. Where to? = accusative. Many fixed patterns, especially with verbs like \glqq warten\grqq, \glqq hoffen\grqq, \glqq achten\grqq and \glqq sich freuen\grqq, need \glqq auf + accusative\grqq.}
+    \end{grammarentry}
+
+\end{document}

@@ -1,0 +1,207 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Die Präposition \textit{durch}}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+\section{Grundbedeutung}
+
+\begin{grammarentry}{durch}{Präposition + Akkusativ}
+\GermanText{\textit{durch} bedeutet meistens: von einer Seite in etwas hinein und auf der anderen Seite wieder hinaus; außerdem kann es Mittel, Ursache oder Zeitraum ausdrücken.}
+\EnglishText{\textit{durch} usually means: through; it can also express means, cause, or a period of time.}
+
+\begin{itemize}
+    \item \textbf{Kasus:} immer Akkusativ
+    \item \textbf{Form:} durch + Akkusativ
+    \item \textbf{Englisch:} through, by, via, because of, throughout
+\end{itemize}
+\end{grammarentry}
+
+\section{durch + Akkusativ}
+
+\begin{grammarentry}{Kasus}{Akkusativ}
+\GermanText{Nach \textit{durch} steht das Nomen im Akkusativ.}
+\EnglishText{After \textit{durch}, the noun is in the accusative case.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich gehe durch den Park.}{I walk through the park.}
+    \ExampleItem{Sie schaut durch das Fenster.}{She looks through the window.}
+    \ExampleItem{Wir fahren durch die Stadt.}{We drive through the city.}
+    \ExampleItem{Er kommt durch einen Tunnel.}{He comes through a tunnel.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Bedeutungen von \textit{durch}}
+
+\subsection{1. Ort / Bewegung}
+
+\begin{grammarentry}{räumlich}{through / across}
+\GermanText{\textit{durch} beschreibt eine Bewegung in einen Raum, Bereich oder Körper hinein und wieder hinaus.}
+\EnglishText{\textit{durch} describes movement into and out of a space, area, or object.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich gehe durch die Tür.}{I go through the door.}
+    \ExampleItem{Der Zug fährt durch den Tunnel.}{The train goes through the tunnel.}
+    \ExampleItem{Wir laufen durch den Wald.}{We run through the forest.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\subsection{2. Mittel / Weg}
+
+\begin{grammarentry}{Mittel}{by / via / through}
+\GermanText{\textit{durch} kann zeigen, mit welchem Mittel oder über welchen Weg etwas passiert.}
+\EnglishText{\textit{durch} can show by which means or through which channel something happens.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Viele Menschen informieren sich durch soziale Medien.}{Many people inform themselves through social media.}
+    \ExampleItem{Ich habe es durch einen Freund erfahren.}{I found it out through a friend.}
+    \ExampleItem{Man kann durch Übung besser werden.}{One can become better through practice.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\subsection{3. Ursache}
+
+\begin{grammarentry}{Ursache}{because of / due to}
+\GermanText{\textit{durch} kann auch eine Ursache ausdrücken.}
+\EnglishText{\textit{durch} can also express a cause.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Durch den Regen wurde die Straße nass.}{Because of the rain, the street became wet.}
+    \ExampleItem{Durch den Fehler ist das Problem entstanden.}{The problem arose because of the mistake.}
+    \ExampleItem{Durch seine Hilfe konnte ich die Aufgabe beenden.}{Because of his help, I was able to finish the task.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\subsection{4. Zeitraum}
+
+\begin{grammarentry}{Zeit}{throughout / during}
+\GermanText{\textit{durch} kann einen ganzen Zeitraum ausdrücken.}
+\EnglishText{\textit{durch} can express a whole period of time.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich habe die ganze Nacht durch gearbeitet.}{I worked through the whole night.}
+    \ExampleItem{Er hat den ganzen Tag durch gelernt.}{He studied throughout the whole day.}
+    \ExampleItem{Wir haben den Winter durch in Wien gewohnt.}{We lived in Vienna throughout the winter.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Artikel nach \textit{durch}}
+
+\begin{grammarentry}{Artikel}{Akkusativformen}
+\GermanText{Weil \textit{durch} Akkusativ verlangt, ändern sich die Artikel nach Genus und Numerus.}
+\EnglishText{Because \textit{durch} requires accusative, the articles change according to gender and number.}
+
+\begin{center}
+\begin{tabular}{lll}
+\textbf{Genus} & \textbf{Nominativ} & \textbf{nach durch} \\
+Maskulin & der Park & durch den Park \\
+Feminin & die Stadt & durch die Stadt \\
+Neutral & das Fenster & durch das Fenster \\
+Plural & die Straßen & durch die Straßen \\
+\end{tabular}
+\end{center}
+\end{grammarentry}
+
+\section{Häufige Fehler}
+
+\begin{grammarentry}{Fehler}{wrong / correct}
+\GermanText{Nach \textit{durch} kommt kein Dativ, sondern Akkusativ.}
+\EnglishText{After \textit{durch}, use accusative, not dative.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Falsch: Ich gehe durch dem Park.}{Wrong: Dative after \textit{durch}.}
+    \ExampleItem{Richtig: Ich gehe durch den Park.}{Correct: Accusative after \textit{durch}.}
+    \ExampleItem{Falsch: Wir fahren durch der Stadt.}{Wrong: Dative after \textit{durch}.}
+    \ExampleItem{Richtig: Wir fahren durch die Stadt.}{Correct: Accusative after \textit{durch}.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{durch als Verbpräfix}
+
+\begin{grammarentry}{durch-}{trennbar oder untrennbar}
+\GermanText{\textit{durch} kann auch Teil eines Verbs sein. Manche Verben mit \textit{durch-} sind trennbar, manche nicht.}
+\EnglishText{\textit{durch} can also be part of a verb. Some verbs with \textit{durch-} are separable, some are not.}
+
+\begin{exbox}
+\begin{itemize}
+    \ExampleItem{Ich lese den Text durch.}{I read through the text. \textit{durchlesen} is separable.}
+    \ExampleItem{Ich habe den Text durchgelesen.}{I read through the text.}
+    \ExampleItem{Die Polizei durchsucht das Haus.}{The police search the house. \textit{durchsuchen} is not separable.}
+    \ExampleItem{Die Polizei hat das Haus durchsucht.}{The police searched the house.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Kurze Zusammenfassung}
+
+\begin{grammarentry}{Merken}{summary}
+\begin{itemize}
+    \item \textit{durch} ist meistens eine Präposition.
+    \item \textit{durch} verlangt immer Akkusativ.
+    \item Grundbedeutung: \textit{through}.
+    \item Weitere Bedeutungen: Mittel, Ursache, Zeitraum.
+    \item Als Verbpräfix kann \textit{durch-} trennbar oder untrennbar sein.
+\end{itemize}
+\end{grammarentry}
+
+\end{document}

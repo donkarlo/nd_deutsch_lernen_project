@@ -1,0 +1,150 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Das Kompositum}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+    
+    
+    \section{Das Kompositum}
+        
+        \begin{grammarentry}{Kompositum}{compound word}
+            \GermanText{Ein Kompositum ist ein zusammengesetztes Wort.}
+            \EnglishText{A compound word is a word made from two or more words.}
+            
+            \begin{itemize}
+                \item \textbf{Nomen + Nomen}: die Autotür
+                \item \textbf{Adjektiv + Nomen}: der Schnellzug
+                \item \textbf{Verb + Nomen}: der Schreibtisch
+            \end{itemize}
+        \end{grammarentry}
+        
+        \begin{grammarentry}{Bestimmungswort und Grundwort}{defining word and main word}
+            \GermanText{Der erste Teil heißt Bestimmungswort. Der letzte Teil heißt Grundwort.}
+            \EnglishText{The first part is the defining word. The last part is the main word.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Auto + Tür = die Autotür}{car + door = car door}
+                    \ExampleItem{Kaffee + Tasse = die Kaffeetasse}{coffee + cup = coffee cup}
+                    \ExampleItem{Deutsch + Prüfung = die Deutschprüfung}{German + exam = German exam}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+        
+        \begin{grammarentry}{Der Artikel}{the article}
+            \GermanText{Das Grundwort bestimmt den Artikel.}
+            \EnglishText{The main word determines the article.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{das Auto + die Tür = die Autotür}{The word Tür determines the article: die.}
+                    \ExampleItem{der Kaffee + die Tasse = die Kaffeetasse}{The word Tasse determines the article: die.}
+                    \ExampleItem{die Schule + das Buch = das Schulbuch}{The word Buch determines the article: das.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+        
+        \begin{grammarentry}{Wann schreibt man zusammen?}{when do we write it together?}
+            \GermanText{Wenn zwei Wörter zusammen ein neues Nomen bilden, schreibt man sie meistens zusammen.}
+            \EnglishText{When two words form a new noun together, they are usually written together.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{die Haustür}{the house door / front door}
+                    \ExampleItem{der Arbeitsplatz}{the workplace}
+                    \ExampleItem{die Deutschprüfung}{the German exam}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+        
+        \begin{grammarentry}{Wann schreibt man getrennt?}{when do we write it separately?}
+            \GermanText{Wenn ein Adjektiv ein Nomen nur beschreibt, schreibt man getrennt.}
+            \EnglishText{When an adjective only describes a noun, we write the words separately.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{soziale Medien}{social media}
+                    \ExampleItem{kaltes Wasser}{cold water}
+                    \ExampleItem{ein schnelles Auto}{a fast car}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+        
+        
+        \begin{grammarentry}{Komposita mit Adjektiven}{compounds with adjectives}
+            \GermanText{Ein Adjektiv kann mit einem Nomen ein neues zusammengesetztes Nomen bilden. Das Grundwort ist immer das Nomen und bestimmt den Artikel.}
+            \EnglishText{An adjective can combine with a noun to form a new compound noun. The base word is always the noun and determines the article.}
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{hoch + das Haus $\rightarrow$ das Hochhaus}{high + house $\rightarrow$ high-rise building}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+        
+        \begin{grammarentry}{Komposita mit Verben}{compounds with verbs}
+            \GermanText{Auch Verbstämme können mit Nomen zusammengesetzt werden. Das Verb wird dabei normalerweise als Stamm ohne Endung verwendet. Das Grundwort bleibt das Nomen.}
+            \EnglishText{Verb stems can also combine with nouns. The verb is normally used as a stem without its ending. The base word remains the noun.}
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{schlafen + die Tablette $\rightarrow$ die Schlaftablette}{sleep + tablet $\rightarrow$ sleeping tablet}
+                    \ExampleItem{warten + das Zimmer $\rightarrow$ das Wartezimmer}{wait + room $\rightarrow$ waiting room}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+        
+        \begin{grammarentry}{Fugenlaute}{linking letters}
+            \GermanText{Zwischen den Wörtern erscheint oft ein Fugenlaut wie \textbf{-s}, \textbf{-n} oder \textbf{-er}. Er erleichtert die Aussprache.}
+            \EnglishText{A linking letter such as \textbf{-s}, \textbf{-n}, or \textbf{-er} often appears between the parts of a compound. It mainly makes pronunciation easier.}
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{die Übung + s + das Buch $\rightarrow$ das Übungsbuch}{exercise + book}
+                    \ExampleItem{die Orange + n + der Saft $\rightarrow$ der Orangensaft}{orange + juice}
+                    \ExampleItem{das Kind + er + der Garten $\rightarrow$ der Kindergarten}{child + garden $\rightarrow$ kindergarten}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+
+\end{document}

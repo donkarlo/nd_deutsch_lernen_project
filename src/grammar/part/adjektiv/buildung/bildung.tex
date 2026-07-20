@@ -1,0 +1,278 @@
+\documentclass[a4paper]{article}
+
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{minted}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{todonotes}
+\usepackage{forest}
+\usepackage{xstring}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{xparse}
+\usepackage{natbib}
+
+\usetikzlibrary{graphs,graphdrawing}
+\usegdlibrary{layered}
+
+% for external graphviz
+\input{/home/donkarlo/Dropbox/repo/nd_ai_project/src/nd_ai/knoweldge_representation/language/formal/computer/programming/tex/latex/code_clips/external_graphviz.tex}
+
+% for tags
+\input{/home/donkarlo/Dropbox/repo/nd_ai_project/src/nd_ai/knoweldge_representation/language/formal/computer/programming/tex/latex/parts/control_sequence/kind/semtag/semtag.tex}
+
+% for links
+\input{/home/donkarlo/Dropbox/repo/nd_ai_project/src/nd_ai/knoweldge_representation/language/formal/computer/programming/tex/latex/code_clips/seehere.tex}
+
+\title{}
+\date{}
+
+\begin{document}
+    \maketitle
+    
+    
+    \section{Adjektivbildung im Deutschen}
+        \textbf{Adjektive} k\"onnen im Deutschen auf verschiedene Weise gebildet werden.\\
+        Sie entstehen durch \textbf{Suffixe}, durch \textbf{Pr\"afixe}, aus \textbf{Partizipien} oder durch \textbf{Zusammensetzung}.\\
+    
+    
+    \section{-los}
+        \textbf{Bedeutung}: ohne etwas.\\
+        \textbf{Beispiele}:\\
+        \textbf{hoffnungslos} = hopeless\\
+        \textbf{arbeitslos} = jobless\\
+        \textbf{sinnlos} = meaningless\\
+    
+    
+    \section{-ig}
+        \textbf{Bedeutung}: mit einer Eigenschaft; von einer bestimmten Art.\\
+        \textbf{Beispiele}:\\
+        \textbf{lustig} = funny\\
+        \textbf{salzig} = salty\\
+        \textbf{windig} = windy\\
+    
+    
+    \section{-lich}
+        \textbf{Bedeutung}: oft: wie, passend zu, m\"oglich, freundlich.\\
+        \textbf{Beispiele}:\\
+        \textbf{freundlich} = friendly\\
+        \textbf{m\"oglich} = possible\\
+        \textbf{nat\"urlich} = natural\\
+    
+    
+    \section{-isch}
+        \textbf{Bedeutung}: oft: typisch f\"ur, bezogen auf, national oder stilistisch.\\
+        \textbf{Beispiele}:\\
+        \textbf{typisch} = typical\\
+        \textbf{logisch} = logical\\
+        \textbf{deutsch} = German\\
+    
+    
+    \section{-bar}
+        \textbf{Bedeutung}: kann ... werden; m\"oglich.\\
+        \textbf{Beispiele}:\\
+        \textbf{essbar} = edible\\
+        \textbf{machbar} = doable\\
+        \textbf{sichtbar} = visible\\
+    
+    
+    \section{-haft}
+        \textbf{Bedeutung}: mit einer bestimmten Art oder Wirkung.\\
+        \textbf{Beispiele}:\\
+        \textbf{ernsthaft} = serious\\
+        \textbf{traumhaft} = dreamlike\\
+        \textbf{ekelhaft} = disgusting\\
+    
+    
+    \section{-frei}
+        \textbf{Bedeutung}: ohne etwas; frei von etwas.\\
+        \textbf{Beispiele}:\\
+        \textbf{zuckerfrei} = sugar-free\\
+        \textbf{alkoholfrei} = alcohol-free\\
+        \textbf{staubfrei} = dust-free\\
+    
+    
+    \section{-sam}
+        \textbf{Bedeutung}: mit einer bestimmten Neigung, Wirkung oder Eigenschaft.\\
+        \textbf{Beispiele}:\\
+        \textbf{aufmerksam} = attentive\\
+        \textbf{wirksam} = effective\\
+        \textbf{langsam} = slow\\
+    
+    
+    \section{-voll}
+        \textbf{Bedeutung}: voll von etwas; mit viel von etwas.\\
+        \textbf{Beispiele}:\\
+        \textbf{liebevoll} = loving\\
+        \textbf{sinnvoll} = meaningful\\
+        \textbf{hoffnungsvoll} = hopeful\\
+    
+    
+    \section{-arm}
+        \textbf{Bedeutung}: mit wenig von etwas; arm an etwas.\\
+        \textbf{Beispiele}:\\
+        \textbf{fettarm} = low-fat\\
+        \textbf{kinderarm} = with few children\\
+        \textbf{emissionsarm} = low-emission\\
+    
+    
+    \section{-reich}
+        \textbf{Bedeutung}: mit viel von etwas; reich an etwas.\\
+        \textbf{Beispiele}:\\
+        \textbf{erfolgreich} = successful\\
+        \textbf{detailreich} = detailed\\
+        \textbf{wasserreich} = rich in water\\
+    
+    
+    \section{-w\"urdig}
+        \textbf{Bedeutung}: wert, dass man etwas tut oder empfindet.\\
+        \textbf{Beispiele}:\\
+        \textbf{glaubw\"urdig} = credible\\
+        \textbf{liebensw\"urdig} = charming\\
+        \textbf{ehrw\"urdig} = venerable\\
+    
+    
+    \section{-gem\"a\ss}
+        \textbf{Bedeutung}: entsprechend; nach etwas gerichtet.\\
+        \textbf{Beispiele}:\\
+        \textbf{planm\"a\ss ig} = according to plan\\
+        \textbf{ordnungsgem\"a\ss} = proper\\
+        \textbf{altersgem\"a\ss} = appropriate for age\\
+    
+    
+    \section{Negation mit Pr\"afixen}
+        Einige Adjektive werden mit \textbf{negierenden Pr\"afixen} gebildet.\\
+        Diese Pr\"afixe machen die Bedeutung \textbf{negativ} oder \textbf{gegenteilig}.\\
+        
+        \subsection{un-}
+            \textbf{Bedeutung}: nicht; das Gegenteil von etwas.\\
+            \textbf{Beispiele}:\\
+            \textbf{gl\"ucklich} = happy\\
+            \textbf{ungl\"ucklich} = unhappy\\
+            \textbf{klar} = clear\\
+            \textbf{unklar} = unclear\\
+            \textbf{m\"oglich} = possible\\
+            \textbf{unm\"oglich} = impossible\\
+        
+        \subsection{in-}
+            \textbf{Bedeutung}: nicht; oft bei Fremdw\"ortern.\\
+            \textbf{Beispiele}:\\
+            \textbf{korrekt} = correct\\
+            \textbf{inkorrekt} = incorrect\\
+            \textbf{direkt} = direct\\
+            \textbf{indirekt} = indirect\\
+        
+        \subsection{ir-}
+            \textbf{Bedeutung}: nicht; oft vor bestimmten Lauten bei Fremdw\"ortern.\\
+            \textbf{Beispiele}:\\
+            \textbf{regul\"ar} = regular\\
+            \textbf{irregul\"ar} = irregular\\
+            \textbf{real} = real\\
+            \textbf{irreal} = unreal\\
+        
+        \subsection{im-}
+            \textbf{Bedeutung}: nicht; oft vor labialen Lauten bei Fremdw\"ortern.\\
+            \textbf{Beispiele}:\\
+            \textbf{moralisch} = moral\\
+            \textbf{immoralisch} = immoral\\
+            \textbf{mobil} = mobile\\
+            \textbf{immobil} = immobile\\
+    
+    
+    \section{Partizip I als Adjektiv}
+        \textbf{Partizip I} wird oft wie ein Adjektiv verwendet.\\
+        \textbf{Formel}:\\
+        \textbf{Infinitivstamm + d}\\
+        \textbf{Beispiele}:\\
+        \textbf{lachen} $\rightarrow$ \textbf{lachend} = laughing\\
+        \textbf{singen} $\rightarrow$ \textbf{singend} = singing\\
+        \textbf{eine lachende Frau} = a laughing woman\\
+        \textbf{ein schlafendes Kind} = a sleeping child\\
+    
+    
+    \section{Partizip II als Adjektiv}
+        \textbf{Partizip II} kann ebenfalls wie ein Adjektiv verwendet werden.\\
+        Es beschreibt oft einen \textbf{Zustand} oder ein \textbf{Ergebnis}.\\
+        \textbf{Formel}:\\
+        \textbf{Partizip II des Verbs}\\
+        \textbf{Beispiele}:\\
+        \textbf{vergessen} = forgotten\\
+        \textbf{geschlossen} = closed\\
+        \textbf{geschrieben} = written\\
+        \textbf{ein vergessenes Wort} = a forgotten word\\
+        \textbf{die geschlossene T\"ur} = the closed door\\
+        \textbf{ein geschriebenes Dokument} = a written document\\
+    
+    
+    \section{Substantivierte Adjektive und Partizipien}
+        Ein \textbf{Adjektiv} oder \textbf{Partizip} kann wie ein \textbf{Nomen} verwendet werden.\\
+        Dann wird es \textbf{gro\ss geschrieben}.\\
+        Es bekommt eine \textbf{Adjektivdeklination}.\\
+        \textbf{Formel}:\\
+        \textbf{Adjektiv oder Partizip + Adjektivendung}\\
+        \textbf{Beispiele}:\\
+        \textbf{das Gute} = the good\\
+        \textbf{der Alte} = the old man\\
+        \textbf{das Vergessene} = what is forgotten\\
+        \textbf{etwas Neues} = something new\\
+        \textbf{vergessen} $\rightarrow$ \textbf{das Vergessene}\\
+        \textbf{Das Vergessene ist sch\"on} = What is forgotten is beautiful\\
+    
+    
+    \section{Adjektive durch Zusammensetzung}
+        Viele Adjektive entstehen durch \textbf{Zusammensetzung}.\\
+        Dabei werden \textbf{zwei W\"orter} verbunden.\\
+        Das letzte Element ist oft ein \textbf{Adjektiv}.\\
+        \textbf{Beispiele}:\\
+        \textbf{hellblau} = light blue\\
+        \textbf{weltbekannt} = world-famous\\
+        \textbf{steinhart} = rock-hard\\
+        \textbf{hausgemacht} = homemade\\
+    
+    
+    \section{Adjektive aus Nomen}
+        Manche Adjektive werden aus \textbf{Nomen} gebildet.\\
+        Oft benutzt man daf\"ur Suffixe wie \textbf{-ig}, \textbf{-lich}, \textbf{-isch} oder \textbf{-haft}.\\
+        \textbf{Beispiele}:\\
+        \textbf{Salz} $\rightarrow$ \textbf{salzig} = salty\\
+        \textbf{Freund} $\rightarrow$ \textbf{freundlich} = friendly\\
+        \textbf{Logik} $\rightarrow$ \textbf{logisch} = logical\\
+        \textbf{Traum} $\rightarrow$ \textbf{traumhaft} = dreamlike\\
+    
+    
+    \section{Adjektive aus Verben}
+        Manche Adjektive werden aus \textbf{Verben} gebildet.\\
+        Das geschieht oft durch \textbf{-bar}, \textbf{-lich}, \textbf{-sam} oder durch \textbf{Partizipien}.\\
+        \textbf{Beispiele}:\\
+        \textbf{lesen} $\rightarrow$ \textbf{lesbar} = readable\\
+        \textbf{helfen} $\rightarrow$ \textbf{hilfreich} = helpful\\
+        \textbf{wirken} $\rightarrow$ \textbf{wirksam} = effective\\
+        \textbf{interessieren} $\rightarrow$ \textbf{interessant} = interesting\\
+    
+    
+    \section{Steigerbare und nicht steigerbare Adjektive}
+        Viele Adjektive sind \textbf{steigerbar}.\\
+        \textbf{Beispiele}:\\
+        \textbf{schnell} $\rightarrow$ \textbf{schneller} $\rightarrow$ \textbf{am schnellsten}\\
+        \textbf{sch\"on} $\rightarrow$ \textbf{sch\"oner} $\rightarrow$ \textbf{am sch\"onsten}\\
+        Einige Adjektive sind normalerweise \textbf{nicht steigerbar}.\\
+        \textbf{Beispiele}:\\
+        \textbf{tot}\\
+        \textbf{einzig}\\
+        \textbf{schriftlich}\\
+    
+    
+    \section{Zusammenfassung}
+        Wichtige Arten der \textbf{Adjektivbildung} sind:\\
+        \textbf{Suffixe}: -los, -ig, -lich, -isch, -bar, -haft, -frei, -sam, -voll, -arm, -reich, -w\"urdig, -gem\"a\ss\\
+        \textbf{Pr\"afixe}: un-, in-, ir-, im-\\
+        \textbf{Partizip I als Adjektiv}\\
+        \textbf{Partizip II als Adjektiv}\\
+        \textbf{substantivierte Adjektive und Partizipien}\\
+        \textbf{Zusammensetzungen}\\
+
+%\bibliographystyle{plainnat}
+%\bibliography{/home/donkarlo/Dropbox/repo/nd_shared_research/bibliography/bibliography.bib}
+
+\end{document}

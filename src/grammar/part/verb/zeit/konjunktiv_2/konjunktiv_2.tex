@@ -1,0 +1,245 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Der Konjunktiv II}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+    
+    \section{Was ist der Konjunktiv II?}
+    
+    \begin{grammarentry}{Konjunktiv II}{unreal, wish, polite form}
+        \GermanText{Der Konjunktiv II ist eine Verbform, die man benutzt, wenn etwas nicht wirklich ist, nur vorgestellt wird, gewünscht wird oder höflicher klingen soll.}
+        \EnglishText{The Konjunktiv II is a verb form used when something is not real, only imagined, wished for, or should sound more polite.}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich wäre gern reich.}{I would like to be rich. / I wish I were rich.}
+                \ExampleItem{Ich hätte gern mehr Zeit.}{I would like to have more time. / I wish I had more time.}
+                \ExampleItem{Könnten Sie mir bitte helfen?}{Could you please help me?}
+            \end{itemize}
+        \end{exbox}
+    \end{grammarentry}
+    
+    \section{Die wichtigsten Bedeutungen}
+    
+    \begin{grammarentry}{1. Wunsch}{wish}
+        \GermanText{Mit dem Konjunktiv II kann man einen Wunsch ausdrücken. Oft ist dieser Wunsch nicht real oder im Moment nicht möglich.}
+        \EnglishText{With the Konjunktiv II, one can express a wish. Often this wish is not real or not possible at the moment.}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich wäre gern in Wien.}{I would like to be in Vienna.}
+                \ExampleItem{Ich hätte gern ein größeres Zimmer.}{I would like to have a bigger room.}
+                \ExampleItem{Ich könnte gern besser Deutsch sprechen.}{I would like to be able to speak German better.}
+            \end{itemize}
+        \end{exbox}
+    \end{grammarentry}
+    
+    \begin{grammarentry}{2. Irreale Situation}{unreal situation}
+        \GermanText{Man benutzt den Konjunktiv II, wenn man über eine Situation spricht, die nicht wirklich ist.}
+        \EnglishText{One uses the Konjunktiv II when speaking about a situation that is not real.}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Wenn ich mehr Geld hätte, würde ich mehr reisen.}{If I had more money, I would travel more.}
+                \ExampleItem{Wenn ich Zeit hätte, käme ich mit.}{If I had time, I would come along.}
+                \ExampleItem{Wenn ich besser Deutsch sprechen könnte, wäre ich sicherer.}{If I could speak German better, I would be more confident.}
+            \end{itemize}
+        \end{exbox}
+    \end{grammarentry}
+    
+    \begin{grammarentry}{3. Höflichkeit}{politeness}
+        \GermanText{Der Konjunktiv II macht eine Bitte oder Frage höflicher. Besonders oft benutzt man könnte, würde und hätte.}
+        \EnglishText{The Konjunktiv II makes a request or question more polite. Could, would and would have are especially common.}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Könnten Sie das bitte wiederholen?}{Could you please repeat that?}
+                \ExampleItem{Würden Sie mir bitte helfen?}{Would you please help me?}
+                \ExampleItem{Ich hätte gern einen Kaffee.}{I would like to have a coffee.}
+            \end{itemize}
+        \end{exbox}
+    \end{grammarentry}
+    
+    \section{Die wichtigsten Formen}
+    
+    \begin{grammarentry}{sein, haben, werden}{important verbs}
+        \GermanText{Die wichtigsten Formen sind wäre, hätte und würde. Diese Formen muss man sehr gut kennen, weil sie sehr häufig benutzt werden.}
+        \EnglishText{The most important forms are would be, would have and would. These forms must be known very well because they are used very often.}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{sein: ich wäre}{to be: I would be}
+                \ExampleItem{haben: ich hätte}{to have: I would have}
+                \ExampleItem{werden: ich würde}{to become / auxiliary would: I would}
+            \end{itemize}
+        \end{exbox}
+    \end{grammarentry}
+    
+    \begin{grammarentry}{Modalverben im Konjunktiv II}{modal verbs}
+        \GermanText{Modalverben benutzt man im Konjunktiv II sehr oft. Besonders wichtig sind könnte, müsste, dürfte, sollte und wollte.}
+        \EnglishText{Modal verbs are used very often in the Konjunktiv II. Especially important are could, would have to, would be allowed to, should and would want to.}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich könnte dir helfen.}{I could help you.}
+                \ExampleItem{Ich müsste mehr lernen.}{I would have to study more.}
+                \ExampleItem{Dürfte ich eine Frage stellen?}{May I ask a question?}
+                \ExampleItem{Du solltest früher schlafen.}{You should sleep earlier.}
+                \ExampleItem{Ich wollte dich etwas fragen.}{I wanted to ask you something.}
+            \end{itemize}
+        \end{exbox}
+    \end{grammarentry}
+    
+    \section{würde + Infinitiv}
+    
+    \begin{grammarentry}{würde + Infinitiv}{common replacement form}
+        \GermanText{In der gesprochenen Sprache benutzt man sehr oft würde + Infinitiv. Diese Form ist einfacher und sehr praktisch.}
+        \EnglishText{In spoken language, one very often uses would + infinitive. This form is easier and very practical.}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich würde gern nach Deutschland reisen.}{I would like to travel to Germany.}
+                \ExampleItem{Ich würde mehr Sport machen.}{I would do more sports.}
+                \ExampleItem{Er würde uns helfen.}{He would help us.}
+            \end{itemize}
+        \end{exbox}
+    \end{grammarentry}
+    
+    \begin{grammarentry}{Wann benutzt man würde + Infinitiv?}{when to use it}
+        \GermanText{Man benutzt würde + Infinitiv besonders dann, wenn die echte Konjunktiv-II-Form ungewöhnlich, altmodisch oder schwer verständlich klingt.}
+        \EnglishText{One uses would + infinitive especially when the real Konjunktiv II form sounds unusual, old-fashioned or hard to understand.}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich würde gehen.}{I would go.}
+                \ExampleItem{Ich würde arbeiten.}{I would work.}
+                \ExampleItem{Ich würde lernen.}{I would learn.}
+            \end{itemize}
+        \end{exbox}
+    \end{grammarentry}
+    
+    \section{Konjunktiv II mit wenn}
+    
+    \begin{grammarentry}{Wenn-Satz}{if-clause}
+        \GermanText{Sehr oft steht der Konjunktiv II in Sätzen mit wenn. Der wenn-Satz beschreibt die Bedingung. Der andere Satz beschreibt die Folge.}
+        \EnglishText{The Konjunktiv II is very often used in sentences with if. The if-clause describes the condition. The other clause describes the consequence.}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Wenn ich Zeit hätte, würde ich dich besuchen.}{If I had time, I would visit you.}
+                \ExampleItem{Wenn ich reich wäre, würde ich ein Haus kaufen.}{If I were rich, I would buy a house.}
+                \ExampleItem{Wenn ich besser Deutsch könnte, würde ich mehr sprechen.}{If I could speak German better, I would speak more.}
+            \end{itemize}
+        \end{exbox}
+    \end{grammarentry}
+    
+    \begin{grammarentry}{Verbposition mit wenn}{verb position}
+        \GermanText{In einem wenn-Satz steht das konjugierte Verb am Ende. Im Hauptsatz steht das konjugierte Verb auf Position 2.}
+        \EnglishText{In a clause with wenn, the conjugated verb is at the end. In the main clause, the conjugated verb is in position 2.}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Wenn ich Geld hätte, würde ich reisen.}{If I had money, I would travel.}
+                \ExampleItem{Ich würde reisen, wenn ich Geld hätte.}{I would travel if I had money.}
+            \end{itemize}
+        \end{exbox}
+    \end{grammarentry}
+    
+    \section{Konjunktiv II in der Vergangenheit}
+    
+    \begin{grammarentry}{hätte oder wäre + Partizip II}{past unreal situation}
+        \GermanText{Für die Vergangenheit benutzt man hätte oder wäre + Partizip II. Man spricht über etwas, das nicht passiert ist.}
+        \EnglishText{For the past, one uses would have or would have been + past participle. One speaks about something that did not happen.}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich hätte mehr gelernt.}{I would have studied more.}
+                \ExampleItem{Ich wäre früher gekommen.}{I would have come earlier.}
+                \ExampleItem{Wenn ich das gewusst hätte, hätte ich anders reagiert.}{If I had known that, I would have reacted differently.}
+            \end{itemize}
+        \end{exbox}
+    \end{grammarentry}
+    
+    \section{Unterschied zwischen Realität und Konjunktiv II}
+    
+    \begin{grammarentry}{Realität und Vorstellung}{reality and imagination}
+        \GermanText{Der Indikativ beschreibt die Realität. Der Konjunktiv II beschreibt eine Vorstellung, einen Wunsch oder eine irreale Situation.}
+        \EnglishText{The indicative describes reality. The Konjunktiv II describes an imagination, a wish or an unreal situation.}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich habe Zeit.}{I have time.}
+                \ExampleItem{Ich hätte Zeit.}{I would have time.}
+                \ExampleItem{Ich bin reich.}{I am rich.}
+                \ExampleItem{Ich wäre reich.}{I would be rich.}
+                \ExampleItem{Ich kann Deutsch sprechen.}{I can speak German.}
+                \ExampleItem{Ich könnte Deutsch sprechen.}{I could speak German.}
+            \end{itemize}
+        \end{exbox}
+    \end{grammarentry}
+    
+    \section{Kurze Zusammenfassung}
+    
+    \begin{grammarentry}{Merksatz}{short rule}
+        \GermanText{Der Konjunktiv II wird benutzt für Wünsche, irreale Situationen, höfliche Bitten und irreale Vergangenheit. Die wichtigsten Formen sind wäre, hätte, könnte und würde + Infinitiv.}
+        \EnglishText{The Konjunktiv II is used for wishes, unreal situations, polite requests and unreal past situations. The most important forms are would be, would have, could and would + infinitive.}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich wäre gern dort.}{I would like to be there.}
+                \ExampleItem{Ich hätte gern mehr Zeit.}{I would like to have more time.}
+                \ExampleItem{Ich könnte dir helfen.}{I could help you.}
+                \ExampleItem{Ich würde gern bleiben.}{I would like to stay.}
+            \end{itemize}
+        \end{exbox}
+    \end{grammarentry}
+    
+\end{document}

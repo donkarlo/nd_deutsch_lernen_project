@@ -1,0 +1,48 @@
+\documentclass[a4paper]{article}
+
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{minted}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{todonotes}
+\usepackage{forest}
+\usepackage{xstring}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{xparse}
+\usepackage{natbib}
+
+\usetikzlibrary{graphs,graphdrawing}
+\usegdlibrary{layered}
+
+% for external graphviz
+\input{/home/donkarlo/Dropbox/repo/nd_ai_project/src/nd_ai/knoweldge_representation/language/formal/computer/programming/tex/latex/code_clips/external_graphviz.tex}
+
+% for tags
+\input{/home/donkarlo/Dropbox/repo/nd_ai_project/src/nd_ai/knoweldge_representation/language/formal/computer/programming/tex/latex/parts/control_sequence/kind/semtag/semtag.tex}
+
+% for links
+\input{/home/donkarlo/Dropbox/repo/nd_ai_project/src/nd_ai/knoweldge_representation/language/formal/computer/programming/tex/latex/code_clips/seehere.tex}
+
+\title{Posessiv}
+\date{}
+\author{Mohammad Rahmani}
+
+\begin{document}
+    \maketitle
+    Um die richtig Possiv pronom wahlen, muss man drei fakturen überlegen.
+    \begin{itemize}
+        \item das Subjektgenus
+        \item die Kasus der objekt laut dem verb
+        \item das Objekt genus die ist besitzt worden von die Subjekt
+    \end{itemize}
+    Beispiel: \textbf{Paul fährt ohne seine Kolligen}
+    \begin{itemize}
+        \item Paul: Subjektgenus ist maskulin
+        \item fahren: mit etwas Dat. jemanden Akk. Fahren
+        \item Kollegin: Objektgenus ist Feminin
+    \end{itemize}
+    \bibliographystyle{plainnat}
+    \bibliography{/home/donkarlo/Dropbox/repo/nd_shared_research/bibliography/bibliography.bib}
+\end{document}

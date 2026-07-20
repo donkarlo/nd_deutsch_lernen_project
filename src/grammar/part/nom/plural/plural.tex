@@ -1,0 +1,370 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{ragged2e}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\newcommand{\TableHead}[3]{\rowcolor{HeaderBlueDark}\color{white}\textbf{#1} & \color{white}\textbf{#2} & \color{white}\textbf{#3}\\}
+\newcommand{\TableHeadFour}[4]{\rowcolor{HeaderBlueDark}\color{white}\textbf{#1} & \color{white}\textbf{#2} & \color{white}\textbf{#3} & \color{white}\textbf{#4}\\}
+
+\title{Pluralnomen im Deutschen}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+\section{Grundidee}
+
+\begin{grammarentry}{Pluralnomen}{Plural nouns}
+\GermanText{Im Deutschen gibt es keine einzige sichere Regel, mit der man den Plural jedes Nomens bilden kann. Deshalb soll man ein Nomen immer mit Artikel und Plural lernen: \textbf{der Tisch, die Tische}; \textbf{die Entscheidung, die Entscheidungen}; \textbf{das Kind, die Kinder}.}
+\EnglishText{In German there is no single safe rule for forming the plural of every noun. Therefore, you should always learn a noun with its article and plural: \textbf{der Tisch, die Tische}; \textbf{die Entscheidung, die Entscheidungen}; \textbf{das Kind, die Kinder}.}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{der Stuhl \textrightarrow{} die Stühle}{the chair \textrightarrow{} the chairs}
+\ExampleItem{die Lampe \textrightarrow{} die Lampen}{the lamp \textrightarrow{} the lamps}
+\ExampleItem{das Auto \textrightarrow{} die Autos}{the car \textrightarrow{} the cars}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Die fünf wichtigsten Pluraltypen}
+
+\begin{grammarentry}{Pluralendungen}{Plural endings}
+\GermanText{Die meisten deutschen Pluralformen gehören zu einem dieser fünf Typen: \textbf{-e}, \textbf{-(e)n}, \textbf{-er}, \textbf{-s} oder \textbf{Nullplural}. Bei einigen Wörtern kommt zusätzlich ein Umlaut vor.}
+\EnglishText{Most German plural forms belong to one of these five types: \textbf{-e}, \textbf{-(e)n}, \textbf{-er}, \textbf{-s}, or \textbf{zero plural}. Some words additionally take an umlaut.}
+
+\renewcommand{\arraystretch}{1.35}
+\begin{longtable}{>{\RaggedRight\arraybackslash}p{0.20\textwidth}>{\RaggedRight\arraybackslash}p{0.32\textwidth}>{\RaggedRight\arraybackslash}p{0.35\textwidth}}
+\TableHead{Pluraltyp}{Typische Wörter}{Beispiele}
+\rowcolor{RowBlueLight} -e & sehr viele maskuline Nomen; einige neutrale und feminine Nomen & der Tag \textrightarrow{} die Tage; der Tisch \textrightarrow{} die Tische; das Jahr \textrightarrow{} die Jahre \\
+\rowcolor{RowBlueDark} -e + Umlaut & viele einsilbige maskuline und feminine Nomen mit a, o, u oder au & der Stuhl \textrightarrow{} die Stühle; die Hand \textrightarrow{} die Hände; der Baum \textrightarrow{} die Bäume \\
+\rowcolor{RowBlueLight} -(e)n & sehr viele feminine Nomen; schwache maskuline Nomen; viele Fremdwörter & die Frau \textrightarrow{} die Frauen; die Lampe \textrightarrow{} die Lampen; der Student \textrightarrow{} die Studenten \\
+\rowcolor{RowBlueDark} -er + oft Umlaut & viele einsilbige neutrale Nomen; einige maskuline Nomen & das Kind \textrightarrow{} die Kinder; das Buch \textrightarrow{} die Bücher; der Mann \textrightarrow{} die Männer \\
+\rowcolor{RowBlueLight} -s & viele Fremdwörter, Abkürzungen, Namen und moderne Wörter & das Auto \textrightarrow{} die Autos; das Hotel \textrightarrow{} die Hotels; die Uni \textrightarrow{} die Unis \\
+\rowcolor{RowBlueDark} Nullplural & viele Nomen auf -er, -el, -en; alle Nomen auf -chen und -lein & der Computer \textrightarrow{} die Computer; das Mädchen \textrightarrow{} die Mädchen; der Lehrer \textrightarrow{} die Lehrer \\
+\end{longtable}
+\end{grammarentry}
+
+\section{Regeln nach Genus}
+
+\subsection{Feminine Nomen}
+
+\begin{grammarentry}{Feminine Nomen}{Feminine nouns}
+\GermanText{Feminine Nomen bilden den Plural sehr oft mit \textbf{-n} oder \textbf{-en}. Wenn das Nomen im Singular auf \textbf{-e} endet, kommt meistens nur \textbf{-n}. Wenn es nicht auf \textbf{-e} endet, kommt oft \textbf{-en}.}
+\EnglishText{Feminine nouns very often form the plural with \textbf{-n} or \textbf{-en}. If the noun ends in \textbf{-e} in the singular, it usually takes only \textbf{-n}. If it does not end in \textbf{-e}, it often takes \textbf{-en}.}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{die Lampe \textrightarrow{} die Lampen}{the lamp \textrightarrow{} the lamps}
+\ExampleItem{die Straße \textrightarrow{} die Straßen}{the street \textrightarrow{} the streets}
+\ExampleItem{die Frau \textrightarrow{} die Frauen}{the woman \textrightarrow{} the women}
+\ExampleItem{die Zeitung \textrightarrow{} die Zeitungen}{the newspaper \textrightarrow{} the newspapers}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Feminine Ausnahmen}{Feminine exceptions}
+\GermanText{Einige kurze feminine Nomen bilden den Plural mit \textbf{-e} und oft mit Umlaut. Diese Wörter muss man besonders lernen.}
+\EnglishText{Some short feminine nouns form the plural with \textbf{-e}, often with an umlaut. These words must be learned especially carefully.}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{die Nacht \textrightarrow{} die Nächte}{the night \textrightarrow{} the nights}
+\ExampleItem{die Stadt \textrightarrow{} die Städte}{the city \textrightarrow{} the cities}
+\ExampleItem{die Hand \textrightarrow{} die Hände}{the hand \textrightarrow{} the hands}
+\ExampleItem{die Kraft \textrightarrow{} die Kräfte}{the strength \textrightarrow{} the strengths/forces}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\subsection{Maskuline Nomen}
+
+\begin{grammarentry}{Maskuline Nomen}{Masculine nouns}
+\GermanText{Viele maskuline Nomen bilden den Plural mit \textbf{-e}. Bei einsilbigen Wörtern mit a, o, u oder au ist ein Umlaut häufig, aber nicht immer vorhanden.}
+\EnglishText{Many masculine nouns form the plural with \textbf{-e}. In one-syllable words with a, o, u, or au, an umlaut is common, but not always present.}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{der Tisch \textrightarrow{} die Tische}{the table \textrightarrow{} the tables}
+\ExampleItem{der Tag \textrightarrow{} die Tage}{the day \textrightarrow{} the days}
+\ExampleItem{der Stuhl \textrightarrow{} die Stühle}{the chair \textrightarrow{} the chairs}
+\ExampleItem{der Sohn \textrightarrow{} die Söhne}{the son \textrightarrow{} the sons}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Schwache maskuline Nomen}{Weak masculine nouns}
+\GermanText{Schwache maskuline Nomen bekommen fast immer \textbf{-(e)n} im Plural. Viele von ihnen bezeichnen Personen oder Lebewesen.}
+\EnglishText{Weak masculine nouns almost always take \textbf{-(e)n} in the plural. Many of them refer to people or living beings.}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{der Junge \textrightarrow{} die Jungen}{the boy \textrightarrow{} the boys}
+\ExampleItem{der Student \textrightarrow{} die Studenten}{the student \textrightarrow{} the students}
+\ExampleItem{der Mensch \textrightarrow{} die Menschen}{the human/person \textrightarrow{} the humans/people}
+\ExampleItem{der Name \textrightarrow{} die Namen}{the name \textrightarrow{} the names}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\subsection{Neutrale Nomen}
+
+\begin{grammarentry}{Neutrale Nomen}{Neuter nouns}
+\GermanText{Neutrale Nomen haben verschiedene Pluraltypen. Sehr häufig sind \textbf{-e}, \textbf{-er}, \textbf{-s} und der Nullplural. Viele kurze neutrale Nomen bilden den Plural mit \textbf{-er}; wenn möglich, kommt oft ein Umlaut.}
+\EnglishText{Neuter nouns have different plural types. Very common are \textbf{-e}, \textbf{-er}, \textbf{-s}, and zero plural. Many short neuter nouns form the plural with \textbf{-er}; if possible, an umlaut often appears.}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{das Kind \textrightarrow{} die Kinder}{the child \textrightarrow{} the children}
+\ExampleItem{das Buch \textrightarrow{} die Bücher}{the book \textrightarrow{} the books}
+\ExampleItem{das Haus \textrightarrow{} die Häuser}{the house \textrightarrow{} the houses}
+\ExampleItem{das Jahr \textrightarrow{} die Jahre}{the year \textrightarrow{} the years}
+\ExampleItem{das Auto \textrightarrow{} die Autos}{the car \textrightarrow{} the cars}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Regeln nach Wortendung}
+
+\begin{grammarentry}{Sehr zuverlässige Endungen}{Very reliable endings}
+\GermanText{Viele Wortendungen geben eine sehr starke Hilfe für die Pluralbildung. Diese Regeln sind besonders nützlich, weil sie oft funktionieren.}
+\EnglishText{Many word endings give strong help for plural formation. These rules are especially useful because they often work.}
+
+\renewcommand{\arraystretch}{1.35}
+\begin{longtable}{>{\RaggedRight\arraybackslash}p{0.20\textwidth}>{\RaggedRight\arraybackslash}p{0.25\textwidth}>{\RaggedRight\arraybackslash}p{0.42\textwidth}}
+\TableHead{Endung}{Pluralregel}{Beispiele}
+\rowcolor{RowBlueLight} -ung & immer -en & die Entscheidung \textrightarrow{} die Entscheidungen; die Zeitung \textrightarrow{} die Zeitungen \\
+\rowcolor{RowBlueDark} -heit, -keit, -igkeit & immer -en & die Freiheit \textrightarrow{} die Freiheiten; die Möglichkeit \textrightarrow{} die Möglichkeiten \\
+\rowcolor{RowBlueLight} -schaft & immer -en & die Freundschaft \textrightarrow{} die Freundschaften; die Mannschaft \textrightarrow{} die Mannschaften \\
+\rowcolor{RowBlueDark} -ei & immer -en & die Bäckerei \textrightarrow{} die Bäckereien; die Datei \textrightarrow{} die Dateien \\
+\rowcolor{RowBlueLight} -in & -innen & die Ärztin \textrightarrow{} die Ärztinnen; die Freundin \textrightarrow{} die Freundinnen \\
+\rowcolor{RowBlueDark} -ion & -en & die Nation \textrightarrow{} die Nationen; die Diskussion \textrightarrow{} die Diskussionen \\
+\rowcolor{RowBlueLight} -ität & -en & die Universität \textrightarrow{} die Universitäten; die Realität \textrightarrow{} die Realitäten \\
+\rowcolor{RowBlueDark} -ur & oft -en & die Kultur \textrightarrow{} die Kulturen; die Natur \textrightarrow{} die Naturen \\
+\rowcolor{RowBlueLight} -chen, -lein & Nullplural & das Mädchen \textrightarrow{} die Mädchen; das Büchlein \textrightarrow{} die Büchlein \\
+\rowcolor{RowBlueDark} -er, -el, -en & oft Nullplural & der Lehrer \textrightarrow{} die Lehrer; der Schlüssel \textrightarrow{} die Schlüssel; der Wagen \textrightarrow{} die Wagen \\
+\rowcolor{RowBlueLight} -nis & meistens -nisse & das Ergebnis \textrightarrow{} die Ergebnisse; die Kenntnis \textrightarrow{} die Kenntnisse \\
+\rowcolor{RowBlueDark} -ling & meistens -e & der Lehrling \textrightarrow{} die Lehrlinge; der Flüchtling \textrightarrow{} die Flüchtlinge \\
+\rowcolor{RowBlueLight} -ment & oft -e & das Dokument \textrightarrow{} die Dokumente; das Instrument \textrightarrow{} die Instrumente \\
+\rowcolor{RowBlueDark} -or & oft -en oder -oren & der Motor \textrightarrow{} die Motoren; der Faktor \textrightarrow{} die Faktoren \\
+\rowcolor{RowBlueLight} Abkürzungen & meistens -s & die Uni \textrightarrow{} die Unis; der Lkw \textrightarrow{} die Lkws \\
+\end{longtable}
+\end{grammarentry}
+
+\begin{grammarentry}{Fremdwörter}{Foreign words}
+\GermanText{Fremdwörter haben oft besondere Pluralformen. Viele moderne Fremdwörter nehmen \textbf{-s}; ältere Fremdwörter aus Latein oder Griechisch haben oft eigene Pluralformen.}
+\EnglishText{Foreign words often have special plural forms. Many modern foreign words take \textbf{-s}; older words from Latin or Greek often have their own plural forms.}
+
+\begin{longtable}{>{\RaggedRight\arraybackslash}p{0.20\textwidth}>{\RaggedRight\arraybackslash}p{0.25\textwidth}>{\RaggedRight\arraybackslash}p{0.42\textwidth}}
+\TableHead{Typ}{Pluralregel}{Beispiele}
+\rowcolor{RowBlueLight} moderne Fremdwörter & oft -s & das Team \textrightarrow{} die Teams; der Job \textrightarrow{} die Jobs \\
+\rowcolor{RowBlueDark} Wörter auf -a & oft -en oder -s & die Firma \textrightarrow{} die Firmen; die Pizza \textrightarrow{} die Pizzen / Pizzas \\
+\rowcolor{RowBlueLight} Wörter auf -um & oft besondere Formen & das Museum \textrightarrow{} die Museen; das Zentrum \textrightarrow{} die Zentren; das Praktikum \textrightarrow{} die Praktika \\
+\rowcolor{RowBlueDark} Wörter auf -us & oft besondere Formen & der Bus \textrightarrow{} die Busse; der Rhythmus \textrightarrow{} die Rhythmen; der Status \textrightarrow{} die Status \\
+\rowcolor{RowBlueLight} Wörter auf -ma & oft -men, manchmal -ta oder -s & das Thema \textrightarrow{} die Themen; das Drama \textrightarrow{} die Dramen \\
+\end{longtable}
+\end{grammarentry}
+
+\section{Umlaut im Plural}
+
+\begin{grammarentry}{Umlautregel}{Umlaut rule}
+\GermanText{Ein Umlaut kann nur bei \textbf{a, o, u, au} entstehen: \textbf{a \textrightarrow{} ä}, \textbf{o \textrightarrow{} ö}, \textbf{u \textrightarrow{} ü}, \textbf{au \textrightarrow{} äu}. Der Umlaut ist bei \textbf{-er}-Plural sehr häufig, bei \textbf{-e}-Plural möglich und bei \textbf{-(e)n} oder \textbf{-s} normalerweise nicht vorhanden.}
+\EnglishText{An umlaut can only appear with \textbf{a, o, u, au}: \textbf{a \textrightarrow{} ä}, \textbf{o \textrightarrow{} ö}, \textbf{u \textrightarrow{} ü}, \textbf{au \textrightarrow{} äu}. It is very common with \textbf{-er} plurals, possible with \textbf{-e} plurals, and normally absent with \textbf{-(e)n} or \textbf{-s}.}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{das Buch \textrightarrow{} die Bücher}{the book \textrightarrow{} the books}
+\ExampleItem{das Haus \textrightarrow{} die Häuser}{the house \textrightarrow{} the houses}
+\ExampleItem{der Stuhl \textrightarrow{} die Stühle}{the chair \textrightarrow{} the chairs}
+\ExampleItem{die Frau \textrightarrow{} die Frauen}{the woman \textrightarrow{} the women; no umlaut}
+\ExampleItem{das Auto \textrightarrow{} die Autos}{the car \textrightarrow{} the cars; no umlaut}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Nullplural}
+
+\begin{grammarentry}{Nullplural}{Zero plural}
+\GermanText{Beim Nullplural hat der Plural keine neue Endung. Man erkennt den Plural dann oft nur am Artikel, am Verb oder am Kontext. Manche Nullplural-Wörter bekommen trotzdem einen Umlaut.}
+\EnglishText{In a zero plural, the plural has no new ending. You often recognize the plural only from the article, the verb, or the context. Some zero-plural words still take an umlaut.}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{der Lehrer \textrightarrow{} die Lehrer}{the teacher \textrightarrow{} the teachers}
+\ExampleItem{das Zimmer \textrightarrow{} die Zimmer}{the room \textrightarrow{} the rooms}
+\ExampleItem{der Schlüssel \textrightarrow{} die Schlüssel}{the key \textrightarrow{} the keys}
+\ExampleItem{der Vater \textrightarrow{} die Väter}{the father \textrightarrow{} the fathers; zero plural with umlaut}
+\ExampleItem{der Bruder \textrightarrow{} die Brüder}{the brother \textrightarrow{} the brothers; zero plural with umlaut}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Artikel, Adjektive und Kasus im Plural}
+
+\begin{grammarentry}{Artikel im Plural}{Articles in the plural}
+\GermanText{Der bestimmte Artikel im Nominativ und Akkusativ Plural ist immer \textbf{die}. Der unbestimmte Artikel \textbf{ein/eine} hat keinen normalen Plural. Stattdessen benutzt man oft keinen Artikel oder Wörter wie \textbf{keine}, \textbf{viele}, \textbf{einige}.}
+\EnglishText{The definite article in nominative and accusative plural is always \textbf{die}. The indefinite article \textbf{ein/eine} has no normal plural. Instead, German often uses no article or words like \textbf{keine}, \textbf{viele}, \textbf{einige}.}
+
+\begin{longtable}{>{\RaggedRight\arraybackslash}p{0.18\textwidth}>{\RaggedRight\arraybackslash}p{0.28\textwidth}>{\RaggedRight\arraybackslash}p{0.40\textwidth}}
+\TableHead{Kasus}{Artikel}{Beispiel}
+\rowcolor{RowBlueLight} Nominativ & die / keine / viele & Die Kinder spielen. Viele Kinder spielen. \\
+\rowcolor{RowBlueDark} Akkusativ & die / keine / viele & Ich sehe die Kinder. Ich sehe viele Kinder. \\
+\rowcolor{RowBlueLight} Dativ & den / keinen / vielen & Ich helfe den Kindern. Ich helfe vielen Kindern. \\
+\rowcolor{RowBlueDark} Genitiv & der / keiner / vieler & Die Eltern der Kinder sind hier. \\
+\end{longtable}
+\end{grammarentry}
+
+\begin{grammarentry}{Dativplural-n}{Dative plural -n}
+\GermanText{Im Dativ Plural bekommt ein Nomen normalerweise ein zusätzliches \textbf{-n}, wenn der Plural nicht schon auf \textbf{-n} oder \textbf{-s} endet. Das ist eine sehr wichtige Regel.}
+\EnglishText{In the dative plural, a noun normally gets an additional \textbf{-n} if the plural does not already end in \textbf{-n} or \textbf{-s}. This is a very important rule.}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{mit den Kindern}{with the children; \textbf{Kinder} + n}
+\ExampleItem{auf den Tischen}{on the tables; \textbf{Tische} + n}
+\ExampleItem{mit den Frauen}{with the women; no extra n because \textbf{Frauen} already ends in n}
+\ExampleItem{mit den Autos}{with the cars; no extra n because plural ending \textbf{-s}}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\begin{grammarentry}{Adjektive im Plural}{Adjectives in the plural}
+\GermanText{Adjektive müssen im Plural ebenfalls dekliniert werden. Nach dem bestimmten Artikel ist die Adjektivendung meistens \textbf{-en}; ohne Artikel ist sie im Nominativ und Akkusativ meistens \textbf{-e}.}
+\EnglishText{Adjectives must also be declined in the plural. After the definite article, the adjective ending is usually \textbf{-en}; without an article, it is usually \textbf{-e} in nominative and accusative.}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{die kleinen Kinder}{the small children}
+\ExampleItem{kleine Kinder}{small children}
+\ExampleItem{mit den kleinen Kindern}{with the small children}
+\ExampleItem{mit kleinen Kindern}{with small children}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Pluralformen mit Bedeutungsunterschied}
+
+\begin{grammarentry}{Doppelter Plural}{Double plural forms}
+\GermanText{Einige Nomen haben mehr als eine Pluralform. Die Formen haben dann oft verschiedene Bedeutungen.}
+\EnglishText{Some nouns have more than one plural form. The forms often have different meanings.}
+
+\begin{longtable}{>{\RaggedRight\arraybackslash}p{0.18\textwidth}>{\RaggedRight\arraybackslash}p{0.29\textwidth}>{\RaggedRight\arraybackslash}p{0.40\textwidth}}
+\TableHead{Singular}{Pluralformen}{Bedeutung}
+\rowcolor{RowBlueLight} die Bank & die Banken / die Bänke & Banken = financial institutions; Bänke = benches \\
+\rowcolor{RowBlueDark} das Wort & die Wörter / die Worte & Wörter = individual words; Worte = connected words, speech, saying \\
+\rowcolor{RowBlueLight} das Band & die Bänder / die Bande / die Bände & Bänder = ribbons/tapes; Bande = bonds/ties; Bände = volumes of books \\
+\rowcolor{RowBlueDark} der Strauß & die Sträuße / die Strauße & Sträuße = bouquets; Strauße = ostriches \\
+\rowcolor{RowBlueLight} das Land & die Länder / die Lande & Länder = countries/states; Lande = lands, mostly literary or fixed expressions \\
+\end{longtable}
+\end{grammarentry}
+
+\section{Nomen ohne normalen Plural}
+
+\begin{grammarentry}{Singularwörter}{Usually singular nouns}
+\GermanText{Manche Nomen benutzt man normalerweise nur im Singular, weil sie Stoffe, abstrakte Begriffe oder Sammelbegriffe bezeichnen. In besonderen Bedeutungen können einige davon trotzdem einen Plural haben.}
+\EnglishText{Some nouns are normally used only in the singular because they refer to substances, abstract concepts, or collective concepts. In special meanings, some of them can still have a plural.}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{die Milch}{milk; normally no plural}
+\ExampleItem{das Wasser}{water; plural possible in special meanings, for example different waters}
+\ExampleItem{das Geld}{money; plural \textbf{die Gelder} in financial/administrative meaning}
+\ExampleItem{das Obst}{fruit; normally collective singular}
+\ExampleItem{das Gemüse}{vegetables; normally collective singular}
+\ExampleItem{der Mut}{courage; normally no plural}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Pluralwörter ohne normalen Singular}
+
+\begin{grammarentry}{Pluralia tantum}{Plural-only nouns}
+\GermanText{Einige Nomen benutzt man normalerweise nur im Plural. Solche Wörter heißen \textbf{Pluralia tantum}.}
+\EnglishText{Some nouns are normally used only in the plural. Such words are called \textbf{pluralia tantum}.}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{die Eltern}{the parents}
+\ExampleItem{die Leute}{the people}
+\ExampleItem{die Ferien}{the holidays/vacation period}
+\ExampleItem{die Geschwister}{the siblings}
+\ExampleItem{die Kosten}{the costs}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\section{Wichtige unregelmäßige Pluralformen}
+
+\begin{grammarentry}{Lernliste}{Learning list}
+\GermanText{Diese Pluralformen sind sehr wichtig und kommen oft vor. Man sollte sie direkt mit dem Nomen lernen.}
+\EnglishText{These plural forms are very important and occur often. You should learn them directly with the noun.}
+
+\begin{longtable}{>{\RaggedRight\arraybackslash}p{0.25\textwidth}>{\RaggedRight\arraybackslash}p{0.25\textwidth}>{\RaggedRight\arraybackslash}p{0.37\textwidth}}
+\TableHead{Singular}{Plural}{English}
+\rowcolor{RowBlueLight} der Mann & die Männer & the man \textrightarrow{} the men \\
+\rowcolor{RowBlueDark} die Frau & die Frauen & the woman \textrightarrow{} the women \\
+\rowcolor{RowBlueLight} das Kind & die Kinder & the child \textrightarrow{} the children \\
+\rowcolor{RowBlueDark} das Buch & die Bücher & the book \textrightarrow{} the books \\
+\rowcolor{RowBlueLight} das Haus & die Häuser & the house \textrightarrow{} the houses \\
+\rowcolor{RowBlueDark} das Wort & die Wörter / die Worte & the word \textrightarrow{} the words \\
+\rowcolor{RowBlueLight} der Mensch & die Menschen & the human/person \textrightarrow{} people/humans \\
+\rowcolor{RowBlueDark} der Name & die Namen & the name \textrightarrow{} the names \\
+\rowcolor{RowBlueLight} das Herz & die Herzen & the heart \textrightarrow{} the hearts \\
+\rowcolor{RowBlueDark} das Datum & die Daten & the date/data item \textrightarrow{} the dates/data \\
+\rowcolor{RowBlueLight} das Museum & die Museen & the museum \textrightarrow{} the museums \\
+\rowcolor{RowBlueDark} das Zentrum & die Zentren & the center \textrightarrow{} the centers \\
+\rowcolor{RowBlueLight} die Villa & die Villen & the villa \textrightarrow{} the villas \\
+\rowcolor{RowBlueDark} das Thema & die Themen & the topic \textrightarrow{} the topics \\
+\rowcolor{RowBlueLight} der Staat & die Staaten & the state \textrightarrow{} the states \\
+\rowcolor{RowBlueDark} der Wald & die Wälder & the forest \textrightarrow{} the forests \\
+\end{longtable}
+\end{grammarentry}
+
+\section{Praktische Lernstrategie}
+
+\begin{grammarentry}{Wie man Plural lernt}{How to learn plurals}
+\GermanText{Für Deutschlerner ist die sicherste Methode: Lerne jedes neue Nomen in drei Teilen: \textbf{Artikel + Singular + Plural}. Wenn das Wort häufig ist oder eine Ausnahme hat, schreibe zusätzlich einen Beispielsatz.}
+\EnglishText{For German learners, the safest method is: learn every new noun in three parts: \textbf{article + singular + plural}. If the word is common or exceptional, also write an example sentence.}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{der Tisch, die Tische: Der Tisch steht in der Küche.}{the table, the tables: The table is in the kitchen.}
+\ExampleItem{die Entscheidung, die Entscheidungen: Die Entscheidung war schwierig.}{the decision, the decisions: The decision was difficult.}
+\ExampleItem{das Kind, die Kinder: Die Kinder spielen im Park.}{the child, the children: The children are playing in the park.}
+\end{itemize}
+\end{exbox}
+\end{grammarentry}
+
+\end{document}

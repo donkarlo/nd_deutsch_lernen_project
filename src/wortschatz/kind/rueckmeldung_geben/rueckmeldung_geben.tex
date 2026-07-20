@@ -1,0 +1,238 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Rückmeldung geben}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+    
+    
+    \section{Bedeutung}
+        
+        \begin{grammarentry}{Rückmeldung geben}{to give feedback}
+            \GermanText{Rückmeldung geben bedeutet: jemandem sagen, wie etwas war, was gut war und was man verbessern kann.}
+            \EnglishText{To give feedback means to tell someone how something was, what was good, and what can be improved.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich möchte dir eine kurze Rückmeldung geben.}{I would like to give you brief feedback.}
+                    \ExampleItem{Danke für deine Rückmeldung.}{Thank you for your feedback.}
+                    \ExampleItem{Kannst du mir bitte Rückmeldung zu meinem Text geben?}{Can you please give me feedback on my text?}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Grundprinzip}
+        
+        \begin{grammarentry}{Gute Rückmeldung}{good feedback}
+            \GermanText{Gute Rückmeldung ist klar, konkret und hilfreich. Sie soll nicht nur sagen, dass etwas falsch ist, sondern auch zeigen, wie man es besser machen kann.}
+            \EnglishText{Good feedback is clear, specific, and helpful. It should not only say that something is wrong, but also show how it can be improved.}
+            
+            \begin{itemize}
+                \item zuerst verstehen, was die Person sagen wollte
+                \item dann den Fehler oder das Problem zeigen
+                \item danach eine bessere Formulierung anbieten
+                \item am Ende kurz erklären, warum die neue Form besser ist
+            \end{itemize}
+        \end{grammarentry}
+    
+    
+    \section{Direkte Rückmeldung}
+        
+        \begin{grammarentry}{Die direkte Methode}{the direct method}
+            \GermanText{Bei der direkten Methode sagt man klar, was falsch ist, und gibt sofort die korrekte Form.}
+            \EnglishText{With the direct method, you clearly say what is wrong and immediately give the correct form.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{„nach die Bauernhof“ ist falsch. Richtig ist: „auf den Bauernhof“.}{“nach die Bauernhof” is wrong. Correct is: “auf den Bauernhof”.}
+                    \ExampleItem{Der Artikel ist hier falsch. Man sagt: der Bauernhof.}{The article is wrong here. You say: der Bauernhof.}
+                    \ExampleItem{Die Präposition passt hier nicht. Besser ist: auf den Bauernhof gehen.}{The preposition does not fit here. Better is: auf den Bauernhof gehen.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Freundliche Rückmeldung}
+        
+        \begin{grammarentry}{Die freundliche Methode}{the friendly method}
+            \GermanText{Bei der freundlichen Methode beginnt man mit etwas Positivem und korrigiert danach ruhig und respektvoll.}
+            \EnglishText{With the friendly method, you begin with something positive and then correct calmly and respectfully.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich verstehe, was du meinst. Natürlicher sagt man aber: „Ich gehe auf den Bauernhof.“}{I understand what you mean. But more naturally, you say: “Ich gehe auf den Bauernhof.”}
+                    \ExampleItem{Deine Idee ist klar, aber die Grammatik braucht noch eine kleine Korrektur.}{Your idea is clear, but the grammar still needs a small correction.}
+                    \ExampleItem{Du hast es schön beschrieben. Nur die Präposition würde ich ändern.}{You described it well. I would only change the preposition.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Kritische Rückmeldung}
+        
+        \begin{grammarentry}{Die kritische Methode}{the critical method}
+            \GermanText{Kritische Rückmeldung zeigt deutlich, wo ein Problem ist. Sie sollte trotzdem sachlich und nicht beleidigend sein.}
+            \EnglishText{Critical feedback clearly shows where there is a problem. However, it should still be factual and not insulting.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Dieser Satz ist grammatisch nicht korrekt.}{This sentence is grammatically not correct.}
+                    \ExampleItem{Die Wortstellung ist hier falsch.}{The word order is wrong here.}
+                    \ExampleItem{Dieser Ausdruck klingt im Deutschen nicht natürlich.}{This expression does not sound natural in German.}
+                    \ExampleItem{Der Satz ist verständlich, aber er braucht eine bessere Struktur.}{The sentence is understandable, but it needs a better structure.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Die Sandwich-Methode}
+        
+        \begin{grammarentry}{Lob, Korrektur, Ermutigung}{praise, correction, encouragement}
+            \GermanText{Bei der Sandwich-Methode gibt man zuerst Lob, dann eine Korrektur und am Ende eine Ermutigung.}
+            \EnglishText{With the sandwich method, you first give praise, then a correction, and at the end encouragement.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Deine Idee ist gut und ich verstehe deinen Satz.}{Your idea is good and I understand your sentence.}
+                    \ExampleItem{Besser wäre aber: „Ich gehe auf den Bauernhof.“}{But better would be: “Ich gehe auf den Bauernhof.”}
+                    \ExampleItem{Wenn du auf die Präpositionen achtest, klingt dein Deutsch viel natürlicher.}{If you pay attention to the prepositions, your German will sound much more natural.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Die fragende Methode}
+        
+        \begin{grammarentry}{Korrektur durch Fragen}{correction through questions}
+            \GermanText{Bei dieser Methode korrigiert man nicht sofort direkt, sondern stellt zuerst eine Frage. Das ist besonders freundlich und hilft der anderen Person, selbst nachzudenken.}
+            \EnglishText{With this method, you do not correct directly immediately, but first ask a question. This is especially friendly and helps the other person think for themselves.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Meinst du, dass du auf dem Bauernhof arbeitest oder dass du zum Bauernhof gehst?}{Do you mean that you work on the farm or that you go to the farm?}
+                    \ExampleItem{Willst du hier eine Bewegung oder eine Position ausdrücken?}{Do you want to express movement or position here?}
+                    \ExampleItem{Meinst du „unter der Sonne“ oder „in der Sonne“?}{Do you mean “under the sun” or “in the sun”?}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Die erklärende Methode}
+        
+        \begin{grammarentry}{Regel plus Beispiel}{rule plus example}
+            \GermanText{Bei der erklärenden Methode gibt man zuerst die Regel und danach ein oder zwei Beispiele.}
+            \EnglishText{With the explanatory method, you first give the rule and then one or two examples.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Bei Bewegung benutzt man den Akkusativ: Ich gehe auf den Bauernhof.}{For movement, you use the accusative: I go to the farm.}
+                    \ExampleItem{Bei Position benutzt man den Dativ: Ich arbeite auf dem Bauernhof.}{For position, you use the dative: I work on the farm.}
+                    \ExampleItem{Nach „um“ plus Infinitiv braucht man „zu“: Ich gehe, um zu arbeiten.}{After “um” plus infinitive, you need “zu”: I go in order to work.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Kurze Redemittel}
+        
+        \begin{grammarentry}{Nützliche Sätze}{useful sentences}
+            \GermanText{Diese Sätze kann man benutzen, wenn man schnell und klar Rückmeldung geben möchte.}
+            \EnglishText{These sentences can be used when you want to give quick and clear feedback.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Das ist richtig.}{That is correct.}
+                    \ExampleItem{Das ist nicht ganz richtig.}{That is not completely correct.}
+                    \ExampleItem{Das klingt natürlich.}{That sounds natural.}
+                    \ExampleItem{Das klingt nicht natürlich.}{That does not sound natural.}
+                    \ExampleItem{Besser sagt man: ...}{It is better to say: ...}
+                    \ExampleItem{Natürlicher klingt: ...}{More natural is: ...}
+                    \ExampleItem{Im Alltag sagt man eher: ...}{In everyday language, people usually say: ...}
+                    \ExampleItem{Grammatisch ist das möglich, aber es klingt ungewöhnlich.}{Grammatically, that is possible, but it sounds unusual.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Rückmeldung zu Texten}
+        
+        \begin{grammarentry}{Textkorrektur}{text correction}
+            \GermanText{Wenn man einen Text korrigiert, sollte man zuerst die korrigierte Version zeigen. Danach kann man die Fehler Satz für Satz erklären.}
+            \EnglishText{When correcting a text, one should first show the corrected version. After that, the mistakes can be explained sentence by sentence.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Korrigierter Satz: Ich gehe auf den Bauernhof, um dort zu arbeiten.}{Corrected sentence: I go to the farm in order to work there.}
+                    \ExampleItem{Fehler: „nach die Bauernhof“ ist falsch.}{Mistake: “nach die Bauernhof” is wrong.}
+                    \ExampleItem{Erklärung: Man sagt „auf den Bauernhof“, weil der Bauernhof als Gelände verstanden wird.}{Explanation: You say “auf den Bauernhof” because the farm is understood as an area.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+    
+    
+    \section{Sehr natürliche Rückmeldung}
+        
+        \begin{grammarentry}{Alltagssprache}{everyday language}
+            \GermanText{Diese Sätze klingen im Alltag natürlich und freundlich.}
+            \EnglishText{These sentences sound natural and friendly in everyday language.}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ja, ich verstehe dich. Ich würde es nur ein bisschen anders sagen.}{Yes, I understand you. I would just say it a little differently.}
+                    \ExampleItem{Der Satz ist fast richtig. Nur ein kleines Detail fehlt.}{The sentence is almost correct. Only one small detail is missing.}
+                    \ExampleItem{Das kannst du sagen, aber diese Version klingt natürlicher.}{You can say that, but this version sounds more natural.}
+                    \ExampleItem{Sehr gut, genau so sagt man das.}{Very good, that is exactly how you say it.}
+                    \ExampleItem{Das war schon viel besser als vorher.}{That was already much better than before.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+
+\end{document}

@@ -1,0 +1,673 @@
+% Satzgliedordnung im Deutschen
+% Erstellt nach der im Projekt vorhandenen Erklaerungsvorlage.
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{5pt}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\newcommand{\TableHeader}[1]{\color{white}\textbf{#1}}
+
+\title{Die Ordnung der Satzglieder im Deutschen}
+\author{}
+\date{}
+
+\begin{document}
+    \selectlanguage{ngerman}
+    \maketitle
+    \tableofcontents
+    \newpage
+    
+    
+    \section{Das Grundmodell: Felder und Satzklammer}
+        
+        \begin{grammarentry}{Feldermodell}{Grundstruktur eines deutschen Satzes}
+            \GermanText{Ein deutscher Satz kann in fünf Bereiche gegliedert werden: \textbf{Vorfeld}, \textbf{linke Satzklammer}, \textbf{Mittelfeld}, \textbf{rechte Satzklammer} und \textbf{Nachfeld}. In einfachen Lerntabellen entsprechen sie ungefähr den Positionen I, II, III und ENDE.}
+            \EnglishText{A German sentence can be divided into five fields: the pre-field, left sentence bracket, middle field, right sentence bracket, and post-field. In simple learning tables, these correspond roughly to positions I, II, III, and END.}
+            
+            \GermanText{Im normalen Aussagesatz steht das \textbf{konjugierte Verb an Position II}. Der zweite Verbteil steht am Ende und bildet zusammen mit dem konjugierten Verb die Satzklammer.}
+            \EnglishText{In a normal declarative sentence, the finite verb is in position II. The second verb part stands at the end and forms the sentence bracket together with the finite verb.}
+        \end{grammarentry}
+        
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{|p{2.4cm}|p{3.1cm}|p{5.7cm}|p{3.0cm}|}
+            \hline
+            \rowcolor{HeaderBlueDark}
+            \TableHeader{Position I / Vorfeld} &
+            \TableHeader{Position II / linke Klammer} &
+            \TableHeader{Position III / Mittelfeld} &
+            \TableHeader{ENDE / rechte Klammer} \\
+            \hline
+            Subjekt oder ein anderes Satzglied & konjugiertes Verb & Subjekt, Objekte, Zeit, Grund, Art und Ort & zweiter Verbteil \\
+            \hline
+            Monika & fliegt & oft nach Rom & -- \\
+            \hline
+            Monika & will & morgen nach Rom & fliegen. \\
+            \hline
+            Morgen & will & Monika nach Rom & fliegen. \\
+            \hline
+            Weil Max Hunger hat, & möchte & er jetzt ins Restaurant & gehen. \\
+            \hline
+        \end{longtable}
+        
+        \begin{grammarentry}{Wichtige Regel}{Nur ein Satzglied im Vorfeld}
+            \GermanText{Im Vorfeld steht normalerweise \textbf{genau ein Satzglied}. Dieses Satzglied kann aus mehreren Wörtern bestehen. Ein ganzer Nebensatz kann ebenfalls ein einziges Satzglied im Vorfeld sein.}
+            \EnglishText{Normally, exactly one constituent stands in the pre-field. This constituent may consist of several words. A complete subordinate clause can also function as one constituent in the pre-field.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Der Ober bringt den Gästen die Getränke.}{The waiter brings the guests the drinks.}
+                \ExampleItem{Heute Abend bringt der Ober den Gästen die Getränke.}{This evening, the waiter brings the guests the drinks.}
+                \ExampleItem{Weil Max Hunger hat, möchte er jetzt ins Restaurant gehen.}{Because Max is hungry, he would now like to go to the restaurant.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Der Aussagesatz: Das konjugierte Verb steht an Position II}
+        
+        \begin{grammarentry}{Verbzweitstellung}{Hauptsatz}
+            \GermanText{In einem normalen Aussagesatz steht das konjugierte Verb immer an der zweiten grammatischen Position. Position II bedeutet nicht unbedingt das zweite Wort, sondern die Position nach dem ersten vollständigen Satzglied.}
+            \EnglishText{In a normal declarative main clause, the finite verb always stands in the second grammatical position. Position II does not necessarily mean the second word; it means the position after the first complete constituent.}
+        \end{grammarentry}
+        
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{|p{3.4cm}|p{3.0cm}|p{8.0cm}|}
+            \hline
+            \rowcolor{HeaderBlueDark}
+            \TableHeader{Position I} & \TableHeader{Position II} & \TableHeader{Mittelfeld / Ende} \\
+            \hline
+            Der Ober & bringt & den Gästen die Getränke. \\
+            \hline
+            Den Gästen & bringt & der Ober die Getränke. \\
+            \hline
+            Die Getränke & bringt & der Ober den Gästen. \\
+            \hline
+            Heute Abend & bringt & der Ober den Gästen die Getränke. \\
+            \hline
+            Im Restaurant & bringt & der Ober den Gästen die Getränke. \\
+            \hline
+        \end{longtable}
+        
+        \begin{grammarentry}{Inversion}{Subjekt nach dem Verb}
+            \GermanText{Wenn nicht das Subjekt, sondern ein anderes Satzglied im Vorfeld steht, folgt das Subjekt normalerweise direkt nach dem konjugierten Verb.}
+            \EnglishText{When a constituent other than the subject occupies the pre-field, the subject normally follows directly after the finite verb.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Heute bringt der Ober den Gästen die Getränke.}{Today the waiter brings the guests the drinks.}
+                \ExampleItem{Morgen fährt Monika nach Rom.}{Tomorrow Monika is travelling to Rome.}
+                \ExampleItem{Nach der Arbeit besucht er seine Eltern.}{After work he visits his parents.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Fragen und Imperativ}
+        
+        \subsection{Ja-/Nein-Fragen}
+            
+            \begin{grammarentry}{Verb an Position I}{Entscheidungsfrage}
+                \GermanText{Bei einer Ja-/Nein-Frage steht das konjugierte Verb an Position I. Danach folgen das Subjekt und die übrigen Satzglieder.}
+                \EnglishText{In a yes/no question, the finite verb stands in position I. The subject and the remaining constituents follow.}
+            \end{grammarentry}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Bringt der Ober den Gästen die Getränke?}{Does the waiter bring the guests the drinks?}
+                    \ExampleItem{Will Monika morgen nach Rom fliegen?}{Does Monika want to fly to Rome tomorrow?}
+                    \ExampleItem{Hast du das Buch gelesen?}{Have you read the book?}
+                \end{itemize}
+            \end{exbox}
+        
+        \subsection{W-Fragen}
+            
+            \begin{grammarentry}{Fragewort an Position I}{Ergänzungsfrage}
+                \GermanText{Bei einer W-Frage steht das Fragewort oder die Fragegruppe an Position I. Das konjugierte Verb bleibt an Position II.}
+                \EnglishText{In a W-question, the question word or question phrase stands in position I. The finite verb remains in position II.}
+            \end{grammarentry}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Wem bringt der Ober die Getränke?}{To whom does the waiter bring the drinks?}
+                    \ExampleItem{Was bringt der Ober den Gästen?}{What does the waiter bring the guests?}
+                    \ExampleItem{Wann will Monika nach Rom fliegen?}{When does Monika want to fly to Rome?}
+                \end{itemize}
+            \end{exbox}
+        
+        \subsection{Imperativsätze}
+            
+            \begin{grammarentry}{Verb an Position I}{Aufforderung}
+                \GermanText{Im Imperativ steht das Verb normalerweise an Position I. Das Personalpronomen \textbf{du} wird weggelassen; bei der Höflichkeitsform bleibt \textbf{Sie} stehen.}
+                \EnglishText{In the imperative, the verb normally stands in position I. The personal pronoun \textbf{du} is omitted; in the polite form, \textbf{Sie} remains.}
+            \end{grammarentry}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Bring den Gästen die Getränke!}{Bring the guests the drinks!}
+                    \ExampleItem{Bringt den Gästen die Getränke!}{Bring the guests the drinks! (plural informal)}
+                    \ExampleItem{Bringen Sie den Gästen die Getränke!}{Bring the guests the drinks! (polite)}
+                \end{itemize}
+            \end{exbox}
+    
+    
+    \section{Die Satzklammer}
+        
+        \begin{grammarentry}{Zwei Verbteile}{linke und rechte Klammer}
+            \GermanText{Bei trennbaren Verben, Modalverben, Perfekt, Futur und Passiv besteht das Prädikat aus mindestens zwei Teilen. Der konjugierte Teil steht im Hauptsatz an Position II; der andere Teil steht am Ende.}
+            \EnglishText{With separable verbs, modal verbs, the perfect tense, the future tense, and the passive voice, the predicate consists of at least two parts. In a main clause, the finite part stands in position II and the other part stands at the end.}
+        \end{grammarentry}
+        
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{|p{2.8cm}|p{3.0cm}|p{6.2cm}|p{3.0cm}|}
+            \hline
+            \rowcolor{HeaderBlueDark}
+            \TableHeader{Struktur} & \TableHeader{Position I} & \TableHeader{Position II und Mittelfeld} & \TableHeader{ENDE} \\
+            \hline
+            trennbares Verb & Der Ober & bringt den Gästen die Getränke & mit. \\
+            \hline
+            Modalverb & Der Ober & will den Gästen die Getränke & bringen. \\
+            \hline
+            Perfekt & Der Ober & hat den Gästen die Getränke & gebracht. \\
+            \hline
+            Futur I & Der Ober & wird den Gästen die Getränke & bringen. \\
+            \hline
+            Passiv & Die Getränke & werden den Gästen & gebracht. \\
+            \hline
+        \end{longtable}
+        
+        \begin{grammarentry}{Merksatz}{Hauptsatz}
+            \GermanText{Alles, was zwischen dem konjugierten Verb und dem zweiten Verbteil steht, gehört zum Mittelfeld.}
+            \EnglishText{Everything between the finite verb and the second verb part belongs to the middle field.}
+        \end{grammarentry}
+    
+    
+    \section{Subjekt und Objekte im Mittelfeld}
+        
+        \begin{grammarentry}{Neutrale Grundordnung}{ohne besondere Betonung}
+            \GermanText{Wenn das Subjekt nicht im Vorfeld steht, steht es in einer neutralen Aussage normalerweise früh im Mittelfeld. Danach folgen unbetonte Pronomen, nominale Objekte und weitere Angaben.}
+            \EnglishText{When the subject is not in the pre-field, it normally appears early in the middle field in a neutral statement. Unstressed pronouns, nominal objects, and other elements follow.}
+            
+            \GermanText{Die Wortstellung im Mittelfeld ist nicht vollständig starr. Die folgenden Regeln sind jedoch eine sichere neutrale Grundordnung für normale B1-Sätze.}
+            \EnglishText{Word order in the middle field is not completely rigid. The following rules nevertheless provide a safe neutral basic order for normal B1 sentences.}
+        \end{grammarentry}
+        
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{|p{3.5cm}|p{10.7cm}|}
+            \hline
+            \rowcolor{HeaderBlueDark}
+            \TableHeader{Priorität} & \TableHeader{Neutrale Regel} \\
+            \hline
+            1 & Das Subjekt steht früh, wenn es nicht im Vorfeld steht. \\
+            \hline
+            2 & Kurze, unbetonte Pronomen stehen vor nominalen Satzgliedern. \\
+            \hline
+            3 & Bei zwei nominalen Objekten steht normalerweise Dativ vor Akkusativ. \\
+            \hline
+            4 & Bei zwei Objektpronomen steht normalerweise Akkusativ vor Dativ. \\
+            \hline
+            5 & Adverbiale Angaben folgen in der neutralen Reihenfolge Temporal -- Kausal -- Modal -- Lokal. \\
+            \hline
+            6 & Neue, lange oder besonders wichtige Informationen stehen oft später. \\
+            \hline
+        \end{longtable}
+    
+    
+    \section{Verben mit Dativ- und Akkusativobjekt}
+        
+        \begin{grammarentry}{Grundmuster}{Person und Sache}
+            \GermanText{Viele Verben haben ein Dativobjekt und ein Akkusativobjekt. Das Dativobjekt bezeichnet häufig die Person, die etwas erhält oder von einer Handlung betroffen ist. Das Akkusativobjekt bezeichnet häufig die Sache.}
+            \EnglishText{Many verbs take both a dative object and an accusative object. The dative object often denotes the person who receives something or is affected by an action. The accusative object often denotes the thing.}
+            
+            \GermanText{Frage nach dem Dativobjekt: \textbf{Wem?} \quad Frage nach dem Akkusativobjekt: \textbf{Wen oder was?}}
+            \EnglishText{Question for the dative object: \textbf{to whom?} \quad Question for the accusative object: \textbf{whom or what?}}
+        \end{grammarentry}
+        
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{|p{2.4cm}|p{2.5cm}|p{4.1cm}|p{4.3cm}|}
+            \hline
+            \rowcolor{HeaderBlueDark}
+            \TableHeader{Subjekt} & \TableHeader{Prädikat} & \TableHeader{Dativobjekt: Person} & \TableHeader{Akkusativobjekt: Sache} \\
+            \hline
+            Der Ober & bringt & den Gästen & die Getränke. \\
+            \hline
+            Ich & gebe & meinem Freund & das Buch. \\
+            \hline
+            Die Lehrerin & erklärt & den Schülern & die Regel. \\
+            \hline
+            Wir & schicken & unserer Kollegin & eine E-Mail. \\
+            \hline
+        \end{longtable}
+        
+        \subsection{Beide Objekte sind Nomen}
+            
+            \begin{grammarentry}{Dativ vor Akkusativ}{Nomen + Nomen}
+                \GermanText{Wenn beide Objekte Nomen oder Nomengruppen sind, steht in der neutralen Reihenfolge das Dativobjekt vor dem Akkusativobjekt.}
+                \EnglishText{When both objects are nouns or noun phrases, the dative object precedes the accusative object in neutral word order.}
+            \end{grammarentry}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Der Ober bringt den Gästen die Getränke.}{The waiter brings the guests the drinks.}
+                    \ExampleItem{Ich schenke meiner Schwester ein Fahrrad.}{I give my sister a bicycle.}
+                    \ExampleItem{Der Lehrer erklärt den Teilnehmern die Aufgabe.}{The teacher explains the task to the participants.}
+                \end{itemize}
+            \end{exbox}
+        
+        \subsection{Ein Objekt ist ein Pronomen}
+            
+            \begin{grammarentry}{Pronomen vor Nomen}{kurze Pronomen stehen früh}
+                \GermanText{Wenn nur eines der beiden Objekte ein unbetontes Personalpronomen ist, steht dieses Pronomen normalerweise vor dem nominalen Objekt.}
+                \EnglishText{When only one of the two objects is an unstressed personal pronoun, that pronoun normally comes before the nominal object.}
+            \end{grammarentry}
+            
+            \rowcolors{2}{RowBlueLight}{RowBlueDark}
+            \begin{longtable}{|p{4.0cm}|p{5.0cm}|p{5.0cm}|}
+                \hline
+                \rowcolor{HeaderBlueDark}
+                \TableHeader{Objektformen} & \TableHeader{Struktur} & \TableHeader{Beispiel} \\
+                \hline
+                Dativpronomen + Akkusativnomen & Dativpronomen vor Akkusativnomen & Der Ober bringt \textbf{ihnen die Getränke}. \\
+                \hline
+                Akkusativpronomen + Dativnomen & Akkusativpronomen vor Dativnomen & Der Ober bringt \textbf{sie den Gästen}. \\
+                \hline
+            \end{longtable}
+        
+        \subsection{Beide Objekte sind Pronomen}
+            
+            \begin{grammarentry}{Akkusativ vor Dativ}{Pronomen + Pronomen}
+                \GermanText{Wenn beide Objekte unbetonte Personalpronomen sind, steht normalerweise das Akkusativpronomen vor dem Dativpronomen.}
+                \EnglishText{When both objects are unstressed personal pronouns, the accusative pronoun normally precedes the dative pronoun.}
+            \end{grammarentry}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Der Ober bringt sie ihnen.}{The waiter brings them to them.}
+                    \ExampleItem{Ich gebe es ihm.}{I give it to him.}
+                    \ExampleItem{Sie erklärt sie uns.}{She explains it to us.}
+                \end{itemize}
+            \end{exbox}
+    
+    
+    \section{Pronomen im Mittelfeld}
+        
+        \begin{grammarentry}{Kurze Personalpronomen}{frühe Stellung}
+            \GermanText{Unbetonte Personalpronomen stehen normalerweise sehr früh im Mittelfeld. In einer neutralen Reihenfolge steht ein Subjektpronomen vor den Objektpronomen. Bei zwei Objektpronomen gilt: Akkusativ vor Dativ.}
+            \EnglishText{Unstressed personal pronouns normally stand very early in the middle field. In neutral word order, a subject pronoun precedes the object pronouns. With two object pronouns, the accusative comes before the dative.}
+        \end{grammarentry}
+        
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{|p{3.3cm}|p{3.3cm}|p{3.3cm}|p{4.1cm}|}
+            \hline
+            \rowcolor{HeaderBlueDark}
+            \TableHeader{Position I} & \TableHeader{Verb} & \TableHeader{Pronomenfolge} & \TableHeader{Rest / Ende} \\
+            \hline
+            Heute & gibt & er es ihm & zurück. \\
+            \hline
+            Morgen & erklärt & sie sie uns & noch einmal. \\
+            \hline
+            Im Büro & wird & er es ihr & zeigen. \\
+            \hline
+        \end{longtable}
+    
+    
+    \section{Adverbiale Angaben: TeKaMoLo}
+        
+        \begin{grammarentry}{TeKaMoLo}{Zeit -- Grund -- Art -- Ort}
+            \GermanText{Wenn mehrere adverbiale Angaben zusammen im Mittelfeld stehen und keine besonders betont wird, ist die neutrale Reihenfolge: \textbf{Temporal -- Kausal -- Modal -- Lokal}.}
+            \EnglishText{When several adverbial elements occur together in the middle field and none is specially emphasized, the neutral order is: \textbf{temporal -- causal -- modal -- local}.}
+        \end{grammarentry}
+        
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{|p{2.5cm}|p{3.0cm}|p{3.0cm}|p{3.0cm}|p{3.0cm}|}
+            \hline
+            \rowcolor{HeaderBlueDark}
+            \TableHeader{Subjekt + Verb} & \TableHeader{Temporal: Wann?} & \TableHeader{Kausal: Warum?} & \TableHeader{Modal: Wie?} & \TableHeader{Lokal: Wo/Wohin?} \\
+            \hline
+            Ich fahre & morgen & wegen eines Termins & mit dem Zug & nach Wien. \\
+            \hline
+            Wir arbeiten & heute & wegen der Frist & besonders konzentriert & im Büro. \\
+            \hline
+            Sie geht & jeden Morgen & aus gesundheitlichen Gründen & zu Fuß & zur Arbeit. \\
+            \hline
+        \end{longtable}
+        
+        \begin{grammarentry}{Keine starre Mathematik}{Betonung und Kontext}
+            \GermanText{TeKaMoLo ist eine neutrale Grundregel. Ein Satzglied kann zur Betonung ins Vorfeld gestellt werden. Die übrigen Angaben behalten danach normalerweise ihre sinnvolle Reihenfolge.}
+            \EnglishText{TeKaMoLo is a neutral basic rule. A constituent can be moved to the pre-field for emphasis. The remaining elements normally keep their sensible order.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Morgen fahre ich wegen eines Termins mit dem Zug nach Wien.}{Tomorrow I am travelling to Vienna by train because of an appointment.}
+                \ExampleItem{Wegen eines Termins fahre ich morgen mit dem Zug nach Wien.}{Because of an appointment, I am travelling to Vienna by train tomorrow.}
+                \ExampleItem{Mit dem Zug fahre ich morgen wegen eines Termins nach Wien.}{By train, I am travelling to Vienna tomorrow because of an appointment.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Objekte und adverbiale Angaben zusammen}
+        
+        \begin{grammarentry}{Praktische Grundordnung}{für neutrale B1-Sätze}
+            \GermanText{Es gibt keine einzige starre Formel, die in jedem Satz alle Objekte und alle adverbialen Angaben verbindet. Für neutrale Sätze ist folgende Arbeitsweise sicher: Subjekt früh setzen, kurze Pronomen früh setzen, bei zwei Nomen Dativ vor Akkusativ verwenden und mehrere Angaben nach TeKaMoLo ordnen.}
+            \EnglishText{There is no single rigid formula that combines every object and every adverbial element in every sentence. For neutral sentences, the following method is safe: place the subject early, place short pronouns early, use dative before accusative with two nouns, and order multiple adverbials according to TeKaMoLo.}
+        \end{grammarentry}
+        
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{|p{4.4cm}|p{10.0cm}|}
+            \hline
+            \rowcolor{HeaderBlueDark}
+            \TableHeader{Fall} & \TableHeader{Neutrales Beispiel} \\
+            \hline
+            zwei nominale Objekte & Ich gebe \textbf{meinem Bruder das Buch}. \\
+            \hline
+            Objekt + Zeit + Ort & Ich gebe \textbf{meinem Bruder heute im Büro das Buch}. \\
+            \hline
+            Akkusativpronomen + Dativnomen & Ich gebe \textbf{es meinem Bruder heute im Büro}. \\
+            \hline
+            beide Objekte als Pronomen & Ich gebe \textbf{es ihm heute im Büro}. \\
+            \hline
+            Modalverb & Ich will \textbf{es ihm heute im Büro geben}. \\
+            \hline
+        \end{longtable}
+        
+        \begin{grammarentry}{Informationsstruktur}{bekannt vor neu}
+            \GermanText{Bekannte, kurze oder bereits erwähnte Informationen stehen häufig früher. Neue, lange oder besonders wichtige Informationen stehen häufig später. Deshalb sind neben der neutralen Grundordnung auch andere korrekte Reihenfolgen möglich.}
+            \EnglishText{Known, short, or previously mentioned information often appears earlier. New, long, or especially important information often appears later. Therefore, other correct orders are possible alongside the neutral basic order.}
+        \end{grammarentry}
+    
+    
+    \section{Die Stellung von \glqq nicht\grqq}
+        
+        \begin{grammarentry}{Satznegation}{vor dem rechten Satzklammerteil}
+            \GermanText{Wenn \textbf{nicht} die gesamte Handlung verneint, steht es häufig weit hinten im Mittelfeld, aber vor dem zweiten Verbteil.}
+            \EnglishText{When \textbf{nicht} negates the entire action, it often stands late in the middle field, but before the second verb part.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich kann heute nicht kommen.}{I cannot come today.}
+                \ExampleItem{Der Ober hat den Gästen die Getränke nicht gebracht.}{The waiter did not bring the guests the drinks.}
+                \ExampleItem{Monika will morgen nicht nach Rom fliegen.}{Monika does not want to fly to Rome tomorrow.}
+            \end{itemize}
+        \end{exbox}
+        
+        \begin{grammarentry}{Teilnegation}{direkt vor dem verneinten Satzglied}
+            \GermanText{Wenn nur ein bestimmtes Satzglied verneint wird, steht \textbf{nicht} direkt davor.}
+            \EnglishText{When only one particular constituent is negated, \textbf{nicht} stands directly before it.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich fahre nicht heute, sondern morgen.}{I am not travelling today, but tomorrow.}
+                \ExampleItem{Ich fahre nicht mit dem Auto, sondern mit dem Zug.}{I am not travelling by car, but by train.}
+                \ExampleItem{Ich gebe das Buch nicht Peter, sondern Maria.}{I am not giving the book to Peter, but to Maria.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Nebensätze}
+        
+        \begin{grammarentry}{Verbendstellung}{weil, dass, obwohl, wenn, damit usw.}
+            \GermanText{Ein Nebensatz beginnt häufig mit einer unterordnenden Konjunktion. Das konjugierte Verb steht am Ende des Nebensatzes.}
+            \EnglishText{A subordinate clause often begins with a subordinating conjunction. The finite verb stands at the end of the subordinate clause.}
+        \end{grammarentry}
+        
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{|p{2.8cm}|p{2.8cm}|p{6.0cm}|p{3.0cm}|}
+            \hline
+            \rowcolor{HeaderBlueDark}
+            \TableHeader{Konjunktion} & \TableHeader{Subjekt} & \TableHeader{Mittelfeld} & \TableHeader{Verb am Ende} \\
+            \hline
+            weil & der Ober & den Gästen die Getränke & bringt. \\
+            \hline
+            dass & Monika & morgen nach Rom & fliegt. \\
+            \hline
+            obwohl & er & heute keine Zeit & hat. \\
+            \hline
+            wenn & wir & am Wochenende nach Graz & fahren. \\
+            \hline
+        \end{longtable}
+        
+        \subsection{Nebensatz mit mehreren Verbteilen}
+            
+            \begin{grammarentry}{Verbgruppe am Ende}{Infinitiv oder Partizip vor dem finiten Verb}
+                \GermanText{Bei Modalverb, Perfekt, Futur oder Passiv steht die ganze Verbgruppe am Ende. In den normalen Grundfällen steht der Infinitiv oder das Partizip vor dem konjugierten Hilfs- oder Modalverb.}
+                \EnglishText{With a modal verb, perfect tense, future tense, or passive voice, the complete verb group stands at the end. In the normal basic cases, the infinitive or participle precedes the finite auxiliary or modal verb.}
+            \end{grammarentry}
+            
+            \rowcolors{2}{RowBlueLight}{RowBlueDark}
+            \begin{longtable}{|p{3.0cm}|p{8.0cm}|p{3.6cm}|}
+                \hline
+                \rowcolor{HeaderBlueDark}
+                \TableHeader{Struktur} & \TableHeader{Mittelfeld} & \TableHeader{Verbgruppe am Ende} \\
+                \hline
+                Modalverb & weil der Ober den Gästen die Getränke & bringen will. \\
+                \hline
+                Perfekt & weil der Ober den Gästen die Getränke & gebracht hat. \\
+                \hline
+                Futur I & weil der Ober den Gästen die Getränke & bringen wird. \\
+                \hline
+                Passiv & weil die Getränke den Gästen & gebracht werden. \\
+                \hline
+            \end{longtable}
+        
+        \subsection{Trennbare Verben im Nebensatz}
+            
+            \begin{grammarentry}{Nicht getrennt}{Verb am Ende}
+                \GermanText{Im Nebensatz wird ein trennbares Verb im Präsens oder Präteritum nicht getrennt, weil das konjugierte Verb als Ganzes am Ende steht.}
+                \EnglishText{In a subordinate clause, a separable verb in the present or simple past is not separated because the finite verb as a whole stands at the end.}
+            \end{grammarentry}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich weiß, dass er mich morgen anruft.}{I know that he will call me tomorrow.}
+                    \ExampleItem{Sie sagt, dass der Zug um acht Uhr abfährt.}{She says that the train leaves at eight o'clock.}
+                    \ExampleItem{Weil er früh aufsteht, ist er abends müde.}{Because he gets up early, he is tired in the evening.}
+                \end{itemize}
+            \end{exbox}
+    
+    
+    \section{Hauptsatz nach einem Nebensatz}
+        
+        \begin{grammarentry}{Nebensatz als Position I}{Verb des Hauptsatzes direkt danach}
+            \GermanText{Wenn ein Nebensatz vor dem Hauptsatz steht, besetzt der gesamte Nebensatz die Position I des Hauptsatzes. Deshalb folgt direkt nach dem Komma das konjugierte Verb des Hauptsatzes.}
+            \EnglishText{When a subordinate clause precedes the main clause, the entire subordinate clause occupies position I of the main clause. Therefore, the finite verb of the main clause follows directly after the comma.}
+        \end{grammarentry}
+        
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{|p{6.0cm}|p{2.8cm}|p{5.6cm}|}
+            \hline
+            \rowcolor{HeaderBlueDark}
+            \TableHeader{Position I: ganzer Nebensatz} & \TableHeader{Position II} & \TableHeader{Rest des Hauptsatzes} \\
+            \hline
+            Weil Max Hunger hat, & möchte & er jetzt ins Restaurant gehen. \\
+            \hline
+            Obwohl Monika müde ist, & lernt & sie weiter Deutsch. \\
+            \hline
+            Wenn ich Zeit habe, & besuche & ich meine Freunde. \\
+            \hline
+        \end{longtable}
+        
+        \begin{grammarentry}{Häufiger Fehler}{kein zusätzliches Vorfeld}
+            \GermanText{Nach einem vorangestellten Nebensatz darf nicht noch ein zweites unabhängiges Satzglied vor dem konjugierten Verb des Hauptsatzes stehen.}
+            \EnglishText{After a fronted subordinate clause, a second independent constituent may not be placed before the finite verb of the main clause.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Richtig: Weil ich müde bin, gehe ich nach Hause.}{Correct: Because I am tired, I go home.}
+                \ExampleItem{Falsch: Weil ich müde bin, ich gehe nach Hause.}{Incorrect: Because I am tired, I go home.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Nebenordnende Konjunktionen und Konjunktionaladverbien}
+        
+        \subsection{und, aber, oder, denn, sondern}
+            
+            \begin{grammarentry}{Keine Verbendstellung}{normale Hauptsatzstruktur}
+                \GermanText{Die nebenordnenden Konjunktionen \textbf{und, aber, oder, denn, sondern} verändern die Wortstellung des folgenden Hauptsatzes nicht. Das konjugierte Verb bleibt an Position II.}
+                \EnglishText{The coordinating conjunctions \textbf{und, aber, oder, denn, sondern} do not change the word order of the following main clause. The finite verb remains in position II.}
+            \end{grammarentry}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich bin müde, aber ich lerne weiter.}{I am tired, but I continue studying.}
+                    \ExampleItem{Er bleibt zu Hause, denn er ist krank.}{He stays at home because he is ill.}
+                    \ExampleItem{Sie fährt nicht mit dem Auto, sondern sie nimmt den Zug.}{She is not travelling by car; instead, she takes the train.}
+                \end{itemize}
+            \end{exbox}
+        
+        \subsection{deshalb, trotzdem, dann, danach}
+            
+            \begin{grammarentry}{Position I im Hauptsatz}{Verb direkt danach}
+                \GermanText{Wörter wie \textbf{deshalb, trotzdem, dann, danach} sind keine unterordnenden Konjunktionen. Sie können Position I besetzen; danach steht sofort das konjugierte Verb.}
+                \EnglishText{Words such as \textbf{deshalb, trotzdem, dann, danach} are not subordinating conjunctions. They can occupy position I, and the finite verb follows immediately.}
+            \end{grammarentry}
+            
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich bin müde. Deshalb gehe ich nach Hause.}{I am tired. Therefore, I am going home.}
+                    \ExampleItem{Es regnet. Trotzdem gehen wir spazieren.}{It is raining. Nevertheless, we are going for a walk.}
+                    \ExampleItem{Ich esse zuerst. Danach lerne ich Deutsch.}{First I eat. Afterwards, I study German.}
+                \end{itemize}
+            \end{exbox}
+    
+    
+    \section{Infinitivgruppen mit \glqq zu\grqq}
+        
+        \begin{grammarentry}{Infinitiv am Ende}{um zu, ohne zu, statt zu}
+            \GermanText{Bei einer Infinitivgruppe steht der Infinitiv mit \textbf{zu} am Ende der Gruppe. Bei einem trennbaren Verb steht \textbf{zu} zwischen Vorsilbe und Verbstamm.}
+            \EnglishText{In an infinitive clause, the infinitive with \textbf{zu} stands at the end of the group. With a separable verb, \textbf{zu} is placed between the prefix and the verb stem.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich lerne Deutsch, um in Österreich zu arbeiten.}{I study German in order to work in Austria.}
+                \ExampleItem{Er geht früh schlafen, um morgen früh aufzustehen.}{He goes to bed early in order to get up early tomorrow.}
+                \ExampleItem{Sie verließ das Haus, ohne die Tür abzuschließen.}{She left the house without locking the door.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Große Übersicht}
+        
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{|p{3.0cm}|p{4.2cm}|p{7.0cm}|}
+            \hline
+            \rowcolor{HeaderBlueDark}
+            \TableHeader{Satzart} & \TableHeader{Verbposition} & \TableHeader{Beispiel} \\
+            \hline
+            Aussagesatz & konjugiertes Verb an Position II & Heute \textbf{bringt} der Ober den Gästen die Getränke. \\
+            \hline
+            Ja-/Nein-Frage & konjugiertes Verb an Position I & \textbf{Bringt} der Ober den Gästen die Getränke? \\
+            \hline
+            W-Frage & Fragewort I, Verb II & Wem \textbf{bringt} der Ober die Getränke? \\
+            \hline
+            Imperativ & Verb an Position I & \textbf{Bring} den Gästen die Getränke! \\
+            \hline
+            Hauptsatz mit Modalverb & finites Verb II, Infinitiv am Ende & Der Ober \textbf{will} den Gästen die Getränke \textbf{bringen}. \\
+            \hline
+            Hauptsatz im Perfekt & Hilfsverb II, Partizip am Ende & Der Ober \textbf{hat} den Gästen die Getränke \textbf{gebracht}. \\
+            \hline
+            Nebensatz & konjugiertes Verb am Ende & weil der Ober den Gästen die Getränke \textbf{bringt}. \\
+            \hline
+            Nebensatz mit Modalverb & gesamte Verbgruppe am Ende & weil der Ober den Gästen die Getränke \textbf{bringen will}. \\
+            \hline
+            Nebensatz vor Hauptsatz & Nebensatz = Position I; Hauptverb direkt nach Komma & Weil Max Hunger hat, \textbf{möchte} er ins Restaurant gehen. \\
+            \hline
+        \end{longtable}
+    
+    
+    \section{Schritt-für-Schritt-Methode}
+        
+        \begin{grammarentry}{Satz bauen}{praktische Reihenfolge}
+            \GermanText{Um einen normalen Satz sicher zu bilden, kann man in dieser Reihenfolge vorgehen:}
+            \EnglishText{To build a normal sentence safely, one can proceed in the following order:}
+            
+            \begin{itemize}
+                \item \textbf{1.} Bestimme die Satzart: Hauptsatz, Frage, Imperativ oder Nebensatz.
+                \item \textbf{2.} Setze das konjugierte Verb an die richtige Stelle.
+                \item \textbf{3.} Prüfe, ob ein zweiter Verbteil ans Ende gehört.
+                \item \textbf{4.} Setze das Subjekt früh, wenn es nicht im Vorfeld steht.
+                \item \textbf{5.} Setze kurze Pronomen vor nominale Satzglieder.
+                \item \textbf{6.} Ordne zwei Nomen als Dativ vor Akkusativ.
+                \item \textbf{7.} Ordne mehrere Angaben nach TeKaMoLo.
+                \item \textbf{8.} Stelle genau ein Satzglied ins Vorfeld, wenn du etwas betonen möchtest.
+            \end{itemize}
+            
+            \EnglishText{1. Determine the sentence type. 2. Put the finite verb in the correct position. 3. Check whether a second verb part belongs at the end. 4. Place the subject early if it is not in the pre-field. 5. Put short pronouns before noun phrases. 6. With two nouns, place the dative before the accusative. 7. Order several adverbials according to TeKaMoLo. 8. Put exactly one constituent in the pre-field when you want to emphasize it.}
+        \end{grammarentry}
+    
+    
+    \section{Zusammenfassung}
+        
+        \begin{grammarentry}{Merksätze}{kurz und prüfungsrelevant}
+            \GermanText{Aussagesatz: \textbf{konjugiertes Verb an Position II}.}
+            \EnglishText{Declarative sentence: \textbf{finite verb in position II}.}
+            
+            \GermanText{Ja-/Nein-Frage und Imperativ: \textbf{Verb an Position I}.}
+            \EnglishText{Yes/no question and imperative: \textbf{verb in position I}.}
+            
+            \GermanText{Nebensatz: \textbf{konjugiertes Verb am Ende}.}
+            \EnglishText{Subordinate clause: \textbf{finite verb at the end}.}
+            
+            \GermanText{Satzklammer: \textbf{konjugierter Teil links, zweiter Verbteil am Ende}.}
+            \EnglishText{Sentence bracket: \textbf{finite part on the left, second verb part at the end}.}
+            
+            \GermanText{Zwei Nomen als Objekte: \textbf{Dativ vor Akkusativ}.}
+            \EnglishText{Two noun objects: \textbf{dative before accusative}.}
+            
+            \GermanText{Zwei Objektpronomen: \textbf{Akkusativ vor Dativ}.}
+            \EnglishText{Two object pronouns: \textbf{accusative before dative}.}
+            
+            \GermanText{Adverbiale Angaben: \textbf{Temporal -- Kausal -- Modal -- Lokal}.}
+            \EnglishText{Adverbial elements: \textbf{temporal -- causal -- modal -- local}.}
+        \end{grammarentry}
+
+\end{document}
