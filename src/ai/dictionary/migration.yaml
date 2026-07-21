@@ -2,4 +2,6 @@
 entry_format:
   meaning:
     - there must be three indepenedent lines for searching, one for english, the next for persian and the last for pinglish
+    - verb:
+        - adding different compositions for different propositions or usages
 

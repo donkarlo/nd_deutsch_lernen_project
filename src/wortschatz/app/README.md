@@ -54,7 +54,7 @@ The original dictionary search/add interface remains in the **Dictionary** tab. 
 ## Install and run on Linux
 
 ```bash
-cd deutsch_dictionary_app
+cd app
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
@@ -68,7 +68,7 @@ dictionary is stored elsewhere, the already configured path is preserved.
 You can also override either database temporarily:
 
 ```bash
-python3 dictionary_app.py \
+python3 app.py \
   --database /absolute/path/to/woerterbuch.txt \
   --irregular-verbs /absolute/path/to/irregular_verbs.yaml
 ```
@@ -118,3 +118,9 @@ now reports download errors and playback errors separately.
 ```bash
 python -m unittest discover -s tests -v
 ```
+
+## Grammar lookup tabs
+The application now contains three additional tabs:
+- **Artikel**: filters article type, case, and gender/number.
+- **Pronomen**: filters personal, reflexive, demonstrative, relative, interrogative, and possessive forms. Possessive forms distinguish the owner/person from the gender/number and case of the referenced noun.
+- **Adjektivendungen**: generates strong, weak, and mixed adjective forms from an adjective search field plus case and gender/number filters. Orthographically special stems are documented in `irregular_adjectives.yaml`.

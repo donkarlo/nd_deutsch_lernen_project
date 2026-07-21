@@ -25,6 +25,7 @@ from PySide6.QtGui import QAction, QFont, QKeySequence
 from PySide6.QtWidgets import (
     QApplication,
     QCompleter,
+    QComboBox,
     QDialog,
     QDialogButtonBox,
     QFileDialog,
@@ -50,6 +51,7 @@ from conjugation_core import (
     normalize_verb,
 )
 from dictionary_core import DictionaryEntry, DictionaryIndex, DuplicateEntryError, parse_entry
+from grammar_core import (ADJECTIVE_ENDINGS, ARTICLES, CASES, GENDERS, PERSONAL, PERSONS, POSSESSIVE_STEMS, PRONOUN_DECLENSIONS, REFLEXIVE, decline_adjective, possessive_form)
 from pronunciation_core import (
     PronunciationDownloadError,
     build_pronunciation_url,
@@ -251,6 +253,9 @@ class DictionaryWindow(QMainWindow):
         self.tabs.setTabsClosable(False)
         self.tabs.addTab(self._build_dictionary_tab(), "Dictionary")
         self.tabs.addTab(self._build_conjugation_tab(), "Conjugation")
+        self.tabs.addTab(self._build_article_tab(), "Artikel")
+        self.tabs.addTab(self._build_pronoun_tab(), "Pronomen")
+        self.tabs.addTab(self._build_adjective_tab(), "Adjektivendungen")
         self.setCentralWidget(self.tabs)
 
         self.search_timer = QTimer(self)
@@ -344,6 +349,214 @@ class DictionaryWindow(QMainWindow):
         self.conjugation_status.setTextInteractionFlags(Qt.TextSelectableByMouse)
         outer.addWidget(self.conjugation_status)
         return tab
+
+
+    GRAMMAR_CSS = """
+    <style>
+      body { font-family: sans-serif; font-size: 11pt; }
+      h2 { color: #2f527f; margin-bottom: 8px; }
+      .hint { color: #445; margin: 4px 0 12px 0; }
+      table { border-collapse: collapse; width: 100%; margin: 8px 0 18px 0; }
+      th { background: #466eaa; color: white; font-weight: bold; padding: 8px; border: 1px solid #365786; }
+      td { padding: 7px; border: 1px solid #aebfd6; }
+      tr:nth-child(odd) td { background: #ebf3ff; }
+      tr:nth-child(even) td { background: #dce9fa; }
+      .group { background: #365786; color: white; font-weight: bold; }
+      .form { font-size: 13pt; font-weight: bold; }
+      .dash { color: #777; }
+    </style>
+    """
+
+    def _make_combo(self, items, parent, *, allow_all: bool = True):
+        combo = QComboBox(parent)
+        if allow_all:
+            combo.addItem("Alle")
+        combo.addItems(list(items))
+        return combo
+
+    @staticmethod
+    def _table(headers: list[str], rows: list[list[str]]) -> str:
+        head = "".join(f"<th>{html.escape(str(x))}</th>" for x in headers)
+        body = []
+        for row in rows:
+            cells = "".join(f"<td>{html.escape(str(x))}</td>" for x in row)
+            body.append(f"<tr>{cells}</tr>")
+        return f"<table><thead><tr>{head}</tr></thead><tbody>{''.join(body)}</tbody></table>"
+
+    @staticmethod
+    def _selected(combo: QComboBox, all_values) -> list[str]:
+        value = combo.currentText()
+        return list(all_values) if value == "Alle" else [value]
+
+    def _build_article_tab(self) -> QWidget:
+        tab = QWidget(self)
+        outer = QVBoxLayout(tab)
+        top = QHBoxLayout()
+        top.addWidget(QLabel("Artikeltyp:"))
+        self.article_type = self._make_combo(ARTICLES.keys(), tab)
+        top.addWidget(self.article_type)
+        top.addWidget(QLabel("Kasus:"))
+        self.article_case = self._make_combo(CASES, tab)
+        top.addWidget(self.article_case)
+        top.addWidget(QLabel("Genus/Numerus:"))
+        self.article_gender = self._make_combo(GENDERS, tab)
+        top.addWidget(self.article_gender)
+        top.addStretch(1)
+        outer.addLayout(top)
+        self.article_results = QTextBrowser(tab)
+        self.article_results.setFont(QFont("Sans Serif", 10))
+        outer.addWidget(self.article_results, 1)
+        for combo in (self.article_type, self.article_case, self.article_gender):
+            combo.currentTextChanged.connect(self._render_article)
+        self._render_article()
+        return tab
+
+    def _render_article(self) -> None:
+        types = self._selected(self.article_type, ARTICLES.keys())
+        cases = self._selected(self.article_case, CASES)
+        genders = self._selected(self.article_gender, GENDERS)
+        rows: list[list[str]] = []
+        for typ in types:
+            for case in cases:
+                values = ARTICLES[typ][case]
+                rows.append([typ, case] + [values[GENDERS.index(g)] for g in genders])
+        headers = ["Artikeltyp", "Kasus", *genders]
+        note = "Leere/Alle Filter zeigen alle passenden Formen."
+        content = f"<h2>Artikel in den vier Kasus</h2><p class='hint'>{note}</p>" + self._table(headers, rows)
+        self.article_results.setHtml(self.GRAMMAR_CSS + content)
+
+    def _build_pronoun_tab(self) -> QWidget:
+        tab = QWidget(self)
+        outer = QVBoxLayout(tab)
+        top = QHBoxLayout()
+        pronoun_types = [
+            "Personalpronomen", "Possessivpronomen / Possessivartikel",
+            "Reflexivpronomen", *PRONOUN_DECLENSIONS.keys()
+        ]
+        self.pronoun_type = self._make_combo(pronoun_types, tab)
+        self.pronoun_case = self._make_combo(CASES, tab)
+        self.pronoun_person = self._make_combo(PERSONS, tab)
+        self.pronoun_owner = self._make_combo(POSSESSIVE_STEMS.keys(), tab)
+        self.pronoun_gender = self._make_combo(GENDERS, tab)
+        controls = (
+            ("Typ:", self.pronoun_type), ("Kasus:", self.pronoun_case),
+            ("Person:", self.pronoun_person), ("Besitzer/Subjekt:", self.pronoun_owner),
+            ("Bezugswort:", self.pronoun_gender),
+        )
+        self.pronoun_labels = {}
+        for label, widget in controls:
+            lab = QLabel(label)
+            self.pronoun_labels[label] = lab
+            top.addWidget(lab)
+            top.addWidget(widget)
+        outer.addLayout(top)
+        self.pronoun_results = QTextBrowser(tab)
+        self.pronoun_results.setFont(QFont("Sans Serif", 10))
+        outer.addWidget(self.pronoun_results, 1)
+        for combo in (self.pronoun_type, self.pronoun_case, self.pronoun_person,
+                      self.pronoun_owner, self.pronoun_gender):
+            combo.currentTextChanged.connect(self._render_pronoun)
+        self._render_pronoun()
+        return tab
+
+    def _render_pronoun(self) -> None:
+        selected_type = self.pronoun_type.currentText()
+        all_types = [
+            "Personalpronomen", "Possessivpronomen / Possessivartikel",
+            "Reflexivpronomen", *PRONOUN_DECLENSIONS.keys()
+        ]
+        types = all_types if selected_type == "Alle" else [selected_type]
+        cases = self._selected(self.pronoun_case, CASES)
+        persons = self._selected(self.pronoun_person, PERSONS)
+        owners = self._selected(self.pronoun_owner, POSSESSIVE_STEMS.keys())
+        genders = self._selected(self.pronoun_gender, GENDERS)
+
+        show_person = selected_type in ("Alle", "Personalpronomen", "Reflexivpronomen")
+        show_owner = selected_type in ("Alle", "Possessivpronomen / Possessivartikel")
+        show_gender = selected_type == "Alle" or selected_type.startswith("Possessiv") or selected_type in PRONOUN_DECLENSIONS
+        self.pronoun_person.setVisible(show_person)
+        self.pronoun_labels["Person:"].setVisible(show_person)
+        self.pronoun_owner.setVisible(show_owner)
+        self.pronoun_labels["Besitzer/Subjekt:"].setVisible(show_owner)
+        self.pronoun_gender.setVisible(show_gender)
+        self.pronoun_labels["Bezugswort:"].setVisible(show_gender)
+
+        sections: list[str] = []
+        for typ in types:
+            rows: list[list[str]] = []
+            if typ == "Personalpronomen":
+                valid_cases = [c for c in cases if c in PERSONAL]
+                for case in valid_cases:
+                    for person in persons:
+                        rows.append([case, person, PERSONAL[case][PERSONS.index(person)]])
+                headers = ["Kasus", "Person", "Form"]
+            elif typ == "Reflexivpronomen":
+                valid_cases = [c for c in cases if c in REFLEXIVE]
+                for case in valid_cases:
+                    for person in persons:
+                        rows.append([case, person, REFLEXIVE[case][PERSONS.index(person)]])
+                headers = ["Kasus", "Person", "Form"]
+            elif typ == "Possessivpronomen / Possessivartikel":
+                for owner in owners:
+                    for case in cases:
+                        for gender in genders:
+                            rows.append([owner, case, gender, possessive_form(owner, case, gender)])
+                headers = ["Besitzer/Subjekt", "Kasus", "Genus/Numerus des Bezugsworts", "Form"]
+            else:
+                for case in cases:
+                    for gender in genders:
+                        form = PRONOUN_DECLENSIONS[typ][case][GENDERS.index(gender)]
+                        rows.append([case, gender, form])
+                headers = ["Kasus", "Genus/Numerus", "Form"]
+            if rows:
+                sections.append(f"<h2>{html.escape(typ)}</h2>" + self._table(headers, rows))
+        self.pronoun_results.setHtml(
+            self.GRAMMAR_CSS + "<p class='hint'>Alle Filter sind optional. Nicht anwendbare Kasus werden automatisch ausgelassen.</p>" + "".join(sections)
+        )
+
+    def _build_adjective_tab(self) -> QWidget:
+        tab = QWidget(self)
+        outer = QVBoxLayout(tab)
+        top = QHBoxLayout()
+        self.adj_search = QLineEdit(tab)
+        self.adj_search.setClearButtonEnabled(True)
+        self.adj_search.setPlaceholderText("Optionales Adjektiv, z. B. gut, hoch, dunkel …")
+        self.adj_type = self._make_combo(ADJECTIVE_ENDINGS.keys(), tab)
+        self.adj_case = self._make_combo(CASES, tab)
+        self.adj_gender = self._make_combo(GENDERS, tab)
+        for label, widget in (("Adjektiv:", self.adj_search), ("Deklination:", self.adj_type),
+                              ("Kasus:", self.adj_case), ("Genus/Numerus:", self.adj_gender)):
+            top.addWidget(QLabel(label))
+            top.addWidget(widget)
+        outer.addLayout(top)
+        self.adj_results = QTextBrowser(tab)
+        self.adj_results.setFont(QFont("Sans Serif", 10))
+        outer.addWidget(self.adj_results, 1)
+        self.adj_search.textChanged.connect(self._render_adjective)
+        for combo in (self.adj_type, self.adj_case, self.adj_gender):
+            combo.currentTextChanged.connect(self._render_adjective)
+        self._render_adjective()
+        return tab
+
+    def _render_adjective(self) -> None:
+        adjective = self.adj_search.text().strip()
+        declensions = self._selected(self.adj_type, ADJECTIVE_ENDINGS.keys())
+        cases = self._selected(self.adj_case, CASES)
+        genders = self._selected(self.adj_gender, GENDERS)
+        rows: list[list[str]] = []
+        for declension in declensions:
+            for case in cases:
+                row = [declension, case]
+                for gender in genders:
+                    form, ending = decline_adjective(adjective, declension, case, gender)
+                    row.append(form if adjective else "-" + ending)
+                rows.append(row)
+        headers = ["Deklination", "Kasus", *genders]
+        title = f"Adjektivdeklination: {html.escape(adjective)}" if adjective else "Adjektivendungen"
+        note = "Ohne eingegebenes Adjektiv werden nur die Endungen gezeigt."
+        self.adj_results.setHtml(
+            self.GRAMMAR_CSS + f"<h2>{title}</h2><p class='hint'>{note}</p>" + self._table(headers, rows)
+        )
 
     def _focus_current_search(self) -> None:
         if self.tabs.currentIndex() == 1:

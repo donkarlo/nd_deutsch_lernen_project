@@ -2439,7 +2439,19 @@ das Hindernis: obstacle
 
 das Lenkrad: steeringwheel
 
-unterscheiden (etw.Akk ~): distinguish
+unterscheiden [ˌʊntɐˈʃaɪ̯dn̩] (nicht trennbar, transitiv und reflexiv): to distinguish; to differentiate
+Verwendung: jemanden oder etwas (Akk.) unterscheiden; sich von jemandem oder etwas (Dat.) unterscheiden
+Bedeutung: Unterschiede zwischen Personen oder Dingen erkennen oder zeigen; verschieden sein.
+Synonyme: differenzieren, auseinanderhalten, unterscheiden können
+ex: Ich kann die beiden Zwillinge kaum unterscheiden: I can hardly distinguish the two twins.
+ex: Dieses Modell unterscheidet sich von dem alten durch seinen geringeren Energieverbrauch: This model differs from the old one because of its lower energy consumption.
+Präsens: ich unterscheide
+Präteritum: ich unterschied
+Perfekt: ich habe unterschieden
+Futur I: ich werde unterscheiden
+Konjunktiv II: ich unterschiede / ich würde unterscheiden
+Konjunktiv I: ich unterscheide
+Imperativ: du: Unterscheide! ihr: Unterscheidet!
 
 juristisch: legal
 
@@ -6202,8 +6214,6 @@ ex: Er studiert Logik an der Universität: He studies logic at the university.
 
 der zettel: note
 
-bitten: to beg
-
 erfolgreich: successful
 
 reizen (jdn./etw.Akk ~): to irritate
@@ -8692,7 +8702,19 @@ selbständig: indepndent
 
 Großbritannien: great britain
 
-ausbauen (etw.Akk ~): to expand
+ausbauen [ˈaʊ̯sˌbaʊ̯ən] (trennbar, transitiv): to expand; to develop; to strengthen
+Verwendung: etwas (Akk.) ausbauen
+Bedeutung: etwas erweitern, verbessern oder stärker entwickeln; eine bereits bestehende Beziehung, Fähigkeit oder Struktur weiterentwickeln.
+Synonyme: erweitern, weiterentwickeln, verstärken
+ex: Wir möchten unsere Beziehung weiter ausbauen: We would like to further strengthen our relationship.
+ex: Das Unternehmen baut sein Netzwerk aus: The company is expanding its network.
+Präsens: ich baue aus
+Präteritum: ich baute aus
+Perfekt: ich habe ausgebaut
+Futur I: ich werde ausbauen
+Konjunktiv II: ich baute aus / ich würde ausbauen
+Konjunktiv I: ich baue aus
+Imperativ: du: Bau aus! / Baue aus! ihr: Baut aus!
 
 der Pfirsich [ˈpfɪʁzɪç] (-s, -e): peach
 Genitiv: des Pfirsichs
@@ -9025,7 +9047,14 @@ der Verkauf: sale
 
 weit: far
 
-der Führer: leader
+der Führer [ˈfyːʁɐ]: leader; guide
+Bedeutung: Eine Person, die eine Gruppe leitet oder anderen den Weg zeigt. Historisch kann „der Führer“ auch speziell Adolf Hitler bezeichnen; deshalb wirkt das Wort für einen politischen Anführer heute oft belastet.
+Genitiv: des Führers
+Plural: die Führer
+Kollokation: der Führer einer Gruppe; ein erfahrener Bergführer
+Synonyme: Leiter, Anführer, Wegweiser
+ex: Der Bergführer zeigt uns den sicheren Weg: The mountain guide shows us the safe route.
+ex: Sie war die Führerin der Gruppe: She was the leader of the group.
 
 reduzieren [ʁeduˈt͡siːʁən] (Akk.) trennbar, transitiv: to reduce
 ex: Wir reduzieren die Kosten: We reduce the costs.
@@ -9516,16 +9545,6 @@ die Doktorarbeit (pl. die Doktorarbeiten): PhD thesis
 ex: Sie arbeitet seit drei Jahren an ihrer Doktorarbeit: She has been working on her PhD thesis for three years.
 ex: Seine Doktorarbeit wurde veröffentlicht: His PhD thesis was published.
 
-bitten (jdn.Akk, etw. zu tun): ask someone to do something
-ex: Ich bitte dich, mir zu helfen: I ask you to help me.
-ex: Er bat den Professor, das Kapitel zu erklären: He asked the professor to explain the chapter.
-Präsens: ich bitte
-Präteritum: ich bat
-Perfekt: ich habe gebeten
-Futur I: ich werde bitten
-Konjunktiv II: ich würde bitten
-Konjunktiv I: ich bitte
-
 der Professor (pl. die Professoren): professor
 ex: Der Professor hält eine Vorlesung: The professor gives a lecture.
 ex: Ich habe mit meinem Professor gesprochen: I spoke with my professor.
@@ -9670,18 +9689,6 @@ Perfekt: ich habe abgegeben
 Futur I: ich werde abgeben
 Konjunktiv II: ich würde abgeben
 Konjunktiv I: ich gebe ab
-
-abnehmen [ˈapˌneːmən] (trennbar, intransitiv): to decrease
-Bedeutung: kleiner oder weniger werden; in Menge oder Intensität sinken.
-Synonyme: sinken, zurückgehen, sich verringern
-ex: Die Temperatur nimmt ab: The temperature decreases.
-ex: Die Nachfrage nimmt ab: The demand decreases.
-Präsens: ich nehme ab
-Präteritum: ich nahm ab
-Perfekt: ich habe abgenommen
-Futur I: ich werde abnehmen
-Konjunktiv II: ich nähme ab / ich würde abnehmen
-Konjunktiv I: ich nehme ab
 
 der Handschuh [ˈhantˌʃuː] (-(e)s, Handschuhe): glove
 Bedeutung: Kleidungsstück für die Hand, das die Hand warm hält oder schützt.
@@ -11154,7 +11161,14 @@ ex: Die Kinder spielen innen im Haus: The children play inside the house.
 
 der Hut: hat
 
-der Hammer: hammer
+der Hammer [ˈhamɐ]: hammer
+Bedeutung: Ein Werkzeug mit einem schweren Kopf und einem Griff, das zum Schlagen, Einschlagen oder Formen verwendet wird.
+Genitiv: des Hammers
+Plural: die Hämmer
+Kollokation: mit einem Hammer schlagen
+Synonyme: Schlagwerkzeug, Klopfwerkzeug
+ex: Er schlägt den Nagel mit einem Hammer in die Wand: He drives the nail into the wall with a hammer.
+ex: Der Hammer liegt auf dem Tisch: The hammer is lying on the table.
 
 der Zeichentrickfilm : cartoon
 
@@ -11301,7 +11315,19 @@ Synonyme: Angsthase, Schwächling
 ex: Er ist kein Feigling: He is not a coward.
 ex: Nenn mich nicht einen Feigling: Do not call me a coward.
 
-sich Akk entspannen: to relax oneself
+sich entspannen [zɪç ɛntˈʃpanən] (reflexiv, nicht trennbar): to relax
+Verwendung: sich (Akk.) entspannen
+Bedeutung: sich ausruhen und körperlich oder geistig ruhiger werden; Spannung und Stress verlieren.
+Synonyme: sich erholen, abschalten, zur Ruhe kommen
+ex: Ich entspanne mich nach der Arbeit: I relax after work.
+ex: Im Urlaub kann ich mich richtig gut entspannen: I can relax really well on vacation.
+Präsens: ich entspanne mich
+Präteritum: ich entspannte mich
+Perfekt: ich habe mich entspannt
+Futur I: ich werde mich entspannen
+Konjunktiv II: ich entspannte mich / ich würde mich entspannen
+Konjunktiv I: ich entspanne mich
+Imperativ: du: Entspann dich! ihr: Entspannt euch!
 
 spannend [ˈʃpanənt] (Adjektiv, Komparativ: spannender, Superlativ: am spannendsten): exciting; suspenseful; interesting
 Bedeutung: so interessant oder aufregend, dass man wissen möchte, was weiter passiert.
@@ -12908,18 +12934,6 @@ Futur I: ich werde unterschätzen
 Konjunktiv II: ich unterschätzte / ich würde unterschätzen
 Konjunktiv I: ich unterschätze
 
-schätzen [ˈʃɛtsn̩] (trennbar, transitiv): to estimate; to appreciate; to value
-Bedeutung: den Wert oder die Menge von etwas ungefähr bestimmen; jemanden oder etwas sehr mögen und respektieren.
-Synonyme: einschätzen, bewerten, würdigen
-ex: Ich schätze die Kosten auf 100 Euro: I estimate the costs at 100 euros.
-ex: Ich schätze deine Hilfe sehr: I really appreciate your help.
-Präsens: ich schätze
-Präteritum: ich schätzte
-Perfekt: ich habe geschätzt
-Futur I: ich werde schätzen
-Konjunktiv II: ich schätzte / ich würde schätzen
-Konjunktiv I: ich schätze
-
 überfüllt [ˌyːbɐˈfʏlt] (Adjektiv, Komparativ: überfüllter, Superlativ: am überfülltesten): crowded
 Bedeutung: mit zu vielen Menschen oder Dingen gefüllt; kein Platz mehr frei.
 Synonyme: voll, gedrängt, dicht
@@ -13695,7 +13709,19 @@ Synonyme: beachten, auf etwas achten, berücksichtigen
 ex: Du solltest diesem Problem mehr Aufmerksamkeit schenken: You should pay more attention to this problem.
 ex: Der Lehrer schenkt jedem Schüler genügend Aufmerksamkeit: The teacher gives every student enough attention.
 
-ausdrücken:to express
+ausdrücken [ˈaʊ̯sˌdʁʏkn̩] (trennbar, transitiv und reflexiv): to express; to squeeze out
+Verwendung: etwas (Akk.) ausdrücken; sich ausdrücken; etwas aus etwas ausdrücken
+Bedeutung: Gedanken oder Gefühle durch Worte oder Handlungen mitteilen; Flüssigkeit durch Druck aus etwas entfernen.
+Synonyme: äußern, formulieren, mitteilen
+ex: Ich kann meine Gedanken auf Deutsch noch nicht gut ausdrücken: I cannot yet express my thoughts well in German.
+ex: Sie drückte den Saft aus der Zitrone aus: She squeezed the juice out of the lemon.
+Präsens: ich drücke aus
+Präteritum: ich drückte aus
+Perfekt: ich habe ausgedrückt
+Futur I: ich werde ausdrücken
+Konjunktiv II: ich drückte aus / ich würde ausdrücken
+Konjunktiv I: ich drücke aus
+Imperativ: du: Drück aus! / Drücke aus! ihr: Drückt aus!
 
 verteilen: to distribute
 
@@ -14179,8 +14205,6 @@ ex: Ich nehme ein Schmerzmittel gegen die Kopfschmerzen: I take a painkiller for
 ex: Dieses Schmerzmittel wirkt sehr schnell: This painkiller works very quickly.
 
 steil: steep
-
-die Architektur:achtitecture
 
 der Augeninnendruck (pl. die Augeninnendrücke): intraocular pressure; eye pressure
 ex: Der Augeninnendruck ist zu hoch: The eye pressure is too high.
@@ -15214,7 +15238,19 @@ Futur I: ich werde auf etwas achten
 Konjunktiv II: ich würde auf etwas achten
 Konjunktiv I: ich achte auf etwas
 
-brechen: to break
+brechen [ˈbʁɛçn̩] (unregelmäßig, transitiv und intransitiv): to break
+Verwendung: etwas (Akk.) brechen; sich etwas brechen; etwas bricht
+Bedeutung: Etwas durch Kraft in Teile teilen oder beschädigen; bei einem Knochen einen Bruch verursachen; plötzlich enden oder unterbrechen.
+Synonyme: zerbrechen, beschädigen, durchbrechen
+ex: Er bricht den Stock in zwei Teile: He breaks the stick into two pieces.
+ex: Sie hat sich beim Skifahren den Arm gebrochen: She broke her arm while skiing.
+Präsens: ich breche
+Präteritum: ich brach
+Perfekt: ich habe gebrochen
+Futur I: ich werde brechen
+Konjunktiv II: ich bräche / ich würde brechen
+Konjunktiv I: ich breche
+Imperativ: du: Brich! ihr: Brecht!
 
 verkaufen: to sell
 
@@ -16490,7 +16526,14 @@ das Schaf:sheep
 
 die Kuh
 
-der Hase: Rabit
+der Hase [ˈhaːzə]: hare
+Bedeutung: Ein wild lebendes Säugetier mit langen Ohren und kräftigen Hinterbeinen, das schnell laufen kann.
+Genitiv: des Hasen
+Plural: die Hasen
+Kollokation: ein Hase läuft über das Feld
+Synonyme: Feldhase, Langohr
+ex: Der Hase läuft schnell über die Wiese: The hare runs quickly across the meadow.
+ex: Im Frühling sieht man viele Hasen auf den Feldern: In spring, you can see many hares in the fields.
 
 das Schwein
 
@@ -18509,8 +18552,6 @@ Traurigkeit: sadness
 
 traurig: sad
 
-die Einsamkeit: lonliness
-
 einsam:lonely
 
 gelangweilt:bored
@@ -19388,7 +19429,7 @@ Synonyme: erbitten, verlangen, beantragen
 ex: Ich habe die Dokumente angefordert: I requested the documents.
 ex: Sie können weitere Informationen anfordern: You can request more information.
 
-bitten [ˈbɪtn̩] (um + Akk.), transitiv: to request; to ask for
+bitten [ˈbɪtn̩] (um + Akk.), transitiv: to request; to ask for; to beg
 Bedeutung: jemanden höflich um etwas fragen oder etwas freundlich verlangen.
 Synonyme: ersuchen, fragen, verlangen
 ex: Ich bitte um eine schnelle Antwort: I request a quick reply.
@@ -20367,7 +20408,19 @@ ex: Wir bauen ein neues Haus: We build a new house.
 
 der Umbau: reconstruction
 
-transportieren: to transport
+transportieren [tʁanspɔʁˈtiːʁən] (nicht trennbar, transitiv): to transport; to carry
+Verwendung: jemanden oder etwas (Akk.) von einem Ort zu einem anderen transportieren
+Bedeutung: Personen oder Gegenstände mithilfe eines Fahrzeugs oder eines anderen Transportmittels an einen anderen Ort bringen.
+Synonyme: befördern, bringen, überführen
+ex: Der Lastwagen transportiert die Waren nach Wien: The truck transports the goods to Vienna.
+ex: Der Krankenwagen transportierte den Patienten ins Krankenhaus: The ambulance transported the patient to the hospital.
+Präsens: ich transportiere
+Präteritum: ich transportierte
+Perfekt: ich habe transportiert
+Futur I: ich werde transportieren
+Konjunktiv II: ich transportierte / ich würde transportieren
+Konjunktiv I: ich transportiere
+Imperativ: du: Transportiere! ihr: Transportiert!
 
 der Stau: traffic jam
 
@@ -26615,3 +26668,308 @@ Kollokation: einen Sprachchat starten
 Synonyme: Voice-Chat, Audiogespräch, Sprachunterhaltung
 ex: Wir können über einen Sprachchat Deutsch üben: We can practise German through a voice chat.
 ex: Ich habe gestern an einem Sprachchat teilgenommen: I took part in a voice chat yesterday.
+
+zählbar [ˈtsɛːlbaːɐ̯] (Adjektiv, meist nicht steigerbar): countable
+Bedeutung: so beschaffen, dass man die einzelnen Elemente zählen kann.
+Synonyme: abzählbar, zahlenmäßig erfassbar
+Attributiv und prädikativ verwendbar
+ex: „Apfel“ ist ein zählbares Substantiv: “Apple” is a countable noun.
+ex: Diese Gegenstände sind zählbar: These objects are countable.
+
+der Mensch [mɛnʃ]: human being; person
+Bedeutung: ein einzelnes menschliches Lebewesen.
+Genitiv: des Menschen
+Plural: die Menschen
+Kollokation: ein guter Mensch
+Synonyme: Person, Individuum
+ex: Jeder Mensch braucht Wasser: Every human being needs water.
+ex: Er ist ein freundlicher Mensch: He is a friendly person.
+
+die Kontinuität [kɔntinuiˈtɛːt]: continuity
+Bedeutung: das ununterbrochene Fortbestehen oder die gleichmäßige Weiterentwicklung von etwas.
+Genitiv: der Kontinuität
+Plural: die Kontinuitäten
+Kollokation: Kontinuität gewährleisten
+Synonyme: Beständigkeit, Fortdauer, Stetigkeit
+ex: Kontinuität ist für dieses Projekt sehr wichtig: Continuity is very important for this project.
+ex: Die Firma braucht Kontinuität in der Führung: The company needs continuity in its management.
+
+der Extrakt [ɛksˈtʁakt]: extract
+Bedeutung: ein konzentrierter Stoff, der aus Pflanzen, Lebensmitteln oder anderen Materialien gewonnen wird.
+Genitiv: des Extrakts
+Plural: die Extrakte
+Kollokation: einen Extrakt herstellen
+Synonyme: Auszug, Konzentrat
+ex: Dieser Extrakt wird aus Pflanzen gewonnen: This extract is obtained from plants.
+ex: Die Creme enthält Aloe-vera-Extrakt: The cream contains aloe vera extract.
+
+wenig besucht (Adjektivphrase): uncrowded; not busy
+Bedeutung: ein Ort, an dem sich nur wenige Menschen befinden.
+Synonyme: nicht überfüllt, menschenleer, ruhig
+ex: Der Park ist am Morgen wenig besucht: The park is uncrowded in the morning.
+ex: Wir haben einen wenig besuchten Strand gefunden: We found an uncrowded beach.
+
+bergauf (Adverb): uphill
+Bedeutung: in Richtung eines höheren Ortes; einen Hang oder eine Steigung hinauf.
+Synonyme: aufwärts, nach oben
+ex: Wir gehen bergauf: We are walking uphill.
+ex: Die Straße führt steil bergauf: The road goes steeply uphill.
+
+eine Beziehung aufbauen (Verbphrase): to build a relationship
+Verwendung: eine Beziehung zu jemandem (Dat.) aufbauen
+Bedeutung: nach und nach eine persönliche, berufliche oder emotionale Verbindung zu jemandem entwickeln.
+Synonyme: eine Beziehung entwickeln, eine Verbindung herstellen, Vertrauen aufbauen
+ex: Es braucht Zeit, eine gute Beziehung zu den Kollegen aufzubauen: It takes time to build a good relationship with colleagues.
+ex: Sie versucht, eine Beziehung zu ihren neuen Nachbarn aufzubauen: She is trying to build a relationship with her new neighbors.
+
+einen Ort auf der Karte markieren (Verbphrase): to mark a place on the map
+Verwendung: einen Ort / eine Stelle auf der Karte markieren
+Bedeutung: auf einer Karte zeigen oder kennzeichnen, wo sich ein bestimmter Ort befindet.
+Synonyme: einen Ort kennzeichnen, einen Ort eintragen, einen Punkt markieren
+ex: Kannst du diesen Ort auf der Karte markieren: Can you mark this place on the map?
+ex: Ich habe das Hotel auf der Karte markiert: I marked the hotel on the map.
+
+markieren [maʁˈkiːʁən] (nicht trennbar, transitiv): to mark; to highlight
+Verwendung: etwas / jemanden (Akk.) markieren
+Bedeutung: etwas durch ein Zeichen, eine Farbe oder einen Punkt sichtbar kennzeichnen; einen Ort auf einer Karte anzeigen.
+Synonyme: kennzeichnen, hervorheben, einzeichnen
+ex: Ich markiere den Ort auf der Karte: I mark the place on the map.
+ex: Markiere bitte die richtige Antwort: Please mark the correct answer.
+Präsens: ich markiere
+Präteritum: ich markierte
+Perfekt: ich habe markiert
+Futur I: ich werde markieren
+Konjunktiv II: ich markierte / ich würde markieren
+Konjunktiv I: ich markiere
+Imperativ: du: Markier! / Markiere! ihr: Markiert!
+
+Zweifel an etwas haben (Verbphrase): to have doubts about something
+Verwendung: Zweifel an etwas (Dat.) haben
+Bedeutung: nicht sicher sein, ob etwas richtig, wahr oder erfolgreich ist.
+Synonyme: an etwas zweifeln, etwas infrage stellen, unsicher sein
+ex: Ich habe Zweifel an seiner Erklärung: I have doubts about his explanation.
+ex: Sie hat Zweifel daran, ob der Plan funktionieren wird: She has doubts about whether the plan will work.
+
+Flugzeugträger [ˈfluːkʦɔɪ̯kˌtʁɛːɡɐ] (Substantiv, maskulin): aircraft carrier 
+Bedeutung: Ein großes Kriegsschiff, das Kampfflugzeuge transportiert, starten und landen lässt.
+Genitiv: des Flugzeugträgers
+Plural: die Flugzeugträger
+Kollokation: ein Flugzeugträger im Einsatz
+Synonyme: Träger, Flugzeugmutterschiff
+ex: Der Flugzeugträger befindet sich im Hafen: The aircraft carrier is in the harbor.
+ex: Mehrere Flugzeuge starteten vom Flugzeugträger: Several aircraft took off from the aircraft carrier.
+
+registrieren [ʁeɡɪsˈtʁiːʁən] (nicht trennbar, transitiv und reflexiv): to register; to record
+Verwendung: jemanden oder etwas (Akk.) registrieren; sich bei etwas (Dat.) / für etwas (Akk.) registrieren
+Bedeutung: Daten offiziell erfassen oder sich offiziell für etwas anmelden.
+Synonyme: anmelden, erfassen, eintragen
+ex: Die Mitarbeiterin registriert die neuen Teilnehmer: The employee registers the new participants.
+ex: Ich habe mich für den Deutschkurs registriert: I registered for the German course.
+Präsens: ich registriere
+Präteritum: ich registrierte
+Perfekt: ich habe registriert
+Futur I: ich werde registrieren
+Konjunktiv II: ich registrierte / ich würde registrieren
+Konjunktiv I: ich registriere
+Imperativ: du: Registriere! ihr: Registriert!
+
+die Verpackung [fɛɐ̯ˈpakʊŋ]: packaging; package
+Bedeutung: Material oder Behälter, in dem ein Produkt geschützt, transportiert oder verkauft wird; auch der Vorgang des Verpackens.
+Genitiv: der Verpackung
+Plural: die Verpackungen
+Kollokation: eine Verpackung öffnen
+Synonyme: Packung, Hülle, Umhüllung
+ex: Die Verpackung schützt das Produkt beim Transport: The packaging protects the product during transport.
+ex: Bitte werfen Sie die Verpackung nicht weg: Please do not throw the packaging away.
+
+die Bevölkerung [bəˈfœlkəʁʊŋ]: population
+Bedeutung: Alle Menschen, die in einem bestimmten Land, Gebiet oder Ort leben.
+Genitiv: der Bevölkerung
+Plural: die Bevölkerungen
+Kollokation: die Bevölkerung eines Landes
+Synonyme: Einwohner, Bewohner, Einwohnerschaft
+ex: Die Bevölkerung der Stadt wächst schnell: The population of the city is growing quickly.
+ex: Ein großer Teil der Bevölkerung lebt auf dem Land: A large part of the population lives in the countryside.
+
+conspirieren [kɔnspiˈʁiːʁən] (nicht trennbar, intransitiv): to conspire
+Verwendung: gegen jemanden oder etwas konspirieren; miteinander konspirieren
+Bedeutung: Heimlich mit anderen zusammenarbeiten, um einen verborgenen, meist rechtswidrigen oder schädlichen Plan auszuführen.
+Synonyme: sich verschwören, Komplotte schmieden, intrigieren
+ex: Die Gruppe konspirierte gegen die Regierung: The group conspired against the government.
+ex: Sie konspirierten heimlich miteinander: They conspired secretly with one another.
+Präsens: ich konspiriere
+Präteritum: ich konspirierte
+Perfekt: ich habe konspiriert
+Futur I: ich werde konspirieren
+Konjunktiv II: ich konspirierte / ich würde konspirieren
+Konjunktiv I: ich konspiriere
+Imperativ: du: Konspiriere! ihr: Konspiriert!
+
+die Ausrüstung [ˈaʊ̯sʁʏstʊŋ]: equipment; gear
+Bedeutung: Alle Geräte, Werkzeuge, Kleidungsstücke oder anderen Gegenstände, die man für eine bestimmte Tätigkeit braucht.
+Genitiv: der Ausrüstung
+Plural: die Ausrüstungen
+Kollokation: die notwendige Ausrüstung mitnehmen
+Synonyme: Ausstattung, Geräte, Zubehör
+ex: Für die Wanderung brauchen wir eine gute Ausrüstung: We need good equipment for the hike.
+ex: Die technische Ausrüstung ist sehr teuer: The technical equipment is very expensive.
+
+die Botschaft [ˈboːtʃaft]: embassy
+Bedeutung: Die offizielle diplomatische Vertretung eines Staates in einem anderen Staat; auch das Gebäude dieser Vertretung.
+Genitiv: der Botschaft
+Plural: die Botschaften
+Kollokation: die österreichische Botschaft
+Synonyme: diplomatische Vertretung, Auslandsvertretung
+ex: Ich muss einen Termin bei der Botschaft vereinbaren: I have to make an appointment at the embassy.
+ex: Die Botschaft befindet sich im Stadtzentrum: The embassy is located in the city center.
+
+Richtig ist wahrscheinlich: **integrieren**, nicht *andegreeren*. ([collinsdictionary.com][1])
+integrieren [ɪnteˈɡʁiːʁən] (nicht trennbar, transitiv und reflexiv): to integrate; to incorporate
+Verwendung: jemanden oder etwas (Akk.) in etwas (Akk.) integrieren; sich in etwas (Akk.) integrieren
+Bedeutung: Eine Person oder Sache in ein bestehendes Ganzes aufnehmen und zu einem Teil davon machen.
+Synonyme: eingliedern, einbeziehen, einbauen
+ex: Wir müssen die neue Funktion in das Programm integrieren: We must integrate the new function into the program.
+ex: Er hat sich schnell in das neue Team integriert: He integrated quickly into the new team.
+Präsens: ich integriere
+Präteritum: ich integrierte
+Perfekt: ich habe integriert
+Futur I: ich werde integrieren
+Konjunktiv II: ich integrierte / ich würde integrieren
+Konjunktiv I: ich integriere
+Imperativ: du: Integriere! ihr: Integriert!
+
+ägyptisch [ɛˈɡʏptɪʃ] (Adjektiv, Komparativ: –, Superlativ: –): Egyptian
+Bedeutung: Zu Ägypten oder seinen Menschen, seiner Kultur oder seiner Sprache gehörend.
+Synonyme: aus Ägypten stammend
+Attributiv und prädikativ verwendbar
+ex: Er spricht fließend ägyptisches Arabisch: He speaks fluent Egyptian Arabic.
+ex: Die ägyptische Kultur ist über fünftausend Jahre alt: Egyptian culture is over five thousand years old.
+ex: Sie ist ägyptisch: She is Egyptian.
+
+nachträglich [ˈnaːxˌtʁɛːklɪç] (Adjektiv und Adverb, nicht steigerbar): subsequent; later; retroactive
+Bedeutung: Erst später geschehend, hinzugefügt oder geändert, nachdem etwas bereits abgeschlossen oder entschieden wurde.
+Synonyme: später, im Nachhinein, rückwirkend
+Attributiv und prädikativ verwendbar
+ex: Ich habe eine nachträgliche Änderung vorgenommen: I made a subsequent change.
+ex: Die Rechnung wurde nachträglich korrigiert: The invoice was corrected later.
+ex: Eine nachträgliche Anmeldung ist nicht möglich: A late registration is not possible.
+
+einschätzen [ˈaɪ̯nˌʃɛʦn̩] (trennbar, transitiv): to assess; to evaluate; to estimate
+Verwendung: jemanden oder etwas (Akk.) einschätzen; etwas als etwas einschätzen
+Bedeutung: Sich aufgrund vorhandener Informationen ein Urteil über eine Person, Situation oder Sache bilden.
+Synonyme: beurteilen, bewerten, abschätzen
+ex: Kannst du mein Deutschniveau einschätzen: Can you assess my German level?
+ex: Ich schätze die Situation als schwierig ein: I assess the situation as difficult.
+Präsens: ich schätze ein
+Präteritum: ich schätzte ein
+Perfekt: ich habe eingeschätzt
+Futur I: ich werde einschätzen
+Konjunktiv II: ich schätzte ein / ich würde einschätzen
+Konjunktiv I: ich schätze ein
+Imperativ: du: Schätze ein! ihr: Schätzt ein!
+
+nochmals [ˈnɔxmaːls] (Adverb, nicht steigerbar): again; once again
+Bedeutung: Ein weiteres Mal; erneut.
+Synonyme: wieder, erneut, noch einmal
+ex: Kannst du das bitte nochmals erklären: Can you explain that again, please?
+ex: Ich möchte mich nochmals bei Ihnen bedanken: I would like to thank you once again.
+
+eingehend [ˈaɪ̯nˌɡeːənt] (Adjektiv und Adverb, nicht steigerbar): detailed; thorough; extensively
+Bedeutung: Sehr genau und ausführlich; mit großer Aufmerksamkeit.
+Synonyme: ausführlich, gründlich, detailliert
+Attributiv und adverbial verwendbar
+ex: Die Unterlagen wurden eingehend gesichtet: The documents were thoroughly reviewed.
+ex: Nach einer eingehenden Prüfung wurde der Antrag genehmigt: After a thorough examination, the application was approved.
+
+eingehen [ˈaɪ̯nˌɡeːən] (trennbar, intransitiv, unregelmäßig): to arrive; to be received; to enter into; to address; to die
+Verwendung: bei jemandem eingehen; auf etwas (Akk.) eingehen; eine Verpflichtung oder Beziehung eingehen
+Bedeutung: An einem Ziel ankommen oder empfangen werden; sich ausführlich mit einem Thema beschäftigen; eine Verpflichtung oder Beziehung beginnen; bei Pflanzen oder Tieren sterben.
+Synonyme: ankommen, sich befassen mit, beginnen
+ex: Ihre Bewerbung ist gestern bei uns eingegangen: Your application was received by us yesterday.
+ex: Der Lehrer geht auf meine Frage ein: The teacher addresses my question.
+ex: Sie ist eine langfristige Verpflichtung eingegangen: She entered into a long-term commitment.
+ex: Die Pflanze ist wegen der Kälte eingegangen: The plant died because of the cold.
+Präsens: ich gehe ein
+Präteritum: ich ging ein
+Perfekt: ich bin eingegangen
+Futur I: ich werde eingehen
+Konjunktiv II: ich ginge ein / ich würde eingehen
+Konjunktiv I: ich gehe ein
+Imperativ: du: Geh ein! ihr: Geht ein!
+
+ausdrücklich [ˈaʊ̯sˌdʁʏklɪç] (Adjektiv und Adverb, nicht steigerbar): explicit; expressly; emphatic
+Bedeutung: Klar und direkt formuliert, sodass kein Zweifel über die Absicht oder Bedeutung besteht.
+Synonyme: eindeutig, ausdrücklich erklärt, unmissverständlich
+Attributiv und adverbial verwendbar
+ex: Er hat mir ausdrücklich verboten, die Datei zu löschen: He expressly forbade me from deleting the file.
+ex: Das war sein ausdrücklicher Wunsch: That was his explicit wish.
+
+schrecklich [ˈʃʁɛklɪç] (Adjektiv und Adverb, Komparativ: schrecklicher, Superlativ: am schrecklichsten): terrible; dreadful; horrible
+Bedeutung: Sehr unangenehm, schlimm oder angsterregend; umgangssprachlich auch: in sehr hohem Maß.
+Synonyme: furchtbar, entsetzlich, grauenvoll
+Attributiv, prädikativ und adverbial verwendbar
+ex: Das war ein schrecklicher Unfall: That was a terrible accident.
+ex: Das Essen schmeckt schrecklich: The food tastes terrible.
+ex: Ich bin schrecklich müde: I am terribly tired.
+
+Interesse haben an (feste Verbindung + Dativ): to be interested in; to have an interest in
+Bedeutung: Etwas interessant oder wichtig finden und sich näher damit beschäftigen wollen.
+Verwendung: Interesse an etwas (Dat.) haben
+Synonyme: sich für etwas interessieren, an etwas interessiert sein
+ex: Ich habe großes Interesse an diesem Kurs: I am very interested in this course.
+ex: Sie hat Interesse an der Zusammensetzung des Materials: She is interested in the composition of the material.
+
+gemütlich [ɡəˈmyːtlɪç] (Adjektiv; Komparativ: gemütlicher, Superlativ: am gemütlichsten): cozy; comfortable; pleasant
+Bedeutung: Angenehm, warm und entspannend; eine Atmosphäre oder ein Ort, an dem man sich wohlfühlt.
+Synonyme: behaglich, angenehm, komfortabel
+Attributiv, prädikativ und adverbial verwendbar
+ex: Wir verbrachten einen gemütlichen Abend zu Hause: We spent a cozy evening at home.
+ex: Das Café ist klein und sehr gemütlich: The café is small and very cozy.
+
+obdachlos [ˈɔpdaχtˌloːs] (Adjektiv, nicht steigerbar): homeless
+Bedeutung: ohne Wohnung oder festen Schlafplatz.
+Synonyme: wohnungslos, ohne Unterkunft
+Attributiv und prädikativ verwendbar
+ex: Der Mann ist obdachlos: The man is homeless.
+ex: Viele obdachlose Menschen brauchen Unterstützung: Many homeless people need support.
+
+chinesisch [çiˈneːzɪʃ] (Adjektiv, nicht steigerbar): Chinese
+Bedeutung: zu China, seiner Bevölkerung, Sprache oder Kultur gehörend.
+Synonyme: aus China, China betreffend
+Attributiv und prädikativ verwendbar
+ex: Wir essen chinesisches Essen: We eat Chinese food.
+ex: Sie interessiert sich für chinesische Kultur: She is interested in Chinese culture.
+
+China [ˈçiːna] / [ˈkiːna] (Eigenname, neutral, meist ohne Artikel): China
+Bedeutung: ein Staat in Ostasien.
+Genitiv: Chinas
+Plural: kein Plural
+Kollokation: nach China reisen
+Synonyme: Volksrepublik China
+ex: Sie reist nächstes Jahr nach China: She is traveling to China next year.
+ex: China liegt in Ostasien: China is located in East Asia.
+
+die Finanzkrise: financial crisis
+Bedeutung: eine schwere Störung des Finanzsystems, bei der Banken, Unternehmen oder Staaten große wirtschaftliche Probleme haben.
+Genitiv: der Finanzkrise
+Plural: die Finanzkrisen
+Kollokation: eine Finanzkrise bewältigen
+Synonyme: Wirtschaftskrise, Bankenkrise, Finanznotlage
+ex: Die Finanzkrise führte zu hoher Arbeitslosigkeit: The financial crisis led to high unemployment.
+ex: Viele Banken hatten während der Finanzkrise große Probleme: Many banks had serious problems during the financial crisis.
+
+das Betriebssystem: operating system
+Bedeutung: grundlegende Software, die die Hardware eines Computers oder Geräts verwaltet und die Ausführung anderer Programme ermöglicht.
+Genitiv: des Betriebssystems
+Plural: die Betriebssysteme
+Kollokation: ein Betriebssystem installieren
+Synonyme: Systemsoftware, OS
+ex: Auf meinem Computer ist ein neues Betriebssystem installiert: A new operating system is installed on my computer.
+ex: Dieses Programm funktioniert nur mit einem bestimmten Betriebssystem: This program works only with a specific operating system.
+
+getrennt [ɡəˈtʁɛnt] (Adjektiv, nicht steigerbar): disconnected; separated
+Bedeutung: nicht mit etwas oder jemandem verbunden; von einer Verbindung getrennt.
+Synonyme: unverbunden, abgetrennt, losgelöst
+Attributiv und prädikativ verwendbar
+ex: Der Computer ist vom Netzwerk getrennt: The computer is disconnected from the network.
+ex: Ich fühle mich von den anderen getrennt: I feel disconnected from the others.
