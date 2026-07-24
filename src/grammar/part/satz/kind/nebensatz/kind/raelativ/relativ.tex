@@ -1,0 +1,359 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.45}
+\setlength{\tabcolsep}{6pt}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Relativsätze im Deutschen}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+    \section{Grundbedeutung}
+
+        \begin{grammarentry}{Relativsatz}{Nebensatz mit Zusatzinformation}
+            \GermanText{Ein \textbf{Relativsatz} gibt zusätzliche Informationen über ein Nomen oder Pronomen im Hauptsatz. Dieses Nomen heißt \textbf{Bezugswort}.}
+            \EnglishText{A \textbf{relative clause} gives additional information about a noun or pronoun in the main clause. This noun is called the \textbf{antecedent}.}
+
+            \GermanText{Der Relativsatz beginnt meistens mit einem \textbf{Relativpronomen}, zum Beispiel \textbf{der, die, das, den, dem} oder \textbf{deren}.}
+            \EnglishText{The relative clause usually begins with a \textbf{relative pronoun}, for example \textbf{der, die, das, den, dem}, or \textbf{deren}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Der Mann, der dort steht, ist mein Lehrer.}{The man who is standing there is my teacher.}
+                \ExampleItem{Das Buch, das auf dem Tisch liegt, gehört mir.}{The book that is lying on the table belongs to me.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Wortstellung und Kommas}
+
+        \begin{grammarentry}{Verbposition}{konjugiertes Verb am Ende}
+            \GermanText{Ein Relativsatz ist ein Nebensatz. Deshalb steht das \textbf{konjugierte Verb am Ende}.}
+            \EnglishText{A relative clause is a subordinate clause. Therefore, the \textbf{conjugated verb stands at the end}.}
+
+            \GermanText{Der Relativsatz wird durch ein Komma vom Hauptsatz getrennt. Steht er in der Mitte des Hauptsatzes, braucht man vor und nach dem Relativsatz ein Komma.}
+            \EnglishText{The relative clause is separated from the main clause by a comma. If it stands in the middle of the main clause, a comma is needed before and after it.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich kenne den Mann, der dort arbeitet.}{I know the man who works there.}
+                \ExampleItem{Der Mann, der dort arbeitet, kommt aus Graz.}{The man who works there comes from Graz.}
+                \ExampleItem{Das Buch, das ich gestern gekauft habe, ist interessant.}{The book that I bought yesterday is interesting.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Die Relativpronomen}
+
+        \begin{grammarentry}{Deklination}{Genus, Numerus und Kasus}
+            \GermanText{Das \textbf{Genus} und der \textbf{Numerus} des Relativpronomens richten sich nach dem Bezugswort. Der \textbf{Kasus} richtet sich jedoch nach der Funktion des Relativpronomens im Relativsatz.}
+            \EnglishText{The \textbf{gender} and \textbf{number} of the relative pronoun depend on the antecedent. However, its \textbf{case} depends on its function within the relative clause.}
+        \end{grammarentry}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{2.5cm}|*{4}{>{\centering\arraybackslash}p{2.4cm}}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Kasus} &
+            \color{white}\textbf{Maskulin} &
+            \color{white}\textbf{Feminin} &
+            \color{white}\textbf{Neutrum} &
+            \color{white}\textbf{Plural} \\
+            Nominativ & der & die & das & die \\
+            Akkusativ & den & die & das & die \\
+            Dativ & dem & der & dem & denen \\
+            Genitiv & dessen & deren & dessen & deren \\
+        \end{longtable}
+
+    \section{Wie bestimmt man das richtige Relativpronomen?}
+
+        \begin{grammarentry}{Schritt 1}{Genus und Numerus vom Bezugswort}
+            \GermanText{Zuerst bestimmt man Genus und Numerus des Bezugswortes: \textbf{der Mann} ist maskulin, \textbf{die Frau} ist feminin, \textbf{das Kind} ist neutral und \textbf{die Leute} ist Plural.}
+            \EnglishText{First, determine the gender and number of the antecedent: \textbf{der Mann} is masculine, \textbf{die Frau} is feminine, \textbf{das Kind} is neuter, and \textbf{die Leute} is plural.}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Schritt 2}{Kasus im Relativsatz}
+            \GermanText{Danach bestimmt man die Funktion des Relativpronomens im Relativsatz: Subjekt = Nominativ, direktes Objekt = Akkusativ, Dativobjekt = Dativ. Eine Präposition kann den Kasus ebenfalls bestimmen.}
+            \EnglishText{Then determine the function of the relative pronoun in the relative clause: subject = nominative, direct object = accusative, dative object = dative. A preposition can also determine the case.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Das ist der Mann, der hier wohnt.}{That is the man who lives here.}
+                \ExampleItem{Das ist der Mann, den ich kenne.}{That is the man whom I know.}
+                \ExampleItem{Das ist der Mann, dem ich helfe.}{That is the man whom I help.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Nominativ im Relativsatz}
+
+        \begin{grammarentry}{Relativpronomen als Subjekt}{Wer oder was?}
+            \GermanText{Steht das Relativpronomen als Subjekt im Relativsatz, verwendet man den Nominativ: \textbf{der, die, das, die}.}
+            \EnglishText{When the relative pronoun is the subject of the relative clause, the nominative is used: \textbf{der, die, das, die}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Der Mann, der dort wartet, ist mein Nachbar.}{The man who is waiting there is my neighbor.}
+                \ExampleItem{Die Frau, die Deutsch unterrichtet, kommt aus Wien.}{The woman who teaches German comes from Vienna.}
+                \ExampleItem{Das Kind, das im Garten spielt, ist fünf Jahre alt.}{The child that is playing in the garden is five years old.}
+                \ExampleItem{Die Leute, die hier arbeiten, sind freundlich.}{The people who work here are friendly.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Akkusativ im Relativsatz}
+
+        \begin{grammarentry}{Relativpronomen als direktes Objekt}{Wen oder was?}
+            \GermanText{Ist das Relativpronomen das direkte Objekt im Relativsatz, verwendet man den Akkusativ. Nur die maskuline Form verändert sich: \textbf{der} wird zu \textbf{den}.}
+            \EnglishText{If the relative pronoun is the direct object in the relative clause, the accusative is used. Only the masculine form changes: \textbf{der} becomes \textbf{den}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Der Mann, den ich gestern gesehen habe, ist mein Chef.}{The man whom I saw yesterday is my boss.}
+                \ExampleItem{Die Jacke, die ich gekauft habe, war teuer.}{The jacket that I bought was expensive.}
+                \ExampleItem{Das Auto, das er fährt, gehört seiner Schwester.}{The car that he drives belongs to his sister.}
+                \ExampleItem{Die Bücher, die du suchst, liegen dort.}{The books that you are looking for are over there.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Dativ im Relativsatz}
+
+        \begin{grammarentry}{Relativpronomen als Dativobjekt}{Wem?}
+            \GermanText{Verlangt das Verb im Relativsatz den Dativ, verwendet man \textbf{dem, der, dem} oder im Plural \textbf{denen}.}
+            \EnglishText{If the verb in the relative clause requires the dative, use \textbf{dem, der, dem}, or in the plural \textbf{denen}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Der Mann, dem ich geholfen habe, bedankt sich.}{The man whom I helped is thanking me.}
+                \ExampleItem{Die Frau, der ich geschrieben habe, antwortet morgen.}{The woman whom I wrote to will answer tomorrow.}
+                \ExampleItem{Das Kind, dem wir ein Geschenk gegeben haben, freut sich.}{The child to whom we gave a present is happy.}
+                \ExampleItem{Die Kollegen, denen ich vertraue, unterstützen mich.}{The colleagues whom I trust support me.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Relativsätze mit Präpositionen}
+
+        \begin{grammarentry}{Präposition vor dem Relativpronomen}{Kasus durch die Präposition}
+            \GermanText{Wenn das Verb oder der Ausdruck eine Präposition verlangt, steht die Präposition \textbf{vor dem Relativpronomen}. Der Kasus richtet sich nach der Präposition.}
+            \EnglishText{When the verb or expression requires a preposition, the preposition stands \textbf{before the relative pronoun}. The case is determined by the preposition.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Das ist die Frau, mit der ich gesprochen habe.}{That is the woman with whom I spoke.}
+                \ExampleItem{Das ist der Job, für den ich mich beworben habe.}{That is the job for which I applied.}
+                \ExampleItem{Das ist das Problem, über das wir sprechen müssen.}{That is the problem that we must talk about.}
+                \ExampleItem{Das sind die Kollegen, mit denen ich arbeite.}{Those are the colleagues with whom I work.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Wichtiger Unterschied}{\glqq über die\grqq oder nur \glqq die\grqq?}
+            \GermanText{Man sagt: \glqq Ich habe Probleme, \textbf{über die} ich sprechen möchte.\grqq, weil das Verb hier mit der Verbindung \textbf{über etwas sprechen} verwendet wird.}
+            \EnglishText{One says: ``I have problems \textbf{that I would like to talk about},'' because the verb is used here with the construction \textbf{über etwas sprechen}.}
+
+            \GermanText{Ohne Präposition wäre der Satz falsch: \glqq Ich habe Probleme, die ich sprechen möchte.\grqq}
+            \EnglishText{Without the preposition, the sentence would be incorrect: ``I have problems that I want to speak.''}
+        \end{grammarentry}
+
+    \section{Genitiv im Relativsatz}
+
+        \begin{grammarentry}{Besitz und Zugehörigkeit}{dessen und deren}
+            \GermanText{Der Genitiv drückt Besitz oder Zugehörigkeit aus. Man verwendet \textbf{dessen} für ein maskulines oder neutrales Bezugswort und \textbf{deren} für ein feminines Bezugswort oder ein Bezugswort im Plural.}
+            \EnglishText{The genitive expresses possession or belonging. Use \textbf{dessen} for a masculine or neuter antecedent and \textbf{deren} for a feminine or plural antecedent.}
+
+            \GermanText{Nach \textbf{dessen} und \textbf{deren} steht das folgende Nomen normalerweise ohne zusätzlichen Possessivartikel.}
+            \EnglishText{After \textbf{dessen} and \textbf{deren}, the following noun normally appears without an additional possessive determiner.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Der Mann, dessen Auto gestohlen wurde, ruft die Polizei.}{The man whose car was stolen calls the police.}
+                \ExampleItem{Die Frau, deren Sohn in Berlin lebt, ist Ärztin.}{The woman whose son lives in Berlin is a doctor.}
+                \ExampleItem{Das Kind, dessen Fahrrad kaputt ist, geht zu Fuß.}{The child whose bicycle is broken walks.}
+                \ExampleItem{Die Leute, deren Wohnung renoviert wird, wohnen vorübergehend im Hotel.}{The people whose apartment is being renovated are temporarily staying in a hotel.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Relativsätze mit \glqq wo\grqq}
+
+        \begin{grammarentry}{Ortsangaben}{wo als Relativadverb}
+            \GermanText{Bei Ortsangaben kann man häufig \textbf{wo} verwenden. In formeller Sprache ist oft auch eine Präposition mit Relativpronomen möglich.}
+            \EnglishText{With references to places, \textbf{wo} can often be used. In formal language, a preposition with a relative pronoun is often also possible.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Das ist die Stadt, wo ich geboren wurde.}{That is the city where I was born.}
+                \ExampleItem{Das ist die Stadt, in der ich geboren wurde.}{That is the city in which I was born.}
+                \ExampleItem{Ich suche einen Ort, wo ich ruhig arbeiten kann.}{I am looking for a place where I can work quietly.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Hinweis für Prüfungen}{formelle Standardsprache}
+            \GermanText{In einer formellen schriftlichen Prüfung ist bei einem konkreten Nomen wie \textbf{Stadt, Haus} oder \textbf{Firma} die Form mit Präposition und Relativpronomen oft die sicherere Wahl: \textbf{in der, in dem, bei der}.}
+            \EnglishText{In a formal written exam, with a concrete noun such as \textbf{city, house}, or \textbf{company}, the form with a preposition and relative pronoun is often the safer choice: \textbf{in der, in dem, bei der}.}
+        \end{grammarentry}
+
+    \section{Relativsätze mit \glqq was\grqq}
+
+        \begin{grammarentry}{Bezug auf Pronomen oder ganze Aussagen}{was statt das}
+            \GermanText{Man verwendet \textbf{was} besonders nach \textbf{alles, etwas, nichts, vieles, das} oder nach einem substantivierten Superlativ. \textbf{Was} kann sich auch auf den ganzen vorherigen Satz beziehen.}
+            \EnglishText{Use \textbf{was} especially after \textbf{everything, something, nothing, much, that}, or after a substantivized superlative. \textbf{Was} can also refer to the entire preceding sentence.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Alles, was er sagt, ist richtig.}{Everything that he says is correct.}
+                \ExampleItem{Das ist das Beste, was ich machen kann.}{That is the best thing that I can do.}
+                \ExampleItem{Er hat die Prüfung bestanden, was mich sehr freut.}{He passed the exam, which makes me very happy.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Relativsätze mit \glqq wer\grqq}
+
+        \begin{grammarentry}{Allgemeine Personen}{wer ohne konkretes Bezugswort}
+            \GermanText{Wenn es kein konkretes Bezugswort gibt und allgemein von Personen gesprochen wird, kann man \textbf{wer} verwenden. Im Hauptsatz steht häufig \textbf{der, dem} oder \textbf{den}.}
+            \EnglishText{When there is no specific antecedent and people are referred to generally, \textbf{wer} can be used. The main clause often contains \textbf{der, dem}, or \textbf{den}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Wer viel übt, der lernt schneller.}{Whoever practices a lot learns faster.}
+                \ExampleItem{Wem du vertraust, dem kannst du alles erzählen.}{You can tell everything to the person whom you trust.}
+                \ExampleItem{Wen ich einlade, den kenne ich persönlich.}{I personally know whoever I invite.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Mehrere Verben im Relativsatz}
+
+        \begin{grammarentry}{Perfekt und Modalverben}{Verbgruppe am Ende}
+            \GermanText{Bei mehreren Verben steht die gesamte Verbgruppe am Ende des Relativsatzes. Im Perfekt steht das Partizip vor dem Hilfsverb. Bei einem Modalverb steht der Infinitiv vor dem Modalverb.}
+            \EnglishText{With several verbs, the entire verb group stands at the end of the relative clause. In the perfect tense, the participle comes before the auxiliary. With a modal verb, the infinitive comes before the modal verb.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Das ist das Buch, das ich gestern gekauft habe.}{That is the book that I bought yesterday.}
+                \ExampleItem{Das ist die Aufgabe, die ich heute erledigen muss.}{That is the task that I must complete today.}
+                \ExampleItem{Das ist die Stelle, für die ich mich bewerben möchte.}{That is the position for which I would like to apply.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Häufige Fehler}
+
+        \begin{grammarentry}{Fehler 1}{Kasus vom Hauptsatz übernehmen}
+            \GermanText{Der Kasus des Bezugswortes im Hauptsatz bestimmt \textbf{nicht} automatisch den Kasus des Relativpronomens. Entscheidend ist die Funktion im Relativsatz.}
+            \EnglishText{The case of the antecedent in the main clause does \textbf{not} automatically determine the case of the relative pronoun. Its function in the relative clause is decisive.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich spreche mit dem Mann, der dort arbeitet.}{I am speaking with the man who works there.}
+                \ExampleItem{Ich spreche mit dem Mann, den du kennst.}{I am speaking with the man whom you know.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Fehler 2}{Präposition weglassen}
+            \GermanText{Verlangt das Verb eine Präposition, muss diese auch im Relativsatz stehen: \textbf{über etwas sprechen} wird zu \textbf{über das / über die / über den sprechen}.}
+            \EnglishText{If the verb requires a preposition, it must also appear in the relative clause: \textbf{über etwas sprechen} becomes \textbf{über das / über die / über den sprechen}.}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Fehler 3}{Verb nicht ans Ende stellen}
+            \GermanText{Falsch: \glqq Das ist der Mann, der arbeitet hier.\grqq\ Richtig: \glqq Das ist der Mann, der hier arbeitet.\grqq}
+            \EnglishText{Incorrect: ``That is the man who works here'' with main-clause word order. Correct: the conjugated verb goes to the end of the relative clause.}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Fehler 4}{Kommas vergessen}
+            \GermanText{Relativsätze müssen durch Kommas abgetrennt werden.}
+            \EnglishText{Relative clauses must be separated by commas.}
+        \end{grammarentry}
+
+    \section{Methode zur Satzbildung}
+
+        \begin{grammarentry}{Vier Schritte}{praktische Strategie}
+            \GermanText{1. Finde das Bezugswort.}
+            \EnglishText{1. Find the antecedent.}
+
+            \GermanText{2. Bestimme Genus und Numerus des Bezugswortes.}
+            \EnglishText{2. Determine the gender and number of the antecedent.}
+
+            \GermanText{3. Bestimme die Funktion des Relativpronomens im Relativsatz und damit den Kasus.}
+            \EnglishText{3. Determine the function of the relative pronoun in the relative clause and therefore its case.}
+
+            \GermanText{4. Stelle das konjugierte Verb ans Ende und setze die Kommas.}
+            \EnglishText{4. Put the conjugated verb at the end and add the commas.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich habe Probleme. Ich möchte über die Probleme sprechen.}{I have problems. I would like to talk about the problems.}
+                \ExampleItem{Ich habe Probleme, über die ich sprechen möchte.}{I have problems that I would like to talk about.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Zusammenfassung}
+
+        \begin{grammarentry}{Merksätze}{kurz und wichtig}
+            \GermanText{Das Relativpronomen übernimmt Genus und Numerus vom Bezugswort, aber seinen Kasus aus dem Relativsatz.}
+            \EnglishText{The relative pronoun takes its gender and number from the antecedent, but its case from the relative clause.}
+
+            \GermanText{Das konjugierte Verb steht am Ende des Relativsatzes.}
+            \EnglishText{The conjugated verb stands at the end of the relative clause.}
+
+            \GermanText{Eine notwendige Präposition steht vor dem Relativpronomen.}
+            \EnglishText{A required preposition stands before the relative pronoun.}
+
+            \GermanText{Relativsätze werden immer durch Kommas abgetrennt.}
+            \EnglishText{Relative clauses are always separated by commas.}
+        \end{grammarentry}
+
+\end{document}

@@ -1,0 +1,24 @@
+entry_format:
+  meaning:
+    - there must be three indepenedent lines for searching, one for english, the next for persian and the last for pinglish
+    - verb:
+        instructions: adding different compositions for different propositions or usages (for example with which different positions it comes and how each meanings change)
+        verb:
+          - example: |
+              hinzufügen [ˈhɪnʦuˌfyːɡn̩]: 
+              English: to add
+              Farsi: اضافه کردن
+              Pinglish: ezafeh kardan
+              grammatische Rolle: verb
+              Verwendung: etwas (Akk.) zu etwas (Dat.) hinzufügen
+              Bedeutung: etwas zusätzlich zu etwas anderem geben oder ergänzen.
+              Synonyme: ergänzen, beigeben, dazugeben
+              ex: Ich füge Milch zum Kaffee hinzu: I add milk to the coffee.
+              ex: Kannst du Zucker hinzufügen: Can you add sugar?
+              Präsens: ich füge hinzu
+              Präteritum: ich fügte hinzu
+              Perfekt: ich habe hinzugefügt
+              Futur I: ich werde hinzufügen
+              Konjunktiv II: ich fügte hinzu / ich würde hinzufügen
+              Konjunktiv I: ich füge hinzu
+              Imperativ: du: Füg hinzu! / Füge hinzu! ihr: Fügt hinzu!

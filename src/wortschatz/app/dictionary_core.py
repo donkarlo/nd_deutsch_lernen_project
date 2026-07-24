@@ -96,7 +96,7 @@ def extract_headword(first_line: str) -> str:
     # Remove frequent grammatical labels that may follow the headword.
     left = re.sub(
         r"\s+(?:trennbar|untrennbar|nicht trennbar|transitiv|intransitiv|reflexiv|"
-        r"regelmäßig|unregelmäßig|stark|schwach|adjektiv|adverb|pronomen|"
+        r"regelmäßig|unregelmäßig|stark|schwach|adjektiv|adverb|pronom|"
         r"konjunktion|präposition|substantiv|verb)(?:\s.*)?$",
         "",
         left,
@@ -119,7 +119,7 @@ def detect_role(first_line: str, headword: str) -> str:
         return "conjunction"
     if "präposition" in line:
         return "preposition"
-    if "pronomen" in line:
+    if "pronom" in line:
         return "pronoun"
     if "adverb" in line:
         return "adverb"

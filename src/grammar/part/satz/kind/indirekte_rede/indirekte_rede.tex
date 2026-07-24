@@ -1,0 +1,601 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{5pt}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\newtcolorbox{warningbox}{enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,title={Wichtiger Hinweis \textnormal{(Important note)}},fonttitle=\bfseries,colbacktitle=HeaderBlueDark,coltitle=white}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Die indirekte Rede}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+    \section{Grundidee}
+
+        \begin{grammarentry}{Was ist indirekte Rede?}{Definition}
+            \GermanText{Mit der \textbf{indirekten Rede} gibt man wieder, was eine andere Person gesagt, gefragt, gedacht oder geschrieben hat, ohne ihre genauen Wörter als direktes Zitat zu wiederholen.}
+            \EnglishText{With \textbf{indirect speech}, one reports what another person said, asked, thought, or wrote without repeating the person's exact words as a direct quotation.}
+
+            \GermanText{Die direkte Rede steht normalerweise in Anführungszeichen. Die indirekte Rede steht ohne Anführungszeichen und wird häufig mit dem \textbf{Konjunktiv I} gebildet.}
+            \EnglishText{Direct speech normally appears in quotation marks. Indirect speech appears without quotation marks and is often formed with the \textbf{Konjunktiv I}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Direkte Rede: Anna sagt: \glqq Ich bin müde.\grqq}{Direct speech: Anna says, ``I am tired.''}
+                \ExampleItem{Indirekte Rede: Anna sagt, sie sei müde.}{Indirect speech: Anna says that she is tired.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Wann benutzt man die indirekte Rede?}
+
+        \begin{grammarentry}{Typische Situationen}{Gebrauch}
+            \GermanText{Die indirekte Rede ist besonders häufig in Nachrichten, Zeitungsartikeln, wissenschaftlichen Texten, Protokollen, Berichten und formellen Zusammenfassungen.}
+            \EnglishText{Indirect speech is especially common in news reports, newspaper articles, academic texts, minutes, reports, and formal summaries.}
+
+            \GermanText{Der Konjunktiv I zeigt, dass die Information von einer anderen Person stammt. Er bedeutet nicht automatisch, dass die berichtende Person die Aussage für falsch hält.}
+            \EnglishText{The Konjunktiv I shows that the information comes from another person. It does not automatically mean that the reporting person considers the statement false.}
+
+            \GermanText{In der gesprochenen Alltagssprache verwendet man oft einen \textbf{dass-Satz mit Indikativ}: \glqq Er sagt, dass er krank ist.\grqq}
+            \EnglishText{In everyday spoken German, people often use a \textbf{dass-clause with the indicative}: ``He says that he is ill.''}
+        \end{grammarentry}
+
+        \begin{warningbox}
+            \GermanText{Für formelle schriftliche Wiedergabe ist der Konjunktiv I besonders wichtig. Für normale Gespräche ist ein dass-Satz mit Indikativ häufig korrekt und üblich.}
+            \EnglishText{The Konjunktiv I is particularly important for formal written reporting. In ordinary conversation, a dass-clause with the indicative is often correct and common.}
+        \end{warningbox}
+
+
+    \section{Drei wichtige Formen der Wiedergabe}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{3.1cm}|p{5.7cm}|p{5.7cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Form} &
+            \color{white}\textbf{Beispiel} &
+            \color{white}\textbf{Verwendung} \\
+            Direkte Rede & Er sagt: \glqq Ich bin krank.\grqq & Wörtliches Zitat mit Anführungszeichen. \\
+            Indirekte Rede ohne \glqq dass\grqq & Er sagt, er sei krank. & Formell und typisch in Berichten; das Verb steht an zweiter Stelle. \\
+            Indirekte Rede mit \glqq dass\grqq & Er sagt, dass er krank sei. & Formell; das konjugierte Verb steht am Ende. \\
+            Alltagssprache mit Indikativ & Er sagt, dass er krank ist. & Sehr häufig in Gesprächen und informellen Texten. \\
+        \end{longtable}
+
+        \EnglishText{The table compares direct speech, formal indirect speech without \textit{dass}, formal indirect speech with \textit{dass}, and the common everyday form with the indicative.}
+
+
+    \section{Wortstellung}
+
+        \subsection{Ohne \glqq dass\grqq}
+
+            \begin{grammarentry}{Verb an zweiter Stelle}{V2-Stellung}
+                \GermanText{Wenn kein Einleitungswort wie \textbf{dass} benutzt wird, steht das konjugierte Verb normalerweise an zweiter Stelle.}
+                \EnglishText{When no introductory word such as \textbf{dass} is used, the conjugated verb normally stands in second position.}
+            \end{grammarentry}
+
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Sie erklärt, sie habe keine Zeit.}{She explains that she has no time.}
+                    \ExampleItem{Der Arzt sagt, der Patient müsse sich ausruhen.}{The doctor says that the patient must rest.}
+                \end{itemize}
+            \end{exbox}
+
+        \subsection{Mit \glqq dass\grqq}
+
+            \begin{grammarentry}{Verb am Ende}{Nebensatzstellung}
+                \GermanText{Nach \textbf{dass} steht das konjugierte Verb am Ende des Nebensatzes.}
+                \EnglishText{After \textbf{dass}, the conjugated verb stands at the end of the subordinate clause.}
+            \end{grammarentry}
+
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Sie erklärt, dass sie keine Zeit habe.}{She explains that she has no time.}
+                    \ExampleItem{Der Arzt sagt, dass der Patient sich ausruhen müsse.}{The doctor says that the patient must rest.}
+                \end{itemize}
+            \end{exbox}
+
+
+    \section{Bildung des Konjunktivs I}
+
+        \begin{grammarentry}{Grundregel}{Verbstamm und Endungen}
+            \GermanText{Der Konjunktiv I wird normalerweise aus dem Stamm des Infinitivs und den Endungen \textbf{-e, -est, -e, -en, -et, -en} gebildet.}
+            \EnglishText{The Konjunktiv I is normally formed from the infinitive stem and the endings \textbf{-e, -est, -e, -en, -et, -en}.}
+
+            \GermanText{Für die indirekte Rede ist besonders die dritte Person Singular wichtig: \textbf{er/sie/es mache, habe, komme, gehe}.}
+            \EnglishText{For indirect speech, the third person singular is especially important: \textbf{er/sie/es mache, habe, komme, gehe}.}
+        \end{grammarentry}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{2.6cm}|p{2.7cm}|p{2.7cm}|p{2.7cm}|p{2.7cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Person} &
+            \color{white}\textbf{machen} &
+            \color{white}\textbf{haben} &
+            \color{white}\textbf{werden} &
+            \color{white}\textbf{sein} \\
+            ich & mache & habe & werde & sei \\
+            du & machest & habest & werdest & seiest \\
+            er/sie/es & mache & habe & werde & sei \\
+            wir & machen & haben & werden & seien \\
+            ihr & machet & habet & werdet & seiet \\
+            sie/Sie & machen & haben & werden & seien \\
+        \end{longtable}
+
+        \EnglishText{The table shows the Konjunktiv I forms of \textit{machen}, \textit{haben}, \textit{werden}, and \textit{sein}. The verb \textit{sein} has especially distinctive forms.}
+
+
+    \section{Wichtige Verben im Konjunktiv I}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{3.4cm}|p{4.2cm}|p{6.4cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Infinitiv} &
+            \color{white}\textbf{3. Person Singular} &
+            \color{white}\textbf{Beispiel} \\
+            sein & er sei & Er sagt, er sei bereit. \\
+            haben & er habe & Er sagt, er habe Zeit. \\
+            werden & er werde & Er sagt, er werde kommen. \\
+            können & er könne & Er sagt, er könne helfen. \\
+            müssen & er müsse & Er sagt, er müsse gehen. \\
+            dürfen & er dürfe & Er sagt, er dürfe bleiben. \\
+            sollen & er solle & Er sagt, er solle warten. \\
+            wollen & er wolle & Er sagt, er wolle studieren. \\
+            mögen & er möge & Er bittet, man möge warten. \\
+            wissen & er wisse & Er sagt, er wisse nichts. \\
+        \end{longtable}
+
+        \EnglishText{These are important third-person singular Konjunktiv I forms frequently used in indirect speech.}
+
+
+    \section{Wann benutzt man Konjunktiv II?}
+
+        \begin{grammarentry}{Ersatzform}{Wenn Konjunktiv I und Indikativ gleich sind}
+            \GermanText{Viele Formen des Konjunktivs I sind mit dem Indikativ identisch, besonders in der ersten Person Singular sowie in der ersten und dritten Person Plural. Wenn dadurch nicht klar erkennbar ist, dass es sich um indirekte Rede handelt, benutzt man häufig den \textbf{Konjunktiv II}.}
+            \EnglishText{Many Konjunktiv I forms are identical to the indicative, especially in the first person singular and in the first and third person plural. If this makes it unclear that the sentence is indirect speech, the \textbf{Konjunktiv II} is often used.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Direkt: Die Mitarbeiter sagen: \glqq Wir haben keine Zeit.\grqq}{Direct: The employees say, ``We have no time.''}
+                \ExampleItem{Nicht eindeutig: Die Mitarbeiter sagen, sie haben keine Zeit.}{Not clearly marked: The employees say that they have no time.}
+                \ExampleItem{Eindeutig indirekt: Die Mitarbeiter sagen, sie hätten keine Zeit.}{Clearly indirect: The employees say that they have no time.}
+                \ExampleItem{Direkt: Sie sagen: \glqq Wir kommen später.\grqq}{Direct: They say, ``We will come later.''}
+                \ExampleItem{Indirekt: Sie sagen, sie kämen später.}{Indirect: They say that they will come later.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{warningbox}
+            \GermanText{Der Konjunktiv II in der indirekten Rede drückt hier nicht unbedingt Irrealität aus. Er kann nur eine Ersatzform sein, weil der Konjunktiv I nicht deutlich genug ist.}
+            \EnglishText{In indirect speech, the Konjunktiv II does not necessarily express unreality here. It can simply be a substitute because the Konjunktiv I is not distinct enough.}
+        \end{warningbox}
+
+
+    \section{Die \glqq würde\grqq-Form}
+
+        \begin{grammarentry}{würde + Infinitiv}{weitere Ersatzform}
+            \GermanText{Wenn eine Konjunktiv-II-Form ungewöhnlich klingt oder mit dem Präteritum identisch ist, kann man \textbf{würde + Infinitiv} verwenden.}
+            \EnglishText{If a Konjunktiv II form sounds unusual or is identical to the simple past, one can use \textbf{würde + infinitive}.}
+
+            \GermanText{Bei \textbf{sein}, \textbf{haben}, den Modalverben und häufigen starken Verben sind die einfachen Formen normalerweise besser: \textbf{wäre, hätte, könnte, müsste, käme, ginge}.}
+            \EnglishText{With \textbf{sein}, \textbf{haben}, modal verbs, and common strong verbs, the simple forms are normally better: \textbf{wäre, hätte, könnte, müsste, käme, ginge}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Sie sagen, sie würden das Projekt morgen beginnen.}{They say that they would begin the project tomorrow.}
+                \ExampleItem{Besser: Er sagt, er könne kommen.}{Better: He says that he can come.}
+                \ExampleItem{Weniger gut: Er sagt, er würde kommen können.}{Less good: He says that he would be able to come.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Zeitverhältnisse in der indirekten Rede}
+
+        \begin{grammarentry}{Keine automatische Zeitenverschiebung}{Unterschied zum Englischen}
+            \GermanText{Im Deutschen gibt es keine automatische Zeitenverschiebung wie im Englischen. Entscheidend ist, ob die berichtete Handlung gleichzeitig, vorher oder später stattfindet.}
+            \EnglishText{German does not have an automatic backshift of tenses like English. What matters is whether the reported action happens at the same time, earlier, or later.}
+        \end{grammarentry}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{3.3cm}|p{4.3cm}|p{6.4cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Zeitverhältnis} &
+            \color{white}\textbf{Form} &
+            \color{white}\textbf{Beispiel} \\
+            gleichzeitig & Konjunktiv I Präsens & Er sagt, er arbeite heute. \\
+            vorher & Konjunktiv I Perfekt & Er sagt, er habe gestern gearbeitet. \\
+            vorher mit Bewegung/Zustandswechsel & sein + Partizip II & Sie sagt, sie sei nach Hause gegangen. \\
+            später & Konjunktiv I Futur I & Er sagt, er werde morgen arbeiten. \\
+            in der Zukunft abgeschlossen & Konjunktiv I Futur II & Er sagt, er werde die Arbeit bis Freitag beendet haben. \\
+        \end{longtable}
+
+        \EnglishText{The table shows simultaneous action, prior action, later action, and an action that will be completed in the future.}
+
+        \subsection{Gleichzeitigkeit}
+
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Direkt: Er sagt: \glqq Ich bin müde.\grqq}{Direct: He says, ``I am tired.''}
+                    \ExampleItem{Indirekt: Er sagt, er sei müde.}{Indirect: He says that he is tired.}
+                \end{itemize}
+            \end{exbox}
+
+        \subsection{Vorzeitigkeit}
+
+            \begin{grammarentry}{Vergangenheit}{Konjunktiv I Perfekt}
+                \GermanText{Für eine Handlung vor dem Zeitpunkt des Berichtens benutzt man normalerweise \textbf{habe/sein + Partizip II}. Dabei können Präteritum, Perfekt und Plusquamperfekt der direkten Rede in der indirekten Rede oft alle als Konjunktiv I Perfekt erscheinen.}
+                \EnglishText{For an action before the time of reporting, one normally uses \textbf{habe/sein + past participle}. In indirect speech, the simple past, present perfect, and past perfect of direct speech can often all appear as the Konjunktiv I perfect.}
+            \end{grammarentry}
+
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Direkt: Sie sagt: \glqq Ich arbeitete gestern.\grqq}{Direct: She says, ``I worked yesterday.''}
+                    \ExampleItem{Indirekt: Sie sagt, sie habe gestern gearbeitet.}{Indirect: She says that she worked yesterday.}
+                    \ExampleItem{Direkt: Er sagt: \glqq Ich bin nach Wien gefahren.\grqq}{Direct: He says, ``I went to Vienna.''}
+                    \ExampleItem{Indirekt: Er sagt, er sei nach Wien gefahren.}{Indirect: He says that he went to Vienna.}
+                \end{itemize}
+            \end{exbox}
+
+        \subsection{Nachzeitigkeit}
+
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Direkt: Sie sagt: \glqq Ich werde morgen anrufen.\grqq}{Direct: She says, ``I will call tomorrow.''}
+                    \ExampleItem{Indirekt: Sie sagt, sie werde am nächsten Tag anrufen.}{Indirect: She says that she will call the next day.}
+                \end{itemize}
+            \end{exbox}
+
+
+    \section{Pronomen und Possessivartikel ändern}
+
+        \begin{grammarentry}{Perspektive des Sprechers}{Personenbezug}
+            \GermanText{Pronomen und Possessivartikel müssen an die neue Sprechsituation angepasst werden. Man darf \textbf{ich}, \textbf{du}, \textbf{mein} oder \textbf{dein} nicht mechanisch übernehmen.}
+            \EnglishText{Pronouns and possessive determiners must be adjusted to the new speaking situation. One must not mechanically keep \textbf{ich}, \textbf{du}, \textbf{mein}, or \textbf{dein}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Direkt: Anna sagt: \glqq Ich besuche meine Mutter.\grqq}{Direct: Anna says, ``I am visiting my mother.''}
+                \ExampleItem{Indirekt: Anna sagt, sie besuche ihre Mutter.}{Indirect: Anna says that she is visiting her mother.}
+                \ExampleItem{Direkt zu mir: Paul sagt: \glqq Du musst dein Formular abgeben.\grqq}{Directly to me: Paul says, ``You must submit your form.''}
+                \ExampleItem{Indirekt: Paul sagt, ich müsse mein Formular abgeben.}{Indirect: Paul says that I must submit my form.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Zeit- und Ortsangaben ändern}
+
+        \begin{grammarentry}{Abhängigkeit vom Kontext}{deiktische Ausdrücke}
+            \GermanText{Wörter wie \textbf{heute}, \textbf{morgen}, \textbf{gestern}, \textbf{hier} und \textbf{jetzt} beziehen sich auf die Situation des ursprünglichen Sprechers. Wenn die Aussage später oder an einem anderen Ort wiedergegeben wird, müssen sie oft angepasst werden.}
+            \EnglishText{Words such as \textbf{today}, \textbf{tomorrow}, \textbf{yesterday}, \textbf{here}, and \textbf{now} refer to the original speaker's situation. If the statement is reported later or in another place, they often have to be adjusted.}
+        \end{grammarentry}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{3.2cm}|p{4.7cm}|p{5.9cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Direkte Angabe} &
+            \color{white}\textbf{Mögliche indirekte Angabe} &
+            \color{white}\textbf{Englisch} \\
+            heute & an diesem Tag & that day \\
+            morgen & am nächsten / folgenden Tag & the next / following day \\
+            gestern & am Vortag / am Tag zuvor & the previous day / the day before \\
+            jetzt & zu diesem Zeitpunkt / damals & at that time / then \\
+            hier & dort & there \\
+            nächste Woche & in der folgenden Woche & the following week \\
+            letzte Woche & in der Woche zuvor & the previous week \\
+        \end{longtable}
+
+        \begin{warningbox}
+            \GermanText{Eine Änderung ist nicht immer nötig. Wenn die Aussage noch am selben Tag und am selben Ort wiedergegeben wird, können \textbf{heute}, \textbf{morgen}, \textbf{hier} oder \textbf{jetzt} weiterhin passen.}
+            \EnglishText{A change is not always necessary. If the statement is reported on the same day and in the same place, \textbf{today}, \textbf{tomorrow}, \textbf{here}, or \textbf{now} may still be appropriate.}
+        \end{warningbox}
+
+
+    \section{Indirekte Fragen}
+
+        \subsection{Ja-Nein-Fragen mit \glqq ob\grqq}
+
+            \begin{grammarentry}{Entscheidungsfrage}{ob + Verb am Ende}
+                \GermanText{Eine Frage ohne Fragewort wird mit \textbf{ob} eingeleitet. Das konjugierte Verb steht am Ende.}
+                \EnglishText{A question without a question word is introduced by \textbf{ob} (whether/if). The conjugated verb stands at the end.}
+            \end{grammarentry}
+
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Direkt: Sie fragt: \glqq Kommt er heute?\grqq}{Direct: She asks, ``Is he coming today?''}
+                    \ExampleItem{Indirekt: Sie fragt, ob er heute komme.}{Indirect: She asks whether he is coming today.}
+                    \ExampleItem{Alltagssprache: Sie fragt, ob er heute kommt.}{Everyday German: She asks whether he is coming today.}
+                \end{itemize}
+            \end{exbox}
+
+        \subsection{W-Fragen}
+
+            \begin{grammarentry}{Fragewort bleibt erhalten}{wer, was, wann, warum, wie, wo}
+                \GermanText{Bei einer Frage mit Fragewort bleibt das Fragewort erhalten. Das konjugierte Verb steht am Ende des indirekten Fragesatzes.}
+                \EnglishText{In a question with a question word, the question word is retained. The conjugated verb stands at the end of the indirect question.}
+            \end{grammarentry}
+
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Direkt: Er fragt: \glqq Warum gehst du?\grqq}{Direct: He asks, ``Why are you leaving?''}
+                    \ExampleItem{Indirekt: Er fragt, warum ich gehe.}{Indirect: He asks why I am leaving.}
+                    \ExampleItem{Formeller: Er fragt, warum ich ginge.}{More formal or clearly marked: He asks why I am leaving.}
+                \end{itemize}
+            \end{exbox}
+
+        \begin{warningbox}
+            \GermanText{Eine indirekte Frage hat normalerweise kein Fragezeichen, wenn der ganze Satz eine Aussage ist: \glqq Er fragt, ob du kommst.\grqq Ein Fragezeichen steht nur, wenn der ganze Satz eine Frage ist: \glqq Weißt du, ob er kommt?\grqq}
+            \EnglishText{An indirect question normally has no question mark if the whole sentence is a statement: ``He asks whether you are coming.'' A question mark is used only if the entire sentence is a question: ``Do you know whether he is coming?''}
+        \end{warningbox}
+
+
+    \section{Indirekte Aufforderungen und Bitten}
+
+        \subsection{Aufforderung mit \glqq sollen\grqq}
+
+            \begin{grammarentry}{Befehl oder Auftrag}{sollen im Konjunktiv I}
+                \GermanText{Eine Aufforderung oder ein Befehl kann mit \textbf{sollen} wiedergegeben werden.}
+                \EnglishText{An instruction or command can be reported with \textbf{sollen} (to be supposed to).}
+            \end{grammarentry}
+
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Direkt: Der Arzt sagt: \glqq Bleiben Sie im Bett!\grqq}{Direct: The doctor says, ``Stay in bed!''}
+                    \ExampleItem{Indirekt: Der Arzt sagt, ich solle im Bett bleiben.}{Indirect: The doctor says that I should stay in bed.}
+                \end{itemize}
+            \end{exbox}
+
+        \subsection{Bitte mit \glqq mögen\grqq oder Infinitiv}
+
+            \begin{grammarentry}{Höfliche Bitte}{mögen oder bitten + zu}
+                \GermanText{Eine höfliche Bitte kann mit \textbf{mögen} oder mit \textbf{jemanden bitten, etwas zu tun} wiedergegeben werden.}
+                \EnglishText{A polite request can be reported with \textbf{mögen} or with \textbf{jemanden bitten, etwas zu tun} (to ask someone to do something).}
+            \end{grammarentry}
+
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Direkt: Sie sagt: \glqq Bitte warten Sie!\grqq}{Direct: She says, ``Please wait!''}
+                    \ExampleItem{Indirekt: Sie sagt, ich möge warten.}{Indirect: She says that I should please wait.}
+                    \ExampleItem{Alternativ: Sie bittet mich, zu warten.}{Alternative: She asks me to wait.}
+                \end{itemize}
+            \end{exbox}
+
+
+    \section{Typische Einleitungsverben}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{4.0cm}|p{4.8cm}|p{5.0cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Funktion} &
+            \color{white}\textbf{Verben} &
+            \color{white}\textbf{Englisch} \\
+            neutral berichten & sagen, berichten, mitteilen, erklären & say, report, inform, explain \\
+            Meinung wiedergeben & meinen, glauben, vermuten, denken & think, believe, suppose \\
+            Aussage betonen & betonen, versichern, bestätigen & emphasize, assure, confirm \\
+            unsichere oder strittige Aussage & behaupten, angeben & claim, state \\
+            Zustimmung oder Eingeständnis & zugeben, einräumen & admit, concede \\
+            Ablehnung & bestreiten, widersprechen & deny, contradict \\
+            Frage wiedergeben & fragen, wissen wollen & ask, want to know \\
+            Antwort wiedergeben & antworten, erwidern & answer, reply \\
+        \end{longtable}
+
+
+    \section{Direkte Rede Schritt für Schritt umformen}
+
+        \begin{grammarentry}{Methode}{fünf Schritte}
+            \GermanText{Eine direkte Aussage kann mit den folgenden Schritten in indirekte Rede umgeformt werden:}
+            \EnglishText{A direct statement can be transformed into indirect speech using the following steps:}
+
+            \begin{enumerate}
+                \item \textbf{Einleitungsverb bestimmen}: Wer sagt, fragt oder berichtet etwas?
+                \item \textbf{Anführungszeichen und Doppelpunkt entfernen}.
+                \item \textbf{Pronomen und Possessivartikel anpassen}.
+                \item \textbf{Zeit- und Ortsangaben prüfen}.
+                \item \textbf{Konjunktiv I bilden}; bei identischer Form gegebenenfalls Konjunktiv II oder würde-Form benutzen.
+            \end{enumerate}
+
+            \EnglishText{The five steps are: identify the reporting verb, remove quotation marks and the colon, adjust pronouns and possessives, check time and place expressions, and form the Konjunktiv I or an appropriate substitute form.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Direkt: Maria sagt: \glqq Ich habe gestern meinen Bruder hier gesehen.\grqq}{Direct: Maria says, ``I saw my brother here yesterday.''}
+                \ExampleItem{Pronomen ändern: ich $\rightarrow$ sie; meinen $\rightarrow$ ihren.}{Change pronouns: I $\rightarrow$ she; my $\rightarrow$ her.}
+                \ExampleItem{Zeit und Ort ändern: gestern $\rightarrow$ am Vortag; hier $\rightarrow$ dort.}{Change time and place: yesterday $\rightarrow$ the previous day; here $\rightarrow$ there.}
+                \ExampleItem{Indirekt: Maria sagt, sie habe am Vortag ihren Bruder dort gesehen.}{Indirect: Maria says that she saw her brother there the previous day.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Konjunktiv I oder Indikativ?}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{4.0cm}|p{5.0cm}|p{4.8cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Situation} &
+            \color{white}\textbf{Typische Form} &
+            \color{white}\textbf{Beispiel} \\
+            Zeitung / Nachricht & Konjunktiv I & Der Minister erklärte, die Lage sei stabil. \\
+            wissenschaftlicher Bericht & Konjunktiv I oder neutrale Paraphrase & Die Autoren berichten, die Methode habe gute Ergebnisse geliefert. \\
+            formelle Zusammenfassung & Konjunktiv I & Die Zeugin sagte, sie habe nichts gesehen. \\
+            normales Gespräch & dass + Indikativ & Er sagt, dass er später kommt. \\
+            eigene Überzeugung als Tatsache & Indikativ & Ich weiß, dass er später kommt. \\
+        \end{longtable}
+
+        \EnglishText{The choice depends on context: formal reporting favors the Konjunktiv I, while everyday speech often uses a dass-clause with the indicative.}
+
+
+    \section{Wichtige Bedeutungsunterschiede}
+
+        \begin{grammarentry}{sagen, dass / wissen, dass}{Quelle oder eigene Tatsache}
+            \GermanText{Nach einem Verb des Sagens zeigt der Konjunktiv I, dass die Information wiedergegeben wird: \glqq Er sagt, er sei krank.\grqq}
+            \EnglishText{After a verb of saying, the Konjunktiv I shows that information is being reported: ``He says that he is ill.''}
+
+            \GermanText{Nach \textbf{wissen} oder bei einer vom Sprecher als Tatsache präsentierten Information steht normalerweise der Indikativ: \glqq Ich weiß, dass er krank ist.\grqq}
+            \EnglishText{After \textbf{wissen} or when information is presented by the speaker as a fact, the indicative is normally used: ``I know that he is ill.''}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Konjunktiv I ist nicht automatisch Zweifel}{Bedeutung}
+            \GermanText{Der Satz \glqq Der Minister sagt, die Wirtschaft wachse\grqq bedeutet zunächst nur, dass diese Aussage vom Minister stammt. Ob der Journalist ihr glaubt, wird allein durch den Konjunktiv I nicht entschieden.}
+            \EnglishText{The sentence ``The minister says that the economy is growing'' initially means only that this statement comes from the minister. The Konjunktiv I alone does not show whether the journalist believes it.}
+        \end{grammarentry}
+
+
+    \section{Häufige Fehler}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{4.6cm}|p{4.8cm}|p{4.4cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Falsch oder problematisch} &
+            \color{white}\textbf{Richtig} &
+            \color{white}\textbf{Grund} \\
+            Er sagt, dass er \textbf{sei} krank. & Er sagt, dass er krank \textbf{sei}. & Nach \glqq dass\grqq steht das Verb am Ende. \\
+            Er sagt, er \textbf{ist} krank. & Er sagt, er \textbf{sei} krank. & In formeller indirekter Rede braucht man eine erkennbare Konjunktivform. \\
+            Anna sagt, \textbf{ich} sei müde. & Anna sagt, \textbf{sie} sei müde. & Das Pronomen muss zur berichteten Person passen. \\
+            Er fragt, \textbf{kommt sie morgen}. & Er fragt, \textbf{ob sie morgen komme}. & Indirekte Ja-Nein-Frage mit \glqq ob\grqq und Verb am Ende. \\
+            Sie sagt, sie \textbf{würde sein} müde. & Sie sagt, sie \textbf{sei} müde. & Bei \glqq sein\grqq benutzt man normalerweise die einfache Form. \\
+            Sie sagen, sie \textbf{haben} Zeit. & Sie sagen, sie \textbf{hätten} Zeit. & Konjunktiv I und Indikativ sind hier gleich; daher Ersatz durch Konjunktiv II. \\
+        \end{longtable}
+
+        \EnglishText{The table summarizes common mistakes involving word order, pronoun changes, indirect questions, and the choice between Konjunktiv I and substitute forms.}
+
+
+    \section{Ausführliche Beispiele}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Direkt: Der Student sagt: \glqq Ich kann die Aufgabe heute nicht beenden.\grqq}{Direct: The student says, ``I cannot finish the task today.''}
+                \ExampleItem{Indirekt: Der Student sagt, er könne die Aufgabe an diesem Tag nicht beenden.}{Indirect: The student says that he cannot finish the task that day.}
+
+                \ExampleItem{Direkt: Die Ärztin erklärte: \glqq Der Patient muss zwei Wochen zu Hause bleiben.\grqq}{Direct: The doctor explained, ``The patient must stay at home for two weeks.''}
+                \ExampleItem{Indirekt: Die Ärztin erklärte, der Patient müsse zwei Wochen zu Hause bleiben.}{Indirect: The doctor explained that the patient had to stay at home for two weeks.}
+
+                \ExampleItem{Direkt: Die Zeugin sagte: \glqq Ich habe den Mann gestern gesehen.\grqq}{Direct: The witness said, ``I saw the man yesterday.''}
+                \ExampleItem{Indirekt: Die Zeugin sagte, sie habe den Mann am Vortag gesehen.}{Indirect: The witness said that she had seen the man the previous day.}
+
+                \ExampleItem{Direkt: Die Teilnehmer sagen: \glqq Wir kommen morgen später.\grqq}{Direct: The participants say, ``We will come later tomorrow.''}
+                \ExampleItem{Indirekt: Die Teilnehmer sagen, sie kämen am folgenden Tag später.}{Indirect: The participants say that they will come later the following day.}
+
+                \ExampleItem{Direkt: Der Chef fragt: \glqq Warum ist der Bericht noch nicht fertig?\grqq}{Direct: The boss asks, ``Why is the report not finished yet?''}
+                \ExampleItem{Indirekt: Der Chef fragt, warum der Bericht noch nicht fertig sei.}{Indirect: The boss asks why the report is not finished yet.}
+
+                \ExampleItem{Direkt: Die Lehrerin sagt: \glqq Gebt die Aufgaben morgen ab!\grqq}{Direct: The teacher says, ``Submit the assignments tomorrow!''}
+                \ExampleItem{Indirekt: Die Lehrerin sagt, die Schüler sollten die Aufgaben am nächsten Tag abgeben.}{Indirect: The teacher says that the students should submit the assignments the next day.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Übungen}
+
+        \begin{grammarentry}{Aufgabe}{Direkte Rede in indirekte Rede umformen}
+            \GermanText{Forme die folgenden Sätze in formelle indirekte Rede um. Achte auf Konjunktiv, Pronomen, Zeitangaben und Wortstellung.}
+            \EnglishText{Transform the following sentences into formal indirect speech. Pay attention to the subjunctive, pronouns, time expressions, and word order.}
+
+            \begin{enumerate}
+                \item Paul sagt: \glqq Ich bin heute sehr beschäftigt.\grqq
+                \item Die Studentinnen sagen: \glqq Wir haben die Prüfung bestanden.\grqq
+                \item Maria fragt: \glqq Kommt dein Bruder morgen?\grqq
+                \item Der Arzt sagt zu mir: \glqq Nehmen Sie dieses Medikament zweimal täglich!\grqq
+                \item Der Zeuge erklärt: \glqq Ich sah den Unfall gestern hier.\grqq
+                \item Die Forscher berichten: \glqq Unsere Methode liefert bessere Ergebnisse.\grqq
+            \end{enumerate}
+        \end{grammarentry}
+
+
+    \section{Lösungen}
+
+        \begin{exbox}
+            \begin{enumerate}
+                \item \textbf{Paul sagt, er sei an diesem Tag sehr beschäftigt.}\\
+                {\small\color{SoftGray}Paul says that he is very busy that day.}
+
+                \item \textbf{Die Studentinnen sagen, sie hätten die Prüfung bestanden.}\\
+                {\small\color{SoftGray}The female students say that they passed the exam.}
+
+                \item \textbf{Maria fragt, ob mein Bruder am nächsten Tag komme.}\\
+                {\small\color{SoftGray}Maria asks whether my brother is coming the next day.}
+
+                \item \textbf{Der Arzt sagt, ich solle dieses Medikament zweimal täglich nehmen.}\\
+                {\small\color{SoftGray}The doctor says that I should take this medication twice a day.}
+
+                \item \textbf{Der Zeuge erklärt, er habe den Unfall am Vortag dort gesehen.}\\
+                {\small\color{SoftGray}The witness explains that he saw the accident there the previous day.}
+
+                \item \textbf{Die Forscher berichten, ihre Methode liefere bessere Ergebnisse.}\\
+                {\small\color{SoftGray}The researchers report that their method produces better results.}
+            \end{enumerate}
+        \end{exbox}
+
+
+    \section{Zusammenfassung}
+
+        \begin{grammarentry}{Merksätze}{kurz und wichtig}
+            \GermanText{1. Direkte Rede zitiert genaue Wörter; indirekte Rede gibt nur den Inhalt wieder.}
+            \EnglishText{1. Direct speech quotes exact words; indirect speech reports only the content.}
+
+            \GermanText{2. Formelle indirekte Rede benutzt meistens den Konjunktiv I.}
+            \EnglishText{2. Formal indirect speech usually uses the Konjunktiv I.}
+
+            \GermanText{3. Ohne \textbf{dass} steht das Verb meist an zweiter Stelle; mit \textbf{dass}, \textbf{ob} oder einem Fragewort steht es am Ende.}
+            \EnglishText{3. Without \textbf{dass}, the verb usually stands in second position; with \textbf{dass}, \textbf{ob}, or a question word, it stands at the end.}
+
+            \GermanText{4. Wenn Konjunktiv I und Indikativ gleich sind, benutzt man häufig Konjunktiv II.}
+            \EnglishText{4. If the Konjunktiv I and indicative forms are identical, the Konjunktiv II is often used.}
+
+            \GermanText{5. Pronomen, Possessivartikel sowie Zeit- und Ortsangaben müssen zur neuen Sprechsituation passen.}
+            \EnglishText{5. Pronouns, possessive determiners, and expressions of time and place must fit the new reporting situation.}
+
+            \GermanText{6. Ja-Nein-Fragen werden mit \textbf{ob} eingeleitet; Aufforderungen werden häufig mit \textbf{sollen} wiedergegeben.}
+            \EnglishText{6. Yes-no questions are introduced with \textbf{ob}; commands are often reported with \textbf{sollen}.}
+        \end{grammarentry}
+
+\end{document}
