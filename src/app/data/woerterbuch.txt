@@ -1135,10 +1135,6 @@ dick: thick
 der Europäer: european
 pl: -
 
-bauen (etw.Akk ~): to build sth
-habe gebaut, baute
-Ich baue eine Sandburg mit meinen Kindern.: I am building a sandcastle with my children.
-
 verwenden (etw.Akk ~): to use
 ich habe verwandt, ich verwandte
 strukt
@@ -1334,8 +1330,6 @@ Synonyme: Streit, Konflikt, Disput
 ex: Es gab eine Auseinandersetzung zwischen den Kollegen: There was an argument between the colleagues.
 ex: Die Auseinandersetzung begann wegen eines Missverständnisses: The argument began because of a misunderstanding.
 
-Für „mojadele-ye kalami“ passt meistens am besten: der Streit oder die verbale Auseinandersetzung: verbal argument / verbal dispute
-
 shabaneh mishe chi ?
 
 nächtlich [ˈnɛçtlɪç] (Adjektiv): nightly; nocturnal
@@ -1405,10 +1399,6 @@ Perfekt: ich habe kuriert
 Futur I: ich werde kurieren
 Konjunktiv II: ich kurierte / ich würde kurieren
 Konjunktiv I: ich kuriere
-
-Für „darmān kardan“ passt meistens:
-behandeln = treat
-heilen / kurieren = cure / heal
 
 willingness mishe chi ?
 
@@ -1879,12 +1869,12 @@ Synonyme: Beginn, Start
 ex: Am Anfang eines langen Weges ist alles neu: At the beginning of a long way everything is new.
 ex: Wir stehen am Anfang eines langen Weges: We are at the beginning of a long way.
 
-helfen [ˈhɛlfn̩] (intransitiv, Dativ): to help
-Verwendung: jemandem (Dat.) helfen
-Bedeutung: jemanden unterstützen; für jemanden etwas tun, damit eine Situation besser wird.
-Synonyme: unterstützen, beistehen, assistieren
-ex: Ich helfe meinem Freund: I help my friend.
-ex: Kannst du mir bitte helfen: Can you please help me?
+helfen [ˈhɛlfən] (transitiv + Dativ): to help someone with something
+Verwendung: jemandem (Dat.) bei etwas (Dat.) helfen
+Bedeutung: jemanden bei einer Tätigkeit oder einem Problem unterstützen.
+Synonyme: unterstützen, beistehen
+ex: Ich helfe meiner Schwester bei den Hausaufgaben: I help my sister with her homework.
+ex: Kannst du mir bei diesem Problem helfen?: Can you help me with this problem?
 Präsens: ich helfe
 Präteritum: ich half
 Perfekt: ich habe geholfen
@@ -1927,7 +1917,15 @@ ex: Viele Flüchtlinge brauchen Hilfe: Many refugees need help.
 
 das Lineal: ruler
 
-der Herrscher: ruler, nobility
+der Herrscher [ˈhɛʁʃɐ]: ruler; sovereign
+Bedeutung: eine Person, die über ein Land, ein Reich oder ein Volk regiert und große politische Macht besitzt.
+Genitiv: des Herrschers
+Plural: die Herrscher
+Weibliche Form: die Herrscherin
+Kollokation: ein mächtiger Herrscher
+Synonyme: Regent, Monarch, Machthaber
+ex: Der Herrscher regierte das Land viele Jahre: The ruler governed the country for many years.
+ex: Das Volk rebellierte gegen den Herrscher: The people rebelled against the ruler.
 
 sich sammeln: gather around
 
@@ -2811,7 +2809,19 @@ Futur I: ich werde aufzeigen
 Konjunktiv II: ich zeigte auf / ich würde aufzeigen
 Konjunktiv I: ich zeige auf
 
-entfalten (etw.Akk ~): to unfold
+entfalten [ɛntˈfaltn̩] (trennbar, transitiv/intransitiv): to unfold; to develop; to unfold one's potential
+Verwendung: etwas (Akk.) entfalten; sich entfalten
+Bedeutung: etwas öffnen oder ausbreiten; Fähigkeiten, Potenziale oder Wirkungen allmählich entwickeln.
+Synonyme: ausbreiten, entwickeln, aufblühen
+ex: Er entfaltet die Landkarte: He unfolds the map.
+ex: In dieser Firma kann sie ihr Talent entfalten: In this company she can develop her talent.
+Präsens: ich entfalte
+Präteritum: ich entfaltete
+Perfekt: ich habe entfaltet
+Futur I: ich werde entfalten
+Konjunktiv II: ich entfaltete / ich würde entfalten
+Konjunktiv I: ich entfalte
+Imperativ: du: Entfalte! / Entfalt! ihr: Entfaltet!
 
 erhalten (etw.Akk ~): to gain
 
@@ -3146,8 +3156,6 @@ Kollokation: soziale Medien nutzen
 Synonyme: Social Media, soziale Netzwerke, Online-Plattformen
 ex: Ich nutze soziale Medien jeden Tag: I use social media every day.
 ex: Viele Menschen verbringen zu viel Zeit in den sozialen Medien: Many people spend too much time on social media.
-
-die Partei: party(politic)
 
 effektiv: effective
 
@@ -4980,7 +4988,20 @@ durchschnittlich: average
 
 die Ausgaben: expenses
 
-begleiten: to accompany
+begleiten [bəˈɡlaɪ̯tn̩] (transitiv): to accompany; to escort
+Verwendung: jemanden (Akk.) begleiten
+Bedeutung: mit jemandem zusammen zu einem Ort gehen oder fahren; bei jemandem sein und ihn unterstützen.
+Synonyme: mitgehen, mitkommen, eskortieren
+ex: Ich begleite dich zum Bahnhof: I accompany you to the train station.
+ex: Eine Ärztin begleitet den Patienten: A doctor accompanies the patient.
+Präsens: ich begleite
+Präteritum: ich begleitete
+Perfekt: ich habe begleitet
+Futur I: ich werde begleiten
+Konjunktiv II: ich begleitete / ich würde begleiten
+Konjunktiv I: ich begleite
+Imperativ: du: Begleite! ihr: Begleitet!
+Form: begleitet = Partizip II oder 3. Person Singular/Plural im Präsens: accompanied; accompanies
 
 der Begleiter [bəˈɡlaɪ̯tɐ] (-s, -): companion; escort
 Bedeutung: eine Person, die mit jemandem geht oder reist; jemand, der eine andere Person begleitet.
@@ -5272,8 +5293,6 @@ ex: Viele Forscher suchen nach neuen Lösungen: Many researchers look for new so
 
 miteinander: together
 
-evident: evident
-
 die Chance (Plural: die Chancen): opportunity
 
 der Neurowissenschaftler / die Neurowissenschaftlerin (pl. die Neurowissenschaftler / -innen): neuroscientist
@@ -5449,15 +5468,6 @@ Synonyme: Bereich, Gebiet, Abschnitt
 ex: Diese Zone ist für Autos gesperrt: This zone is closed to cars.
 ex: Wir wohnen in einer ruhigen Zone: We live in a quiet area.
 
-der Ton [toːn]: tone
-Bedeutung: die Art, wie jemand spricht; kann höflich, freundlich, unhöflich oder aggressiv sein.
-Genitiv: des Tons
-Plural: die Töne
-Kollokation: in einem unhöflichen Ton
-Synonyme: Tonfall, Art zu sprechen
-ex: Sprich bitte nicht in diesem unhöflichen Ton mit mir: Please do not speak to me in this rude tone.
-ex: Sein Ton war sehr respektlos: His tone was very disrespectful.
-
 die Ausdrucksweise [ˈaʊ̯sdʁʊksˌvaɪ̯zə]: way of expressing oneself; manner of speaking
 Bedeutung: die Art, wie jemand seine Gedanken mit Worten ausdrückt.
 Genitiv: der Ausdrucksweise
@@ -5484,7 +5494,14 @@ ex: Endlich habe ich die Prüfung bestanden: At last, I passed the exam.
 
 der sprachnachricht: voice message
 
-viertel: quarter, neighbourhood, district
+die Nachbarschaft [ˈnaːxbaːɐ̯ʃaft]: neighbourhood; neighborhood
+Bedeutung: das Gebiet in der Nähe einer Wohnung oder eines Hauses; die Menschen, die dort wohnen.
+Genitiv: der Nachbarschaft
+Plural: die Nachbarschaften
+Kollokation: in der Nachbarschaft wohnen
+Synonyme: Wohngegend, Umgebung, Viertel
+ex: In unserer Nachbarschaft gibt es viele Geschäfte: There are many shops in our neighbourhood.
+ex: Die Nachbarschaft ist sehr ruhig: The neighbourhood is very quiet.
 
 der Hof: courtyard
 
@@ -5980,7 +5997,13 @@ Futur I: ich werde ablaufen
 Konjunktiv II: ich liefe ab / ich würde ablaufen
 Konjunktiv I: ich laufe ab
 
-krass: cool, awesome
+krass [kʁas] (Adjektiv, Komparativ: krasser, Superlativ: am krassesten): extreme; intense; shocking
+Bedeutung: sehr stark, außergewöhnlich oder überraschend; umgangssprachlich auch sehr beeindruckend.
+Synonyme: extrem, heftig, außergewöhnlich
+Attributiv und prädikativ verwendbar
+ex: Das ist eine krasse Geschichte: That is a shocking story.
+ex: Dieses Problem ist krasser als das andere: This problem is more extreme than the other one.
+ex: Seine Reaktion war am krassesten: His reaction was the most extreme.
 
 kochen [ˈkɔxən] (transitiv, intransitiv): to cook; to boil
 ex: Ich koche das Abendessen: I cook the dinner.
@@ -5994,8 +6017,14 @@ Konjunktiv I: ich koche
 
 ansprechen (jdn./etw.Akk ~): address sb./st.
 
-die Ahnung: idea
-keine Ahnung: no idea
+die Ahnung [ˈaːnʊŋ]: idea; notion; clue
+Bedeutung: unsicheres Wissen oder eine ungenaue Vorstellung von etwas.
+Genitiv: der Ahnung
+Plural: die Ahnungen
+Kollokation: keine Ahnung haben
+Synonyme: Vorstellung, Vermutung, Idee
+ex: Ich habe keine Ahnung: I have no idea.
+ex: Hast du eine Ahnung, wo er ist?: Do you have any idea where he is?
 
 Entscheidung treffen: to make a decision
 
@@ -6368,12 +6397,6 @@ Synonyme: Entschlossenheit, Absicht, Wunsch
 ex: Mit starkem Willen kann man viel erreichen: With strong will, one can achieve a lot.
 ex: Der Wille zu lernen ist wichtig: The willingness to learn is important.
 
-fälschlich [ˈfɛlʃlɪç] (Adverb, nicht steigerbar): falsely; wrongly
-Bedeutung: in falscher Weise; irrtümlich oder zu Unrecht.
-Synonyme: irrtümlich, zu Unrecht, fälschlicherweise
-ex: Er wurde fälschlich beschuldigt: He was falsely accused.
-ex: Ich habe das Wort fälschlich verstanden: I understood the word wrongly.
-
 behandeln [bəˈhandl̩n] (Akk.) transitiv: to treat
 Bedeutung: eine Krankheit, Verletzung oder ein Problem medizinisch oder praktisch versorgen; gezielt etwas therapieren.
 Synonyme: therapieren, versorgen, kurieren
@@ -6704,12 +6727,6 @@ rechtzeitig wesen: to be on time
 rechtzeitig: on time, in time
 
 sich Akk beklagen über: to complain
-
-soweit [zoˈvaɪ̯t] (Adverb): so far; as far as
-Bedeutung: bis zu einem bestimmten Zeitpunkt, Ort oder Grad.
-Synonyme: bislang, bis jetzt, bis dahin
-ex: Soweit ist alles in Ordnung: So far, everything is fine.
-ex: Ich kann nicht so weit laufen: I cannot walk that far.
 
 soweit [zoˈvaɪ̯t] (Konjunktion, subordinierend + Verb am Ende): as far as; insofar as
 Bedeutung: drückt aus, dass eine Aussage nur innerhalb des bekannten oder genannten Rahmens gilt.
@@ -7063,8 +7080,6 @@ Synonyme: Gemeinschaft, Bevölkerung, Öffentlichkeit
 ex: Die Gesellschaft verändert sich: Society is changing.
 ex: Soziale Medien beeinflussen die Gesellschaft: Social media influence society.
 
-äußern: to express something
-
 Problem lösen: to solve a problem
 
 Zeit verschwenden [tsaɪ̯t fɛɐ̯ˈʃvɛndən] (trennbar, transitiv): to waste time
@@ -7087,7 +7102,13 @@ ex: This journal paper was peer-reviewed: This academic article was reviewed by 
 
 im Verfahren: en train de
 
-praktisch: practical
+praktisch [ˈpʁaktɪʃ] (Adjektiv, Komparativ: praktischer, Superlativ: am praktischsten): practical; convenient
+Bedeutung: für die Anwendung im Alltag geeignet und nützlich; einfach und zweckmäßig zu benutzen.
+Synonyme: nützlich, zweckmäßig, brauchbar
+Attributiv und prädikativ verwendbar
+ex: Diese Tasche ist sehr praktisch: This bag is very practical.
+ex: Eine Waschmaschine ist praktischer als das Waschen mit der Hand: A washing machine is more convenient than washing by hand.
+ex: Diese Lösung ist am praktischsten: This solution is the most practical.
 
 der Delegierte [deleˈɡiːɐ̯tə] (-n, -n): delegate
 Bedeutung: Person, die offiziell eine Gruppe, Organisation oder ein Land vertritt.
@@ -7247,8 +7268,6 @@ zum Teil: to some extent
 Abbreviative: z. T.
 
 die Uhr: watch
-
-das Kapitel: chapter
 
 Zeit verlieren: to lose time
 ex: Ich will keine Zeit verlieren: I don't want to lose time.
@@ -7854,11 +7873,22 @@ Synonyme: Zugriff, Möglichkeit, Erreichbarkeit
 ex: Viele Menschen haben keinen Zugang zu guter medizinischer Versorgung: Many people do not have access to good medical care.
 ex: Kinder sollten Zugang zu Bildung haben: Children should have access to education.
 
-außer: other than; except
+außer [ˈaʊ̯sɐ] (Präposition + Dativ): except; apart from; besides
+Bedeutung: bezeichnet eine Ausnahme oder nennt etwas Zusätzliches.
+Verwendung: außer + Dativ
+Synonyme: ausgenommen, abgesehen von, neben
 ex: Ich habe keine Hobbys außer Essen: I have no hobbies other than eating.
-ex: Außer Kaffee trinke ich auch Matcha: Other than coffee, I also drink matcha.
+ex: Außer Kaffee trinke ich auch Matcha: Besides coffee, I also drink matcha.
 
-der Mitschüler: classmate
+der Mitschüler [ˈmɪtˌʃyːlɐ]: male classmate; fellow student
+Bedeutung: ein Schüler, der dieselbe Schule oder Klasse wie eine andere Person besucht.
+Genitiv: des Mitschülers
+Plural: die Mitschüler
+Weibliche Form: die Mitschülerin
+Kollokation: mit seinen Mitschülern sprechen
+Synonyme: Klassenkamerad, Schulkollege
+ex: Mein Mitschüler hilft mir bei den Hausaufgaben: My classmate helps me with my homework.
+ex: Ich verstehe mich gut mit meinen Mitschülern: I get along well with my classmates.
 
 der Herbst: fall, autumn
 
@@ -7890,7 +7920,14 @@ Synonyme: Abschnitt, Sequenz, Filmszene
 ex: Ich habe mehrere Szenen dieses Films gesehen: I have seen several scenes of this movie.
 ex: Diese Szene war besonders traurig: This scene was especially sad.
 
-der Einheimische: native
+der Einheimische / die Einheimische [ˈaɪ̯nˌhaɪ̯mɪʃə]: local; native inhabitant
+Bedeutung: eine Person, die aus einem bestimmten Ort oder einer bestimmten Region stammt und dort lebt.
+Genitiv: des Einheimischen / der Einheimischen
+Plural: die Einheimischen
+Kollokation: mit Einheimischen sprechen
+Synonyme: Ortsansässiger, Bewohner, Bewohnerin
+ex: Die Einheimischen kennen die Region sehr gut: The locals know the region very well.
+ex: Ein Einheimischer hat uns den Weg gezeigt: A local showed us the way.
 
 die Wunde [ˈvʊndə]: wound
 Bedeutung: Verletzung der Haut oder des Gewebes durch äußere Einwirkung wie Schnitt, Schlag oder Stich.
@@ -7944,7 +7981,14 @@ Konjunktiv I: ich flüchte mich / ich flüchte
 
 das Kaugummi: chewing gum
 
-die Tendenz: tendency
+die Tendenz [tɛnˈdɛnts]: tendency; trend
+Bedeutung: eine erkennbare Entwicklung oder Neigung in eine bestimmte Richtung.
+Genitiv: der Tendenz
+Plural: die Tendenzen
+Kollokation: eine steigende Tendenz zeigen
+Synonyme: Entwicklung, Neigung, Trend
+ex: Die Preise zeigen eine steigende Tendenz: Prices show an upward trend.
+ex: Er hat die Tendenz, alles zu kritisieren: He has a tendency to criticize everything.
 
 der Vertrag [fɛɐ̯ˈtʁaːk]: contract; agreement
 Bedeutung: eine rechtlich verbindliche Vereinbarung zwischen zwei oder mehreren Personen oder Organisationen.
@@ -8398,13 +8442,25 @@ ex: Viele Menschen sind von der Krise betroffen: Many people are affected by the
 ex: Sie ist tief betroffen von der Nachricht: She is deeply affected by the news.
 ex: Die betroffenen Personen brauchen Hilfe: The affected persons need help.
 
-während [ˈvɛːʁənt] (Konjunktion, subordinierend + Verb am Ende): while; whereas
-Bedeutung: benutzt, um einen Gegensatz zwischen zwei Aussagen zu zeigen.
+während [ˈvɛːʁənt] (Konjunktion, subordinierend + Verb am Ende; Präposition + Genitiv): while; whereas; during
+Bedeutung 1: drückt aus, dass zwei Handlungen oder Ereignisse gleichzeitig stattfinden.
+Gebrauch: als Konjunktion; leitet einen Nebensatz ein, das konjugierte Verb steht am Ende
+Synonyme: solange, zur gleichen Zeit wie
+ex: Während ich koche, hört sie Musik: While I am cooking, she listens to music.
+ex: Er hat telefoniert, während er auf den Bus gewartet hat: He talked on the phone while he was waiting for the bus.
+Bedeutung 2: stellt zwei unterschiedliche oder gegensätzliche Tatsachen einander gegenüber.
+Gebrauch: als Konjunktion; entspricht häufig „whereas“ oder „while“ im Englischen
 Synonyme: wohingegen, dagegen
-Gebrauch: leitet einen Nebensatz ein, das konjugierte Verb steht am Ende
-ex: Ich arbeite viel, während er den ganzen Tag schläft: I work a lot, while he sleeps all day.
-ex: Früher war ich sehr dick, während ich jetzt viel schlanker bin: In the past I was very fat, while now I am much slimmer.
-ex: Sie liebt die Stadt, während ich lieber auf dem Land lebe: She loves the city, whereas I prefer to live in the countryside.
+ex: Hassan arbeitet sehr viel, während Ali oft faul ist: Hassan works a lot, whereas Ali is often lazy.
+ex: Dieses Auto ist günstig, während das andere sehr teuer ist: This car is inexpensive, whereas the other one is very expensive.
+Bedeutung 3: bezeichnet einen Zeitraum, innerhalb dessen etwas geschieht.
+Gebrauch: als Präposition mit Genitiv
+Synonyme: im Laufe, im Verlauf
+ex: Während des Unterrichts darf man nicht telefonieren: You must not use your phone during the lesson.
+ex: Während der Reise habe ich viele Menschen kennengelernt: During the trip, I met many people.
+Grammatik: Als Konjunktion steht „während“ vor einem Nebensatz und das Verb steht am Ende. Als Präposition steht „während“ normalerweise mit dem Genitiv.
+ex: Während ich krank war, blieb ich zu Hause: While I was ill, I stayed at home.
+ex: Während meiner Krankheit blieb ich zu Hause: During my illness, I stayed at home.
 
 ansteigen [ˈanˌʃtaɪ̯ɡən] (ist) intransitiv, trennbar: to rise; to increase
 Bedeutung: nach oben gehen oder mehr werden (z. B. Zahl, Preis, Temperatur).
@@ -9026,11 +9082,6 @@ Synonyme: Sauger, Vakuumreiniger
 ex: Ich benutze den Staubsauger jeden Tag: I use the vacuum cleaner every day.
 ex: Der Staubsauger ist kaputt: The vacuum cleaner is broken.
 
-soweit [zoˈvaɪ̯t] (Adverb/Konjunktion): so far; as far as
-Synonyme: bislang, insofern
-ex: Soweit ich weiß, kommt er heute nicht: As far as I know, he is not coming today.
-ex: Ich bin soweit fertig: I am finished so far.
-
 bald ist es wieder soweit: soon it will be time again
 ex: Bald ist es wieder soweit, die Prüfung beginnt: Soon it will be time again, the exam begins.
 ex: Bald ist es wieder soweit, Weihnachten kommt: Soon it will be time again, Christmas is coming.
@@ -9163,7 +9214,19 @@ Futur I: ich werde mich nähern
 Konjunktiv II: ich näherte mich / ich würde mich nähern
 Konjunktiv I: ich nähere mich
 
-umgeben: to surround
+umgeben: to surroundumgeben [ʊmˈɡeːbn̩] (untrennbar, transitiv): to surround
+Verwendung: jemanden/etwas (Akk.) umgeben
+Bedeutung: sich rings um eine Person oder Sache befinden; jemanden oder etwas von allen Seiten einschließen.
+Synonyme: umschließen, einkreisen, einrahmen
+ex: Hohe Berge umgeben das Dorf: High mountains surround the village.
+ex: Sie ist von vielen Freunden umgeben: She is surrounded by many friends.
+Präsens: ich umgebe
+Präteritum: ich umgab
+Perfekt: ich habe umgeben
+Futur I: ich werde umgeben
+Konjunktiv II: ich umgäbe / ich würde umgeben
+Konjunktiv I: ich umgebe
+Imperativ: du: Umgib! ihr: Umgebt!
 
 einhalten (etw.Akk ~): to abide, to observe
 
@@ -9564,10 +9627,6 @@ der Professor (pl. die Professoren): professor
 ex: Der Professor hält eine Vorlesung: The professor gives a lecture.
 ex: Ich habe mit meinem Professor gesprochen: I spoke with my professor.
 
-das Kapitel (pl. die Kapitel): chapter
-ex: Dieses Kapitel ist sehr wichtig: This chapter is very important.
-ex: Ich lese gerade das dritte Kapitel des Buches: I am currently reading the third chapter of the book.
-
 erscheinen (vi.): appear
 ex: Er erscheint plötzlich: He appears suddenly
 ex: Das Problem erscheint wieder: The problem appears again
@@ -9614,7 +9673,14 @@ Futur I: ich werde verreisen
 Konjunktiv II: ich verreiste / ich würde verreisen
 Konjunktiv I: ich verreise
 
-das Papier: paper
+das Papier [paˈpiːɐ̯]: paper
+Bedeutung: ein dünnes Material, das besonders zum Schreiben, Drucken oder Verpacken verwendet wird.
+Genitiv: des Papiers
+Plural: die Papiere
+Kollokation: ein Blatt Papier
+Synonyme: Schreibpapier, Blatt
+ex: Ich schreibe die Adresse auf ein Papier: I write the address on a piece of paper.
+ex: Die Papiere liegen auf dem Tisch: The papers are lying on the table.
 
 der Schatten [ˈʃatn̩]: shadow; shade
 Bedeutung: dunkler Bereich, der entsteht, wenn Licht durch einen Gegenstand oder eine Person blockiert wird; auch Schutz vor direktem Sonnenlicht.
@@ -10007,7 +10073,14 @@ Synonyme: Kante, Begrenzung, Saum
 ex: Am Rand der Straße wachsen Blumen: Flowers grow at the edge of the road.
 ex: Er schrieb etwas an den Rand des Blattes: He wrote something at the edge of the page.
 
-der Anker: anchor
+der Anker [ˈaŋkɐ]: anchor
+Bedeutung: ein schwerer Gegenstand, der ein Schiff am Boden festhält; auch bildlich: etwas, das Sicherheit oder Halt gibt.
+Genitiv: des Ankers
+Plural: die Anker
+Kollokation: den Anker werfen
+Synonyme: Schiffsanker, Halt, Stütze
+ex: Das Schiff wirft den Anker: The ship drops anchor.
+ex: Seine Familie ist sein Anker im Leben: His family is his anchor in life.
 
 das Universum: universe
 
@@ -10190,8 +10263,6 @@ war es nicht so, dass: was it not the case that; wasn't it that
 ex: War es nicht so, dass wir Freunde bleiben sollten?: Wasn't it the case that we were supposed to remain friends?
 ex: War es nicht so, dass wir keinen Neid haben sollten?: Wasn't it that we were not supposed to be jealous?
 
-Selbstmord begehen: to commit suicide
-
 Introvertierte: daroon gara
 
 bevorzugen [bəˈfoːɐ̯ˌtsuːɡən] (trennbar, transitiv): to prefer
@@ -10295,8 +10366,6 @@ Kollokation: große Freude empfinden; vor Freude lachen
 Synonyme: Begeisterung, Vergnügen
 ex: Die Nachricht brachte ihm große Freude: The news brought him great joy.
 ex: Sie sprang vor Freude in die Luft: She jumped into the air with joy.
-
-formen (etw.Akk ~): to form sth
 
 genießen [ɡəˈniːsn̩] (transitiv + Akkusativ): to enjoy
 Verwendung: etwas (Akk.) genießen
@@ -10856,7 +10925,19 @@ Synonyme: Entfernung, Distanz
 ex: Ich halte genug Abstand: I keep enough distance.
 ex: Der Abstand zum Auto vor mir ist zu klein: The distance to the car in front of me is too small.
 
-fortsetzen (etw.Akk ~, etw.Dat ~): to continue
+fortsetzen [ˈfɔʁtˌzɛt͡sn̩] (trennbar, transitiv/intransitiv): to continue; to carry on
+Verwendung: etwas (Akk.) fortsetzen; mit etwas (Dat.) fortsetzen
+Bedeutung: etwas nach einer Unterbrechung oder Pause weiterführen oder weitermachen.
+Synonyme: weitermachen, weiterführen, fortführen
+ex: Wir setzen das Gespräch morgen fort: We will continue the conversation tomorrow.
+ex: Er setzte seine Arbeit nach der Pause fort: He continued his work after the break.
+Präsens: ich setze fort
+Präteritum: ich setzte fort
+Perfekt: ich habe fortgesetzt
+Futur I: ich werde fortsetzen
+Konjunktiv II: ich setzte fort / ich würde fortsetzen
+Konjunktiv I: ich setze fort
+Imperativ: du: Setz fort! / Setze fort! ihr: Setzt fort!
 
 bewegen (jdn./etw.Akk ~): to move sb or sth
 
@@ -11203,7 +11284,20 @@ ex: Der Hammer liegt auf dem Tisch: The hammer is lying on the table.
 
 der Zeichentrickfilm : cartoon
 
-treiben: to float
+treiben [ˈtʁaɪ̯bn̩] (starkes Verb, transitiv und intransitiv): to drive; to propel; to drift; to engage in
+Verwendung: jemanden/etwas treiben; auf dem Wasser treiben; Sport treiben
+Bedeutung: jemanden oder etwas in eine bestimmte Richtung bewegen; sich ohne eigene Kontrolle durch Wasser oder Luft bewegen; eine Tätigkeit regelmäßig ausüben.
+Synonyme: antreiben, bewegen, dahintreiben
+ex: Der Wind treibt die Wolken nach Osten: The wind drives the clouds eastward.
+ex: Das Boot treibt auf dem Wasser: The boat is drifting on the water.
+ex: Sie treibt regelmäßig Sport: She regularly does sports.
+Präsens: ich treibe
+Präteritum: ich trieb
+Perfekt: ich habe getrieben
+Futur I: ich werde treiben
+Konjunktiv II: ich triebe / ich würde treiben
+Konjunktiv I: ich treibe
+Imperativ: du: Treib! / Treibe! ihr: Treibt!
 
 der Strand: beach
 
@@ -13212,18 +13306,6 @@ Synonyme: Anleitung, Beratung, Hilfestellung
 ex: Ich brauche etwas Orientierungshilfe: I need some guidance.
 ex: Der Lehrer gibt den Schülern Orientierungshilfe: The teacher gives the students guidance.
 
-helfen [ˈhɛlfən] (Dat.): to help
-Bedeutung: jemanden unterstützen oder ihm bei einer Tätigkeit beistehen.
-Synonyme: unterstützen, beistehen, fördern
-ex: Ich helfe meinem Freund bei den Hausaufgaben: I help my friend with the homework.
-ex: Kannst du mir bitte helfen: Can you please help me?
-Präsens: ich helfe
-Präteritum: ich half
-Perfekt: ich habe geholfen
-Futur I: ich werde helfen
-Konjunktiv II: ich hülfe / ich würde helfen
-Konjunktiv I: ich helfe
-
 verbinden [fɛɐ̯ˈbɪndən] (mit + Dat.) transitiv: to connect; to link
 Bedeutung: zwei oder mehrere Dinge oder Personen zusammenbringen; eine Verbindung herstellen.
 Synonyme: verknüpfen, koppeln, anschließen
@@ -14466,7 +14548,13 @@ Synonyme: Weite, Ausdehnung
 ex: Die Breite des Autos beträgt zwei Meter: The width of the car is two meters.
 ex: Wir müssen die Breite der Straße beachten: We must pay attention to the width of the road.
 
-breit: wide
+breit [bʁaɪ̯t] (Adjektiv, Komparativ: breiter, Superlativ: am breitesten): wide; broad
+Bedeutung: mit einer großen Ausdehnung von einer Seite zur anderen.
+Synonyme: weit, ausgedehnt, großflächig
+Attributiv und prädikativ verwendbar
+ex: Die Straße ist sehr breit: The street is very wide.
+ex: Er hat breite Schultern: He has broad shoulders.
+ex: Dieser Fluss ist breiter als der andere: This river is wider than the other one.
 
 Bereitshaft: readiness
 
@@ -15052,8 +15140,6 @@ der Bleistift: pencil
 
 der Stift: pen
 
-vermissen: to miss someone
-
 nötigen [ˈnøːtɪɡn̩] (transitiv): to compel; to force
 Verwendung: jemanden (Akk.) zu etwas (Dat.) nötigen; jemanden dazu nötigen, etwas zu tun
 Bedeutung: jemanden durch Druck oder Zwang dazu bringen, etwas zu tun.
@@ -15302,8 +15388,6 @@ Imperativ: du: Brich! ihr: Brecht!
 verkaufen: to sell
 
 bellen: to bark
-
-während: during
 
 die Sache: thing
 
@@ -15770,8 +15854,6 @@ zerreißen: to tear sth
 
 kaput: broken
 
-enthalten: to contain
-
 außerdem [ˈaʊ̯sɐdeːm] (Adverb): furthermore; in addition
 Bedeutung: zusätzlich zu etwas; um noch einen weiteren Punkt hinzuzufügen.
 Synonyme: zudem, darüber hinaus
@@ -16161,13 +16243,18 @@ die Mültrennung:joda ssazi ashga
 
 das Plastik
 
-der Müll: satle ashgahl
-
 der Kommentar: comment
 
 kümmern:take care of
 
-die Nachricht: message, news
+die Nachricht [ˈnaːχʁɪçt]: message; news
+Bedeutung: eine Information, die jemand einer anderen Person mitteilt; eine Mitteilung über ein Ereignis.
+Genitiv: der Nachricht
+Plural: die Nachrichten
+Kollokation: eine Nachricht schicken
+Synonyme: Mitteilung, Meldung, Information
+ex: Ich habe dir eine Nachricht geschickt: I sent you a message.
+ex: Hast du die Nachrichten gesehen: Did you watch the news?
 
 der Essig [ˈɛsɪç]: vinegar
 Bedeutung: eine saure Flüssigkeit, die zum Würzen und Konservieren von Lebensmitteln verwendet wird.
@@ -16292,8 +16379,6 @@ Synonyme: Shoppingcenter, Mall, Einkaufsmeile
 ex: Ich gehe heute ins Einkaufszentrum: I am going to the shopping center today.
 ex: Das Einkaufszentrum ist am Samstag sehr voll: The shopping center is very crowded on Saturday.
 
-Luft: air
-
 zustimmen [tsuːˈʃtɪmən] (jdm./etw.Dat): to agree (with sb./sth.)
 ex: Ich stimme dir zu: I agree with you.
 ex: Ich stimme dem Vorschlag zu: I agree with the proposal.
@@ -16403,8 +16488,6 @@ Konjunktiv I: ich bereite
 Imperativ: du: Bereite! ihr: Bereitet!
 
 das gescnhehen: happening
-
-die Unterlage: document
 
 die Sorge: concern,
 ex: Mach dir keine Sorgen!: Dont worry
@@ -16882,11 +16965,6 @@ nach:after
 
 Stimmen Sie: do you agree?
 
-während:while
-Ich schaute einen Film, während er das Abendessen vorbereitete.:I watched a film while he prepared dinner.
-
-endlich: finally
-
 der Kasten: wall
 
 die Wand: wall
@@ -16982,8 +17060,6 @@ Perfekt: ich habe gehört
 Futur I: ich werde gehören
 Konjunktiv II: ich gehörte / ich würde gehören
 Konjunktiv I: ich gehöre
-
-Nachricht: news
 
 erreichbar: available
 
@@ -17178,7 +17254,19 @@ Futur I: ich werde wandeln / ich werde mich wandeln
 Konjunktiv II: ich würde wandeln / ich würde mich wandeln
 Konjunktiv I: ich wandle / ich wandle mich
 
-aufgeben: to give up
+aufgeben [ˈaʊ̯fˌɡeːbn̩] (trennbar, transitiv/intransitiv): to give up; to quit; to hand in; to post
+Verwendung: etwas (Akk.) aufgeben; jemanden/etwas aufgeben
+Bedeutung: nicht mehr weitermachen; auf etwas verzichten; etwas zur Bearbeitung oder Beförderung abgeben.
+Synonyme: verzichten, abbrechen, einreichen
+ex: Du darfst nicht aufgeben: You must not give up.
+ex: Ich gebe das Paket bei der Post auf: I post the package at the post office.
+Präsens: ich gebe auf
+Präteritum: ich gab auf
+Perfekt: ich habe aufgegeben
+Futur I: ich werde aufgeben
+Konjunktiv II: ich gäbe auf / ich würde aufgeben
+Konjunktiv I: ich gebe auf
+Imperativ: du: Gib auf! ihr: Gebt auf!
 
 behalten [bəˈhaltn̩] (transitiv): to keep; to retain; to remember
 Verwendung: etwas (Akk.) behalten
@@ -17353,10 +17441,6 @@ sauber: clean
 erwarten (jdn./etw.Akk ~): expect
 Der Professor erwartet von jedem Studierenden eine Seminararbeit.: The professor expects a term paper from every student.
 
-allmählich / nach und nach: gradually
-ex: Das Wetter wird allmählich wärmer: The weather is gradually becoming warmer
-ex: Nach und nach verstand ich alles besser: Gradually I understood everything better
-
 rülpsen [ˈʁʏlpsn̩] (intransitiv): to burp; to belch
 Bedeutung: Luft hörbar aus dem Magen durch den Mund entweichen lassen.
 Synonyme: aufstoßen, einen Rülpser machen
@@ -17369,7 +17453,14 @@ Futur I: ich werde rülpsen
 Konjunktiv II: ich rülpste / ich würde rülpsen
 Konjunktiv I: ich rülpse
 
-der Akzent: accent, emphasis
+der Akzent [akˈt͡sɛnt]: accent; stress; emphasis
+Bedeutung: besondere Aussprache einer Sprache, die von der Herkunft oder Muttersprache einer Person beeinflusst wird; auch die Hervorhebung einer Silbe oder eines bestimmten Aspekts.
+Genitiv: des Akzents
+Plural: die Akzente
+Kollokation: einen starken Akzent haben
+Synonyme: Aussprache, Betonung, Hervorhebung
+ex: Er spricht Deutsch mit einem österreichischen Akzent: He speaks German with an Austrian accent.
+ex: Der Akzent liegt auf der ersten Silbe: The stress is on the first syllable.
 
 die Phase (pl. die Phasen): phase
 ex: Ich bin in der letzten Phase des Schreibens meiner Abschlussarbeit: I am in the last phase of writing my thesis.
@@ -18188,7 +18279,14 @@ sicher: safe
 
 zurückkommen: return back
 
-die Regel: rule
+die Regel [ˈʁeːɡl̩]: rule
+Bedeutung: eine Vorschrift oder Anweisung, die bestimmt, was erlaubt, verboten oder zu tun ist.
+Genitiv: der Regel
+Plural: die Regeln
+Kollokation: eine Regel befolgen
+Synonyme: Vorschrift, Bestimmung, Richtlinie
+ex: Du musst die Regeln befolgen: You must follow the rules.
+ex: Diese Regel gilt für alle: This rule applies to everyone.
 
 die Welt: world
 
@@ -18684,9 +18782,13 @@ glücklich: happy
 
 fröhlich: happy
 
-wütend: angry
-
-die Wütigkeit: anger
+wütend [ˈvyːtn̩t] (Adjektiv, Komparativ: wütender, Superlativ: am wütendsten): angry; furious
+Bedeutung: sehr stark verärgert; voller Wut.
+Synonyme: zornig, erbost, aufgebracht
+Attributiv und prädikativ verwendbar
+ex: Er ist wütend auf seinen Chef: He is angry with his boss.
+ex: Sie gab ihm eine wütende Antwort: She gave him an angry reply.
+ex: Heute ist er wütender als gestern: Today he is angrier than yesterday.
 
 die Eifersucht:jealousy
 
@@ -19555,8 +19657,6 @@ Futur I: ich werde brauchen
 Konjunktiv II: ich bräuchte / ich würde brauchen
 Konjunktiv I: ich brauche
 
-der Fleischersatz: meat replacement
-
 der Ersatz [ɛɐ̯ˈzats]: replacement; substitute
 Bedeutung: etwas oder jemand, der an die Stelle von etwas anderem tritt; eine Sache, die etwas Fehlendes oder Kaputtes ersetzt.
 Genitiv: des Ersatzes
@@ -19673,7 +19773,14 @@ Konjunktiv I: ich vermeide
 
 fit bleiben: to stay fit
 
-die Flüssigkeit: liquid
+die Flüssigkeit [ˈflʏsɪçkaɪ̯t]: liquid; fluid
+Bedeutung: ein Stoff, der nicht fest und nicht gasförmig ist und die Form seines Behälters annimmt.
+Genitiv: der Flüssigkeit
+Plural: die Flüssigkeiten
+Kollokation: Flüssigkeit trinken
+Synonyme: Fluid, flüssiger Stoff
+ex: Du solltest genügend Flüssigkeit trinken: You should drink enough fluids.
+ex: Die Flüssigkeit befindet sich in einer Flasche: The liquid is in a bottle.
 
 dabei [daˈbaɪ̯] (Adverb / Pronominaladverb): with it; while doing so; in the process; dabei
 Bedeutung: bei dieser Sache, Tätigkeit oder Situation; während etwas passiert oder gemacht wird.
@@ -20439,15 +20546,6 @@ Kollokation: die Spüle putzen
 Synonyme: Spülbecken, Waschbecken
 ex: Das Geschirr steht noch in der Spüle: The dishes are still in the sink.
 ex: Ich wasche das Gemüse in der Spüle: I wash the vegetables in the sink.
-
-der Geruch [ɡəˈʁʊx]: smell; odor
-Bedeutung: etwas, das man mit der Nase wahrnimmt.
-Genitiv: des Geruchs
-Plural: die Gerüche
-Kollokation: ein starker Geruch
-Synonyme: Duft, Aroma, Gestank
-ex: Der Geruch von Kaffee ist angenehm: The smell of coffee is pleasant.
-ex: In der Küche ist ein komischer Geruch: There is a strange smell in the kitchen.
 
 riechen [ˈʁiːçn̩] transitiv/intransitiv: to smell
 Bedeutung: mit der Nase wahrnehmen; einen bestimmten Geruch haben.
@@ -22118,7 +22216,14 @@ Attributiv und prädikativ verwendbar
 ex: Er ist schon mit dreißig Jahren bald: He is already bald at thirty.
 ex: Sein Kopf ist ganz bald: His head is completely bald.
 
-der Lebenslauf: CV
+der Lebenslauf [ˈleːbn̩sˌlaʊ̯f]: curriculum vitae; CV; résumé
+Bedeutung: ein Dokument mit persönlichen Angaben sowie Informationen über Ausbildung, Berufserfahrung, Kenntnisse und Qualifikationen einer Person.
+Genitiv: des Lebenslaufs
+Plural: die Lebensläufe
+Kollokation: einen Lebenslauf erstellen
+Synonyme: Curriculum Vitae, CV, Bewerbungsprofil
+ex: Bitte schicken Sie uns Ihren Lebenslauf: Please send us your CV.
+ex: Ich habe meinen Lebenslauf aktualisiert: I updated my résumé.
 
 die Chance: the chance
 
@@ -27608,3 +27713,554 @@ Futur I: ich werde verknüpfen
 Konjunktiv II: ich verknüpfte / ich würde verknüpfen
 Konjunktiv I: ich verknüpfe
 Imperativ: du: Verknüpf! / Verknüpfe! ihr: Verknüpft!
+
+das Eis [aɪ̯s]: ice; ice cream
+Bedeutung: gefrorenes Wasser; außerdem eine kalte Süßspeise aus Milch, Sahne, Früchten oder anderen Zutaten.
+Genitiv: des Eises
+Plural: meist kein Plural; selten: die Eise
+Kollokation: Eis essen; auf dem Eis laufen
+Synonyme: gefrorenes Wasser, Speiseeis
+ex: Im Winter liegt Eis auf dem See: In winter, there is ice on the lake.
+ex: Ich esse gern Schokoladeneis: I like eating chocolate ice cream.
+
+der Eiskaffee: iced coffee
+Bedeutung: kalter Kaffee; in Deutschland und Österreich oft Kaffee mit Vanilleeis und Schlagsahne.
+Genitiv: des Eiskaffees
+Plural: die Eiskaffees
+Kollokation: einen Eiskaffee trinken
+Synonyme: Iced Coffee, kalter Kaffee
+ex: Ich möchte einen Eiskaffee bestellen: I would like to order an iced coffee.
+ex: Im Sommer trinke ich gern Eiskaffee: I like drinking iced coffee in summer.
+
+der Selbstmord [ˈzɛlpstˌmɔʁt]: suicide
+Bedeutung: absichtliche Beendigung des eigenen Lebens.
+Genitiv: des Selbstmordes / des Selbstmords
+Plural: die Selbstmorde
+Kollokation: Selbstmord begehen
+Synonyme: Suizid, Selbsttötung, Freitod
+ex: Die Polizei untersucht den Selbstmord des Mannes: The police are investigating the man’s suicide.
+ex: Der Roman handelt von einem Selbstmord: The novel is about a suicide.
+Hinweis: „Suizid“ gilt heute häufig als neutraler und fachsprachlicher als „Selbstmord“.
+
+Kairo [ˈkaɪ̯ʁo] (Eigenname, Stadt): Cairo
+Bedeutung: die Hauptstadt von Ägypten.
+Genitiv: Kairos
+Plural: kein Plural
+Kollokation: nach Kairo reisen
+Synonyme: keine
+ex: Kairo liegt am Nil: Cairo is located on the Nile.
+ex: Ich möchte Kairo besuchen: I would like to visit Cairo.
+
+die Luft [lʊft]: air
+Bedeutung: das unsichtbare Gasgemisch, das die Erde umgibt und das Menschen und Tiere zum Atmen brauchen.
+Genitiv: der Luft
+Plural: kein Plural; selten: die Lüfte
+Kollokation: frische Luft
+Synonyme: Atemluft, Atmosphäre
+ex: Ich brauche frische Luft: I need fresh air.
+ex: Die Luft ist heute sehr kalt: The air is very cold today.
+
+das Kamel [kaˈmeːl]: camel
+Bedeutung: ein großes Wüstentier mit einem oder zwei Höckern, das lange ohne Wasser auskommen kann.
+Genitiv: des Kamels
+Plural: die Kamele
+Kollokation: auf einem Kamel reiten
+Synonyme: Wüstenschiff, Höckertier
+ex: Das Kamel lebt in trockenen Gebieten: The camel lives in dry regions.
+ex: Wir reiten auf einem Kamel durch die Wüste: We ride a camel through the desert.
+
+das Kapitel [kaˈpiːtl̩]: chapter
+Bedeutung: ein inhaltlich abgegrenzter Abschnitt eines Buches oder Textes.
+Genitiv: des Kapitels
+Plural: die Kapitel
+Kollokation: ein Kapitel lesen
+Synonyme: Abschnitt, Teil, Textabschnitt
+ex: Ich lese jeden Abend ein Kapitel: I read one chapter every evening.
+ex: Das letzte Kapitel ist besonders interessant: The last chapter is especially interesting.
+
+beherrschen [bəˈhɛʁʃn̩] (nicht trennbar, transitiv): to master; to control
+Verwendung: etwas oder jemanden (Akk.) beherrschen
+Bedeutung: über sehr gute Kenntnisse oder Fähigkeiten in etwas verfügen; Macht oder Kontrolle über jemanden oder etwas haben.
+Synonyme: meistern, kontrollieren, können
+ex: Sie beherrscht die deutsche Sprache sehr gut: She has a very good command of the German language.
+ex: Er konnte seine Angst nicht beherrschen: He could not control his fear.
+Präsens: ich beherrsche
+Präteritum: ich beherrschte
+Perfekt: ich habe beherrscht
+Futur I: ich werde beherrschen
+Konjunktiv II: ich beherrschte / ich würde beherrschen
+Konjunktiv I: ich beherrsche
+Imperativ: du: Beherrsch dich! ihr: Beherrscht euch!
+
+der Nil [niːl]: Nile
+Bedeutung: Der längste Fluss Afrikas. Er fließt unter anderem durch Uganda, den Südsudan, den Sudan und Ägypten und mündet ins Mittelmeer.
+Genitiv: des Nils
+Plural: die Nile (selten; normalerweise ohne Plural)
+Synonyme: Nilfluss
+ex: Der Nil fließt durch Ägypten: The Nile flows through Egypt.
+ex: Viele alte Kulturen entstanden am Nil: Many ancient civilizations arose along the Nile.
+
+intim [ɪnˈtiːm] (Adjektiv, Komparativ: intimer, Superlativ: am intimsten): intimate; very private
+Bedeutung: sehr persönlich, privat oder eng; oft in Bezug auf Gefühle, Beziehungen oder körperliche Nähe.
+Synonyme: vertraulich, persönlich, eng
+Attributiv und prädikativ verwendbar
+ex: Sie führten ein intimes Gespräch: They had an intimate conversation.
+ex: Das ist eine sehr intime Frage: That is a very personal question.
+ex: Ihre Beziehung wurde immer intimer: Their relationship became increasingly intimate.
+
+herzlich [ˈhɛʁt͡slɪç] (Adjektiv, Komparativ: herzlicher, Superlativ: am herzlichsten): warm; cordial; sincere
+Bedeutung: freundlich, offen und von echten positiven Gefühlen geprägt.
+Synonyme: warm, freundlich, aufrichtig
+Attributiv und prädikativ verwendbar
+ex: Sie begrüßte mich sehr herzlich: She greeted me very warmly.
+ex: Zwischen ihnen besteht eine herzliche Beziehung: There is a warm relationship between them.
+ex: Seine Worte waren herzlich und ehrlich: His words were warm and sincere.
+
+das Paket [paˈkeːt]: package; parcel
+Bedeutung: ein verpackter Gegenstand oder eine Gruppe zusammengehöriger Dinge, die transportiert, verkauft oder gemeinsam angeboten werden.
+Genitiv: des Pakets
+Plural: die Pakete
+Kollokation: ein Paket schicken
+Synonyme: Päckchen, Sendung, Packung
+ex: Ich habe dir gestern ein Paket geschickt: I sent you a package yesterday.
+ex: Das Paket ist heute angekommen: The parcel arrived today.
+
+das Zimmer [ˈʦɪmɐ]: room
+Bedeutung: ein abgegrenzter Teil eines Gebäudes, der zum Wohnen, Arbeiten oder Schlafen benutzt wird.
+Genitiv: des Zimmers
+Plural: die Zimmer
+Kollokation: ein Zimmer mieten
+Synonyme: Raum, Wohnraum
+ex: Mein Zimmer ist sehr klein: My room is very small.
+ex: Wir haben ein Zimmer im Hotel reserviert: We reserved a room at the hotel.
+
+das Problem [pʁoˈbleːm]: problem; issue
+Bedeutung: eine schwierige Situation oder Frage, für die man eine Lösung finden muss.
+Genitiv: des Problems
+Plural: die Probleme
+Kollokationen: ein Problem haben; ein Problem lösen; ein Problem verursachen
+Synonyme: Schwierigkeit, Hindernis, Frage
+ex: Ich habe ein Problem mit meinem Computer: I have a problem with my computer.
+ex: Wir müssen dieses Problem schnell lösen: We must solve this problem quickly.
+
+meist [maɪ̯st] (Adverb, nicht steigerbar): mostly; usually; most of the time
+Bedeutung: in den meisten Fällen oder während des größten Teils einer Zeit.
+Synonyme: meistens, überwiegend, gewöhnlich
+ex: Ich arbeite meist von zu Hause: I usually work from home.
+ex: Am Wochenende schlafe ich meist länger: On weekends, I usually sleep longer.
+
+die Berufsbezeichnung [bəˈʁuːfsbəˌt͡saɪ̯çnʊŋ]: job title; occupational title
+Bedeutung: offizieller oder üblicher Name eines Berufs oder einer beruflichen Tätigkeit.
+Genitiv: der Berufsbezeichnung
+Plural: die Berufsbezeichnungen
+Kollokation: eine Berufsbezeichnung angeben
+Synonyme: Berufstitel, Tätigkeitsbezeichnung, Stellenbezeichnung
+ex: Bitte geben Sie Ihre Berufsbezeichnung an: Please state your job title.
+ex: „Softwareentwickler“ ist eine Berufsbezeichnung: “Software developer” is a job title.
+
+die Zweckmäßigkeit [ˈt͡svɛkmɛːsɪçkaɪ̯t]: expediency; practicality
+Bedeutung: das, was unter bestimmten Umständen sinnvoll, passend oder nützlich ist.
+Genitiv: der Zweckmäßigkeit
+Plural: meist kein Plural
+Kollokation: aus Zweckmäßigkeit handeln
+Synonyme: Angemessenheit, Nützlichkeit, Vernünftigkeit
+ex: Er hat aus Zweckmäßigkeit geschwiegen: He remained silent out of expediency.
+ex: Wir prüfen die Zweckmäßigkeit dieser Entscheidung: We examine the practicality of this decision.
+
+die Erfindung [ɛɐ̯ˈfɪndʊŋ]: invention
+Bedeutung: etwas Neues, das jemand erfunden hat; das Ergebnis des Erfindens.
+Genitiv: der Erfindung
+Plural: die Erfindungen
+Kollokation: eine Erfindung machen
+Synonyme: Innovation, Neuschöpfung, Entwicklung
+ex: Das Telefon war eine wichtige Erfindung: The telephone was an important invention.
+ex: Diese Erfindung hat das Leben vieler Menschen verändert: This invention changed the lives of many people.
+
+ausdenken [ˈaʊ̯sˌdɛŋkn̩] (trennbar, transitiv, häufig reflexiv): to think up; to invent; to make up
+Verwendung: sich etwas (Akk.) ausdenken
+Bedeutung: etwas Neues durch Nachdenken entwickeln oder erfinden.
+Synonyme: erfinden, entwickeln, ersinnen
+ex: Ich denke mir eine Geschichte aus: I make up a story.
+ex: Wir müssen uns eine Lösung ausdenken: We have to think up a solution.
+Präsens: ich denke mir etwas aus
+Präteritum: ich dachte mir etwas aus
+Perfekt: ich habe mir etwas ausgedacht
+Futur I: ich werde mir etwas ausdenken
+Konjunktiv II: ich dächte mir etwas aus / ich würde mir etwas ausdenken
+Konjunktiv I: ich denke mir etwas aus
+Imperativ: du: Denk dir etwas aus! ihr: Denkt euch etwas aus!
+
+hinreisen [ˈhɪnˌʁaɪ̯zn̩] (trennbar, intransitiv): to travel there; to travel to a place
+Verwendung: zu jemandem / nach einem Ort / in ein Land hinreisen
+Bedeutung: eine Reise zu einem bestimmten Ort machen.
+Synonyme: anreisen, hinfahren, reisen
+ex: Wir reisen morgen nach Berlin hin: We are travelling to Berlin tomorrow.
+ex: Ich möchte im Sommer dorthin reisen: I would like to travel there in summer.
+Präsens: ich reise hin
+Präteritum: ich reiste hin
+Perfekt: ich bin hingereist
+Futur I: ich werde hinreisen
+Konjunktiv II: ich reiste hin / ich würde hinreisen
+Konjunktiv I: ich reise hin
+Imperativ: du: Reise hin! ihr: Reist hin!
+
+das hat was: that has something special; that is appealing
+Bedeutung: etwas ist auf eine besondere Art interessant, attraktiv oder reizvoll, auch wenn man nicht genau sagen kann, warum.
+Synonyme: das ist reizvoll, das hat Charme, das ist besonders
+ex: Die Berge von Peru mit Lamas zu erleben – das hat was: Experiencing the mountains of Peru with llamas has something special.
+ex: In einem kleinen Haus am Meer zu wohnen, das hat was: Living in a small house by the sea has something special.
+
+die Ergänzung [ɛɐ̯ˈɡɛnt͡sʊŋ]: addition; supplement; completion
+Bedeutung: etwas, das zu etwas anderem hinzugefügt wird, um es vollständiger oder besser zu machen.
+Genitiv: der Ergänzung
+Plural: die Ergänzungen
+Kollokation: eine Ergänzung hinzufügen
+Synonyme: Zusatz, Vervollständigung, Erweiterung
+ex: Ich habe noch eine Ergänzung zu deinem Vorschlag: I have one more addition to your suggestion.
+ex: Der Salat ist eine gute Ergänzung zum Hauptgericht: The salad is a good supplement to the main course.
+
+der Tab [tɛp]: tab
+Bedeutung: ein anklickbarer Bereich in einer grafischen Benutzeroberfläche, mit dem man zwischen verschiedenen Seiten oder Bereichen wechselt.
+Genitiv: des Tabs
+Plural: die Tabs
+Kollokation: einen Tab öffnen
+Synonyme: die Registerkarte, der Reiter
+ex: Klicke auf den Tab „Einstellungen“: Click on the “Settings” tab.
+ex: Ich habe mehrere Tabs geöffnet: I have several tabs open.
+
+die Teilnehmenden [ˈtaɪ̯lˌneːməndən] (substantiviertes Partizip I, Plural): participants
+Bedeutung: Personen, die an einer Veranstaltung, einem Kurs, einer Besprechung oder einer Aktivität teilnehmen.
+Genitiv: der Teilnehmenden
+Plural: die Teilnehmenden
+Singular: der Teilnehmende / die Teilnehmende
+Kollokation: die Teilnehmenden begrüßen
+Synonyme: Teilnehmer, Teilnehmerinnen und Teilnehmer, Mitwirkende
+ex: Alle Teilnehmenden erhalten ein Zertifikat: All participants receive a certificate.
+ex: Die Teilnehmenden warten vor dem Raum: The participants are waiting in front of the room.
+
+Wert auf etwas legen: to attach importance to something; to value something
+Bedeutung: etwas als wichtig ansehen und darauf besonders achten.
+Gebrauch: jemand legt Wert auf + Akkusativ
+Synonyme: etwas wichtig finden, etwas schätzen, auf etwas achten
+ex: Ich lege großen Wert auf Pünktlichkeit: I attach great importance to punctuality.
+ex: Die Firma legt Wert auf gute Qualität: The company values good quality.
+Präsens: Ich lege Wert auf …
+Präteritum: Ich legte Wert auf …
+Perfekt: Ich habe Wert auf … gelegt.
+
+meistern [ˈmaɪ̯stɐn] (transitiv): to master; to cope with
+Verwendung: etwas (Akk.) meistern
+Bedeutung: eine schwierige Aufgabe, Situation oder Herausforderung erfolgreich bewältigen.
+Synonyme: bewältigen, schaffen, überwinden
+ex: Sie hat die schwierige Prüfung gemeistert: She mastered the difficult exam.
+ex: Gemeinsam können wir diese Herausforderung meistern: Together we can overcome this challenge.
+Präsens: ich meistere
+Präteritum: ich meisterte
+Perfekt: ich habe gemeistert
+Futur I: ich werde meistern
+Konjunktiv II: ich meisterte / ich würde meistern
+Konjunktiv I: ich meistere
+Imperativ: du: Meistere! ihr: Meistert!
+
+wiederkehrende [ˈviːdɐˌkeːʁəndə] (deklinierte Form von „wiederkehrend“, Adjektiv/Partizip I): recurring; recurrent
+Bedeutung: etwas, das regelmäßig oder mehrfach wieder passiert oder erscheint.
+Synonyme: regelmäßige, wiederholte, sich wiederholende
+Gebrauch: steht vor einem Nomen und erhält eine Adjektivendung
+ex: Das Programm erledigt wiederkehrende Aufgaben automatisch: The program completes recurring tasks automatically.
+ex: Sie leidet unter wiederkehrenden Kopfschmerzen: She suffers from recurrent headaches.
+
+hergehen [ˈheːɐ̯ˌɡeːən] (trennbar, intransitiv): to go on; to proceed; to happen
+Verwendung: irgendwo / irgendwie hergehen; über jemanden hergehen
+Bedeutung: auf eine bestimmte Weise ablaufen oder geschehen; in der Verbindung „über jemanden hergehen“: jemanden angreifen oder heftig kritisieren.
+Synonyme: ablaufen, zugehen, geschehen
+ex: Bei der Feier ging es sehr laut her: The party was very loud and lively.
+ex: So kann es hier nicht weiter hergehen: Things cannot continue like this here.
+ex: Die Hunde gingen auf den Mann los und über ihn her: The dogs attacked the man.
+Präsens: es geht her
+Präteritum: es ging her
+Perfekt: es ist hergegangen
+Futur I: es wird hergehen
+Konjunktiv II: es ginge her / es würde hergehen
+Konjunktiv I: es gehe her
+Imperativ: selten verwendet
+
+der Melder [ˈmɛldɐ]: detector; alarm device; reporting person
+Bedeutung: ein Gerät, das eine Gefahr, einen Zustand oder ein Ereignis erkennt und meldet; auch eine Person, die etwas offiziell meldet.
+Genitiv: des Melders
+Plural: die Melder
+Kollokation: einen Melder installieren
+Synonyme: Detektor, Signalgeber, Sensor
+ex: Der Melder gibt bei Rauch ein Warnsignal: The detector gives a warning signal when it detects smoke.
+ex: Die Identität des Melders bleibt vertraulich: The identity of the reporting person remains confidential.
+
+mitschuldig [ˈmɪtˌʃʊldɪç] (Adjektiv, nicht steigerbar): complicit; jointly guilty
+Bedeutung: gemeinsam mit anderen an einer falschen, schädlichen oder strafbaren Handlung beteiligt und dafür mitverantwortlich.
+Synonyme: mitverantwortlich, beteiligt, verstrickt
+Attributiv und prädikativ verwendbar
+ex: Er machte sich durch sein Schweigen mitschuldig: He became complicit through his silence.
+ex: Die Beamten waren an dem Betrug mitschuldig: The officials were complicit in the fraud.
+
+beliebt [bəˈliːpt] (Adjektiv, Komparativ: beliebter, Superlativ: am beliebtesten): popular; well-liked
+Bedeutung: von vielen Menschen gemocht oder geschätzt.
+Synonyme: populär, angesehen, geschätzt
+Attributiv und prädikativ verwendbar
+ex: Dieses Restaurant ist sehr beliebt: This restaurant is very popular.
+ex: Fußball ist in Deutschland beliebter als Tennis: Football is more popular than tennis.
+ex: Diese Sängerin ist bei Jugendlichen am beliebtesten: This singer is the most popular among young people.
+
+dauerhaft [ˈdaʊ̯ɐhaft] (Adjektiv, Komparativ: dauerhafter, Superlativ: am dauerhaftesten): permanent; lasting
+Bedeutung: für lange Zeit oder für immer bestehend; nicht nur vorübergehend.
+Synonyme: permanent, beständig, anhaltend
+Attributiv und prädikativ verwendbar
+ex: Sie sucht eine dauerhafte Arbeitsstelle: She is looking for a permanent job.
+ex: Diese Lösung ist dauerhafter als die alte: This solution is more lasting than the old one.
+ex: Eine gute Ausbildung hat dauerhafte Vorteile: A good education has lasting benefits.
+
+aber klar doch: of course; absolutely; sure
+Bedeutung: umgangssprachliche und nachdrückliche Zustimmung; bedeutet, dass etwas selbstverständlich oder sicher ist.
+Synonyme: natürlich, selbstverständlich, na klar
+ex: Kommst du morgen mit? – Aber klar doch!: Are you coming with us tomorrow? – Of course!
+ex: Kannst du mir helfen? – Aber klar doch!: Can you help me? – Absolutely!
+
+Bahnen ziehen: to make one’s rounds; to follow a regular path; to orbit
+Bedeutung: sich regelmäßig oder wiederholt auf einer bestimmten Strecke bewegen; meistens sagt man „seine Bahnen ziehen“.
+Synonyme: seine Runden drehen, kreisen, einer festen Strecke folgen
+ex: Der Schwan zieht ruhig seine Bahnen auf dem See: The swan calmly makes its rounds on the lake.
+ex: Der Satellit zieht seine Bahnen um die Erde: The satellite orbits the Earth.
+
+zwischendrin [ˌʦvɪʃn̩ˈdʁɪn] (Adverb, umgangssprachlich, nicht steigerbar): in between; meanwhile
+Bedeutung: zwischen zwei Zeitpunkten, Tätigkeiten oder Dingen; nicht am Anfang oder Ende.
+Synonyme: dazwischen, zwischenzeitlich, mittendrin
+ex: Ich arbeite zwei Stunden und mache zwischendrin eine Pause: I work for two hours and take a break in between.
+ex: Zwischendrin hat er mich angerufen: Meanwhile, he called me.
+
+entspannt treiben: to drift leisurely; to float along in a relaxed way
+Bedeutung: sich ruhig und ohne Anstrengung durch Wasser oder Luft bewegen; häufig in der Form „sich entspannt treiben lassen“.
+Synonyme: ruhig dahintreiben, sich treiben lassen, gemächlich treiben
+ex: Wir ließen uns entspannt auf dem Wasser treiben: We floated leisurely on the water.
+ex: Das Boot trieb entspannt über den See: The boat drifted leisurely across the lake.
+
+final [fiˈnaːl] (Adjektiv, nicht steigerbar): final; concluding
+Bedeutung: endgültig oder am Ende eines Vorgangs stehend. Für das letzte Element einer Reihenfolge benutzt man meistens „letzt-“.
+Synonyme: endgültig, abschließend
+Attributiv und prädikativ verwendbar
+ex: Das ist die finale Entscheidung: This is the final decision.
+ex: Die finale Version ist fertig: The final version is ready.
+In deinem Beispiel sagt man:
+Der letzte Buchstabe von „umbrella“ ist „a“: The final letter of “umbrella” is “a”.
+
+das Komma [ˈkɔma]: comma
+Bedeutung: ein Satzzeichen „,“; es trennt Wörter, Satzteile oder Nebensätze voneinander.
+Genitiv: des Kommas
+Plural: die Kommas
+Kollokation: ein Komma setzen
+Synonyme: Beistrich, Satzzeichen
+ex: Vor „dass“ steht oft ein Komma: A comma often comes before “dass”.
+ex: Du hast das Komma vergessen: You forgot the comma.
+
+unregelmäßig [ˈʊnʁeːɡl̩ˌmɛːsɪç] (Adjektiv, Komparativ: unregelmäßiger, Superlativ: am unregelmäßigsten): irregular
+Bedeutung: nicht nach einer festen Regel, Ordnung oder einem gleichmäßigen Muster verlaufend.
+Synonyme: ungleichmäßig, wechselhaft, regellos
+Attributiv und prädikativ verwendbar
+ex: Er arbeitet zu unregelmäßigen Zeiten: He works at irregular times.
+ex: Dieses Verb ist unregelmäßig: This verb is irregular.
+ex: Ihr Herz schlägt unregelmäßiger als vorher: Her heart beats more irregularly than before.
+
+ausführlich [ˈaʊ̯sˌfyːɐ̯lɪç] (Adjektiv, Komparativ: ausführlicher, Superlativ: am ausführlichsten): detailed; comprehensive; in detail
+Bedeutung: mit vielen Einzelheiten und genauen Informationen; nicht kurz oder oberflächlich.
+Synonyme: detailliert, eingehend, umfassend
+Attributiv und prädikativ verwendbar; auch adverbial verwendbar
+ex: Sie hat eine ausführliche Erklärung gegeben: She gave a detailed explanation.
+ex: Der Bericht ist sehr ausführlich: The report is very detailed.
+ex: Er erklärte das Problem ausführlicher als zuvor: He explained the problem in more detail than before.
+
+benötigen [bəˈnøːtɪɡn̩] (transitiv): to need; to require
+Verwendung: etwas (Akk.) benötigen
+Bedeutung: etwas brauchen, weil es für einen Zweck oder eine Tätigkeit notwendig ist.
+Synonyme: brauchen, erfordern, verlangen
+ex: Ich benötige mehr Zeit für dieses Projekt: I need more time for this project.
+ex: Diese Maschine benötigt regelmäßig Wartung: This machine requires regular maintenance.
+Präsens: ich benötige
+Präteritum: ich benötigte
+Perfekt: ich habe benötigt
+Futur I: ich werde benötigen
+Konjunktiv II: ich benötigte / ich würde benötigen
+Konjunktiv I: ich benötige
+Imperativ: du: Benötige! ihr: Benötigt!
+
+sichergehen [ˈzɪçɐˌɡeːən] (trennbar, intransitiv): to make sure; to ensure
+Verwendung: sichergehen, dass …; um sicherzugehen
+Bedeutung: prüfen oder dafür sorgen, dass etwas wirklich richtig, sicher oder erledigt ist.
+Synonyme: sich vergewissern, überprüfen, sicherstellen
+ex: Ich rufe noch einmal an, um sicherzugehen: I will call again to make sure.
+ex: Wir müssen sichergehen, dass die Tür geschlossen ist: We must make sure that the door is closed.
+Präsens: ich gehe sicher
+Präteritum: ich ging sicher
+Perfekt: ich bin sichergegangen
+Futur I: ich werde sichergehen
+Konjunktiv II: ich ginge sicher / ich würde sichergehen
+Konjunktiv I: ich gehe sicher
+Imperativ: du: Geh sicher! ihr: Geht sicher!
+
+umgehend [ˈʊmɡeːənt] (Adverb, nicht steigerbar): immediately; without delay; promptly
+Bedeutung: sofort oder sehr schnell, ohne unnötige Verzögerung.
+Synonyme: sofort, unverzüglich, unverzüglich
+ex: Bitte antworten Sie umgehend auf diese E-Mail: Please reply to this email immediately.
+ex: Das Problem muss umgehend gelöst werden: The problem must be solved without delay.
+
+der Berater [bəˈʁaːtɐ]: adviser; consultant
+Bedeutung: Eine männliche Person, die anderen Menschen fachliche Informationen oder Empfehlungen gibt.
+Genitiv: des Beraters
+Plural: die Berater
+Kollokation: einen Berater hinzuziehen
+Synonyme: Ratgeber, Fachberater, Consultant
+ex: Mein Berater hilft mir bei der Arbeitssuche: My adviser helps me with my job search.
+ex: Das Unternehmen hat einen externen Berater eingestellt: The company hired an external consultant.
+
+frittieren [fʁɪˈtiːʁən] (regelmäßig, transitiv): to deep-fry
+Verwendung: etwas (Akk.) in heißem Öl frittieren
+Bedeutung: Lebensmittel vollständig in heißem Fett oder Öl garen.
+Synonyme: ausbacken
+ex: Wir frittieren die Pommes in heißem Öl: We deep-fry the fries in hot oil.
+ex: Das Gemüse wird kurz frittiert: The vegetables are briefly deep-fried.
+Präsens: ich frittiere
+Präteritum: ich frittierte
+Perfekt: ich habe frittiert
+Futur I: ich werde frittieren
+Konjunktiv II: ich frittierte / ich würde frittieren
+Konjunktiv I: ich frittiere
+Imperativ: du: Frittier! / Frittiere! ihr: Frittiert!
+
+die Vorstellung [ˈfoːɐ̯ˌʃtɛlʊŋ]: idea; imagination; introduction; presentation
+Bedeutung: ein Bild oder Gedanke, den man im Kopf hat; das Bekanntmachen einer Person; auch die Aufführung eines Theaterstücks oder Films.
+Genitiv: der Vorstellung
+Plural: die Vorstellungen
+Kollokation: eine klare Vorstellung haben
+Synonyme: Idee, Bild, Einführung
+ex: Ich habe eine genaue Vorstellung von meiner Zukunft: I have a precise idea of my future.
+ex: Die Vorstellung beginnt um acht Uhr: The performance begins at eight o’clock.
+
+löschen [ˈlœʃn̩] (transitiv): to erase; to delete; to extinguish
+Verwendung: etwas (Akk.) löschen
+Bedeutung: etwas entfernen, sodass es nicht mehr vorhanden oder sichtbar ist; auch ein Feuer ausmachen.
+Synonyme: entfernen, beseitigen, ausradieren
+ex: Ich lösche die Datei von meinem Computer: I delete the file from my computer.
+ex: Bitte lösche das Wort mit einem Radiergummi: Please erase the word with an eraser.
+Präsens: ich lösche
+Präteritum: ich löschte
+Perfekt: ich habe gelöscht
+Futur I: ich werde löschen
+Konjunktiv II: ich löschte / ich würde löschen
+Konjunktiv I: ich lösche
+Imperativ: du: Lösch! / Lösche! ihr: Löscht!
+
+produzieren [pʁoduˈtsiːʁən] (nicht trennbar, transitiv): to produce; to manufacture
+Verwendung: etwas (Akk.) produzieren
+Bedeutung: Waren, Lebensmittel, Energie oder andere Dinge herstellen oder erzeugen.
+Synonyme: herstellen, erzeugen, anfertigen
+ex: Diese Fabrik produziert Autos: This factory produces cars.
+ex: Das Land produziert viel Strom: The country produces a lot of electricity.
+Präsens: ich produziere
+Präteritum: ich produzierte
+Perfekt: ich habe produziert
+Futur I: ich werde produzieren
+Konjunktiv II: ich produzierte / ich würde produzieren
+Konjunktiv I: ich produziere
+Imperativ: du: Produziere! ihr: Produziert!
+
+der Müllsack: garbage bag; trash bag
+Bedeutung: ein großer Plastikbeutel, in den man Müll wirft.
+Genitiv: des Müllsacks
+Plural: die Müllsäcke
+Kollokation: den Müllsack wegwerfen
+Synonyme: Abfallsack, Müllbeutel
+ex: Ich werfe den Müll in den Müllsack: I throw the garbage into the trash bag.
+ex: Der Müllsack ist voll: The garbage bag is full.
+
+die Faulheit [ˈfaʊ̯lhaɪ̯t]: laziness
+Bedeutung: fehlende Bereitschaft, sich anzustrengen, zu arbeiten oder etwas zu tun.
+Genitiv: der Faulheit
+Plural: kein Plural
+Kollokation: unter Faulheit leiden
+Synonyme: Trägheit, Bequemlichkeit, Untätigkeit
+ex: Ich denke, dass meine Depression der Hauptgrund für meine Faulheit ist: I think my depression is the main reason for my laziness.
+ex: Seine Faulheit verursacht viele Probleme: His laziness causes many problems.
+
+die Antwort [ˈantvɔʁt]: answer; reply; response
+Bedeutung: eine mündliche oder schriftliche Reaktion auf eine Frage, Nachricht oder Aufforderung.
+Genitiv: der Antwort
+Plural: die Antworten
+Kollokation: eine Antwort geben
+Synonyme: Erwiderung, Reaktion, Rückmeldung
+ex: Ich kenne die Antwort auf diese Frage: I know the answer to this question.
+ex: Sie wartet noch auf seine Antwort: She is still waiting for his reply.
+
+entsprechend [ɛntˈʃpʁɛçn̩t] (Adjektiv, meist nicht gesteigert): corresponding; appropriate
+Bedeutung: zu etwas passend oder mit etwas übereinstimmend.
+Synonyme: passend, angemessen, geeignet
+Attributiv und prädikativ verwendbar
+ex: Wir müssen entsprechende Maßnahmen ergreifen: We must take appropriate measures.
+ex: Seine Leistung war den Erwartungen entsprechend: His performance corresponded to the expectations.
+entsprechend [ɛntˈʃpʁɛçn̩t] (Präposition + Dativ): according to; in accordance with
+Bedeutung: nach den Angaben, Regeln oder Bedingungen von etwas.
+Synonyme: gemäß, laut, nach
+Gebrauch: entsprechend + Dativ; kann vor oder nach dem Nomen stehen
+ex: Entsprechend dem Vertrag muss er bezahlen: According to the contract, he must pay.
+ex: Wir haben den Regeln entsprechend gehandelt: We acted in accordance with the rules.
+
+bisherig [ˈbɪsˌheːʁɪç] (Adjektiv, meist nicht gesteigert; „bisherigen“ ist eine deklinierte Form): previous; so far; up to now
+Bedeutung: bis zum jetzigen Zeitpunkt vorhanden, gültig oder geschehen.
+Synonyme: bisherig, bisher vorhanden, vorangegangen
+Attributiv verwendbar
+ex: Die bisherigen Ergebnisse sind gut: The results so far are good.
+ex: Er berichtet über seine bisherigen Erfahrungen: He reports on his previous experiences.
+Form: bisherigen = deklinierte Form von bisherig, zum Beispiel „die bisherigen Ergebnisse“, „mit den bisherigen Methoden“
+
+der Onkel [ˈɔŋkl̩]: uncle
+Bedeutung: der Bruder der Mutter oder des Vaters; auch der Ehemann einer Tante.
+Genitiv: des Onkels
+Plural: die Onkel
+Kollokation: seinen Onkel besuchen
+Synonyme: Mutterbruder, Vaterbruder, Verwandter
+ex: Mein Onkel lebt in Berlin: My uncle lives in Berlin.
+ex: Ich besuche meinen Onkel am Wochenende: I am visiting my uncle at the weekend.
+
+der Wagen [ˈvaːɡn̩]: car; vehicle; cart
+Bedeutung: ein Fahrzeug, besonders ein Auto; auch ein Fahrzeug zum Transportieren von Personen oder Gegenständen.
+Genitiv: des Wagens
+Plural: die Wagen
+Kollokation: einen Wagen fahren
+Synonyme: Auto, Fahrzeug, Karren
+ex: Mein Wagen steht vor dem Haus: My car is parked in front of the house.
+ex: Wir laden die Kisten auf den Wagen: We load the boxes onto the cart.
+
+bezeichnen [bəˈtsaɪ̯çnən] (nicht trennbar, transitiv): to call; to describe; to designate; to denote
+Verwendung: jemanden/etwas (Akk.) als etwas (Akk.) bezeichnen
+Bedeutung: einer Person oder Sache einen bestimmten Namen oder eine bestimmte Beschreibung geben; etwas ausdrücken oder bedeuten.
+Synonyme: nennen, benennen, beschreiben
+ex: Man bezeichnet diese Zeitform als Präteritum: This tense is called the preterite.
+ex: Das Wort „Auto“ bezeichnet ein Fahrzeug: The word “car” denotes a vehicle.
+Präsens: ich bezeichne
+Präteritum: ich bezeichnete
+Perfekt: ich habe bezeichnet
+Futur I: ich werde bezeichnen
+Konjunktiv II: ich bezeichnete / ich würde bezeichnen
+Konjunktiv I: ich bezeichne
+Imperativ: du: Bezeichne! ihr: Bezeichnet!
+
+die Evidenz [eviˈdɛnt͡s]: evidence
+Bedeutung: wissenschaftlich oder durch Tatsachen belegte Grundlage für eine Aussage; auch die eindeutige Erkennbarkeit einer Sache.
+Genitiv: der Evidenz
+Plural: die Evidenzen (selten)
+Kollokation: wissenschaftliche Evidenz
+Synonyme: Beleg, Nachweis, Beweiskraft
+ex: Für diese Behandlung gibt es wissenschaftliche Evidenz: There is scientific evidence for this treatment.
+ex: Die Evidenz reicht für eine sichere Aussage nicht aus: The evidence is not sufficient for a definite conclusion.
+Hinweis: Das englische Wort „evidence“ wird im allgemeinen Deutsch oft mit „Beweis“, „Belege“ oder „Hinweise“ übersetzt. „Evidenz“ wird besonders in wissenschaftlichen und medizinischen Texten verwendet.
+
+evident [eviˈdɛnt] (Adjektiv, Komparativ: evidenter, Superlativ: am evidentesten): evident; obvious; apparent
+Bedeutung: klar erkennbar und nicht zu bezweifeln; offensichtlich.
+Synonyme: offensichtlich, offenkundig, eindeutig
+Attributiv und prädikativ verwendbar
+ex: Der Unterschied zwischen den beiden Ergebnissen ist evident: The difference between the two results is evident.
+ex: Es gibt einen evidenten Zusammenhang zwischen den Problemen: There is an obvious connection between the problems.

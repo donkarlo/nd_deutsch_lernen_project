@@ -1,0 +1,385 @@
+% Grammatische Erklärung zum Wort "als" nach der Erklärungsvorlage
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,ngerman]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{5pt}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Die grammatischen Funktionen von \glqq als\grqq}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+    \section{Überblick}
+
+        \begin{grammarentry}{als}{mehrere grammatische Funktionen}
+            \GermanText{Das Wort \textbf{als} hat nicht nur eine einzige grammatische Funktion. Es kann eine temporale unterordnende Konjunktion, eine Vergleichspartikel oder ein Ausdruck für eine Rolle, Funktion oder Eigenschaft sein. Außerdem ist es Bestandteil fester Strukturen wie \textbf{als ob}, \textbf{mehr als} und \textbf{anders als}.}
+            \EnglishText{The word \textbf{als} does not have only one grammatical function. It can be a temporal subordinating conjunction, a comparative particle, or an expression of a role, function, or quality. It is also part of fixed structures such as \textbf{als ob}, \textbf{mehr als}, and \textbf{anders als}.}
+        \end{grammarentry}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{3.5cm}|p{5.6cm}|p{6.0cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Funktion} &
+            \color{white}\textbf{Grundidee} &
+            \color{white}\textbf{Beispiel} \\
+            Temporale Konjunktion & einmalige Situation oder abgeschlossener Zeitraum in der Vergangenheit & Als ich jung war, lebte ich im Iran. \\
+            Vergleichspartikel & Ungleichheit nach einem Komparativ & Mein Bruder ist größer als ich. \\
+            Rolle oder Funktion & in der Eigenschaft oder Funktion von & Sie arbeitet als Ärztin. \\
+            Irrealer Vergleich & Bestandteil von \textbf{als ob} oder verkürztem \textbf{als} & Er tut so, als ob er krank wäre. \\
+        \end{longtable}
+
+    \section{Temporale Konjunktion: einmalige Vergangenheit}
+
+        \begin{grammarentry}{als + Nebensatz}{unterordnende Konjunktion}
+            \GermanText{Als temporale Konjunktion leitet \textbf{als} einen Nebensatz ein. Das konjugierte Verb steht deshalb am Ende des Nebensatzes.}
+            \EnglishText{As a temporal conjunction, \textbf{als} introduces a subordinate clause. Therefore, the conjugated verb stands at the end of the subordinate clause.}
+
+            \GermanText{Diese Verwendung bezeichnet normalerweise ein einmaliges Ereignis oder einen als abgeschlossen betrachteten Zeitraum in der Vergangenheit.}
+            \EnglishText{This use normally refers to a one-time event or to a period viewed as completed in the past.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Als ich gestern nach Hause kam, war niemand da.}{When I came home yesterday, nobody was there.}
+                \ExampleItem{Ich lernte viele neue Menschen kennen, als ich nach Wien zog.}{I met many new people when I moved to Vienna.}
+                \ExampleItem{Als ich ein Kind war, spielte ich oft im Garten.}{When I was a child, I often played in the garden.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Wortstellung}{Nebensatz zuerst oder später}
+            \GermanText{Steht der \textbf{als}-Nebensatz am Anfang, besetzt er die erste Position des Gesamtsatzes. Im folgenden Hauptsatz steht daher das konjugierte Verb direkt nach dem Komma.}
+            \EnglishText{When the \textbf{als} subordinate clause comes first, it occupies the first position of the whole sentence. Therefore, the conjugated verb in the following main clause comes directly after the comma.}
+
+            \GermanText{Struktur: \textbf{Als + Subjekt + ... + Verb, Verb + Subjekt + ...}}
+            \EnglishText{Structure: \textbf{Als + subject + ... + verb, verb + subject + ...}}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Als ich nach Hause kam, war meine Schwester schon dort.}{When I came home, my sister was already there.}
+                \ExampleItem{Meine Schwester war schon dort, als ich nach Hause kam.}{My sister was already there when I came home.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Unterschied zwischen \glqq als\grqq{} und \glqq wenn\grqq}
+
+        \begin{grammarentry}{Grundregel}{Zeitangaben}
+            \GermanText{Für ein einmaliges Ereignis oder einen abgeschlossenen Zeitraum in der Vergangenheit verwendet man normalerweise \textbf{als}. Für wiederholte Situationen in der Vergangenheit sowie für Gegenwart und Zukunft verwendet man normalerweise \textbf{wenn}.}
+            \EnglishText{For a one-time event or a completed period in the past, German normally uses \textbf{als}. For repeated situations in the past and for the present and future, German normally uses \textbf{wenn}.}
+        \end{grammarentry}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{4.0cm}|p{3.0cm}|p{8.0cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Situation} &
+            \color{white}\textbf{Wort} &
+            \color{white}\textbf{Beispiel} \\
+            einmal in der Vergangenheit & als & Als ich gestern ankam, war die Tür geschlossen. \\
+            abgeschlossener Zeitraum in der Vergangenheit & als & Als ich in Graz lebte, fuhr ich oft mit dem Fahrrad. \\
+            wiederholt in der Vergangenheit & wenn / immer wenn & Immer wenn ich ihn sah, grüßte er mich. \\
+            Gegenwart & wenn & Wenn ich müde bin, trinke ich Kaffee. \\
+            Zukunft & wenn & Wenn ich morgen Zeit habe, rufe ich dich an. \\
+            Bedingung & wenn & Wenn du lernst, bestehst du die Prüfung. \\
+        \end{longtable}
+
+        \begin{grammarentry}{Wichtiger Hinweis}{lange Zeiträume}
+            \GermanText{Ein Zeitraum muss nicht kurz sein, damit \textbf{als} möglich ist. Entscheidend ist, dass der Zeitraum in der Vergangenheit liegt und als abgeschlossen betrachtet wird.}
+            \EnglishText{A period does not have to be short for \textbf{als} to be possible. What matters is that the period is in the past and is viewed as completed.}
+        \end{grammarentry}
+
+    \section{Vergleichspartikel nach dem Komparativ}
+
+        \begin{grammarentry}{Komparativ + als}{Ungleichheit}
+            \GermanText{Nach einem Komparativ verwendet man \textbf{als}, wenn zwei Personen, Sachen, Mengen oder Situationen nicht gleich sind.}
+            \EnglishText{After a comparative, German uses \textbf{als} when two people, things, quantities, or situations are not equal.}
+
+            \GermanText{Typische Struktur: \textbf{größer als}, \textbf{besser als}, \textbf{mehr als}, \textbf{weniger als}, \textbf{anders als}.}
+            \EnglishText{Typical structure: \textbf{bigger than}, \textbf{better than}, \textbf{more than}, \textbf{less than}, \textbf{different from}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Mein Bruder ist größer als ich.}{My brother is taller than I am.}
+                \ExampleItem{Diese Aufgabe ist schwieriger als die vorige.}{This task is more difficult than the previous one.}
+                \ExampleItem{Sie spricht besser Deutsch als früher.}{She speaks German better than before.}
+                \ExampleItem{Mehr als hundert Personen nahmen teil.}{More than one hundred people took part.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{als oder wie?}{Ungleichheit und Gleichheit}
+            \GermanText{Bei Ungleichheit steht \textbf{Komparativ + als}. Bei Gleichheit steht \textbf{so / genauso + Grundform + wie}.}
+            \EnglishText{For inequality, use \textbf{comparative + als}. For equality, use \textbf{so / genauso + basic adjective form + wie}.}
+        \end{grammarentry}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{3.2cm}|p{5.2cm}|p{6.7cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Bedeutung} &
+            \color{white}\textbf{Struktur} &
+            \color{white}\textbf{Beispiel} \\
+            Ungleichheit & Komparativ + als & Er ist größer als ich. \\
+            Gleichheit & so + Adjektiv + wie & Er ist so groß wie ich. \\
+            genaue Gleichheit & genauso + Adjektiv + wie & Er ist genauso groß wie ich. \\
+        \end{longtable}
+
+        \begin{grammarentry}{Standardsprachliche Form}{häufiger Fehler}
+            \GermanText{In der Standardsprache sagt man \textbf{größer als}, nicht \textbf{größer wie} und nicht \textbf{größer als wie}.}
+            \EnglishText{In standard German, say \textbf{größer als}, not \textbf{größer wie} and not \textbf{größer als wie}.}
+        \end{grammarentry}
+
+    \section{Kasus bei Vergleichen mit \glqq als\grqq}
+
+        \begin{grammarentry}{als regiert keinen Kasus}{gedachten Satz ergänzen}
+            \GermanText{Die Vergleichspartikel \textbf{als} bestimmt den Kasus nicht selbst. Der Kasus ergibt sich aus der grammatischen Funktion im vollständig gedachten Vergleichssatz.}
+            \EnglishText{The comparative particle \textbf{als} does not govern a case by itself. The case results from the grammatical function in the fully understood comparison clause.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Er ist größer als ich.}{He is taller than I am. The understood form is: \glqq als ich bin\grqq; therefore \textbf{ich} is nominative.}
+                \ExampleItem{Sie mag ihn mehr als mich.}{She likes him more than she likes me. The understood form is: \glqq als sie mich mag\grqq; therefore \textbf{mich} is accusative.}
+                \ExampleItem{Sie mag ihn mehr als ich.}{She likes him more than I like him. The understood form is: \glqq als ich ihn mag\grqq; therefore \textbf{ich} is nominative.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Bedeutungsunterschied}{Kasus verändert die Aussage}
+            \GermanText{Die Sätze \glqq Sie mag ihn mehr als mich\grqq{} und \glqq Sie mag ihn mehr als ich\grqq{} haben verschiedene Bedeutungen. Deshalb darf man den Kasus nicht nur nach dem Wort \textbf{als} bestimmen.}
+            \EnglishText{The sentences ``She likes him more than me'' and ``She likes him more than I do'' have different meanings. Therefore, the case cannot be determined merely from the word \textbf{als}.}
+        \end{grammarentry}
+
+    \section{Rolle, Beruf oder Funktion}
+
+        \begin{grammarentry}{als + Nomen}{in der Eigenschaft von}
+            \GermanText{Mit \textbf{als} kann man ausdrücken, welche Rolle, welchen Beruf, welche Funktion oder welche Verwendung eine Person oder Sache hat.}
+            \EnglishText{With \textbf{als}, one can express the role, profession, function, or use that a person or thing has.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Sie arbeitet als Ärztin.}{She works as a doctor.}
+                \ExampleItem{Er wurde als Übersetzer eingestellt.}{He was hired as a translator.}
+                \ExampleItem{Ich benutze mein Handy als Kamera.}{I use my phone as a camera.}
+                \ExampleItem{Wir betrachten ihn als Experten.}{We regard him as an expert.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Artikelgebrauch}{Berufsbezeichnungen}
+            \GermanText{Bei einer allgemeinen Berufs- oder Rollenbezeichnung steht nach \textbf{als} häufig kein Artikel: \textbf{als Lehrer}, \textbf{als Ärztin}, \textbf{als Mitarbeiter}. Ein Artikel oder Begleiter steht jedoch, wenn das Nomen näher bestimmt wird: \textbf{als erfahrener Lehrer}, \textbf{als der Leiter der Abteilung}, \textbf{als mein Berater}.}
+            \EnglishText{With a general profession or role, German often uses no article after \textbf{als}: \textbf{als Lehrer}, \textbf{als Ärztin}, \textbf{als Mitarbeiter}. An article or determiner is used when the noun is specified more closely: \textbf{als erfahrener Lehrer}, \textbf{als der Leiter der Abteilung}, \textbf{als mein Berater}.}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Kasusangleichung}{Bezug auf ein Satzglied}
+            \GermanText{Auch in dieser Verwendung regiert \textbf{als} keinen eigenen Kasus. Die Wortgruppe nach \textbf{als} richtet sich normalerweise nach dem Bezugswort.}
+            \EnglishText{In this use as well, \textbf{als} does not govern its own case. The phrase after \textbf{als} normally agrees with the word it refers to.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Er arbeitet als erfahrener Lehrer.}{He works as an experienced teacher. Nominative, referring to \textbf{er}.}
+                \ExampleItem{Ich kenne ihn als erfahrenen Lehrer.}{I know him as an experienced teacher. Accusative, referring to \textbf{ihn}.}
+                \ExampleItem{Mit ihm als meinem Lehrer konnte ich viel lernen.}{With him as my teacher, I was able to learn a lot. Dative, referring to \textbf{ihm}.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Unterschied zwischen \glqq als\grqq{} und \glqq wie\grqq{} bei Rollen}
+
+        \begin{grammarentry}{wirkliche Rolle oder Ähnlichkeit}{Bedeutungsunterschied}
+            \GermanText{\textbf{Als} bezeichnet eine wirkliche Rolle oder Funktion. \textbf{Wie} bezeichnet dagegen eine Ähnlichkeit oder Art und Weise.}
+            \EnglishText{\textbf{Als} denotes an actual role or function. \textbf{Wie}, by contrast, denotes similarity or manner.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Er arbeitet als Arzt.}{He works as a doctor; being a doctor is his profession or role.}
+                \ExampleItem{Er arbeitet wie ein Arzt.}{He works like a doctor; he works in a doctor's manner, but he may not actually be one.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Irrealer Vergleich mit \glqq als ob\grqq}
+
+        \begin{grammarentry}{als ob + Nebensatz}{scheinbare oder irreale Situation}
+            \GermanText{Die Verbindung \textbf{als ob} leitet einen Vergleichssatz ein. Sie drückt häufig aus, dass etwas nur so erscheint, aber möglicherweise nicht wirklich so ist. Das Verb steht am Ende. Häufig verwendet man den Konjunktiv II.}
+            \EnglishText{The expression \textbf{als ob} introduces a comparative clause. It often expresses that something only appears to be the case but may not actually be so. The verb stands at the end. The subjunctive II is often used.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Er tut so, als ob er krank wäre.}{He acts as if he were ill.}
+                \ExampleItem{Sie spricht, als ob sie alles wüsste.}{She speaks as if she knew everything.}
+                \ExampleItem{Es sieht aus, als ob es regnen würde.}{It looks as if it were going to rain.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Verkürzte Form ohne \glqq ob\grqq}{Verb direkt nach als}
+            \GermanText{Man kann \textbf{ob} weglassen. Dann steht das konjugierte Verb direkt nach \textbf{als}: \textbf{als wäre}, \textbf{als hätte}, \textbf{als wüsste}.}
+            \EnglishText{The word \textbf{ob} can be omitted. Then the conjugated verb comes directly after \textbf{als}: \textbf{als wäre}, \textbf{als hätte}, \textbf{als wüsste}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Er tut so, als wäre er krank.}{He acts as if he were ill.}
+                \ExampleItem{Sie spricht, als wüsste sie alles.}{She speaks as if she knew everything.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Vergleichssätze mit vollständigem Nebensatz}
+
+        \begin{grammarentry}{als + Nebensatz}{Verb am Ende}
+            \GermanText{Nach \textbf{als} kann auch ein vollständiger Vergleichssatz stehen. In diesem Fall ist \textbf{als} eine unterordnende Konjunktion, und das konjugierte Verb steht am Ende.}
+            \EnglishText{A complete comparative subordinate clause can also follow \textbf{als}. In this case, \textbf{als} is a subordinating conjunction, and the conjugated verb stands at the end.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Die Prüfung war leichter, als ich erwartet hatte.}{The exam was easier than I had expected.}
+                \ExampleItem{Er kam später, als wir vereinbart hatten.}{He arrived later than we had agreed.}
+                \ExampleItem{Sie verdient mehr, als ich gedacht habe.}{She earns more than I thought.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Feste Verbindungen mit \glqq als\grqq}
+
+        \begin{grammarentry}{häufige Ausdrücke}{Bedeutung aus der Verbindung}
+            \GermanText{\textbf{als} erscheint in mehreren festen oder häufigen Verbindungen. Die genaue Bedeutung ergibt sich jeweils aus der gesamten Struktur.}
+            \EnglishText{\textbf{als} appears in several fixed or common expressions. The exact meaning depends on the whole structure.}
+        \end{grammarentry}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{4.0cm}|p{5.5cm}|p{5.6cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Verbindung} &
+            \color{white}\textbf{Bedeutung} &
+            \color{white}\textbf{Beispiel} \\
+            mehr als & eine größere Menge oder ein stärkerer Grad & Mehr als zehn Personen kamen. \\
+            weniger als & eine kleinere Menge oder ein geringerer Grad & Das dauert weniger als eine Stunde. \\
+            anders als & nicht gleich, verschieden von & Die Wirklichkeit war anders als erwartet. \\
+            nichts anderes als & genau dies und nichts Weiteres & Das war nichts anderes als eine Ausrede. \\
+            sowohl ... als auch & beide genannten Elemente & Sie spricht sowohl Deutsch als auch Englisch. \\
+            als Erstes / als Nächstes & Reihenfolge & Als Erstes müssen wir das Problem prüfen. \\
+        \end{longtable}
+
+    \section{Kommasetzung}
+
+        \begin{grammarentry}{Komma bei Nebensätzen}{temporale und vergleichende Nebensätze}
+            \GermanText{Ein \textbf{als}-Nebensatz wird durch ein Komma vom Hauptsatz getrennt. Das gilt für temporale Nebensätze, vollständige Vergleichssätze und Sätze mit \textbf{als ob}.}
+            \EnglishText{An \textbf{als} subordinate clause is separated from the main clause by a comma. This applies to temporal clauses, complete comparative clauses, and clauses with \textbf{als ob}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Als ich ankam, war er schon weg.}{When I arrived, he had already left.}
+                \ExampleItem{Die Aufgabe war schwerer, als ich gedacht hatte.}{The task was more difficult than I had thought.}
+                \ExampleItem{Er tut so, als ob er mich nicht kennen würde.}{He acts as if he did not know me.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Kein Komma bei einfachen Wortgruppen}{kein vollständiger Nebensatz}
+            \GermanText{Vor einer einfachen Vergleichs- oder Rollenangabe ohne vollständigen Nebensatz steht normalerweise kein Komma.}
+            \EnglishText{Normally, no comma is used before a simple comparison or role phrase that is not a complete subordinate clause.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Er ist größer als ich.}{He is taller than I am.}
+                \ExampleItem{Sie arbeitet als Ärztin.}{She works as a doctor.}
+                \ExampleItem{Ich benutze das Handy als Kamera.}{I use the phone as a camera.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Häufige Fehler}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{6.1cm}|p{8.9cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Falsch oder problematisch} &
+            \color{white}\textbf{Richtig und Erklärung} \\
+            Wenn ich gestern ankam, war er weg. & Als ich gestern ankam, war er weg. Einmaliges Ereignis in der Vergangenheit. \\
+            Er ist größer wie ich. & Er ist größer als ich. Nach dem Komparativ steht in der Standardsprache \textbf{als}. \\
+            Er ist so groß als ich. & Er ist so groß wie ich. Bei Gleichheit steht \textbf{wie}. \\
+            Sie arbeitet wie Ärztin. & Sie arbeitet als Ärztin. Es geht um ihre wirkliche berufliche Rolle. \\
+            Als ich kam, ich sah ihn. & Als ich kam, sah ich ihn. Nach dem vorangestellten Nebensatz folgt im Hauptsatz zuerst das Verb. \\
+            Er tut so, als ob er ist krank. & Er tut so, als ob er krank wäre. Im Nebensatz steht das Verb am Ende; häufig steht Konjunktiv II. \\
+        \end{longtable}
+
+    \section{Entscheidungshilfe}
+
+        \begin{grammarentry}{Welche Verwendung brauche ich?}{Schritt für Schritt}
+            \GermanText{Frage 1: Geht es um ein einmaliges Ereignis oder einen abgeschlossenen Zeitraum in der Vergangenheit? Dann verwendet man \textbf{als} mit einem Nebensatz.}
+            \EnglishText{Question 1: Is it about a one-time event or a completed period in the past? Then use \textbf{als} with a subordinate clause.}
+
+            \GermanText{Frage 2: Steht ein Komparativ wie \textbf{größer}, \textbf{besser} oder \textbf{mehr}? Dann verwendet man normalerweise \textbf{als}.}
+            \EnglishText{Question 2: Is there a comparative such as \textbf{größer}, \textbf{besser}, or \textbf{mehr}? Then normally use \textbf{als}.}
+
+            \GermanText{Frage 3: Wird eine wirkliche Rolle, ein Beruf oder eine Funktion genannt? Dann verwendet man \textbf{als}.}
+            \EnglishText{Question 3: Is an actual role, profession, or function being named? Then use \textbf{als}.}
+
+            \GermanText{Frage 4: Wird nur eine Ähnlichkeit beschrieben? Dann verwendet man häufig \textbf{wie}.}
+            \EnglishText{Question 4: Is only a similarity being described? Then German often uses \textbf{wie}.}
+        \end{grammarentry}
+
+    \section{Zusammenfassung}
+
+        \begin{grammarentry}{Merksätze}{kurz und wichtig}
+            \GermanText{\textbf{Als + Nebensatz} bezeichnet normalerweise ein einmaliges Ereignis oder einen abgeschlossenen Zeitraum in der Vergangenheit.}
+            \EnglishText{\textbf{Als + subordinate clause} normally refers to a one-time event or a completed period in the past.}
+
+            \GermanText{\textbf{Komparativ + als} bezeichnet Ungleichheit: \textbf{größer als}. \textbf{So + Grundform + wie} bezeichnet Gleichheit: \textbf{so groß wie}.}
+            \EnglishText{\textbf{Comparative + als} expresses inequality: \textbf{größer als}. \textbf{So + basic form + wie} expresses equality: \textbf{so groß wie}.}
+
+            \GermanText{\textbf{Als + Nomen} kann eine wirkliche Rolle oder Funktion bezeichnen: \textbf{als Lehrer arbeiten}.}
+            \EnglishText{\textbf{Als + noun} can denote an actual role or function: \textbf{to work as a teacher}.}
+
+            \GermanText{\textbf{Als} regiert bei Vergleichen und Rollenangaben keinen eigenen Kasus. Der Kasus ergibt sich aus der Funktion im Satz.}
+            \EnglishText{In comparisons and role phrases, \textbf{als} does not govern its own case. The case follows from the function in the sentence.}
+        \end{grammarentry}
+
+\end{document}
