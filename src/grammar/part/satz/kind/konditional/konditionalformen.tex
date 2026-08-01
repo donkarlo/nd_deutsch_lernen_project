@@ -1,0 +1,439 @@
+% Erklärung zu den Konditionalformen nach der Projektvorlage
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[table]{xcolor}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{5pt}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Konditionalsätze und Konditionalformen}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+    \section{Grundidee}
+
+        \begin{grammarentry}{Bedingung und Folge}{wenn A, dann B}
+            \GermanText{Ein Konditionalsatz beschreibt eine \textbf{Bedingung} und ihre mögliche oder gedachte \textbf{Folge}. Die typische Struktur ist: \textbf{Wenn A gilt, dann passiert B}.}
+            \EnglishText{A conditional sentence describes a \textbf{condition} and its possible or imagined \textbf{result}. The typical structure is: \textbf{If A is true, then B happens}.}
+
+            \GermanText{Deutsch hat keine einzelne Verbzeit, die genau dem englischen Namen \glqq conditional tense\grqq{} entspricht. Bedingungen werden mit dem \textbf{Indikativ}, dem \textbf{Konjunktiv II} und verschiedenen Zeitformen ausgedrückt.}
+            \EnglishText{German does not have one single verb tense that corresponds exactly to the English term ``conditional tense.'' Conditions are expressed with the \textbf{indicative}, the \textbf{subjunctive II}, and different tenses.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Wenn es regnet, bleibe ich zu Hause.}{If it rains, I stay at home.}
+                \ExampleItem{Wenn ich mehr Zeit hätte, würde ich mehr lesen.}{If I had more time, I would read more.}
+                \ExampleItem{Wenn ich früher gekommen wäre, hätte ich ihn gesehen.}{If I had arrived earlier, I would have seen him.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Überblick über die wichtigsten Formen}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{2.8cm}|p{3.2cm}|p{3.8cm}|p{4.2cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Art} &
+            \color{white}\textbf{Bedeutung} &
+            \color{white}\textbf{Typische Form} &
+            \color{white}\textbf{Beispiel / Example} \\
+            Reale Bedingung & möglich, allgemein oder wahrscheinlich & Indikativ & Wenn ich Zeit habe, komme ich. / If I have time, I will come. \\
+            Potenzielle Bedingung & möglich, aber unsicher oder nur vorgestellt & Konjunktiv II Gegenwart & Wenn ich Zeit hätte, käme ich. / If I had time, I would come. \\
+            Irreale Gegenwart & gegenwärtig nicht wirklich & Konjunktiv II Gegenwart & Wenn ich reich wäre, reiste ich viel. / If I were rich, I would travel a lot. \\
+            Irreale Vergangenheit & nicht mehr erfüllbar & Konjunktiv II Vergangenheit & Wenn ich Zeit gehabt hätte, wäre ich gekommen. / If I had had time, I would have come. \\
+            Gemischte Bedingung & Bedingung und Folge liegen in verschiedenen Zeiten & Kombination & Wenn ich besser gelernt hätte, könnte ich es jetzt. / If I had studied better, I could do it now. \\
+        \end{longtable}
+
+    \section{Reale Konditionalsätze}
+
+        \begin{grammarentry}{Indikativ}{wirklich, regelmäßig oder wahrscheinlich}
+            \GermanText{Bei einer realen Bedingung hält der Sprecher die Bedingung für möglich, wahrscheinlich oder allgemein gültig. Man verwendet normalerweise den \textbf{Indikativ}.}
+            \EnglishText{With a real condition, the speaker considers the condition possible, probable, or generally valid. The \textbf{indicative} is normally used.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Wenn Wasser hundert Grad erreicht, kocht es.}{If water reaches one hundred degrees, it boils.}
+                \ExampleItem{Wenn ich morgen Zeit habe, rufe ich dich an.}{If I have time tomorrow, I will call you.}
+                \ExampleItem{Falls der Bus zu spät kommt, nehme ich ein Taxi.}{If the bus is late, I will take a taxi.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Zukunft ohne Futur I}{Präsens ist meistens genug}
+            \GermanText{Auch wenn die Bedingung in der Zukunft liegt, steht im Deutschen oft das Präsens. Eine Zeitangabe wie \textbf{morgen} macht die Zukunft deutlich.}
+            \EnglishText{Even when the condition lies in the future, German often uses the present tense. A time expression such as \textbf{tomorrow} makes the future meaning clear.}
+
+            \GermanText{\glqq Wenn ich morgen Zeit habe, komme ich.\grqq{} ist normaler als \glqq Wenn ich morgen Zeit haben werde, werde ich kommen.\grqq}
+            \EnglishText{``Wenn ich morgen Zeit habe, komme ich.'' is more normal than ``Wenn ich morgen Zeit haben werde, werde ich kommen.''}
+        \end{grammarentry}
+
+    \section{Konjunktiv II der Gegenwart}
+
+        \begin{grammarentry}{Unwirkliche oder gedachte Situation}{Gegenwart und Zukunft}
+            \GermanText{Der Konjunktiv II der Gegenwart beschreibt eine Situation, die nur vorgestellt, unwahrscheinlich, vorsichtig formuliert oder in der Gegenwart nicht wirklich ist. Er kann sich auf die Gegenwart oder Zukunft beziehen.}
+            \EnglishText{The present subjunctive II describes a situation that is merely imagined, unlikely, cautiously expressed, or not real in the present. It can refer to the present or future.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Wenn ich mehr Geld hätte, würde ich ein Auto kaufen.}{If I had more money, I would buy a car.}
+                \ExampleItem{Wenn sie hier wäre, könnten wir beginnen.}{If she were here, we could begin.}
+                \ExampleItem{Wenn das Wetter besser wäre, gingen wir spazieren.}{If the weather were better, we would go for a walk.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Einfache Konjunktiv-II-Form}
+
+        \begin{grammarentry}{Bildung}{Präteritumstamm, oft mit Umlaut}
+            \GermanText{Die einfache Form des Konjunktivs II wird meistens vom Präteritumstamm gebildet. Bei vielen starken Verben kommt ein Umlaut hinzu: war -- wäre, hatte -- hätte, kam -- käme, fand -- fände.}
+            \EnglishText{The simple subjunctive II form is usually built from the preterite stem. With many strong verbs, an umlaut is added: war -- wäre, hatte -- hätte, kam -- käme, fand -- fände.}
+        \end{grammarentry}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{3cm}|p{3cm}|p{3.4cm}|p{4.2cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Infinitiv} &
+            \color{white}\textbf{Präteritum} &
+            \color{white}\textbf{Konjunktiv II} &
+            \color{white}\textbf{English} \\
+            sein & war & wäre & would be / were \\
+            haben & hatte & hätte & would have / had \\
+            werden & wurde & würde & would become / would \\
+            kommen & kam & käme & would come \\
+            gehen & ging & ginge & would go \\
+            finden & fand & fände & would find \\
+            geben & gab & gäbe & would give \\
+            wissen & wusste & wüsste & would know \\
+        \end{longtable}
+
+        \begin{grammarentry}{Endungen}{Beispiel: wäre}
+            \GermanText{Die Endungen lauten normalerweise: ich wäre, du wärest, er wäre, wir wären, ihr wäret, sie wären. Im Alltag hört man bei \textbf{du} und \textbf{ihr} manchmal kürzere Formen, aber die vollständigen Formen sind grammatisch klar.}
+            \EnglishText{The endings are normally: ich wäre, du wärest, er wäre, wir wären, ihr wäret, sie wären. In everyday speech, shorter forms are sometimes heard with \textbf{du} and \textbf{ihr}, but the full forms are grammatically clear.}
+        \end{grammarentry}
+
+    \section{Die würde-Form}
+
+        \begin{grammarentry}{würde + Infinitiv}{häufige Ersatzform}
+            \GermanText{Die Konstruktion \textbf{würde + Infinitiv} ist sehr häufig. Das konjugierte \textbf{würde} steht im Hauptsatz an Position 2; der Infinitiv steht am Ende.}
+            \EnglishText{The construction \textbf{würde + infinitive} is very common. The conjugated \textbf{würde} occupies position 2 in the main clause; the infinitive appears at the end.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich würde mehr lernen, wenn ich mehr Zeit hätte.}{I would study more if I had more time.}
+                \ExampleItem{Wir würden dich besuchen, wenn wir in Wien wären.}{We would visit you if we were in Vienna.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Wann ist würde besonders sinnvoll?}{schwache und ungebräuchliche Formen}
+            \GermanText{Bei schwachen Verben sieht die einfache Konjunktiv-II-Form genauso aus wie das Präteritum: \textbf{ich machte}. Deshalb verwendet man oft \textbf{ich würde machen}, damit die Bedeutung eindeutig ist.}
+            \EnglishText{With weak verbs, the simple subjunctive II form looks the same as the preterite: \textbf{ich machte}. Therefore, \textbf{ich würde machen} is often used so that the meaning is unambiguous.}
+
+            \GermanText{Auch bei seltenen oder altmodisch klingenden Formen ist die würde-Form normalerweise natürlicher: \textbf{ich würde helfen} statt \textbf{ich hülfe}.}
+            \EnglishText{With rare or old-fashioned-sounding forms, the würde-form is also normally more natural: \textbf{ich würde helfen} instead of \textbf{ich hülfe}.}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Wann vermeidet man würde?}{sein, haben und Modalverben}
+            \GermanText{Bei \textbf{sein}, \textbf{haben} und den Modalverben verwendet man normalerweise die einfachen Formen: \textbf{wäre}, \textbf{hätte}, \textbf{könnte}, \textbf{müsste}, \textbf{dürfte}, \textbf{sollte}, \textbf{wollte}.}
+            \EnglishText{With \textbf{sein}, \textbf{haben}, and modal verbs, the simple forms are normally used: \textbf{wäre}, \textbf{hätte}, \textbf{könnte}, \textbf{müsste}, \textbf{dürfte}, \textbf{sollte}, \textbf{wollte}.}
+
+            \GermanText{Unnatürlich: \glqq Wenn ich Zeit haben würde ...\grqq{} Besser: \glqq Wenn ich Zeit hätte ...\grqq}
+            \EnglishText{Unnatural: ``Wenn ich Zeit haben würde ...'' Better: ``Wenn ich Zeit hätte ...''}
+        \end{grammarentry}
+
+    \section{Modalverben im Konjunktiv II}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{2.7cm}|p{3cm}|p{3.4cm}|p{4cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Infinitiv} &
+            \color{white}\textbf{Konjunktiv II} &
+            \color{white}\textbf{Typische Bedeutung} &
+            \color{white}\textbf{English} \\
+            können & könnte & Möglichkeit / Fähigkeit & could / would be able to \\
+            müssen & müsste & gedachte Notwendigkeit & would have to \\
+            dürfen & dürfte & Erlaubnis oder Vermutung & would be allowed to / may well \\
+            sollen & sollte & Rat oder erwartete Handlung & should \\
+            wollen & wollte & gedachter Wunsch oder Wille & would want to \\
+            mögen & möchte & höflicher Wunsch & would like \\
+        \end{longtable}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Wenn ich ein Auto hätte, könnte ich öfter reisen.}{If I had a car, I could travel more often.}
+                \ExampleItem{Du solltest früher schlafen gehen.}{You should go to sleep earlier.}
+                \ExampleItem{Ich möchte einen Kaffee.}{I would like a coffee.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Konjunktiv II der Vergangenheit}
+
+        \begin{grammarentry}{Irreale Vergangenheit}{nicht mehr erfüllbar}
+            \GermanText{Der Konjunktiv II der Vergangenheit beschreibt eine vergangene Bedingung, die nicht erfüllt wurde, und eine Folge, die deshalb nicht eingetreten ist.}
+            \EnglishText{The past subjunctive II describes a past condition that was not fulfilled and a result that therefore did not occur.}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Bildung}{hätte oder wäre + Partizip II}
+            \GermanText{Die Form wird mit \textbf{hätte/wäre + Partizip II} gebildet. Man wählt \textbf{hätte} oder \textbf{wäre} nach denselben Regeln wie im Perfekt.}
+            \EnglishText{The form is built with \textbf{hätte/wäre + past participle}. \textbf{hätte} or \textbf{wäre} is selected according to the same rules as in the present perfect.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Wenn ich früher losgegangen wäre, hätte ich den Zug erreicht.}{If I had left earlier, I would have caught the train.}
+                \ExampleItem{Wenn sie mehr gelernt hätte, hätte sie die Prüfung bestanden.}{If she had studied more, she would have passed the exam.}
+                \ExampleItem{Ohne deine Hilfe wäre ich nicht fertig geworden.}{Without your help, I would not have finished.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Vergangenheit mit Modalverben}
+
+        \begin{grammarentry}{Doppelinfinitiv}{hätte + Infinitiv + Modalverb}
+            \GermanText{Bei einem Modalverb mit einem zweiten Verb verwendet man im Konjunktiv II der Vergangenheit meistens den Doppelinfinitiv: \textbf{hätte + Vollverb im Infinitiv + Modalverb im Infinitiv}.}
+            \EnglishText{With a modal verb and a second verb, the past subjunctive II normally uses the double infinitive: \textbf{hätte + main verb infinitive + modal verb infinitive}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich hätte früher gehen müssen.}{I would have had to leave earlier.}
+                \ExampleItem{Sie hätte uns helfen können.}{She could have helped us.}
+                \ExampleItem{Wenn du angerufen hättest, hätte ich dich abholen können.}{If you had called, I could have picked you up.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Nebensatz mit Doppelinfinitiv}{Hilfsverb vor den Infinitiven}
+            \GermanText{Im Nebensatz steht das konjugierte \textbf{hätte} bei dieser Konstruktion normalerweise vor den beiden Infinitiven: \glqq ..., weil ich früher \textbf{hätte gehen müssen}.\grqq}
+            \EnglishText{In a subordinate clause with this construction, the conjugated \textbf{hätte} normally appears before the two infinitives: ``..., because I would have had to leave earlier.''}
+        \end{grammarentry}
+
+    \section{Gemischte Konditionalsätze}
+
+        \begin{grammarentry}{Verschiedene Zeiten}{vergangene Ursache, gegenwärtige Folge}
+            \GermanText{Bei einem gemischten Konditionalsatz liegt die Bedingung in einer anderen Zeit als die Folge. Besonders häufig ist eine irreale vergangene Bedingung mit einer gegenwärtigen Folge.}
+            \EnglishText{In a mixed conditional sentence, the condition and the result belong to different times. A past unreal condition with a present result is especially common.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Wenn ich damals Deutsch gelernt hätte, könnte ich jetzt leichter arbeiten.}{If I had learned German back then, I could work more easily now.}
+                \ExampleItem{Wenn er nicht so spät ins Bett gegangen wäre, wäre er jetzt nicht müde.}{If he had not gone to bed so late, he would not be tired now.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Wortstellung mit wenn}
+
+        \begin{grammarentry}{Wenn-Satz zuerst}{Verb der Folge direkt nach dem Komma}
+            \GermanText{Wenn der Nebensatz zuerst steht, beginnt der Hauptsatz direkt nach dem Komma mit dem konjugierten Verb. Der gesamte Nebensatz besetzt Position 1.}
+            \EnglishText{When the subordinate clause comes first, the main clause begins directly after the comma with the conjugated verb. The entire subordinate clause occupies position 1.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Wenn ich Zeit hätte, würde ich kommen.}{If I had time, I would come.}
+                \ExampleItem{Wenn es morgen regnet, bleiben wir zu Hause.}{If it rains tomorrow, we will stay at home.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Hauptsatz zuerst}{normale Position 2}
+            \GermanText{Steht der Hauptsatz zuerst, hat er die normale Wortstellung. Im folgenden wenn-Satz steht das konjugierte Verb am Ende.}
+            \EnglishText{If the main clause comes first, it has normal word order. In the following wenn-clause, the conjugated verb appears at the end.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich würde kommen, wenn ich Zeit hätte.}{I would come if I had time.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Konditionalsatz ohne wenn}
+
+        \begin{grammarentry}{Verb an Position 1}{gehobene oder knappe Form}
+            \GermanText{Ein Konditionalsatz kann auch ohne \textbf{wenn} gebildet werden. Dann steht das konjugierte Verb am Anfang des Bedingungssatzes. Diese Form ist besonders in schriftlicher oder formeller Sprache üblich.}
+            \EnglishText{A conditional clause can also be formed without \textbf{wenn}. The conjugated verb then appears at the beginning of the conditional clause. This form is especially common in written or formal language.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Hätte ich mehr Zeit, würde ich mehr lesen.}{If I had more time, I would read more.}
+                \ExampleItem{Wäre ich früher gekommen, hätte ich ihn gesehen.}{If I had arrived earlier, I would have seen him.}
+                \ExampleItem{Regnet es morgen, bleiben wir zu Hause.}{If it rains tomorrow, we will stay at home.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Wenn, falls und sofern}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{2.5cm}|p{5cm}|p{5.2cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Wort} &
+            \color{white}\textbf{Gebrauch} &
+            \color{white}\textbf{Beispiel / Example} \\
+            wenn & neutral und sehr häufig; auch bei wiederholten Bedingungen & Wenn ich Zeit habe, komme ich. / If I have time, I will come. \\
+            falls & betont, dass etwas nur möglicherweise passiert & Falls du Hilfe brauchst, ruf mich an. / In case you need help, call me. \\
+            sofern & formeller; bedeutet ungefähr unter der Voraussetzung, dass & Sofern alle zustimmen, beginnen wir. / Provided that everyone agrees, we will begin. \\
+        \end{longtable}
+
+        \begin{grammarentry}{Nicht jedes wenn ist konditional}{Zeit oder Bedingung}
+            \GermanText{\textbf{wenn} kann auch zeitlich sein. \glqq Wenn ich nach Hause komme, esse ich.\grqq{} kann je nach Kontext \glqq sobald/immer wenn\grqq{} oder eine Bedingung bedeuten.}
+            \EnglishText{\textbf{wenn} can also be temporal. ``Wenn ich nach Hause komme, esse ich.'' can mean ``when/whenever'' or a condition, depending on the context.}
+        \end{grammarentry}
+
+    \section{Dann im Hauptsatz}
+
+        \begin{grammarentry}{Optionales Korrelat}{nicht obligatorisch}
+            \GermanText{\textbf{dann} kann die Folge deutlich markieren, ist aber meistens nicht notwendig.}
+            \EnglishText{\textbf{dann} can clearly mark the result, but it is usually not necessary.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Wenn du Zeit hast, dann komm vorbei.}{If you have time, then come by.}
+                \ExampleItem{Wenn du Zeit hast, komm vorbei.}{If you have time, come by.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Höflichkeit, Wünsche und Ratschläge}
+
+        \begin{grammarentry}{Nicht nur Bedingungen}{weitere Funktionen des Konjunktivs II}
+            \GermanText{Der Konjunktiv II wird auch ohne Konditionalsatz verwendet, besonders für höfliche Bitten, vorsichtige Aussagen, Wünsche und Ratschläge.}
+            \EnglishText{The subjunctive II is also used without a conditional clause, especially for polite requests, cautious statements, wishes, and advice.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Könnten Sie mir bitte helfen?}{Could you please help me?}
+                \ExampleItem{Ich hätte gern einen Termin.}{I would like an appointment.}
+                \ExampleItem{An deiner Stelle würde ich früher anfangen.}{If I were you, I would start earlier.}
+                \ExampleItem{Ich wünschte, ich hätte mehr Zeit.}{I wish I had more time.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Passiv in konditionalen Aussagen}
+
+        \begin{grammarentry}{Gegenwart oder Zukunft}{würde + Partizip II + werden}
+            \GermanText{Das Vorgangspassiv im Konjunktiv II der Gegenwart wird mit \textbf{würde + Partizip II + werden} gebildet.}
+            \EnglishText{The event passive in the present subjunctive II is formed with \textbf{würde + past participle + werden}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Das Haus würde gebaut, wenn genug Geld da wäre.}{The house would be built if there were enough money.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Vergangenheit}{wäre + Partizip II + worden}
+            \GermanText{Das Vorgangspassiv im Konjunktiv II der Vergangenheit wird mit \textbf{wäre + Partizip II + worden} gebildet.}
+            \EnglishText{The event passive in the past subjunctive II is formed with \textbf{wäre + past participle + worden}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Das Haus wäre früher gebaut worden, wenn das Geld vorhanden gewesen wäre.}{The house would have been built earlier if the money had been available.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Häufige Fehler}
+
+        \begin{grammarentry}{Fehler 1}{würde im wenn-Satz unnötig verwenden}
+            \GermanText{Weniger gut: \glqq Wenn ich mehr Zeit haben würde, würde ich mehr lernen.\grqq{} Besser: \glqq Wenn ich mehr Zeit hätte, würde ich mehr lernen.\grqq}
+            \EnglishText{Less good: ``Wenn ich mehr Zeit haben würde, würde ich mehr lernen.'' Better: ``If I had more time, I would study more.''}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Fehler 2}{falsche Zeit bei irrealer Vergangenheit}
+            \GermanText{Falsch für eine nicht erfüllte Vergangenheit: \glqq Wenn ich Zeit hätte, hätte ich gestern angerufen.\grqq{} Klarer: \glqq Wenn ich Zeit gehabt hätte, hätte ich gestern angerufen.\grqq}
+            \EnglishText{Wrong for an unfulfilled past condition: ``Wenn ich Zeit hätte, hätte ich gestern angerufen.'' Clearer: ``If I had had time, I would have called yesterday.''}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Fehler 3}{Verbposition nach dem wenn-Satz}
+            \GermanText{Falsch: \glqq Wenn ich Zeit hätte, ich würde kommen.\grqq{} Richtig: \glqq Wenn ich Zeit hätte, würde ich kommen.\grqq}
+            \EnglishText{Wrong: ``Wenn ich Zeit hätte, ich würde kommen.'' Correct: ``If I had time, I would come.''}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Fehler 4}{wurde und würde verwechseln}
+            \GermanText{\textbf{wurde} ist Präteritum von \textbf{werden}: \glqq Das Problem wurde gelöst.\grqq{} \textbf{würde} ist Konjunktiv II: \glqq Das Problem würde gelöst, wenn ...\grqq}
+            \EnglishText{\textbf{wurde} is the preterite of \textbf{werden}: ``The problem was solved.'' \textbf{würde} is subjunctive II: ``The problem would be solved if ...''}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Fehler 5}{Doppeltes würde}
+            \GermanText{Vermeide normalerweise zwei unnötige würde-Formen: Statt \glqq Wenn ich kommen würde, würde ich helfen\grqq{} ist \glqq Wenn ich käme, würde ich helfen\grqq{} oder je nach Bedeutung \glqq Wenn ich komme, helfe ich\grqq{} besser.}
+            \EnglishText{Normally avoid two unnecessary würde-forms: instead of ``Wenn ich kommen würde, würde ich helfen,'' use ``Wenn ich käme, würde ich helfen,'' or, depending on the meaning, ``Wenn ich komme, helfe ich.''}
+        \end{grammarentry}
+
+    \section{Entscheidungshilfe}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{5cm}|p{4cm}|p{4cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Frage} &
+            \color{white}\textbf{Form} &
+            \color{white}\textbf{Beispiel} \\
+            Ist die Bedingung real oder wahrscheinlich? & Indikativ & Wenn ich Zeit habe, komme ich. \\
+            Ist sie nur gedacht, unsicher oder gegenwärtig irreal? & Konjunktiv II Gegenwart & Wenn ich Zeit hätte, käme ich. \\
+            Ist sie in der Vergangenheit nicht erfüllt worden? & Konjunktiv II Vergangenheit & Wenn ich Zeit gehabt hätte, wäre ich gekommen. \\
+            Ist die einfache Form selten oder gleich dem Präteritum? & würde + Infinitiv & Ich würde arbeiten. \\
+            Ist das Verb sein, haben oder ein Modalverb? & einfache Konjunktiv-II-Form & wäre, hätte, könnte, müsste \\
+        \end{longtable}
+
+    \section{Zusammenfassung}
+
+        \begin{grammarentry}{Merksätze}{kurz und wichtig}
+            \GermanText{Reale Bedingung: meistens \textbf{Indikativ}. Gedachte oder irreale Gegenwart/Zukunft: \textbf{Konjunktiv II Gegenwart}. Nicht erfüllte Vergangenheit: \textbf{Konjunktiv II Vergangenheit}.}
+            \EnglishText{Real condition: usually the \textbf{indicative}. Imagined or unreal present/future: \textbf{present subjunctive II}. Unfulfilled past: \textbf{past subjunctive II}.}
+
+            \GermanText{Benutze normalerweise \textbf{wäre}, \textbf{hätte} und die einfachen Modalverbformen. Benutze \textbf{würde + Infinitiv}, wenn die einfache Form ungebräuchlich oder mit dem Präteritum identisch ist.}
+            \EnglishText{Normally use \textbf{wäre}, \textbf{hätte}, and the simple modal verb forms. Use \textbf{würde + infinitive} when the simple form is uncommon or identical to the preterite.}
+
+            \GermanText{Nach einem vorangestellten wenn-Satz steht das konjugierte Verb des Hauptsatzes direkt nach dem Komma: \textbf{Wenn ..., würde ich ...}}
+            \EnglishText{After an initial wenn-clause, the conjugated verb of the main clause appears directly after the comma: \textbf{Wenn ..., würde ich ...}}
+        \end{grammarentry}
+
+\end{document}

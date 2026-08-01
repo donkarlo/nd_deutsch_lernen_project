@@ -1,19 +1,408 @@
+% Erklärung zum Präteritum nach der Projektvorlage
 
+\documentclass[a4paper,11pt]{article}
 
-\section{Präteritum}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[table]{xcolor}
 
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
 
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{5pt}
 
-Ich arbeitete
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
 
-Ich ging nach Hause
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
 
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
 
-\section{Verbs that are used always in Präteritum even though it is conversation}
-    sein → war
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Das Präteritum}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
     
-    haben → hatte
     
-    werden → wurde
+    \section{Grundbedeutung}
+        
+        \begin{grammarentry}{Präteritum}{einfache Vergangenheit}
+            \GermanText{Das \textbf{Präteritum} ist eine Vergangenheitsform. Es beschreibt Handlungen, Zustände und Ereignisse, die in der Vergangenheit liegen.}
+            \EnglishText{The \textbf{preterite} is a past tense. It describes actions, states, and events that took place in the past.}
+            
+            \GermanText{Andere Bezeichnungen sind \textbf{Imperfekt} und \textbf{einfache Vergangenheit}. In der heutigen deutschen Grammatik ist \textbf{Präteritum} die üblichste Bezeichnung.}
+            \EnglishText{Other names are \textbf{Imperfekt} and \textbf{simple past}. In modern German grammar, \textbf{Präteritum} is the most common term.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Gestern arbeitete ich bis spät.}{Yesterday I worked until late.}
+                \ExampleItem{Früher wohnte sie in Graz.}{She used to live in Graz.}
+                \ExampleItem{Plötzlich fiel das Licht aus.}{Suddenly the light went out.}
+            \end{itemize}
+        \end{exbox}
     
-    modal verbs (können, müssen, wollen…)
+    
+    \section{Wann benutzt man das Präteritum?}
+        
+        \begin{grammarentry}{Schriftliche Erzählungen}{Hauptgebrauch}
+            \GermanText{Das Präteritum wird besonders häufig in schriftlichen Erzählungen verwendet: in Romanen, Märchen, Berichten, Biografien, Nachrichten und sachlichen Darstellungen.}
+            \EnglishText{The preterite is used especially often in written narratives: in novels, fairy tales, reports, biographies, news reports, and factual accounts.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Der Mann öffnete die Tür und trat ein.}{The man opened the door and entered.}
+                \ExampleItem{Im Jahr 1990 begann eine neue Phase.}{A new phase began in 1990.}
+            \end{itemize}
+        \end{exbox}
+        
+        \begin{grammarentry}{Gesprochene Sprache}{sein, haben und Modalverben}
+            \GermanText{In der gesprochenen Sprache verwendet man meistens das Perfekt. Das Präteritum ist aber bei \textbf{sein}, \textbf{haben}, den \textbf{Modalverben} und einigen häufigen Verben sehr üblich.}
+            \EnglishText{In spoken language, the present perfect is used most of the time. However, the preterite is very common with \textbf{sein}, \textbf{haben}, \textbf{modal verbs}, and some frequent verbs.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich war gestern krank.}{I was ill yesterday.}
+                \ExampleItem{Wir hatten keine Zeit.}{We had no time.}
+                \ExampleItem{Er konnte nicht kommen.}{He could not come.}
+                \ExampleItem{Ich wusste das nicht.}{I did not know that.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Bildung bei schwachen Verben}
+        
+        \begin{grammarentry}{Regelmäßige Bildung}{Verbstamm + te + Personalendung}
+            \GermanText{Schwache Verben bilden das Präteritum normalerweise mit \textbf{-te-}. Die Grundstruktur lautet: \textbf{Verbstamm + te + Personalendung}.}
+            \EnglishText{Weak verbs normally form the preterite with \textbf{-te-}. The basic structure is: \textbf{verb stem + te + personal ending}.}
+        \end{grammarentry}
+        
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{2.5cm}|p{3cm}|p{3cm}|p{5.2cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Person} &
+            \color{white}\textbf{Endung} &
+            \color{white}\textbf{lernen} &
+            \color{white}\textbf{Beispiel / Example} \\
+            ich & -te & lernte & Ich lernte Deutsch. / I learned German. \\
+            du & -test & lerntest & Du lerntest schnell. / You learned quickly. \\
+            er/sie/es & -te & lernte & Sie lernte jeden Tag. / She studied every day. \\
+            wir & -ten & lernten & Wir lernten zusammen. / We studied together. \\
+            ihr & -tet & lerntet & Ihr lerntet viel. / You studied a lot. \\
+            sie/Sie & -ten & lernten & Sie lernten zu Hause. / They studied at home. \\
+        \end{longtable}
+        
+        \begin{grammarentry}{Stämme auf -d oder -t}{zusätzliches e}
+            \GermanText{Endet der Verbstamm auf \textbf{-d} oder \textbf{-t}, steht vor der Endung meistens ein zusätzliches \textbf{e}: arbeiten -- arbeitete, reden -- redete, warten -- wartete.}
+            \EnglishText{If the verb stem ends in \textbf{-d} or \textbf{-t}, an additional \textbf{e} usually appears before the ending: arbeiten -- arbeitete, reden -- redete, warten -- wartete.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich arbeitete gestern zu Hause.}{I worked at home yesterday.}
+                \ExampleItem{Wir warteten eine Stunde.}{We waited for an hour.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Bildung bei starken Verben}
+        
+        \begin{grammarentry}{Unregelmäßige Bildung}{Stammvokal kann sich ändern}
+            \GermanText{Starke Verben bilden das Präteritum ohne \textbf{-te-}. Häufig ändert sich der Stammvokal. Die Formen müssen deshalb zusammen mit dem Verb gelernt werden.}
+            \EnglishText{Strong verbs form the preterite without \textbf{-te-}. The stem vowel often changes. Therefore, the forms must be learned together with the verb.}
+            
+            \GermanText{Bei \textbf{ich} und \textbf{er/sie/es} steht normalerweise keine Personalendung.}
+            \EnglishText{With \textbf{ich} and \textbf{er/sie/es}, there is normally no personal ending.}
+        \end{grammarentry}
+        
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{2.5cm}|p{3cm}|p{3cm}|p{5.2cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Infinitiv} &
+            \color{white}\textbf{Präteritum} &
+            \color{white}\textbf{Perfekt} &
+            \color{white}\textbf{English} \\
+            gehen & ging & ist gegangen & to go \\
+            kommen & kam & ist gekommen & to come \\
+            sehen & sah & hat gesehen & to see \\
+            finden & fand & hat gefunden & to find \\
+            schreiben & schrieb & hat geschrieben & to write \\
+            sprechen & sprach & hat gesprochen & to speak \\
+            nehmen & nahm & hat genommen & to take \\
+            bleiben & blieb & ist geblieben & to stay \\
+        \end{longtable}
+        
+        \begin{grammarentry}{Personalendungen}{Beispiel: gehen}
+            \GermanText{Die typischen Endungen sind: ich ging, du gingst, er ging, wir gingen, ihr gingt, sie gingen.}
+            \EnglishText{The typical endings are: ich ging, du gingst, er ging, wir gingen, ihr gingt, sie gingen.}
+        \end{grammarentry}
+    
+    
+    \section{Gemischte Verben}
+        
+        \begin{grammarentry}{Stammänderung und -te}{besondere Gruppe}
+            \GermanText{Gemischte Verben verbinden zwei Merkmale: Der Stamm ändert sich wie bei starken Verben, aber die Endungen enthalten \textbf{-te-} wie bei schwachen Verben.}
+            \EnglishText{Mixed verbs combine two features: the stem changes as with strong verbs, but the endings contain \textbf{-te-} as with weak verbs.}
+        \end{grammarentry}
+        
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{3cm}|p{3cm}|p{3.5cm}|p{4.2cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Infinitiv} &
+            \color{white}\textbf{Präteritum} &
+            \color{white}\textbf{Perfekt} &
+            \color{white}\textbf{English} \\
+            bringen & brachte & hat gebracht & to bring \\
+            denken & dachte & hat gedacht & to think \\
+            kennen & kannte & hat gekannt & to know / be familiar with \\
+            nennen & nannte & hat genannt & to name / call \\
+            wissen & wusste & hat gewusst & to know a fact \\
+            brennen & brannte & hat gebrannt & to burn \\
+        \end{longtable}
+    
+    
+    \section{Sein, haben und werden}
+        
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{2.3cm}|p{3cm}|p{3cm}|p{3cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Person} &
+            \color{white}\textbf{sein} &
+            \color{white}\textbf{haben} &
+            \color{white}\textbf{werden} \\
+            ich & war & hatte & wurde \\
+            du & warst & hattest & wurdest \\
+            er/sie/es & war & hatte & wurde \\
+            wir & waren & hatten & wurden \\
+            ihr & wart & hattet & wurdet \\
+            sie/Sie & waren & hatten & wurden \\
+        \end{longtable}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich war müde, aber ich hatte noch Arbeit.}{I was tired, but I still had work to do.}
+                \ExampleItem{Später wurde das Wetter besser.}{Later the weather became better.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Modalverben im Präteritum}
+        
+        \begin{grammarentry}{Häufig in der gesprochenen Sprache}{kein Umlaut}
+            \GermanText{Die Modalverben werden im Präteritum häufig verwendet. \textbf{können}, \textbf{müssen}, \textbf{dürfen} und \textbf{mögen} verlieren dabei ihren Umlaut.}
+            \EnglishText{Modal verbs are often used in the preterite. \textbf{können}, \textbf{müssen}, \textbf{dürfen}, and \textbf{mögen} lose their umlaut in this form.}
+        \end{grammarentry}
+        
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{2.6cm}|p{2.8cm}|p{3.3cm}|p{4.4cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Infinitiv} &
+            \color{white}\textbf{ich/er/sie/es} &
+            \color{white}\textbf{wir/sie/Sie} &
+            \color{white}\textbf{English} \\
+            können & konnte & konnten & could / was able to \\
+            müssen & musste & mussten & had to \\
+            dürfen & durfte & durften & was allowed to \\
+            sollen & sollte & sollten & was supposed to \\
+            wollen & wollte & wollten & wanted to \\
+            mögen & mochte & mochten & liked \\
+        \end{longtable}
+        
+        \begin{grammarentry}{Satzbau mit Modalverb}{Infinitiv am Ende}
+            \GermanText{Das Modalverb steht konjugiert im Präteritum. Das zweite Verb steht als Infinitiv am Satzende.}
+            \EnglishText{The modal verb is conjugated in the preterite. The second verb appears as an infinitive at the end of the sentence.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich musste gestern lange arbeiten.}{I had to work for a long time yesterday.}
+                \ExampleItem{Sie konnte die Aufgabe nicht lösen.}{She could not solve the task.}
+                \ExampleItem{Wir wollten früher nach Hause gehen.}{We wanted to go home earlier.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Trennbare und untrennbare Verben}
+        
+        \begin{grammarentry}{Trennbare Verben}{Präfix am Satzende}
+            \GermanText{Bei trennbaren Verben steht das Präfix im Hauptsatz am Ende: anrufen -- ich rief an; aufstehen -- ich stand auf.}
+            \EnglishText{With separable verbs, the prefix appears at the end of the main clause: anrufen -- ich rief an; aufstehen -- ich stand auf.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Er rief mich gestern an.}{He called me yesterday.}
+                \ExampleItem{Ich stand um sechs Uhr auf.}{I got up at six o'clock.}
+            \end{itemize}
+        \end{exbox}
+        
+        \begin{grammarentry}{Untrennbare Verben}{Verb bleibt zusammen}
+            \GermanText{Bei untrennbaren Verben bleibt das Präfix mit dem Verb verbunden: besuchen -- besuchte; verstehen -- verstand; bekommen -- bekam.}
+            \EnglishText{With inseparable verbs, the prefix remains attached to the verb: besuchen -- besuchte; verstehen -- verstand; bekommen -- bekam.}
+        \end{grammarentry}
+    
+    
+    \section{Wortstellung}
+        
+        \begin{grammarentry}{Hauptsatz}{Verb an Position 2}
+            \GermanText{Im Aussagesatz steht das konjugierte Verb auch im Präteritum an Position 2.}
+            \EnglishText{In a declarative main clause, the conjugated verb also occupies position 2 in the preterite.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Gestern besuchte ich meine Schwester.}{Yesterday I visited my sister.}
+                \ExampleItem{Danach gingen wir ins Kino.}{Afterwards we went to the cinema.}
+            \end{itemize}
+        \end{exbox}
+        
+        \begin{grammarentry}{Nebensatz}{Verb am Ende}
+            \GermanText{Im Nebensatz steht das konjugierte Verb am Ende.}
+            \EnglishText{In a subordinate clause, the conjugated verb appears at the end.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich wusste, dass er keine Zeit hatte.}{I knew that he had no time.}
+                \ExampleItem{Als ich jung war, wohnte ich in Teheran.}{When I was young, I lived in Tehran.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Präteritum und Perfekt}
+        
+        \begin{grammarentry}{Gleiche Zeit, anderer Stil}{meist kein Bedeutungsunterschied}
+            \GermanText{Präteritum und Perfekt können oft dasselbe vergangene Ereignis ausdrücken. Der wichtigste Unterschied liegt häufig im Stil und in der Textsorte, nicht in der Zeit.}
+            \EnglishText{The preterite and the present perfect can often express the same past event. The main difference frequently lies in style and text type, not in time.}
+        \end{grammarentry}
+        
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{3cm}|p{5cm}|p{5cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Form} &
+            \color{white}\textbf{Typischer Gebrauch} &
+            \color{white}\textbf{Beispiel / Example} \\
+            Präteritum & schriftliche Erzählung; sein, haben und Modalverben auch mündlich & Ich ging nach Hause. / I went home. \\
+            Perfekt & alltägliche gesprochene Sprache & Ich bin nach Hause gegangen. / I went home. \\
+        \end{longtable}
+        
+        \begin{grammarentry}{Regionale Unterschiede}{Nord und Süd}
+            \GermanText{In Norddeutschland wird das Präteritum im Gespräch häufiger verwendet als in Süddeutschland, Österreich und der Schweiz. In Österreich ist das Perfekt in der gesprochenen Alltagssprache besonders üblich.}
+            \EnglishText{In northern Germany, the preterite is used more frequently in conversation than in southern Germany, Austria, and Switzerland. In Austria, the present perfect is especially common in everyday spoken language.}
+        \end{grammarentry}
+    
+    
+    \section{Präteritum im Passiv}
+        
+        \begin{grammarentry}{Vorgangspassiv}{wurde + Partizip II}
+            \GermanText{Das Vorgangspassiv im Präteritum wird mit \textbf{wurde/wurden + Partizip II} gebildet.}
+            \EnglishText{The event passive in the preterite is formed with \textbf{wurde/wurden + past participle}.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Die Tür wurde geöffnet.}{The door was opened.}
+                \ExampleItem{Die Dokumente wurden gestern geschickt.}{The documents were sent yesterday.}
+            \end{itemize}
+        \end{exbox}
+        
+        \begin{grammarentry}{Nicht mit würde verwechseln}{Präteritum und Konjunktiv II}
+            \GermanText{\textbf{wurde} ist das Präteritum von \textbf{werden}. \textbf{würde} ist meistens eine Form des Konjunktivs II.}
+            \EnglishText{\textbf{wurde} is the preterite of \textbf{werden}. \textbf{würde} is usually a form of the subjunctive II.}
+            
+            \GermanText{Beispiel: \glqq Das Haus wurde gebaut.\grqq{} ist Vergangenheit im Passiv. \glqq Das Haus würde gebaut.\grqq{} braucht normalerweise noch eine Bedingung, zum Beispiel: \glqq Das Haus würde gebaut, wenn genug Geld da wäre.\grqq}
+            \EnglishText{Example: ``Das Haus wurde gebaut.'' is past passive. ``Das Haus würde gebaut.'' normally needs a condition, for example: ``The house would be built if there were enough money.''}
+        \end{grammarentry}
+    
+    
+    \section{Signalwörter und Zeitangaben}
+        
+        \begin{grammarentry}{Zeitlicher Kontext}{keine Pflichtwörter}
+            \GermanText{Das Präteritum braucht keine besonderen Signalwörter. Häufige Zeitangaben sind jedoch: \textbf{gestern}, \textbf{damals}, \textbf{früher}, \textbf{im Jahr ...}, \textbf{als ich ... war}, \textbf{plötzlich} und \textbf{danach}.}
+            \EnglishText{The preterite does not require special signal words. Common time expressions are, however: \textbf{yesterday}, \textbf{back then}, \textbf{formerly}, \textbf{in the year ...}, \textbf{when I was ...}, \textbf{suddenly}, and \textbf{afterwards}.}
+        \end{grammarentry}
+    
+    
+    \section{Häufige Fehler}
+        
+        \begin{grammarentry}{Fehler 1}{Präteritum und Partizip II mischen}
+            \GermanText{Falsch: \glqq Ich bin gestern ging.\grqq{} Richtig: \glqq Ich ging gestern.\grqq{} oder \glqq Ich bin gestern gegangen.\grqq}
+            \EnglishText{Wrong: ``Ich bin gestern ging.'' Correct: ``I went yesterday'' in either the preterite or present perfect form.}
+        \end{grammarentry}
+        
+        \begin{grammarentry}{Fehler 2}{falsche starke Form}
+            \GermanText{Starke Verben dürfen nicht regelmäßig mit \textbf{-te} gebildet werden. Falsch: \glqq gehte\grqq. Richtig: \glqq ging\grqq.}
+            \EnglishText{Strong verbs must not be formed regularly with \textbf{-te}. Wrong: \textbf{gehte}. Correct: \textbf{ging}.}
+        \end{grammarentry}
+        
+        \begin{grammarentry}{Fehler 3}{Präfix vergessen}
+            \GermanText{Bei trennbaren Verben muss das Präfix im Hauptsatz erhalten bleiben: \glqq Er rief mich an.\grqq, nicht nur \glqq Er rief mich.\grqq, wenn \textbf{anrufen} gemeint ist.}
+            \EnglishText{With separable verbs, the prefix must remain in the main clause: ``Er rief mich an.'', not merely ``Er rief mich.'', when \textbf{anrufen} is intended.}
+        \end{grammarentry}
+        
+        \begin{grammarentry}{Fehler 4}{Perfekt im Nebensatz falsch ordnen}
+            \GermanText{Das Präteritum hat nur eine konjugierte Verbform und ist im Nebensatz oft einfacher: \glqq ..., weil ich keine Zeit hatte.\grqq}
+            \EnglishText{The preterite has only one conjugated verb form and is often simpler in subordinate clauses: ``..., because I had no time.''}
+        \end{grammarentry}
+    
+    
+    \section{Lernstrategie}
+        
+        \begin{grammarentry}{Drei Formen zusammen lernen}{Infinitiv -- Präteritum -- Perfekt}
+            \GermanText{Lerne starke und gemischte Verben immer in drei Formen: \textbf{gehen -- ging -- ist gegangen}; \textbf{bringen -- brachte -- hat gebracht}.}
+            \EnglishText{Always learn strong and mixed verbs in three forms: \textbf{gehen -- ging -- ist gegangen}; \textbf{bringen -- brachte -- hat gebracht}.}
+            
+            \GermanText{Für das Niveau B1 sind besonders wichtig: sein, haben, werden, können, müssen, dürfen, sollen, wollen, mögen, wissen, gehen, kommen, sehen, geben, nehmen, finden, bleiben, bringen und denken.}
+            \EnglishText{For level B1, the following are especially important: sein, haben, werden, können, müssen, dürfen, sollen, wollen, mögen, wissen, gehen, kommen, sehen, geben, nehmen, finden, bleiben, bringen, and denken.}
+        \end{grammarentry}
+    
+    
+    \section{Zusammenfassung}
+        
+        \begin{grammarentry}{Merksätze}{kurz und wichtig}
+            \GermanText{Schwache Verben: \textbf{Stamm + te + Endung}. Starke Verben: häufig \textbf{Vokalwechsel} und kein \textbf{-te}. Gemischte Verben: \textbf{Stammänderung + te}.}
+            \EnglishText{Weak verbs: \textbf{stem + te + ending}. Strong verbs: often a \textbf{vowel change} and no \textbf{-te}. Mixed verbs: \textbf{stem change + te}.}
+            
+            \GermanText{Das Präteritum ist besonders wichtig in schriftlichen Erzählungen. In Gesprächen sind vor allem \textbf{war}, \textbf{hatte} und die Präteritumformen der Modalverben sehr häufig.}
+            \EnglishText{The preterite is especially important in written narratives. In conversation, \textbf{war}, \textbf{hatte}, and the preterite forms of modal verbs are particularly common.}
+        \end{grammarentry}
+
+\end{document}

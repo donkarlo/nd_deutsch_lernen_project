@@ -1,0 +1,187 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{6pt}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{\glqq wie\grqq{} als subordinierende Konjunktion}
+\date{}
+
+\begin{document}
+\selectlanguage{ngerman}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Grundfunktion}
+
+\begin{grammarentry}{wie}{subordinierende Konjunktion / Subjunktion}
+\GermanText{Als subordinierende Konjunktion leitet \textbf{wie} einen Nebensatz ein. In dieser Funktion bedeutet es meistens \glqq so, wie\grqq{} oder englisch \glqq as\grqq.}
+\EnglishText{As a subordinating conjunction, \textbf{wie} introduces a subordinate clause. In this function, it usually means ``the way that'' or ``as.''}
+
+\GermanText{Der mit \textbf{wie} eingeleitete Nebensatz beschreibt häufig die Art und Weise, in der etwas geschieht oder gilt.}
+\EnglishText{The subordinate clause introduced by \textbf{wie} often describes the manner in which something happens or is valid.}
+\end{grammarentry}
+
+\section{Wortstellung}
+
+\begin{grammarentry}{Verb am Ende}{Nebensatzregel}
+\GermanText{Im \textbf{wie}-Nebensatz steht das konjugierte Verb normalerweise am Ende.}
+\EnglishText{In a subordinate clause introduced by \textbf{wie}, the conjugated verb normally stands at the end.}
+
+\GermanText{Steht der Nebensatz vor dem Hauptsatz, besetzt er die erste Position des Gesamtsatzes. Deshalb folgt im Hauptsatz sofort das konjugierte Verb.}
+\EnglishText{When the subordinate clause comes before the main clause, it occupies the first position of the whole sentence. Therefore, the conjugated verb follows immediately in the main clause.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Wie es bisher erklärt worden ist, brauchen wir die richtigen Nachrichten.}{As it has been explained so far, we need the correct information.}
+\ExampleItem{Wie du weißt, wohne ich in Wien.}{As you know, I live in Vienna.}
+\ExampleItem{Wir machen es so, wie der Lehrer es erklärt hat.}{We do it the way the teacher explained it.}
+\end{itemize}
+\end{exbox}
+
+\section{Analyse des Beispielsatzes}
+
+\begin{grammarentry}{Wie es bisher erklärt worden ist}{modaler Nebensatz}
+\GermanText{In dem Satz \glqq Wie es bisher erklärt worden ist, brauchen wir die richtigen Nachrichten, um eine praktische Demokratie zu haben.\grqq{} leitet \textbf{wie} den Nebensatz \glqq wie es bisher erklärt worden ist\grqq{} ein.}
+\EnglishText{In the sentence ``As it has been explained so far, we need the correct information in order to have a practical democracy,'' \textbf{wie} introduces the subordinate clause ``wie es bisher erklärt worden ist.''}
+
+\GermanText{Der Nebensatz gibt an, entsprechend welcher Erklärung die folgende Aussage gemacht wird. Er hat deshalb eine modale Funktion.}
+\EnglishText{The subordinate clause indicates according to which explanation the following statement is made. It therefore has a modal function.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{4.1cm}|p{5.1cm}|p{5.1cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Teil} &
+\color{white}\textbf{Grammatische Funktion} &
+\color{white}\textbf{English} \\
+wie & subordinierende Konjunktion; leitet den Nebensatz ein & subordinating conjunction; introduces the subordinate clause \\
+es & Subjekt des Nebensatzes & subject of the subordinate clause \\
+bisher & Temporaladverb & temporal adverb: so far \\
+erklärt worden ist & Prädikat im Perfekt Passiv; \textbf{ist} steht am Ende & predicate in the present perfect passive; \textbf{ist} is at the end \\
+\end{longtable}
+
+\section{Bedeutung: Art und Weise}
+
+\begin{grammarentry}{modaler Gebrauch}{so, wie / as}
+\GermanText{\textbf{wie} verbindet den Inhalt des Nebensatzes mit der Art und Weise des Hauptsatzes. Der Nebensatz beantwortet sinngemäß die Frage \glqq Wie?\grqq{} oder \glqq Auf welche Weise?\grqq.}
+\EnglishText{\textbf{wie} connects the content of the subordinate clause with the manner of the main clause. In meaning, the subordinate clause answers the question ``How?'' or ``In what way?''}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Mach es, wie ich es dir gezeigt habe.}{Do it the way I showed you.}
+\ExampleItem{Alles geschah, wie wir es erwartet hatten.}{Everything happened as we had expected.}
+\ExampleItem{Wie bereits erwähnt wurde, beginnt der Kurs am Montag.}{As was already mentioned, the course begins on Monday.}
+\end{itemize}
+\end{exbox}
+
+\section{Korrelat \glqq so\grqq}
+
+\begin{grammarentry}{so ..., wie ...}{häufige Struktur}
+\GermanText{Im Hauptsatz kann das Korrelat \textbf{so} stehen. Es verweist auf den folgenden \textbf{wie}-Nebensatz.}
+\EnglishText{The correlating word \textbf{so} may appear in the main clause. It points forward to the subordinate clause introduced by \textbf{wie}.}
+
+\GermanText{Struktur: \textbf{etwas so machen, wie ...}}
+\EnglishText{Structure: \textbf{to do something the way that ...}}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich mache es so, wie du es vorgeschlagen hast.}{I do it the way you suggested.}
+\ExampleItem{Der Text ist so geschrieben, wie es die Aufgabe verlangt.}{The text is written in the way the task requires.}
+\end{itemize}
+\end{exbox}
+
+\section{Abgrenzung zum Fragewort}
+
+\begin{grammarentry}{kein Fragewort}{in diesem Gebrauch}
+\GermanText{In \glqq Wie es bisher erklärt worden ist\grqq{} ist \textbf{wie} kein Frageadverb. Es stellt keine Frage, sondern verbindet den Nebensatz mit dem Hauptsatz.}
+\EnglishText{In ``Wie es bisher erklärt worden ist,'' \textbf{wie} is not an interrogative adverb. It does not ask a question; it connects the subordinate clause with the main clause.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{3.2cm}|p{5.7cm}|p{5.4cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Gebrauch} &
+\color{white}\textbf{Beispiel} &
+\color{white}\textbf{Erklärung} \\
+Frageadverb & Wie funktioniert das? & direkte Frage; \textbf{wie} fragt nach der Art und Weise \\
+Subordinierende Konjunktion & Wie du weißt, ist das wichtig. & \textbf{wie} leitet einen Nebensatz mit Verbendstellung ein \\
+Vergleichswort & Er ist so groß wie sein Bruder. & Vergleich ohne vollständigen Nebensatz \\
+\end{longtable}
+
+\section{Kommasetzung}
+
+\begin{grammarentry}{Komma}{Trennung von Haupt- und Nebensatz}
+\GermanText{Ein vollständiger \textbf{wie}-Nebensatz wird durch ein Komma vom Hauptsatz getrennt.}
+\EnglishText{A complete subordinate clause introduced by \textbf{wie} is separated from the main clause by a comma.}
+
+\GermanText{Ein bloßer Vergleich ohne vollständigen Nebensatz braucht dagegen normalerweise kein Komma: \glqq Er ist so groß wie sein Bruder.\grqq}
+\EnglishText{A simple comparison without a complete subordinate clause normally does not require a comma: ``He is as tall as his brother.''}
+\end{grammarentry}
+
+\section{Wichtiger Bedeutungsunterschied}
+
+\begin{grammarentry}{wie und als}{Vergleich}
+\GermanText{Bei Gleichheit verwendet man normalerweise \textbf{wie}: \glqq so groß wie\grqq. Bei Ungleichheit verwendet man \textbf{als}: \glqq größer als\grqq. Diese Vergleichsfunktion ist von dem hier behandelten subordinierenden Gebrauch zu unterscheiden.}
+\EnglishText{For equality, German normally uses \textbf{wie}: ``as tall as.'' For inequality, it uses \textbf{als}: ``taller than.'' This comparative function must be distinguished from the subordinating use discussed here.}
+\end{grammarentry}
+
+\section{Zusammenfassung}
+
+\begin{grammarentry}{Merksatz}{kurz und wichtig}
+\GermanText{Als subordinierende Konjunktion bedeutet \textbf{wie} meistens \glqq so, wie\grqq{} oder \glqq as\grqq. Es leitet einen Nebensatz ein, und das konjugierte Verb steht am Ende.}
+\EnglishText{As a subordinating conjunction, \textbf{wie} usually means ``the way that'' or ``as.'' It introduces a subordinate clause, and the conjugated verb stands at the end.}
+
+\GermanText{Beispiel: \textbf{Wie du weißt, ist Deutsch nicht immer leicht.}}
+\EnglishText{Example: \textbf{As you know, German is not always easy.}}
+\end{grammarentry}
+
+\end{document}

@@ -1,0 +1,259 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{6pt}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Die subordinierende Konjunktion}
+\date{}
+
+\begin{document}
+\selectlanguage{ngerman}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Definition}
+
+\begin{grammarentry}{subordinierende Konjunktion}{auch: Subjunktion}
+\GermanText{Eine subordinierende Konjunktion verbindet einen Nebensatz mit einem Hauptsatz oder mit einem anderen übergeordneten Satz. Sie macht den eingeleiteten Satz grammatisch abhängig.}
+\EnglishText{A subordinating conjunction connects a subordinate clause with a main clause or another superordinate clause. It makes the introduced clause grammatically dependent.}
+
+\GermanText{Andere Bezeichnung: \textbf{Subjunktion}.}
+\EnglishText{Another term: \textbf{subordinator} or \textbf{subordinating conjunction}.}
+\end{grammarentry}
+
+\section{Wortstellung im Nebensatz}
+
+\begin{grammarentry}{Verbendstellung}{Grundregel}
+\GermanText{Nach einer subordinierenden Konjunktion steht das konjugierte Verb im Nebensatz normalerweise am Ende.}
+\EnglishText{After a subordinating conjunction, the conjugated verb normally stands at the end of the subordinate clause.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich bleibe zu Hause, weil ich krank bin.}{I stay at home because I am ill.}
+\ExampleItem{Sie sagt, dass sie morgen kommt.}{She says that she is coming tomorrow.}
+\ExampleItem{Obwohl er müde ist, arbeitet er weiter.}{Although he is tired, he continues working.}
+\end{itemize}
+\end{exbox}
+
+\section{Stellung des Nebensatzes}
+
+\begin{grammarentry}{Nachstellung}{Hauptsatz vor Nebensatz}
+\GermanText{Steht der Hauptsatz zuerst, bleibt seine normale Wortstellung erhalten. Vor dem Nebensatz steht ein Komma.}
+\EnglishText{When the main clause comes first, its normal word order remains unchanged. A comma stands before the subordinate clause.}
+
+\GermanText{Struktur: \textbf{Hauptsatz, Konjunktion + ... + Verb.}}
+\EnglishText{Structure: \textbf{main clause, conjunction + ... + verb.}}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich lerne Deutsch, weil ich in Österreich lebe.}{I learn German because I live in Austria.}
+\ExampleItem{Wir wissen, dass die Prüfung schwierig ist.}{We know that the exam is difficult.}
+\end{itemize}
+\end{exbox}
+
+\begin{grammarentry}{Voranstellung}{Nebensatz vor Hauptsatz}
+\GermanText{Steht der Nebensatz zuerst, besetzt er die erste Position des Gesamtsatzes. Im folgenden Hauptsatz steht deshalb das konjugierte Verb direkt nach dem Komma.}
+\EnglishText{When the subordinate clause comes first, it occupies the first position of the whole sentence. Therefore, the conjugated verb in the following main clause stands directly after the comma.}
+
+\GermanText{Struktur: \textbf{Konjunktion + ... + Verb, Verb + Subjekt + ...}}
+\EnglishText{Structure: \textbf{conjunction + ... + verb, verb + subject + ...}}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Weil ich krank bin, bleibe ich zu Hause.}{Because I am ill, I stay at home.}
+\ExampleItem{Wenn das Wetter gut ist, gehen wir spazieren.}{If the weather is good, we go for a walk.}
+\end{itemize}
+\end{exbox}
+
+\section{Häufige subordinierende Konjunktionen}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{3.0cm}|p{3.7cm}|p{7.3cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Konjunktion} &
+\color{white}\textbf{Bedeutung} &
+\color{white}\textbf{Beispiel} \\
+weil & because & Ich gehe früh schlafen, weil ich müde bin. \\
+da & since; because & Da es regnet, bleiben wir zu Hause. \\
+dass & that & Ich weiß, dass er heute arbeitet. \\
+ob & whether; if & Ich weiß nicht, ob sie kommt. \\
+wenn & if; whenever; when & Wenn ich Zeit habe, lese ich. \\
+falls & in case; if & Falls du Hilfe brauchst, ruf mich an. \\
+obwohl & although & Obwohl er krank ist, arbeitet er. \\
+während & while; whereas & Während ich koche, hört sie Musik. \\
+bevor & before & Bevor ich gehe, rufe ich dich an. \\
+nachdem & after & Nachdem wir gegessen hatten, gingen wir spazieren. \\
+bis & until & Warte hier, bis ich zurückkomme. \\
+seitdem & since & Seitdem er hier wohnt, ist er glücklicher. \\
+damit & so that & Ich spreche langsam, damit du mich verstehst. \\
+indem & by; by doing & Man lernt, indem man übt. \\
+wie & as; the way that & Wie du weißt, ist die Aufgabe wichtig. \\
+als & when, in the past & Als ich ein Kind war, lebte ich in Teheran. \\
+\end{longtable}
+
+\section{Bedeutungsgruppen}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{3.8cm}|p{4.3cm}|p{5.9cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Funktion} &
+\color{white}\textbf{Typische Konjunktionen} &
+\color{white}\textbf{English} \\
+kausal & weil, da & cause or reason \\
+konditional & wenn, falls, sofern & condition \\
+konzessiv & obwohl, obgleich, obschon & concession \\
+temporal & als, wenn, bevor, nachdem, während, bis, seitdem & time \\
+final & damit & purpose \\
+modal & indem, wie, ohne dass, als ob & manner \\
+konsekutiv & sodass / so dass & consequence or result \\
+inhaltlich & dass, ob & content of a statement, thought, or question \\
+\end{longtable}
+
+\section{Mehrteilige Verbformen}
+
+\begin{grammarentry}{alle Verbteile am Ende}{Reihenfolge}
+\GermanText{Bei mehrteiligen Verbformen stehen die Verbteile am Ende des Nebensatzes. Das konjugierte Hilfsverb steht normalerweise ganz zuletzt.}
+\EnglishText{With multi-part verb forms, the verb parts stand at the end of the subordinate clause. The conjugated auxiliary normally comes last.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich weiß, dass er gestern gearbeitet hat.}{I know that he worked yesterday.}
+\ExampleItem{Sie sagt, dass das Problem gelöst worden ist.}{She says that the problem has been solved.}
+\ExampleItem{Ich hoffe, dass du morgen kommen kannst.}{I hope that you can come tomorrow.}
+\end{itemize}
+\end{exbox}
+
+\section{Trennbare Verben}
+
+\begin{grammarentry}{nicht getrennt}{im Nebensatz}
+\GermanText{Bei trennbaren Verben wird die Vorsilbe im Nebensatz nicht abgetrennt, weil das Verb am Ende steht.}
+\EnglishText{With separable verbs, the prefix is not separated in the subordinate clause because the verb stands at the end.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich weiß, dass der Zug um acht Uhr abfährt.}{I know that the train departs at eight o'clock.}
+\ExampleItem{Sie bleibt zu Hause, weil sie das Zimmer aufräumt.}{She stays at home because she is tidying the room.}
+\end{itemize}
+\end{exbox}
+
+\section{Kommasetzung}
+
+\begin{grammarentry}{Komma ist obligatorisch}{Hauptsatz und Nebensatz}
+\GermanText{Zwischen einem Hauptsatz und einem durch eine subordinierende Konjunktion eingeleiteten Nebensatz steht ein Komma. Das gilt unabhängig davon, ob der Nebensatz vor oder nach dem Hauptsatz steht.}
+\EnglishText{A comma stands between a main clause and a subordinate clause introduced by a subordinating conjunction. This applies whether the subordinate clause comes before or after the main clause.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich komme später, weil ich noch arbeite.}{I will come later because I am still working.}
+\ExampleItem{Weil ich noch arbeite, komme ich später.}{Because I am still working, I will come later.}
+\end{itemize}
+\end{exbox}
+
+\section{Unterschied zur koordinierenden Konjunktion}
+
+\begin{grammarentry}{unterordnend und nebenordnend}{Vergleich}
+\GermanText{Eine subordinierende Konjunktion leitet einen Nebensatz mit Verbendstellung ein. Eine koordinierende Konjunktion wie \textbf{und}, \textbf{aber}, \textbf{oder} oder \textbf{denn} verbindet gleichrangige Satzteile oder Sätze und verändert die normale Wortstellung des folgenden Hauptsatzes nicht.}
+\EnglishText{A subordinating conjunction introduces a subordinate clause with the verb at the end. A coordinating conjunction such as \textbf{und}, \textbf{aber}, \textbf{oder}, or \textbf{denn} connects elements or clauses of equal rank and does not change the normal word order of the following main clause.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{4.2cm}|p{5.1cm}|p{4.7cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Typ} &
+\color{white}\textbf{Beispiel} &
+\color{white}\textbf{Verbposition} \\
+subordinierend & Ich bleibe zu Hause, \textbf{weil ich krank bin}. & Verb am Ende: \textbf{bin} \\
+koordinierend & Ich bin krank, \textbf{deshalb bleibe ich} zu Hause. & Verb an Position 2: \textbf{bleibe} \\
+koordinierend & Ich bin krank, \textbf{aber ich arbeite} weiter. & Verb an Position 2: \textbf{arbeite} \\
+\end{longtable}
+
+\section{Konjunktion oder Konjunktionaladverb?}
+
+\begin{grammarentry}{wichtige Abgrenzung}{deshalb, trotzdem, danach}
+\GermanText{Wörter wie \textbf{deshalb}, \textbf{trotzdem}, \textbf{danach} und \textbf{außerdem} sind keine subordinierenden Konjunktionen. Sie sind Konjunktionaladverbien. Nach ihnen steht das konjugierte Verb an Position 2.}
+\EnglishText{Words such as \textbf{deshalb}, \textbf{trotzdem}, \textbf{danach}, and \textbf{außerdem} are not subordinating conjunctions. They are conjunctive adverbs. After them, the conjugated verb stands in position 2.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich bin krank. Deshalb bleibe ich zu Hause.}{I am ill. Therefore, I stay at home.}
+\ExampleItem{Obwohl ich krank bin, arbeite ich.}{Although I am ill, I work.}
+\end{itemize}
+\end{exbox}
+
+\section{Prüfmethode}
+
+\begin{grammarentry}{So erkennt man eine Subjunktion}{drei Schritte}
+\GermanText{1. Das Wort leitet einen abhängigen Satz ein.}
+\EnglishText{1. The word introduces a dependent clause.}
+
+\GermanText{2. Das konjugierte Verb steht normalerweise am Ende dieses Satzes.}
+\EnglishText{2. The conjugated verb normally stands at the end of this clause.}
+
+\GermanText{3. Der Nebensatz wird durch ein Komma vom übergeordneten Satz getrennt.}
+\EnglishText{3. The subordinate clause is separated from the superordinate clause by a comma.}
+\end{grammarentry}
+
+\section{Zusammenfassung}
+
+\begin{grammarentry}{Merksatz}{kurz und wichtig}
+\GermanText{Eine subordinierende Konjunktion leitet einen Nebensatz ein. Im Nebensatz steht das konjugierte Verb normalerweise am Ende.}
+\EnglishText{A subordinating conjunction introduces a subordinate clause. In the subordinate clause, the conjugated verb normally stands at the end.}
+
+\GermanText{Beispiel: \textbf{Weil ich Deutsch lerne, verstehe ich immer mehr.}}
+\EnglishText{Example: \textbf{Because I am learning German, I understand more and more.}}
+\end{grammarentry}
+
+\end{document}

@@ -1,0 +1,431 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=0.45em,topsep=0.4em}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{6pt}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\newtcolorbox{warningbox}{enhanced,breakable,colback=RowBlueDark,colframe=HeaderBlueDark,boxrule=0.5pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Wichtiger Hinweis \textnormal{(Important note)}},fonttitle=\bfseries,colbacktitle=HeaderBlueDark,coltitle=white}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\newcommand{\TableHead}[1]{\cellcolor{HeaderBlueDark}\color{white}\textbf{#1}}
+
+\title{Die Konjunktion \glqq wie\grqq}
+\author{}
+\date{}
+
+\begin{document}
+\selectlanguage{ngerman}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Überblick}
+
+\begin{grammarentry}{wie}{Konjunktion und Vergleichswort}
+\GermanText{Das Wort \textbf{wie} kann als Konjunktion Wörter, Wortgruppen oder Sätze miteinander verbinden. Seine häufigsten Funktionen sind der Vergleich der Gleichheit, die Beschreibung einer Art und Weise, die Nennung von Beispielen, die Verbindung gleichrangiger Elemente sowie die Einleitung bestimmter Nebensätze.}
+\EnglishText{The word \textbf{wie} can function as a conjunction that connects words, phrases, or clauses. Its most frequent functions are comparison of equality, description of manner, introduction of examples, connection of elements of equal rank, and introduction of certain subordinate clauses.}
+
+\GermanText{In der traditionellen Schulgrammatik wird \textbf{wie} meist allgemein als Konjunktion oder Vergleichspartikel bezeichnet. In genaueren modernen Beschreibungen unterscheidet man oft zwischen einem \textbf{Adjunktor} bei Satzteilvergleichen und einem \textbf{Subjunktor} bei Nebensätzen.}
+\EnglishText{In traditional school grammar, \textbf{wie} is generally called a conjunction or comparative particle. More precise modern descriptions often distinguish between an \textbf{adjunctive connector} in phrase comparisons and a \textbf{subordinator} in subordinate clauses.}
+\end{grammarentry}
+
+\begin{warningbox}
+\GermanText{Diese Datei behandelt nur \textbf{wie als Konjunktion oder Vergleichswort}. Das Fragewort in \glqq Wie geht es dir?\grqq{} und das Adverb in \glqq Wie schön!\grqq{} gehören nicht zu dieser Verwendung.}
+\EnglishText{This file covers only \textbf{wie as a conjunction or comparative connector}. The question word in ``How are you?'' and the adverb in ``How beautiful!'' do not belong to this use.}
+\end{warningbox}
+
+\section{Vergleich der Gleichheit}
+
+\begin{grammarentry}{so / genauso / ebenso + wie}{Gleichheit}
+\GermanText{Bei einem Vergleich der Gleichheit steht \textbf{wie}. Häufig steht davor \textbf{so}, \textbf{genauso}, \textbf{ebenso}, \textbf{gleich} oder ein anderes Wort, das Gleichheit ausdrückt. Das Adjektiv oder Adverb steht dabei im Positiv, nicht im Komparativ.}
+\EnglishText{In a comparison of equality, \textbf{wie} is used. It is often preceded by \textbf{so}, \textbf{genauso}, \textbf{ebenso}, \textbf{gleich}, or another expression of equality. The adjective or adverb is in the positive form, not the comparative.}
+
+\GermanText{Grundstruktur: \textbf{so + Adjektiv oder Adverb + wie}.}
+\EnglishText{Basic structure: \textbf{as + adjective or adverb + as}.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Mina ist so groß wie Sara.}{Mina is as tall as Sara.}
+\ExampleItem{Er arbeitet genauso sorgfältig wie seine Kollegin.}{He works just as carefully as his colleague.}
+\ExampleItem{Dieses Problem ist ebenso wichtig wie das andere.}{This problem is just as important as the other one.}
+\end{itemize}
+\end{exbox}
+
+\subsection{Unterschied zwischen \glqq wie\grqq{} und \glqq als\grqq}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.18\textwidth}>{\raggedright\arraybackslash}p{0.25\textwidth}>{\raggedright\arraybackslash}p{0.46\textwidth}}
+\TableHead{Bedeutung} & \TableHead{Form} & \TableHead{Beispiel} \\
+Gleichheit & Positiv + \textbf{wie} & Lea ist so alt \textbf{wie} Nina.\\
+Ungleichheit & Komparativ + \textbf{als} & Lea ist älter \textbf{als} Nina.\\
+Gleichheit der Handlung & so / genauso + Adverb + \textbf{wie} & Er spricht genauso deutlich \textbf{wie} der Lehrer.\\
+Ungleichheit der Handlung & Komparativ + \textbf{als} & Er spricht deutlicher \textbf{als} der Lehrer.\\
+\end{longtable}
+\rowcolors{2}{}{}
+
+\begin{warningbox}
+\GermanText{In der Standardsprache sagt man \textbf{größer als}, nicht \textbf{größer wie}. Auch nach \textbf{anders} verwendet man standardsprachlich meistens \textbf{als}: \glqq Es ist anders, als ich dachte.\grqq}
+\EnglishText{In standard German, one says \textbf{größer als}, not \textbf{größer wie}. After \textbf{anders}, standard German also normally uses \textbf{als}: ``It is different from what I thought.''}
+\end{warningbox}
+
+\section{Vergleich von Personen, Sachen und Handlungen}
+
+\begin{grammarentry}{wie + Nomen oder Pronomen}{Satzteilvergleich}
+\GermanText{\textbf{wie} kann eine Person, eine Sache, eine Eigenschaft oder eine Handlung mit einer anderen vergleichen. In solchen Fällen folgt nach \textbf{wie} häufig nur ein Nomen, Pronomen oder eine Wortgruppe. Ein vollständiger Vergleichssatz ist dabei gedanklich verkürzt.}
+\EnglishText{\textbf{wie} can compare a person, thing, quality, or action with another. In such cases, \textbf{wie} is often followed only by a noun, pronoun, or phrase. A complete comparative clause is understood but shortened.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Er schwimmt wie ein Profi.}{He swims like a professional.}
+\ExampleItem{Sie singt wie ihre Mutter.}{She sings like her mother.}
+\ExampleItem{Ein Mensch wie du versteht das.}{A person like you understands that.}
+\end{itemize}
+\end{exbox}
+
+\subsection{Der Kasus nach \glqq wie\grqq}
+
+\begin{grammarentry}{Kein fester Kasus}{abhängig vom verkürzten Satz}
+\GermanText{\textbf{wie} verlangt keinen bestimmten Kasus. Der Kasus ergibt sich aus der grammatischen Funktion, die das Vergleichswort im vollständig gedachten Satz hätte.}
+\EnglishText{\textbf{wie} does not govern a particular case. The case depends on the grammatical function that the comparative element would have in the complete implied clause.}
+
+\GermanText{\glqq Sie liebt ihn wie \textbf{ich}.\grqq{} bedeutet: Sie liebt ihn, wie \textbf{ich ihn liebe}. \textbf{ich} ist Subjekt und steht im Nominativ.}
+\EnglishText{``She loves him as \textbf{I} do'' means: She loves him the way \textbf{I love him}. \textbf{ich} is the subject and is in the nominative.}
+
+\GermanText{\glqq Sie liebt ihn wie \textbf{mich}.\grqq{} bedeutet: Sie liebt ihn, wie sie \textbf{mich liebt}. \textbf{mich} ist Objekt und steht im Akkusativ.}
+\EnglishText{``She loves him as she loves \textbf{me}'' means: She loves him the way she loves \textbf{me}. \textbf{mich} is the object and is in the accusative.}
+\end{grammarentry}
+
+\section{Beispiele und Vertreter einer Gruppe}
+
+\begin{grammarentry}{Nomen + wie + Beispiel}{beispielhafte Nennung}
+\GermanText{\textbf{wie} kann ein Beispiel oder einen typischen Vertreter einer Gruppe einführen. In dieser Funktion entspricht es oft dem englischen \glqq such as\grqq{} oder \glqq like\grqq.}
+\EnglishText{\textbf{wie} can introduce an example or a typical member of a group. In this function, it often corresponds to English ``such as'' or ``like.''}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Große Städte wie Wien und Berlin haben ein dichtes Verkehrsnetz.}{Large cities such as Vienna and Berlin have a dense transport network.}
+\ExampleItem{Instrumente wie die Gitarre brauchen regelmäßige Pflege.}{Instruments such as the guitar need regular care.}
+\ExampleItem{Probleme wie Zeitmangel können die Arbeit erschweren.}{Problems such as lack of time can make the work more difficult.}
+\end{itemize}
+\end{exbox}
+
+\section{Verbindung gleichrangiger Elemente}
+
+\begin{grammarentry}{A wie B}{sowie; und auch}
+\GermanText{\textbf{wie} kann zwei gleichrangige Wörter oder Wortgruppen verbinden. Die Bedeutung ist dann ungefähr \textbf{sowie}, \textbf{und auch}, \textbf{gleichermaßen} oder \textbf{sowohl ... als auch}.}
+\EnglishText{\textbf{wie} can connect two words or phrases of equal rank. Its meaning is then approximately \textbf{as well as}, \textbf{and also}, \textbf{equally}, or \textbf{both ... and}.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Männer wie Frauen nahmen an der Abstimmung teil.}{Men as well as women took part in the vote.}
+\ExampleItem{Das Gebäude wurde außen wie innen renoviert.}{The building was renovated both outside and inside.}
+\ExampleItem{Im Sommer wie im Winter fährt sie mit dem Fahrrad.}{She rides her bicycle in summer as well as in winter.}
+\end{itemize}
+\end{exbox}
+
+\section{Modale Nebensätze: Art und Weise}
+
+\begin{grammarentry}{wie + Nebensatz}{modaler Nebensatz}
+\GermanText{\textbf{wie} kann einen Nebensatz einleiten, der die Art und Weise einer Handlung beschreibt. Das konjugierte Verb steht im Nebensatz normalerweise am Ende. Häufig steht im Hauptsatz das Bezugswort \textbf{so}.}
+\EnglishText{\textbf{wie} can introduce a subordinate clause describing the manner of an action. The conjugated verb normally stands at the end of the subordinate clause. The main clause often contains the correlative word \textbf{so}.}
+
+\GermanText{Grundstruktur: \textbf{etwas so machen, wie ...}.}
+\EnglishText{Basic structure: \textbf{to do something the way ...}.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Mach es so, wie ich es dir gezeigt habe.}{Do it the way I showed you.}
+\ExampleItem{Alles geschah, wie wir es erwartet hatten.}{Everything happened as we had expected.}
+\ExampleItem{Der Urlaub war nicht so, wie ich ihn mir vorgestellt hatte.}{The holiday was not the way I had imagined it.}
+\end{itemize}
+\end{exbox}
+
+\subsection{Wortstellung nach einem vorangestellten wie-Nebensatz}
+
+\begin{grammarentry}{Nebensatz in Position 1}{Verb zuerst im Hauptsatz}
+\GermanText{Steht der ganze \textbf{wie}-Nebensatz vor dem Hauptsatz, besetzt er Position 1. Danach folgt im Hauptsatz sofort das konjugierte Verb.}
+\EnglishText{When the entire \textbf{wie} subordinate clause comes before the main clause, it occupies position 1. The conjugated verb of the main clause follows immediately.}
+
+\GermanText{Richtig: \textbf{Wie du weißt, wohne ich in Wien.}}
+\EnglishText{Correct: \textbf{As you know, I live in Vienna.}}
+
+\GermanText{Nicht richtig: \textbf{Wie du weißt, ich wohne in Wien.}}
+\EnglishText{Incorrect: \textbf{As you know, I live in Vienna}, with non-inverted German word order.}
+\end{grammarentry}
+
+\section{Kommentierende und quellenbezogene wie-Sätze}
+
+\begin{grammarentry}{Wie du weißt / Wie bereits erwähnt}{Kommentar oder Quelle}
+\GermanText{Ein vorangestellter \textbf{wie}-Satz kann einen Kommentar, bekanntes Wissen, eine frühere Erklärung oder die Quelle einer Aussage nennen. Inhaltlich bedeutet \textbf{wie} hier häufig \glqq so, wie\grqq{} oder englisch \glqq as\grqq.}
+\EnglishText{A preceding \textbf{wie} clause can name a comment, shared knowledge, a previous explanation, or the source of a statement. In this use, \textbf{wie} often means ``as.''}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Wie du weißt, lerne ich seit einem Jahr Deutsch.}{As you know, I have been learning German for a year.}
+\ExampleItem{Wie bereits erwähnt wurde, beginnt der Kurs am Montag.}{As was already mentioned, the course begins on Monday.}
+\ExampleItem{Wie die Ministerin erklärte, soll das Gesetz geändert werden.}{As the minister explained, the law is to be changed.}
+\end{itemize}
+\end{exbox}
+
+\section{Objektsätze nach Wahrnehmungsverben}
+
+\begin{grammarentry}{sehen, hören, spüren + wie-Satz}{wahrgenommener Vorgang}
+\GermanText{Nach Verben der Wahrnehmung kann ein \textbf{wie}-Satz als Objekt stehen. Er beschreibt einen Vorgang, den jemand sieht, hört, spürt oder beobachtet.}
+\EnglishText{After verbs of perception, a \textbf{wie} clause can function as an object. It describes a process that someone sees, hears, feels, or observes.}
+
+\GermanText{Hier bezeichnet \textbf{wie} nicht immer nur die Methode. Es kann den wahrgenommenen Verlauf eines Ereignisses hervorheben.}
+\EnglishText{Here, \textbf{wie} does not always describe only the method. It can emphasize the perceived unfolding of an event.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich hörte, wie die Tür zuging.}{I heard the door closing.}
+\ExampleItem{Sie sah, wie der Bus abfuhr.}{She saw the bus drive away.}
+\ExampleItem{Wir spürten, wie es langsam kälter wurde.}{We felt it gradually becoming colder.}
+\end{itemize}
+\end{exbox}
+
+\section{Irrealer Vergleich mit \glqq wie wenn\grqq}
+
+\begin{grammarentry}{wie wenn + Nebensatz}{Vergleich mit einer vorgestellten Situation}
+\GermanText{Die Verbindung \textbf{wie wenn} kann einen irrealen oder nur vorgestellten Vergleich einleiten. Im Nebensatz steht häufig der Konjunktiv II. In der Standardsprache ist \textbf{als ob} meist die neutralere und häufigere Form.}
+\EnglishText{The combination \textbf{wie wenn} can introduce an unreal or merely imagined comparison. The subordinate clause often uses the subjunctive II. In standard German, \textbf{als ob} is usually the more neutral and frequent form.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Er tut so, wie wenn er alles wüsste.}{He acts as if he knew everything.}
+\ExampleItem{Neutraler: Er tut so, als ob er alles wüsste.}{More neutral: He acts as if he knew everything.}
+\ExampleItem{Es sieht aus, wie wenn es gleich regnen würde.}{It looks as if it were about to rain.}
+\end{itemize}
+\end{exbox}
+
+\section{Temporales \glqq wie\grqq}
+
+\begin{grammarentry}{wie = als / während}{zeitliche Verwendung}
+\GermanText{\textbf{wie} kann in bestimmten erzählenden Sätzen einen zeitlichen Nebensatz einleiten und ungefähr \textbf{als} oder \textbf{während} bedeuten. Diese Verwendung erscheint besonders bei gleichzeitigen Ereignissen und häufig im historischen Präsens.}
+\EnglishText{In certain narrative sentences, \textbf{wie} can introduce a temporal subordinate clause and mean approximately \textbf{when} or \textbf{as}. This use occurs especially with simultaneous events and often in the historical present.}
+
+\GermanText{Für Lernende ist in gewöhnlichen Standardsätzen meistens \textbf{als} oder \textbf{während} klarer.}
+\EnglishText{For learners, \textbf{als} or \textbf{während} is usually clearer in ordinary standard sentences.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Wie ich an seinem Fenster vorbeigehe, höre ich Musik.}{As I pass his window, I hear music.}
+\ExampleItem{Klarer im normalen Erzählen: Als ich an seinem Fenster vorbeiging, hörte ich Musik.}{Clearer in ordinary narration: When I passed his window, I heard music.}
+\end{itemize}
+\end{exbox}
+
+\section{Umgangssprachliche und nicht standardsprachliche Verwendungen}
+
+\begin{grammarentry}{Komparativ + wie}{nicht standardsprachlich}
+\GermanText{In manchen Regionen und in der Umgangssprache hört man \textbf{wie} nach einem Komparativ oder nach \textbf{anders}. Für die Standardsprache und für eine Prüfung sollte man hier \textbf{als} verwenden.}
+\EnglishText{In some regions and in colloquial speech, \textbf{wie} is heard after a comparative or after \textbf{anders}. In standard German and in an examination, \textbf{als} should be used here.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.43\textwidth}>{\raggedright\arraybackslash}p{0.43\textwidth}}
+\TableHead{Nicht standardsprachlich} & \TableHead{Standardsprachlich} \\
+Er ist größer \textbf{wie} ich. & Er ist größer \textbf{als} ich.\\
+Sie macht es anders \textbf{wie} ich. & Sie macht es anders, \textbf{als} ich es mache.\\
+Das ist besser \textbf{wie} vorher. & Das ist besser \textbf{als} vorher.\\
+\end{longtable}
+\rowcolors{2}{}{}
+
+\begin{grammarentry}{nichts wie}{umgangssprachliche feste Verbindung}
+\GermanText{In festen umgangssprachlichen Ausdrücken kann \textbf{nichts wie} ungefähr \glqq nur\grqq, \glqq außer\grqq{} oder eine Aufforderung zur schnellen Bewegung ausdrücken.}
+\EnglishText{In fixed colloquial expressions, \textbf{nichts wie} can mean approximately ``nothing but,'' ``except,'' or can express an invitation to move quickly.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Er hat nichts wie Unsinn im Kopf.}{He has nothing but nonsense in his head.}
+\ExampleItem{Nichts wie weg!}{Let's get out of here quickly!}
+\end{itemize}
+\end{exbox}
+
+\section{Kommasetzung}
+
+\begin{grammarentry}{Phrase oder Nebensatz?}{entscheidende Regel}
+\GermanText{Vor \textbf{wie} steht normalerweise kein Komma, wenn nur ein Wort oder eine Wortgruppe angeschlossen wird. Ein Komma steht, wenn \textbf{wie} einen vollständigen Nebensatz mit einem eigenen konjugierten Verb einleitet.}
+\EnglishText{Normally there is no comma before \textbf{wie} when only a word or phrase is attached. A comma is used when \textbf{wie} introduces a complete subordinate clause with its own conjugated verb.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.18\textwidth}>{\raggedright\arraybackslash}p{0.37\textwidth}>{\raggedright\arraybackslash}p{0.35\textwidth}}
+\TableHead{Komma} & \TableHead{Struktur} & \TableHead{Beispiel} \\
+Nein & Vergleich mit Wort oder Wortgruppe & Er ist so groß \textbf{wie sein Bruder}.\\
+Nein & Beispielgruppe & Städte \textbf{wie Wien und Graz} wachsen.\\
+Ja & vollständiger Nebensatz & Komm so schnell, \textbf{wie du kannst}.\\
+Ja & modaler Nebensatz & Mach es so, \textbf{wie ich es erklärt habe}.\\
+Meist paarweise möglich & eingeschobener kurzer Vergleich & Er legte sich, \textbf{wie üblich}, früh ins Bett.\\
+\end{longtable}
+\rowcolors{2}{}{}
+
+\section{Unterschied zwischen \glqq so wie\grqq{} und \glqq sowie\grqq}
+
+\begin{grammarentry}{Getrennt oder zusammengeschrieben}{unterschiedliche Funktionen}
+\GermanText{\textbf{so wie} wird getrennt geschrieben, wenn \textbf{so} und \textbf{wie} gemeinsam einen Vergleich oder die Art und Weise ausdrücken. \textbf{sowie} wird zusammengeschrieben, wenn es \glqq und auch\grqq{} oder in einer anderen Verwendung \glqq sobald\grqq{} bedeutet.}
+\EnglishText{\textbf{so wie} is written as two words when \textbf{so} and \textbf{wie} together express a comparison or manner. \textbf{sowie} is written as one word when it means ``as well as'' or, in another use, ``as soon as.''}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Mach es so, wie wir es besprochen haben.}{Do it the way we discussed it.}
+\ExampleItem{Deutsch sowie Englisch werden angeboten.}{German as well as English is offered.}
+\ExampleItem{Sowie er ankommt, rufe ich dich an.}{As soon as he arrives, I will call you.}
+\end{itemize}
+\end{exbox}
+
+\section{Analyse deines Beispielsatzes}
+
+\begin{grammarentry}{Wie es bisher erklärt worden ist}{kommentierender modaler Nebensatz}
+\GermanText{Satz: \textbf{Wie es bisher erklärt worden ist, brauchen wir die richtigen Nachrichten, um eine praktische Demokratie zu haben.}}
+\EnglishText{Sentence: \textbf{As it has been explained so far, we need the correct information in order to have a practical democracy.}}
+
+\GermanText{\textbf{wie} leitet hier den Nebensatz \glqq wie es bisher erklärt worden ist\grqq{} ein. Der Nebensatz verweist auf eine frühere Erklärung und kommentiert, auf welcher Grundlage die folgende Aussage gemacht wird.}
+\EnglishText{Here, \textbf{wie} introduces the subordinate clause ``wie es bisher erklärt worden ist.'' The clause refers to a previous explanation and comments on the basis on which the following statement is made.}
+
+\GermanText{Im Nebensatz steht das Prädikat \textbf{erklärt worden ist} am Ende. Weil der Nebensatz Position 1 besetzt, beginnt der Hauptsatz mit \textbf{brauchen wir}, nicht mit \textbf{wir brauchen}.}
+\EnglishText{In the subordinate clause, the predicate \textbf{erklärt worden ist} stands at the end. Because the subordinate clause occupies position 1, the main clause begins with \textbf{brauchen wir}, not \textbf{wir brauchen}.}
+\end{grammarentry}
+
+\section{Abgrenzung: Wann ist \glqq wie\grqq{} keine Konjunktion?}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.25\textwidth}>{\raggedright\arraybackslash}p{0.34\textwidth}>{\raggedright\arraybackslash}p{0.31\textwidth}}
+\TableHead{Funktion} & \TableHead{Beispiel} & \TableHead{Erklärung} \\
+Interrogativadverb & \textbf{Wie} funktioniert das? & direkte Frage nach der Art und Weise\\
+Interrogativadverb im indirekten Fragesatz & Ich weiß nicht, \textbf{wie} das funktioniert. & indirekte Frage; nicht dieselbe Funktion wie der Vergleich\\
+Gradadverb & \textbf{Wie} schön! & verstärkt eine Eigenschaft\\
+Substantiviertes Wort & Es kommt auf das \textbf{Wie} an. & \textbf{Wie} wird als Nomen gebraucht\\
+Konjunktion / Vergleichswort & Er ist so groß \textbf{wie} ich. & verbindet die beiden Vergleichselemente\\
+\end{longtable}
+\rowcolors{2}{}{}
+
+\section{Entscheidungshilfe}
+
+\begin{grammarentry}{Welche Funktion hat \glqq wie\grqq?}{Schritt für Schritt}
+\begin{enumerate}
+\item \GermanText{Fragt \textbf{wie} direkt oder indirekt nach einer Methode? Dann ist es meist ein Interrogativadverb: \glqq Wie machst du das?\grqq}
+\EnglishText{Does \textbf{wie} ask directly or indirectly about a method? Then it is usually an interrogative adverb: ``How do you do that?''}
+
+\item \GermanText{Verbindet \textbf{wie} zwei Personen, Sachen oder Eigenschaften als gleich oder ähnlich? Dann ist es ein Vergleichswort: \glqq so schnell wie du\grqq.}
+\EnglishText{Does \textbf{wie} connect two people, things, or qualities as equal or similar? Then it is a comparative connector: ``as fast as you.''}
+
+\item \GermanText{Folgt nach \textbf{wie} ein Satz mit einem konjugierten Verb am Ende? Dann leitet es einen Nebensatz ein: \glqq wie du es erklärt hast\grqq.}
+\EnglishText{Is \textbf{wie} followed by a clause whose conjugated verb is at the end? Then it introduces a subordinate clause: ``the way you explained it.''}
+
+\item \GermanText{Nennt \textbf{wie} typische Vertreter? Dann führt es Beispiele ein: \glqq Länder wie Österreich und Deutschland\grqq.}
+\EnglishText{Does \textbf{wie} name typical members? Then it introduces examples: ``countries such as Austria and Germany.''}
+
+\item \GermanText{Verbindet es gleichrangige Elemente im Sinn von \glqq und auch\grqq? Dann hat es eine additive Funktion: \glqq Männer wie Frauen\grqq.}
+\EnglishText{Does it connect equal elements in the sense of ``and also''? Then it has an additive function: ``men as well as women.''}
+\end{enumerate}
+\end{grammarentry}
+
+\section{Kurze Übungen}
+
+\begin{grammarentry}{Bestimme die Funktion}{Übung}
+\GermanText{Bestimme, welche Funktion \textbf{wie} in jedem Satz hat: Gleichheitsvergleich, Beispiel, additive Verbindung, modaler Nebensatz, Objektsatz, temporaler Nebensatz oder keine Konjunktion.}
+\EnglishText{Determine the function of \textbf{wie} in each sentence: comparison of equality, example, additive connection, modal subordinate clause, object clause, temporal subordinate clause, or not a conjunction.}
+\end{grammarentry}
+
+\begin{enumerate}
+\item Meine Schwester ist genauso geduldig wie mein Vater.
+\item Geräte wie Computer und Drucker brauchen Strom.
+\item Wie du weißt, beginnt die Prüfung um neun Uhr.
+\item Ich sah, wie das Kind die Tür öffnete.
+\item Wie bist du nach Hause gekommen?
+\item Das Büro ist morgens wie abends geöffnet.
+\item Mach es so, wie wir es geübt haben.
+\item Wie ich die Straße überquere, fährt plötzlich ein Fahrrad vorbei.
+\end{enumerate}
+
+\subsection{Lösungen}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\centering\arraybackslash}p{0.08\textwidth}>{\raggedright\arraybackslash}p{0.77\textwidth}}
+\TableHead{Nr.} & \TableHead{Lösung} \\
+1 & Gleichheitsvergleich\\
+2 & beispielhafte Nennung\\
+3 & kommentierender modaler Nebensatz\\
+4 & Objektsatz nach einem Wahrnehmungsverb\\
+5 & keine Konjunktion; Interrogativadverb\\
+6 & additive Verbindung gleichrangiger Elemente\\
+7 & modaler Nebensatz der Art und Weise\\
+8 & temporaler Nebensatz; erzählende Verwendung\\
+\end{longtable}
+\rowcolors{2}{}{}
+
+\section{Zusammenfassung}
+
+\begin{grammarentry}{Merksätze}{kurz und wichtig}
+\GermanText{\textbf{Gleichheit:} so groß \textbf{wie}. \textbf{Ungleichheit:} größer \textbf{als}.}
+\EnglishText{\textbf{Equality:} as tall \textbf{as}. \textbf{Inequality:} taller \textbf{than}.}
+
+\GermanText{\textbf{Phrase nach wie:} normalerweise kein Komma. \textbf{Vollständiger wie-Nebensatz:} Komma und konjugiertes Verb am Ende.}
+\EnglishText{\textbf{Phrase after wie:} normally no comma. \textbf{Complete wie subordinate clause:} comma and conjugated verb at the end.}
+
+\GermanText{\textbf{wie} kann vergleichen, Beispiele einführen, gleichrangige Elemente verbinden sowie modale, kommentierende, objektbezogene und selten temporale Nebensätze einleiten.}
+\EnglishText{\textbf{wie} can compare, introduce examples, connect equal elements, and introduce modal, comment-like, object, and occasionally temporal subordinate clauses.}
+\end{grammarentry}
+
+\section{Quellenhinweis}
+
+\begin{grammarentry}{Grammatische Grundlage}{Terminologie}
+\GermanText{Die Darstellung orientiert sich an der Beschreibung von \textbf{wie} als Konjunktion im Duden sowie an der Unterscheidung zwischen \textbf{Adjunktor} und \textbf{Subjunktor} im grammatischen Informationssystem grammis des Instituts für Deutsche Sprache.}
+\EnglishText{The presentation follows the Duden description of \textbf{wie} as a conjunction and the distinction between \textbf{adjunctive connector} and \textbf{subordinator} in the grammis system of the Leibniz Institute for the German Language.}
+\end{grammarentry}
+
+\end{document}
