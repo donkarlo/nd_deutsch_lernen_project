@@ -1,119 +1,514 @@
-\documentclass[varwidth,border=10pt]{standalone}
+% Erklärung und Tabellen zum deutschen Imperativ
 
-% ---------- Encoding & Language ----------
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=1.8cm]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[ngerman]{babel}
-
-% ---------- Font ----------
-\usepackage{sourcesanspro}
-\renewcommand{\familydefault}{\sfdefault}
-
-% ---------- Layout & Typography ----------
+\usepackage[english,ngerman]{babel}
+\usepackage{lmodern}
 \usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
 \usepackage{enumitem}
-\usepackage{tabularx}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
 \usepackage{array}
+\usepackage{longtable}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
 
 \setlength{\parindent}{0pt}
-\setlist[itemize]{leftmargin=*, itemsep=2pt, topsep=4pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\renewcommand{\arraystretch}{1.45}
+\setlength{\tabcolsep}{5pt}
+\linespread{1.05}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\newcommand{\TableEnglish}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+
+\title{Der deutsche Imperativ\\\large The German Imperative}
+\date{}
 
 \begin{document}
-    
-    {\LARGE\bfseries Imperativ im Deutschen (Befehle, Aufforderungen)}\par\vspace{6pt}
-    
-    Der \textbf{Imperativ} wird benutzt, um jemanden direkt zu etwas aufzufordern:
-    \textit{Komm!} \textit{Hören Sie zu!}
-    
-    \vspace{8pt}
-    
-    
-    \section*{1) Imperativ mit \textit{du} (informell, 1 Person)}
-    \textbf{Regel:} Verbstamm (meist ohne \textit{-st}); \textit{du} steht normalerweise
-    \textbf{nicht} im Satz.\par
-    \textbf{Beispiele:}
-    \begin{itemize}
-        \item \textit{Komm!}
-        \item \textit{Lern Deutsch!}
-        \item \textit{Schreib mir!}
-    \end{itemize}
-    
-    \textbf{Hinweis:} Bei manchen Verben ist ein \textit{-e} möglich (oft etwas formeller):\par
-    \textit{Hör zu!} / \textit{Höre zu!}
-    
-    \vspace{6pt}
-    
-    
-    \section*{2) Imperativ mit \textit{ihr} (informell, mehrere Personen)}
-    \textbf{Regel:} Wie die Präsensform von \textit{ihr} (ohne das Wort \textit{ihr}).\par
-    \textbf{Beispiele:}
-    \begin{itemize}
-        \item \textit{Kommt!}
-        \item \textit{Hört zu!}
-        \item \textit{Lernt Deutsch!}
-    \end{itemize}
-    
-    \vspace{6pt}
-    
-    
-    \section*{3) Imperativ mit \textit{Sie} (formell)}
-    \textbf{Regel:} Verb an Position 1 + \textit{Sie} (meist am Ende). Oft mit
-    \textit{bitte}.\par
-    \textbf{Beispiele:}
-    \begin{itemize}
-        \item \textit{Kommen Sie bitte!}
-        \item \textit{Hören Sie zu!}
-        \item \textit{Füllen Sie das Formular aus!}
-    \end{itemize}
-    
-    \vspace{6pt}
-    
-    
-    \section*{4) Trennbare Verben (z.\,B. \textit{aufstehen}, \textit{zumachen}, \textit{anrufen})}
-    \textbf{Regel:} Das Präfix steht \textbf{am Satzende}.\par
-    \textbf{Beispiele:}
-    \begin{itemize}
-        \item \textit{Steh auf!}
-        \item \textit{Mach die Tür zu!}
-        \item \textit{Ruf mich an!}
-    \end{itemize}
-    
-    \vspace{6pt}
-    
-    
-    \section*{5) Verneinter Imperativ (Negation)}
-    \textbf{Regel:} \textit{nicht} oder \textit{kein}.\par
-    \textbf{Beispiele:}
-    \begin{itemize}
-        \item \textit{Komm nicht zu spät!}
-        \item \textit{Rauch hier nicht!}
-        \item \textit{Mach keinen Lärm!}
-    \end{itemize}
-    
-    \vspace{10pt}
-    
-    
-    \section*{Kurzübersicht (Tabelle)}
-    \renewcommand{\arraystretch}{1.25}
-    \begin{tabularx}{\linewidth}{|>{\raggedright\arraybackslash}p{2.6cm}|X|X|}
-\hline
-\textbf{Form} & \textbf{Regel} & \textbf{Beispiel} \\
-\hline
-\textit{du} & Verbstamm (ohne \textit{-st}), \textit{du} meist weglassen
-& \textit{Komm! / Lern! / Schreib!} \\
-\hline
-\textit{ihr} & wie Präsens-\textit{ihr} (ohne \textit{ihr})
-& \textit{Kommt! / Lernt! / Hört zu!} \\
-\hline
-\textit{Sie} & Verb zuerst + \textit{Sie} (oft mit \textit{bitte})
-& \textit{Kommen Sie bitte!} \\
-\hline
-trennbar & Präfix am Ende
-& \textit{Steh auf! / Ruf mich an!} \\
-\hline
-Negation & \textit{nicht} / \textit{kein}
-& \textit{Komm nicht! / Mach keinen Lärm!} \\
-\hline
-    \end{tabularx}
+    \selectlanguage{ngerman}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+    \section{Grundbedeutung und Funktion}
+
+        \begin{grammarentry}{Imperativ}{Aufforderungsform}
+            \GermanText{Der Imperativ ist die Verbform für Aufforderungen, Befehle, Bitten, Ratschläge, Warnungen, Einladungen und Anweisungen.}
+            \EnglishText{The imperative is the verb form used for requests, commands, pleas, advice, warnings, invitations, and instructions.}
+
+            \GermanText{Ein Imperativsatz richtet sich normalerweise direkt an eine oder mehrere Personen. Deshalb gibt es im Deutschen Formen für \textbf{du}, \textbf{ihr}, \textbf{Sie} und auch eine gemeinsame Form mit \textbf{wir}.}
+            \EnglishText{An imperative sentence normally addresses one or more people directly. German therefore has forms for \textbf{du}, \textbf{ihr}, \textbf{Sie}, and also a collective form with \textbf{wir}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Komm bitte herein!}{Please come in!}
+                \ExampleItem{Seid vorsichtig!}{Be careful!}
+                \ExampleItem{Warten Sie einen Moment!}{Please wait a moment!}
+                \ExampleItem{Gehen wir nach Hause!}{Let us go home!}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Die vier wichtigsten Imperativformen}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{2.7cm}|p{3.4cm}|p{4cm}|p{4.5cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Adressat / Addressee} &
+            \color{white}\textbf{Bildung / Formation} &
+            \color{white}\textbf{Beispiel / Example} &
+            \color{white}\textbf{Englische Bedeutung} \\
+            du & Verbstamm; \textit{du} entfällt & Komm sofort! & Come immediately! \\
+            ihr & Präsensform ohne \textit{ihr} & Kommt sofort! & Come immediately! \\
+            Sie & Infinitiv + \textit{Sie} & Kommen Sie sofort! & Come immediately! \\
+            wir & Infinitiv + \textit{wir} & Gehen wir! & Let us go! \\
+        \end{longtable}
+        \TableEnglish{The \textbf{du} form normally uses the verb stem, the \textbf{ihr} form is the present-tense form without the pronoun, and the polite \textbf{Sie} form uses the infinitive followed by \textit{Sie}. The \textbf{wir} form expresses a joint suggestion.}
+
+        \begin{grammarentry}{Personalpronomen}{Wann steht das Pronomen?}
+            \GermanText{Bei \textbf{du} und \textbf{ihr} wird das Personalpronomen normalerweise nicht genannt: \textbf{Komm!}, \textbf{Kommt!}. Bei der höflichen Form muss \textbf{Sie} stehen: \textbf{Kommen Sie!}. Bei der gemeinsamen Aufforderung muss \textbf{wir} stehen: \textbf{Gehen wir!}}
+            \EnglishText{With \textbf{du} and \textbf{ihr}, the personal pronoun is normally omitted: \textbf{Komm!}, \textbf{Kommt!}. The polite form requires \textbf{Sie}: \textbf{Kommen Sie!}. The collective suggestion requires \textbf{wir}: \textbf{Gehen wir!}}
+        \end{grammarentry}
+
+    \section{Der Imperativ mit du}
+
+        \begin{grammarentry}{Grundregel}{Verbstamm ohne -st}
+            \GermanText{Für die \textbf{du}-Form nimmt man normalerweise den Stamm des Verbs. Die Endung \textbf{-st} und das Pronomen \textbf{du} fallen weg.}
+            \EnglishText{For the \textbf{du} form, the verb stem is normally used. The ending \textbf{-st} and the pronoun \textbf{du} are omitted.}
+
+            \GermanText{Präsens: \textbf{du machst} $\rightarrow$ Imperativ: \textbf{Mach!}}
+            \EnglishText{Present tense: \textbf{du machst} $\rightarrow$ imperative: \textbf{Mach!}}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Mach die Tür zu!}{Close the door!}
+                \ExampleItem{Lern die neuen Wörter!}{Learn the new words!}
+                \ExampleItem{Kauf bitte Brot!}{Please buy bread!}
+                \ExampleItem{Frag den Lehrer!}{Ask the teacher!}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Endung -e}{Möglich oder notwendig}
+            \GermanText{Bei vielen Verben ist ein zusätzliches \textbf{-e} möglich, besonders in formeller oder etwas älterer Sprache: \textbf{Mach! / Mache!}, \textbf{Komm! / Komme!}. Im heutigen gesprochenen Deutsch ist die kurze Form meist üblicher.}
+            \EnglishText{With many verbs, an additional \textbf{-e} is possible, especially in formal or somewhat older language: \textbf{Mach! / Mache!}, \textbf{Komm! / Komme!}. In modern spoken German, the short form is usually more common.}
+
+            \GermanText{Bei Verbstämmen auf \textbf{-d} oder \textbf{-t} und bei schwer aussprechbaren Konsonantengruppen ist \textbf{-e} normalerweise notwendig: \textbf{Arbeite!}, \textbf{Warte!}, \textbf{Atme!}, \textbf{Öffne!}.}
+            \EnglishText{With verb stems ending in \textbf{-d} or \textbf{-t}, and with difficult consonant clusters, \textbf{-e} is normally necessary: \textbf{Arbeite!}, \textbf{Warte!}, \textbf{Atme!}, \textbf{Öffne!}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Warte hier!}{Wait here!}
+                \ExampleItem{Arbeite sorgfältig!}{Work carefully!}
+                \ExampleItem{Atme langsam!}{Breathe slowly!}
+                \ExampleItem{Öffne das Fenster!}{Open the window!}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Starke und unregelmäßige Verben}
+
+        \begin{grammarentry}{Vokalwechsel e zu i oder ie}{Der Wechsel bleibt erhalten}
+            \GermanText{Wenn ein starkes Verb in der \textbf{du}-Form des Präsens den Wechsel \textbf{e $\rightarrow$ i} oder \textbf{e $\rightarrow$ ie} hat, bleibt dieser Wechsel normalerweise auch im Imperativ erhalten. Die Endung \textbf{-e} wird dabei nicht verwendet.}
+            \EnglishText{If a strong verb changes \textbf{e $\rightarrow$ i} or \textbf{e $\rightarrow$ ie} in the present-tense \textbf{du} form, this change normally remains in the imperative. The ending \textbf{-e} is not used in these forms.}
+        \end{grammarentry}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{3.1cm}|p{3.4cm}|p{3.4cm}|p{4.7cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Infinitiv} &
+            \color{white}\textbf{du-Form} &
+            \color{white}\textbf{Imperativ} &
+            \color{white}\textbf{English} \\
+            geben & du gibst & Gib! & Give! \\
+            nehmen & du nimmst & Nimm! & Take! \\
+            sprechen & du sprichst & Sprich! & Speak! \\
+            helfen & du hilfst & Hilf! & Help! \\
+            lesen & du liest & Lies! & Read! \\
+            sehen & du siehst & Sieh! & Look! / See! \\
+            essen & du isst & Iss! & Eat! \\
+            vergessen & du vergisst & Vergiss nicht! & Do not forget! \\
+        \end{longtable}
+
+        \begin{grammarentry}{Vokalwechsel a zu ä}{Kein Umlaut im Imperativ}
+            \GermanText{Der Umlaut der Präsensform mit \textbf{du} fällt im Imperativ normalerweise weg. Man verwendet den Stammvokal des Infinitivs: \textbf{du fährst $\rightarrow$ Fahr!}, \textbf{du schläfst $\rightarrow$ Schlaf!}, \textbf{du läufst $\rightarrow$ Lauf!}.}
+            \EnglishText{The umlaut found in the present-tense \textbf{du} form normally disappears in the imperative. The stem vowel of the infinitive is used: \textbf{du fährst $\rightarrow$ Fahr!}, \textbf{du schläfst $\rightarrow$ Schlaf!}, \textbf{du läufst $\rightarrow$ Lauf!}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Fahr langsam!}{Drive slowly!}
+                \ExampleItem{Schlaf gut!}{Sleep well!}
+                \ExampleItem{Lauf nicht so schnell!}{Do not run so fast!}
+                \ExampleItem{Trag die Kiste vorsichtig!}{Carry the box carefully!}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Die Verben sein, haben und werden}
+
+        \begin{grammarentry}{Wichtige Sonderformen}{Unregelmäßig}
+            \GermanText{Die Verben \textbf{sein}, \textbf{haben} und \textbf{werden} haben besonders wichtige Imperativformen, die man direkt lernen sollte.}
+            \EnglishText{The verbs \textbf{sein}, \textbf{haben}, and \textbf{werden} have especially important imperative forms that should be learned directly.}
+        \end{grammarentry}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{2.5cm}|p{3.5cm}|p{3.7cm}|p{4.8cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Verb} &
+            \color{white}\textbf{du} &
+            \color{white}\textbf{ihr} &
+            \color{white}\textbf{Sie} \\
+            sein & Sei ruhig! & Seid ruhig! & Seien Sie ruhig! \\
+            haben & Hab / Habe Geduld! & Habt Geduld! & Haben Sie Geduld! \\
+            werden & Werde gesund! & Werdet gesund! & Werden Sie gesund! \\
+        \end{longtable}
+        \TableEnglish{Examples: \textit{Be quiet!}, \textit{Be patient!}, and \textit{Get well!}}
+
+    \section{Der Imperativ mit ihr}
+
+        \begin{grammarentry}{Bildung}{Präsensform ohne ihr}
+            \GermanText{Die \textbf{ihr}-Form des Imperativs ist identisch mit der normalen Präsensform für \textbf{ihr}; nur das Pronomen entfällt.}
+            \EnglishText{The \textbf{ihr} imperative is identical to the normal present-tense \textbf{ihr} form; only the pronoun is omitted.}
+
+            \GermanText{Präsens: \textbf{ihr kommt} $\rightarrow$ Imperativ: \textbf{Kommt!}}
+            \EnglishText{Present tense: \textbf{ihr kommt} $\rightarrow$ imperative: \textbf{Kommt!}}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Kommt bitte herein!}{Please come in!}
+                \ExampleItem{Lest den Text noch einmal!}{Read the text again!}
+                \ExampleItem{Seid leise!}{Be quiet!}
+                \ExampleItem{Vergesst eure Schlüssel nicht!}{Do not forget your keys!}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Der höfliche Imperativ mit Sie}
+
+        \begin{grammarentry}{Bildung}{Infinitiv + Sie}
+            \GermanText{Die höfliche Imperativform besteht aus dem Infinitiv und dem Personalpronomen \textbf{Sie}. Das Verb steht am Anfang, danach steht \textbf{Sie}.}
+            \EnglishText{The polite imperative consists of the infinitive and the personal pronoun \textbf{Sie}. The verb comes first, followed by \textbf{Sie}.}
+
+            \GermanText{Diese Form wird für eine oder mehrere Personen benutzt, die man siezt.}
+            \EnglishText{This form is used for one or more people addressed formally with \textbf{Sie}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Kommen Sie bitte herein!}{Please come in!}
+                \ExampleItem{Nehmen Sie Platz!}{Please take a seat!}
+                \ExampleItem{Unterschreiben Sie hier!}{Sign here!}
+                \ExampleItem{Vergessen Sie Ihren Ausweis nicht!}{Do not forget your identification card!}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Wortstellung}{Sie steht direkt nach dem Verb}
+            \GermanText{In einem einfachen höflichen Imperativsatz steht \textbf{Sie} normalerweise unmittelbar nach dem konjugierten Verb: \textbf{Öffnen Sie das Fenster!}}
+            \EnglishText{In a simple polite imperative sentence, \textbf{Sie} normally stands immediately after the conjugated verb: \textbf{Öffnen Sie das Fenster!}}
+        \end{grammarentry}
+
+    \section{Die gemeinsame Aufforderung mit wir}
+
+        \begin{grammarentry}{Vorschlag}{Infinitiv + wir}
+            \GermanText{Mit \textbf{Infinitiv + wir} macht der Sprecher einen Vorschlag, an dem er selbst beteiligt ist. Die Bedeutung entspricht oft dem englischen \textbf{let us} oder \textbf{let's}.}
+            \EnglishText{With \textbf{infinitive + wir}, the speaker makes a suggestion in which the speaker is also involved. The meaning often corresponds to English \textbf{let us} or \textbf{let's}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Gehen wir!}{Let us go!}
+                \ExampleItem{Fangen wir an!}{Let us begin!}
+                \ExampleItem{Machen wir eine Pause!}{Let us take a break!}
+                \ExampleItem{Seien wir ehrlich!}{Let us be honest!}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Alternative mit lassen}{Lass uns / Lasst uns}
+            \GermanText{Im gesprochenen Deutsch ist auch \textbf{Lass uns + Infinitiv} sehr häufig, wenn man eine Person duzt. Zu mehreren geduzten Personen sagt man \textbf{Lasst uns + Infinitiv}.}
+            \EnglishText{In spoken German, \textbf{Lass uns + infinitive} is also very common when addressing one person informally. When addressing several people informally, use \textbf{Lasst uns + infinitive}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Lass uns anfangen!}{Let's begin!}
+                \ExampleItem{Lasst uns nach Hause gehen!}{Let's go home!}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Trennbare Verben}
+
+        \begin{grammarentry}{Verbklammer}{Präfix am Satzende}
+            \GermanText{Bei trennbaren Verben steht der konjugierte Verbteil am Anfang und das trennbare Präfix am Ende des Imperativsatzes.}
+            \EnglishText{With separable verbs, the conjugated verb part stands at the beginning and the separable prefix stands at the end of the imperative sentence.}
+        \end{grammarentry}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{3cm}|p{3.5cm}|p{3.7cm}|p{4.3cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Infinitiv} &
+            \color{white}\textbf{du} &
+            \color{white}\textbf{ihr} &
+            \color{white}\textbf{Sie} \\
+            anrufen & Ruf mich an! & Ruft mich an! & Rufen Sie mich an! \\
+            aufstehen & Steh auf! & Steht auf! & Stehen Sie auf! \\
+            zumachen & Mach die Tür zu! & Macht die Tür zu! & Machen Sie die Tür zu! \\
+            mitkommen & Komm mit! & Kommt mit! & Kommen Sie mit! \\
+        \end{longtable}
+
+        \begin{grammarentry}{Infinitiv am Satzende}{Mit Modal- oder Infinitivkonstruktionen}
+            \GermanText{Wenn zu dem trennbaren Verb noch ein Infinitiv gehört, bleibt dieser Infinitiv normalerweise am Ende: \textbf{Fang an zu arbeiten!}}
+            \EnglishText{If another infinitive belongs with the separable verb, that infinitive normally remains at the end: \textbf{Start working!}}
+        \end{grammarentry}
+
+    \section{Reflexive Verben}
+
+        \begin{grammarentry}{Reflexivpronomen}{mich, dich, sich, uns, euch}
+            \GermanText{Bei reflexiven Verben muss das passende Reflexivpronomen erhalten bleiben. In der \textbf{du}-Form steht \textbf{dich} oder \textbf{dir}; in der \textbf{ihr}-Form steht \textbf{euch}; in der höflichen Form steht \textbf{sich}.}
+            \EnglishText{With reflexive verbs, the appropriate reflexive pronoun must remain. The \textbf{du} form uses \textbf{dich} or \textbf{dir}; the \textbf{ihr} form uses \textbf{euch}; the polite form uses \textbf{sich}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Beeil dich!}{Hurry up!}
+                \ExampleItem{Setzt euch!}{Sit down!}
+                \ExampleItem{Machen Sie sich keine Sorgen!}{Do not worry!}
+                \ExampleItem{Wasch dir die Hände!}{Wash your hands!}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Negation im Imperativ}
+
+        \begin{grammarentry}{nicht und kein}{Die Aufforderung verneinen}
+            \GermanText{Ein Imperativ wird mit \textbf{nicht} oder \textbf{kein} verneint. \textbf{Nicht} verneint normalerweise ein Verb, ein Adjektiv, ein Adverb oder eine ganze Aussage. \textbf{Kein} verneint ein Nomen ohne bestimmten Artikel.}
+            \EnglishText{An imperative is negated with \textbf{nicht} or \textbf{kein}. \textbf{Nicht} normally negates a verb, adjective, adverb, or whole statement. \textbf{Kein} negates a noun without a definite article.}
+
+            \GermanText{Die korrekte Form von \textbf{Don't forget!} ist \textbf{Vergiss nicht!}. Die Wortstellung \textbf{Nicht vergiss!} ist im normalen deutschen Imperativ falsch.}
+            \EnglishText{The correct form of \textbf{Don't forget!} is \textbf{Vergiss nicht!}. The word order \textbf{Nicht vergiss!} is incorrect in the normal German imperative.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Vergiss deinen Termin nicht!}{Do not forget your appointment!}
+                \ExampleItem{Sprich nicht so laut!}{Do not speak so loudly!}
+                \ExampleItem{Kauft keine unnötigen Dinge!}{Do not buy unnecessary things!}
+                \ExampleItem{Machen Sie sich keine Sorgen!}{Do not worry!}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Wortstellung im Imperativsatz}
+
+        \begin{grammarentry}{Verb an Position 1}{Grundmuster}
+            \GermanText{In einem selbstständigen Imperativsatz steht das Verb normalerweise an erster Stelle. Danach folgen Pronomen, Objekte, Adverbien und andere Satzteile.}
+            \EnglishText{In an independent imperative sentence, the verb normally stands in first position. Pronouns, objects, adverbs, and other sentence elements follow it.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Gib mir bitte das Buch!}{Please give me the book!}
+                \ExampleItem{Schreib die Antwort auf ein Blatt!}{Write the answer on a sheet of paper!}
+                \ExampleItem{Komm morgen um acht Uhr zu mir!}{Come to my place tomorrow at eight o'clock!}
+                \ExampleItem{Rufen Sie mich später noch einmal an!}{Call me again later!}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Objektpronomen}{Dativ vor Akkusativ}
+            \GermanText{Wenn zwei Pronomen vorkommen, steht das Akkusativpronomen häufig vor dem Dativpronomen: \textbf{Gib es mir!}. Wenn beide Objekte Nomen sind, steht normalerweise der Dativ vor dem Akkusativ: \textbf{Gib dem Kind das Buch!}}
+            \EnglishText{When two pronouns occur, the accusative pronoun often comes before the dative pronoun: \textbf{Give it to me!}. When both objects are nouns, the dative normally comes before the accusative: \textbf{Give the child the book!}}
+        \end{grammarentry}
+
+    \section{Bitte, doch, mal und andere Modalpartikeln}
+
+        \begin{grammarentry}{Höflichkeit und Ton}{Eine Aufforderung abschwächen}
+            \GermanText{Ein Imperativ kann sehr direkt wirken. Mit \textbf{bitte}, \textbf{doch}, \textbf{mal} oder \textbf{doch mal} klingt er oft freundlicher oder weniger streng. Die genaue Wirkung hängt von Tonfall und Situation ab.}
+            \EnglishText{An imperative can sound very direct. With \textbf{bitte}, \textbf{doch}, \textbf{mal}, or \textbf{doch mal}, it often sounds friendlier or less strict. The exact effect depends on intonation and context.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Komm bitte herein!}{Please come in!}
+                \ExampleItem{Schau mal!}{Take a look!}
+                \ExampleItem{Setz dich doch!}{Do sit down!}
+                \ExampleItem{Erklären Sie das bitte noch einmal!}{Please explain that again!}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Position von bitte}{Flexibel}
+            \GermanText{\textbf{Bitte} kann an verschiedenen Stellen stehen: \textbf{Bitte komm herein!}, \textbf{Komm bitte herein!}, \textbf{Komm herein, bitte!}. Die mittlere Position ist sehr häufig.}
+            \EnglishText{\textbf{Bitte} can appear in different positions: \textbf{Please come in!}, \textbf{Come in, please!}. The middle position is very common in German.}
+        \end{grammarentry}
+
+    \section{Imperativ und Satzzeichen}
+
+        \begin{grammarentry}{Ausrufezeichen oder Punkt}{Stärke der Aufforderung}
+            \GermanText{Ein Imperativsatz kann mit einem Ausrufezeichen oder einem Punkt enden. Das Ausrufezeichen macht die Aufforderung meistens stärker. In höflichen schriftlichen Anweisungen ist auch ein Punkt möglich.}
+            \EnglishText{An imperative sentence may end with an exclamation mark or a period. The exclamation mark usually makes the instruction stronger. A period is also possible in polite written instructions.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Hör sofort auf!}{Stop immediately!}
+                \ExampleItem{Bitte senden Sie das Formular bis Freitag.}{Please send the form by Friday.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Andere Formen mit auffordernder Bedeutung}
+
+        \begin{grammarentry}{Infinitiv als Anweisung}{Schilder und allgemeine Regeln}
+            \GermanText{Auf Schildern, in Rezepten, Bedienungsanleitungen und allgemeinen Vorschriften steht häufig der Infinitiv. Diese Form richtet sich nicht persönlich mit \textbf{du}, \textbf{ihr} oder \textbf{Sie} an jemanden, hat aber eine auffordernde Bedeutung.}
+            \EnglishText{Signs, recipes, instruction manuals, and general rules often use the infinitive. This form does not address someone personally with \textbf{du}, \textbf{ihr}, or \textbf{Sie}, but it has directive meaning.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Nicht rauchen!}{No smoking!}
+                \ExampleItem{Bitte Abstand halten!}{Please keep your distance!}
+                \ExampleItem{Vor Gebrauch gut schütteln.}{Shake well before use.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Höfliche Alternativen}{Frage oder Konjunktiv II}
+            \GermanText{Statt eines direkten Imperativs kann man eine höfliche Frage oder den Konjunktiv II verwenden. Das ist besonders bei unbekannten Personen, Bitten und formellen Situationen üblich.}
+            \EnglishText{Instead of a direct imperative, a polite question or the subjunctive II can be used. This is especially common with strangers, requests, and formal situations.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Könnten Sie bitte das Fenster öffnen?}{Could you please open the window?}
+                \ExampleItem{Würdest du mir bitte helfen?}{Would you please help me?}
+                \ExampleItem{Kannst du kurz warten?}{Can you wait a moment?}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Modalverben im Imperativ}
+
+        \begin{grammarentry}{Selten und oft unnatürlich}{Besser eine andere Form wählen}
+            \GermanText{Direkte Imperativformen von Modalverben wie \textbf{müssen}, \textbf{können}, \textbf{sollen} und \textbf{dürfen} sind selten oder wirken ungewöhnlich. Meist verwendet man stattdessen das Vollverb, eine Aussage mit Modalverb oder eine höfliche Frage.}
+            \EnglishText{Direct imperative forms of modal verbs such as \textbf{müssen}, \textbf{können}, \textbf{sollen}, and \textbf{dürfen} are rare or sound unusual. Usually, German uses the main verb, a statement with a modal verb, or a polite question instead.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Komm pünktlich!}{Come on time!}
+                \ExampleItem{Du musst pünktlich kommen.}{You must come on time.}
+                \ExampleItem{Könnten Sie bitte warten?}{Could you please wait?}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Häufige Fehler}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{4.2cm}|p{4.4cm}|p{6cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Falsch / Incorrect} &
+            \color{white}\textbf{Richtig / Correct} &
+            \color{white}\textbf{Erklärung / Explanation} \\
+            Nicht vergiss! & Vergiss nicht! & Das Verb steht am Anfang; \textit{nicht} folgt später. / The verb comes first; \textit{nicht} follows later. \\
+            Du komm! & Komm! & Das Pronomen \textit{du} entfällt normalerweise. / The pronoun \textit{du} is normally omitted. \\
+            Kommst! & Komm! & Die Endung \textit{-st} gehört nicht in den \textit{du}-Imperativ. / The ending \textit{-st} is not used in the \textit{du} imperative. \\
+            Fahrst langsam! & Fahr langsam! & Man verwendet den Stamm ohne \textit{-st}; der Umlaut fällt weg. / Use the stem without \textit{-st}; the umlaut disappears. \\
+            Kommen bitte Sie! & Kommen Sie bitte! & In der höflichen Form steht \textit{Sie} direkt nach dem Verb. / In the polite form, \textit{Sie} follows the verb directly. \\
+            Ruf an mich! & Ruf mich an! & Bei trennbaren Verben steht das Präfix am Satzende. / With separable verbs, the prefix stands at the end. \\
+            Beeil! & Beeil dich! & Das Reflexivpronomen darf nicht fehlen. / The reflexive pronoun must not be omitted. \\
+        \end{longtable}
+
+    \section{Schritt-für-Schritt-Methode}
+
+        \begin{grammarentry}{So bildest du den Imperativ}{Entscheidungsweg}
+            \GermanText{\textbf{Schritt 1:} Entscheide, wen du ansprichst: eine geduzte Person, mehrere geduzte Personen oder eine gesiezte Person beziehungsweise Gruppe.}
+            \EnglishText{\textbf{Step 1:} Decide whom you are addressing: one person informally, several people informally, or one person or group formally.}
+
+            \GermanText{\textbf{Schritt 2:} Wähle die passende Grundform: Verbstamm für \textbf{du}, Präsensform ohne Pronomen für \textbf{ihr}, Infinitiv + \textbf{Sie} für die höfliche Form.}
+            \EnglishText{\textbf{Step 2:} Choose the appropriate basic form: verb stem for \textbf{du}, present-tense form without the pronoun for \textbf{ihr}, and infinitive + \textbf{Sie} for the polite form.}
+
+            \GermanText{\textbf{Schritt 3:} Prüfe, ob das Verb unregelmäßig, trennbar oder reflexiv ist.}
+            \EnglishText{\textbf{Step 3:} Check whether the verb is irregular, separable, or reflexive.}
+
+            \GermanText{\textbf{Schritt 4:} Ergänze Objekte, Angaben, \textbf{bitte} und gegebenenfalls \textbf{nicht} oder \textbf{kein}.}
+            \EnglishText{\textbf{Step 4:} Add objects, adverbials, \textbf{bitte}, and, if needed, \textbf{nicht} or \textbf{kein}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{anrufen -- du: Ruf mich bitte morgen an!}{to call -- informal singular: Please call me tomorrow!}
+                \ExampleItem{lesen -- ihr: Lest den Text nicht zu schnell!}{to read -- informal plural: Do not read the text too quickly!}
+                \ExampleItem{warten -- Sie: Warten Sie bitte draußen!}{to wait -- formal: Please wait outside!}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Übersichtstabelle mit häufigen Verben}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{2.7cm}|p{3.4cm}|p{3.4cm}|p{4.8cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Infinitiv} &
+            \color{white}\textbf{du} &
+            \color{white}\textbf{ihr} &
+            \color{white}\textbf{Sie} \\
+            machen & Mach! & Macht! & Machen Sie! \\
+            kommen & Komm! & Kommt! & Kommen Sie! \\
+            warten & Warte! & Wartet! & Warten Sie! \\
+            arbeiten & Arbeite! & Arbeitet! & Arbeiten Sie! \\
+            geben & Gib! & Gebt! & Geben Sie! \\
+            nehmen & Nimm! & Nehmt! & Nehmen Sie! \\
+            lesen & Lies! & Lest! & Lesen Sie! \\
+            sehen & Sieh! & Seht! & Sehen Sie! \\
+            sprechen & Sprich! & Sprecht! & Sprechen Sie! \\
+            fahren & Fahr! & Fahrt! & Fahren Sie! \\
+            schlafen & Schlaf! & Schlaft! & Schlafen Sie! \\
+            sein & Sei! & Seid! & Seien Sie! \\
+            haben & Hab / Habe! & Habt! & Haben Sie! \\
+            aufstehen & Steh auf! & Steht auf! & Stehen Sie auf! \\
+            sich beeilen & Beeil dich! & Beeilt euch! & Beeilen Sie sich! \\
+        \end{longtable}
+        \TableEnglish{This table summarizes common imperative forms for informal singular, informal plural, and formal address.}
+
+    \section{Zusammenfassung}
+
+        \begin{grammarentry}{Die wichtigsten Regeln}{Merksätze}
+            \GermanText{\textbf{du:} Verbstamm ohne \textbf{du} und ohne \textbf{-st}: \textbf{Komm!}}
+            \EnglishText{\textbf{du:} verb stem without \textbf{du} and without \textbf{-st}: \textbf{Come!}}
+
+            \GermanText{\textbf{ihr:} normale Präsensform ohne \textbf{ihr}: \textbf{Kommt!}}
+            \EnglishText{\textbf{ihr:} normal present-tense form without \textbf{ihr}: \textbf{Come!}}
+
+            \GermanText{\textbf{Sie:} Infinitiv + \textbf{Sie}: \textbf{Kommen Sie!}}
+            \EnglishText{\textbf{Sie:} infinitive + \textbf{Sie}: \textbf{Come!}}
+
+            \GermanText{\textbf{wir:} Infinitiv + \textbf{wir}: \textbf{Gehen wir!}}
+            \EnglishText{\textbf{wir:} infinitive + \textbf{wir}: \textbf{Let us go!}}
+
+            \GermanText{Bei trennbaren Verben steht das Präfix am Ende; bei reflexiven Verben bleibt das Reflexivpronomen erhalten. Die Negation folgt normalerweise nach dem Verb: \textbf{Vergiss nicht!}}
+            \EnglishText{With separable verbs, the prefix stands at the end; with reflexive verbs, the reflexive pronoun remains. Negation normally follows the verb: \textbf{Do not forget!}}
+        \end{grammarentry}
 
 \end{document}

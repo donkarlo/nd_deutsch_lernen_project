@@ -1,0 +1,266 @@
+% Erklärung über Transitivität und Intransitivität deutscher Verben
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[table]{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{6pt}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Transitivität und Intransitivität deutscher Verben}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+    
+    
+    \section{Grundidee}
+        
+        \begin{grammarentry}{Transitivität}{Beziehung zwischen Verb und Objekt}
+            \GermanText{Die Transitivität beschreibt, ob ein Verb ein Akkusativobjekt haben kann. Ein transitives Verb kann normalerweise mit der Frage \glqq Wen oder was?\grqq{} verbunden werden.}
+            \EnglishText{Transitivity describes whether a verb can take an accusative object. A transitive verb can normally be connected with the question ``Whom or what?''}
+            
+            \GermanText{Ein intransitives Verb hat kein Akkusativobjekt. Es kann aber trotzdem ohne Objekt, mit einem Dativobjekt oder mit einer Präpositionalergänzung stehen.}
+            \EnglishText{An intransitive verb has no accusative object. However, it can still occur without an object, with a dative object, or with a prepositional complement.}
+        \end{grammarentry}
+    
+    
+    \section{Transitive Verben}
+        
+        \begin{grammarentry}{Transitives Verb}{Verb mit Akkusativobjekt}
+            \GermanText{Ein transitives Verb verlangt oder erlaubt ein Akkusativobjekt. Dieses Objekt bezeichnet oft die Person oder Sache, auf die sich die Handlung direkt richtet.}
+            \EnglishText{A transitive verb requires or allows an accusative object. This object often names the person or thing directly affected by the action.}
+            
+            \GermanText{Prüffrage: \textbf{Wen oder was?}}
+            \EnglishText{Test question: \textbf{Whom or what?}}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich kaufe ein Buch. -- Was kaufe ich? Ein Buch.}{I buy a book. -- What do I buy? A book.}
+                \ExampleItem{Sie besucht ihren Bruder. -- Wen besucht sie? Ihren Bruder.}{She visits her brother. -- Whom does she visit? Her brother.}
+                \ExampleItem{Er repariert das Fahrrad. -- Was repariert er? Das Fahrrad.}{He repairs the bicycle. -- What does he repair? The bicycle.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Intransitive Verben}
+        
+        \begin{grammarentry}{Intransitives Verb}{kein Akkusativobjekt}
+            \GermanText{Ein intransitives Verb kann kein Akkusativobjekt haben. Der Satz kann trotzdem vollständig sein oder eine andere Ergänzung enthalten.}
+            \EnglishText{An intransitive verb cannot take an accusative object. The sentence can still be complete or contain another type of complement.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Das Kind schläft.}{The child is sleeping.}
+                \ExampleItem{Der Hund verendet.}{The dog dies.}
+                \ExampleItem{Wir kommen morgen.}{We are coming tomorrow.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Dativobjekt und Intransitivität}
+        
+        \begin{grammarentry}{Dativ ist nicht Akkusativ}{wichtige Unterscheidung}
+            \GermanText{Ein Verb mit einem Dativobjekt ist grammatisch trotzdem intransitiv, solange es kein Akkusativobjekt haben kann. Deshalb sind Verben wie \textbf{helfen}, \textbf{danken}, \textbf{gefallen} und \textbf{gehören} intransitiv.}
+            \EnglishText{A verb with a dative object is still grammatically intransitive as long as it cannot take an accusative object. Therefore, verbs such as \textbf{helfen}, \textbf{danken}, \textbf{gefallen}, and \textbf{gehören} are intransitive.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich helfe dem Mann.}{I help the man.}
+                \ExampleItem{Sie dankt ihrer Mutter.}{She thanks her mother.}
+                \ExampleItem{Das Buch gehört mir.}{The book belongs to me.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Verben mit Dativ und Akkusativ}
+        
+        \begin{grammarentry}{Zwei Objekte}{Dativobjekt und Akkusativobjekt}
+            \GermanText{Einige transitive Verben können gleichzeitig ein Dativobjekt und ein Akkusativobjekt haben. Das Akkusativobjekt zeigt, dass das Verb transitiv ist.}
+            \EnglishText{Some transitive verbs can have both a dative object and an accusative object. The accusative object shows that the verb is transitive.}
+            
+            \GermanText{Typische Verben sind: \textbf{geben}, \textbf{zeigen}, \textbf{schicken}, \textbf{erklären}, \textbf{bringen}.}
+            \EnglishText{Typical verbs are: \textbf{geben}, \textbf{zeigen}, \textbf{schicken}, \textbf{erklären}, \textbf{bringen}.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich gebe dem Kind ein Buch.}{I give the child a book.}
+                \ExampleItem{Sie zeigt mir das Foto.}{She shows me the photo.}
+                \ExampleItem{Er schickt seiner Freundin eine Nachricht.}{He sends his girlfriend a message.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Präpositionalergänzungen}
+        
+        \begin{grammarentry}{Verb mit Präposition}{nicht automatisch transitiv}
+            \GermanText{Ein Verb ist nicht automatisch transitiv, nur weil nach ihm eine Ergänzung steht. Bei vielen Verben wird die Ergänzung durch eine feste Präposition eingeleitet.}
+            \EnglishText{A verb is not automatically transitive merely because it is followed by a complement. With many verbs, the complement is introduced by a fixed preposition.}
+            
+            \GermanText{Entscheidend ist nicht, ob nach der Präposition Akkusativ oder Dativ steht. Entscheidend ist, ob das Verb ein direktes Akkusativobjekt ohne Präposition haben kann.}
+            \EnglishText{What matters is not whether the preposition governs the accusative or dative. What matters is whether the verb can take a direct accusative object without a preposition.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich warte auf den Bus.}{I am waiting for the bus.}
+                \ExampleItem{Wir sprechen mit dem Lehrer.}{We are speaking with the teacher.}
+                \ExampleItem{Sie denkt an ihre Familie.}{She is thinking about her family.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Zusammenhang mit dem Passiv}
+        
+        \begin{grammarentry}{Akkusativobjekt wird Subjekt}{Vorgangspassiv}
+            \GermanText{Bei einem transitiven Verb kann das Akkusativobjekt im Vorgangspassiv zum Subjekt werden.}
+            \EnglishText{With a transitive verb, the accusative object can become the subject in the event passive.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Aktiv: Der Mechaniker repariert das Auto.}{Active: The mechanic repairs the car.}
+                \ExampleItem{Passiv: Das Auto wird repariert.}{Passive: The car is being repaired.}
+            \end{itemize}
+        \end{exbox}
+        
+        \begin{grammarentry}{Unpersönliches Passiv}{auch bei manchen intransitiven Verben}
+            \GermanText{Manche intransitiven Verben können ein unpersönliches Passiv bilden. Dabei gibt es aber kein Akkusativobjekt, das zum Subjekt wird.}
+            \EnglishText{Some intransitive verbs can form an impersonal passive. However, there is no accusative object that becomes the subject.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Es wird getanzt.}{There is dancing.}
+                \ExampleItem{Dem Mann wird geholfen.}{The man is being helped.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Verben mit transitiver und intransitiver Verwendung}
+        
+        \begin{grammarentry}{Bedeutung entscheidet}{ein Verb, verschiedene Strukturen}
+            \GermanText{Manche Verben können je nach Bedeutung transitiv oder intransitiv verwendet werden. Deshalb muss man immer den ganzen Satz betrachten.}
+            \EnglishText{Some verbs can be used transitively or intransitively depending on their meaning. Therefore, one must always consider the entire sentence.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Transitiv: Ich öffne die Tür.}{Transitive: I open the door.}
+                \ExampleItem{Intransitiv: Die Tür öffnet sich.}{Intransitive: The door opens.}
+                \ExampleItem{Transitiv: Der Fahrer fährt das Auto in die Garage.}{Transitive: The driver drives the car into the garage.}
+                \ExampleItem{Intransitiv: Wir fahren nach Wien.}{Intransitive: We are travelling to Vienna.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Übersicht}
+        
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{3cm}|p{4.3cm}|p{4.5cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Verbtyp} &
+            \color{white}\textbf{Kennzeichen} &
+            \color{white}\textbf{Beispiel} \\
+            Transitiv & direktes Akkusativobjekt möglich & Ich lese das Buch. \\
+            Intransitiv ohne Objekt & kein Akkusativobjekt & Das Kind schläft. \\
+            Intransitiv mit Dativ & Dativobjekt, aber kein Akkusativobjekt & Ich helfe dem Kind. \\
+            Intransitiv mit Präposition & Ergänzung mit Präposition & Ich warte auf den Bus. \\
+            Transitiv mit Dativ und Akkusativ & Akkusativobjekt plus Dativobjekt & Ich gebe dem Kind ein Buch. \\
+        \end{longtable}
+    
+    
+    \section{So bestimmst du die Transitivität}
+        
+        \begin{grammarentry}{Prüfmethode}{Schritt für Schritt}
+            \GermanText{1. Suche das Verb im Satz.}
+            \EnglishText{1. Find the verb in the sentence.}
+            
+            \GermanText{2. Frage: \glqq Wen oder was?\grqq}
+            \EnglishText{2. Ask: ``Whom or what?''}
+            
+            \GermanText{3. Gibt es eine passende Antwort ohne Präposition, liegt normalerweise ein Akkusativobjekt vor. Das Verb ist dann transitiv.}
+            \EnglishText{3. If there is a suitable answer without a preposition, there is normally an accusative object. The verb is then transitive.}
+            
+            \GermanText{4. Gibt es nur ein Dativobjekt, eine Präpositionalergänzung oder gar kein Objekt, ist das Verb in dieser Verwendung intransitiv.}
+            \EnglishText{4. If there is only a dative object, a prepositional complement, or no object at all, the verb is intransitive in that use.}
+        \end{grammarentry}
+    
+    
+    \section{Häufige Fehler}
+        
+        \begin{grammarentry}{Nicht jedes Objekt ist Akkusativ}{Fehlerquelle}
+            \GermanText{Der Satz \glqq Ich helfe dem Mann\grqq{} enthält zwar ein Objekt, aber kein Akkusativobjekt. Deshalb ist \textbf{helfen} intransitiv.}
+            \EnglishText{The sentence ``Ich helfe dem Mann'' contains an object, but not an accusative object. Therefore, \textbf{helfen} is intransitive.}
+        \end{grammarentry}
+        
+        \begin{grammarentry}{Akkusativ nach einer Präposition}{Fehlerquelle}
+            \GermanText{In \glqq Ich warte auf den Bus\grqq{} steht \textbf{den Bus} im Akkusativ. Trotzdem ist es kein direktes Akkusativobjekt, weil der Akkusativ von der Präposition \textbf{auf} abhängt.}
+            \EnglishText{In ``Ich warte auf den Bus'', \textbf{den Bus} is in the accusative. Nevertheless, it is not a direct accusative object because the accusative is governed by the preposition \textbf{auf}.}
+        \end{grammarentry}
+    
+    
+    \section{Zusammenfassung}
+        
+        \begin{grammarentry}{Merksatz}{kurz und wichtig}
+            \GermanText{\textbf{Transitiv} bedeutet: Ein direktes Akkusativobjekt ist möglich.}
+            \EnglishText{\textbf{Transitive} means: A direct accusative object is possible.}
+            
+            \GermanText{\textbf{Intransitiv} bedeutet: Kein direktes Akkusativobjekt ist möglich.}
+            \EnglishText{\textbf{Intransitive} means: No direct accusative object is possible.}
+            
+            \GermanText{Die Wahl zwischen Dativ und Akkusativ hängt vom jeweiligen Verb und seiner Verwendung ab. Transitivität beantwortet nur die Frage, ob ein direktes Akkusativobjekt möglich ist.}
+            \EnglishText{The choice between dative and accusative depends on the particular verb and its use. Transitivity only answers whether a direct accusative object is possible.}
+        \end{grammarentry}
+
+\end{document}

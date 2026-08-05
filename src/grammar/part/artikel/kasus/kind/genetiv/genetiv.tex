@@ -1,0 +1,413 @@
+% Genitivartikel und Genitivendungen
+% Stilbasis: erklaerung_vorlage.tex und tabelle_vorlage.tex
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{booktabs}
+\graphicspath{{./}{/mnt/data/}}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.5}
+\setlength{\tabcolsep}{6pt}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Genitivartikel und Genitivendungen}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+    \section{Ausgangsbild der Lektion}
+
+        \begin{grammarentry}{Lektion 2: Genitivartikel}{Inhalt des hochgeladenen Bildes}
+            \GermanText{Das folgende Bild ist die Grundlage dieser Erklärung. Alle Regeln und Beispiele aus dem Bild werden in den nächsten Abschnitten vollständig erklärt.}
+            \EnglishText{The following image is the basis of this explanation. All rules and examples from the image are explained completely in the following sections.}
+        \end{grammarentry}
+
+        \begin{center}
+            \includegraphics[width=0.96\textwidth]{0b0a2244-02ff-48a8-b2c2-a6467a7e510c.png}
+        \end{center}
+
+    \section{Grundbedeutung des Genitivs}
+
+        \begin{grammarentry}{Der Genitiv}{Besitz, Zugehörigkeit und Beziehung}
+            \GermanText{Der Genitiv ist der zweite Kasus. Er drückt häufig Besitz, Zugehörigkeit oder eine Beziehung zwischen zwei Nomen aus. Er beantwortet die Frage \glqq Wessen?\grqq.}
+            \EnglishText{The genitive is the second grammatical case. It often expresses possession, belonging, or a relationship between two nouns. It answers the question ``Whose?''}
+
+            \GermanText{Das Nomen, das die Person oder Sache mit Besitz oder Zugehörigkeit bezeichnet, steht im Genitiv.}
+            \EnglishText{The noun that identifies the person or thing associated with possession or belonging is placed in the genitive.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Wessen Koffer ist das? -- Das ist der Koffer des Gastes.}{Whose suitcase is that? -- That is the guest's suitcase.}
+                \ExampleItem{Wessen Taschen sind das? -- Das sind die Taschen der Studentin.}{Whose bags are those? -- Those are the female student's bags.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Satzstruktur}
+
+        \begin{grammarentry}{Nomen und Genitivattribut}{Grundmuster}
+            \GermanText{Das Genitivattribut steht normalerweise direkt hinter dem Nomen, das näher erklärt wird.}
+            \EnglishText{The genitive attribute normally appears directly after the noun that it describes more precisely.}
+
+            \GermanText{Grundmuster: \textbf{Nomen + Genitivartikel + Genitivnomen}.}
+            \EnglishText{Basic pattern: \textbf{noun + genitive article + genitive noun}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Der Gast hat einen Koffer. Das ist der Koffer des Gastes.}{The guest has a suitcase. That is the guest's suitcase.}
+                \ExampleItem{Die Studentin hat zwei Taschen. Das sind die Taschen der Studentin.}{The female student has two bags. Those are the female student's bags.}
+                \ExampleItem{Das Mädchen hat ein Fahrrad. Das ist das Fahrrad des Mädchens.}{The girl has a bicycle. That is the girl's bicycle.}
+                \ExampleItem{Die Touristin hat Gepäck. Das ist das Gepäck der Touristin.}{The female tourist has luggage. That is the female tourist's luggage.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Bestimmte und unbestimmte Genitivartikel}
+
+        \begin{grammarentry}{Artikelübersicht}{die Tabelle aus dem Bild}
+            \GermanText{Maskuline und neutrale Nomen haben im Genitiv die Artikel \textbf{des} oder \textbf{eines}. Feminine Nomen und Nomen im Plural haben die Artikel \textbf{der} oder, nur im Singular, \textbf{einer}.}
+            \EnglishText{Masculine and neuter nouns use \textbf{des} or \textbf{eines} in the genitive. Feminine nouns and plural nouns use \textbf{der}, or \textbf{einer} only in the feminine singular.}
+        \end{grammarentry}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{3.2cm}|>{\centering\arraybackslash}p{5.1cm}|>{\centering\arraybackslash}p{5.1cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Genus / Numerus} &
+            \color{white}\textbf{bestimmt} &
+            \color{white}\textbf{unbestimmt} \\
+            Maskulin & des + -(e)s & eines + -(e)s \\
+            Feminin & der & einer \\
+            Neutrum & des + -(e)s & eines + -(e)s \\
+            Plural & der & kein unbestimmter Artikel \\
+        \end{longtable}
+
+        \begin{grammarentry}{English table explanation}{Definite and indefinite forms}
+            \GermanText{\textbf{bestimmt} bedeutet definite article; \textbf{unbestimmt} bedeutet indefinite article. Im Plural gibt es keinen unbestimmten Artikel.}
+            \EnglishText{\textbf{Bestimmt} means definite article; \textbf{unbestimmt} means indefinite article. There is no indefinite article in the plural.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{des Mannes / eines Mannes}{of the man / of a man}
+                \ExampleItem{der Frau / einer Frau}{of the woman / of a woman}
+                \ExampleItem{des Kindes / eines Kindes}{of the child / of a child}
+                \ExampleItem{der Kinder}{of the children}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Die wichtigste Endungsregel}
+
+        \begin{grammarentry}{Achtung}{nur Maskulin und Neutrum}
+            \GermanText{Nur maskuline und neutrale Nomen können im Genitiv Singular die Endung \textbf{-s} oder \textbf{-es} bekommen.}
+            \EnglishText{Only masculine and neuter nouns can take the ending \textbf{-s} or \textbf{-es} in the genitive singular.}
+
+            \GermanText{Feminine Nomen und Pluralnomen bekommen normalerweise keine zusätzliche Genitivendung.}
+            \EnglishText{Feminine nouns and plural nouns normally do not receive an additional genitive ending.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{der Mann -- des Mannes}{the man -- of the man}
+                \ExampleItem{das Kind -- des Kindes}{the child -- of the child}
+                \ExampleItem{die Frau -- der Frau}{the woman -- of the woman}
+                \ExampleItem{die Kinder -- der Kinder}{the children -- of the children}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Wann benutzt man -s?}
+
+        \begin{grammarentry}{Die Endung -s}{viele mehrsilbige Nomen}
+            \GermanText{Viele mehrsilbige maskuline und neutrale Nomen bekommen im Genitiv nur \textbf{-s}. Das gilt besonders häufig für Nomen auf \textbf{-en}, \textbf{-el}, \textbf{-er}, \textbf{-or} und \textbf{-ling}.}
+            \EnglishText{Many multisyllabic masculine and neuter nouns take only \textbf{-s} in the genitive. This is especially common with nouns ending in \textbf{-en}, \textbf{-el}, \textbf{-er}, \textbf{-or}, and \textbf{-ling}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{des Wagens}{of the car}
+                \ExampleItem{des Onkels}{of the uncle}
+                \ExampleItem{des Reporters}{of the reporter}
+                \ExampleItem{des Doktors}{of the doctor}
+                \ExampleItem{des Frühlings}{of the spring}
+                \ExampleItem{des Lebens}{of life}
+                \ExampleItem{des Fensters}{of the window}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Wann benutzt man -es?}
+
+        \begin{grammarentry}{Die Endung -es}{einsilbige Nomen und bestimmte Endlaute}
+            \GermanText{Viele einsilbige maskuline und neutrale Nomen bekommen im Genitiv \textbf{-es}.}
+            \EnglishText{Many one-syllable masculine and neuter nouns take \textbf{-es} in the genitive.}
+
+            \GermanText{Die Endung \textbf{-es} steht außerdem gewöhnlich bei Nomen auf \textbf{-s}, \textbf{-ss}, \textbf{-ß}, \textbf{-sch}, \textbf{-z} und \textbf{-tz}.}
+            \EnglishText{The ending \textbf{-es} is also normally used with nouns ending in \textbf{-s}, \textbf{-ss}, \textbf{-ß}, \textbf{-sch}, \textbf{-z}, and \textbf{-tz}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{des Buches}{of the book}
+                \ExampleItem{des Flusses}{of the river}
+                \ExampleItem{des Fußes}{of the foot}
+                \ExampleItem{des Schreibtisches}{of the desk}
+                \ExampleItem{des Fußballplatzes}{of the football field}
+                \ExampleItem{der Bus -- des Busses}{the bus -- of the bus}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Praktischer Hinweis}{-s und -es}
+            \GermanText{Bei manchen Nomen sind sowohl \textbf{-s} als auch \textbf{-es} möglich. Die Form mit \textbf{-es} klingt häufig vollständiger oder formeller, besonders bei einsilbigen Nomen.}
+            \EnglishText{With some nouns, both \textbf{-s} and \textbf{-es} are possible. The form with \textbf{-es} often sounds fuller or more formal, especially with one-syllable nouns.}
+
+            \GermanText{Beim Lernen ist die folgende Faustregel hilfreich: mehrsilbig meistens \textbf{-s}; einsilbig meistens \textbf{-es}.}
+            \EnglishText{The following rule of thumb is useful when learning: multisyllabic nouns usually take \textbf{-s}; one-syllable nouns usually take \textbf{-es}.}
+        \end{grammarentry}
+
+    \section{Genitiv mit Personennamen}
+
+        \begin{grammarentry}{Name + s + Nomen}{kein Artikel}
+            \GermanText{Bei Personennamen steht der Name normalerweise vor dem Nomen und bekommt die Endung \textbf{-s}. Vor dem Namen steht dabei kein Artikel.}
+            \EnglishText{With personal names, the name normally appears before the noun and takes the ending \textbf{-s}. No article is placed before the name in this structure.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Julia hat eine Wohnung. Das ist Julias Wohnung.}{Julia has an apartment. That is Julia's apartment.}
+                \ExampleItem{Paul hat ein Fahrrad. Das ist Pauls Fahrrad.}{Paul has a bicycle. That is Paul's bicycle.}
+                \ExampleItem{Goethes Werke sind weltberühmt.}{Goethe's works are world-famous.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Apostroph bei Namen}{wichtiger Unterschied zum Englischen}
+            \GermanText{Vor dem Genitiv-s steht im Deutschen normalerweise \textbf{kein Apostroph}: \textbf{Julias Wohnung}, nicht \textbf{Julia's Wohnung}.}
+            \EnglishText{German normally uses \textbf{no apostrophe} before the genitive \textbf{-s}: \textbf{Julias Wohnung}, not \textbf{Julia's Wohnung}.}
+
+            \GermanText{Endet ein Name bereits auf einen s-Laut, wird nur ein Apostroph gesetzt: \textbf{Max' Auto}, \textbf{Hans' Bruder}.}
+            \EnglishText{If a name already ends in an s-sound, only an apostrophe is added: \textbf{Max' Auto}, \textbf{Hans' Bruder}.}
+        \end{grammarentry}
+
+    \section{Kein-Artikel und Possessivartikel}
+
+        \begin{grammarentry}{Endungen der Ein-Wörter}{kein, mein, dein, sein, ihr, unser, euer, Ihr}
+            \GermanText{Der Negativartikel \textbf{kein} und die Possessivartikel haben im Genitiv dieselben Endungen wie der unbestimmte Artikel: Maskulin und Neutrum \textbf{-es}, Feminin und Plural \textbf{-er}.}
+            \EnglishText{The negative article \textbf{kein} and possessive articles use the same genitive endings as the indefinite article: masculine and neuter \textbf{-es}, feminine and plural \textbf{-er}.}
+        \end{grammarentry}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{3.2cm}|>{\centering\arraybackslash}p{3.2cm}|>{\centering\arraybackslash}p{3.2cm}|>{\centering\arraybackslash}p{3.2cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Genus / Numerus} &
+            \color{white}\textbf{kein} &
+            \color{white}\textbf{mein} &
+            \color{white}\textbf{dein} \\
+            Maskulin & keines & meines & deines \\
+            Feminin & keiner & meiner & deiner \\
+            Neutrum & keines & meines & deines \\
+            Plural & keiner & meiner & deiner \\
+        \end{longtable}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{die Meinung meines Bruders}{my brother's opinion}
+                \ExampleItem{die Farbe deiner Jacke}{the color of your jacket}
+                \ExampleItem{das Ende keines Films}{the ending of no film}
+                \ExampleItem{die Namen unserer Gäste}{the names of our guests}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Adjektive nach Genitivartikeln}
+
+        \begin{grammarentry}{Artikel + Adjektiv + Nomen}{Adjektivendung -en}
+            \GermanText{Nach einem bestimmten Artikel, einem unbestimmten Artikel, einem Negativartikel oder einem Possessivartikel bekommt das Adjektiv im Genitiv normalerweise die Endung \textbf{-en}.}
+            \EnglishText{After a definite article, indefinite article, negative article, or possessive article, an adjective normally takes the ending \textbf{-en} in the genitive.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{das Auto des alten Mannes}{the old man's car}
+                \ExampleItem{die Tür eines neuen Hauses}{the door of a new house}
+                \ExampleItem{der Name einer bekannten Autorin}{the name of a well-known female author}
+                \ExampleItem{die Stimmen unserer jungen Mitglieder}{the voices of our young members}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Wichtige Sonderfälle bei Nomen}
+
+        \begin{grammarentry}{N-Deklination}{schwache maskuline Nomen}
+            \GermanText{Viele schwache maskuline Nomen bekommen im Genitiv nicht \textbf{-s} oder \textbf{-es}, sondern die Endung \textbf{-n} oder \textbf{-en}.}
+            \EnglishText{Many weak masculine nouns do not take \textbf{-s} or \textbf{-es} in the genitive; instead, they take \textbf{-n} or \textbf{-en}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{der Student -- des Studenten}{the student -- of the student}
+                \ExampleItem{der Mensch -- des Menschen}{the person -- of the person}
+                \ExampleItem{der Junge -- des Jungen}{the boy -- of the boy}
+                \ExampleItem{der Präsident -- des Präsidenten}{the president -- of the president}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Besondere Formen}{-ns und andere feste Formen}
+            \GermanText{Einige Nomen haben besondere Genitivformen, die man als Wortform lernen sollte.}
+            \EnglishText{Some nouns have special genitive forms that should be learned as individual word forms.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{der Name -- des Namens}{the name -- of the name}
+                \ExampleItem{der Gedanke -- des Gedankens}{the thought -- of the thought}
+                \ExampleItem{der Wille -- des Willens}{the will -- of the will}
+                \ExampleItem{das Herz -- des Herzens}{the heart -- of the heart}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Genitiv nach Präpositionen}
+
+        \begin{grammarentry}{Häufige Genitivpräpositionen}{wegen, trotz, während und andere}
+            \GermanText{Nach mehreren Präpositionen steht in der Standardsprache der Genitiv. Häufige Beispiele sind \textbf{wegen}, \textbf{trotz}, \textbf{während}, \textbf{statt / anstatt}, \textbf{innerhalb}, \textbf{außerhalb}, \textbf{aufgrund} und \textbf{bezüglich}.}
+            \EnglishText{In standard German, several prepositions require the genitive. Common examples are \textbf{wegen}, \textbf{trotz}, \textbf{während}, \textbf{statt / anstatt}, \textbf{innerhalb}, \textbf{außerhalb}, \textbf{aufgrund}, and \textbf{bezüglich}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Wegen des Regens bleiben wir zu Hause.}{Because of the rain, we are staying at home.}
+                \ExampleItem{Trotz der Schmerzen arbeitet er weiter.}{Despite the pain, he continues working.}
+                \ExampleItem{Während des Unterrichts darf man nicht telefonieren.}{During the lesson, one must not use the phone.}
+                \ExampleItem{Außerhalb der Stadt sind die Wohnungen günstiger.}{Outside the city, apartments are less expensive.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Genitiv oder von + Dativ?}
+
+        \begin{grammarentry}{Standardsprache und Umgangssprache}{Bedeutung bleibt ähnlich}
+            \GermanText{In der gesprochenen Sprache wird ein Genitivattribut häufig durch \textbf{von + Dativ} ersetzt. In formellen Texten und in Prüfungen ist der Genitiv jedoch besonders wichtig.}
+            \EnglishText{In spoken German, a genitive attribute is often replaced by \textbf{von + dative}. In formal texts and examinations, however, the genitive is especially important.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{das Auto des Mannes}{the man's car; standard genitive}
+                \ExampleItem{das Auto von dem Mann}{the car belonging to the man; common in spoken German}
+                \ExampleItem{die Meinung meiner Schwester}{my sister's opinion; standard genitive}
+                \ExampleItem{die Meinung von meiner Schwester}{the opinion of my sister; common in spoken German}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Wichtige Einschränkung}{nicht immer austauschbar}
+            \GermanText{Nach Präpositionen, die den Genitiv verlangen, sollte man in der Standardsprache den Genitiv verwenden: \textbf{wegen des Wetters}, \textbf{trotz der Probleme}.}
+            \EnglishText{After prepositions that require the genitive, the genitive should be used in standard German: \textbf{wegen des Wetters}, \textbf{trotz der Probleme}.}
+        \end{grammarentry}
+
+    \section{Typische Fehler}
+
+        \begin{grammarentry}{Fehler vermeiden}{Artikel, Endung und Apostroph}
+            \GermanText{Bei maskulinen und neutralen Nomen muss man sowohl den Artikel als auch meistens das Nomen verändern.}
+            \EnglishText{With masculine and neuter nouns, both the article and usually the noun itself must be changed.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Falsch: der Koffer des Gast -- Richtig: der Koffer des Gastes}{Wrong: of the guest without a noun ending -- Correct: des Gastes}
+                \ExampleItem{Falsch: die Farbe der Haus -- Richtig: die Farbe des Hauses}{Wrong article -- Correct: des Hauses}
+                \ExampleItem{Falsch: das Fahrrad des Frau -- Richtig: das Fahrrad der Frau}{Wrong article -- Correct: der Frau}
+                \ExampleItem{Falsch: Julia's Wohnung -- Richtig: Julias Wohnung}{Wrong German apostrophe -- Correct without an apostrophe}
+                \ExampleItem{Falsch in der Standardsprache: wegen dem Regen -- Richtig: wegen des Regens}{Non-standard case after wegen -- Standard: genitive}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Entscheidungsschritte}
+
+        \begin{grammarentry}{So bildest du den Genitiv}{Schritt für Schritt}
+            \GermanText{1. Bestimme Genus und Numerus des Genitivnomens.}
+            \EnglishText{1. Determine the gender and number of the noun in the genitive.}
+
+            \GermanText{2. Wähle den richtigen Artikel: \textbf{des / eines} für Maskulin und Neutrum, \textbf{der / einer} für Feminin und \textbf{der} für Plural.}
+            \EnglishText{2. Choose the correct article: \textbf{des / eines} for masculine and neuter, \textbf{der / einer} for feminine, and \textbf{der} for plural.}
+
+            \GermanText{3. Ergänze bei einem normalen maskulinen oder neutralen Nomen im Singular \textbf{-s} oder \textbf{-es}.}
+            \EnglishText{3. Add \textbf{-s} or \textbf{-es} to a regular masculine or neuter singular noun.}
+
+            \GermanText{4. Prüfe, ob das Nomen ein schwaches maskulines Nomen oder eine besondere Form ist.}
+            \EnglishText{4. Check whether the noun is a weak masculine noun or has a special form.}
+
+            \GermanText{5. Ein Adjektiv nach einem Genitivartikel bekommt normalerweise \textbf{-en}.}
+            \EnglishText{5. An adjective after a genitive article normally takes \textbf{-en}.}
+        \end{grammarentry}
+
+    \section{Kurze Gesamtübersicht}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{3.5cm}|p{5.2cm}|p{5.2cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Kategorie} &
+            \color{white}\textbf{Deutsche Regel} &
+            \color{white}\textbf{English rule} \\
+            Maskulin & des / eines + Nomen mit -(e)s & des / eines + noun with -(e)s \\
+            Feminin & der / einer; Nomen unverändert & der / einer; noun unchanged \\
+            Neutrum & des / eines + Nomen mit -(e)s & des / eines + noun with -(e)s \\
+            Plural & der; Nomen normalerweise unverändert & der; noun normally unchanged \\
+            Personennamen & Name + s vor dem Nomen & name + s before the noun \\
+            Adjektiv & nach dem Artikel normalerweise -en & normally -en after the article \\
+            N-Deklination & -n oder -en statt -(e)s & -n or -en instead of -(e)s \\
+        \end{longtable}
+
+    \section{Zusammenfassung}
+
+        \begin{grammarentry}{Merksatz}{kurz und wichtig}
+            \GermanText{\textbf{des / eines} stehen bei maskulinen und neutralen Nomen; das Nomen bekommt meistens \textbf{-s} oder \textbf{-es}. \textbf{der / einer} stehen bei femininen Nomen; \textbf{der} steht im Plural.}
+            \EnglishText{\textbf{Des / eines} are used with masculine and neuter nouns; the noun usually takes \textbf{-s} or \textbf{-es}. \textbf{Der / einer} are used with feminine nouns; \textbf{der} is used in the plural.}
+
+            \GermanText{Mehrsilbige Nomen bekommen häufig \textbf{-s}; einsilbige Nomen und Nomen mit bestimmten Endlauten bekommen häufig \textbf{-es}. Schwache maskuline Nomen bilden eine wichtige Ausnahme.}
+            \EnglishText{Multisyllabic nouns often take \textbf{-s}; one-syllable nouns and nouns with certain final sounds often take \textbf{-es}. Weak masculine nouns are an important exception.}
+
+            \GermanText{Bei Personennamen gilt normalerweise: \textbf{Name + s + Nomen}, ohne Apostroph.}
+            \EnglishText{With personal names, the normal pattern is: \textbf{name + s + noun}, without an apostrophe.}
+        \end{grammarentry}
+
+\end{document}
