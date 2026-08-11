@@ -1,0 +1,319 @@
+% Erklärung: Pronominaladverbien und Präposition + Pronomen
+% Grundlage: erklaerung_vorlage.tex; Tabellenstil nach tabelle_vorlage.tex
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.45}
+\setlength{\tabcolsep}{6pt}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Pronominaladverbien und Präposition + Pronomen}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+    \section{Die wichtigste Grundidee}
+
+        \begin{grammarentry}{Zwei verschiedene Strukturen}{Grundregel}
+            \GermanText{Ein \textbf{Pronominaladverb} ist ein einzelnes Wort wie \textbf{davon}, \textbf{damit}, \textbf{darüber}, \textbf{darauf}, \textbf{wovon} oder \textbf{worüber}. Es kann eine ganze Präpositionalgruppe ersetzen oder nach einer Sache fragen.}
+            \EnglishText{A \textbf{pronominal adverb} is a single word such as \textbf{davon}, \textbf{damit}, \textbf{darüber}, \textbf{darauf}, \textbf{wovon}, or \textbf{worüber}. It can replace an entire prepositional phrase or ask about a thing.}
+
+            \GermanText{Bei \textbf{Präposition + Pronomen} bleiben die Präposition und das Pronomen getrennt: zum Beispiel \textbf{von ihm}, \textbf{von dem}, \textbf{mit ihr}, \textbf{über den}.}
+            \EnglishText{With \textbf{preposition + pronoun}, the preposition and the pronoun remain separate: for example \textbf{von ihm}, \textbf{von dem}, \textbf{mit ihr}, \textbf{über den}.}
+        \end{grammarentry}
+
+    \section{Was ist ein Pronominaladverb?}
+
+        \begin{grammarentry}{da(r)- + Präposition}{Bezug auf eine Sache}
+            \GermanText{Pronominaladverbien mit \textbf{da(r)-} beziehen sich normalerweise auf eine Sache, einen Begriff, einen Sachverhalt oder einen vorher genannten Inhalt.}
+            \EnglishText{Pronominal adverbs with \textbf{da(r)-} normally refer to a thing, concept, situation, or previously mentioned content.}
+
+            \GermanText{Beispiel: \glqq Ich spreche über das Problem.\grqq{} wird zu \glqq Ich spreche \textbf{darüber}.\grqq{}}
+            \EnglishText{Example: ``I am talking about the problem.'' becomes ``I am talking \textbf{about it}.''}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich warte auf den Termin. Ich warte darauf.}{I am waiting for the appointment. I am waiting for it.}
+                \ExampleItem{Wir sprechen über das Problem. Wir sprechen darüber.}{We are talking about the problem. We are talking about it.}
+                \ExampleItem{Er träumt von einer Reise. Er träumt davon.}{He dreams of a trip. He dreams of it.}
+                \ExampleItem{Sie rechnet mit einer Verbesserung. Sie rechnet damit.}{She expects an improvement. She expects it.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Wie werden Pronominaladverbien gebildet?}
+
+        \begin{grammarentry}{da- oder dar-}{Bildung}
+            \GermanText{Beginnt die Präposition mit einem \textbf{Konsonanten}, benutzt man meistens \textbf{da-}: \textbf{damit}, \textbf{davon}, \textbf{dazu}, \textbf{dagegen}.}
+            \EnglishText{If the preposition begins with a \textbf{consonant}, one normally uses \textbf{da-}: \textbf{damit}, \textbf{davon}, \textbf{dazu}, \textbf{dagegen}.}
+
+            \GermanText{Beginnt die Präposition mit einem \textbf{Vokal}, kommt ein \textbf{r} dazwischen: \textbf{daran}, \textbf{darauf}, \textbf{darüber}, \textbf{darin}.}
+            \EnglishText{If the preposition begins with a \textbf{vowel}, an \textbf{r} is inserted: \textbf{daran}, \textbf{darauf}, \textbf{darüber}, \textbf{darin}.}
+        \end{grammarentry}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{2.7cm}|p{3.4cm}|p{3.4cm}|p{4.4cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Präposition} &
+            \color{white}\textbf{da-Form} &
+            \color{white}\textbf{wo-Form} &
+            \color{white}\textbf{Beispiel} \\
+            mit & damit & womit & Ich rechne damit. \\
+            von & davon & wovon & Ich träume davon. \\
+            zu & dazu & wozu & Das gehört dazu. \\
+            an & daran & woran & Ich denke daran. \\
+            auf & darauf & worauf & Ich warte darauf. \\
+            über & darüber & worüber & Wir sprechen darüber. \\
+            in & darin & worin & Darin liegt das Problem. \\
+        \end{longtable}
+
+    \section{da-Form und wo-Form sind nicht dasselbe}
+
+        \begin{grammarentry}{davon versus wovon}{sehr wichtig}
+            \GermanText{Die \textbf{da-Form} verweist normalerweise zurück: \textbf{davon, damit, darüber}.}
+            \EnglishText{The \textbf{da-form} normally points back to something: \textbf{davon, damit, darüber}.}
+
+            \GermanText{Die \textbf{wo-Form} wird für Fragen und auch für bestimmte relativische Verbindungen verwendet: \textbf{wovon, womit, worüber}.}
+            \EnglishText{The \textbf{wo-form} is used for questions and also for certain relative connections: \textbf{wovon, womit, worüber}.}
+
+            \GermanText{Darum kann \textbf{davon} nicht einfach die Funktion von \textbf{von dem} am Anfang deines Relativsatzes übernehmen. Wenn überhaupt ein Pronominaladverb relativisch verwendet wird, wäre die entsprechende Form \textbf{wovon}, nicht \textbf{davon}. Bei einem konkreten Nomen wird jedoch normalerweise \textbf{von dem / von der / von denen} bevorzugt.}
+            \EnglishText{Therefore, \textbf{davon} cannot simply take over the function of \textbf{von dem} at the beginning of your relative clause. If a pronominal adverb is used relatively at all, the corresponding form would be \textbf{wovon}, not \textbf{davon}. With a concrete noun, however, \textbf{von dem / von der / von denen} is normally preferred.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Wovon sprichst du?}{What are you talking about?}
+                \ExampleItem{Ich spreche von diesem Problem. Ich spreche davon.}{I am talking about this problem. I am talking about it.}
+                \ExampleItem{Das Problem, von dem ich spreche, ist kompliziert.}{The problem I am talking about is complicated.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Was bedeutet Präposition + Pronomen?}
+
+        \begin{grammarentry}{Die Präposition bleibt sichtbar}{mehrere Pronomenarten}
+            \GermanText{Nach einer Präposition kann ein Personalpronomen, Relativpronomen, Demonstrativpronomen oder Fragepronomen stehen. Welche Form man braucht, hängt von der Funktion im Satz ab.}
+            \EnglishText{A personal pronoun, relative pronoun, demonstrative pronoun, or interrogative pronoun can follow a preposition. The required form depends on its function in the sentence.}
+        \end{grammarentry}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{3.5cm}|p{4.3cm}|p{5.8cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Art} &
+            \color{white}\textbf{Beispiel} &
+            \color{white}\textbf{Funktion} \\
+            Präposition + Personalpronomen & mit ihm, von ihr, über sie & Bezug auf eine bekannte Person \\
+            Präposition + Relativpronomen & mit dem, von der, von denen & Einleitung eines Relativsatzes \\
+            Präposition + Fragepronomen & mit wem, von wem, über wen & Frage nach einer Person \\
+            Präposition + Demonstrativpronomen & mit diesem, von dieser & betonter Bezug auf eine bestimmte Person oder Sache \\
+        \end{longtable}
+
+    \section{Sachen und Personen: die zentrale Unterscheidung}
+
+        \begin{grammarentry}{Sache: oft Pronominaladverb}{Grundregel}
+            \GermanText{Bei Sachen, Begriffen und Sachverhalten benutzt man außerhalb eines Relativsatzes sehr häufig ein Pronominaladverb.}
+            \EnglishText{For things, concepts, and situations, a pronominal adverb is very often used outside a relative clause.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich denke an die Prüfung. Ich denke daran.}{I am thinking about the exam. I am thinking about it.}
+                \ExampleItem{Wir reden über die Demokratie. Wir reden darüber.}{We are talking about democracy. We are talking about it.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Person: Präposition + Personalpronomen}{Grundregel}
+            \GermanText{Bei Personen benutzt man normalerweise \textbf{Präposition + Personalpronomen}: \textbf{mit ihm}, \textbf{von ihr}, \textbf{über ihn}.}
+            \EnglishText{For people, one normally uses \textbf{preposition + personal pronoun}: \textbf{mit ihm}, \textbf{von ihr}, \textbf{über ihn}.}
+
+            \GermanText{Man sagt zum Beispiel: \glqq Ich spreche mit meinem Lehrer. Ich spreche \textbf{mit ihm}.\grqq{} Nicht: \glqq Ich spreche damit.\grqq{}}
+            \EnglishText{For example: ``I am talking with my teacher. I am talking \textbf{with him}.'' Not: ``I am talking damit.''}
+        \end{grammarentry}
+
+    \section{Relativsätze: warum \glqq von dem\grqq?}
+
+        \begin{grammarentry}{Relativpronomen}{Bezug auf ein Nomen}
+            \GermanText{Ein Relativpronomen leitet einen Relativsatz ein und bezieht sich auf ein Nomen im übergeordneten Satz. Genus und Numerus kommen vom Bezugswort; der Kasus kommt aus der Funktion im Relativsatz.}
+            \EnglishText{A relative pronoun introduces a relative clause and refers back to a noun in the main clause. Gender and number come from the antecedent; case comes from the pronoun's function inside the relative clause.}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Dein Satz}{Medium = Neutrum Singular}
+            \GermanText{Bezugswort: \textbf{das Medium}. Das Wort ist Neutrum und Singular. Im Relativsatz steht die Präposition \textbf{von}; \textbf{von} verlangt den Dativ. Der Dativ des neutralen Relativpronomens ist \textbf{dem}. Deshalb: \textbf{von dem}.}
+            \EnglishText{Antecedent: \textbf{das Medium}. The word is neuter singular. The relative clause contains the preposition \textbf{von}; \textbf{von} requires the dative. The dative form of the neuter relative pronoun is \textbf{dem}. Therefore: \textbf{von dem}.}
+
+            \GermanText{Struktur: \textbf{das Medium} $\rightarrow$ Neutrum Singular $\rightarrow$ Dativ nach \textbf{von} $\rightarrow$ \textbf{von dem}.}
+            \EnglishText{Structure: \textbf{das Medium} $\rightarrow$ neuter singular $\rightarrow$ dative after \textbf{von} $\rightarrow$ \textbf{von dem}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Wir haben ein Medium, von dem wir richtige Nachrichten erwarten.}{We have a medium from which we expect accurate news.}
+                \ExampleItem{Wir haben mehrere Medien, von denen wir richtige Nachrichten erwarten.}{We have several media sources from which we expect accurate news.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Warum ist \glqq davon wir\grqq falsch?}
+
+        \begin{grammarentry}{davon verbindet den Relativsatz nicht}{Fehleranalyse}
+            \GermanText{In \glqq ein Medium, davon wir Nachrichten erwarten\grqq{} fehlt ein korrektes Element, das den Relativsatz mit \textbf{Medium} verbindet. \textbf{davon} ist hier keine passende Relativform.}
+            \EnglishText{In ``ein Medium, davon wir Nachrichten erwarten'', there is no correct element connecting the relative clause to \textbf{Medium}. \textbf{davon} is not the appropriate relative form here.}
+
+            \GermanText{\textbf{davon} funktioniert dagegen problemlos in einem selbstständigen Satz: \glqq Wir erwarten viel \textbf{davon}.\grqq{} Hier ersetzt \textbf{davon} die Präpositionalgruppe \glqq von dieser Sache / von diesem Medium\grqq.}
+            \EnglishText{\textbf{davon}, however, works perfectly in an independent clause: ``We expect a lot \textbf{from it}.'' Here, \textbf{davon} replaces the prepositional phrase ``von dieser Sache / von diesem Medium.''}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Dieses Medium ist zuverlässig. Wir erwarten viel davon.}{This medium is reliable. We expect a lot from it.}
+                \ExampleItem{Das ist ein Medium, von dem wir viel erwarten.}{This is a medium from which we expect a lot.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Relativpronomen nach Präpositionen}
+
+        \begin{grammarentry}{Kasus kommt von der Präposition}{der, die, das, die}
+            \GermanText{Wenn eine Präposition vor dem Relativpronomen steht, bestimmt die Präposition normalerweise den Kasus. Das Bezugswort bestimmt Genus und Numerus.}
+            \EnglishText{When a preposition stands before the relative pronoun, the preposition normally determines the case. The antecedent determines gender and number.}
+        \end{grammarentry}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{2.8cm}|p{2.8cm}|p{3.0cm}|p{5.3cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Bezugswort} &
+            \color{white}\textbf{Präposition} &
+            \color{white}\textbf{Form} &
+            \color{white}\textbf{Beispiel} \\
+            der Mann & mit + Dativ & mit dem & der Mann, mit dem ich spreche \\
+            die Frau & von + Dativ & von der & die Frau, von der ich spreche \\
+            das Medium & von + Dativ & von dem & das Medium, von dem ich spreche \\
+            die Medien & von + Dativ & von denen & die Medien, von denen ich spreche \\
+            der Film & über + Akkusativ & über den & der Film, über den wir sprechen \\
+            die Frage & auf + Akkusativ & auf die & die Frage, auf die ich antworte \\
+        \end{longtable}
+
+    \section{Fragen: wo-Form oder Präposition + wen/wem?}
+
+        \begin{grammarentry}{Sache versus Person}{Frageformen}
+            \GermanText{Fragt man nach einer Sache, verwendet man in der Standardsprache meistens die \textbf{wo(r)-Form}: \textbf{womit, wovon, woran, worüber}.}
+            \EnglishText{When asking about a thing, standard German usually uses the \textbf{wo(r)-form}: \textbf{womit, wovon, woran, worüber}.}
+
+            \GermanText{Fragt man nach einer Person, verwendet man \textbf{Präposition + wen/wem}: \textbf{mit wem, von wem, über wen}.}
+            \EnglishText{When asking about a person, one uses \textbf{preposition + wen/wem}: \textbf{mit wem, von wem, über wen}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Worüber sprichst du? -- Über das Problem.}{What are you talking about? -- About the problem.}
+                \ExampleItem{Über wen sprichst du? -- Über meinen Lehrer.}{Who are you talking about? -- About my teacher.}
+                \ExampleItem{Womit arbeitest du? -- Mit diesem Programm.}{What are you working with? -- With this program.}
+                \ExampleItem{Mit wem arbeitest du? -- Mit Anna.}{Who are you working with? -- With Anna.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Kann man im Relativsatz auch \glqq wovon\grqq{} benutzen?}
+
+        \begin{grammarentry}{Möglich, aber nicht die Grundform für deinen Satz}{Standardgebrauch}
+            \GermanText{Bei Sachen können wo(r)-Pronominaladverbien manchmal auch relativisch verwendet werden. Bei einem konkreten Nomen bevorzugt die Standardsprache jedoch meistens \textbf{Präposition + Relativpronomen}.}
+            \EnglishText{For things, wo(r)-pronominal adverbs can sometimes also be used relatively. With a concrete noun, however, standard German usually prefers \textbf{preposition + relative pronoun}.}
+
+            \GermanText{Darum ist für einen Lernenden die sichere Form: \textbf{das Medium, von dem ...}; \textbf{die Medien, von denen ...}.}
+            \EnglishText{Therefore, the safe form for a learner is: \textbf{das Medium, von dem ...}; \textbf{die Medien, von denen ...}.}
+
+            \GermanText{Bei unbestimmten Ausdrücken wie \textbf{etwas, nichts, alles, vieles} ist die wo(r)-Form dagegen sehr typisch: \textbf{etwas, worüber wir sprechen}; \textbf{nichts, wovor ich Angst habe}.}
+            \EnglishText{With indefinite expressions such as \textbf{etwas, nichts, alles, vieles}, the wo(r)-form is very typical: \textbf{etwas, worüber wir sprechen}; \textbf{nichts, wovor ich Angst habe}.}
+        \end{grammarentry}
+
+    \section{Direkter Vergleich}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{3.3cm}|p{5.2cm}|p{5.2cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Situation} &
+            \color{white}\textbf{Deutsch} &
+            \color{white}\textbf{English} \\
+            Sache ersetzen & Ich spreche darüber. & I am talking about it. \\
+            Person ersetzen & Ich spreche über ihn. & I am talking about him. \\
+            Frage nach Sache & Worüber sprichst du? & What are you talking about? \\
+            Frage nach Person & Über wen sprichst du? & Who are you talking about? \\
+            Relativsatz, Sache & das Thema, über das wir sprechen & the topic that we are talking about \\
+            Relativsatz, Person & der Mann, über den wir sprechen & the man we are talking about \\
+            Dein Beispiel & das Medium, von dem wir Nachrichten erwarten & the medium from which we expect news \\
+            Plural & die Medien, von denen wir Nachrichten erwarten & the media sources from which we expect news \\
+        \end{longtable}
+
+    \section{Eine einfache Entscheidungsregel}
+
+        \begin{grammarentry}{Vier Fragen}{Merksystem}
+            \GermanText{\textbf{1. Ersetze ich eine Sache in einem normalen Satz?} Dann meistens \textbf{da(r)- + Präposition}: davon, damit, darüber.}
+            \EnglishText{\textbf{1. Am I replacing a thing in a normal sentence?} Then usually \textbf{da(r)- + preposition}: davon, damit, darüber.}
+
+            \GermanText{\textbf{2. Ersetze ich eine Person?} Dann \textbf{Präposition + Personalpronomen}: von ihm, mit ihr, über sie.}
+            \EnglishText{\textbf{2. Am I replacing a person?} Then \textbf{preposition + personal pronoun}: von ihm, mit ihr, über sie.}
+
+            \GermanText{\textbf{3. Frage ich nach einer Sache?} Dann meistens \textbf{wo(r)- + Präposition}: wovon, womit, worüber.}
+            \EnglishText{\textbf{3. Am I asking about a thing?} Then usually \textbf{wo(r)- + preposition}: wovon, womit, worüber.}
+
+            \GermanText{\textbf{4. Beginne ich einen Relativsatz nach einem konkreten Nomen?} Dann normalerweise \textbf{Präposition + Relativpronomen}: von dem, mit der, über den, von denen.}
+            \EnglishText{\textbf{4. Am I beginning a relative clause after a concrete noun?} Then normally \textbf{preposition + relative pronoun}: von dem, mit der, über den, von denen.}
+        \end{grammarentry}
+
+    \section{Merksatz für \glqq davon\grqq{} und \glqq von dem\grqq{}}
+
+        \begin{grammarentry}{Kurz und wichtig}{dein ursprüngliches Problem}
+            \GermanText{\textbf{davon} = \glqq von dieser Sache / von diesem Inhalt\grqq{} in einem normalen Satz.}
+            \EnglishText{\textbf{davon} = ``from/about this thing or content'' in a normal sentence.}
+
+            \GermanText{\textbf{von dem} = Präposition \textbf{von} + Relativpronomen \textbf{dem}, wenn ein Relativsatz sich auf ein maskulines oder neutrales Nomen im Singular bezieht und \textbf{von} den Dativ verlangt.}
+            \EnglishText{\textbf{von dem} = preposition \textbf{von} + relative pronoun \textbf{dem}, when a relative clause refers to a masculine or neuter singular noun and \textbf{von} requires the dative.}
+
+            \GermanText{Deshalb: \textbf{Dieses Medium ist gut. Wir erwarten viel davon.} Aber: \textbf{Das ist ein Medium, von dem wir viel erwarten.}}
+            \EnglishText{Therefore: \textbf{This medium is good. We expect a lot from it.} But: \textbf{This is a medium from which we expect a lot.}}
+        \end{grammarentry}
+
+\end{document}

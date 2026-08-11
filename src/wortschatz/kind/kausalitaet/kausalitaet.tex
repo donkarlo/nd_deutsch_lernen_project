@@ -1,0 +1,372 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[table]{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.45}
+\setlength{\tabcolsep}{5pt}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Kausalität im Deutschen}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+    \section{Grundidee der Kausalität}
+
+        \begin{grammarentry}{Kausalität}{Ursache und Grund}
+            \GermanText{\textbf{Kausalität} bezeichnet die Beziehung zwischen einer \textbf{Ursache oder einem Grund} und einer \textbf{Folge}. Kausale Ausdrücke beantworten besonders die Fragen \glqq Warum?\grqq, \glqq Weshalb?\grqq, \glqq Wieso?\grqq oder \glqq Aus welchem Grund?\grqq.}
+            \EnglishText{\textbf{Causality} describes the relationship between a \textbf{cause or reason} and a \textbf{consequence}. Causal expressions especially answer the questions ``Why?'' or ``For what reason?''}
+
+            \GermanText{Beispiel: \textbf{Ich bleibe zu Hause, weil ich krank bin.} Die Krankheit ist der Grund; das Zuhausebleiben ist die Folge.}
+            \EnglishText{Example: \textbf{I stay at home because I am ill.} The illness is the reason; staying at home is the consequence.}
+        \end{grammarentry}
+
+    \section{Die wichtigsten kausalen Konnektoren}
+
+        \begin{grammarentry}{Überblick}{Wortarten und Satzbau}
+            \GermanText{Kausalität kann im Deutschen mit \textbf{Konjunktionen}, \textbf{Konjunktionaladverbien}, \textbf{Adverbien} und \textbf{Präpositionen} ausgedrückt werden. Entscheidend ist, dass jede Gruppe einen anderen Satzbau verlangt.}
+            \EnglishText{In German, causality can be expressed with \textbf{conjunctions}, \textbf{conjunctive adverbs}, \textbf{adverbs}, and \textbf{prepositions}. The important point is that each group requires a different sentence structure.}
+        \end{grammarentry}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{p{2.5cm}|p{3.0cm}|p{3.7cm}|p{5.6cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Ausdruck} &
+            \color{white}\textbf{Wortart} &
+            \color{white}\textbf{Struktur} &
+            \color{white}\textbf{Beispiel} \\
+            weil / da & subordinierende Konjunktion & Verb am Ende & Ich bleibe zu Hause, \textbf{weil ich krank bin}. \\
+            denn & koordinierende Konjunktion & normale Hauptsatzstellung & Ich bleibe zu Hause, \textbf{denn ich bin krank}. \\
+            deshalb / deswegen / daher / darum & Konjunktionaladverb & Verb auf Position 2 & Ich bin krank. \textbf{Deshalb bleibe ich} zu Hause. \\
+            nämlich & Adverb & normale Hauptsatzstellung; meist im Mittelfeld & Ich bleibe zu Hause. Ich bin \textbf{nämlich} krank. \\
+            wegen / aufgrund & Präposition & meist mit Genitiv & \textbf{Wegen meiner Krankheit} bleibe ich zu Hause. \\
+            aus / vor & Präposition & mit Dativ & Er handelt \textbf{aus Angst}. / Er zittert \textbf{vor Angst}. \\
+        \end{longtable}
+
+        \EnglishText{Overview: \textbf{weil/da} introduce subordinate clauses with the verb at the end; \textbf{denn} connects main clauses without changing normal word order; \textbf{deshalb/deswegen/daher/darum} introduce a consequence and keep the finite verb in position 2; causal prepositions are followed by a noun phrase.}
+
+    \section{Weil}
+
+        \begin{grammarentry}{weil}{subordinierende Konjunktion}
+            \GermanText{\textbf{weil} nennt einen Grund oder eine Ursache. Es leitet einen Nebensatz ein. Das konjugierte Verb steht im Nebensatz am Ende.}
+            \EnglishText{\textbf{weil} gives a reason or cause. It introduces a subordinate clause. The conjugated verb stands at the end of the subordinate clause.}
+
+            \GermanText{Struktur: \textbf{Hauptsatz + , weil + ... + Verb}.}
+            \EnglishText{Structure: \textbf{main clause + , weil + ... + verb}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich lerne Deutsch, weil ich in Österreich lebe.}{I learn German because I live in Austria.}
+                \ExampleItem{Sie kommt nicht, weil sie arbeiten muss.}{She is not coming because she has to work.}
+                \ExampleItem{Weil ich müde bin, gehe ich früh schlafen.}{Because I am tired, I go to bed early.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Nebensatz zuerst}{Wortstellung im Hauptsatz}
+            \GermanText{Wenn der \textbf{weil}-Satz zuerst steht, besetzt der ganze Nebensatz die erste Position. Deshalb folgt im Hauptsatz direkt das konjugierte Verb: \textbf{Weil ich krank bin, bleibe ich zu Hause.}}
+            \EnglishText{When the \textbf{weil} clause comes first, the entire subordinate clause occupies the first position. Therefore, the conjugated verb of the main clause follows directly: \textbf{Because I am ill, I stay at home.}}
+        \end{grammarentry}
+
+    \section{Da}
+
+        \begin{grammarentry}{da}{subordinierende Konjunktion}
+            \GermanText{\textbf{da} funktioniert grammatisch wie \textbf{weil}: Es leitet einen Nebensatz ein und das Verb steht am Ende. \textbf{Da} wird besonders häufig verwendet, wenn der Grund bereits bekannt, offensichtlich oder nicht der eigentliche neue Schwerpunkt der Aussage ist.}
+            \EnglishText{\textbf{da} works grammatically like \textbf{weil}: it introduces a subordinate clause and the verb stands at the end. \textbf{Da} is especially common when the reason is already known, obvious, or is not the main new focus of the statement.}
+
+            \GermanText{Ein \textbf{da}-Satz steht sehr häufig vor dem Hauptsatz.}
+            \EnglishText{A \textbf{da} clause very often comes before the main clause.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Da es regnet, bleiben wir zu Hause.}{Since it is raining, we are staying at home.}
+                \ExampleItem{Da du schon hier bist, können wir anfangen.}{Since you are already here, we can begin.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Denn}
+
+        \begin{grammarentry}{denn}{koordinierende Konjunktion}
+            \GermanText{\textbf{denn} verbindet zwei Hauptsätze und nennt im zweiten Hauptsatz den Grund. Anders als bei \textbf{weil} bleibt die normale Hauptsatzwortstellung erhalten: Subjekt und konjugiertes Verb werden nicht ans Satzende verschoben.}
+            \EnglishText{\textbf{denn} connects two main clauses and gives the reason in the second main clause. Unlike with \textbf{weil}, normal main-clause word order remains: the subject and conjugated verb are not moved to the end of the sentence.}
+
+            \GermanText{Struktur: \textbf{Hauptsatz + , denn + Subjekt + Verb + ...}.}
+            \EnglishText{Structure: \textbf{main clause + , denn + subject + verb + ...}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich gehe nach Hause, denn ich bin müde.}{I am going home because I am tired.}
+                \ExampleItem{Wir fahren nicht mit dem Fahrrad, denn es regnet stark.}{We are not going by bicycle because it is raining heavily.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Deshalb, deswegen, daher und darum}
+
+        \begin{grammarentry}{Folge ausdrücken}{Konjunktionaladverbien}
+            \GermanText{\textbf{deshalb}, \textbf{deswegen}, \textbf{daher} und \textbf{darum} beziehen sich auf einen vorher genannten Grund und leiten die \textbf{Folge} ein. Sie bedeuten ungefähr \glqq aus diesem Grund\grqq.}
+            \EnglishText{\textbf{deshalb}, \textbf{deswegen}, \textbf{daher}, and \textbf{darum} refer to a previously mentioned reason and introduce the \textbf{consequence}. They mean approximately ``for this reason'' or ``therefore.''}
+
+            \GermanText{Wenn eines dieser Wörter auf Position 1 steht, steht das konjugierte Verb auf Position 2 und das Subjekt danach: \textbf{Deshalb bleibe ich zu Hause.}}
+            \EnglishText{When one of these words is in position 1, the conjugated verb is in position 2 and the subject follows it: \textbf{Therefore, I stay at home.}}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich bin krank. Deshalb bleibe ich zu Hause.}{I am ill. Therefore, I stay at home.}
+                \ExampleItem{Es regnet. Deswegen nehme ich einen Regenschirm.}{It is raining. For this reason, I take an umbrella.}
+                \ExampleItem{Der Zug fällt aus. Daher komme ich später.}{The train is cancelled. Therefore, I will arrive later.}
+                \ExampleItem{Ich habe morgen eine Prüfung. Darum lerne ich heute viel.}{I have an exam tomorrow. That is why I am studying a lot today.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Wichtiger Unterschied}{Grund oder Folge?}
+            \GermanText{\textbf{weil, da, denn} führen den \textbf{Grund} ein. \textbf{deshalb, deswegen, daher, darum} führen die \textbf{Folge} ein.}
+            \EnglishText{\textbf{weil, da, denn} introduce the \textbf{reason}. \textbf{deshalb, deswegen, daher, darum} introduce the \textbf{consequence}.}
+        \end{grammarentry}
+
+    \section{Nämlich}
+
+        \begin{grammarentry}{nämlich}{nachträgliche Erklärung}
+            \GermanText{\textbf{nämlich} gibt eine Erklärung oder einen Grund für eine vorherige Aussage. Es steht normalerweise innerhalb des zweiten Hauptsatzes und verändert die Hauptsatzwortstellung nicht.}
+            \EnglishText{\textbf{nämlich} gives an explanation or reason for a previous statement. It normally stands inside the second main clause and does not change main-clause word order.}
+
+            \GermanText{Für die normale B1-Verwendung sollte \textbf{nämlich} nicht wie \textbf{deshalb} an den Satzanfang gestellt werden.}
+            \EnglishText{For normal B1 usage, \textbf{nämlich} should not be placed at the beginning of the sentence like \textbf{deshalb}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich kann heute nicht kommen. Ich muss nämlich arbeiten.}{I cannot come today. I have to work, you see.}
+                \ExampleItem{Wir sollten früh losfahren. Die Straße ist nämlich oft voll.}{We should leave early. The road is often crowded, you see.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Kausale Präpositionen}
+
+        \subsection{Wegen}
+
+            \begin{grammarentry}{wegen}{Präposition + Genitiv}
+                \GermanText{\textbf{wegen} nennt einen Grund und wird in der Standardsprache normalerweise mit dem \textbf{Genitiv} verwendet. Für eine Prüfung ist der Genitiv die sichere Wahl.}
+                \EnglishText{\textbf{wegen} gives a reason and is normally used with the \textbf{genitive} in standard German. For an exam, the genitive is the safe choice.}
+
+                \GermanText{Umgangssprachlich hört man auch den Dativ, aber in formeller Standardsprache ist der Genitiv vorzuziehen.}
+                \EnglishText{In colloquial speech, the dative can also be heard, but the genitive is preferable in formal standard German.}
+            \end{grammarentry}
+
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Wegen des Regens bleiben wir zu Hause.}{Because of the rain, we are staying at home.}
+                    \ExampleItem{Wegen meiner Krankheit konnte ich nicht arbeiten.}{Because of my illness, I could not work.}
+                \end{itemize}
+            \end{exbox}
+
+        \subsection{Aufgrund}
+
+            \begin{grammarentry}{aufgrund}{Präposition + Genitiv}
+                \GermanText{\textbf{aufgrund} bedeutet ungefähr dasselbe wie \textbf{wegen}, klingt aber formeller und wird häufig in schriftlicher oder amtlicher Sprache verwendet.}
+                \EnglishText{\textbf{aufgrund} means approximately the same as \textbf{wegen}, but sounds more formal and is often used in written or official language.}
+            \end{grammarentry}
+
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Aufgrund des schlechten Wetters wurde das Spiel abgesagt.}{Due to the bad weather, the game was cancelled.}
+                    \ExampleItem{Aufgrund eines technischen Problems startet das System nicht.}{Due to a technical problem, the system does not start.}
+                \end{itemize}
+            \end{exbox}
+
+        \subsection{Aus und vor}
+
+            \begin{grammarentry}{aus}{Motiv oder innerer Grund + Dativ}
+                \GermanText{\textbf{aus} kann einen inneren Grund, ein Motiv oder eine bewusste Motivation ausdrücken. Typische Verbindungen sind \textbf{aus Angst}, \textbf{aus Liebe}, \textbf{aus Interesse}, \textbf{aus Höflichkeit} und \textbf{aus Neugier}.}
+                \EnglishText{\textbf{aus} can express an inner reason, motive, or conscious motivation. Typical combinations are \textbf{out of fear}, \textbf{out of love}, \textbf{out of interest}, \textbf{out of politeness}, and \textbf{out of curiosity}.}
+            \end{grammarentry}
+
+            \begin{grammarentry}{vor}{unwillkürliche Reaktion + Dativ}
+                \GermanText{\textbf{vor} wird häufig verwendet, wenn ein Gefühl oder Zustand eine unwillkürliche körperliche oder emotionale Reaktion verursacht: \textbf{vor Angst zittern}, \textbf{vor Freude weinen}, \textbf{vor Kälte frieren}, \textbf{vor Schmerzen schreien}.}
+                \EnglishText{\textbf{vor} is often used when an emotion or condition causes an involuntary physical or emotional reaction: \textbf{to tremble with fear}, \textbf{to cry with joy}, \textbf{to freeze from cold}, \textbf{to scream in pain}.}
+            \end{grammarentry}
+
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Er sagte aus Angst nichts.}{He said nothing out of fear.}
+                    \ExampleItem{Er zitterte vor Angst.}{He trembled with fear.}
+                    \ExampleItem{Sie half ihm aus Freundlichkeit.}{She helped him out of kindness.}
+                    \ExampleItem{Sie weinte vor Freude.}{She cried with joy.}
+                \end{itemize}
+            \end{exbox}
+
+        \subsection{Weitere wichtige Präpositionen}
+
+            \begin{grammarentry}{durch, dank, infolge}{weitere kausale Möglichkeiten}
+                \GermanText{\textbf{durch + Akkusativ} kann eine Ursache oder einen verursachenden Vorgang nennen: \glqq Durch den Sturm wurden viele Bäume beschädigt.\grqq}
+                \EnglishText{\textbf{durch + accusative} can name a cause or a process that produces an effect: ``Many trees were damaged by the storm.''}
+
+                \GermanText{\textbf{dank} bezeichnet normalerweise einen positiven oder günstigen Grund: \glqq Dank deiner Hilfe habe ich die Aufgabe geschafft.\grqq}
+                \EnglishText{\textbf{dank} normally describes a positive or favorable reason: ``Thanks to your help, I completed the task.''}
+
+                \GermanText{\textbf{infolge + Genitiv} bedeutet \glqq als Folge von\grqq und ist eher formell: \glqq Infolge des Unfalls war die Straße gesperrt.\grqq}
+                \EnglishText{\textbf{infolge + genitive} means ``as a result of'' and is rather formal: ``As a result of the accident, the road was closed.''}
+            \end{grammarentry}
+
+    \section{Dieselbe Bedeutung mit verschiedenen Strukturen}
+
+        \begin{grammarentry}{Umformungen}{ein Grund, vier Strukturen}
+            \GermanText{Dieselbe kausale Beziehung kann oft mit verschiedenen grammatischen Strukturen ausgedrückt werden. Der Inhalt bleibt ungefähr gleich, aber der Satzbau ändert sich.}
+            \EnglishText{The same causal relationship can often be expressed with different grammatical structures. The content remains approximately the same, but the sentence structure changes.}
+        \end{grammarentry}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{p{3.0cm}|p{11.8cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Struktur} &
+            \color{white}\textbf{Beispiel} \\
+            weil & Ich bleibe zu Hause, \textbf{weil ich krank bin}. \\
+            denn & Ich bleibe zu Hause, \textbf{denn ich bin krank}. \\
+            deshalb & Ich bin krank. \textbf{Deshalb bleibe ich zu Hause}. \\
+            wegen & \textbf{Wegen meiner Krankheit} bleibe ich zu Hause. \\
+        \end{longtable}
+
+        \EnglishText{All four examples express approximately the same causal relationship: illness is the reason, and staying at home is the consequence.}
+
+    \section{Wortstellung im Vergleich}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{p{2.4cm}|p{5.6cm}|p{6.8cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Konnektor} &
+            \color{white}\textbf{Regel} &
+            \color{white}\textbf{Beispiel} \\
+            weil / da & konjugiertes Verb am Ende & ..., weil ich heute \textbf{arbeiten muss}. \\
+            denn & normale Hauptsatzstellung & ..., denn ich \textbf{muss} heute arbeiten. \\
+            deshalb / deswegen & Position 1 möglich; Verb danach & Deswegen \textbf{muss} ich heute arbeiten. \\
+            nämlich & normalerweise im Mittelfeld & Ich kann nicht kommen. Ich \textbf{muss nämlich} arbeiten. \\
+        \end{longtable}
+
+        \begin{grammarentry}{Merkschema}{Verbposition}
+            \GermanText{\textbf{weil / da: Verb am Ende.} \quad \textbf{denn: normale Hauptsatzstellung.} \quad \textbf{deshalb / deswegen: Verb auf Position 2.}}
+            \EnglishText{\textbf{weil / da: verb at the end.} \quad \textbf{denn: normal main-clause word order.} \quad \textbf{deshalb / deswegen: verb in position 2.}}
+        \end{grammarentry}
+
+    \section{Typische Fehler in der B1-Prüfung}
+
+        \begin{grammarentry}{Fehler 1}{weil + falsche Verbposition}
+            \GermanText{Falsch: \textbf{Ich bleibe zu Hause, weil ich bin krank.}}
+            \EnglishText{Wrong: \textbf{I stay at home because I am ill} with main-clause word order after \textbf{weil}.}
+
+            \GermanText{Richtig: \textbf{Ich bleibe zu Hause, weil ich krank bin.}}
+            \EnglishText{Correct: \textbf{I stay at home because I am ill.}}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Fehler 2}{deswegen + falsche Verbposition}
+            \GermanText{Falsch: \textbf{Ich bin krank. Deswegen ich bleibe zu Hause.}}
+            \EnglishText{Wrong: placing the subject directly after \textbf{deswegen} when \textbf{deswegen} occupies position 1.}
+
+            \GermanText{Richtig: \textbf{Ich bin krank. Deswegen bleibe ich zu Hause.}}
+            \EnglishText{Correct: \textbf{I am ill. Therefore, I stay at home.}}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Fehler 3}{denn wie einen Nebensatz behandeln}
+            \GermanText{Falsch: \textbf{Ich bleibe zu Hause, denn ich krank bin.}}
+            \EnglishText{Wrong: treating the clause after \textbf{denn} like a subordinate clause.}
+
+            \GermanText{Richtig: \textbf{Ich bleibe zu Hause, denn ich bin krank.}}
+            \EnglishText{Correct: \textbf{I stay at home because I am ill.}}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Fehler 4}{Grund und Folge vertauschen}
+            \GermanText{\textbf{weil} nennt den Grund: \glqq Ich bleibe zu Hause, weil ich krank bin.\grqq \textbf{deshalb} nennt die Folge: \glqq Ich bin krank, deshalb bleibe ich zu Hause.\grqq}
+            \EnglishText{\textbf{weil} gives the reason: ``I stay at home because I am ill.'' \textbf{deshalb} gives the consequence: ``I am ill, therefore I stay at home.''}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Fehler 5}{wegen ohne passende Nominalstruktur}
+            \GermanText{\textbf{wegen} ist eine Präposition und braucht eine Nominalgruppe. Man sagt zum Beispiel \textbf{wegen des Regens} oder \textbf{wegen meiner Krankheit}. Wenn man einen ganzen Satz als Grund ausdrücken will, ist \textbf{weil} meistens einfacher.}
+            \EnglishText{\textbf{wegen} is a preposition and requires a noun phrase. For example, one says \textbf{because of the rain} or \textbf{because of my illness}. If you want to express a whole clause as the reason, \textbf{weil} is usually easier.}
+        \end{grammarentry}
+
+    \section{Nicht mit Kausalität verwechseln}
+
+        \begin{grammarentry}{Andere logische Beziehungen}{Abgrenzung}
+            \GermanText{\textbf{obwohl / trotzdem} drücken einen Gegensatz oder eine Einräumung aus und gehören zur \textbf{konzessiven} Beziehung, nicht zur kausalen Beziehung.}
+            \EnglishText{\textbf{obwohl / trotzdem} express contrast or concession and belong to the \textbf{concessive} relationship, not the causal relationship.}
+
+            \GermanText{\textbf{damit / um ... zu} drücken normalerweise ein Ziel oder einen Zweck aus und gehören zur \textbf{finalen} Beziehung.}
+            \EnglishText{\textbf{damit / um ... zu} normally express a goal or purpose and belong to the \textbf{final/purpose} relationship.}
+
+            \GermanText{\textbf{sodass / so ... dass} drücken eine Folge aus und gehören zur \textbf{konsekutiven} Beziehung.}
+            \EnglishText{\textbf{sodass / so ... dass} express a consequence and belong to the \textbf{consecutive/result} relationship.}
+        \end{grammarentry}
+
+    \section{B1-Merksätze}
+
+        \begin{grammarentry}{Das Wichtigste}{kurz und prüfungsrelevant}
+            \GermanText{1. \textbf{weil / da} $\rightarrow$ Nebensatz $\rightarrow$ Verb am Ende.}
+            \EnglishText{1. \textbf{weil / da} $\rightarrow$ subordinate clause $\rightarrow$ verb at the end.}
+
+            \GermanText{2. \textbf{denn} $\rightarrow$ Hauptsatz $\rightarrow$ normale Wortstellung.}
+            \EnglishText{2. \textbf{denn} $\rightarrow$ main clause $\rightarrow$ normal word order.}
+
+            \GermanText{3. \textbf{deshalb / deswegen / daher / darum} $\rightarrow$ Folge $\rightarrow$ Verb auf Position 2.}
+            \EnglishText{3. \textbf{deshalb / deswegen / daher / darum} $\rightarrow$ consequence $\rightarrow$ verb in position 2.}
+
+            \GermanText{4. \textbf{wegen / aufgrund} $\rightarrow$ Präposition + Nominalgruppe; in der Standardsprache normalerweise Genitiv.}
+            \EnglishText{4. \textbf{wegen / aufgrund} $\rightarrow$ preposition + noun phrase; in standard German normally genitive.}
+
+            \GermanText{5. \textbf{aus} beschreibt oft ein Motiv; \textbf{vor} beschreibt oft eine unwillkürliche Reaktion.}
+            \EnglishText{5. \textbf{aus} often describes a motive; \textbf{vor} often describes an involuntary reaction.}
+        \end{grammarentry}
+
+    \section{Zusammenfassung}
+
+        \begin{grammarentry}{Kernregel}{Ursache und Folge richtig verbinden}
+            \GermanText{Für B1 reicht es nicht, nur die Bedeutung der kausalen Wörter zu kennen. Man muss besonders die \textbf{Verbposition} beherrschen: \textbf{weil/da + Verb am Ende}, \textbf{denn + Hauptsatzwortstellung}, \textbf{deshalb/deswegen + Verb auf Position 2}. Bei Präpositionen wie \textbf{wegen} wird der Grund als Nominalgruppe ausgedrückt.}
+            \EnglishText{For B1, it is not enough to know only the meaning of causal words. You especially need to master the \textbf{verb position}: \textbf{weil/da + verb at the end}, \textbf{denn + main-clause word order}, \textbf{deshalb/deswegen + verb in position 2}. With prepositions such as \textbf{wegen}, the reason is expressed as a noun phrase.}
+        \end{grammarentry}
+
+\end{document}
