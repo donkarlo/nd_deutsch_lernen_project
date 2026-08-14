@@ -1,0 +1,310 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{6pt}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Das Pronominaladverb \glqq davon\grqq}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+    \section{Grundbedeutung}
+
+        \begin{grammarentry}{davon}{Pronominaladverb: da + von}
+            \GermanText{\textbf{davon} ist ein Pronominaladverb. Es besteht aus \textbf{da + von} und ersetzt normalerweise eine Verbindung aus \textbf{von + Sache, Thema, Ereignis oder Sachverhalt}.}
+            \EnglishText{\textbf{davon} is a pronominal adverb. It consists of \textbf{da + von} and normally replaces a construction with \textbf{von + thing, topic, event, or situation}.}
+
+            \GermanText{Je nach Verb, Adjektiv oder Kontext kann \textbf{davon} auf Englisch unter anderem \glqq of it\grqq, \glqq from it\grqq, \glqq about it\grqq oder \glqq of them\grqq bedeuten.}
+            \EnglishText{Depending on the verb, adjective, or context, \textbf{davon} can mean, among other things, ``of it'', ``from it'', ``about it'', or ``of them''.}
+
+            \GermanText{\textbf{davon} wird nicht dekliniert und hat keine verschiedenen Formen für Genus, Numerus oder Kasus.}
+            \EnglishText{\textbf{davon} is not declined and has no different forms for gender, number, or case.}
+        \end{grammarentry}
+
+    \section{Bildung: da + Präposition}
+
+        \begin{grammarentry}{da + von}{Bildungsregel}
+            \GermanText{Bei vielen Präpositionen kann man für Sachen oder Sachverhalte ein Pronominaladverb mit \textbf{da(r) + Präposition} bilden. Bei \textbf{von} lautet die Form \textbf{davon}.}
+            \EnglishText{With many prepositions, a pronominal adverb can be formed for things or situations using \textbf{da(r) + preposition}. With \textbf{von}, the form is \textbf{davon}.}
+
+            \GermanText{Da \textbf{von} mit einem Konsonanten beginnt, steht kein zusätzliches \textbf{r}: \textbf{da + von = davon}.}
+            \EnglishText{Because \textbf{von} begins with a consonant, no additional \textbf{r} is used: \textbf{da + von = davon}.}
+
+            \GermanText{Vor einer Präposition mit Vokal steht dagegen normalerweise \textbf{dar-}: zum Beispiel \textbf{daran}, \textbf{darauf}, \textbf{darüber}.}
+            \EnglishText{Before a preposition beginning with a vowel, \textbf{dar-} is normally used instead: for example \textbf{daran}, \textbf{darauf}, \textbf{darüber}.}
+        \end{grammarentry}
+
+    \section{Die wichtigste Ersatzregel}
+
+        \begin{grammarentry}{von + Sache \texorpdfstring{$\rightarrow$}{->} davon}{Bezug auf Sachen und Sachverhalte}
+            \GermanText{Wenn ein Verb, Adjektiv oder Ausdruck die Präposition \textbf{von} verlangt und man sich auf eine Sache oder einen Sachverhalt bezieht, kann \textbf{von + Nomen} häufig durch \textbf{davon} ersetzt werden.}
+            \EnglishText{When a verb, adjective, or expression requires the preposition \textbf{von} and the reference is to a thing or situation, \textbf{von + noun} can often be replaced by \textbf{davon}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich träume von der Reise. \textrightarrow{} Ich träume davon.}{I dream about the trip. \textrightarrow{} I dream about it.}
+                \ExampleItem{Das hängt vom Wetter ab. \textrightarrow{} Das hängt davon ab.}{That depends on the weather. \textrightarrow{} That depends on it.}
+                \ExampleItem{Ich bin von dieser Idee überzeugt. \textrightarrow{} Ich bin davon überzeugt.}{I am convinced of this idea. \textrightarrow{} I am convinced of it.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Grammatische Rolle im Satz}
+
+        \begin{grammarentry}{Präpositionalergänzung}{Funktion abhängig vom regierenden Wort}
+            \GermanText{Die Wortart von \textbf{davon} ist \textbf{Pronominaladverb}. Seine grammatische Funktion im Satz hängt aber davon ab, welches Verb, Adjektiv oder Nomen die Verbindung mit \textbf{von} verlangt. Sehr häufig ist \textbf{davon} eine \textbf{Präpositionalergänzung}.}
+            \EnglishText{The word class of \textbf{davon} is \textbf{pronominal adverb}. Its grammatical function in the sentence, however, depends on which verb, adjective, or noun requires the construction with \textbf{von}. Very often, \textbf{davon} is a \textbf{prepositional complement}.}
+
+            \GermanText{Beispiel: In \glqq Das hängt \textbf{davon} ab\grqq verlangt das Verb \textbf{abhängen} die Präposition \textbf{von}. Deshalb ist \textbf{davon} die Präpositionalergänzung zu \textbf{abhängen}.}
+            \EnglishText{Example: In ``Das hängt \textbf{davon} ab'', the verb \textbf{abhängen} requires the preposition \textbf{von}. Therefore, \textbf{davon} is the prepositional complement of \textbf{abhängen}.}
+        \end{grammarentry}
+
+    \section{Davon als Korrelat vor einem Nebensatz}
+
+        \begin{grammarentry}{davon + Nebensatz}{Korrelat}
+            \GermanText{\textbf{davon} kann auf einen ganzen folgenden Nebensatz vorausweisen. In dieser Funktion nennt man \textbf{davon} ein \textbf{Korrelat}. Der Nebensatz erklärt dann genauer, worauf sich \textbf{davon} bezieht.}
+            \EnglishText{\textbf{davon} can point forward to an entire following subordinate clause. In this function, \textbf{davon} is called a \textbf{correlate}. The subordinate clause then explains more precisely what \textbf{davon} refers to.}
+
+            \GermanText{Typische Strukturen sind \textbf{davon, dass ...}, \textbf{davon, ob ...} und \textbf{davon, + zu-Infinitivgruppe}.}
+            \EnglishText{Typical structures are \textbf{davon, dass ...}, \textbf{davon, ob ...}, and \textbf{davon + to-infinitive clause}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich bin davon überzeugt, dass er recht hat.}{I am convinced that he is right.}
+                \ExampleItem{Es hängt davon ab, ob wir genug Zeit haben.}{It depends on whether we have enough time.}
+                \ExampleItem{Er träumt davon, im Ausland zu leben.}{He dreams of living abroad.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Dein Beispielsatz mit \glqq unabhängig davon, ob ...\grqq}
+
+        \begin{grammarentry}{unabhängig davon, ob ...}{genaue Analyse}
+            \GermanText{Satz: \glqq \textbf{Wessen bleibt gleich, unabhängig davon, ob das folgende Nomen maskulin, feminin, neutral oder Plural ist.}\grqq}
+            \EnglishText{Sentence: ``\textbf{Wessen remains the same, regardless of whether the following noun is masculine, feminine, neuter, or plural.}''}
+
+            \GermanText{Die Grundstruktur lautet \textbf{unabhängig von etwas}. Das Adjektiv \textbf{unabhängig} verlangt hier die Ergänzung mit \textbf{von}.}
+            \EnglishText{The basic structure is \textbf{unabhängig von etwas}. The adjective \textbf{unabhängig} requires a complement with \textbf{von} here.}
+
+            \GermanText{In deinem Satz steht an der Stelle von \textbf{von etwas} das Pronominaladverb \textbf{davon}. Deshalb ist \textbf{davon} grammatisch eine \textbf{Präpositionalergänzung zu unabhängig}.}
+            \EnglishText{In your sentence, the pronominal adverb \textbf{davon} stands in place of \textbf{von etwas}. Therefore, grammatically, \textbf{davon} is a \textbf{prepositional complement of unabhängig}.}
+
+            \GermanText{Gleichzeitig weist \textbf{davon} voraus auf den folgenden \textbf{ob-Satz}: \glqq ob das folgende Nomen maskulin, feminin, neutral oder Plural ist\grqq. Deshalb ist \textbf{davon} zusätzlich das \textbf{Korrelat} dieses Nebensatzes.}
+            \EnglishText{At the same time, \textbf{davon} points forward to the following \textbf{ob-clause}: ``whether the following noun is masculine, feminine, neuter, or plural.'' Therefore, \textbf{davon} is also the \textbf{correlate} of this subordinate clause.}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Kurzform der Analyse}{für die Prüfung}
+            \GermanText{\textbf{Wortart:} Pronominaladverb.}
+            \EnglishText{\textbf{Word class:} pronominal adverb.}
+
+            \GermanText{\textbf{Satzgliedfunktion:} Präpositionalergänzung zu \textbf{unabhängig}.}
+            \EnglishText{\textbf{Syntactic function:} prepositional complement of \textbf{unabhängig}.}
+
+            \GermanText{\textbf{Zusätzliche Funktion:} Korrelat des folgenden \textbf{ob-Satzes}.}
+            \EnglishText{\textbf{Additional function:} correlate of the following \textbf{ob-clause}.}
+        \end{grammarentry}
+
+    \section{Ist \glqq davon\grqq in diesem Satz überflüssig?}
+
+        \begin{grammarentry}{Nein}{feste Struktur mit unabhängig}
+            \GermanText{In der Standardkonstruktion \textbf{unabhängig davon, ob ...} ist \textbf{davon} nicht bedeutungslos. Es stellt die Verbindung zwischen dem Adjektiv \textbf{unabhängig}, seiner Präposition \textbf{von} und dem folgenden \textbf{ob-Satz} her.}
+            \EnglishText{In the standard construction \textbf{unabhängig davon, ob ...}, \textbf{davon} is not meaningless. It establishes the connection between the adjective \textbf{unabhängig}, its preposition \textbf{von}, and the following \textbf{ob-clause}.}
+
+            \GermanText{Man sollte die ganze Verbindung \textbf{unabhängig davon, ob ...} zusammen verstehen. Auf Englisch entspricht sie normalerweise \textbf{regardless of whether ...}.}
+            \EnglishText{The whole construction \textbf{unabhängig davon, ob ...} should be understood as a unit. In English, it normally corresponds to \textbf{regardless of whether ...}.}
+        \end{grammarentry}
+
+    \section{Davon bei Personen}
+
+        \begin{grammarentry}{Nicht für Personen}{wichtige Regel}
+            \GermanText{Wenn sich \textbf{von} auf eine Person bezieht, verwendet man normalerweise \textbf{nicht davon}, sondern \textbf{von ihm, von ihr, von ihnen, von dir} usw.}
+            \EnglishText{When \textbf{von} refers to a person, one normally does \textbf{not} use \textbf{davon}, but instead \textbf{von ihm, von ihr, von ihnen, von dir}, and so on.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich habe von dem Film gehört. \textrightarrow{} Ich habe davon gehört.}{I heard about the film. \textrightarrow{} I heard about it.}
+                \ExampleItem{Ich habe von Maria gehört. \textrightarrow{} Ich habe von ihr gehört.}{I heard from/about Maria. \textrightarrow{} I heard from/about her.}
+                \ExampleItem{Ich bin von dem Plan überzeugt. \textrightarrow{} Ich bin davon überzeugt.}{I am convinced of the plan. \textrightarrow{} I am convinced of it.}
+                \ExampleItem{Ich bin von meinem Lehrer überzeugt. \textrightarrow{} Ich bin von ihm überzeugt.}{I am convinced by/of my teacher. \textrightarrow{} I am convinced by/of him.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Davon mit Mengen: \glqq einige davon\grqq}
+
+        \begin{grammarentry}{partitive Bedeutung}{of them / of it}
+            \GermanText{\textbf{davon} kann sich auch auf eine Menge beziehen. Dann bedeutet es ungefähr \glqq von dieser Menge\grqq oder auf Englisch \glqq of them / of it\grqq.}
+            \EnglishText{\textbf{davon} can also refer to a quantity. It then means approximately ``from/of this quantity'', or in English ``of them / of it''.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich habe zehn Bücher. Drei davon sind auf Deutsch.}{I have ten books. Three of them are in German.}
+                \ExampleItem{Wir haben viel Brot gekauft, aber nur wenig davon gegessen.}{We bought a lot of bread, but ate only a little of it.}
+                \ExampleItem{Viele Bewerber waren qualifiziert; einige davon wurden eingeladen.}{Many applicants were qualified; some of them were invited.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Davon mit verschiedenen Verben und Adjektiven}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{4.2cm}|p{5.0cm}|p{5.2cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Struktur} &
+            \color{white}\textbf{Deutsch} &
+            \color{white}\textbf{English} \\
+            \textbf{von etwas abhängen} & Das hängt davon ab. & It depends on it. \\
+            \textbf{von etwas überzeugt sein} & Ich bin davon überzeugt. & I am convinced of it. \\
+            \textbf{von etwas träumen} & Ich träume davon. & I dream about it. \\
+            \textbf{von etwas profitieren} & Wir profitieren davon. & We benefit from it. \\
+            \textbf{von etwas erzählen} & Er erzählt davon. & He talks about it. \\
+            \textbf{von etwas ausgehen} & Ich gehe davon aus, dass er kommt. & I assume that he is coming. \\
+            \textbf{von etwas wissen} & Ich weiß nichts davon. & I know nothing about it. \\
+            \textbf{von etwas leben} & Er kann davon leben. & He can live on it. \\
+            \textbf{unabhängig von etwas sein} & Das ist unabhängig davon. & That is independent of it. \\
+        \end{longtable}
+
+    \section{Frageform: wovon?}
+
+        \begin{grammarentry}{wovon? \texorpdfstring{$\leftrightarrow$}{<->} davon}{Frage und Antwort}
+            \GermanText{Das passende Fragewort zu \textbf{davon} ist meistens \textbf{wovon?}. \textbf{wovon} fragt nach der Sache oder dem Sachverhalt; \textbf{davon} kann in der Antwort darauf verweisen.}
+            \EnglishText{The corresponding question word for \textbf{davon} is usually \textbf{wovon?}. \textbf{wovon} asks about the thing or situation; \textbf{davon} can refer back to it in the answer.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Wovon hängt das ab? -- Das hängt vom Wetter ab. / Das hängt davon ab.}{What does that depend on? -- It depends on the weather. / It depends on it.}
+                \ExampleItem{Wovon träumst du? -- Ich träume von einer Reise. / Ich träume davon.}{What do you dream about? -- I dream about a trip. / I dream about it.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Davon und \glqq von dem\grqq}
+
+        \begin{grammarentry}{Nicht immer dasselbe}{Pronomen oder Artikel}
+            \GermanText{\textbf{davon} und \textbf{von dem} sind nicht automatisch austauschbar. \textbf{von dem} kann aus der Präposition \textbf{von} und einem Artikel oder Demonstrativpronomen bestehen. \textbf{davon} ist dagegen ein einziges Pronominaladverb.}
+            \EnglishText{\textbf{davon} and \textbf{von dem} are not automatically interchangeable. \textbf{von dem} can consist of the preposition \textbf{von} plus an article or demonstrative pronoun. \textbf{davon}, by contrast, is a single pronominal adverb.}
+
+            \GermanText{Wenn ein konkretes Nomen folgt, braucht man \textbf{von + Artikel + Nomen}: \glqq Ich spreche von dem Problem.\grqq Wenn das Nomen bereits bekannt ist und es sich um eine Sache handelt, kann man sagen: \glqq Ich spreche davon.\grqq}
+            \EnglishText{When a concrete noun follows, one uses \textbf{von + article + noun}: ``Ich spreche von dem Problem.'' If the noun is already known and refers to a thing, one can say: ``Ich spreche davon.''}
+        \end{grammarentry}
+
+    \section{Davon und Kasus}
+
+        \begin{grammarentry}{Kein eigenes Dativpronomen}{wichtige Unterscheidung}
+            \GermanText{Die Präposition \textbf{von} regiert normalerweise den \textbf{Dativ}: \glqq von dem Problem\grqq, \glqq von der Idee\grqq, \glqq von den Ergebnissen\grqq.}
+            \EnglishText{The preposition \textbf{von} normally governs the \textbf{dative}: ``von dem Problem'', ``von der Idee'', ``von den Ergebnissen''.}
+
+            \GermanText{Bei \textbf{davon} sieht man diese Dativform aber nicht mehr, weil \textbf{davon} nicht dekliniert wird. Deshalb sollte man nicht sagen: \glqq davon ist ein Dativpronomen\grqq. Richtig ist: \textbf{davon ist ein Pronominaladverb, das die Verbindung mit der Präposition von enthält}.}
+            \EnglishText{With \textbf{davon}, however, this dative form is no longer visible because \textbf{davon} is not declined. Therefore, one should not say: ``davon is a dative pronoun.'' Correct is: \textbf{davon is a pronominal adverb that contains the construction with the preposition von}.}
+        \end{grammarentry}
+
+    \section{Wortstellung}
+
+        \begin{grammarentry}{Position im Satz}{Mittelfeld und Vorfeld}
+            \GermanText{\textbf{davon} kann im Mittelfeld stehen: \glqq Ich habe \textbf{davon} nichts gewusst.\grqq Es kann zur Betonung auch im Vorfeld stehen: \glqq \textbf{Davon} habe ich nichts gewusst.\grqq}
+            \EnglishText{\textbf{davon} can appear in the middle field: ``Ich habe \textbf{davon} nichts gewusst.'' It can also appear in the first position for emphasis: ``\textbf{Davon} habe ich nichts gewusst.''}
+
+            \GermanText{Bei trennbaren Verben bleibt die Verbpartikel an ihrer normalen Position: \glqq Es hängt \textbf{davon} \textbf{ab}.\grqq}
+            \EnglishText{With separable verbs, the verb particle remains in its normal position: ``Es hängt \textbf{davon} \textbf{ab}.''}
+        \end{grammarentry}
+
+    \section{Nicht mit Verben wie \glqq davonlaufen\grqq verwechseln}
+
+        \begin{grammarentry}{davon- als Teil eines Verbs}{andere Struktur}
+            \GermanText{In Verben wie \textbf{davonlaufen}, \textbf{davonfahren} oder \textbf{davonkommen} gehört \textbf{davon-} zum Verb. Das ist nicht dieselbe grammatische Struktur wie das freie Pronominaladverb \textbf{davon} in \glqq Ich träume davon.\grqq}
+            \EnglishText{In verbs such as \textbf{davonlaufen}, \textbf{davonfahren}, or \textbf{davonkommen}, \textbf{davon-} belongs to the verb. This is not the same grammatical structure as the independent pronominal adverb \textbf{davon} in ``Ich träume davon.''}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Der Hund läuft davon.}{The dog runs away.}
+                \ExampleItem{Er ist mit einem kleinen Schaden davongekommen.}{He got away with minor damage.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Häufige Fehler}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{p{5.6cm}|p{5.6cm}|p{3.2cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Falsch oder problematisch} &
+            \color{white}\textbf{Richtig} &
+            \color{white}\textbf{Grund} \\
+            \textbf{Ich träume von es.} & \textbf{Ich träume davon.} & Sache: Pronominaladverb \\
+            \textbf{Ich spreche davon Maria.} & \textbf{Ich spreche von Maria.} & Nomen steht direkt nach \textbf{von} \\
+            \textbf{Ich habe davon Maria gehört.} & \textbf{Ich habe von Maria / von ihr gehört.} & Person: kein \textbf{davon} \\
+            \textbf{Davon ist ein Dativpronomen.} & \textbf{Davon ist ein Pronominaladverb.} & Keine Deklination \\
+            \textbf{Es hängt ob wir Zeit haben ab.} & \textbf{Es hängt davon ab, ob wir Zeit haben.} & Korrelat vor dem \textbf{ob-Satz} \\
+        \end{longtable}
+
+    \section{Zusammenfassung}
+
+        \begin{grammarentry}{Merksätze}{kurz und wichtig}
+            \GermanText{\textbf{1. davon = da + von.} Es ist ein \textbf{Pronominaladverb}.}
+            \EnglishText{\textbf{1. davon = da + von.} It is a \textbf{pronominal adverb}.}
+
+            \GermanText{\textbf{2.} Es ersetzt häufig \textbf{von + Sache/Sachverhalt}: \glqq von dem Problem\grqq \textrightarrow{} \glqq davon\grqq.}
+            \EnglishText{\textbf{2.} It often replaces \textbf{von + thing/situation}: ``von dem Problem'' \textrightarrow{} ``davon''.}
+
+            \GermanText{\textbf{3.} Für Personen verwendet man normalerweise \textbf{von ihm/ihr/ihnen} und nicht \textbf{davon}.}
+            \EnglishText{\textbf{3.} For people, one normally uses \textbf{von ihm/ihr/ihnen}, not \textbf{davon}.}
+
+            \GermanText{\textbf{4.} Vor einem dass-, ob- oder Infinitivsatz kann \textbf{davon} als \textbf{Korrelat} stehen.}
+            \EnglishText{\textbf{4.} Before a dass-clause, ob-clause, or infinitive clause, \textbf{davon} can function as a \textbf{correlate}.}
+
+            \GermanText{\textbf{5.} In \glqq unabhängig davon, ob ...\grqq ist \textbf{davon} eine \textbf{Präpositionalergänzung zu unabhängig} und zugleich das \textbf{Korrelat des ob-Satzes}.}
+            \EnglishText{\textbf{5.} In ``unabhängig davon, ob ...'', \textbf{davon} is a \textbf{prepositional complement of unabhängig} and at the same time the \textbf{correlate of the ob-clause}.}
+
+            \GermanText{\textbf{6. wovon?} ist das typische Fragewort zu \textbf{davon}.}
+            \EnglishText{\textbf{6. wovon?} is the typical question word corresponding to \textbf{davon}.}
+        \end{grammarentry}
+
+\end{document}

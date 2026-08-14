@@ -1,0 +1,234 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[table]{xcolor}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.45}
+\setlength{\tabcolsep}{6pt}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{\glqq jeder\grqq\ als Artikelwort / Determinativ}
+\date{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Grundidee}
+\begin{grammarentry}{jeder vor einem Nomen}{Artikelwort / Determinativ}
+\GermanText{Wenn \textbf{jeder} direkt vor einem Nomen steht und dieses Nomen bestimmt, wird \textbf{jeder} als \textbf{Artikelwort} bzw. \textbf{Determinativ} verwendet. Es gehört zur Gruppe der Indefinitwörter.}
+\EnglishText{When \textbf{jeder} stands directly before a noun and determines that noun, \textbf{jeder} is used as an \textbf{article word / determiner}. It belongs to the group of indefinite words.}
+\GermanText{Beispiele: \textbf{jeder Mensch}, \textbf{jede Frau}, \textbf{jedes Kind}.}
+\EnglishText{Examples: \textbf{every man/person}, \textbf{every woman}, \textbf{every child}.}
+\GermanText{Wichtig: \textbf{jeder} ist nicht derselbe Artikeltyp wie \textbf{der/die/das} oder \textbf{ein/eine}. In vielen Grammatiken nennt man ihn deshalb genauer ein \textbf{Artikelwort} oder \textbf{Determinativ}.}
+\EnglishText{Important: \textbf{jeder} is not the same type of article as \textbf{der/die/das} or \textbf{ein/eine}. Therefore many grammars more precisely call it an \textbf{article word} or \textbf{determiner}.}
+\end{grammarentry}
+
+\section{Bedeutung}
+\begin{grammarentry}{Verteilende Bedeutung}{each / every}
+\GermanText{\textbf{jeder} bedeutet, dass alle Mitglieder einer Gruppe \textbf{einzeln} betrachtet werden. Es hat deshalb eine verteilende Bedeutung.}
+\EnglishText{\textbf{jeder} means that all members of a group are considered \textbf{individually}. It therefore has a distributive meaning.}
+\GermanText{\textbf{Jeder Student bekommt ein Buch.} bedeutet: Student 1 bekommt ein Buch, Student 2 bekommt ein Buch, Student 3 bekommt ein Buch usw.}
+\EnglishText{\textbf{Every student gets a book.} means: student 1 gets a book, student 2 gets a book, student 3 gets a book, and so on.}
+\end{grammarentry}
+
+\section{Deklination vor einem Nomen}
+\begin{grammarentry}{Formen von jeder}{Kasus, Genus, Numerus}
+\GermanText{Die Form von \textbf{jeder} richtet sich nach \textbf{Kasus}, \textbf{Genus} und \textbf{Numerus} des Nomens. In der normalen Verwendung steht \textbf{jeder} im Singular. Für eine ganze Pluralgruppe benutzt man normalerweise \textbf{alle}.}
+\EnglishText{The form of \textbf{jeder} depends on the noun's \textbf{case}, \textbf{gender}, and \textbf{number}. In normal use, \textbf{jeder} is singular. For an entire plural group, German normally uses \textbf{alle}.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{2.7cm}|>{\centering\arraybackslash}p{3.2cm}|>{\centering\arraybackslash}p{3.2cm}|>{\centering\arraybackslash}p{3.2cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Kasus} &
+\color{white}\textbf{Maskulin} &
+\color{white}\textbf{Feminin} &
+\color{white}\textbf{Neutrum} \\
+Nominativ & jeder Mann & jede Frau & jedes Kind \\
+Akkusativ & jeden Mann & jede Frau & jedes Kind \\
+Dativ & jedem Mann & jeder Frau & jedem Kind \\
+Genitiv & jedes Mannes & jeder Frau & jedes Kindes \\
+\end{longtable}
+
+\begin{grammarentry}{Endungen}{Merkschema}
+\GermanText{Die Endungen von \textbf{jeder} ähneln den Formen von \textbf{dieser}: \textbf{-er, -e, -es, -en, -em}.}
+\EnglishText{The endings of \textbf{jeder} are similar to the forms of \textbf{dieser}: \textbf{-er, -e, -es, -en, -em}.}
+\GermanText{Für das Lernen ist es hilfreich, \textbf{jeder} wie \textbf{dieser} zu deklinieren: dieser Mann -- jeder Mann; diesen Mann -- jeden Mann; diesem Mann -- jedem Mann.}
+\EnglishText{For learning, it is useful to decline \textbf{jeder} like \textbf{dieser}: this man -- every man; this man (acc.) -- every man (acc.); to this man -- to every man.}
+\end{grammarentry}
+
+\section{Übereinstimmung mit dem Nomen}
+\begin{grammarentry}{Kongruenz}{Kasus, Genus, Numerus}
+\GermanText{Als Artikelwort stimmt \textbf{jeder} mit seinem Nomen in \textbf{Kasus}, \textbf{Genus} und \textbf{Numerus} überein.}
+\EnglishText{As an article word, \textbf{jeder} agrees with its noun in \textbf{case}, \textbf{gender}, and \textbf{number}.}
+\GermanText{Beispiel: \textbf{Ich sehe jeden Mann.} Das Verb \textbf{sehen} verlangt hier ein Akkusativobjekt. \textbf{Mann} ist maskulin und Singular. Deshalb lautet die Form \textbf{jeden Mann}.}
+\EnglishText{Example: \textbf{Ich sehe jeden Mann.} The verb \textbf{sehen} takes an accusative object here. \textbf{Mann} is masculine and singular. Therefore the form is \textbf{jeden Mann}.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Jeder Teilnehmer bekommt eine Nummer.}{Every participant gets a number.}
+\ExampleItem{Ich kenne jeden Teilnehmer.}{I know every participant.}
+\ExampleItem{Ich helfe jedem Teilnehmer.}{I help every participant.}
+\ExampleItem{Die Meinung jedes Teilnehmers ist wichtig.}{Every participant's opinion is important.}
+\end{itemize}
+\end{exbox}
+
+\section{Welchen Kasus bekommt jeder?}
+\begin{grammarentry}{Der Kasus kommt aus dem Satz}{nicht von jeder selbst}
+\GermanText{\textbf{jeder} bestimmt den Kasus nicht selbst. Der Kasus wird durch die grammatische Funktion im Satz, durch das Verb oder durch eine Präposition bestimmt.}
+\EnglishText{\textbf{jeder} does not determine its own case. The case is determined by the grammatical function in the sentence, by the verb, or by a preposition.}
+\GermanText{Subjekt: \textbf{Jeder Mensch} braucht Wasser. -- Akkusativobjekt: Ich sehe \textbf{jeden Menschen}. -- Dativobjekt: Ich helfe \textbf{jedem Menschen}. -- Präposition: Ich spreche mit \textbf{jedem Menschen}.}
+\EnglishText{Subject: \textbf{Every person} needs water. -- Accusative object: I see \textbf{every person}. -- Dative object: I help \textbf{every person}. -- Preposition: I speak with \textbf{every person}.}
+\end{grammarentry}
+
+\section{Adjektiv nach jeder}
+\begin{grammarentry}{Schwache Adjektivdeklination}{jeder gute Mensch}
+\GermanText{Wenn zwischen \textbf{jeder} und dem Nomen ein Adjektiv steht, trägt \textbf{jeder} bereits die deutliche Kasus-/Genus-Endung. Das folgende Adjektiv wird deshalb normalerweise \textbf{schwach dekliniert}.}
+\EnglishText{When an adjective stands between \textbf{jeder} and the noun, \textbf{jeder} already carries the clear case/gender ending. Therefore the following adjective is normally \textbf{weakly declined}.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{2.5cm}|p{4.8cm}|p{6.0cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Kasus} & \color{white}\textbf{Beispiel} & \color{white}\textbf{English} \\
+Nominativ & jeder gute Mann & every good man \\
+Akkusativ & jeden guten Mann & every good man \\
+Dativ & jedem guten Mann & to every good man \\
+Genitiv & jedes guten Mannes & of every good man \\
+\end{longtable}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Jede neue Mitarbeiterin bekommt einen Ausweis.}{Every new female employee gets an ID card.}
+\ExampleItem{Ich prüfe jedes neue Dokument.}{I check every new document.}
+\ExampleItem{Wir sprechen mit jedem neuen Kunden.}{We speak with every new customer.}
+\end{itemize}
+\end{exbox}
+
+\section{Singular und Plural}
+\begin{grammarentry}{jeder ist normalerweise Singular}{alle für den Plural}
+\GermanText{\textbf{jeder} verbindet sich normalerweise mit einem Nomen im Singular: \textbf{jeder Student}, nicht \textbf{jeder Studenten}. Wenn die Gruppe als Plural ausgedrückt wird, benutzt man normalerweise \textbf{alle Studenten}.}
+\EnglishText{\textbf{jeder} normally combines with a singular noun: \textbf{jeder Student}, not \textbf{jeder Studenten}. When the group is expressed as a plural, German normally uses \textbf{alle Studenten}.}
+\GermanText{\textbf{Jeder Student muss kommen.} und \textbf{Alle Studenten müssen kommen.} können inhaltlich ähnlich sein, aber die Perspektive ist verschieden: \textbf{jeder} betrachtet die Mitglieder einzeln; \textbf{alle} betrachtet die Gruppe als Gesamtheit.}
+\EnglishText{\textbf{Every student must come.} and \textbf{All students must come.} can be similar in meaning, but the perspective differs: \textbf{jeder} views the members individually; \textbf{alle} views the group as a whole.}
+\end{grammarentry}
+
+\section{jeder versus ein}
+\begin{grammarentry}{Unbestimmtheit ist nicht dasselbe}{every vs. a/an}
+\GermanText{\textbf{ein Student} bezeichnet einen nicht näher bestimmten einzelnen Studenten. \textbf{jeder Student} bezieht sich auf alle Studenten einer relevanten Gruppe, aber auf jeden einzeln.}
+\EnglishText{\textbf{ein Student} refers to one unspecified student. \textbf{jeder Student} refers to all students in a relevant group, but to each one individually.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ein Student wartet draußen.}{A student is waiting outside.}
+\ExampleItem{Jeder Student muss die Prüfung machen.}{Every student has to take the exam.}
+\end{itemize}
+\end{exbox}
+
+\section{jeder versus alle}
+\begin{grammarentry}{Einzelperspektive und Gruppenperspektive}{each/every vs. all}
+\GermanText{\textbf{jeder} ist distributiv: die Mitglieder werden einzeln betrachtet. \textbf{alle} ist kollektiv: die Gruppe wird als Ganzes betrachtet.}
+\EnglishText{\textbf{jeder} is distributive: the members are considered individually. \textbf{alle} is collective: the group is considered as a whole.}
+\GermanText{\textbf{Jeder Gast bekam ein Glas.} betont die einzelne Zuteilung. \textbf{Alle Gäste waren zufrieden.} beschreibt die gesamte Gruppe.}
+\EnglishText{\textbf{Each guest received a glass.} emphasizes individual distribution. \textbf{All guests were satisfied.} describes the entire group.}
+\end{grammarentry}
+
+\section{Häufige feste Muster}
+\begin{grammarentry}{Nützliche Strukturen}{Kollokationen}
+\GermanText{\textbf{jeder Mensch / jede Person / jedes Kind} = every person / every person / every child}
+\EnglishText{These are basic noun phrases with \textbf{jeder} as a determiner.}
+\GermanText{\textbf{jeder einzelne Mensch} = every single person}
+\EnglishText{\textbf{jeder einzelne Mensch} adds emphasis: every single person.}
+\GermanText{\textbf{an jedem Tag} = on every day / every day}
+\EnglishText{After \textbf{an} in a location/time expression, dative is used here: \textbf{jedem Tag}.}
+\GermanText{\textbf{für jeden Fall} = for every case; in \textbf{auf jeden Fall} the phrase means ``in any case / definitely''.}
+\EnglishText{\textbf{für jeden Fall} means ``for every case''; in \textbf{auf jeden Fall}, the fixed phrase means ``in any case / definitely''.}
+\end{grammarentry}
+
+\section{Typische Fehler}
+\begin{grammarentry}{Fehler 1}{falsche Endung}
+\GermanText{Falsch: \textbf{Ich sehe jeder Mann.} Richtig: \textbf{Ich sehe jeden Mann.} Das Akkusativobjekt ist maskulin und Singular.}
+\EnglishText{Wrong: \textbf{Ich sehe jeder Mann.} Correct: \textbf{Ich sehe jeden Mann.} The accusative object is masculine singular.}
+\end{grammarentry}
+
+\begin{grammarentry}{Fehler 2}{falscher Plural}
+\GermanText{Falsch: \textbf{jeder Studenten}. Richtig: \textbf{jeder Student} oder \textbf{alle Studenten}.}
+\EnglishText{Wrong: \textbf{jeder Studenten}. Correct: \textbf{jeder Student} or \textbf{alle Studenten}.}
+\end{grammarentry}
+
+\begin{grammarentry}{Fehler 3}{Adjektivendung}
+\GermanText{Falsch: \textbf{jeder guter Mann}. Richtig: \textbf{jeder gute Mann}. Nach \textbf{jeder} wird das Adjektiv normalerweise schwach dekliniert.}
+\EnglishText{Wrong: \textbf{jeder guter Mann}. Correct: \textbf{jeder gute Mann}. After \textbf{jeder}, the adjective is normally weakly declined.}
+\end{grammarentry}
+
+\section{Wie erkenne ich die Artikelwort-Verwendung?}
+\begin{grammarentry}{Schnelltest}{Nomen direkt danach}
+\GermanText{Frage 1: Steht nach der Form von \textbf{jeder} ein Nomen? Wenn ja, ist \textbf{jeder} in dieser Konstruktion ein Artikelwort / Determinativ.}
+\EnglishText{Question 1: Is there a noun after the form of \textbf{jeder}? If yes, \textbf{jeder} is an article word / determiner in this construction.}
+\GermanText{Frage 2: Welches Genus hat das Nomen? Frage 3: Welchen Kasus verlangt der Satz? Daraus ergibt sich die richtige Form: \textbf{jeder, jede, jedes, jeden, jedem}.}
+\EnglishText{Question 2: What gender does the noun have? Question 3: Which case does the sentence require? From this you get the correct form: \textbf{jeder, jede, jedes, jeden, jedem}.}
+\end{grammarentry}
+
+\section{Abgrenzung zum Pronomen}
+\begin{grammarentry}{Mit Nomen oder ohne Nomen}{entscheidender Unterschied}
+\GermanText{\textbf{Ich sehe jeden Menschen.} -- \textbf{jeden} begleitet das Nomen \textbf{Menschen}; deshalb ist es ein Artikelwort / Determinativ.}
+\EnglishText{\textbf{Ich sehe jeden Menschen.} -- \textbf{jeden} accompanies the noun \textbf{Menschen}; therefore it is an article word / determiner.}
+\GermanText{\textbf{Ich sehe jeden.} -- Es folgt kein Nomen. \textbf{jeden} ersetzt die ganze Nominalgruppe und ist deshalb ein Indefinitpronomen.}
+\EnglishText{\textbf{Ich sehe jeden.} -- No noun follows. \textbf{jeden} replaces the entire noun phrase and is therefore an indefinite pronoun.}
+\end{grammarentry}
+
+\section{Zusammenfassung}
+\begin{grammarentry}{Merksatz}{kurz und wichtig}
+\GermanText{\textbf{jeder + Nomen} = Artikelwort / Determinativ. Die Form stimmt mit dem Nomen in Kasus, Genus und Numerus überein.}
+\EnglishText{\textbf{jeder + noun} = article word / determiner. Its form agrees with the noun in case, gender, and number.}
+\GermanText{Grundmuster: \textbf{jeder Mann -- jeden Mann -- jedem Mann -- jedes Mannes}. Nach \textbf{jeder} wird ein folgendes Adjektiv normalerweise schwach dekliniert: \textbf{jeder gute Mann}.}
+\EnglishText{Basic pattern: \textbf{every man -- every man (acc.) -- to every man -- of every man}. After \textbf{jeder}, a following adjective is normally weakly declined: \textbf{jeder gute Mann}.}
+\end{grammarentry}
+
+\end{document}

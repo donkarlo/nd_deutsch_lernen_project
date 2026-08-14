@@ -1,0 +1,239 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[table]{xcolor}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.45}
+\setlength{\tabcolsep}{6pt}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{\glqq jeder\grqq\ als Indefinitpronomen}
+\date{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Grundidee}
+\begin{grammarentry}{jeder ohne Nomen}{Indefinitpronomen}
+\GermanText{Wenn eine Form von \textbf{jeder} \textbf{ohne folgendes Nomen} selbstständig eine Person oder Sache bezeichnet, ist sie ein \textbf{Indefinitpronomen}.}
+\EnglishText{When a form of \textbf{jeder} stands \textbf{without a following noun} and independently refers to a person or thing, it is an \textbf{indefinite pronoun}.}
+\GermanText{Beispiele: \textbf{Jeder kennt das.} -- \textbf{Ich kenne jeden.} -- \textbf{Ich helfe jedem.}}
+\EnglishText{Examples: \textbf{Everyone knows that.} -- \textbf{I know everyone.} -- \textbf{I help everyone.}}
+\end{grammarentry}
+
+\section{Bedeutung}
+\begin{grammarentry}{jede einzelne Person / jedes einzelne Element}{everyone / each one}
+\GermanText{Als Pronomen bedeutet \textbf{jeder} je nach Kontext ungefähr \textbf{jede einzelne Person}, \textbf{jeder Einzelne} oder \textbf{jedes einzelne Element}.}
+\EnglishText{As a pronoun, \textbf{jeder} means, depending on context, approximately \textbf{every person}, \textbf{everyone}, \textbf{each one}, or \textbf{every individual item}.}
+\GermanText{Bei allgemeinen Aussagen über Personen wird häufig die maskuline Form \textbf{jeder} als generische Form verwendet. Wenn ausdrücklich nur weibliche Personen gemeint sind, kann \textbf{jede} stehen.}
+\EnglishText{In general statements about people, the masculine form \textbf{jeder} is often used generically. If only female persons are explicitly meant, \textbf{jede} can be used.}
+\end{grammarentry}
+
+\section{Deklination des Pronomens}
+\begin{grammarentry}{Formen}{Kasus und Genus}
+\GermanText{Auch als Pronomen wird \textbf{jeder} dekliniert. Weil kein Nomen folgt, trägt das Pronomen selbst die grammatische Information über Kasus und Genus.}
+\EnglishText{As a pronoun, \textbf{jeder} is also declined. Because no noun follows, the pronoun itself carries the grammatical information about case and gender.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{2.7cm}|>{\centering\arraybackslash}p{3.2cm}|>{\centering\arraybackslash}p{3.2cm}|>{\centering\arraybackslash}p{3.2cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Kasus} &
+\color{white}\textbf{Maskulin} &
+\color{white}\textbf{Feminin} &
+\color{white}\textbf{Neutrum} \\
+Nominativ & jeder & jede & jedes \\
+Akkusativ & jeden & jede & jedes \\
+Dativ & jedem & jeder & jedem \\
+Genitiv & jedes & jeder & jedes \\
+\end{longtable}
+
+\begin{grammarentry}{Plural}{normalerweise alle}
+\GermanText{\textbf{jeder} ist in seiner normalen distributiven Verwendung Singular. Für einen pluralischen Bezug verwendet man normalerweise \textbf{alle}.}
+\EnglishText{\textbf{jeder} is singular in its normal distributive use. For plural reference, German normally uses \textbf{alle}.}
+\GermanText{Beispiel: \textbf{Jeder kommt.} -- \textbf{Alle kommen.}}
+\EnglishText{Example: \textbf{Everyone comes.} -- \textbf{They all come / Everyone comes.}}
+\end{grammarentry}
+
+\section{Warum steht kein Nomen?}
+\begin{grammarentry}{Das Pronomen ersetzt eine Nominalgruppe}{Substitution}
+\GermanText{In \textbf{Ich sehe jeden} kann man gedanklich \textbf{jeden Menschen} oder \textbf{jede einzelne Person} ergänzen. Grammatisch steht dieses Nomen aber nicht im Satz. Deshalb funktioniert \textbf{jeden} selbstständig als Pronomen.}
+\EnglishText{In \textbf{Ich sehe jeden}, you can mentally supply \textbf{every person}. Grammatically, however, that noun is not present in the sentence. Therefore \textbf{jeden} functions independently as a pronoun.}
+\GermanText{Das ist der entscheidende Unterschied zu \textbf{jeden Menschen}: Dort begleitet \textbf{jeden} ein Nomen und ist ein Artikelwort; hier ersetzt \textbf{jeden} die ganze Nominalgruppe.}
+\EnglishText{This is the decisive difference from \textbf{jeden Menschen}: there, \textbf{jeden} accompanies a noun and is a determiner; here, \textbf{jeden} replaces the whole noun phrase.}
+\end{grammarentry}
+
+\section{Satzgliedfunktion}
+\begin{grammarentry}{Pronomen ist Wortart; Satzglied ist Funktion}{wichtige Unterscheidung}
+\GermanText{\textbf{Indefinitpronomen} bezeichnet die \textbf{Wortart}. Die konkrete Rolle im Satz kann trotzdem verschieden sein: Subjekt, Akkusativobjekt, Dativobjekt oder Teil einer Präpositionalgruppe.}
+\EnglishText{\textbf{Indefinite pronoun} describes the \textbf{word class}. Its concrete role in the sentence can still vary: subject, accusative object, dative object, or part of a prepositional phrase.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{3.0cm}|p{5.4cm}|p{5.0cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Funktion} & \color{white}\textbf{Deutsch} & \color{white}\textbf{English} \\
+Subjekt & Jeder kann teilnehmen. & Everyone can participate. \\
+Akkusativobjekt & Ich kenne jeden. & I know everyone. \\
+Dativobjekt & Ich helfe jedem. & I help everyone. \\
+Präpositionalgruppe & Ich spreche mit jedem. & I speak with everyone. \\
+Präpositionalgruppe & Das Geschenk ist für jeden. & The gift is for everyone. \\
+\end{longtable}
+
+\section{Wie wird der Kasus bestimmt?}
+\begin{grammarentry}{Verb oder Präposition entscheidet}{nicht das Pronomen selbst}
+\GermanText{Der Kasus von \textbf{jeder} wird durch seine Funktion im Satz bestimmt. Ein Verb kann einen bestimmten Kasus verlangen, oder eine Präposition bestimmt den Kasus.}
+\EnglishText{The case of \textbf{jeder} is determined by its function in the sentence. A verb may require a particular case, or a preposition determines the case.}
+\GermanText{\textbf{kennen + Akkusativ}: Ich kenne \textbf{jeden}. -- \textbf{helfen + Dativ}: Ich helfe \textbf{jedem}. -- \textbf{mit + Dativ}: Ich spreche mit \textbf{jedem}. -- \textbf{für + Akkusativ}: Das gilt für \textbf{jeden}.}
+\EnglishText{\textbf{kennen + accusative}: I know \textbf{everyone}. -- \textbf{helfen + dative}: I help \textbf{everyone}. -- \textbf{mit + dative}: I speak with \textbf{everyone}. -- \textbf{für + accusative}: That applies to \textbf{everyone}.}
+\end{grammarentry}
+
+\section{Dein Satz: um jeden individuell umzuwandeln}
+\begin{grammarentry}{jeden}{Akkusativpronomen}
+\GermanText{Im Satz \textbf{Soziale Medien bieten die Möglichkeit, jeden individuell in einen Journalisten umzuwandeln} steht \textbf{jeden} ohne Nomen. Deshalb ist \textbf{jeden} ein \textbf{Indefinitpronomen}.}
+\EnglishText{In the sentence \textbf{Social media offer the possibility of turning everyone individually into a journalist}, \textbf{jeden} stands without a noun. Therefore \textbf{jeden} is an \textbf{indefinite pronoun}.}
+\GermanText{Die Satzgliedfunktion ist \textbf{Akkusativobjekt} zu \textbf{umwandeln}: Wen umwandeln? -- \textbf{jeden}.}
+\EnglishText{Its sentence function is the \textbf{accusative object} of \textbf{umwandeln}: turn whom? -- \textbf{everyone}.}
+\GermanText{\textbf{individuell} ist davon getrennt zu analysieren: Es ist ein adverbial verwendetes Adjektiv und beschreibt die Art und Weise der Handlung.}
+\EnglishText{\textbf{individuell} must be analyzed separately: it is an adjective used adverbially and describes the manner of the action.}
+\end{grammarentry}
+
+\section{Maskulin, feminin und neutrum ohne Nomen}
+\begin{grammarentry}{Der Kontext liefert den Bezug}{kein sichtbares Nomen nötig}
+\GermanText{Auch ohne ausgesprochenes Nomen kann der Kontext deutlich machen, auf welche Art von Person oder Sache sich das Pronomen bezieht.}
+\EnglishText{Even without an explicitly stated noun, the context can make clear what kind of person or thing the pronoun refers to.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Von den Bewerbern kenne ich jeden.}{Of the male/mixed applicants, I know every one.}
+\ExampleItem{Von den Bewerberinnen kenne ich jede.}{Of the female applicants, I know every one.}
+\ExampleItem{Von den Büchern habe ich jedes gelesen.}{Of the books, I have read every one.}
+\end{itemize}
+\end{exbox}
+
+\section{jeder und jeder Einzelne}
+\begin{grammarentry}{Verstärkung}{every single person}
+\GermanText{\textbf{jeder Einzelne} ist eine verstärkte Form. \textbf{Einzelne} ist hier substantiviert und wird dekliniert.}
+\EnglishText{\textbf{jeder Einzelne} is an emphatic form meaning \textbf{every single person}. \textbf{Einzelne} is substantivized here and is declined.}
+\GermanText{Beispiele: \textbf{Jeder Einzelne ist verantwortlich.} -- \textbf{Ich habe mit jedem Einzelnen gesprochen.}}
+\EnglishText{Examples: \textbf{Every single person is responsible.} -- \textbf{I spoke with every single person.}}
+\end{grammarentry}
+
+\section{jeder versus jemand}
+\begin{grammarentry}{nicht verwechseln}{everyone vs. someone}
+\GermanText{\textbf{jeder} bedeutet, dass jede Person einer relevanten Gruppe gemeint ist. \textbf{jemand} bedeutet eine unbestimmte einzelne Person.}
+\EnglishText{\textbf{jeder} means every person in a relevant group. \textbf{jemand} means one unspecified person, that is, someone.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Jeder kann das lernen.}{Everyone can learn that.}
+\ExampleItem{Jemand wartet vor der Tür.}{Someone is waiting outside the door.}
+\end{itemize}
+\end{exbox}
+
+\section{jeder versus alle}
+\begin{grammarentry}{Singular distributiv, Plural kollektiv}{each/every vs. all}
+\GermanText{\textbf{jeder} betrachtet die Mitglieder einzeln und steht normalerweise im Singular. \textbf{alle} bezeichnet eine Mehrzahl und betrachtet die Gruppe als Gesamtheit.}
+\EnglishText{\textbf{jeder} considers the members individually and normally stands in the singular. \textbf{alle} refers to a plurality and views the group as a whole.}
+\GermanText{\textbf{Jeder hat eine eigene Aufgabe.} -- jedes Mitglied einzeln. \textbf{Alle haben dieselbe Aufgabe.} -- die ganze Gruppe.}
+\EnglishText{\textbf{Each person has their own task.} -- each member individually. \textbf{They all have the same task.} -- the whole group.}
+\end{grammarentry}
+
+\section{Feste Verbindungen mit pronominalem jeder}
+\begin{grammarentry}{Häufige Ausdrücke}{nützlich im Alltag}
+\GermanText{\textbf{für jeden} = for everyone; \textbf{mit jedem} = with everyone; \textbf{von jedem} = from everyone / of each one; \textbf{bei jedem} = with everyone / in each case, depending on context.}
+\EnglishText{These phrases contain \textbf{jeder} as a pronoun because no noun follows the form.}
+\GermanText{\textbf{Das ist nicht für jeden.} bedeutet: Das ist nicht für alle Personen geeignet.}
+\EnglishText{\textbf{Das ist nicht für jeden.} means: This is not suitable for everyone.}
+\end{grammarentry}
+
+\section{Typische Fehler}
+\begin{grammarentry}{Fehler 1}{Pronomen mit Artikelwort verwechseln}
+\GermanText{\textbf{Ich sehe jeden Menschen}: Artikelwort. -- \textbf{Ich sehe jeden}: Pronomen. Der Unterschied hängt davon ab, ob ein Nomen folgt.}
+\EnglishText{\textbf{Ich sehe jeden Menschen}: determiner. -- \textbf{Ich sehe jeden}: pronoun. The difference depends on whether a noun follows.}
+\end{grammarentry}
+
+\begin{grammarentry}{Fehler 2}{Kasus nur nach der Bedeutung wählen}
+\GermanText{Die Bedeutung \glqq everyone\grqq reicht nicht aus, um die Form zu bestimmen. Man muss zuerst die Satzfunktion bzw. das Verb oder die Präposition prüfen: \textbf{jeder}, \textbf{jeden}, \textbf{jedem}.}
+\EnglishText{The meaning ``everyone'' is not enough to determine the form. First check the sentence function, the verb, or the preposition: \textbf{jeder}, \textbf{jeden}, \textbf{jedem}.}
+\end{grammarentry}
+
+\begin{grammarentry}{Fehler 3}{mit jeder im Plural rechnen}
+\GermanText{Für einen normalen pluralischen Bezug verwendet man nicht eine besondere Pluralform von \textbf{jeder}, sondern meistens \textbf{alle}.}
+\EnglishText{For normal plural reference, German does not use a special plural form of \textbf{jeder}; it usually uses \textbf{alle}.}
+\end{grammarentry}
+
+\section{Wie erkenne ich die Pronomen-Verwendung?}
+\begin{grammarentry}{Schnelltest}{kein Nomen danach}
+\GermanText{Frage 1: Steht nach \textbf{jeder/jede/jedes/jeden/jedem} ein Nomen? Wenn \textbf{nein} und das Wort selbst eine Person oder Sache bezeichnet, ist es ein Pronomen.}
+\EnglishText{Question 1: Is there a noun after \textbf{jeder/jede/jedes/jeden/jedem}? If \textbf{no}, and the word itself refers to a person or thing, it is a pronoun.}
+\GermanText{Frage 2: Welche Rolle spielt es im Satz? Daraus ergibt sich der Kasus: \textbf{Jeder} kommt (Subjekt), ich sehe \textbf{jeden} (Akkusativobjekt), ich helfe \textbf{jedem} (Dativobjekt).}
+\EnglishText{Question 2: What role does it play in the sentence? This determines the case: \textbf{Jeder} comes (subject), I see \textbf{jeden} (accusative object), I help \textbf{jedem} (dative object).}
+\end{grammarentry}
+
+\section{Direkter Vergleich mit der Artikelwort-Verwendung}
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{3.1cm}|p{5.2cm}|p{5.2cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Typ} & \color{white}\textbf{Deutsch} & \color{white}\textbf{Erklärung} \\
+Artikelwort & Ich kenne jeden Studenten. & \textbf{jeden} begleitet das Nomen \textbf{Studenten}. \\
+Pronomen & Ich kenne jeden. & \textbf{jeden} steht selbstständig und ersetzt eine Nominalgruppe. \\
+Artikelwort & Ich helfe jedem Studenten. & \textbf{jedem} begleitet ein Nomen. \\
+Pronomen & Ich helfe jedem. & \textbf{jedem} steht ohne Nomen. \\
+\end{longtable}
+
+\section{Zusammenfassung}
+\begin{grammarentry}{Merksatz}{kurz und wichtig}
+\GermanText{\textbf{jeder ohne Nomen} = Indefinitpronomen. Es kann selbst Subjekt, Akkusativobjekt, Dativobjekt oder Teil einer Präpositionalgruppe sein.}
+\EnglishText{\textbf{jeder without a noun} = indefinite pronoun. It can itself be the subject, accusative object, dative object, or part of a prepositional phrase.}
+\GermanText{\textbf{Jeder kommt. -- Ich sehe jeden. -- Ich helfe jedem.} Die unterschiedlichen Formen entstehen durch den Kasus.}
+\EnglishText{\textbf{Everyone comes. -- I see everyone. -- I help everyone.} The different forms are caused by case.}
+\end{grammarentry}
+
+\end{document}

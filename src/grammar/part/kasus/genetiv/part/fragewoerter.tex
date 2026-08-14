@@ -1,0 +1,675 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{longtable}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.45}
+\setlength{\tabcolsep}{6pt}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{
+    enhanced,
+    breakable,
+    colback=RowBlueLight,
+    colframe=RowBlueDark,
+    boxrule=0.4pt,
+    arc=1.5mm,
+    left=1.2mm,
+    right=1.2mm,
+    top=1mm,
+    bottom=1mm,
+    title={Beispiele \textnormal{(Examples)}},
+    fonttitle=\bfseries,
+    colbacktitle=RowBlueDark,
+    coltitle=black
+}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[
+        enhanced,
+        breakable,
+        colback=white,
+        colframe=HeaderBlueDark,
+        boxrule=0.6pt,
+        arc=1.5mm,
+        left=1.5mm,
+        right=1.5mm,
+        top=1mm,
+        bottom=1mm,
+        colbacktitle=HeaderBlueDark,
+        coltitle=white,
+        fonttitle=\bfseries,
+        title={#1\hfill\normalfont\footnotesize #2}
+    ]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Genitiv-Fragewörter im Deutschen}
+\date{}
+
+\begin{document}
+    
+    \maketitle
+    \tableofcontents
+    \newpage
+    
+    
+    \section{Grundidee des Genitivs}
+        
+        \begin{grammarentry}{Der Genitiv}{Wessen?}
+            \GermanText{Der Genitiv bezeichnet sehr häufig eine Zugehörigkeit oder einen Besitzer. Die wichtigste Frage für den Genitiv lautet \textbf{Wessen?}}
+            \EnglishText{The genitive very often expresses possession or belonging. The most important question for the genitive is \textbf{Wessen?} = \textbf{Whose?}}
+            
+            \GermanText{Mit \textbf{wessen} fragen wir danach, wem eine Person oder eine Sache zugeordnet ist.}
+            \EnglishText{With \textbf{wessen}, we ask to whom a person or thing belongs.}
+            
+            \GermanText{\textbf{Wessen?} ist deshalb das typische Genitiv-Fragewort.}
+            \EnglishText{\textbf{Wessen?} is therefore the typical genitive question word.}
+        \end{grammarentry}
+    
+    
+    \section{Beispiel aus der Abbildung}
+        
+        \begin{center}
+            \includegraphics[width=0.80\textwidth]{genitiv_contact.png}
+        \end{center}
+        
+        \begin{grammarentry}{Wessen Haus ist das?}{Possession}
+            \GermanText{\textbf{Wessen Haus ist das?}}
+            \EnglishText{\textbf{Whose house is that?}}
+            
+            \GermanText{\textbf{Das ist das Haus meiner Tante.}}
+            \EnglishText{\textbf{That is my aunt's house.}}
+            
+            \GermanText{Die Frage lautet \textbf{wessen?}. Die Antwort \textbf{meiner Tante} steht im Genitiv.}
+            \EnglishText{The question is \textbf{whose?}. The answer \textbf{meiner Tante} is in the genitive case.}
+        \end{grammarentry}
+    
+    
+    \section{Das Fragewort \glqq wessen\grqq}
+        
+        \begin{grammarentry}{wessen}{Interrogativpronomen im Genitiv}
+            \GermanText{\textbf{wessen} ist die Genitivform des Fragepronomens \textbf{wer}.}
+            \EnglishText{\textbf{wessen} is the genitive form of the interrogative pronoun \textbf{wer} (who).}
+            
+            \GermanText{Es bedeutet meistens \textbf{whose} oder, in bestimmten Konstruktionen, \textbf{of whom}.}
+            \EnglishText{It usually means \textbf{whose} or, in certain constructions, \textbf{of whom}.}
+            
+            \GermanText{\textbf{wessen} verändert seine Form nicht nach Genus oder Numerus.}
+            \EnglishText{\textbf{wessen} does not change its form according to gender or number.}
+        \end{grammarentry}
+    
+    
+    \section{Die Kasusformen von \glqq wer\grqq}
+        
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{3.2cm}|p{3.0cm}|p{4.5cm}|p{3.2cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Kasus} &
+            \color{white}\textbf{Fragewort} &
+            \color{white}\textbf{Frage} &
+            \color{white}\textbf{English} \\
+            
+            Nominativ &
+            wer &
+            Wer kommt? &
+            Who is coming? \\
+            
+            Akkusativ &
+            wen &
+            Wen siehst du? &
+            Whom do you see? \\
+            
+            Dativ &
+            wem &
+            Wem hilfst du? &
+            Whom are you helping? \\
+            
+            Genitiv &
+            wessen &
+            Wessen Auto ist das? &
+            Whose car is that? \\
+        \end{longtable}
+    
+    
+    \section{Wessen + Nomen}
+        
+        \begin{grammarentry}{wessen + Nomen}{häufigste Konstruktion}
+            \GermanText{Sehr häufig steht \textbf{wessen} direkt vor einem Nomen.}
+            \EnglishText{Very often, \textbf{wessen} stands directly before a noun.}
+            
+            \GermanText{Struktur: \textbf{Wessen + Nomen + Verb + ...?}}
+            \EnglishText{Structure: \textbf{Wessen + noun + verb + ...?}}
+            
+            \GermanText{Das Nomen nach \textbf{wessen} bekommt keinen zusätzlichen Artikel. Man sagt also nicht \glqq wessen das Auto\grqq, sondern \glqq wessen Auto\grqq.}
+            \EnglishText{The noun after \textbf{wessen} does not take an additional article. Therefore, we do not say ``wessen das Auto'', but ``wessen Auto''.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Wessen Auto ist das?}{Whose car is that?}
+                \ExampleItem{Wessen Tasche liegt auf dem Tisch?}{Whose bag is lying on the table?}
+                \ExampleItem{Wessen Idee war das?}{Whose idea was that?}
+                \ExampleItem{Wessen Kinder spielen draußen?}{Whose children are playing outside?}
+                \ExampleItem{Wessen Wohnung ist größer?}{Whose apartment is bigger?}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Wessen verändert sich nicht}
+        
+        \begin{grammarentry}{Keine Deklination von wessen}{wichtig}
+            \GermanText{\textbf{wessen} bleibt gleich, unabhängig davon, ob das folgende Nomen maskulin, feminin, neutral oder Plural ist.}
+            \EnglishText{\textbf{wessen} remains unchanged regardless of whether the following noun is masculine, feminine, neuter, or plural.}
+        \end{grammarentry}
+        
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{3.0cm}|p{5.5cm}|p{5.0cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Genus / Numerus} &
+            \color{white}\textbf{Deutsch} &
+            \color{white}\textbf{English} \\
+            
+            Maskulin &
+            Wessen Bruder ist das? &
+            Whose brother is that? \\
+            
+            Feminin &
+            Wessen Schwester ist das? &
+            Whose sister is that? \\
+            
+            Neutrum &
+            Wessen Kind ist das? &
+            Whose child is that? \\
+            
+            Plural &
+            Wessen Bücher sind das? &
+            Whose books are those? \\
+        \end{longtable}
+    
+    
+    \section{Wie antwortet man auf \glqq Wessen?\grqq?}
+        
+        \begin{grammarentry}{Antwort mit Genitiv}{bestimmter Artikel}
+            \GermanText{Wenn die Antwort aus einem Nomen mit bestimmtem Artikel besteht, steht die ganze Nominalgruppe im Genitiv.}
+            \EnglishText{When the answer consists of a noun with a definite article, the entire noun phrase is in the genitive case.}
+        \end{grammarentry}
+        
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{2.5cm}|p{3.3cm}|p{4.1cm}|p{4.1cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Form} &
+            \color{white}\textbf{Genitivartikel} &
+            \color{white}\textbf{Beispiel} &
+            \color{white}\textbf{English} \\
+            
+            Maskulin &
+            des &
+            das Auto des Mannes &
+            the man's car \\
+            
+            Feminin &
+            der &
+            die Tasche der Frau &
+            the woman's bag \\
+            
+            Neutrum &
+            des &
+            das Dach des Hauses &
+            the roof of the house \\
+            
+            Plural &
+            der &
+            die Namen der Studenten &
+            the names of the students \\
+        \end{longtable}
+    
+    
+    \section{Genitivendung bei maskulinen und neutralen Nomen}
+        
+        \begin{grammarentry}{-s oder -es}{Maskulin und Neutrum}
+            \GermanText{Maskuline und neutrale Nomen bekommen im Genitiv Singular normalerweise zusätzlich \textbf{-s} oder \textbf{-es}.}
+            \EnglishText{Masculine and neuter nouns normally receive an additional \textbf{-s} or \textbf{-es} in the genitive singular.}
+            
+            \GermanText{Beispiele: \textbf{des Mannes}, \textbf{des Hauses}, \textbf{des Autos}, \textbf{des Kindes}.}
+            \EnglishText{Examples: \textbf{des Mannes}, \textbf{des Hauses}, \textbf{des Autos}, \textbf{des Kindes}.}
+            
+            \GermanText{Feminine Nomen und Nomen im Plural bekommen normalerweise keine zusätzliche Genitivendung am Nomen.}
+            \EnglishText{Feminine nouns and plural nouns normally do not receive an additional genitive ending on the noun.}
+        \end{grammarentry}
+    
+    
+    \section{Beispiele mit vollständigen Fragen und Antworten}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Wessen Haus ist das? -- Das ist das Haus meiner Tante.}{Whose house is that? -- That is my aunt's house.}
+                
+                \ExampleItem{Wessen Auto steht vor der Tür? -- Das Auto meines Bruders.}{Whose car is in front of the door? -- My brother's car.}
+                
+                \ExampleItem{Wessen Tasche hast du gefunden? -- Ich habe die Tasche der Frau gefunden.}{Whose bag did you find? -- I found the woman's bag.}
+                
+                \ExampleItem{Wessen Bücher liegen hier? -- Das sind die Bücher meiner Freunde.}{Whose books are lying here? -- Those are my friends' books.}
+                
+                \ExampleItem{Wessen Entscheidung war das? -- Das war die Entscheidung des Direktors.}{Whose decision was that? -- That was the director's decision.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Wessen und Possessivartikel}
+        
+        \begin{grammarentry}{mein, dein, sein, ihr usw.}{Antwort auf Wessen?}
+            \GermanText{Eine Frage mit \textbf{wessen} kann auch mit einem Possessivartikel beantwortet werden.}
+            \EnglishText{A question with \textbf{wessen} can also be answered with a possessive article.}
+            
+            \GermanText{Die Antwort muss deshalb nicht immer sichtbar eine Genitivform wie \textbf{des Mannes} oder \textbf{meiner Tante} enthalten.}
+            \EnglishText{Therefore, the answer does not always have to visibly contain a genitive form such as \textbf{des Mannes} or \textbf{meiner Tante}.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Wessen Auto ist das? -- Das ist mein Auto.}{Whose car is that? -- That is my car.}
+                \ExampleItem{Wessen Wohnung ist das? -- Das ist ihre Wohnung.}{Whose apartment is that? -- That is her apartment.}
+                \ExampleItem{Wessen Schlüssel sind das? -- Das sind unsere Schlüssel.}{Whose keys are those? -- Those are our keys.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Wessen und \glqq von wem\grqq}
+        
+        \begin{grammarentry}{Wessen? oder von wem?}{Genitiv und Dativ}
+            \GermanText{\textbf{Wessen?} ist die eigentliche Genitivfrage.}
+            \EnglishText{\textbf{Wessen?} is the actual genitive question.}
+            
+            \GermanText{\textbf{Von wem?} hat häufig eine ähnliche Bedeutung, besteht grammatisch aber aus der Präposition \textbf{von} und dem Dativ \textbf{wem}.}
+            \EnglishText{\textbf{Von wem?} often has a similar meaning, but grammatically it consists of the preposition \textbf{von} and the dative form \textbf{wem}.}
+            
+            \GermanText{Deshalb ist \textbf{von wem} kein Genitiv-Fragewort.}
+            \EnglishText{Therefore, \textbf{von wem} is not a genitive question word.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Wessen Auto ist das?}{Whose car is that?}
+                \ExampleItem{Von wem ist dieses Auto?}{Whose car is this? / Who is this car from?}
+                \ExampleItem{Das ist das Auto meines Bruders.}{That is my brother's car.}
+                \ExampleItem{Das ist das Auto von meinem Bruder.}{That is my brother's car.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Unterschied zwischen \glqq wem\grqq und \glqq wessen\grqq}
+        
+        \begin{grammarentry}{wem $\neq$ wessen}{Dativ und Genitiv}
+            \GermanText{\textbf{wem} ist Dativ. \textbf{wessen} ist Genitiv.}
+            \EnglishText{\textbf{wem} is dative. \textbf{wessen} is genitive.}
+            
+            \GermanText{\textbf{Wem gehört das Haus?} fragt mit dem Verb \textbf{gehören}, das den Dativ verlangt.}
+            \EnglishText{\textbf{Wem gehört das Haus?} uses the verb \textbf{gehören} (to belong to), which requires the dative.}
+            
+            \GermanText{\textbf{Wessen Haus ist das?} fragt direkt nach dem Besitzer mit dem Genitiv-Fragewort \textbf{wessen}.}
+            \EnglishText{\textbf{Wessen Haus ist das?} asks directly about the owner using the genitive question word \textbf{wessen}.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Wem gehört das Haus? -- Es gehört meiner Tante.}{Who does the house belong to? -- It belongs to my aunt.}
+                
+                \ExampleItem{Wessen Haus ist das? -- Es ist das Haus meiner Tante.}{Whose house is that? -- It is my aunt's house.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Fragewort \glqq welcher\grqq im Genitiv}
+        
+        \begin{grammarentry}{welches / welcher}{Interrogativartikel}
+            \GermanText{Auch das Fragewort \textbf{welcher} kann im Genitiv stehen. Seine Form hängt von Genus und Numerus des Nomens ab.}
+            \EnglishText{The interrogative word \textbf{welcher} can also appear in the genitive. Its form depends on the gender and number of the noun.}
+            
+            \GermanText{Im Genitiv lauten die Formen: \textbf{welches} für Maskulin und Neutrum sowie \textbf{welcher} für Feminin und Plural.}
+            \EnglishText{In the genitive, the forms are \textbf{welches} for masculine and neuter, and \textbf{welcher} for feminine and plural.}
+        \end{grammarentry}
+        
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{3cm}|p{3.2cm}|p{4cm}|p{3.8cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Genus} &
+            \color{white}\textbf{Form} &
+            \color{white}\textbf{Beispiel} &
+            \color{white}\textbf{English} \\
+            
+            Maskulin &
+            welches &
+            welches Mannes &
+            of which man \\
+            
+            Feminin &
+            welcher &
+            welcher Frau &
+            of which woman \\
+            
+            Neutrum &
+            welches &
+            welches Kindes &
+            of which child \\
+            
+            Plural &
+            welcher &
+            welcher Personen &
+            of which people \\
+        \end{longtable}
+    
+    
+    \section{Wann benutzt man \glqq wessen\grqq und wann \glqq welches / welcher\grqq?}
+        
+        \begin{grammarentry}{Wessen vs. welches / welcher}{Bedeutungsunterschied}
+            \GermanText{Mit \textbf{wessen} fragt man normalerweise offen nach dem Besitzer oder der zugehörigen Person.}
+            \EnglishText{With \textbf{wessen}, we normally ask openly for the owner or associated person.}
+            
+            \GermanText{Mit \textbf{welches / welcher} wählt man typischerweise innerhalb einer bekannten oder näher bestimmten Gruppe.}
+            \EnglishText{With \textbf{welches / welcher}, one typically selects from within a known or more specifically defined group.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Wessen Meinung ist das?}{Whose opinion is that?}
+                
+                \ExampleItem{Die Meinung welches Experten meinst du?}{Which expert's opinion do you mean?}
+                
+                \ExampleItem{Aufgrund welcher Entscheidung wurde das Projekt beendet?}{Because of which decision was the project terminated?}
+                
+                \ExampleItem{Wegen welches Problems wurde das Treffen abgesagt?}{Because of which problem was the meeting cancelled?}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Genitiv-Fragen nach Präpositionen}
+        
+        \begin{grammarentry}{Präposition + Fragewort}{wegen, trotz, während, aufgrund}
+            \GermanText{Einige Präpositionen verlangen den Genitiv. Wenn wir nach dem Nomen nach einer solchen Präposition fragen, kann das Fragewort ebenfalls im Genitiv stehen.}
+            \EnglishText{Some prepositions require the genitive. When we ask about the noun following such a preposition, the interrogative word can therefore also be in the genitive.}
+            
+            \GermanText{Wichtige Genitivpräpositionen sind zum Beispiel: \textbf{wegen, trotz, während, aufgrund, innerhalb, außerhalb, statt / anstatt}.}
+            \EnglishText{Important genitive prepositions include: \textbf{wegen, trotz, während, aufgrund, innerhalb, außerhalb, statt / anstatt}.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Wegen welcher Krankheit konnte er nicht arbeiten?}{Because of which illness was he unable to work?}
+                
+                \ExampleItem{Aufgrund welcher Regel ist das verboten?}{Because of which rule is that prohibited?}
+                
+                \ExampleItem{Während welcher Veranstaltung ist das passiert?}{During which event did that happen?}
+                
+                \ExampleItem{Trotz welches Problems konnte das Projekt beendet werden?}{Despite which problem could the project be completed?}
+                
+                \ExampleItem{Innerhalb welcher Frist muss ich antworten?}{Within which deadline do I have to reply?}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Wessen bei Verben mit Genitiv}
+        
+        \begin{grammarentry}{Verben mit Genitivobjekt}{formell und selten}
+            \GermanText{Einige Verben können ein Genitivobjekt verlangen. In solchen Konstruktionen kann man ebenfalls mit \textbf{wessen} fragen.}
+            \EnglishText{Some verbs can require a genitive object. In such constructions, one can also ask with \textbf{wessen}.}
+            
+            \GermanText{Solche Konstruktionen sind im heutigen Deutsch oft formell und wesentlich seltener als normale Fragen nach Besitz.}
+            \EnglishText{Such constructions are often formal in modern German and considerably less common than ordinary questions about possession.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Wessen bedarf das Unternehmen? -- Es bedarf einer neuen Strategie.}{What does the company require? -- It requires a new strategy.}
+                
+                \ExampleItem{Wessen gedenken wir heute? -- Wir gedenken der Opfer.}{Whom are we commemorating today? -- We are commemorating the victims.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Direkte und indirekte Fragen}
+        
+        \begin{grammarentry}{wessen in Nebensätzen}{indirekte Frage}
+            \GermanText{\textbf{wessen} kann sowohl in einer direkten Frage als auch in einer indirekten Frage verwendet werden.}
+            \EnglishText{\textbf{wessen} can be used both in a direct question and in an indirect question.}
+            
+            \GermanText{Bei einer indirekten Frage steht das konjugierte Verb am Ende des Nebensatzes.}
+            \EnglishText{In an indirect question, the conjugated verb stands at the end of the subordinate clause.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Wessen Auto ist das?}{Whose car is that?}
+                
+                \ExampleItem{Ich weiß nicht, wessen Auto das ist.}{I do not know whose car that is.}
+                
+                \ExampleItem{Wessen Tasche hast du gefunden?}{Whose bag did you find?}
+                
+                \ExampleItem{Kannst du mir sagen, wessen Tasche du gefunden hast?}{Can you tell me whose bag you found?}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Wessen und Relativpronomen}
+        
+        \begin{grammarentry}{wessen $\neq$ dessen / deren}{wichtige Unterscheidung}
+            \GermanText{\textbf{wessen} ist ein Fragepronomen. \textbf{dessen} und \textbf{deren} sind dagegen Genitivformen des Relativpronomens.}
+            \EnglishText{\textbf{wessen} is an interrogative pronoun. \textbf{dessen} and \textbf{deren}, by contrast, are genitive forms of the relative pronoun.}
+            
+            \GermanText{\textbf{wessen} stellt eine Frage. \textbf{dessen / deren} verbinden einen Relativsatz mit einem vorher genannten Nomen.}
+            \EnglishText{\textbf{wessen} asks a question. \textbf{dessen / deren} connect a relative clause to a previously mentioned noun.}
+        \end{grammarentry}
+        
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{3cm}|p{3.2cm}|p{5.3cm}|p{3.2cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Form} &
+            \color{white}\textbf{Funktion} &
+            \color{white}\textbf{Beispiel} &
+            \color{white}\textbf{English} \\
+            
+            wessen &
+            Fragewort &
+            Wessen Auto ist das? &
+            Whose car is that? \\
+            
+            dessen &
+            Relativpronomen, mask./neutr. &
+            Der Mann, dessen Auto dort steht, ist mein Chef. &
+            The man whose car is there is my boss. \\
+            
+            deren &
+            Relativpronomen, fem./Plural &
+            Die Frau, deren Auto dort steht, ist meine Chefin. &
+            The woman whose car is there is my boss. \\
+        \end{longtable}
+    
+    
+    \section{Eigennamen als Antwort}
+        
+        \begin{grammarentry}{Peters Auto}{Genitiv bei Namen}
+            \GermanText{Bei Eigennamen kann der Genitiv häufig direkt mit \textbf{-s} gebildet werden. Normalerweise steht dabei kein Artikel.}
+            \EnglishText{With proper names, the genitive can often be formed directly with \textbf{-s}. Normally, no article is used.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Wessen Auto ist das? -- Das ist Peters Auto.}{Whose car is that? -- That is Peter's car.}
+                
+                \ExampleItem{Wessen Wohnung ist größer? -- Annas Wohnung ist größer.}{Whose apartment is bigger? -- Anna's apartment is bigger.}
+                
+                \ExampleItem{Wessen Buch hast du? -- Ich habe Martins Buch.}{Whose book do you have? -- I have Martin's book.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Namen auf s, ß, x oder z}
+        
+        \begin{grammarentry}{Apostroph bei Eigennamen}{Hans' Auto}
+            \GermanText{Wenn ein Name bereits auf einen s-Laut wie \textbf{s, ß, x oder z} endet, wird im Genitiv normalerweise nur ein Apostroph geschrieben.}
+            \EnglishText{If a name already ends in an s-sound such as \textbf{s, ß, x, or z}, normally only an apostrophe is written in the genitive.}
+        \end{grammarentry}
+        
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Wessen Auto ist das? -- Das ist Hans' Auto.}{Whose car is that? -- That is Hans' car.}
+                
+                \ExampleItem{Wessen Buch ist das? -- Das ist Max' Buch.}{Whose book is that? -- That is Max's book.}
+            \end{itemize}
+        \end{exbox}
+    
+    
+    \section{Typische Fehler}
+        
+        \begin{grammarentry}{Fehler 1}{wessen und wem}
+            \GermanText{Falsch: \textbf{Wem Auto ist das?}}
+            \EnglishText{Wrong: \textbf{Wem Auto ist das?}}
+            
+            \GermanText{Richtig: \textbf{Wessen Auto ist das?}}
+            \EnglishText{Correct: \textbf{Wessen Auto ist das?}}
+            
+            \GermanText{Aber: \textbf{Wem gehört das Auto?} ist richtig, weil \textbf{gehören} den Dativ verlangt.}
+            \EnglishText{But: \textbf{Wem gehört das Auto?} is correct because \textbf{gehören} requires the dative.}
+        \end{grammarentry}
+        
+        
+        \begin{grammarentry}{Fehler 2}{Artikel nach wessen}
+            \GermanText{Falsch: \textbf{Wessen das Auto ist das?}}
+            \EnglishText{Wrong: \textbf{Wessen das Auto ist das?}}
+            
+            \GermanText{Richtig: \textbf{Wessen Auto ist das?}}
+            \EnglishText{Correct: \textbf{Wessen Auto ist das?}}
+            
+            \GermanText{Nach \textbf{wessen} steht vor dem Nomen normalerweise kein zusätzlicher Artikel.}
+            \EnglishText{After \textbf{wessen}, there is normally no additional article before the noun.}
+        \end{grammarentry}
+        
+        
+        \begin{grammarentry}{Fehler 3}{Genitivendung vergessen}
+            \GermanText{Falsch: \textbf{das Auto des Mann}}
+            \EnglishText{Wrong: \textbf{das Auto des Mann}}
+            
+            \GermanText{Richtig: \textbf{das Auto des Mannes}}
+            \EnglishText{Correct: \textbf{das Auto des Mannes}}
+            
+            \GermanText{Maskuline und neutrale Nomen bekommen im Genitiv Singular normalerweise \textbf{-s} oder \textbf{-es}.}
+            \EnglishText{Masculine and neuter nouns normally receive \textbf{-s} or \textbf{-es} in the genitive singular.}
+        \end{grammarentry}
+    
+    
+    \section{Vergleich der wichtigsten Frageformen}
+        
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{2.6cm}|p{2.6cm}|p{4.8cm}|p{4.1cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Fragewort} &
+            \color{white}\textbf{Kasus} &
+            \color{white}\textbf{Beispiel} &
+            \color{white}\textbf{English} \\
+            
+            Wer? &
+            Nominativ &
+            Wer besitzt das Auto? &
+            Who owns the car? \\
+            
+            Wen? &
+            Akkusativ &
+            Wen siehst du? &
+            Whom do you see? \\
+            
+            Wem? &
+            Dativ &
+            Wem gehört das Auto? &
+            Who does the car belong to? \\
+            
+            Wessen? &
+            Genitiv &
+            Wessen Auto ist das? &
+            Whose car is that? \\
+        \end{longtable}
+    
+    
+    \section{Die wichtigsten Strukturen}
+        
+        \begin{grammarentry}{Struktur 1}{Wessen + Nomen}
+            \GermanText{\textbf{Wessen + Nomen + Verb + ...?}}
+            \EnglishText{\textbf{Whose + noun + verb + ...?}}
+            
+            \GermanText{Beispiel: \textbf{Wessen Haus ist das?}}
+            \EnglishText{Example: \textbf{Whose house is that?}}
+        \end{grammarentry}
+        
+        
+        \begin{grammarentry}{Struktur 2}{Antwort mit Genitiv}
+            \GermanText{\textbf{Nomen + Genitivattribut}}
+            \EnglishText{\textbf{Noun + genitive attribute}}
+            
+            \GermanText{Beispiel: \textbf{Das ist das Haus meiner Tante.}}
+            \EnglishText{Example: \textbf{That is my aunt's house.}}
+        \end{grammarentry}
+        
+        
+        \begin{grammarentry}{Struktur 3}{Genitivpräposition + welcher}
+            \GermanText{\textbf{Präposition + welches / welcher + Nomen}}
+            \EnglishText{\textbf{Preposition + which + noun}}
+            
+            \GermanText{Beispiel: \textbf{Aufgrund welcher Entscheidung wurde das geändert?}}
+            \EnglishText{Example: \textbf{Because of which decision was that changed?}}
+        \end{grammarentry}
+    
+    
+    \section{Zusammenfassung}
+        
+        \begin{grammarentry}{Merksatz}{kurz und wichtig}
+            \GermanText{\textbf{Wer? = Nominativ \quad Wen? = Akkusativ \quad Wem? = Dativ \quad Wessen? = Genitiv}}
+            \EnglishText{\textbf{Who? = nominative \quad Whom? = accusative \quad To whom? = dative \quad Whose? = genitive}}
+            
+            \GermanText{Wenn du direkt nach einem Besitzer oder einer Zugehörigkeit fragst, ist \textbf{wessen} das wichtigste Fragewort.}
+            \EnglishText{When you directly ask about an owner or belonging, \textbf{wessen} is the most important question word.}
+            
+            \GermanText{\textbf{Wessen Haus ist das? -- Das ist das Haus meiner Tante.}}
+            \EnglishText{\textbf{Whose house is that? -- That is my aunt's house.}}
+            
+            \GermanText{\textbf{wem} darf nicht mit \textbf{wessen} verwechselt werden: \textbf{wem} ist Dativ, \textbf{wessen} ist Genitiv.}
+            \EnglishText{\textbf{wem} must not be confused with \textbf{wessen}: \textbf{wem} is dative, while \textbf{wessen} is genitive.}
+            
+            \GermanText{\textbf{dessen} und \textbf{deren} sind keine Fragewörter, sondern Genitivformen des Relativpronomens.}
+            \EnglishText{\textbf{dessen} and \textbf{deren} are not question words, but genitive forms of the relative pronoun.}
+        \end{grammarentry}
+
+\end{document}

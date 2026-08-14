@@ -1,0 +1,350 @@
+% Erklaerung nach der Projektvorlage
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{5pt}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Das Wort \glqq so\grqq{} im Deutschen}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+    \section{Überblick: Was für ein Wort ist \glqq so\grqq?}
+
+        \begin{grammarentry}{so}{mehrere grammatische Funktionen}
+            \GermanText{\textbf{so} ist ein sehr häufiges, unveränderliches Wort. Seine genaue grammatische Bezeichnung hängt von der Verwendung ab. Sehr oft ist es ein \textbf{Adverb}; in anderen Verwendungen wird es als \textbf{Gradpartikel}, \textbf{Gesprächspartikel} oder Teil einer festen Konjunktion bzw. Verbindung beschrieben.}
+            \EnglishText{\textbf{so} is a very common, invariable word. Its exact grammatical label depends on how it is used. Very often it is an \textbf{adverb}; in other uses it is described as a \textbf{degree particle}, \textbf{discourse particle}, or part of a fixed conjunction or expression.}
+
+            \GermanText{Wichtig: \textbf{so wird nicht dekliniert}. Es bekommt also keine Endungen wie ein Adjektiv.}
+            \EnglishText{Important: \textbf{so is not declined}. It therefore does not take endings like an adjective.}
+
+            \GermanText{Die wichtigsten Bedeutungen sind: \textbf{auf diese Weise}, \textbf{von dieser Art}, \textbf{in diesem Grad}, \textbf{ungefähr} und verschiedene feste Verbindungen.}
+            \EnglishText{The most important meanings are: \textbf{in this/that way}, \textbf{of this/that kind}, \textbf{to this degree}, \textbf{approximately}, and several fixed expressions.}
+        \end{grammarentry}
+
+    \section{\glqq so\grqq{} = auf diese oder jene Weise}
+
+        \begin{grammarentry}{Art und Weise}{Adverb: in this/that way}
+            \GermanText{\textbf{so} kann beschreiben, \textbf{wie} etwas gemacht wird. Es bedeutet dann ungefähr \glqq auf diese Weise\grqq{} oder \glqq auf jene Weise\grqq.}
+            \EnglishText{\textbf{so} can describe \textbf{how} something is done. It then means approximately ``in this way'' or ``in that way.''}
+
+            \GermanText{Frage: \textbf{Wie?} -- Antwort: \textbf{so}.}
+            \EnglishText{Question: \textbf{How?} -- Answer: \textbf{like this/that}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Mach es so.}{Do it like this / Do it that way.}
+                \ExampleItem{So habe ich das nicht gemeint.}{That is not how I meant it.}
+                \ExampleItem{Warum redest du so?}{Why are you talking like that?}
+            \end{itemize}
+        \end{exbox}
+
+    \section{\glqq so\grqq{} vor Adjektiven und Adverbien: Grad}
+
+        \begin{grammarentry}{Grad oder Intensität}{Gradadverb / Gradpartikel}
+            \GermanText{Vor einem Adjektiv oder Adverb kann \textbf{so} einen Grad oder eine Intensität ausdrücken. Es entspricht häufig dem englischen \textbf{so}.}
+            \EnglishText{Before an adjective or adverb, \textbf{so} can express degree or intensity. It often corresponds directly to English \textbf{so}.}
+
+            \GermanText{Struktur: \textbf{so + Adjektiv/Adverb}.}
+            \EnglishText{Structure: \textbf{so + adjective/adverb}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Der Berg ist so hoch.}{The mountain is so high.}
+                \ExampleItem{Warum fährst du so schnell?}{Why are you driving so fast?}
+                \ExampleItem{Ich bin so müde.}{I am so tired.}
+                \ExampleItem{Das freut mich so sehr.}{That makes me so happy / I am so very pleased about that.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Der Vergleich: \glqq so ... wie\grqq}
+
+        \begin{grammarentry}{Gleichheit vergleichen}{so ... wie = as ... as}
+            \GermanText{Mit \textbf{so ... wie} vergleicht man zwei Personen oder Sachen und sagt, dass eine Eigenschaft gleich oder ähnlich stark ist.}
+            \EnglishText{With \textbf{so ... wie}, two people or things are compared and a quality is said to be equal or similarly strong.}
+
+            \GermanText{Struktur: \textbf{so + Adjektiv/Adverb + wie}. In der Verneinung ist \textbf{nicht so ... wie} sehr häufig.}
+            \EnglishText{Structure: \textbf{so + adjective/adverb + wie}. In negative statements, \textbf{nicht so ... wie} is very common.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Der Weg ist so lang wie gestern.}{The route is as long as yesterday's one.}
+                \ExampleItem{Anna läuft so schnell wie Max.}{Anna runs as fast as Max.}
+                \ExampleItem{Dieser Berg ist nicht so hoch wie der andere.}{This mountain is not as high as the other one.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{\glqq so ein / so eine\grqq{} = von dieser Art}
+
+        \begin{grammarentry}{so + unbestimmter Artikel + Nomen}{such a / a ... like that}
+            \GermanText{In \textbf{so ein Mann}, \textbf{so eine Tour} oder \textbf{so ein Erlebnis} bedeutet \textbf{so}: \glqq von dieser Art\grqq, \glqq dieser Art entsprechend\grqq{} oder \glqq wie das eben Genannte\grqq.}
+            \EnglishText{In \textbf{so ein Mann}, \textbf{so eine Tour}, or \textbf{so ein Erlebnis}, \textbf{so} means ``of this/that kind,'' ``of this type,'' or ``like the thing just mentioned.''}
+
+            \GermanText{Die neutrale und für Lernende besonders praktische Analyse ist: \textbf{so} ist ein unveränderliches Adverb bzw. eine Partikel, die die Art der gesamten Nominalgruppe kennzeichnet. \textbf{so} ist kein Adjektiv und wird nicht dekliniert.}
+            \EnglishText{A neutral and learner-friendly analysis is: \textbf{so} is an invariable adverb or particle that characterizes the type of the whole noun phrase. \textbf{so} is not an adjective and is not declined.}
+
+            \GermanText{Der Artikel und gegebenenfalls das Adjektiv tragen die grammatischen Endungen.}
+            \EnglishText{The article and, if present, the adjective carry the grammatical endings.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Hast du schon mal überlegt, so eine Tour zu machen?}{Have you ever thought about doing a tour like that?}
+                \ExampleItem{So ein Problem hatte ich noch nie.}{I have never had a problem like that.}
+                \ExampleItem{Mit so einem Auto möchte ich nicht fahren.}{I would not like to drive a car like that.}
+                \ExampleItem{Ich kenne so eine Person.}{I know a person like that.}
+            \end{itemize}
+        \end{exbox}
+
+        \subsection{Kasus bei \glqq so ein / so eine\grqq}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{2.4cm}|p{3.3cm}|p{3.3cm}|p{3.3cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Kasus} &
+            \color{white}\textbf{Maskulin} &
+            \color{white}\textbf{Feminin} &
+            \color{white}\textbf{Neutrum} \\
+            Nominativ & so ein Mann & so eine Tour & so ein Erlebnis \\
+            Akkusativ & so einen Mann & so eine Tour & so ein Erlebnis \\
+            Dativ & so einem Mann & so einer Tour & so einem Erlebnis \\
+            Genitiv & so eines Mannes & so einer Tour & so eines Erlebnisses \\
+        \end{longtable}
+
+        \begin{grammarentry}{Wichtig}{wo sitzt der Kasus?}
+            \GermanText{Der Kasus wird \textbf{nicht an so} markiert. Er erscheint am Artikel und am Nomen bzw. an einem vorhandenen Adjektiv.}
+            \EnglishText{Case is \textbf{not marked on so}. It appears on the article and noun, or on an adjective if one is present.}
+        \end{grammarentry}
+
+    \section{Analyse deines Satzes}
+
+        \begin{grammarentry}{so eine Tour}{Akkusativobjekt innerhalb des Infinitivsatzes}
+            \GermanText{Satz: \glqq Hast du schon mal überlegt, \textbf{so eine Tour} zu machen?\grqq}
+            \EnglishText{Sentence: ``Have you ever thought about doing \textbf{a tour like that}?''}
+
+            \GermanText{\textbf{machen} verlangt hier ein Akkusativobjekt: \glqq Was machen?\grqq{} -- \textbf{eine Tour}. Deshalb steht \textbf{eine Tour} im Akkusativ. Bei einem femininen Nomen sind Nominativ und Akkusativ hier äußerlich gleich: \textbf{eine Tour}.}
+            \EnglishText{Here, \textbf{machen} takes an accusative object: ``Do what?'' -- \textbf{eine Tour}. Therefore \textbf{eine Tour} is accusative. With a feminine noun, nominative and accusative have the same visible form here: \textbf{eine Tour}.}
+
+            \GermanText{\textbf{so} bedeutet in diesem Satz \glqq von dieser Art / wie die gerade erwähnte Bergsteigertour\grqq. Es selbst trägt keinen Kasus.}
+            \EnglishText{In this sentence, \textbf{so} means ``of this kind / like the mountaineering tour just mentioned.'' It does not itself carry case.}
+        \end{grammarentry}
+
+    \section{\glqq so ... dass\grqq{} und \glqq sodass\grqq: Folge}
+
+        \begin{grammarentry}{Konsekutivsatz}{result: so ... that}
+            \GermanText{Mit \textbf{so ... dass} wird ein Grad genannt, der eine Folge verursacht. Das \textbf{so} gehört zum Hauptsatz; \textbf{dass} leitet den Nebensatz ein.}
+            \EnglishText{With \textbf{so ... dass}, a degree is stated that causes a result. \textbf{so} belongs to the main clause; \textbf{dass} introduces the subordinate clause.}
+
+            \GermanText{Daneben gibt es die Konjunktion \textbf{sodass}; die Schreibweise \textbf{so dass} ist ebenfalls möglich. Sie leitet direkt einen Folgesatz ein.}
+            \EnglishText{There is also the conjunction \textbf{sodass}; the spelling \textbf{so dass} is also possible. It directly introduces a result clause.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich war so müde, dass ich sofort eingeschlafen bin.}{I was so tired that I fell asleep immediately.}
+                \ExampleItem{Es schneite stark, sodass wir die Tour abbrechen mussten.}{It snowed heavily, so we had to cancel the tour.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Menge und Ausmaß: \glqq so viel\grqq, \glqq so wenig\grqq, \glqq so oft\grqq}
+
+        \begin{grammarentry}{Menge, Häufigkeit, Dauer, Entfernung}{degree expressions}
+            \GermanText{\textbf{so} kann mit Mengen- und Maßwörtern stehen und ein bestimmtes oder besonders starkes Ausmaß ausdrücken.}
+            \EnglishText{\textbf{so} can be used with quantity and measure words to express a certain or especially strong degree.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich habe so viel Arbeit.}{I have so much work.}
+                \ExampleItem{Warum kommst du so selten?}{Why do you come so rarely?}
+                \ExampleItem{Ich kann nicht so lange warten.}{I cannot wait that long.}
+                \ExampleItem{Wir sind noch nie so weit gegangen.}{We have never walked this/that far.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{\glqq so\grqq{} als Verweis auf eine Situation oder Aussage}
+
+        \begin{grammarentry}{Das ist so}{Verweis auf einen Sachverhalt}
+            \GermanText{\textbf{so} kann auf einen vorher genannten oder aus der Situation bekannten Sachverhalt verweisen. Es bedeutet dann ungefähr \glqq in dieser Form\grqq{} oder \glqq wie gerade gesagt\grqq.}
+            \EnglishText{\textbf{so} can refer back to a previously mentioned situation or statement, or one known from context. It then means approximately ``in this form'' or ``as just stated.''}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Das ist so.}{That is how it is.}
+                \ExampleItem{Wenn das so ist, bleibe ich zu Hause.}{If that is the case, I will stay at home.}
+                \ExampleItem{Ich sehe das nicht so.}{I do not see it that way.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Ungefähr-Angaben}
+
+        \begin{grammarentry}{so = ungefähr}{umgangssprachlich häufig}
+            \GermanText{Vor Zahlen, Zeiten oder Mengen kann \textbf{so} umgangssprachlich \glqq ungefähr\grqq{} bedeuten.}
+            \EnglishText{Before numbers, times, or quantities, \textbf{so} can colloquially mean ``approximately'' or ``around.''}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich komme so gegen acht Uhr.}{I will come at around eight o'clock.}
+                \ExampleItem{Es waren so zwanzig Leute da.}{There were about twenty people there.}
+                \ExampleItem{Das dauert so eine Stunde.}{That takes about an hour.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{\glqq So, ...\grqq{} als Gesprächspartikel}
+
+        \begin{grammarentry}{Gespräch organisieren}{discourse particle}
+            \GermanText{Am Anfang einer Äußerung kann \textbf{so} einen neuen Schritt, einen Abschluss oder einen Themenwechsel markieren. In dieser Verwendung hat es keine konkrete räumliche oder graduelle Bedeutung.}
+            \EnglishText{At the beginning of an utterance, \textbf{so} can mark a new step, a conclusion, or a change of topic. In this use, it has no concrete spatial or degree meaning.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{So, jetzt fangen wir an.}{Right, now we are starting.}
+                \ExampleItem{So, das wäre erledigt.}{Right, that is done.}
+                \ExampleItem{Ach so!}{Oh, I see!}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Häufige feste Verbindungen mit \glqq so\grqq}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{p{3.5cm}|p{5.0cm}|p{5.0cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Verbindung} &
+            \color{white}\textbf{Deutsch} &
+            \color{white}\textbf{English} \\
+            so oder so & in jedem Fall, unabhängig von der genauen Möglichkeit & either way; anyway \\
+            so gut wie & fast, nahezu & practically; almost \\
+            so viel wie & ungefähr dieselbe Menge / nahezu & as much as; almost \\
+            so weit wie & bis zu derselben Entfernung oder Grenze & as far as \\
+            so schnell wie möglich & mit maximal möglicher Geschwindigkeit / möglichst bald & as quickly as possible \\
+            so lange wie & für dieselbe Dauer, während & as long as \\
+            so wie & auf dieselbe Art wie; ebenso wie & just as; the way that \\
+            genauso & genau auf diese Weise / im gleichen Grad & exactly like that; just as \\
+            ebenso & auf gleiche Weise / ebenfalls & likewise; equally \\
+            sowieso & ohnehin, in jedem Fall & anyway; in any case \\
+        \end{longtable}
+
+    \section{Wichtige Abgrenzungen}
+
+        \begin{grammarentry}{so vs. solch-}{ähnliche Bedeutung, andere Grammatik}
+            \GermanText{\textbf{so ein/eine} und \textbf{solch ein/eine} bzw. \textbf{solch-} können eine ähnliche Bedeutung haben. \textbf{solch-} kann jedoch wie ein Artikelwort oder Adjektiv flektiert erscheinen, während \textbf{so} unverändert bleibt.}
+            \EnglishText{\textbf{so ein/eine} and \textbf{solch ein/eine} or \textbf{solch-} can have a similar meaning. However, \textbf{solch-} can appear with inflection like a determiner or adjective, whereas \textbf{so} remains unchanged.}
+
+            \GermanText{Beispiel: \textbf{so eine Tour} = \textbf{eine solche Tour}.}
+            \EnglishText{Example: \textbf{so eine Tour} = \textbf{eine solche Tour} = ``such a tour / a tour like that.''}
+        \end{grammarentry}
+
+        \begin{grammarentry}{so vs. sehr}{Grad nicht immer gleich}
+            \GermanText{\textbf{sehr} verstärkt normalerweise einfach eine Eigenschaft: \glqq sehr groß\grqq. \textbf{so} kann ebenfalls stark intensivieren, verweist aber oft zusätzlich auf einen Vergleich, einen Kontext oder eine Folge: \glqq so groß wie ...\grqq, \glqq so groß, dass ...\grqq.}
+            \EnglishText{\textbf{sehr} normally simply intensifies a quality: ``very big.'' \textbf{so} can also intensify strongly, but often additionally points to a comparison, context, or result: ``as big as ...'', ``so big that ...''.}
+        \end{grammarentry}
+
+        \begin{grammarentry}{so weit vs. soweit}{Schreibung kann Bedeutung markieren}
+            \GermanText{\textbf{so weit} wird getrennt geschrieben, wenn wirklich ein Grad oder eine Entfernung gemeint ist: \glqq Ich kann nicht so weit laufen.\grqq{} \textbf{soweit} wird zusammengeschrieben, wenn es als Konjunktion oder in festen Verwendungen wie \glqq soweit ich weiß\grqq{} gebraucht wird.}
+            \EnglishText{\textbf{so weit} is written separately when an actual degree or distance is meant: ``I cannot walk that far.'' \textbf{soweit} is written as one word when used as a conjunction or in fixed expressions such as \textbf{soweit ich weiß} = ``as far as I know.''}
+        \end{grammarentry}
+
+    \section{Seltene oder gehobene Verwendung}
+
+        \begin{grammarentry}{so = wenn/falls}{literarisch oder veraltet}
+            \GermanText{In älterer oder gehobener Sprache kann \textbf{so} einen Bedingungssatz einleiten und ungefähr \glqq wenn\grqq{} oder \glqq falls\grqq{} bedeuten. Diese Verwendung ist für die normale B1-Kommunikation nicht wichtig.}
+            \EnglishText{In older or elevated language, \textbf{so} can introduce a conditional clause and mean approximately ``if.'' This use is not important for normal B1 communication.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{So du willst, können wir gehen.}{If you wish, we can go.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Schnellübersicht der grammatischen Rollen}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{p{3.2cm}|p{4.3cm}|p{3.0cm}|p{3.2cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Beispiel} &
+            \color{white}\textbf{Bedeutung} &
+            \color{white}\textbf{Rolle von \glqq so\grqq} &
+            \color{white}\textbf{English} \\
+            Mach es so. & auf diese Weise & Adverb der Art und Weise & Do it like this. \\
+            so groß & in diesem Grad & Gradadverb / Gradpartikel & so big \\
+            so groß wie ... & gleicher Grad & Teil einer Vergleichsstruktur & as big as ... \\
+            so eine Tour & von dieser Art & unveränderliches Adverb / Partikel vor der Nominalgruppe & a tour like that / such a tour \\
+            so müde, dass ... & Grad mit Folge & Gradwort im Hauptsatz & so tired that ... \\
+            Das ist so. & wie gesagt / der Fall & verweisendes Adverb & That is how it is. \\
+            so zwanzig Leute & ungefähr & approximative Partikel & about twenty people \\
+            So, jetzt ... & Gespräch gliedern & Gesprächspartikel & Right, now ... \\
+        \end{longtable}
+
+    \section{Zusammenfassung}
+
+        \begin{grammarentry}{Merksätze}{kurz und wichtig}
+            \GermanText{1. \textbf{so} ist unveränderlich und bekommt keine Kasus- oder Adjektivendung.}
+            \EnglishText{1. \textbf{so} is invariable and does not take case or adjective endings.}
+
+            \GermanText{2. \textbf{so} kann \glqq auf diese Weise\grqq, \glqq in diesem Grad\grqq, \glqq von dieser Art\grqq{} oder \glqq ungefähr\grqq{} bedeuten.}
+            \EnglishText{2. \textbf{so} can mean ``in this way,'' ``to this degree,'' ``of this kind,'' or ``approximately.''}
+
+            \GermanText{3. In \textbf{so eine Tour} bedeutet \textbf{so} ungefähr \textbf{eine solche / eine Tour wie die erwähnte}. Die ganze Gruppe \textbf{so eine Tour} ist in deinem Beispielsatz das Akkusativobjekt von \textbf{machen}.}
+            \EnglishText{3. In \textbf{so eine Tour}, \textbf{so} means approximately \textbf{such a / a tour like the one mentioned}. In your example sentence, the whole phrase \textbf{so eine Tour} is the accusative object of \textbf{machen}.}
+
+            \GermanText{4. Sehr wichtige Muster sind: \textbf{so + Adjektiv}, \textbf{so ... wie}, \textbf{so ... dass} und \textbf{so ein/eine + Nomen}.}
+            \EnglishText{4. Very important patterns are: \textbf{so + adjective}, \textbf{so ... wie}, \textbf{so ... dass}, and \textbf{so ein/eine + noun}.}
+        \end{grammarentry}
+
+\end{document}
