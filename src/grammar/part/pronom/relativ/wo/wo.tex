@@ -1,0 +1,105 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\titleformat{\section}[block]{\Large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+\titleformat{\subsection}[block]{\large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+\begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+#3
+\end{tcolorbox}}{}
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+
+\title{Relativwort: \glqq wo\grqq{}}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+\section{Grundbedeutung und Kategorie}
+
+\begin{grammarentry}{wo}{Relativadverb, lokal}
+
+\GermanText{\textbf{wo} kann in relativer Funktion einen Ort oder eine räumliche Situation verbinden. Seine ungefähre Bedeutung ist \glqq where\grqq{}.}
+
+\EnglishText{\textbf{wo} can in relative use connect a place or spatial situation. Its approximate meaning is \glqq where\grqq{}.}
+
+\end{grammarentry}
+
+\section{Wichtig: Pronomen oder Adverb?}
+
+\begin{grammarentry}{Grammatische Einordnung}{kein deklinierbares Pronomen}
+
+\GermanText{\textbf{wo} ist in dieser Verwendung kein deklinierbares Relativpronomen. Es ist ein Relativadverb bzw. relatives Verbindungswort. Deshalb hat es keinen Nominativ, Akkusativ, Dativ oder Genitiv.}
+
+\EnglishText{\textbf{wo} is not a declinable relative pronoun in this use. It is a relative adverb or relative linking word. Therefore, it has no nominative, accusative, dative, or genitive case.}
+
+\GermanText{Bei einem konkreten Nomen ist in formeller Standardsprache häufig \textbf{in dem / in der} genauer, zum Beispiel \textbf{die Stadt, in der ich wohne}.}
+
+\EnglishText{With a concrete noun, formal standard German often prefers \textbf{in dem / in der}, for example \textbf{die Stadt, in der ich wohne}.}
+
+\end{grammarentry}
+
+\section{Beispiele}
+
+\begin{exbox}
+
+\begin{itemize}
+
+\ExampleItem{Das ist der Ort, wo wir uns getroffen haben.}{That is the place where we met.}
+
+\ExampleItem{Wir fahren nach Wien, wo meine Schwester lebt.}{We are going to Vienna, where my sister lives.}
+
+\end{itemize}
+
+\end{exbox}
+
+\section{Wortstellung und Komma}
+
+\begin{grammarentry}{Nebensatzregel}{Verb am Ende}
+
+\GermanText{Der eingeleitete Satz ist ein Nebensatz. Das konjugierte Verb steht normalerweise am Ende, und der Satz wird durch Kommas abgetrennt.}
+
+\EnglishText{The introduced clause is a subordinate clause. The conjugated verb normally stands at the end, and the clause is separated by commas.}
+
+\end{grammarentry}
+
+\section{Merksatz}
+
+\begin{grammarentry}{wo}{kurz und wichtig}
+
+\GermanText{\textbf{wo} kann relativ verwendet werden, ist aber grammatisch ein \textbf{Relativadverb/Relativwort}, kein Relativpronomen wie \textbf{wer} oder \textbf{was}.}
+
+\EnglishText{\textbf{wo} can be used relatively, but grammatically it is a \textbf{relative adverb/relative word}, not a relative pronoun like \textbf{wer} or \textbf{was}.}
+
+\end{grammarentry}
+
+\end{document}

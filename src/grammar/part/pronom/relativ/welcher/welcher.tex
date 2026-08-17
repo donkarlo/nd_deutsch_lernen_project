@@ -1,0 +1,119 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\titleformat{\section}[block]{\Large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+\titleformat{\subsection}[block]{\large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+\begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+#3
+\end{tcolorbox}}{}
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+
+\title{Relativpronomen: \glqq welcher / welche / welches\grqq{}}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+\section{Grundbedeutung und grammatische Rolle}
+
+\begin{grammarentry}{welcher / welche / welches}{Relativpronomen mit Bezugsnomen}
+
+\GermanText{\textbf{welcher, welche, welches} und ihre deklinierten Formen können einen Relativsatz mit einem konkreten Bezugsnomen einleiten.}
+
+\EnglishText{The forms \textbf{welcher, welche, welches} and their declined forms can introduce a relative clause with a concrete antecedent noun.}
+
+\GermanText{Sie sind echte Relativpronomen, wirken aber meist formeller oder schwerer als die Reihe \textbf{der/die/das}.}
+
+\EnglishText{They are true relative pronouns, but usually sound more formal or heavier than the \textbf{der/die/das} series.}
+
+\end{grammarentry}
+
+\section{Kasus und Übereinstimmung}
+
+\begin{grammarentry}{Zwei Regeln}{Genus/Numerus + Kasus}
+
+\GermanText{Genus und Numerus kommen vom Bezugsnomen. Der Kasus kommt aus der Funktion im Relativsatz.}
+
+\EnglishText{Gender and number come from the antecedent noun. Case comes from the function inside the relative clause.}
+
+\GermanText{Beispiele: \textbf{der Mann, welcher kommt} (Nominativ); \textbf{der Mann, welchen ich sehe} (Akkusativ); \textbf{der Mann, welchem ich helfe} (Dativ).}
+
+\EnglishText{Examples: \textbf{der Mann, welcher kommt} (nominative); \textbf{der Mann, welchen ich sehe} (accusative); \textbf{der Mann, welchem ich helfe} (dative).}
+
+\GermanText{Für den Genitiv verwendet man in der Standardsprache normalerweise \textbf{dessen/deren}.}
+
+\EnglishText{For the genitive, standard German normally uses \textbf{dessen/deren}.}
+
+\end{grammarentry}
+
+\section{Beispiele}
+
+\begin{exbox}
+
+\begin{itemize}
+
+\ExampleItem{Das Buch, welches auf dem Tisch liegt, gehört mir.}{The book which is lying on the table belongs to me.}
+
+\ExampleItem{Der Kollege, welchem ich geholfen habe, bedankt sich.}{The colleague whom I helped thanks me.}
+
+\ExampleItem{Die Aufgabe, welche wir heute machen, ist einfach.}{The exercise which we are doing today is easy.}
+
+\end{itemize}
+
+\end{exbox}
+
+\section{Vergleich mit der/die/das}
+
+\begin{grammarentry}{Normale Wahl}{für B1 besonders wichtig}
+
+\GermanText{\textbf{Das Buch, das ich lese} klingt im Alltag normalerweise natürlicher als \textbf{das Buch, welches ich lese}.}
+
+\EnglishText{In everyday German, \textbf{Das Buch, das ich lese} normally sounds more natural than \textbf{das Buch, welches ich lese}.}
+
+\GermanText{Für eine B1-Prüfung ist \textbf{der/die/das} meistens einfacher und sicherer.}
+
+\EnglishText{For a B1 exam, \textbf{der/die/das} is usually simpler and safer.}
+
+\end{grammarentry}
+
+\section{Merksatz}
+
+\begin{grammarentry}{welcher}{kurz und wichtig}
+
+\GermanText{\textbf{welcher/welche/welches} = echtes Relativpronomen mit konkretem Bezugsnomen, meist formeller als \textbf{der/die/das}.}
+
+\EnglishText{\textbf{welcher/welche/welches} = a true relative pronoun with a concrete antecedent, usually more formal than \textbf{der/die/das}.}
+
+\end{grammarentry}
+
+\end{document}

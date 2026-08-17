@@ -1,0 +1,133 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\titleformat{\section}[block]{\Large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+\titleformat{\subsection}[block]{\large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+\begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+#3
+\end{tcolorbox}}{}
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+
+\title{W-Relativpronomen: \glqq wen\grqq{}}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+\section{Grundbedeutung und grammatische Rolle}
+
+\begin{grammarentry}{wen}{W-Relativpronomen, Akkusativ}
+
+\GermanText{\textbf{wen} kann einen \textbf{freien Relativsatz} einleiten. Es bedeutet ungefähr \glqq whomever; anyone whom\grqq{}.}
+
+\EnglishText{\textbf{wen} can introduce a \textbf{free relative clause}. It means approximately \glqq whomever; anyone whom\grqq{}.}
+
+\GermanText{Im Relativsatz hat \textbf{wen} die Funktion \textbf{Akkusativobjekt}.}
+
+\EnglishText{Inside the relative clause, \textbf{wen} functions as \textbf{Akkusativobjekt}.}
+
+\GermanText{\textbf{wen} ist die Akkusativform der Reihe \textbf{wer - wen - wem - wessen}.}
+
+\EnglishText{\textbf{wen} is the akkusativ form in the series \textbf{wer - wen - wem - wessen}.}
+
+\GermanText{Der Kasus wird durch die Funktion von \textbf{wen} im Relativsatz bestimmt, nicht durch die Funktion des ganzen Relativsatzes im Hauptsatz.}
+
+\EnglishText{The case is determined by the function of \textbf{wen} inside the relative clause, not by the function of the whole relative clause in the main clause.}
+
+\end{grammarentry}
+
+\section{Freier Relativsatz}
+
+\begin{grammarentry}{Kein ausdrückliches Bezugsnomen}{Bedeutung bereits enthalten}
+
+\GermanText{Vor \textbf{wen} steht normalerweise kein konkretes Bezugsnomen. Die Bedeutung ist ungefähr \glqq die Person, die ...\grqq{} oder \glqq jeder, der ...\grqq{}.}
+
+\EnglishText{There is normally no concrete antecedent noun before \textbf{wen}. The meaning is approximately \glqq the person who ...\grqq{} or \glqq whoever ...\grqq{}.}
+
+\GermanText{Wenn bereits ein Nomen vorhanden ist, nimmt man normalerweise \textbf{der/die/das} und die passenden deklinierten Formen.}
+
+\EnglishText{If a noun is already present, German normally uses \textbf{der/die/das} and the appropriate declined forms.}
+
+\end{grammarentry}
+
+\section{Beispiele}
+
+\begin{exbox}
+
+\begin{itemize}
+
+\ExampleItem{Wen ich sehe, den grüße ich.}{Whomever I see, I greet.}
+
+\ExampleItem{Du kannst einladen, wen du möchtest.}{You can invite whomever you want.}
+
+\ExampleItem{Wen du auswählst, den rufen wir an.}{Whomever you choose, we will call.}
+
+\end{itemize}
+
+\end{exbox}
+
+\section{Typischer Fehler}
+
+\begin{grammarentry}{Nicht mit einem normalen Bezugsnomen}{Korrektur}
+
+\GermanText{Falsch: \textbf{Wen dort steht, kenne ich.}}
+
+\EnglishText{Incorrect: Wen dort steht, kenne ich.}
+
+\GermanText{Richtig: \textbf{Wer dort steht, den kenne ich.}}
+
+\EnglishText{Correct: Wer dort steht, den kenne ich.}
+
+\end{grammarentry}
+
+\section{Wortstellung und Komma}
+
+\begin{grammarentry}{Nebensatzregel}{Verb am Ende}
+
+\GermanText{Der freie Relativsatz ist ein Nebensatz. Das konjugierte Verb steht normalerweise am Ende. Der Relativsatz wird durch Kommas abgetrennt.}
+
+\EnglishText{A free relative clause is a subordinate clause. The conjugated verb normally stands at the end. The relative clause is separated by commas.}
+
+\end{grammarentry}
+
+\section{Merksatz}
+
+\begin{grammarentry}{wen}{kurz und wichtig}
+
+\GermanText{\textbf{wen} = Akkusativform eines W-Relativpronomens für Personen in freien Relativsätzen.}
+
+\EnglishText{\textbf{wen} = the akkusativ form of a W-relative pronoun for people in free relative clauses.}
+
+\end{grammarentry}
+
+\end{document}

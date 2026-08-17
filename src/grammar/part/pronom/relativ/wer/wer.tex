@@ -1,0 +1,133 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\titleformat{\section}[block]{\Large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+\titleformat{\subsection}[block]{\large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+\begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+#3
+\end{tcolorbox}}{}
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+
+\title{W-Relativpronomen: \glqq wer\grqq{}}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+\section{Grundbedeutung und grammatische Rolle}
+
+\begin{grammarentry}{wer}{W-Relativpronomen, Nominativ}
+
+\GermanText{\textbf{wer} kann einen \textbf{freien Relativsatz} einleiten. Es bedeutet ungefähr \glqq whoever; anyone who\grqq{}.}
+
+\EnglishText{\textbf{wer} can introduce a \textbf{free relative clause}. It means approximately \glqq whoever; anyone who\grqq{}.}
+
+\GermanText{Im Relativsatz hat \textbf{wer} die Funktion \textbf{Subjekt}.}
+
+\EnglishText{Inside the relative clause, \textbf{wer} functions as \textbf{Subjekt}.}
+
+\GermanText{\textbf{wer} ist die Nominativform der Reihe \textbf{wer - wen - wem - wessen}.}
+
+\EnglishText{\textbf{wer} is the nominativ form in the series \textbf{wer - wen - wem - wessen}.}
+
+\GermanText{Der Kasus wird durch die Funktion von \textbf{wer} im Relativsatz bestimmt, nicht durch die Funktion des ganzen Relativsatzes im Hauptsatz.}
+
+\EnglishText{The case is determined by the function of \textbf{wer} inside the relative clause, not by the function of the whole relative clause in the main clause.}
+
+\end{grammarentry}
+
+\section{Freier Relativsatz}
+
+\begin{grammarentry}{Kein ausdrückliches Bezugsnomen}{Bedeutung bereits enthalten}
+
+\GermanText{Vor \textbf{wer} steht normalerweise kein konkretes Bezugsnomen. Die Bedeutung ist ungefähr \glqq die Person, die ...\grqq{} oder \glqq jeder, der ...\grqq{}.}
+
+\EnglishText{There is normally no concrete antecedent noun before \textbf{wer}. The meaning is approximately \glqq the person who ...\grqq{} or \glqq whoever ...\grqq{}.}
+
+\GermanText{Wenn bereits ein Nomen vorhanden ist, nimmt man normalerweise \textbf{der/die/das} und die passenden deklinierten Formen.}
+
+\EnglishText{If a noun is already present, German normally uses \textbf{der/die/das} and the appropriate declined forms.}
+
+\end{grammarentry}
+
+\section{Beispiele}
+
+\begin{exbox}
+
+\begin{itemize}
+
+\ExampleItem{Wer viel übt, lernt schneller.}{Whoever practices a lot learns faster.}
+
+\ExampleItem{Wer mir hilft, dem helfe ich auch.}{Whoever helps me, I help as well.}
+
+\ExampleItem{Wer das sagt, irrt sich.}{Whoever says that is mistaken.}
+
+\end{itemize}
+
+\end{exbox}
+
+\section{Typischer Fehler}
+
+\begin{grammarentry}{Nicht mit einem normalen Bezugsnomen}{Korrektur}
+
+\GermanText{Falsch: \textbf{Der Mann, wer dort steht, ist mein Lehrer.}}
+
+\EnglishText{Incorrect: Der Mann, wer dort steht, ist mein Lehrer.}
+
+\GermanText{Richtig: \textbf{Der Mann, der dort steht, ist mein Lehrer.}}
+
+\EnglishText{Correct: Der Mann, der dort steht, ist mein Lehrer.}
+
+\end{grammarentry}
+
+\section{Wortstellung und Komma}
+
+\begin{grammarentry}{Nebensatzregel}{Verb am Ende}
+
+\GermanText{Der freie Relativsatz ist ein Nebensatz. Das konjugierte Verb steht normalerweise am Ende. Der Relativsatz wird durch Kommas abgetrennt.}
+
+\EnglishText{A free relative clause is a subordinate clause. The conjugated verb normally stands at the end. The relative clause is separated by commas.}
+
+\end{grammarentry}
+
+\section{Merksatz}
+
+\begin{grammarentry}{wer}{kurz und wichtig}
+
+\GermanText{\textbf{wer} = Nominativform eines W-Relativpronomens für Personen in freien Relativsätzen.}
+
+\EnglishText{\textbf{wer} = the nominativ form of a W-relative pronoun for people in free relative clauses.}
+
+\end{grammarentry}
+
+\end{document}

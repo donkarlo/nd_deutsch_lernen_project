@@ -6,12 +6,14 @@
 \usepackage[ngerman,english]{babel}
 \usepackage{lmodern}
 \usepackage{microtype}
-\usepackage{xcolor}
+\usepackage[table]{xcolor}
 \usepackage{parskip}
 \usepackage{enumitem}
 \usepackage[most]{tcolorbox}
 \usepackage{titlesec}
 \usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{longtable}
 
 \definecolor{HeaderBlueDark}{RGB}{70,110,170}
 \definecolor{RowBlueLight}{RGB}{235,243,255}
@@ -21,6 +23,8 @@
 \setlength{\parindent}{0pt}
 \setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
 \linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{6pt}
 
 \titleformat{\section}[block]
 {\Large\bfseries\color{HeaderBlueDark}}
@@ -44,117 +48,167 @@
 \newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
 \newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
 
-\title{Die Präposition \textit{aus}}
+\title{Die Präposition \glqq aus\grqq\\Allgemeine Verwendungen und \glqq aus + Dativ\grqq als Grundlage einer Schlussfolgerung}
 \date{}
 
 \begin{document}
-    \maketitle
-    \tableofcontents
-    \newpage
+\maketitle
+\tableofcontents
+\newpage
 
 \section{Grundbedeutung}
 
-\begin{grammarentry}{aus}{preposition; always with Dativ}
-\GermanText{\textbf{aus} bedeutet meistens \textit{from}, \textit{out of} oder \textit{because of}.}
-\EnglishText{\textbf{aus} usually means \textit{from}, \textit{out of}, or \textit{because of}.}
+\begin{grammarentry}{aus}{Präposition; immer mit Dativ}
+\GermanText{\textbf{aus} bedeutet meistens \textbf{from}, \textbf{out of} oder \textbf{because of}.}
+\EnglishText{\textbf{aus} usually means \textbf{from}, \textbf{out of}, or \textbf{because of}.}
 
-\GermanText{\textbf{Grammatik:} aus + Dativ}
-\EnglishText{\textbf{Grammar:} aus + dative}
+\GermanText{Grammatik: \textbf{aus + Dativ}.}
+\EnglishText{Grammar: \textbf{aus + dative}.}
+\end{grammarentry}
 
 \begin{exbox}
 \begin{itemize}
-    \ExampleItem{Ich komme aus dem Iran.}{I come from Iran.}
-    \ExampleItem{Er geht aus dem Haus.}{He goes out of the house.}
-    \ExampleItem{Sie nimmt das Buch aus der Tasche.}{She takes the book out of the bag.}
+\ExampleItem{Ich komme aus dem Iran.}{I come from Iran.}
+\ExampleItem{Er geht aus dem Haus.}{He goes out of the house.}
+\ExampleItem{Sie nimmt das Buch aus der Tasche.}{She takes the book out of the bag.}
 \end{itemize}
 \end{exbox}
+
+\section{Dativ nach \glqq aus\grqq}
+
+\begin{grammarentry}{aus + Dativ}{Kasusregel}
+\GermanText{Nach \textbf{aus} steht immer der \textbf{Dativ}.}
+\EnglishText{After \textbf{aus}, the noun or pronoun is always in the \textbf{dative case}.}
 \end{grammarentry}
 
-\section{Dativ nach \textit{aus}}
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{p{4cm}|p{5cm}|p{5cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Nominativ} &
+\color{white}\textbf{Dativ nach aus} &
+\color{white}\textbf{English} \\
+der Mann & aus dem Mann & from the man \\
+die Tasche & aus der Tasche & from / out of the bag \\
+das Haus & aus dem Haus & from / out of the house \\
+die Länder & aus den Ländern & from the countries \\
+\end{longtable}
 
-\begin{grammarentry}{aus + Dativ}{case rule}
-\GermanText{Nach \textbf{aus} steht immer der Dativ.}
-\EnglishText{After \textbf{aus}, the noun or pronoun is always in the dative case.}
-
-\begin{center}
-\begin{tabular}{lll}
-\textbf{Nominativ} & \textbf{Dativ nach aus} & \textbf{English} \\
-\hline
-\textit{der} Mann & aus \textbf{dem} Mann & from the man \\
-\textit{die} Tasche & aus \textbf{der} Tasche & from/out of the bag \\
-\textit{das} Haus & aus \textbf{dem} Haus & from/out of the house \\
-\textit{die} Länder & aus \textbf{den} Ländern & from the countries \\
-\end{tabular}
-\end{center}
-
-\GermanText{Bei Plural im Dativ bekommt das Nomen oft ein \textbf{-n}: aus den Länder\textbf{n}.}
-\EnglishText{In plural dative, the noun often gets \textbf{-n}: aus den Länder\textbf{n}.}
+\begin{grammarentry}{Dativ Plural}{-n am Nomen}
+\GermanText{Beim Plural im Dativ bekommt das Nomen oft ein \textbf{-n}: \textbf{aus den Ländern}.}
+\EnglishText{In the plural dative, the noun often gets \textbf{-n}: \textbf{aus den Ländern}.}
 \end{grammarentry}
 
-\section{Wichtige Bedeutungen von \textit{aus}}
+\section{Wichtige Bedeutungen von \glqq aus\grqq}
 
+\subsection{Herkunft}
 \begin{grammarentry}{Herkunft}{origin; from}
 \GermanText{\textbf{aus} zeigt die Herkunft einer Person oder Sache.}
 \EnglishText{\textbf{aus} shows where a person or thing comes from.}
-
+\end{grammarentry}
 \begin{exbox}
 \begin{itemize}
-    \ExampleItem{Ich komme aus Österreich.}{I come from Austria.}
-    \ExampleItem{Das Auto kommt aus Deutschland.}{The car comes from Germany.}
-    \ExampleItem{Er ist aus Wien.}{He is from Vienna.}
+\ExampleItem{Ich komme aus Österreich.}{I come from Austria.}
+\ExampleItem{Das Auto kommt aus Deutschland.}{The car comes from Germany.}
+\ExampleItem{Er ist aus Wien.}{He is from Vienna.}
 \end{itemize}
 \end{exbox}
-\end{grammarentry}
 
-\begin{grammarentry}{Bewegung von innen nach außen}{out of}
+\subsection{Bewegung von innen nach außen}
+\begin{grammarentry}{Bewegung}{out of}
 \GermanText{\textbf{aus} zeigt eine Bewegung von innen nach außen.}
 \EnglishText{\textbf{aus} shows movement from inside to outside.}
-
+\end{grammarentry}
 \begin{exbox}
 \begin{itemize}
-    \ExampleItem{Ich gehe aus dem Zimmer.}{I go out of the room.}
-    \ExampleItem{Er nimmt das Geld aus der Tasche.}{He takes the money out of the pocket.}
-    \ExampleItem{Sie steigt aus dem Auto.}{She gets out of the car.}
+\ExampleItem{Ich gehe aus dem Zimmer.}{I go out of the room.}
+\ExampleItem{Er nimmt das Geld aus der Tasche.}{He takes the money out of the pocket.}
+\ExampleItem{Sie steigt aus dem Auto.}{She gets out of the car.}
 \end{itemize}
 \end{exbox}
-\end{grammarentry}
 
+\subsection{Material}
 \begin{grammarentry}{Material}{made of}
 \GermanText{\textbf{aus} zeigt das Material.}
 \EnglishText{\textbf{aus} shows the material something is made of.}
-
+\end{grammarentry}
 \begin{exbox}
 \begin{itemize}
-    \ExampleItem{Der Tisch ist aus Holz.}{The table is made of wood.}
-    \ExampleItem{Die Flasche ist aus Glas.}{The bottle is made of glass.}
-    \ExampleItem{Der Ring ist aus Gold.}{The ring is made of gold.}
+\ExampleItem{Der Tisch ist aus Holz.}{The table is made of wood.}
+\ExampleItem{Die Flasche ist aus Glas.}{The bottle is made of glass.}
+\ExampleItem{Der Ring ist aus Gold.}{The ring is made of gold.}
 \end{itemize}
 \end{exbox}
-\end{grammarentry}
 
+\subsection{Grund oder Motiv}
 \begin{grammarentry}{Grund oder Motiv}{because of; out of}
 \GermanText{\textbf{aus} kann auch einen Grund oder ein Motiv zeigen.}
 \EnglishText{\textbf{aus} can also show a reason or motive.}
-
+\end{grammarentry}
 \begin{exbox}
 \begin{itemize}
-    \ExampleItem{Er hilft ihr aus Freundschaft.}{He helps her out of friendship.}
-    \ExampleItem{Sie sagt nichts aus Angst.}{She says nothing out of fear.}
-    \ExampleItem{Ich habe es aus Versehen gemacht.}{I did it by accident.}
+\ExampleItem{Er hilft ihr aus Freundschaft.}{He helps her out of friendship.}
+\ExampleItem{Sie sagt nichts aus Angst.}{She says nothing out of fear.}
+\ExampleItem{Ich habe es aus Versehen gemacht.}{I did it by accident.}
 \end{itemize}
 \end{exbox}
+
+\subsection{Quelle oder Grundlage einer Schlussfolgerung}
+\begin{grammarentry}{aus den obigen Argumenten}{Quelle / Grundlage einer Folgerung}
+\GermanText{In \glqq aus den obigen Argumenten\grqq ist \textbf{aus} eine Präposition. In genau dieser Verwendung bezeichnet \textbf{aus} den \textbf{Ausgangspunkt, die Quelle oder die Grundlage, aus der eine Schlussfolgerung gewonnen wird}.}
+\EnglishText{In \textit{aus den obigen Argumenten}, \textbf{aus} is a preposition. In this specific use, \textbf{aus} marks the \textbf{starting point, source, or basis from which a conclusion is derived}.}
+
+\GermanText{Diese Verwendung von \textbf{aus} zeigt, dass ein Ergebnis, eine Erkenntnis oder eine Schlussfolgerung \textbf{aus einer bestimmten Grundlage hervorgeht}.}
+\EnglishText{This use of \textbf{aus} shows that a result, finding, or conclusion \textbf{emerges from a particular basis}.}
+
+\GermanText{Im Englischen entsprechen je nach Satz häufig \textbf{from}, \textbf{on the basis of} oder \textbf{based on}.}
+\EnglishText{Depending on the sentence, common English equivalents are \textbf{from}, \textbf{on the basis of}, or \textbf{based on}.}
 \end{grammarentry}
 
-\section{Pronomen nach \textit{aus}}
+\section{Wortart, Kasus und Satzfunktion bei einer Schlussfolgerung}
+
+\begin{grammarentry}{Drei Ebenen}{nicht miteinander verwechseln}
+\GermanText{\textbf{Wortart von \glqq aus\grqq:} Präposition.}
+\EnglishText{\textbf{Word class of \textit{aus}:} preposition.}
+
+\GermanText{\textbf{Kasusrektion:} \textbf{aus + Dativ}. Das Nomen oder Pronomen nach \textbf{aus} steht im Dativ.}
+\EnglishText{\textbf{Case government:} \textbf{aus + dative}. The noun or pronoun after \textbf{aus} is in the dative.}
+
+\GermanText{\textbf{Satzfunktion der ganzen Gruppe:} Die Präpositionalgruppe \glqq aus den obigen Argumenten\grqq funktioniert als Angabe bzw. Ergänzung der \textbf{Quelle, Grundlage oder des Ausgangspunkts einer Folgerung}.}
+\EnglishText{\textbf{Syntactic function of the whole phrase:} The prepositional phrase \textit{aus den obigen Argumenten} functions as an expression or complement of the \textbf{source, basis, or starting point of an inference}.}
+\end{grammarentry}
+
+\section{Warum steht \glqq den\grqq in \glqq aus den obigen Argumenten\grqq?}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{3.2cm}|p{4.4cm}|p{6.7cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Element} &
+\color{white}\textbf{Form} &
+\color{white}\textbf{Erklärung} \\
+Präposition & aus & verlangt den Dativ \\
+Artikel & den & bestimmter Artikel, Dativ Plural \\
+Adjektiv & obigen & schwache Adjektivendung im Dativ Plural nach bestimmtem Artikel \\
+Nomen & Argumenten & Dativ Plural von \glqq die Argumente\grqq; zusätzliches \textbf{-n} im Dativ Plural \\
+\end{longtable}
+
+\begin{grammarentry}{Schema}{Formbildung}
+\GermanText{\textbf{aus + den + obigen + Argumenten} = Präposition + bestimmter Artikel im Dativ Plural + schwach dekliniertes Adjektiv + Nomen im Dativ Plural.}
+\EnglishText{\textbf{aus + den + obigen + Argumenten} = preposition + definite article in dative plural + weakly declined adjective + noun in dative plural.}
+\end{grammarentry}
+
+\section{Pronomen nach \glqq aus\grqq}
 
 \begin{grammarentry}{aus + Dativpronomen}{from me, from you, from them}
 \GermanText{Nach \textbf{aus} benutzt man Dativpronomen.}
 \EnglishText{After \textbf{aus}, dative pronouns are used.}
+\end{grammarentry}
 
-\begin{center}
-\begin{tabular}{lll}
-\textbf{Deutsch} & \textbf{Beispiel} & \textbf{English} \\
-\hline
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{p{3.5cm}|p{4.5cm}|p{6cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Deutsch} &
+\color{white}\textbf{Beispiel} &
+\color{white}\textbf{English} \\
 mir & aus mir & from me / out of me \\
 dir & aus dir & from you / out of you \\
 ihm & aus ihm & from him/it / out of him/it \\
@@ -162,20 +216,54 @@ ihr & aus ihr & from her/it / out of her/it \\
 uns & aus uns & from us / out of us \\
 euch & aus euch & from you / out of you \\
 ihnen & aus ihnen & from them / out of them \\
-\end{tabular}
-\end{center}
+\end{longtable}
 
 \begin{exbox}
 \begin{itemize}
-    \ExampleItem{Was wird aus ihm?}{What will become of him?}
-    \ExampleItem{Ich mache das aus Liebe zu ihr.}{I do that out of love for her.}
-    \ExampleItem{Viele Informationen kommen aus den Massenmedien.}{Much information comes from the mass media.}
-    \ExampleItem{Viele Informationen kommen aus ihnen.}{Much information comes from them.}
+\ExampleItem{Was wird aus ihm?}{What will become of him?}
+\ExampleItem{Ich mache das aus Liebe zu ihr.}{I do that out of love for her.}
+\ExampleItem{Viele Informationen kommen aus den Massenmedien.}{Much information comes from the mass media.}
+\ExampleItem{Viele Informationen kommen aus ihnen.}{Much information comes from them.}
 \end{itemize}
 \end{exbox}
+
+\section{Typische Konstruktionen bei Schlussfolgerungen}
+
+\begin{grammarentry}{aus + Dativ + Folgerung}{besonders wichtige Verben}
+\GermanText{In dieser grammatischen Rolle steht \textbf{aus + Dativ} besonders häufig mit Verben und Konstruktionen, die eine \textbf{Folgerung oder Ableitung} ausdrücken.}
+\EnglishText{In this grammatical role, \textbf{aus + dative} is especially common with verbs and constructions that express an \textbf{inference or derivation}.}
+
+\GermanText{Wichtige Muster sind: \textbf{sich aus etwas ergeben}, \textbf{aus etwas folgen}, \textbf{aus etwas schließen}, \textbf{etwas aus etwas ableiten}.}
+\EnglishText{Important patterns are: \textbf{sich aus etwas ergeben} (to result from something), \textbf{aus etwas folgen} (to follow from something), \textbf{aus etwas schließen} (to infer from something), \textbf{etwas aus etwas ableiten} (to derive something from something).}
 \end{grammarentry}
 
-\section{Unterschied zwischen \textit{aus} und \textit{von}}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Aus den obigen Argumenten ergibt sich, dass mehrere Medien sinnvoll sind.}{It follows from the above arguments that multiple media outlets are useful.}
+\ExampleItem{Aus diesen Daten folgt, dass die Methode funktioniert.}{It follows from these data that the method works.}
+\ExampleItem{Aus seiner Antwort kann man schließen, dass er nicht einverstanden ist.}{From his answer one can infer that he does not agree.}
+\ExampleItem{Wir leiten diese Schlussfolgerung aus den Ergebnissen ab.}{We derive this conclusion from the results.}
+\end{itemize}
+\end{exbox}
+
+\section{Stellung der Präpositionalgruppe im Satz}
+
+\begin{grammarentry}{Präpositionalgruppe}{Vorfeld oder Mittelfeld}
+\GermanText{Die Präpositionalgruppe kann im \textbf{Vorfeld} stehen. Dann besetzt sie die erste Satzposition als eine Einheit; danach steht im Hauptsatz das finite Verb.}
+\EnglishText{The prepositional phrase can occupy the \textbf{prefield}. It then fills the first sentence position as one unit; in a main clause, the finite verb follows.}
+
+\GermanText{Sie kann auch im \textbf{Mittelfeld} stehen.}
+\EnglishText{It can also occur in the \textbf{middle field}.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Aus diesen Daten ergibt sich ein klares Bild.}{A clear picture emerges from these data.}
+\ExampleItem{Ein klares Bild ergibt sich aus diesen Daten.}{A clear picture emerges from these data.}
+\end{itemize}
+\end{exbox}
+
+\section{Unterschied zwischen \glqq aus\grqq und \glqq von\grqq}
 
 \begin{grammarentry}{aus vs. von}{from}
 \GermanText{\textbf{aus} benutzt man oft für Herkunft, Innenraum, Material oder Grund.}
@@ -183,49 +271,93 @@ ihnen & aus ihnen & from them / out of them \\
 
 \GermanText{\textbf{von} benutzt man oft für Personen, Orte als Startpunkt oder Besitz/Quelle.}
 \EnglishText{\textbf{von} is often used for people, places as a starting point, or possession/source.}
+\end{grammarentry}
 
 \begin{exbox}
 \begin{itemize}
-    \ExampleItem{Ich komme aus dem Iran.}{I come from Iran.}
-    \ExampleItem{Ich komme vom Arzt.}{I come from the doctor.}
-    \ExampleItem{Das Geschenk ist von meiner Schwester.}{The gift is from my sister.}
-    \ExampleItem{Der Tisch ist aus Holz.}{The table is made of wood.}
+\ExampleItem{Ich komme aus dem Iran.}{I come from Iran.}
+\ExampleItem{Ich komme vom Arzt.}{I come from the doctor.}
+\ExampleItem{Das Geschenk ist von meiner Schwester.}{The gift is from my sister.}
+\ExampleItem{Der Tisch ist aus Holz.}{The table is made of wood.}
 \end{itemize}
 \end{exbox}
+
+\section{Unterschied zwischen \glqq aus den Argumenten\grqq und \glqq nach den Argumenten\grqq}
+
+\begin{grammarentry}{aus = Ursprung der Folgerung}{nach = Bezugsrahmen}
+\GermanText{\textbf{Aus den Argumenten} bedeutet: Die Argumente sind der \textbf{Ursprung oder die Grundlage einer Folgerung}.}
+\EnglishText{\textbf{Aus den Argumenten} means: the arguments are the \textbf{source or basis of an inference}.}
+
+\GermanText{\textbf{Nach den Argumenten} bedeutet in der hier behandelten Verwendung: Die folgende Aussage wird \textbf{gemäß oder entsprechend diesem Bezugsrahmen} gemacht.}
+\EnglishText{\textbf{Nach den Argumenten}, in the use discussed here, means: the following statement is made \textbf{according to or in accordance with this frame of reference}.}
 \end{grammarentry}
 
-\section{\textit{aus} als Verbpräfix}
+\section{Warum dein ursprünglicher Satz mit \glqq aus\grqq problematisch war}
 
-\begin{grammarentry}{aus-}{separable verb prefix}
+\begin{grammarentry}{Semantische Verbindung}{Verb muss zur Quelle passen}
+\GermanText{Die Form \textbf{aus den obigen Argumenten} ist grammatisch korrekt. Das Problem entsteht, wenn danach einfach \glqq die sozialen Medien sind direkt verbunden ...\grqq folgt. Das Verb \textbf{sein / verbunden sein} drückt nicht aus, dass eine Schlussfolgerung \textbf{aus} den Argumenten entsteht.}
+\EnglishText{The form \textbf{aus den obigen Argumenten} is grammatically correct. The problem arises when it is followed simply by \textit{the social media are directly connected ...}. The verb \textbf{sein / verbunden sein} does not express that a conclusion arises \textbf{from} the arguments.}
+
+\GermanText{Wenn du \textbf{aus} behalten möchtest, brauchst du typischerweise eine Folgerungsstruktur, zum Beispiel: \glqq Aus den obigen Argumenten ergibt sich, dass ...\grqq.}
+\EnglishText{If you want to keep \textbf{aus}, you typically need an inference structure, for example: \textit{It follows from the above arguments that ...}.}
+\end{grammarentry}
+
+\section{Abgrenzung der Schlussfolgerungsrolle von anderen Verwendungen}
+
+\begin{grammarentry}{Nur diese eine Rolle}{innerhalb der speziellen Analyse}
+\GermanText{Bei der speziellen Analyse von \glqq aus den obigen Argumenten\grqq geht es nicht um räumliches \textbf{aus} wie in \glqq aus dem Haus kommen\grqq und nicht um Material wie in \glqq aus Holz\grqq.}
+\EnglishText{In the specific analysis of \textit{aus den obigen Argumenten}, the focus is not on spatial \textbf{aus} as in \textit{aus dem Haus kommen}, nor on material as in \textit{aus Holz}.}
+
+\GermanText{Dort wird ausschließlich die Verwendung betrachtet, in der \textbf{aus + Dativ} die \textbf{Quelle oder Grundlage einer Schlussfolgerung} bezeichnet. Die anderen Verwendungen sind in den vorherigen Abschnitten dieser Gesamtdokumentation enthalten.}
+\EnglishText{There, only the use in which \textbf{aus + dative} marks the \textbf{source or basis of an inference} is considered. The other uses are included in the preceding sections of this combined document.}
+\end{grammarentry}
+
+\section{Typische Fehler}
+
+\begin{grammarentry}{Fehler vermeiden}{B1-relevant}
+\GermanText{Falsch: \textbf{aus die Argumente}. Richtig: \textbf{aus den Argumenten}. Grund: \textbf{aus} verlangt den Dativ.}
+\EnglishText{Wrong: \textbf{aus die Argumente}. Correct: \textbf{aus den Argumenten}. Reason: \textbf{aus} requires the dative.}
+
+\GermanText{Falsch: \textbf{aus den obige Argumenten}. Richtig: \textbf{aus den obigen Argumenten}. Grund: Nach \textbf{den} bekommt das Adjektiv im Dativ Plural die schwache Endung \textbf{-en}.}
+\EnglishText{Wrong: \textbf{aus den obige Argumenten}. Correct: \textbf{aus den obigen Argumenten}. Reason: after \textbf{den}, the adjective takes the weak ending \textbf{-en} in dative plural.}
+\end{grammarentry}
+
+\section{\glqq aus-\grqq als Verbpräfix}
+
+\begin{grammarentry}{aus-}{trennbares Verbpräfix}
 \GermanText{\textbf{aus-} kann auch ein trennbares Verbpräfix sein.}
 \EnglishText{\textbf{aus-} can also be a separable verb prefix.}
+\end{grammarentry}
 
 \begin{exbox}
 \begin{itemize}
-    \ExampleItem{Ich schalte das Licht aus.}{I turn off the light.}
-    \ExampleItem{Er geht heute Abend aus.}{He goes out this evening.}
-    \ExampleItem{Der Kurs fällt aus.}{The course is cancelled.}
+\ExampleItem{Ich schalte das Licht aus.}{I turn off the light.}
+\ExampleItem{Er geht heute Abend aus.}{He goes out this evening.}
+\ExampleItem{Der Kurs fällt aus.}{The course is cancelled.}
 \end{itemize}
 \end{exbox}
-\end{grammarentry}
 
-\section{Kurze Zusammenfassung}
+\section{Zusammenfassung}
 
-\begin{grammarentry}{aus}{summary}
+\begin{grammarentry}{aus}{Kurzfassung}
 \GermanText{\textbf{aus} ist eine Präposition mit Dativ.}
 \EnglishText{\textbf{aus} is a preposition with dative.}
 
-\GermanText{Hauptbedeutungen: Herkunft, Bewegung von innen nach außen, Material, Grund/Motiv.}
-\EnglishText{Main meanings: origin, movement from inside to outside, material, reason/motive.}
+\GermanText{Hauptbedeutungen: \textbf{Herkunft, Bewegung von innen nach außen, Material, Grund/Motiv}. Zusätzlich kann \textbf{aus + Dativ} die \textbf{Quelle oder Grundlage einer Schlussfolgerung} bezeichnen.}
+\EnglishText{Main meanings: \textbf{origin, movement from inside to outside, material, reason/motive}. In addition, \textbf{aus + dative} can mark the \textbf{source or basis of an inference}.}
+
+\GermanText{Merksatz für die Schlussfolgerungsrolle: \textbf{aus + Dativ = aus einer Grundlage heraus / from / on the basis of}. Die ganze Präpositionalgruppe nennt die Quelle oder den Ausgangspunkt einer Folgerung.}
+\EnglishText{Rule to remember for the inference use: \textbf{aus + dative = from / on the basis of}. The whole prepositional phrase names the source or starting point of an inference.}
+\end{grammarentry}
 
 \begin{exbox}
 \begin{itemize}
-    \ExampleItem{aus dem Haus}{out of the house}
-    \ExampleItem{aus Österreich}{from Austria}
-    \ExampleItem{aus Holz}{made of wood}
-    \ExampleItem{aus Angst}{out of fear}
+\ExampleItem{aus dem Haus}{out of the house}
+\ExampleItem{aus Österreich}{from Austria}
+\ExampleItem{aus Holz}{made of wood}
+\ExampleItem{aus Angst}{out of fear}
+\ExampleItem{Aus diesen Daten folgt, dass die Methode funktioniert.}{It follows from these data that the method works.}
 \end{itemize}
 \end{exbox}
-\end{grammarentry}
 
 \end{document}

@@ -1,0 +1,101 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\titleformat{\section}[block]{\Large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+\titleformat{\subsection}[block]{\large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+\begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+#3
+\end{tcolorbox}}{}
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+
+\title{Hinweis: \glqq wann\grqq{} und Relativsätze}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+\section{Grundregel}
+
+\begin{grammarentry}{wann}{Interrogativadverb, normalerweise kein Relativpronomen}
+
+\GermanText{\textbf{wann} fragt nach einem Zeitpunkt und leitet sehr häufig indirekte Fragesätze ein: \textbf{Ich weiß nicht, wann er kommt.}}
+
+\EnglishText{\textbf{wann} asks about a point in time and very often introduces indirect questions: \textbf{Ich weiß nicht, wann er kommt.}}
+
+\GermanText{In neutraler Standardsprache benutzt man \textbf{wann} normalerweise nicht als Relativpronomen nach einem konkreten Zeitnomen.}
+
+\EnglishText{In neutral standard German, \textbf{wann} is normally not used as a relative pronoun after a concrete time noun.}
+
+\end{grammarentry}
+
+\section{Für Relativsätze über Zeit}
+
+\begin{grammarentry}{an dem / in dem / zu dem}{sichere Standardformen}
+
+\GermanText{Statt \glqq der Tag, wann ...\grqq{} sagt man normalerweise \textbf{der Tag, an dem ...}.}
+
+\EnglishText{Instead of \glqq der Tag, wann ...\grqq{}, standard German normally says \textbf{der Tag, an dem ...}.}
+
+\GermanText{Statt \glqq die Zeit, wann ...\grqq{} sagt man je nach Bedeutung häufig \textbf{die Zeit, in der ...} oder \textbf{der Zeitpunkt, an dem ...}.}
+
+\EnglishText{Instead of \glqq die Zeit, wann ...\grqq{}, German often says \textbf{die Zeit, in der ...} or \textbf{der Zeitpunkt, an dem ...}.}
+
+\end{grammarentry}
+
+\section{Beispiele}
+
+\begin{exbox}
+
+\begin{itemize}
+
+\ExampleItem{Ich weiß nicht, wann der Kurs beginnt.}{I do not know when the course begins.}
+
+\ExampleItem{Der Tag, an dem wir uns kennengelernt haben, war sehr heiß.}{The day on which we met was very hot.}
+
+\ExampleItem{Das war die Zeit, in der ich in Graz lebte.}{That was the time when I lived in Graz.}
+
+\end{itemize}
+
+\end{exbox}
+
+\section{Merksatz}
+
+\begin{grammarentry}{wann}{kurz und wichtig}
+
+\GermanText{\textbf{wann} = vor allem Fragewort/Interrogativadverb. Für echte Relativsätze mit Zeit-Bezugsnomen sind \textbf{an dem, in dem, zu dem} usw. die sicheren Standardformen.}
+
+\EnglishText{\textbf{wann} = mainly an interrogative word/adverb. For true relative clauses with a time antecedent, \textbf{an dem, in dem, zu dem}, etc. are the safe standard forms.}
+
+\end{grammarentry}
+
+\end{document}
