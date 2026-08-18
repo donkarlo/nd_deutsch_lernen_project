@@ -1,0 +1,371 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{5pt}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\addto\captionsenglish{\renewcommand{\contentsname}{Inhalt / Contents}}
+\title{Der Nominativ\\\large \textnormal{The Nominative Case}}
+\date{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Grundidee \textnormal{(Basic idea)}}
+
+\begin{grammarentry}{Nominativ}{Kasus / case}
+\GermanText{Der \textbf{Nominativ} ist einer der vier Kasus im Deutschen: Nominativ, Akkusativ, Dativ und Genitiv. Ein Kasus ist eine grammatische Form einer Nomengruppe oder eines Pronomens.}
+\EnglishText{The \textbf{nominative} is one of the four German cases: nominative, accusative, dative and genitive. A case is a grammatical form of a noun phrase or pronoun.}
+
+\GermanText{Der wichtigste Gebrauch des Nominativs ist das \textbf{Subjekt}. Trotzdem sind \textbf{Nominativ} und \textbf{Subjekt} nicht dasselbe: Nominativ ist ein Kasus; Subjekt ist eine Satzfunktion.}
+\EnglishText{The most important use of the nominative is the \textbf{subject}. However, \textbf{nominative} and \textbf{subject} are not the same thing: nominative is a case; subject is a syntactic function.}
+\end{grammarentry}
+
+\begin{grammarentry}{Drei Ebenen}{Wortart, Kasus, Satzfunktion / word class, case, syntactic function}
+\GermanText{Beim Analysieren eines Satzes muss man drei verschiedene Ebenen auseinanderhalten: \textbf{Wortart}, \textbf{Kasus} und \textbf{Satzfunktion}. Diese Trennung entspricht dem Prinzip in deinen hochgeladenen Grammatikunterlagen.}
+\EnglishText{When analysing a sentence, three different levels must be kept separate: \textbf{word class}, \textbf{case} and \textbf{syntactic function}. This distinction follows the principle used in your uploaded grammar material.}
+
+\GermanText{Beispiel: \glqq Der Mann sieht den Hund.\grqq{} -- \textbf{der Mann} ist eine Nomengruppe, hat die Satzfunktion \textbf{Subjekt} und steht im \textbf{Nominativ}.}
+\EnglishText{Example: ``Der Mann sieht den Hund.'' -- \textbf{der Mann} is a noun phrase, has the syntactic function \textbf{subject}, and is in the \textbf{nominative}.}
+\end{grammarentry}
+
+\section{Der Nominativ als Subjekt \textnormal{(The nominative as subject)}}
+
+\begin{grammarentry}{Hauptregel}{Wer? / Was?}
+\GermanText{Das Subjekt eines normalen deutschen Satzes steht im Nominativ. Um es zu finden, fragt man oft: \textbf{Wer?} oder \textbf{Was?} + Verb.}
+\EnglishText{The subject of a normal German sentence is in the nominative. To find it, one often asks: \textbf{Who?} or \textbf{What?} + verb.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Der Mann arbeitet. -- Wer arbeitet? Der Mann.}{The man works. -- Who works? The man.}
+\ExampleItem{Die Kinder spielen. -- Wer spielt? Die Kinder.}{The children are playing. -- Who is playing? The children.}
+\ExampleItem{Das Auto steht vor dem Haus. -- Was steht vor dem Haus? Das Auto.}{The car is in front of the house. -- What is in front of the house? The car.}
+\end{itemize}
+\end{exbox}
+
+\section{Nominativ ist nicht dasselbe wie Subjekt \textnormal{(Nominative is not the same as subject)}}
+
+\begin{grammarentry}{Kasus gegen Satzfunktion}{Der entscheidende Unterschied / the crucial difference}
+\GermanText{\textbf{Nominativ} beschreibt die grammatische Form. \textbf{Subjekt} beschreibt die Rolle eines Satzteils im Satz. Ein Subjekt steht im Nominativ, aber ein Nominativ muss nicht immer das Subjekt sein.}
+\EnglishText{\textbf{Nominative} describes the grammatical form. \textbf{Subject} describes the role of a phrase in the sentence. A subject is in the nominative, but a nominative does not always have to be the subject.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Er ist ein Lehrer.}{He is a teacher.}
+\ExampleItem{Er = Subjekt + Nominativ.}{Er = subject + nominative.}
+\ExampleItem{ein Lehrer = Prädikativ + Nominativ.}{ein Lehrer = predicative complement + nominative.}
+\end{itemize}
+\end{exbox}
+
+\section{Prädikativnominativ mit sein, werden und bleiben \textnormal{(Predicative nominative with sein, werden and bleiben)}}
+
+\begin{grammarentry}{sein -- werden -- bleiben}{zweiter Nominativ / second nominative}
+\GermanText{Bei \textbf{sein}, \textbf{werden} und \textbf{bleiben} kann eine Nomengruppe nach dem Verb ebenfalls im Nominativ stehen. Sie ist dann kein Akkusativobjekt, sondern ein \textbf{Prädikativ}.}
+\EnglishText{With \textbf{sein}, \textbf{werden} and \textbf{bleiben}, a noun phrase after the verb can also be in the nominative. It is then not an accusative object, but a \textbf{predicative complement}.}
+
+\GermanText{Merksatz: \textbf{sein, werden, bleiben} verbinden häufig zwei Ausdrücke im Nominativ.}
+\EnglishText{Memory rule: \textbf{sein, werden, bleiben} often connect two expressions in the nominative.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Das ist ihre Tochter.}{That is her daughter.}
+\ExampleItem{Er wird Arzt.}{He becomes a doctor.}
+\ExampleItem{Sie bleibt meine Freundin.}{She remains my friend.}
+\end{itemize}
+\end{exbox}
+
+\begin{grammarentry}{Analyse deines Beispiels}{Das ist ihre Tochter. / That is her daughter.}
+\GermanText{\textbf{Das} = Subjekt, Nominativ. \textbf{ihre Tochter} = Prädikativ, ebenfalls Nominativ. \textbf{Tochter} ist feminin; deshalb hat der Possessivartikel im Nominativ Singular die Form \textbf{ihre}.}
+\EnglishText{\textbf{Das} = subject, nominative. \textbf{ihre Tochter} = predicative complement, also nominative. \textbf{Tochter} is feminine; therefore the possessive article in nominative singular has the form \textbf{ihre}.}
+\end{grammarentry}
+
+\section{Artikel im Nominativ \textnormal{(Articles in the nominative)}}
+
+\subsection{Bestimmter, unbestimmter und negativer Artikel \textnormal{(Definite, indefinite and negative articles)}}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{4.1cm}|>{\centering\arraybackslash}p{2.5cm}>{\centering\arraybackslash}p{2.5cm}>{\centering\arraybackslash}p{2.5cm}>{\centering\arraybackslash}p{2.5cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Typ / Type} &
+\color{white}\textbf{Maskulin / Masculine} &
+\color{white}\textbf{Feminin / Feminine} &
+\color{white}\textbf{Neutrum / Neuter} &
+\color{white}\textbf{Plural / Plural} \\
+Bestimmter Artikel / Definite article & der & die & das & die \\
+Unbestimmter Artikel / Indefinite article & ein & eine & ein & -- \\
+Negativartikel / Negative article & kein & keine & kein & keine \\
+\end{longtable}
+
+\begin{grammarentry}{Wichtig}{Formen aus deiner Artikeltabelle / forms from your article table}
+\GermanText{Der unbestimmte Artikel hat keinen Plural. Im Nominativ Maskulin sieht man den Unterschied zum Akkusativ besonders gut: \textbf{der Mann} / \textbf{ein Mann} im Nominativ, aber \textbf{den Mann} / \textbf{einen Mann} im Akkusativ.}
+\EnglishText{The indefinite article has no plural. In masculine nominative the difference from the accusative is especially clear: \textbf{der Mann} / \textbf{ein Mann} in the nominative, but \textbf{den Mann} / \textbf{einen Mann} in the accusative.}
+\end{grammarentry}
+
+\section{Personalpronomen im Nominativ \textnormal{(Personal pronouns in the nominative)}}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{3.0cm}|*{9}{>{\centering\arraybackslash}p{1.05cm}}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Person / Person} &
+\color{white}\textbf{ich} &
+\color{white}\textbf{du} &
+\color{white}\textbf{er} &
+\color{white}\textbf{sie} &
+\color{white}\textbf{es} &
+\color{white}\textbf{wir} &
+\color{white}\textbf{ihr} &
+\color{white}\textbf{sie} &
+\color{white}\textbf{Sie} \\
+Nominativ / Nominative & ich & du & er & sie & es & wir & ihr & sie & Sie \\
+\end{longtable}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich lerne Deutsch.}{I learn German.}
+\ExampleItem{Er arbeitet heute.}{He is working today.}
+\ExampleItem{Sie kommen aus Österreich.}{You come from Austria. / They come from Austria, depending on capitalization and context.}
+\end{itemize}
+\end{exbox}
+
+\section{Possessivartikel im Nominativ \textnormal{(Possessive articles in the nominative)}}
+
+\begin{grammarentry}{Grundmuster}{mein-, dein-, sein-, ihr- usw. / mein-, dein-, sein-, ihr-, etc.}
+\GermanText{Possessivartikel wie \textbf{mein, dein, sein, ihr, unser, euer} werden nach Genus, Numerus und Kasus des folgenden Nomens dekliniert. Der Stamm zeigt den Besitzer; die Endung richtet sich nach der grammatischen Form der Nomengruppe.}
+\EnglishText{Possessive articles such as \textbf{mein, dein, sein, ihr, unser, euer} are declined according to the gender, number and case of the following noun. The stem indicates the possessor; the ending follows the grammatical form of the noun phrase.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{4.0cm}|>{\centering\arraybackslash}p{2.8cm}>{\centering\arraybackslash}p{2.8cm}>{\centering\arraybackslash}p{2.8cm}>{\centering\arraybackslash}p{2.8cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Nominativ / Nominative} &
+\color{white}\textbf{Maskulin} &
+\color{white}\textbf{Feminin} &
+\color{white}\textbf{Neutrum} &
+\color{white}\textbf{Plural} \\
+ihr- als Beispiel / ihr- as example & ihr Sohn & ihre Tochter & ihr Kind & ihre Kinder \\
+mein- als Beispiel / mein- as example & mein Sohn & meine Tochter & mein Kind & meine Kinder \\
+\end{longtable}
+
+\section{Adjektivendungen im Nominativ \textnormal{(Adjective endings in the nominative)}}
+
+\begin{grammarentry}{Drei Muster}{stark, schwach, gemischt / strong, weak, mixed}
+\GermanText{Deine hochgeladenen Tabellen unterscheiden drei wichtige Muster: \textbf{starke}, \textbf{schwache} und \textbf{gemischte} Adjektivdeklination. Im Nominativ hängen die Endungen davon ab, ob und welcher Artikel vor dem Adjektiv steht.}
+\EnglishText{Your uploaded tables distinguish three important patterns: \textbf{strong}, \textbf{weak} and \textbf{mixed} adjective declension. In the nominative, the endings depend on whether an article is present and which article it is.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{3.5cm}|>{\raggedright\arraybackslash}p{3.2cm}>{\raggedright\arraybackslash}p{3.2cm}>{\raggedright\arraybackslash}p{3.2cm}>{\raggedright\arraybackslash}p{3.2cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Typ / Type} &
+\color{white}\textbf{Maskulin} &
+\color{white}\textbf{Feminin} &
+\color{white}\textbf{Neutrum} &
+\color{white}\textbf{Plural} \\
+Stark / Strong & guter Mann & gute Frau & gutes Kind & gute Leute \\
+Schwach / Weak & der gute Mann & die gute Frau & das gute Kind & die guten Leute \\
+Gemischt / Mixed & ein guter Mann & eine gute Frau & ein gutes Kind & keine guten Leute \\
+\end{longtable}
+
+\begin{grammarentry}{B1-Merksatz}{Artikel trägt Information / article carries information}
+\GermanText{Wenn der Artikel Genus, Kasus und Numerus klar zeigt, ist die Adjektivendung meist schwächer. Wenn kein Artikel da ist oder \textbf{ein} keine klare Endung zeigt, trägt das Adjektiv mehr grammatische Information.}
+\EnglishText{If the article clearly shows gender, case and number, the adjective ending is usually weaker. If there is no article, or \textbf{ein} has no clear ending, the adjective carries more grammatical information.}
+\end{grammarentry}
+
+\section{Relativpronomen im Nominativ \textnormal{(Relative pronouns in the nominative)}}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{4.0cm}|>{\centering\arraybackslash}p{2.8cm}>{\centering\arraybackslash}p{2.8cm}>{\centering\arraybackslash}p{2.8cm}>{\centering\arraybackslash}p{2.8cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Kasus / Case} &
+\color{white}\textbf{Maskulin} &
+\color{white}\textbf{Feminin} &
+\color{white}\textbf{Neutrum} &
+\color{white}\textbf{Plural} \\
+Nominativ / Nominative & der & die & das & die \\
+\end{longtable}
+
+\begin{grammarentry}{Wie bestimmt man den Kasus?}{Rolle im Relativsatz / role inside the relative clause}
+\GermanText{Der Kasus des Relativpronomens wird durch seine Funktion \textbf{im Relativsatz} bestimmt. Wenn das Relativpronomen dort das Subjekt ist, steht es im Nominativ.}
+\EnglishText{The case of a relative pronoun is determined by its function \textbf{inside the relative clause}. If the relative pronoun is the subject there, it is in the nominative.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Das ist der Mann, der hier arbeitet.}{That is the man who works here.}
+\ExampleItem{der = Subjekt des Relativsatzes + Nominativ.}{der = subject of the relative clause + nominative.}
+\end{itemize}
+\end{exbox}
+
+\section{Demonstrativ- und Fragepronomen im Nominativ \textnormal{(Demonstrative and interrogative pronouns in the nominative)}}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{4.1cm}|>{\centering\arraybackslash}p{2.6cm}>{\centering\arraybackslash}p{2.6cm}>{\centering\arraybackslash}p{2.6cm}>{\centering\arraybackslash}p{2.6cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Form / Form} &
+\color{white}\textbf{Maskulin} &
+\color{white}\textbf{Feminin} &
+\color{white}\textbf{Neutrum} &
+\color{white}\textbf{Plural} \\
+dieser / this & dieser & diese & dieses / dies & diese \\
+jener / that & jener & jene & jenes & jene \\
+welcher / which & welcher & welche & welches & welche \\
+\end{longtable}
+
+\section{Nominativ und Wortstellung \textnormal{(Nominative and word order)}}
+
+\begin{grammarentry}{Nicht automatisch das erste Wort}{Position ist nicht Kasus / position is not case}
+\GermanText{Der Nominativ muss nicht am Satzanfang stehen. Die Wortstellung allein bestimmt den Kasus nicht.}
+\EnglishText{The nominative does not have to be at the beginning of the sentence. Word order alone does not determine case.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Heute sieht der Mann den Hund.}{Today the man sees the dog.}
+\ExampleItem{Den Hund sieht der Mann.}{The man sees the dog.}
+\ExampleItem{In beiden Sätzen ist der Mann das Subjekt und steht im Nominativ.}{In both sentences, der Mann is the subject and is in the nominative.}
+\end{itemize}
+\end{exbox}
+
+\section{Warum Nominativ und Akkusativ manchmal gleich aussehen \textnormal{(Why nominative and accusative sometimes look the same)}}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{4.0cm}|>{\centering\arraybackslash}p{4.8cm}>{\centering\arraybackslash}p{4.8cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Genus / Gender} &
+\color{white}\textbf{Nominativ / Nominative} &
+\color{white}\textbf{Akkusativ / Accusative} \\
+Maskulin / Masculine & der Mann & den Mann \\
+Feminin / Feminine & die Frau & die Frau \\
+Neutrum / Neuter & das Kind & das Kind \\
+Plural / Plural & die Kinder & die Kinder \\
+\end{longtable}
+
+\begin{grammarentry}{Folge}{Form allein reicht nicht immer / form alone is not always enough}
+\GermanText{Bei Feminin, Neutrum und Plural können Nominativ und Akkusativ äußerlich gleich aussehen. Deshalb muss man zusätzlich die Satzfunktion und das Verb beachten.}
+\EnglishText{With feminine, neuter and plural forms, nominative and accusative can look identical. Therefore, you must also consider the syntactic function and the verb.}
+\end{grammarentry}
+
+\section{Verbkongruenz mit dem Subjekt \textnormal{(Verb agreement with the subject)}}
+
+\begin{grammarentry}{Subjekt bestimmt die Verbform}{Numerus und Person / number and person}
+\GermanText{Das Subjekt im Nominativ bestimmt normalerweise Person und Numerus des finiten Verbs.}
+\EnglishText{The subject in the nominative normally determines the person and number of the finite verb.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Der Mann arbeitet.}{The man works.}
+\ExampleItem{Die Männer arbeiten.}{The men work.}
+\ExampleItem{Der Mann sieht die Kinder. -- Das Verb steht im Singular, weil das Subjekt der Mann Singular ist.}{The man sees the children. -- The verb is singular because the subject der Mann is singular.}
+\end{itemize}
+\end{exbox}
+
+\section{Nominativ im Passiv \textnormal{(Nominative in the passive)}}
+
+\begin{grammarentry}{Akkusativobjekt wird zum Subjekt}{didaktische Ergänzung / didactic supplement}
+\GermanText{Im Passiv kann das Akkusativobjekt des Aktivsatzes zum Subjekt des Passivsatzes werden und steht dann im Nominativ.}
+\EnglishText{In the passive, the accusative object of the active sentence can become the subject of the passive sentence and is then in the nominative.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Aktiv: Der Mann schreibt den Brief.}{Active: The man writes the letter.}
+\ExampleItem{Passiv: Der Brief wird geschrieben.}{Passive: The letter is being written.}
+\end{itemize}
+\end{exbox}
+
+\section{Eine praktische Methode zur Satzanalyse \textnormal{(A practical method for sentence analysis)}}
+
+\begin{grammarentry}{Schritt für Schritt}{B1-Methode / B1 method}
+\GermanText{\textbf{1.} Finde zuerst das finite Verb. \textbf{2.} Frage: Wer oder was macht, ist oder wird etwas? Das ist normalerweise das Subjekt. \textbf{3.} Das Subjekt steht im Nominativ. \textbf{4.} Prüfe danach andere Satzteile getrennt. \textbf{5.} Bei sein, werden und bleiben prüfe, ob ein Prädikativ im Nominativ folgt.}
+\EnglishText{\textbf{1.} First find the finite verb. \textbf{2.} Ask: Who or what does, is, or becomes something? That is normally the subject. \textbf{3.} The subject is in the nominative. \textbf{4.} Then analyse the other sentence parts separately. \textbf{5.} With sein, werden and bleiben, check whether a predicative complement in the nominative follows.}
+\end{grammarentry}
+
+\section{Typische Fehler \textnormal{(Typical mistakes)}}
+
+\begin{grammarentry}{Fehler vermeiden}{B1-relevant}
+\GermanText{\textbf{Fehler 1:} Nominativ und Subjekt als Synonyme behandeln. Richtig: Subjekt = Satzfunktion; Nominativ = Kasus.}
+\EnglishText{\textbf{Mistake 1:} Treating nominative and subject as synonyms. Correct: subject = syntactic function; nominative = case.}
+
+\GermanText{\textbf{Fehler 2:} Nach \textbf{sein} automatisch ein Akkusativobjekt erwarten. Richtig: \glqq Er ist ein Mann.\grqq{} -- \textbf{ein Mann} steht im Nominativ.}
+\EnglishText{\textbf{Mistake 2:} Automatically expecting an accusative object after \textbf{sein}. Correct: ``Er ist ein Mann.'' -- \textbf{ein Mann} is in the nominative.}
+
+\GermanText{\textbf{Fehler 3:} Das erste Wort im Satz automatisch als Subjekt betrachten. Richtig: Die Wortstellung allein bestimmt die Satzfunktion nicht.}
+\EnglishText{\textbf{Mistake 3:} Automatically treating the first word of the sentence as the subject. Correct: word order alone does not determine syntactic function.}
+
+\GermanText{\textbf{Fehler 4:} Nur auf die Artikeloberfläche schauen. Bei \textbf{die Frau} oder \textbf{das Kind} können Nominativ und Akkusativ gleich aussehen.}
+\EnglishText{\textbf{Mistake 4:} Looking only at the visible article form. With \textbf{die Frau} or \textbf{das Kind}, nominative and accusative can look the same.}
+\end{grammarentry}
+
+\section{Zusammenfassung \textnormal{(Summary)}}
+
+\begin{grammarentry}{Merksätze}{kurz und wichtig / short and important}
+\GermanText{\textbf{1. Nominativ = Kasus, nicht Satzrolle.}}
+\EnglishText{\textbf{1. Nominative = case, not a syntactic role.}}
+
+\GermanText{\textbf{2. Das Subjekt steht normalerweise im Nominativ.}}
+\EnglishText{\textbf{2. The subject is normally in the nominative.}}
+
+\GermanText{\textbf{3. Wer? / Was? hilft oft, das Subjekt zu finden.}}
+\EnglishText{\textbf{3. Who? / What? often helps to find the subject.}}
+
+\GermanText{\textbf{4. Bei sein, werden und bleiben kann ein zweiter Nominativ als Prädikativ stehen.}}
+\EnglishText{\textbf{4. With sein, werden and bleiben, a second nominative can occur as a predicative complement.}}
+
+\GermanText{\textbf{5. Artikel, Pronomen und Adjektive zeigen den Nominativ durch ihre Formen bzw. Endungen.}}
+\EnglishText{\textbf{5. Articles, pronouns and adjectives show the nominative through their forms or endings.}}
+
+\GermanText{\textbf{6. Die Position im Satz bestimmt den Kasus nicht.}}
+\EnglishText{\textbf{6. Position in the sentence does not determine case.}}
+\end{grammarentry}
+
+\end{document}

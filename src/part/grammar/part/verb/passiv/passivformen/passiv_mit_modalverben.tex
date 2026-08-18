@@ -1,0 +1,94 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[table]{xcolor}
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{5pt}
+\titleformat{\section}[block]{\Large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+\titleformat{\subsection}[block]{\large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+\begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+#3
+\end{tcolorbox}}{}
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\newcommand{\DEEN}[2]{\textbf{#1}\par{\footnotesize\color{SoftGray}#2}}
+\title{Passiv mit Modalverben\\[0.3em]\large\textnormal{Passive with modal verbs}}
+\date{}
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Grundbildung -- Basic formation}
+\begin{grammarentry}{Modalverb + Partizip II + werden}{Modal verb + past participle + werden}
+\GermanText{Im Hauptsatz steht das konjugierte Modalverb an Position 2. Am Satzende stehen \textbf{Partizip II + werden}.}
+\EnglishText{In a main clause, the conjugated modal verb stands in position 2. At the end stand \textbf{past participle + werden}.}
+\GermanText{Beispiel: \textbf{Die Aufgabe muss gemacht werden.}}
+\EnglishText{Example: \textbf{The task must be done.}}
+\end{grammarentry}
+
+\section{Modalverben -- Modal verbs}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Das Problem kann gelöst werden.}{The problem can be solved.}
+\ExampleItem{Die Rechnung muss bezahlt werden.}{The bill must be paid.}
+\ExampleItem{Die Tür darf nicht geöffnet werden.}{The door may not be opened.}
+\ExampleItem{Der Antrag soll heute geprüft werden.}{The application is supposed to be checked today.}
+\ExampleItem{Das Formular muss ausgefüllt werden.}{The form must be filled out.}
+\end{itemize}\end{exbox}
+
+\section{Wortstellung -- Word order}
+\begin{grammarentry}{Hauptsatz}{Main clause}
+\GermanText{\textbf{Die Aufgabe muss heute gemacht werden.} Das Modalverb ist konjugiert; \textbf{gemacht werden} steht am Ende.}
+\EnglishText{\textbf{The task must be done today.} The modal verb is conjugated; \textbf{gemacht werden} stands at the end.}
+\end{grammarentry}
+\begin{grammarentry}{Nebensatz}{Subordinate clause}
+\GermanText{Im Nebensatz steht das konjugierte Modalverb am Ende: \textbf{..., weil die Aufgabe heute gemacht werden muss.}}
+\EnglishText{In a subordinate clause, the conjugated modal verb stands at the end: \textbf{..., because the task must be done today.}}
+\end{grammarentry}
+
+\section{Zeitformen -- Tenses}
+\begin{grammarentry}{Präsens und Präteritum}{Present and simple past}
+\GermanText{Präsens: \textbf{Die Aufgabe muss gemacht werden.} Präteritum: \textbf{Die Aufgabe musste gemacht werden.}}
+\EnglishText{Present: \textbf{The task must be done.} Simple past: \textbf{The task had to be done.}}
+\end{grammarentry}
+\begin{grammarentry}{Perfekt -- fortgeschritten}{Perfect -- advanced}
+\GermanText{Im Perfekt entsteht eine Ersatzinfinitiv-Konstruktion: \textbf{Die Aufgabe hat gemacht werden müssen.} Diese Form ist korrekt, aber für B1 nicht besonders wichtig und wird häufig vermieden.}
+\EnglishText{In the perfect tense, a substitute-infinitive construction is formed: \textbf{The task had to be done.} This form is correct, but it is not especially important at B1 level and is often avoided.}
+\end{grammarentry}
+
+\section{Aktiv und Passiv -- Active and passive}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Aktiv: Man muss die Rechnung bezahlen.}{Active: One must pay the bill.}
+\ExampleItem{Passiv: Die Rechnung muss bezahlt werden.}{Passive: The bill must be paid.}
+\end{itemize}\end{exbox}
+
+\section{Merksatz -- Key rule}
+\begin{grammarentry}{Kurz}{In short}
+\GermanText{\textbf{Modalverb + Partizip II + werden}. Im Nebensatz kommt das konjugierte Modalverb ganz ans Ende.}
+\EnglishText{\textbf{Modal verb + past participle + werden}. In a subordinate clause, the conjugated modal verb goes to the very end.}
+\end{grammarentry}
+\end{document}

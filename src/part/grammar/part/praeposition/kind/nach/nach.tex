@@ -1,0 +1,617 @@
+% Grammatikerklaerung: nach
+% Erstellt nach der hochgeladenen Erklaerungsvorlage.
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{5pt}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Die Präposition und das Wort \glqq nach\grqq}
+\date{}
+
+\begin{document}
+    \maketitle
+    \setcounter{tocdepth}{1}
+    \tableofcontents
+    \newpage
+
+    \section{Grundbedeutungen und Wortarten}
+
+        \begin{grammarentry}{nach}{Präposition, Adverbteil, Verbpräfix}
+            \GermanText{\textbf{nach} hat mehrere wichtige Funktionen. Als Präposition verlangt es grundsätzlich den \textbf{Dativ}. Es kann Zeit, Richtung, Quelle/Grundlage, Kriterium, Reihenfolge oder Orientierung ausdrücken.}
+            \EnglishText{\textbf{nach} has several important functions. As a preposition it basically governs the \textbf{dative}. It can express time, direction, source/basis, criterion, order, or orientation.}
+
+            \GermanText{Außerdem erscheint \textbf{nach} in festen Wendungen, als nachgestellte Präposition, in Pronominaladverbien wie \textbf{danach} und \textbf{wonach} und als meist trennbares Verbpräfix \textbf{nach-}.}
+            \EnglishText{It also appears in fixed expressions, as a postposition, in pronominal adverbs such as \textbf{danach} and \textbf{wonach}, and as the usually separable verbal prefix \textbf{nach-}.}
+        \end{grammarentry}
+
+
+    \section{Der Kasus: nach + Dativ}
+
+        \begin{grammarentry}{Grundregel}{nach regiert den Dativ}
+            \GermanText{Wenn \textbf{nach} eine Präposition ist und ein Nomen oder Pronomen bei sich hat, steht dieses normalerweise im \textbf{Dativ}.}
+            \EnglishText{When \textbf{nach} is a preposition and is followed by a noun or pronoun, that element normally stands in the \textbf{dative}.}
+
+            \GermanText{Merksatz: \textbf{nach + Dativ}.}
+            \EnglishText{Rule to remember: \textbf{nach + dative}.}
+        \end{grammarentry}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{2.8cm}|p{3.2cm}|p{3.4cm}|p{4.5cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Form} &
+            \color{white}\textbf{Dativ} &
+            \color{white}\textbf{mit nach} &
+            \color{white}\textbf{Beispiel} \\
+            Maskulin & dem & nach dem & nach dem Unterricht \\
+            Feminin & der & nach der & nach der Arbeit \\
+            Neutrum & dem & nach dem & nach dem Essen \\
+            Plural & den + meist -n am Nomen & nach den & nach den Ferien / nach den Argumenten \\
+        \end{longtable}
+
+        \begin{grammarentry}{Plural im Dativ}{zusätzliche -n-Regel}
+            \GermanText{Im Dativ Plural bekommt das Nomen meistens zusätzlich ein \textbf{-n}, wenn die Pluralform nicht schon auf \textbf{-n} oder \textbf{-s} endet: \textbf{nach den Argumenten}, \textbf{nach den Kindern}, aber \textbf{nach den Autos}.}
+            \EnglishText{In the dative plural, the noun usually gets an additional \textbf{-n} if the plural form does not already end in \textbf{-n} or \textbf{-s}: \textbf{nach den Argumenten}, \textbf{nach den Kindern}, but \textbf{nach den Autos}.}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Pronomen}{Personalpronomen im Dativ}
+            \GermanText{Mit Personalpronomen: \textbf{nach mir, nach dir, nach ihm, nach ihr, nach uns, nach euch, nach ihnen, nach Ihnen}.}
+            \EnglishText{With personal pronouns: \textbf{after me, after you, after him, after her, after us, after you, after them, after you}.}
+        \end{grammarentry}
+
+
+    \section{Richtung und Ziel}
+
+        \subsection{Städte, Länder und Kontinente ohne Artikel}
+
+        \begin{grammarentry}{nach + Ortsname}{Wohin?}
+            \GermanText{Für eine Bewegung zu einer \textbf{Stadt}, einem \textbf{Kontinent} oder einem \textbf{Land ohne Artikel} benutzt man normalerweise \textbf{nach}.}
+            \EnglishText{For movement to a \textbf{city}, a \textbf{continent}, or a \textbf{country without an article}, German normally uses \textbf{nach}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich fahre nach Wien.}{I am going to Vienna.}
+                \ExampleItem{Wir fliegen nach Deutschland.}{We are flying to Germany.}
+                \ExampleItem{Sie reist nach Asien.}{She is travelling to Asia.}
+                \ExampleItem{Der Zug fährt von Graz nach Salzburg.}{The train goes from Graz to Salzburg.}
+            \end{itemize}
+        \end{exbox}
+
+        \subsection{Länder mit Artikel: normalerweise nicht nach}
+
+        \begin{grammarentry}{Artikel-Länder}{in + Akkusativ für das Ziel}
+            \GermanText{Hat ein Land normalerweise einen Artikel, benutzt man für das Reiseziel gewöhnlich \textbf{in + Akkusativ}, nicht \textbf{nach}: \textbf{in die Schweiz}, \textbf{in die Türkei}, \textbf{in die USA}, \textbf{in den Iran}.}
+            \EnglishText{If a country normally has an article, the destination is usually expressed with \textbf{in + accusative}, not \textbf{nach}: \textbf{in die Schweiz}, \textbf{in die Türkei}, \textbf{in die USA}, \textbf{in den Iran}.}
+
+            \GermanText{Achtung: \textbf{nach der Schweiz} kann grammatisch vorkommen, bedeutet dann aber zum Beispiel \glqq nach dem Aufenthalt in der Schweiz\grqq, also zeitlich oder in einer Reihenfolge, nicht einfach \glqq to Switzerland\grqq.}
+            \EnglishText{Attention: \textbf{nach der Schweiz} can occur grammatically, but then it can mean, for example, ``after the stay in Switzerland'', i.e. temporally or in an order, not simply ``to Switzerland''.}
+        \end{grammarentry}
+
+        \subsection{nach Hause und zu Hause}
+
+        \begin{grammarentry}{nach Hause}{Richtung}
+            \GermanText{\textbf{nach Hause} bedeutet eine Bewegung in Richtung Zuhause und beantwortet \glqq Wohin?\grqq. \textbf{zu Hause} bezeichnet einen Ort und beantwortet \glqq Wo?\grqq.}
+            \EnglishText{\textbf{nach Hause} expresses movement toward home and answers ``Where to?''. \textbf{zu Hause} describes a location and answers ``Where?''.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich gehe nach Hause.}{I am going home.}
+                \ExampleItem{Ich bin zu Hause.}{I am at home.}
+            \end{itemize}
+        \end{exbox}
+
+        \subsection{Richtungsadverbien}
+
+        \begin{grammarentry}{nach + Richtung}{links, rechts, oben, unten, vorne, hinten}
+            \GermanText{Mit Richtungsangaben steht häufig \textbf{nach}: \textbf{nach links}, \textbf{nach rechts}, \textbf{nach oben}, \textbf{nach unten}, \textbf{nach vorne}, \textbf{nach hinten}.}
+            \EnglishText{With directions, \textbf{nach} is frequently used: \textbf{to the left}, \textbf{to the right}, \textbf{upward}, \textbf{downward}, \textbf{forward}, \textbf{backward}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Biegen Sie nach rechts ab.}{Turn right.}
+                \ExampleItem{Schau nach vorne.}{Look forward.}
+                \ExampleItem{Der Rauch steigt nach oben.}{The smoke rises upward.}
+            \end{itemize}
+        \end{exbox}
+
+        \subsection{von ... nach ... und bis nach ...}
+
+        \begin{grammarentry}{Kombinationen}{Ausgangspunkt und Ziel}
+            \GermanText{\textbf{von ... nach ...} verbindet einen Ausgangspunkt mit einem Ziel. \textbf{bis nach ...} betont, dass die Bewegung bis zu einem weiter entfernten Ziel reicht.}
+            \EnglishText{\textbf{von ... nach ...} connects a point of departure with a destination. \textbf{bis nach ...} emphasizes that the movement extends as far as a more distant destination.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Wir fahren von Wien nach Berlin.}{We are travelling from Vienna to Berlin.}
+                \ExampleItem{Er ist bis nach Innsbruck gefahren.}{He drove all the way to Innsbruck.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Zeit: später als ein Zeitpunkt oder Ereignis}
+
+        \begin{grammarentry}{nach + Zeitpunkt/Ereignis}{after}
+            \GermanText{Zeitlich bedeutet \textbf{nach}: später als ein bestimmter Zeitpunkt, ein Ereignis oder eine Phase.}
+            \EnglishText{Temporally, \textbf{nach} means: later than a particular point in time, event, or phase.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Nach dem Essen trinken wir Kaffee.}{After the meal, we drink coffee.}
+                \ExampleItem{Nach der Arbeit gehe ich einkaufen.}{After work, I go shopping.}
+                \ExampleItem{Nach zwei Tagen kam eine Antwort.}{An answer came after two days.}
+                \ExampleItem{Nach 18 Uhr ist das Büro geschlossen.}{The office is closed after 6 p.m.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Verstärkungen}{kurz, direkt, unmittelbar, gleich, lange}
+            \GermanText{Häufige Kombinationen sind \textbf{kurz nach}, \textbf{direkt nach}, \textbf{unmittelbar nach}, \textbf{gleich nach} und \textbf{lange nach}.}
+            \EnglishText{Common combinations are \textbf{shortly after}, \textbf{directly after}, \textbf{immediately after}, \textbf{right after}, and \textbf{long after}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Kurz nach Mitternacht begann es zu regnen.}{Shortly after midnight it began to rain.}
+                \ExampleItem{Gleich nach dem Kurs rufe ich dich an.}{I will call you right after the course.}
+                \ExampleItem{Lange nach dem Unfall hatte er noch Schmerzen.}{Long after the accident he still had pain.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{nach zwei Tagen vs. in zwei Tagen}{wichtiger Unterschied}
+            \GermanText{\textbf{nach zwei Tagen} bezieht sich gewöhnlich auf einen bereits genannten Ausgangspunkt: zwei Tage nach diesem Ereignis. \textbf{in zwei Tagen} bedeutet oft: zwei Tage von jetzt an.}
+            \EnglishText{\textbf{nach zwei Tagen} usually refers to an already mentioned starting point: two days after that event. \textbf{in zwei Tagen} often means: two days from now.}
+        \end{grammarentry}
+
+        \begin{grammarentry}{nach vs. vor}{Gegensatz}
+            \GermanText{Zeitlich ist \textbf{vor} der direkte Gegensatz zu \textbf{nach}: \textbf{vor dem Essen} = before the meal; \textbf{nach dem Essen} = after the meal.}
+            \EnglishText{Temporally, \textbf{vor} is the direct opposite of \textbf{nach}: \textbf{vor dem Essen} = before the meal; \textbf{nach dem Essen} = after the meal.}
+        \end{grammarentry}
+
+
+    \section{Quelle, Grundlage, Regel oder Beurteilung}
+
+        \begin{grammarentry}{nach = gemäß / according to}{Grundlage einer Aussage oder Handlung}
+            \GermanText{\textbf{nach} kann bedeuten, dass etwas einer Regel, einer Quelle, einer Aussage, einer Meinung oder einer Grundlage entspricht.}
+            \EnglishText{\textbf{nach} can mean that something follows or corresponds to a rule, source, statement, opinion, or basis.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Nach dem Gesetz ist das verboten.}{According to the law, that is forbidden.}
+                \ExampleItem{Nach den Regeln ist dieser Zug erlaubt.}{According to the rules, this move is allowed.}
+                \ExampleItem{Nach Angaben der Polizei gab es keine Verletzten.}{According to information from the police, there were no injuries.}
+                \ExampleItem{Nach seiner Aussage war er zu Hause.}{According to his statement, he was at home.}
+                \ExampleItem{Nach dem Plan beginnen wir um acht Uhr.}{According to the plan, we start at eight o'clock.}
+            \end{itemize}
+        \end{exbox}
+
+        \subsection{Nachstellung: meiner Meinung nach}
+
+        \begin{grammarentry}{nach als Postposition}{nach steht hinter der Nominalgruppe}
+            \GermanText{In einigen sehr häufigen Ausdrücken steht \textbf{nach} \textbf{hinter} der Nominalgruppe. Der Kasus bleibt Dativ: \textbf{meiner Meinung nach}, \textbf{dem Gesetz nach}, \textbf{seiner Aussage nach}, \textbf{dem Anschein nach}.}
+            \EnglishText{In several very common expressions, \textbf{nach} stands \textbf{after} the noun phrase. The case remains dative: \textbf{in my opinion}, \textbf{according to the law}, \textbf{according to his statement}, \textbf{judging by appearances}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Meiner Meinung nach ist das richtig.}{In my opinion, that is correct.}
+                \ExampleItem{Dem Gesetz nach ist er verantwortlich.}{According to the law, he is responsible.}
+                \ExampleItem{Dem Anschein nach ist niemand zu Hause.}{Judging by appearances, nobody is at home.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Wortstellung}{kein Nebensatz}
+            \GermanText{Eine Präpositionalgruppe mit \textbf{nach} bildet allein \textbf{keinen Nebensatz}. Steht sie am Satzanfang, folgt im Hauptsatz weiterhin die Verb-zweit-Regel: \textbf{Nach dem Gesetz ist das verboten.} / \textbf{Meiner Meinung nach ist das falsch.}}
+            \EnglishText{A prepositional phrase with \textbf{nach} does \textbf{not} by itself form a subordinate clause. If it comes first, the main clause still follows the verb-second rule: \textbf{Nach dem Gesetz ist das verboten.} / \textbf{Meiner Meinung nach ist das falsch.}}
+        \end{grammarentry}
+
+
+    \section{Kriterium, Einteilung, Reihenfolge und Maßstab}
+
+        \begin{grammarentry}{nach + Kriterium}{according to / by}
+            \GermanText{\textbf{nach} bezeichnet sehr oft das Kriterium, nach dem etwas sortiert, geordnet, ausgewählt, beurteilt oder unterschieden wird.}
+            \EnglishText{\textbf{nach} very often expresses the criterion by which something is sorted, ordered, selected, judged, or distinguished.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Die Dateien sind nach Datum sortiert.}{The files are sorted by date.}
+                \ExampleItem{Wir ordnen die Namen nach dem Alphabet.}{We arrange the names alphabetically.}
+                \ExampleItem{Die Gruppen werden nach Alter eingeteilt.}{The groups are divided by age.}
+                \ExampleItem{Die Produkte werden nach Qualität bewertet.}{The products are evaluated according to quality.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{der Reihe nach}{in order / one by one}
+            \GermanText{\textbf{der Reihe nach} bedeutet: in einer bestimmten Reihenfolge, einer nach dem anderen.}
+            \EnglishText{\textbf{der Reihe nach} means: in a particular order, one after another.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Bitte sprechen Sie der Reihe nach.}{Please speak one at a time, in order.}
+                \ExampleItem{Die Kinder gingen einer nach dem anderen hinein.}{The children went inside one after another.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Wichtige feste Kombinationen mit nach}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{4.2cm}|p{5.0cm}|p{5.0cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Kombination} &
+            \color{white}\textbf{Bedeutung} &
+            \color{white}\textbf{English} \\
+            nach und nach & allmählich, Schritt für Schritt & gradually, little by little \\
+            nach wie vor & weiterhin; immer noch wie früher & still, as before \\
+            je nach + Dativ & abhängig von & depending on \\
+            nach Möglichkeit & wenn es möglich ist & if possible, where possible \\
+            nach Bedarf & so viel oder so oft, wie nötig & as needed \\
+            nach Wunsch & entsprechend einem Wunsch & as desired, upon request \\
+            nach Maß & nach individuellen Maßen hergestellt & made to measure \\
+            nach Belieben & wie man möchte & as one pleases \\
+            nach Plan & entsprechend dem Plan & according to plan \\
+            nach Vorschrift & entsprechend einer Vorschrift & according to regulations \\
+            nach Vereinbarung & wie vorher vereinbart & by arrangement \\
+            nach Absprache & nach vorheriger Abstimmung & after consultation / by agreement \\
+            nach Rücksprache & nachdem man sich mit jemandem abgestimmt hat & after consultation \\
+            nach Angaben von ... & entsprechend den Informationen von ... & according to information from ... \\
+            nach Auskunft von ... & entsprechend einer erhaltenen Auskunft & according to information from ... \\
+            nach Aussage von ... & entsprechend der Aussage von ... & according to the statement of ... \\
+            nach allem, was ... & auf Grundlage von allem, was ... & from everything that ... / judging by all that ... \\
+            dem Anschein nach & soweit man äußerlich erkennen kann & apparently, judging by appearances \\
+            meiner Meinung nach & nach meiner persönlichen Meinung & in my opinion \\
+            der Größe nach & nach dem Kriterium Größe & by size \\
+            dem Alter nach & nach dem Kriterium Alter & by age \\
+        \end{longtable}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Nach und nach wurde das Wetter besser.}{Gradually, the weather got better.}
+                \ExampleItem{Das Problem besteht nach wie vor.}{The problem still exists.}
+                \ExampleItem{Je nach Wetter gehen wir wandern oder bleiben zu Hause.}{Depending on the weather, we will go hiking or stay at home.}
+                \ExampleItem{Nehmen Sie das Medikament nach Bedarf.}{Take the medication as needed.}
+                \ExampleItem{Ein Termin ist nur nach Vereinbarung möglich.}{An appointment is possible only by arrangement.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Verben mit nach + Dativ}
+
+        \begin{grammarentry}{Verb + feste Präposition}{nach gehört zur Verbverbindung}
+            \GermanText{Bei vielen Verben ist \textbf{nach + Dativ} eine feste Ergänzung. Dann ergibt sich die Bedeutung aus der ganzen Verbindung.}
+            \EnglishText{With many verbs, \textbf{nach + dative} is a fixed complement. The meaning then comes from the entire verb-preposition combination.}
+        \end{grammarentry}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{4.1cm}|p{4.7cm}|p{5.4cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Verbindung} &
+            \color{white}\textbf{Bedeutung} &
+            \color{white}\textbf{Beispiel} \\
+            nach etwas suchen & versuchen, etwas zu finden & Ich suche nach meinem Schlüssel. \\
+            nach jemandem/etwas fragen & Informationen oder eine Person verlangen & Sie fragt nach dem Chef. \\
+            sich nach etwas erkundigen & Informationen über etwas erfragen & Ich erkundige mich nach dem Preis. \\
+            nach etwas verlangen & etwas fordern oder stark wünschen & Er verlangt nach einer Erklärung. \\
+            sich nach etwas sehnen & etwas sehr stark wünschen & Sie sehnt sich nach Ruhe. \\
+            nach etwas streben & versuchen, ein Ziel zu erreichen & Er strebt nach Erfolg. \\
+            nach etwas greifen & die Hand nach etwas ausstrecken & Sie greift nach dem Glas. \\
+            nach etwas riechen & einen bestimmten Geruch haben & Es riecht nach Rauch. \\
+            nach etwas schmecken & einen bestimmten Geschmack haben & Die Suppe schmeckt nach Knoblauch. \\
+            nach etwas klingen & akustisch oder inhaltlich den Eindruck von etwas geben & Das klingt nach einer guten Idee. \\
+            nach etwas aussehen & den Eindruck erwecken, dass etwas so ist & Es sieht nach Regen aus. \\
+            nach jemandem rufen & jemanden durch Rufen verlangen & Das Kind ruft nach seiner Mutter. \\
+            nach jemandem/etwas fahnden & gezielt polizeilich suchen & Die Polizei fahndet nach dem Täter. \\
+            nach etwas forschen & wissenschaftlich nach etwas suchen & Die Forschenden forschen nach der Ursache. \\
+        \end{longtable}
+
+        \begin{grammarentry}{Person oder Sache fragen}{nach wem? / wonach?}
+            \GermanText{Bei Personen fragt man normalerweise mit \textbf{nach wem?}: \textbf{Nach wem suchst du?} Bei Sachen oder abstrakten Inhalten benutzt man häufig das Pronominaladverb \textbf{wonach?}: \textbf{Wonach suchst du?}}
+            \EnglishText{For people, German normally asks with \textbf{nach wem?}: \textbf{Who are you looking for?} For things or abstract content, the pronominal adverb \textbf{wonach?} is commonly used: \textbf{What are you looking for?}}
+        \end{grammarentry}
+
+
+    \section{Nomen und Adjektive mit nach}
+
+        \begin{grammarentry}{Nomen + nach}{häufige Nominalverbindungen}
+            \GermanText{Auch einige Nomen stehen häufig mit \textbf{nach + Dativ}: \textbf{die Suche nach}, \textbf{die Frage nach}, \textbf{das Verlangen nach}, \textbf{die Sehnsucht nach}, \textbf{das Streben nach}, \textbf{die Nachfrage nach}.}
+            \EnglishText{Several nouns also commonly take \textbf{nach + dative}: \textbf{the search for}, \textbf{the question of/for}, \textbf{the desire/demand for}, \textbf{the longing for}, \textbf{the striving for}, \textbf{the demand for}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Die Suche nach einer Wohnung dauert lange.}{The search for an apartment takes a long time.}
+                \ExampleItem{Die Nachfrage nach diesem Produkt ist groß.}{Demand for this product is high.}
+                \ExampleItem{Seine Sehnsucht nach Ruhe war stark.}{His longing for peace and quiet was strong.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Adjektiv + nach}{einige feste Verbindungen}
+            \GermanText{Bei Adjektiven kommen unter anderem \textbf{verrückt nach + Dativ} und \textbf{gierig nach + Dativ} vor.}
+            \EnglishText{With adjectives, common combinations include \textbf{verrückt nach + dative} (crazy about) and \textbf{gierig nach + dative} (greedy/eager for).}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Er ist verrückt nach Fußball.}{He is crazy about football.}
+                \ExampleItem{Sie ist gierig nach Macht.}{She is hungry for power.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{danach, wonach und nach wem}
+
+        \subsection{danach}
+
+        \begin{grammarentry}{da + nach = danach}{Pronominaladverb}
+            \GermanText{\textbf{danach} kann ein bereits genanntes Ding oder einen Sachverhalt ersetzen. Bei Verben mit \textbf{nach + Sache} steht deshalb häufig \textbf{danach}.}
+            \EnglishText{\textbf{danach} can replace an already mentioned thing or situation. With verbs that take \textbf{nach + thing}, \textbf{danach} is therefore often used.}
+
+            \GermanText{\textbf{danach} hat außerdem eine zeitliche Bedeutung: \glqq after that / afterwards\grqq.}
+            \EnglishText{\textbf{danach} also has a temporal meaning: ``after that / afterwards''.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich suche nach einer Lösung. Ich suche schon lange danach.}{I am looking for a solution. I have been looking for it for a long time.}
+                \ExampleItem{Wir essen zuerst. Danach gehen wir spazieren.}{We will eat first. Afterwards, we will go for a walk.}
+            \end{itemize}
+        \end{exbox}
+
+        \subsection{wonach und nach wem}
+
+        \begin{grammarentry}{Frageformen}{Sache vs. Person}
+            \GermanText{Für Sachen: \textbf{wonach?} Für Personen: \textbf{nach wem?} Das ist die übliche Trennung bei Präpositionalergänzungen.}
+            \EnglishText{For things: \textbf{wonach?} For people: \textbf{nach wem?} This is the usual distinction with prepositional complements.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Wonach riecht das? -- Nach Kaffee.}{What does that smell like? -- Like coffee.}
+                \ExampleItem{Nach wem fragst du? -- Nach Frau Berger.}{Who are you asking for? -- Ms Berger.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{nach dem oder nachdem?}
+
+        \begin{grammarentry}{nach dem}{Präposition + Artikel}
+            \GermanText{\textbf{nach dem} sind zwei Wörter: die Präposition \textbf{nach} + der Dativartikel \textbf{dem}. Danach steht ein Nomen oder eine nominale Einheit.}
+            \EnglishText{\textbf{nach dem} consists of two words: the preposition \textbf{nach} + the dative article \textbf{dem}. It is followed by a noun or nominal unit.}
+        \end{grammarentry}
+
+        \begin{grammarentry}{nachdem}{subordinierende Konjunktion}
+            \GermanText{\textbf{nachdem} ist ein einziges Wort und eine subordinierende Konjunktion. Es leitet einen Nebensatz ein; das konjugierte Verb steht am Ende.}
+            \EnglishText{\textbf{nachdem} is one word and a subordinating conjunction. It introduces a subordinate clause; the conjugated verb stands at the end.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Nach dem Essen gehe ich spazieren.}{After the meal, I go for a walk.}
+                \ExampleItem{Nachdem ich gegessen habe, gehe ich spazieren.}{After I have eaten, I go for a walk.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Zeitverhältnis mit nachdem}{typische Zeitenfolge}
+            \GermanText{Wenn der \textbf{nachdem}-Satz eine frühere Handlung ausdrückt, steht dort häufig Perfekt oder Plusquamperfekt; die spätere Handlung steht entsprechend im Präsens oder Präteritum.}
+            \EnglishText{When the \textbf{nachdem} clause expresses an earlier action, it often uses the perfect or pluperfect; the later action is correspondingly in the present or simple past.}
+        \end{grammarentry}
+
+
+    \section{nach- als Verbpräfix}
+
+        \begin{grammarentry}{nach-}{meist trennbar und betont}
+            \GermanText{\textbf{nach-} ist bei vielen Verben ein \textbf{trennbares, betontes Präfix}. Im Hauptsatz wird es abgetrennt: \textbf{Ich frage nach.} Im Infinitiv mit \textbf{zu} steht \textbf{zu} zwischen Präfix und Stamm: \textbf{nachzufragen}. Im Partizip II steht häufig \textbf{ge} dazwischen: \textbf{nachgefragt}.}
+            \EnglishText{In many verbs, \textbf{nach-} is a \textbf{separable, stressed prefix}. In a main clause it is separated: \textbf{Ich frage nach.} In the infinitive with \textbf{zu}, \textbf{zu} stands between prefix and stem: \textbf{nachzufragen}. In the past participle, \textbf{ge} often stands between them: \textbf{nachgefragt}.}
+        \end{grammarentry}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{3.7cm}|p{5.2cm}|p{5.2cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Verb} &
+            \color{white}\textbf{typische Bedeutung} &
+            \color{white}\textbf{Beispiel} \\
+            nachfragen & noch einmal / genauer fragen & Ich frage morgen noch einmal nach. \\
+            nachschauen / nachsehen & etwas prüfen oder kontrollieren & Ich schaue im Wörterbuch nach. \\
+            nachschlagen & Information in einer Quelle suchen & Ich schlage das Wort im Wörterbuch nach. \\
+            nachdenken & gründlich über etwas denken & Ich denke darüber nach. \\
+            nachmachen & etwas imitieren & Das Kind macht die Bewegung nach. \\
+            nacherzählen & etwas mit eigenen Worten wiedergeben & Sie erzählt die Geschichte nach. \\
+            nachholen & etwas später erledigen & Ich hole die Prüfung nächste Woche nach. \\
+            nachreichen & etwas später einreichen & Ich reiche das Dokument morgen nach. \\
+            nachbestellen & zusätzlich/später bestellen & Wir bestellen noch zwei Stück nach. \\
+            nachfüllen & wieder auffüllen & Bitte füllen Sie Wasser nach. \\
+            nachprüfen & noch einmal kontrollieren & Ich prüfe die Zahlen nach. \\
+            nachweisen & mit Belegen beweisen & Er weist seine Erfahrung nach. \\
+            nachgehen & verfolgen / untersuchen & Die Polizei geht dem Hinweis nach. \\
+            nachlaufen & hinter jemandem herlaufen & Der Hund läuft seinem Besitzer nach. \\
+            nachlassen & schwächer werden & Der Regen lässt langsam nach. \\
+        \end{longtable}
+
+        \begin{grammarentry}{Achtung}{Präfix nach- ist nicht dasselbe wie Präposition nach}
+            \GermanText{Bei \textbf{nachfragen} oder \textbf{nachdenken} gehört \textbf{nach-} zum Verb. Bei \textbf{nach dem Preis fragen} oder \textbf{nach einer Lösung suchen} ist \textbf{nach} dagegen eine Präposition mit Dativ.}
+            \EnglishText{In \textbf{nachfragen} or \textbf{nachdenken}, \textbf{nach-} is part of the verb. In \textbf{nach dem Preis fragen} or \textbf{nach einer Lösung suchen}, however, \textbf{nach} is a preposition governing the dative.}
+        \end{grammarentry}
+
+
+    \section{Wichtige Abgrenzungen}
+
+        \subsection{nach oder zu?}
+
+        \begin{grammarentry}{Zielangaben}{Ortsname vs. Person/Institution}
+            \GermanText{\textbf{nach} steht typischerweise bei Städten, Ländern ohne Artikel, Kontinenten und Richtungen. \textbf{zu} steht typischerweise bei Personen und vielen Institutionen oder konkreten Zielen.}
+            \EnglishText{\textbf{nach} is typically used with cities, countries without articles, continents, and directions. \textbf{zu} is typically used with people and many institutions or concrete destinations.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich fahre nach Berlin.}{I am going to Berlin.}
+                \ExampleItem{Ich gehe zu meiner Ärztin.}{I am going to my doctor.}
+                \ExampleItem{Ich gehe zum Bahnhof.}{I am going to the train station.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{typischer Fehler}{nicht: nach dem Bahnhof für das Ziel}
+            \GermanText{\textbf{Ich gehe nach dem Bahnhof} bedeutet normalerweise nicht \glqq I go to the station\grqq. Als Ziel sagt man \textbf{Ich gehe zum Bahnhof}. \textbf{Nach dem Bahnhof} kann dagegen zeitlich oder in einer Reihenfolge \glqq after the station\grqq bedeuten.}
+            \EnglishText{\textbf{Ich gehe nach dem Bahnhof} does not normally mean ``I go to the station''. For the destination, say \textbf{Ich gehe zum Bahnhof}. \textbf{Nach dem Bahnhof}, however, can mean ``after the station'' temporally or in a sequence.}
+        \end{grammarentry}
+
+        \subsection{nach oder in?}
+
+        \begin{grammarentry}{Länder und Räume}{Artikel entscheidet oft mit}
+            \GermanText{Für Länder ohne Artikel: \textbf{nach Österreich}. Für Länder mit Artikel: \textbf{in die Schweiz}. Für das Hineingehen in Räume benutzt man ebenfalls \textbf{in + Akkusativ}: \textbf{in die Küche}, \textbf{ins Büro}.}
+            \EnglishText{For countries without articles: \textbf{nach Österreich}. For countries with articles: \textbf{in die Schweiz}. For movement into rooms or enclosed spaces, German also uses \textbf{in + accusative}: \textbf{in die Küche}, \textbf{ins Büro}.}
+        \end{grammarentry}
+
+        \subsection{nach oder seit?}
+
+        \begin{grammarentry}{Zeit}{after vs. since}
+            \GermanText{\textbf{nach} bezeichnet einen späteren Zeitpunkt: \textbf{Nach dem Kurs gehe ich nach Hause.} \textbf{seit} bezeichnet den Beginn eines Zustands oder einer Handlung, die bis zur Gegenwart oder zu einem Bezugszeitpunkt dauert: \textbf{Seit dem Kurs lerne ich jeden Tag.}}
+            \EnglishText{\textbf{nach} marks a later point in time: \textbf{After the course I go home.} \textbf{seit} marks the beginning of a state or action that continues until the present or another reference point: \textbf{Since the course I have studied every day.}}
+        \end{grammarentry}
+
+
+    \section{Wortstellung mit nach-Gruppen}
+
+        \begin{grammarentry}{Satzanfang}{Position 1 besetzt}
+            \GermanText{Eine \textbf{nach}-Gruppe kann im Hauptsatz an Position 1 stehen. Dann kommt das konjugierte Verb direkt danach, weil der Hauptsatz die Verb-zweit-Regel behält.}
+            \EnglishText{A \textbf{nach} phrase can stand in position 1 of a main clause. The conjugated verb then comes directly after it because the main clause keeps the verb-second rule.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Nach dem Unterricht gehe ich nach Hause.}{After class I go home.}
+                \ExampleItem{Nach meiner Erfahrung funktioniert diese Methode gut.}{In my experience, this method works well.}
+                \ExampleItem{Meiner Meinung nach ist das keine gute Idee.}{In my opinion, that is not a good idea.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Mittelfeld}{flexible Position}
+            \GermanText{Die Gruppe kann auch im Mittelfeld stehen: \textbf{Ich gehe nach dem Unterricht nach Hause.} Welche Position am besten ist, hängt davon ab, welche Information betont oder bereits bekannt ist.}
+            \EnglishText{The phrase can also occur in the middle field: \textbf{I go home after class.} The best position depends on which information is emphasized or already known.}
+        \end{grammarentry}
+
+
+    \section{Typische Fehler}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{5.0cm}|p{5.0cm}|p{4.2cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Falsch / problematisch} &
+            \color{white}\textbf{Richtig} &
+            \color{white}\textbf{Warum?} \\
+            nach die Arbeit & nach der Arbeit & nach + Dativ \\
+            nach den Argumente & nach den Argumenten & Dativ Plural + -n \\
+            nach der Schweiz fahren & in die Schweiz fahren & Land mit Artikel \\
+            nach dem Bahnhof gehen & zum Bahnhof gehen & konkretes Ziel \\
+            Ich bin nach Hause. & Ich bin zu Hause. & Wo? = zu Hause \\
+            Ich gehe zu Hause. & Ich gehe nach Hause. & Wohin? = nach Hause \\
+            nach dem ich gegessen habe & nachdem ich gegessen habe & Konjunktion ist ein Wort \\
+            nachdem Essen & nach dem Essen & Präposition + Artikel sind zwei Wörter \\
+        \end{longtable}
+
+
+    \section{Kompakte Entscheidungsregeln}
+
+        \begin{grammarentry}{1. Kasus}{Dativ}
+            \GermanText{Steht \textbf{nach} als Präposition vor oder nach einer Nominalgruppe, prüfe zuerst den Dativ.}
+            \EnglishText{When \textbf{nach} is a preposition before or after a noun phrase, check the dative first.}
+        \end{grammarentry}
+
+        \begin{grammarentry}{2. Wohin?}{Ortsnamen und Richtungen}
+            \GermanText{Stadt / Land ohne Artikel / Kontinent / Richtung: meistens \textbf{nach}. Person, Institution oder konkretes Ziel: oft \textbf{zu}. Land mit Artikel oder Hineinbewegung: oft \textbf{in + Akkusativ}.}
+            \EnglishText{City / country without article / continent / direction: usually \textbf{nach}. Person, institution, or concrete destination: often \textbf{zu}. Country with an article or movement into something: often \textbf{in + accusative}.}
+        \end{grammarentry}
+
+        \begin{grammarentry}{3. Wann?}{später als etwas}
+            \GermanText{Bedeutet die Aussage \glqq später als dieses Ereignis\grqq, passt häufig \textbf{nach + Dativ}: \textbf{nach dem Essen}.}
+            \EnglishText{If the meaning is ``later than this event'', \textbf{nach + dative} often fits: \textbf{after the meal}.}
+        \end{grammarentry}
+
+        \begin{grammarentry}{4. According to}{Quelle, Regel oder Meinung}
+            \GermanText{Bei Regeln, Quellen, Angaben und Bewertungen kann \textbf{nach} ungefähr \glqq gemäß / according to\grqq bedeuten: \textbf{nach dem Gesetz}, \textbf{nach Angaben der Polizei}, \textbf{meiner Meinung nach}.}
+            \EnglishText{With rules, sources, information, and judgments, \textbf{nach} can roughly mean ``according to'': \textbf{according to the law}, \textbf{according to police information}, \textbf{in my opinion}.}
+        \end{grammarentry}
+
+        \begin{grammarentry}{5. Verbverbindung}{feste Präposition prüfen}
+            \GermanText{Bei Verben wie \textbf{suchen, fragen, sich erkundigen, sich sehnen, riechen, schmecken, klingen} oder \textbf{aussehen} gehört \textbf{nach + Dativ} häufig fest zur Konstruktion.}
+            \EnglishText{With verbs such as \textbf{search, ask, inquire, long for, smell, taste, sound}, or \textbf{look/seem}, \textbf{nach + dative} is often a fixed part of the construction.}
+        \end{grammarentry}
+
+
+    \section{Zusammenfassung}
+
+        \begin{grammarentry}{Merksätze}{kurz und wichtig}
+            \GermanText{\textbf{nach + Dativ}.}
+            \EnglishText{\textbf{nach + dative}.}
+
+            \GermanText{\textbf{Richtung:} nach Wien, nach Deutschland, nach Hause, nach links.}
+            \EnglishText{\textbf{Direction:} to Vienna, to Germany, home, to the left.}
+
+            \GermanText{\textbf{Zeit:} nach dem Essen, nach zwei Tagen, kurz nach Mitternacht.}
+            \EnglishText{\textbf{Time:} after the meal, after two days, shortly after midnight.}
+
+            \GermanText{\textbf{Grundlage/Kriterium:} nach dem Gesetz, nach Alter, nach Plan, meiner Meinung nach.}
+            \EnglishText{\textbf{Basis/criterion:} according to the law, by age, according to plan, in my opinion.}
+
+            \GermanText{\textbf{Feste Verbindungen:} nach und nach, nach wie vor, je nach, nach Bedarf, nach Möglichkeit, nach Vereinbarung.}
+            \EnglishText{\textbf{Fixed expressions:} gradually, still/as before, depending on, as needed, if possible, by arrangement.}
+
+            \GermanText{\textbf{Pronominaladverbien:} danach = after it/that or afterwards; wonach? = after/for what?; bei Personen: nach wem?}
+            \EnglishText{\textbf{Pronominal adverbs:} danach = after it/that or afterwards; wonach? = after/for what?; for people: nach wem?}
+
+            \GermanText{\textbf{nach dem} = Präposition + Artikel; \textbf{nachdem} = Konjunktion mit Verb am Ende.}
+            \EnglishText{\textbf{nach dem} = preposition + article; \textbf{nachdem} = conjunction with the verb at the end.}
+        \end{grammarentry}
+
+\end{document}

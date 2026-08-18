@@ -1,0 +1,96 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[table]{xcolor}
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{5pt}
+\titleformat{\section}[block]{\Large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+\titleformat{\subsection}[block]{\large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+\begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+#3
+\end{tcolorbox}}{}
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\newcommand{\DEEN}[2]{\textbf{#1}\par{\footnotesize\color{SoftGray}#2}}
+\title{Zustandspassiv\\[0.3em]\large\textnormal{State passive}}
+\date{}
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Grundidee -- Basic idea}
+\begin{grammarentry}{Bedeutung}{Meaning}
+\GermanText{Das Zustandspassiv beschreibt den \textbf{Zustand}, der als Ergebnis einer vorherigen Handlung besteht.}
+\EnglishText{The state passive describes the \textbf{state} that exists as the result of a previous action.}
+\GermanText{Bildung: \textbf{sein + Partizip II}.}
+\EnglishText{Formation: \textbf{sein + past participle}.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Die Tür wird geschlossen.}{The door is being closed. -- event passive}
+\ExampleItem{Die Tür ist geschlossen.}{The door is closed. -- state passive}
+\end{itemize}\end{exbox}
+
+\section{Zeitformen -- Tenses}
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{3.0cm}|p{5.2cm}|p{5.6cm}}
+\rowcolor{HeaderBlueDark}\color{white}\textbf{Zeit / Tense}&\color{white}\textbf{Bildung / Formation}&\color{white}\textbf{Beispiel / Example}\\
+\DEEN{Präsens}{Present}&\DEEN{sein + Partizip II}{sein + past participle}&\DEEN{Die Tür ist geschlossen.}{The door is closed.}\\
+\DEEN{Präteritum}{Simple past}&\DEEN{war + Partizip II}{war + past participle}&\DEEN{Die Tür war geschlossen.}{The door was closed.}\\
+\DEEN{Perfekt}{Present perfect}&\DEEN{sein + Partizip II + gewesen}{sein + past participle + gewesen}&\DEEN{Die Tür ist geschlossen gewesen.}{The door has been in a closed state.}\\
+\DEEN{Plusquamperfekt}{Past perfect}&\DEEN{war + Partizip II + gewesen}{war + past participle + gewesen}&\DEEN{Die Tür war geschlossen gewesen.}{The door had been in a closed state.}\\
+\DEEN{Futur I}{Future I}&\DEEN{werden + Partizip II + sein}{werden + past participle + sein}&\DEEN{Die Tür wird geschlossen sein.}{The door will be closed.}\\
+\DEEN{Futur II}{Future perfect}&\DEEN{werden + Partizip II + gewesen sein}{werden + past participle + gewesen sein}&\DEEN{Die Tür wird geschlossen gewesen sein.}{The door will have been in a closed state.}\\
+\end{longtable}
+
+\section{Vorgangspassiv oder Zustandspassiv? -- Event or state passive?}
+\begin{grammarentry}{Handlung gegen Zustand}{Action versus state}
+\GermanText{\textbf{Die Tür wird geschlossen.} beschreibt das Schließen selbst. \textbf{Die Tür ist geschlossen.} beschreibt den bestehenden Zustand nach dem Schließen.}
+\EnglishText{\textbf{The door is being closed.} describes the act of closing. \textbf{The door is closed.} describes the resulting state.}
+\end{grammarentry}
+
+\section{Zustandspassiv und Adjektiv -- State passive and adjective}
+\begin{grammarentry}{Warum die Unterscheidung manchmal schwierig ist}{Why the distinction can be difficult}
+\GermanText{Ein Partizip II kann auch adjektivisch gebraucht werden. Deshalb kann die Grenze zwischen Zustandspassiv und prädikativem Adjektiv je nach Kontext unscharf sein.}
+\EnglishText{A past participle can also be used adjectivally. Therefore, the boundary between the state passive and a predicative adjective can be unclear depending on context.}
+\GermanText{Für das Zustandspassiv ist wichtig, dass der Zustand als Ergebnis einer Handlung verstanden wird.}
+\EnglishText{For the state passive, it is important that the state is understood as the result of an action.}
+\end{grammarentry}
+
+\section{Typische Beispiele -- Typical examples}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Das Fenster ist geöffnet.}{The window is open / has been opened and is now open.}
+\ExampleItem{Die Rechnung ist bezahlt.}{The bill is paid.}
+\ExampleItem{Die Systeme sind miteinander verbunden.}{The systems are connected to each other.}
+\end{itemize}\end{exbox}
+
+\section{Merksatz -- Key rule}
+\begin{grammarentry}{Kurz}{In short}
+\GermanText{\textbf{sein + Partizip II} = bestehender Zustand als Ergebnis einer Handlung.}
+\EnglishText{\textbf{sein + past participle} = an existing state resulting from an action.}
+\end{grammarentry}
+\end{document}

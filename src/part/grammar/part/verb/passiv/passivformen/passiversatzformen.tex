@@ -1,0 +1,81 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[table]{xcolor}
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{5pt}
+\titleformat{\section}[block]{\Large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+\titleformat{\subsection}[block]{\large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+\begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+#3
+\end{tcolorbox}}{}
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\newcommand{\DEEN}[2]{\textbf{#1}\par{\footnotesize\color{SoftGray}#2}}
+\title{Passiversatzformen\\[0.3em]\large\textnormal{Passive alternatives}}
+\date{}
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Wichtig -- Important}
+\begin{grammarentry}{Keine echten Passivformen}{Not true passive forms}
+\GermanText{Passiversatzformen haben oft eine passive Bedeutung, sind grammatisch aber \textbf{keine eigentlichen Passivformen}. Sie sind Alternativen zum Passiv.}
+\EnglishText{Passive alternatives often have a passive meaning, but grammatically they are \textbf{not true passive forms}. They are alternatives to the passive.}
+\end{grammarentry}
+
+\section{sich lassen + Infinitiv -- sich lassen + infinitive}
+\begin{grammarentry}{Möglichkeit}{Possibility}
+\GermanText{\textbf{Das Problem lässt sich lösen.} bedeutet ungefähr \textbf{Das Problem kann gelöst werden.}}
+\EnglishText{\textbf{Das Problem lässt sich lösen.} means approximately \textbf{The problem can be solved.}}
+\end{grammarentry}
+
+\section{sein + zu + Infinitiv -- sein + zu + infinitive}
+\begin{grammarentry}{Notwendigkeit oder Möglichkeit}{Necessity or possibility}
+\GermanText{\textbf{Die Aufgabe ist heute zu erledigen.} kann je nach Kontext einer passiven Konstruktion mit \textbf{müssen} oder \textbf{können} entsprechen.}
+\EnglishText{\textbf{Die Aufgabe ist heute zu erledigen.} can correspond, depending on context, to a passive construction with \textbf{must} or \textbf{can}.}
+\end{grammarentry}
+
+\section{Adjektive auf -bar und ähnliche Formen -- Adjectives ending in -bar and similar forms}
+\begin{grammarentry}{Möglichkeit}{Possibility}
+\GermanText{Adjektive wie \textbf{lösbar}, \textbf{machbar} oder \textbf{lesbar} können eine Bedeutung ausdrücken, die häufig \textbf{kann ... werden} entspricht.}
+\EnglishText{Adjectives such as \textbf{lösbar}, \textbf{machbar}, or \textbf{lesbar} can express a meaning that often corresponds to \textbf{can be ...}.}
+\end{grammarentry}
+
+\section{man + Aktiv -- man + active voice}
+\begin{grammarentry}{Häufige Alternative}{Common alternative}
+\GermanText{Im Deutschen wird statt eines Passivs häufig \textbf{man + Aktiv} benutzt: \textbf{Hier spricht man Deutsch.} = \textbf{Hier wird Deutsch gesprochen.}}
+\EnglishText{German often uses \textbf{man + active voice} instead of a passive: \textbf{German is spoken here.} = \textbf{German is spoken here.}}
+\end{grammarentry}
+
+\section{Merksatz -- Key rule}
+\begin{grammarentry}{Kurz}{In short}
+\GermanText{Passiversatzformen sind semantisch oft passiv, grammatisch aber nicht dasselbe wie \textbf{werden + Partizip II} oder \textbf{sein + Partizip II}.}
+\EnglishText{Passive alternatives are often passive in meaning, but grammatically they are not the same as \textbf{werden + past participle} or \textbf{sein + past participle}.}
+\end{grammarentry}
+\end{document}

@@ -1,0 +1,85 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[table]{xcolor}
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{5pt}
+\titleformat{\section}[block]{\Large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+\titleformat{\subsection}[block]{\large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+\begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+#3
+\end{tcolorbox}}{}
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\newcommand{\DEEN}[2]{\textbf{#1}\par{\footnotesize\color{SoftGray}#2}}
+\title{Rezipientenpassiv\\[0.3em]\large\textnormal{Recipient passive}}
+\date{}
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Grundidee -- Basic idea}
+\begin{grammarentry}{Bedeutung}{Meaning}
+\GermanText{Beim Rezipientenpassiv wird die Person, die im Aktivsatz im Dativ steht, zum Subjekt. Am häufigsten steht \textbf{bekommen + Partizip II}; \textbf{kriegen} ist umgangssprachlicher.}
+\EnglishText{In the recipient passive, the person that is in the dative in the active sentence becomes the subject. \textbf{bekommen + past participle} is most common; \textbf{kriegen} is more colloquial.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Aktiv: Der Arzt verschreibt dem Patienten ein Medikament.}{Active: The doctor prescribes the patient a medication.}
+\ExampleItem{Rezipientenpassiv: Der Patient bekommt ein Medikament verschrieben.}{Recipient passive: The patient gets a medication prescribed.}
+\end{itemize}\end{exbox}
+
+\section{Kasuswechsel -- Case change}
+\begin{grammarentry}{Dativ wird Nominativ}{Dative becomes nominative}
+\GermanText{Das Dativobjekt des Aktivsatzes wird zum Nominativsubjekt. Ein vorhandenes Akkusativobjekt bleibt Akkusativ.}
+\EnglishText{The dative object of the active sentence becomes the nominative subject. An existing accusative object remains accusative.}
+\GermanText{Aktiv: \textbf{Man schickt mir die Unterlagen.} Rezipientenpassiv: \textbf{Ich bekomme die Unterlagen geschickt.}}
+\EnglishText{Active: \textbf{Someone sends me the documents.} Recipient passive: \textbf{I get the documents sent to me.}}
+\end{grammarentry}
+
+\section{Zeitformen -- Tenses}
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{3.0cm}|p{5.2cm}|p{5.6cm}}
+\rowcolor{HeaderBlueDark}\color{white}\textbf{Zeit / Tense}&\color{white}\textbf{Bildung / Formation}&\color{white}\textbf{Beispiel / Example}\\
+\DEEN{Präsens}{Present}&\DEEN{bekommen + Partizip II}{bekommen + past participle}&\DEEN{Ich bekomme die Unterlagen geschickt.}{I get the documents sent to me.}\\
+\DEEN{Präteritum}{Simple past}&\DEEN{bekam + Partizip II}{bekam + past participle}&\DEEN{Ich bekam die Unterlagen geschickt.}{I got the documents sent to me.}\\
+\DEEN{Perfekt}{Present perfect}&\DEEN{haben + Partizip II + bekommen}{haben + past participle + bekommen}&\DEEN{Ich habe die Unterlagen geschickt bekommen.}{I have received the documents by being sent them.}\\
+\DEEN{Futur I}{Future I}&\DEEN{werden + Partizip II + bekommen}{werden + past participle + bekommen}&\DEEN{Ich werde die Unterlagen geschickt bekommen.}{I will get the documents sent to me.}\\
+\end{longtable}
+
+\section{bekommen, kriegen, erhalten -- bekommen, kriegen, erhalten}
+\begin{grammarentry}{Gebrauch}{Usage}
+\GermanText{\textbf{bekommen} ist neutral und häufig. \textbf{kriegen} ist umgangssprachlich. \textbf{erhalten} kann in bestimmten formellen Verbindungen vorkommen, ist aber nicht in jeder Konstruktion gleich natürlich.}
+\EnglishText{\textbf{bekommen} is neutral and common. \textbf{kriegen} is colloquial. \textbf{erhalten} can occur in certain formal constructions, but is not equally natural in every construction.}
+\end{grammarentry}
+
+\section{Merksatz -- Key rule}
+\begin{grammarentry}{Kurz}{In short}
+\GermanText{Rezipientenpassiv: \textbf{Dativperson im Aktiv wird Nominativsubjekt} + \textbf{bekommen/kriegen + Partizip II}.}
+\EnglishText{Recipient passive: the \textbf{dative person in the active becomes the nominative subject} + \textbf{bekommen/kriegen + past participle}.}
+\end{grammarentry}
+\end{document}

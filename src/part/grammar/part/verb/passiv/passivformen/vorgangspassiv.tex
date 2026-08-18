@@ -1,0 +1,111 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[table]{xcolor}
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{5pt}
+\titleformat{\section}[block]{\Large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+\titleformat{\subsection}[block]{\large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+\begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+#3
+\end{tcolorbox}}{}
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\newcommand{\DEEN}[2]{\textbf{#1}\par{\footnotesize\color{SoftGray}#2}}
+\title{Vorgangspassiv\\[0.3em]\large\textnormal{Event passive}}
+\date{}
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Grundidee -- Basic idea}
+\begin{grammarentry}{Bedeutung}{Meaning}
+\GermanText{Das Vorgangspassiv beschreibt eine \textbf{Handlung oder einen Vorgang}. Wichtig ist, was geschieht; der Handelnde ist oft unwichtig oder unbekannt.}
+\EnglishText{The event passive describes an \textbf{action or process}. What happens is important; the agent is often unimportant or unknown.}
+\GermanText{Bildung: \textbf{werden + Partizip II}.}
+\EnglishText{Formation: \textbf{werden + past participle}.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Aktiv: Der Mechaniker repariert das Auto.}{Active: The mechanic repairs the car.}
+\ExampleItem{Passiv: Das Auto wird repariert.}{Passive: The car is being repaired.}
+\end{itemize}\end{exbox}
+
+\section{Zeitformen -- Tenses}
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{3.0cm}|p{5.2cm}|p{5.6cm}}
+\rowcolor{HeaderBlueDark}\color{white}\textbf{Zeit / Tense}&\color{white}\textbf{Bildung / Formation}&\color{white}\textbf{Beispiel / Example}\\
+\DEEN{Präsens}{Present}&\DEEN{werden + Partizip II}{werden + past participle}&\DEEN{Die Tür wird geöffnet.}{The door is being opened.}\\
+\DEEN{Präteritum}{Simple past}&\DEEN{wurde + Partizip II}{wurde + past participle}&\DEEN{Die Tür wurde geöffnet.}{The door was opened.}\\
+\DEEN{Perfekt}{Present perfect}&\DEEN{sein + Partizip II + worden}{sein + past participle + worden}&\DEEN{Die Tür ist geöffnet worden.}{The door has been opened.}\\
+\DEEN{Plusquamperfekt}{Past perfect}&\DEEN{war + Partizip II + worden}{war + past participle + worden}&\DEEN{Die Tür war geöffnet worden.}{The door had been opened.}\\
+\DEEN{Futur I}{Future I}&\DEEN{werden + Partizip II + werden}{werden + past participle + werden}&\DEEN{Die Tür wird geöffnet werden.}{The door will be opened.}\\
+\DEEN{Futur II}{Future perfect}&\DEEN{werden + Partizip II + worden sein}{werden + past participle + worden sein}&\DEEN{Die Tür wird geöffnet worden sein.}{The door will have been opened.}\\
+\end{longtable}
+
+\section{Aktiv zu Passiv -- Active to passive}
+\begin{grammarentry}{Akkusativobjekt wird Subjekt}{Accusative object becomes subject}
+\GermanText{Das Akkusativobjekt des Aktivsatzes wird normalerweise zum Nominativsubjekt des Passivsatzes.}
+\EnglishText{The accusative object of the active sentence normally becomes the nominative subject of the passive sentence.}
+\GermanText{Aktiv: \textbf{Der Arzt untersucht den Patienten.} Passiv: \textbf{Der Patient wird vom Arzt untersucht.}}
+\EnglishText{Active: \textbf{The doctor examines the patient.} Passive: \textbf{The patient is examined by the doctor.}}
+\end{grammarentry}
+\begin{grammarentry}{Dativ bleibt Dativ}{Dative remains dative}
+\GermanText{Ein Dativobjekt bleibt beim Wechsel ins Passiv Dativ.}
+\EnglishText{A dative object remains dative when changing to the passive.}
+\GermanText{Aktiv: \textbf{Die Lehrerin erklärt dem Schüler die Regel.} Passiv: \textbf{Die Regel wird dem Schüler erklärt.}}
+\EnglishText{Active: \textbf{The teacher explains the rule to the student.} Passive: \textbf{The rule is explained to the student.}}
+\end{grammarentry}
+
+\section{von und durch -- von and durch}
+\begin{grammarentry}{von + Dativ}{Agent}
+\GermanText{\textbf{von + Dativ} nennt häufig die handelnde Person, Institution oder unmittelbare Ursache.}
+\EnglishText{\textbf{von + dative} often names the acting person, institution, or direct cause.}
+\end{grammarentry}
+\begin{grammarentry}{durch + Akkusativ}{Means or mediating cause}
+\GermanText{\textbf{durch + Akkusativ} nennt häufig ein Mittel, einen Vorgang oder eine vermittelnde Ursache.}
+\EnglishText{\textbf{durch + accusative} often names a means, process, or mediating cause.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Das Gesetz wurde vom Parlament beschlossen.}{The law was passed by parliament.}
+\ExampleItem{Die Straße wurde durch den Sturm beschädigt.}{The road was damaged by the storm.}
+\end{itemize}\end{exbox}
+
+\section{worden und geworden -- worden and geworden}
+\begin{grammarentry}{Wichtiger Unterschied}{Important distinction}
+\GermanText{Im Perfekt und Plusquamperfekt des Vorgangspassivs steht \textbf{worden}, nicht \textbf{geworden}: \textbf{Das Haus ist gebaut worden.}}
+\EnglishText{In the perfect and past perfect of the event passive, use \textbf{worden}, not \textbf{geworden}: \textbf{The house has been built.}}
+\GermanText{\textbf{geworden} gehört zum Vollverb \textbf{werden} im Sinn von \glqq become\grqq: \textbf{Er ist Arzt geworden.}}
+\EnglishText{\textbf{geworden} belongs to the full verb \textbf{werden} meaning ``become'': \textbf{He became a doctor.}}
+\end{grammarentry}
+
+\section{Merksatz -- Key rule}
+\begin{grammarentry}{Kurz}{In short}
+\GermanText{\textbf{werden + Partizip II} = Handlung/Vorgang im Passiv.}
+\EnglishText{\textbf{werden + past participle} = action/process in the passive.}
+\end{grammarentry}
+\end{document}

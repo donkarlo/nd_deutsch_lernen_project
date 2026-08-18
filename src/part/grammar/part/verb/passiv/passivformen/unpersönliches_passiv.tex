@@ -1,0 +1,88 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[table]{xcolor}
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{5pt}
+\titleformat{\section}[block]{\Large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+\titleformat{\subsection}[block]{\large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+\begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+#3
+\end{tcolorbox}}{}
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\newcommand{\DEEN}[2]{\textbf{#1}\par{\footnotesize\color{SoftGray}#2}}
+\title{Unpersönliches Passiv\\[0.3em]\large\textnormal{Impersonal passive}}
+\date{}
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Grundidee -- Basic idea}
+\begin{grammarentry}{Bedeutung}{Meaning}
+\GermanText{Beim unpersönlichen Passiv gibt es kein persönliches Nominativsubjekt, das aus einem Akkusativobjekt entstanden ist. Es wird besonders mit intransitiven Verben oder Verben mit Dativ verwendet.}
+\EnglishText{In the impersonal passive, there is no personal nominative subject created from an accusative object. It is used especially with intransitive verbs or verbs governing the dative.}
+\GermanText{Bildung: normalerweise \textbf{werden + Partizip II}.}
+\EnglishText{Formation: normally \textbf{werden + past participle}.}
+\end{grammarentry}
+
+\section{Mit intransitiven Verben -- With intransitive verbs}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Hier wird gearbeitet.}{People are working here.}
+\ExampleItem{Im Saal wird getanzt.}{People are dancing in the hall.}
+\ExampleItem{Heute wird lange gefeiert.}{There will be a lot of celebrating today.}
+\end{itemize}\end{exbox}
+
+\section{Mit Dativobjekt -- With a dative object}
+\begin{grammarentry}{Dativ bleibt Dativ}{Dative remains dative}
+\GermanText{Wenn das Aktivverb ein Dativobjekt hat, bleibt dieses im Passiv Dativ. Es wird nicht zum Nominativsubjekt.}
+\EnglishText{If the active verb has a dative object, it remains dative in the passive. It does not become a nominative subject.}
+\GermanText{Aktiv: \textbf{Man hilft dem Mann.} Passiv: \textbf{Dem Mann wird geholfen.}}
+\EnglishText{Active: \textbf{Someone helps the man.} Passive: \textbf{The man is being helped.}}
+\end{grammarentry}
+
+\section{Die Rolle von es -- The role of es}
+\begin{grammarentry}{Vorfeld-es}{Placeholder es}
+\GermanText{Steht kein anderer Satzteil vor dem finiten Verb, kann ein formales \textbf{es} am Satzanfang stehen: \textbf{Es wird heute gearbeitet.}}
+\EnglishText{If no other constituent stands before the finite verb, a formal \textbf{es} can appear at the beginning: \textbf{People are working today.}}
+\GermanText{Wenn ein anderer Satzteil ins Vorfeld kommt, fällt dieses \textbf{es} weg: \textbf{Heute wird gearbeitet.}}
+\EnglishText{If another constituent moves to the first position, this \textbf{es} disappears: \textbf{Today people are working.}}
+\end{grammarentry}
+
+\section{Wortstellung -- Word order}
+\begin{grammarentry}{Hauptsatz und Nebensatz}{Main and subordinate clauses}
+\GermanText{Hauptsatz: \textbf{Heute wird hier gearbeitet.} Nebensatz: \textbf{..., weil heute hier gearbeitet wird.}}
+\EnglishText{Main clause: \textbf{People are working here today.} Subordinate clause: \textbf{..., because people are working here today.}}
+\end{grammarentry}
+
+\section{Merksatz -- Key rule}
+\begin{grammarentry}{Kurz}{In short}
+\GermanText{Unpersönliches Passiv: kein normales persönliches Passivsubjekt; häufig bei intransitiven Verben und Dativverben.}
+\EnglishText{Impersonal passive: no normal personal passive subject; common with intransitive verbs and dative verbs.}
+\end{grammarentry}
+\end{document}
