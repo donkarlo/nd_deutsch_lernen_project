@@ -12,6 +12,9 @@
 \usepackage[most]{tcolorbox}
 \usepackage{titlesec}
 \usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[table]{xcolor}
 
 \definecolor{HeaderBlueDark}{RGB}{70,110,170}
 \definecolor{RowBlueLight}{RGB}{235,243,255}
@@ -21,6 +24,8 @@
 \setlength{\parindent}{0pt}
 \setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
 \linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{5pt}
 
 \titleformat{\section}[block]
 {\Large\bfseries\color{HeaderBlueDark}}
@@ -44,208 +49,224 @@
 \newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
 \newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
 
-\title{Substantivierte Adjektive}
+\title{Substantivierte Adjektive\\\large \textnormal{(Nominalized Adjectives)}}
 \date{}
 
 \begin{document}
-    
-    \maketitle
-    \tableofcontents
-    \newpage
-    
-    
-    \section{Was sind substantivierte Adjektive?}
-        
-        \begin{grammarentry}{Definition}{Definition}
-            
-            \GermanText{
-                Ein substantiviertes Adjektiv ist ein Adjektiv, das wie ein Nomen verwendet wird.
-                Es wird deshalb gro{\ss}geschrieben und kann Artikel, Pronomen oder andere Begleiter haben.
-            }
-            
-            \EnglishText{
-                A substantivized adjective is an adjective that is used as a noun.
-                Therefore, it is written with a capital letter and can be used with articles, pronouns, and determiners.
-            }
-            
-            \GermanText{
-                Beispiele:
-                \begin{itemize}
-                    \item gut $\rightarrow$ das Gute
-                    \item neu $\rightarrow$ etwas Neues
-                    \item alt $\rightarrow$ der Alte
-                    \item jung $\rightarrow$ die Junge
-                \end{itemize}
-            }
-            
-            \EnglishText{
-                Examples:
-                \begin{itemize}
-                    \item good $\rightarrow$ the good
-                    \item new $\rightarrow$ something new
-                    \item old $\rightarrow$ the old man
-                    \item young $\rightarrow$ the young woman
-                \end{itemize}
-            }
-        
-        \end{grammarentry}
-    
-    
-    \section{Warum sagt man ``etwas Abstraktes''?}
-        
-        \begin{grammarentry}{Etwas + substantiviertes Adjektiv}{Something + substantivized adjective}
-            
-            \GermanText{
-                Nach W\"ortern wie \textit{etwas}, \textit{nichts}, \textit{viel}, \textit{wenig} und \textit{manches}
-                steht oft ein substantiviertes Adjektiv.
-            }
-            
-            \EnglishText{
-                After words such as \textit{something}, \textit{nothing}, \textit{much},
-                \textit{little}, and \textit{some}, German often uses a substantivized adjective.
-            }
-            
-            \GermanText{
-                Deshalb sagt man:
-                \begin{itemize}
-                    \item etwas Neues
-                    \item etwas Interessantes
-                    \item etwas Sch\"ones
-                    \item etwas Abstraktes
-                \end{itemize}
-            }
-            
-            \EnglishText{
-                Therefore German says:
-                \begin{itemize}
-                    \item something new
-                    \item something interesting
-                    \item something beautiful
-                    \item something abstract
-                \end{itemize}
-            }
-            
-            \GermanText{
-                In dem Satz \glqq Leitung ist oft etwas Abstraktes\grqq{}
-                ist \glqq Abstraktes\grqq{} kein Genitiv.
-                Es ist ein substantiviertes Adjektiv.
-            }
-            
-            \EnglishText{
-                In the sentence ``Leitung ist oft etwas Abstraktes'',
-                ``Abstraktes'' is not a genitive form.
-                It is a substantivized adjective.
-            }
-        
-        \end{grammarentry}
-    
-    
-    \section{Typische Beispiele}
-        
-        \begin{exbox}
-            
-            \begin{itemize}
-                
-                \ExampleItem
-                {Ich habe etwas Neues gelernt.}
-                {I learned something new.}
-                
-                \ExampleItem
-                {Heute ist nichts Besonderes passiert.}
-                {Nothing special happened today.}
-                
-                \ExampleItem
-                {Das Gute an Deutsch ist die klare Grammatik.}
-                {The good thing about German is the clear grammar.}
-                
-                \ExampleItem
-                {Sie sucht etwas Interessantes zum Lesen.}
-                {She is looking for something interesting to read.}
-                
-                \ExampleItem
-                {Leitung ist oft etwas Abstraktes.}
-                {Leadership or management is often something abstract.}
-            
-            \end{itemize}
-        
-        \end{exbox}
-    
-    
-    \section{Substantivierte Adjektive mit Artikeln}
-        
-        \begin{grammarentry}{Mit bestimmtem Artikel}{With definite article}
-            
-            \GermanText{
-                Substantivierte Adjektive k\"onnen auch mit Artikeln verwendet werden.
-            }
-            
-            \EnglishText{
-                Substantivized adjectives can also be used with articles.
-            }
-            
-            \begin{exbox}
-                
-                \begin{itemize}
-                    
-                    \ExampleItem
-                    {Der Alte wohnt nebenan.}
-                    {The old man lives next door.}
-                    
-                    \ExampleItem
-                    {Die Junge liest ein Buch.}
-                    {The young woman is reading a book.}
-                    
-                    \ExampleItem
-                    {Das Gute bleibt bestehen.}
-                    {The good remains.}
-                    
-                    \ExampleItem
-                    {Die Reichen zahlen viele Steuern.}
-                    {The rich pay many taxes.}
-                    
-                    \ExampleItem
-                    {Die Armen brauchen Hilfe.}
-                    {The poor need help.}
-                
-                \end{itemize}
-            
-            \end{exbox}
-        
-        \end{grammarentry}
-    
-    
-    \section{Wichtiger Hinweis}
-        
-        \begin{grammarentry}{Merke}{Remember}
-            
-            \GermanText{
-                Wenn ein Adjektiv als Nomen benutzt wird,
-                schreibt man es gro{\ss}.
-                
-                Beispiele:
-                \begin{itemize}
-                    \item etwas Neues
-                    \item nichts Wichtiges
-                    \item das Gute
-                    \item die Reichen
-                    \item der Alte
-                \end{itemize}
-            }
-            
-            \EnglishText{
-                When an adjective is used as a noun,
-                it is written with a capital letter.
-                
-                Examples:
-                \begin{itemize}
-                    \item something new
-                    \item nothing important
-                    \item the good
-                    \item the rich
-                    \item the old man
-                \end{itemize}
-            }
-        
-        \end{grammarentry}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Grundidee \textnormal{(Basic Idea)}}
+\begin{grammarentry}{Substantiviertes Adjektiv}{Nominalized adjective}
+\GermanText{Ein substantiviertes Adjektiv ist ein Adjektiv, das im Satz die Funktion eines Nomens übernimmt. Es wird deshalb großgeschrieben, behält aber die Deklinationsendungen eines Adjektivs.}
+\EnglishText{A nominalized adjective is an adjective that takes over the function of a noun in a sentence. It is therefore capitalized, but it keeps adjective declension endings.}
+\GermanText{Beispiel: \textbf{der alte Mann} $\rightarrow$ \textbf{der Alte}. Das Nomen \textbf{Mann} wird weggelassen, weil aus dem Kontext klar ist, wer gemeint ist.}
+\EnglishText{Example: \textbf{the old man} $\rightarrow$ \textbf{the old one / the old man}. The noun \textbf{man} is omitted because the context makes clear who is meant.}
+\end{grammarentry}
+
+\section{Großschreibung \textnormal{(Capitalization)}}
+\begin{grammarentry}{Regel}{Rule}
+\GermanText{Substantivierte Adjektive werden immer großgeschrieben.}
+\EnglishText{Nominalized adjectives are always capitalized.}
+\GermanText{Steht dagegen ein echtes Nomen direkt nach dem Adjektiv, bleibt das Adjektiv kleingeschrieben.}
+\EnglishText{If an actual noun directly follows the adjective, the adjective remains lowercase.}
+\end{grammarentry}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich möchte etwas \textbf{Süßes}.}{I would like something sweet.}
+\ExampleItem{Ich möchte etwas \textbf{süßes Gebäck}.}{I would like some sweet pastry.}
+\ExampleItem{Das \textbf{Wichtigste} ist die Gesundheit.}{The most important thing is health.}
+\end{itemize}
+\end{exbox}
+
+\section{Deklinationsprinzip \textnormal{(Declension Principle)}}
+\begin{grammarentry}{Adjektiv bleibt Adjektiv}{The adjective keeps adjective endings}
+\GermanText{Obwohl das Wort wie ein Nomen verwendet wird, wird es weiterhin wie ein Adjektiv dekliniert. Die Endung hängt von Kasus, Genus, Numerus und dem Artikelwort ab.}
+\EnglishText{Although the word is used like a noun, it is still declined like an adjective. The ending depends on case, gender, number, and the determiner.}
+\GermanText{Darum sagt man zum Beispiel: \textbf{der Alte}, \textbf{den Alten}, \textbf{dem Alten}, \textbf{des Alten}.}
+\EnglishText{That is why, for example, one says: \textbf{der Alte}, \textbf{den Alten}, \textbf{dem Alten}, \textbf{des Alten}.}
+\end{grammarentry}
+
+\section{Maskulin, Feminin, Neutrum und Plural \textnormal{(Masculine, Feminine, Neuter and Plural)}}
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{2.5cm}|p{2.8cm}|p{2.8cm}|p{2.8cm}|p{2.8cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Kasus / Case} &
+\color{white}\textbf{Maskulin / Masculine} &
+\color{white}\textbf{Feminin / Feminine} &
+\color{white}\textbf{Neutrum / Neuter} &
+\color{white}\textbf{Plural / Plural} \\
+Nominativ & der Alte & die Alte & das Gute & die Alten \\
+Akkusativ & den Alten & die Alte & das Gute & die Alten \\
+Dativ & dem Alten & der Alten & dem Guten & den Alten \\
+Genitiv & des Alten & der Alten & des Guten & der Alten \\
+\end{longtable}
+\GermanText{Diese Tabelle zeigt die Deklination nach dem bestimmten Artikel.}
+\EnglishText{This table shows declension after the definite article.}
+
+\section{Mit unbestimmtem Artikel \textnormal{(With the Indefinite Article)}}
+\begin{grammarentry}{Starke Endung am Adjektiv}{Strong ending on the adjective}
+\GermanText{Nach \textbf{ein/eine} trägt das substantivierte Adjektiv die Endung, die der unbestimmte Artikel nicht zeigt. Deshalb heißt es zum Beispiel \textbf{ein Deutscher}, aber \textbf{der Deutsche}.}
+\EnglishText{After \textbf{ein/eine}, the nominalized adjective carries the ending that the indefinite article does not show. Therefore, for example, one says \textbf{ein Deutscher}, but \textbf{der Deutsche}.}
+\end{grammarentry}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ein \textbf{Deutscher} wartet draußen.}{A German man is waiting outside.}
+\ExampleItem{Ich sehe einen \textbf{Deutschen}.}{I see a German man.}
+\ExampleItem{Sie spricht mit einem \textbf{Deutschen}.}{She is speaking with a German man.}
+\end{itemize}
+\end{exbox}
+
+\section{Substantivierte Adjektive für Personen \textnormal{(Nominalized Adjectives for People)}}
+\begin{grammarentry}{Personenbezeichnungen}{Person references}
+\GermanText{Sehr häufig ersetzen substantivierte Adjektive ein Nomen wie \textbf{Mann}, \textbf{Frau}, \textbf{Person}, \textbf{Mensch} oder \textbf{Leute}.}
+\EnglishText{Very often, nominalized adjectives replace a noun such as \textbf{man}, \textbf{woman}, \textbf{person}, \textbf{human being}, or \textbf{people}.}
+\end{grammarentry}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{der \textbf{Alte}}{the old man / the old one}
+\ExampleItem{die \textbf{Kranke}}{the sick woman / the female patient}
+\ExampleItem{die \textbf{Reichen}}{the rich people / the rich}
+\ExampleItem{ein \textbf{Bekannter}}{a male acquaintance}
+\ExampleItem{eine \textbf{Bekannte}}{a female acquaintance}
+\end{itemize}
+\end{exbox}
+
+\section{Neutrale substantivierte Adjektive für abstrakte Dinge \textnormal{(Neuter Nominalized Adjectives for Abstract Things)}}
+\begin{grammarentry}{Das + Adjektiv}{The + adjective}
+\GermanText{Mit dem neutralen Artikel \textbf{das} können Adjektive abstrakte Eigenschaften, Ideen oder Dinge bezeichnen.}
+\EnglishText{With the neuter article \textbf{das}, adjectives can refer to abstract qualities, ideas, or things.}
+\end{grammarentry}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{das \textbf{Gute}}{the good / what is good}
+\ExampleItem{das \textbf{Böse}}{evil / what is evil}
+\ExampleItem{das \textbf{Neue}}{what is new / the new thing}
+\ExampleItem{das \textbf{Wichtigste}}{the most important thing}
+\ExampleItem{das \textbf{Beste}}{the best / the best thing}
+\end{itemize}
+\end{exbox}
+
+\section{Nach \glqq etwas\grqq{} und \glqq nichts\grqq{} \textnormal{(After ``etwas'' and ``nichts'')}}
+\begin{grammarentry}{Wichtiges Muster}{Important pattern}
+\GermanText{Nach \textbf{etwas} und \textbf{nichts} steht ein substantiviertes Adjektiv sehr häufig im Neutrum mit der Endung \textbf{-es}.}
+\EnglishText{After \textbf{etwas} and \textbf{nichts}, a nominalized adjective very often appears in the neuter with the ending \textbf{-es}.}
+\GermanText{Muster: \textbf{etwas + Adjektiv-es} und \textbf{nichts + Adjektiv-es}.}
+\EnglishText{Pattern: \textbf{etwas + adjective-es} and \textbf{nichts + adjective-es}.}
+\end{grammarentry}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{etwas \textbf{Neues}}{something new}
+\ExampleItem{etwas \textbf{Interessantes}}{something interesting}
+\ExampleItem{nichts \textbf{Besonderes}}{nothing special}
+\ExampleItem{nichts \textbf{Schlimmes}}{nothing bad}
+\end{itemize}
+\end{exbox}
+
+\section{Nach \glqq viel\grqq, \glqq wenig\grqq{} und \glqq alles\grqq{} \textnormal{(After ``viel'', ``wenig'' and ``alles'')}}
+\begin{grammarentry}{Häufige Strukturen}{Common structures}
+\GermanText{Auch nach \textbf{viel}, \textbf{wenig} und \textbf{alles} können substantivierte Adjektive stehen. Die Form hängt von der grammatischen Umgebung ab.}
+\EnglishText{Nominalized adjectives can also appear after \textbf{viel}, \textbf{wenig}, and \textbf{alles}. The form depends on the grammatical environment.}
+\end{grammarentry}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{viel \textbf{Gutes}}{a lot of good}
+\ExampleItem{wenig \textbf{Neues}}{little that is new}
+\ExampleItem{viel \textbf{Interessantes}}{a lot of interesting things}
+\ExampleItem{alles \textbf{Gute}}{all the best / everything good}
+\ExampleItem{alles \textbf{Notwendige}}{everything necessary}
+\end{itemize}
+\end{exbox}
+
+\section{Nationalitäten und andere Personenbezeichnungen \textnormal{(Nationalities and Other Person Labels)}}
+\begin{grammarentry}{Typisches Deklinationsmuster}{Typical declension pattern}
+\GermanText{Bezeichnungen wie \textbf{Deutscher}, \textbf{Deutsche}, \textbf{Arbeitsloser}, \textbf{Erwachsener} oder \textbf{Angestellter} werden wie substantivierte Adjektive dekliniert.}
+\EnglishText{Words such as \textbf{Deutscher}, \textbf{Deutsche}, \textbf{Arbeitsloser}, \textbf{Erwachsener}, or \textbf{Angestellter} are declined like nominalized adjectives.}
+\end{grammarentry}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{ein \textbf{Erwachsener}}{an adult man / an adult person}
+\ExampleItem{der \textbf{Erwachsene}}{the adult man / the adult person}
+\ExampleItem{eine \textbf{Angestellte}}{a female employee}
+\ExampleItem{die \textbf{Arbeitslosen}}{the unemployed}
+\end{itemize}
+\end{exbox}
+
+\section{Substantivierte Partizipien \textnormal{(Nominalized Participles)}}
+\begin{grammarentry}{Partizip I und Partizip II}{Present and past participles}
+\GermanText{Auch Partizipien können substantiviert werden. Sie werden dann großgeschrieben und wie Adjektive dekliniert.}
+\EnglishText{Participles can also be nominalized. They are then capitalized and declined like adjectives.}
+\end{grammarentry}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{der \textbf{Reisende}}{the traveler}
+\ExampleItem{die \textbf{Reisenden}}{the travelers}
+\ExampleItem{der \textbf{Verletzte}}{the injured man / injured person}
+\ExampleItem{die \textbf{Verletzten}}{the injured people}
+\ExampleItem{der \textbf{Studierende}}{the student}
+\end{itemize}
+\end{exbox}
+
+\section{Komparativ und Superlativ \textnormal{(Comparative and Superlative)}}
+\begin{grammarentry}{Auch Vergleichsformen können Nomen ersetzen}{Comparative forms can also replace nouns}
+\GermanText{Komparative und Superlative können ebenfalls substantiviert werden.}
+\EnglishText{Comparatives and superlatives can also be nominalized.}
+\end{grammarentry}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{der \textbf{Ältere}}{the older one}
+\ExampleItem{die \textbf{Jüngere}}{the younger one}
+\ExampleItem{das \textbf{Beste}}{the best}
+\ExampleItem{das \textbf{Schönste}}{the most beautiful thing}
+\ExampleItem{das \textbf{Wichtigste}}{the most important thing}
+\end{itemize}
+\end{exbox}
+
+\section{Wie erkennt man ein substantiviertes Adjektiv? \textnormal{(How to Recognize a Nominalized Adjective)}}
+\begin{grammarentry}{Praktischer Test}{Practical test}
+\GermanText{Frage dich, ob hinter dem Adjektiv ein Nomen fehlt, das man aus dem Kontext ergänzen kann. Wenn das Adjektiv selbstständig die Rolle dieses Nomens übernimmt, ist es substantiviert.}
+\EnglishText{Ask yourself whether a noun is missing after the adjective and can be supplied from the context. If the adjective independently takes over the role of that noun, it is nominalized.}
+\end{grammarentry}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich spreche mit dem \textbf{Neuen}.}{I am speaking with the new one / the new man.}
+\ExampleItem{Ich spreche mit dem \textbf{neuen Mitarbeiter}.}{I am speaking with the new employee.}
+\end{itemize}
+\end{exbox}
+
+\section{Der ursprüngliche Beispielsatz \textnormal{(The Original Example Sentence)}}
+\begin{grammarentry}{nichts Besonderes}{nothing special}
+\GermanText{Im Satz \glqq Es ist Dienstagmorgen, und hier bedeutet das nichts \textbf{Besonderes}.\grqq{} ist \textbf{Besonderes} ein substantiviertes Adjektiv.}
+\EnglishText{In the sentence ``It is Tuesday morning, and here that means nothing \textbf{special},'' \textbf{Besonderes} is a nominalized adjective.}
+\GermanText{Es wird großgeschrieben, weil es wie ein Nomen verwendet wird, und es bekommt nach \textbf{nichts} die neutrale Endung \textbf{-es}.}
+\EnglishText{It is capitalized because it is used like a noun, and after \textbf{nichts} it takes the neuter ending \textbf{-es}.}
+\end{grammarentry}
+
+\section{Typische Fehler \textnormal{(Typical Mistakes)}}
+\begin{grammarentry}{Fehler vermeiden}{Avoiding errors}
+\GermanText{Falsch: \textbf{nichts besonderes}. Richtig: \textbf{nichts Besonderes}.}
+\EnglishText{Wrong: \textbf{nichts besonderes}. Correct: \textbf{nichts Besonderes}.}
+\GermanText{Falsch: \textbf{ein Deutsche}. Richtig: \textbf{ein Deutscher}.}
+\EnglishText{Wrong: \textbf{ein Deutsche}. Correct: \textbf{ein Deutscher}.}
+\GermanText{Falsch: \textbf{der Alt}. Richtig: \textbf{der Alte}.}
+\EnglishText{Wrong: \textbf{der Alt}. Correct: \textbf{der Alte}.}
+\GermanText{Wichtig: Die Großschreibung ändert nicht die Adjektivdeklination.}
+\EnglishText{Important: Capitalization does not change adjective declension.}
+\end{grammarentry}
+
+\section{Zusammenfassung \textnormal{(Summary)}}
+\begin{grammarentry}{Merksätze}{Key rules}
+\GermanText{1. Ein substantiviertes Adjektiv übernimmt die Funktion eines Nomens.}
+\EnglishText{1. A nominalized adjective takes over the function of a noun.}
+\GermanText{2. Es wird großgeschrieben.}
+\EnglishText{2. It is capitalized.}
+\GermanText{3. Es wird trotzdem wie ein Adjektiv dekliniert.}
+\EnglishText{3. It is nevertheless declined like an adjective.}
+\GermanText{4. Nach \textbf{etwas} und \textbf{nichts} steht sehr häufig die neutrale Form auf \textbf{-es}: \textbf{etwas Neues}, \textbf{nichts Besonderes}.}
+\EnglishText{4. After \textbf{etwas} and \textbf{nichts}, the neuter form ending in \textbf{-es} is very common: \textbf{etwas Neues}, \textbf{nichts Besonderes}.}
+\GermanText{5. Auch Partizipien, Komparative und Superlative können substantiviert werden.}
+\EnglishText{5. Participles, comparatives, and superlatives can also be nominalized.}
+\end{grammarentry}
 
 \end{document}
