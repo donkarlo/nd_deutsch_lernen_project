@@ -1,0 +1,324 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Infinitiv-Nomen im Deutschen\\\large\textnormal{(Infinitive Nouns in German)}}
+\date{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Definition \textnormal{(Definition)}}
+\begin{grammarentry}{Substantivierter Infinitiv}{auch: nominalisierter Infinitiv}
+\GermanText{Ein \textbf{Infinitiv-Nomen} ist ein Verb im Infinitiv, das als Nomen verwendet wird. Der übliche grammatische Begriff ist \textbf{substantivierter Infinitiv} oder \textbf{nominalisierter Infinitiv}.}
+\EnglishText{An \textbf{infinitive noun} is a verb in the infinitive form that is used as a noun. The usual grammatical term is \textbf{nominalized infinitive}.}
+
+\GermanText{Beispiele: \textit{lesen $\rightarrow$ das Lesen}, \textit{schwimmen $\rightarrow$ das Schwimmen}, \textit{arbeiten $\rightarrow$ das Arbeiten}, \textit{wachsen $\rightarrow$ das Wachsen}.}
+\EnglishText{Examples: \textit{lesen $\rightarrow$ das Lesen}, \textit{schwimmen $\rightarrow$ das Schwimmen}, \textit{arbeiten $\rightarrow$ das Arbeiten}, \textit{wachsen $\rightarrow$ das Wachsen}.}
+\end{grammarentry}
+
+\section{Bildung \textnormal{(Formation)}}
+\begin{grammarentry}{Infinitiv großschreiben}{Grundregel}
+\GermanText{Die Form des Verbs bleibt normalerweise gleich. Der entscheidende Unterschied ist die \textbf{Großschreibung}, weil die Form jetzt als Nomen verwendet wird.}
+\EnglishText{The form of the verb normally stays the same. The decisive difference is \textbf{capitalization}, because the form is now used as a noun.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{3.4cm}|p{4.8cm}|p{5.2cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Verb (Verb)} & \color{white}\textbf{Infinitiv-Nomen (Infinitive noun)} & \color{white}\textbf{English} \\
+lesen & das Lesen & reading \\
+schreiben & das Schreiben & writing \\
+essen & das Essen & eating \\
+lernen & das Lernen & learning \\
+reisen & das Reisen & travelling \\
+wachsen & das Wachsen & growing \\
+aufstehen & das Aufstehen & getting up \\
+verstehen & das Verstehen & understanding \\
+\end{longtable}
+
+\section{Genus \textnormal{(Gender)}}
+\begin{grammarentry}{Immer Neutrum}{das}
+\GermanText{Ein neu substantivierter Infinitiv ist grundsätzlich \textbf{Neutrum}. Deshalb steht im Nominativ Singular der Artikel \textbf{das}: \textit{das Lesen, das Arbeiten, das Schwimmen}.}
+\EnglishText{A newly nominalized infinitive is fundamentally \textbf{neuter}. Therefore, the nominative singular article is \textbf{das}: \textit{das Lesen, das Arbeiten, das Schwimmen}.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Das Lesen hilft mir beim Deutschlernen.}{Reading helps me with learning German.}
+\ExampleItem{Das Schwimmen ist gesund.}{Swimming is healthy.}
+\end{itemize}
+\end{exbox}
+
+\section{Kasus \textnormal{(Case)}}
+\begin{grammarentry}{Wie ein normales Nomen}{Kasus durch Satzfunktion}
+\GermanText{Der substantivierte Infinitiv kann in allen vier Kasus stehen. Sein Kasus wird durch seine Funktion im Satz oder durch eine Präposition bestimmt.}
+\EnglishText{The nominalized infinitive can appear in all four cases. Its case is determined by its function in the sentence or by a preposition.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{2.6cm}|p{5.4cm}|p{5.3cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Kasus (Case)} & \color{white}\textbf{Deutsch (German)} & \color{white}\textbf{English} \\
+Nominativ & Das Lernen ist wichtig. & Learning is important. \\
+Akkusativ & Ich liebe das Reisen. & I love travelling. \\
+Dativ & Beim Lernen höre ich keine Musik. & While studying, I do not listen to music. \\
+Genitiv & Die Vorteile des Lernens sind klar. & The advantages of learning are clear. \\
+\end{longtable}
+
+\section{Artikel und Artikellosigkeit \textnormal{(Article and absence of article)}}
+\begin{grammarentry}{Mit oder ohne Artikel}{Bedeutung und Struktur}
+\GermanText{Bei einer allgemeinen Aussage kann ein substantivierter Infinitiv besonders als Subjekt oft ohne Artikel stehen: \textit{Lesen ist wichtig}. Mit Artikel ist ebenfalls möglich: \textit{Das Lesen ist wichtig}.}
+\EnglishText{In a general statement, a nominalized infinitive, especially as subject, can often appear without an article: \textit{Lesen ist wichtig}. The article is also possible: \textit{Das Lesen ist wichtig}.}
+
+\GermanText{Nach verschmolzenen Präpositionen steht der Artikel bereits in der Form: \textbf{beim} = \textit{bei dem}, \textbf{zum} = \textit{zu dem}.}
+\EnglishText{After contracted prepositions, the article is already contained in the form: \textbf{beim} = \textit{bei dem}, \textbf{zum} = \textit{zu dem}.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Lesen macht Spaß.}{Reading is fun.}
+\ExampleItem{Das Lesen dieses Buches dauert lange.}{Reading this book takes a long time.}
+\ExampleItem{Beim Lesen lerne ich neue Wörter.}{While reading, I learn new words.}
+\ExampleItem{Zum Lernen brauche ich Ruhe.}{For studying, I need quiet.}
+\end{itemize}
+\end{exbox}
+
+\section{Deklination \textnormal{(Declension)}}
+\begin{grammarentry}{Formen im Singular}{meist kein Plural}
+\GermanText{Viele substantivierte Infinitive bezeichnen einen Vorgang allgemein und werden deshalb normalerweise nur im Singular verwendet. Im Genitiv steht häufig ein \textbf{-s}: \textit{des Lesens, des Schreibens, des Arbeitens}.}
+\EnglishText{Many nominalized infinitives refer to an activity or process in general and are therefore normally used only in the singular. In the genitive, an \textbf{-s} is commonly added: \textit{des Lesens, des Schreibens, des Arbeitens}.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{3cm}|p{5.0cm}|p{5.3cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Kasus (Case)} & \color{white}\textbf{Form (Form)} & \color{white}\textbf{Beispiel (Example)} \\
+Nominativ & das Lesen & Das Lesen ist leicht. \\
+Akkusativ & das Lesen & Ich übe das Lesen. \\
+Dativ & dem Lesen & Beim Lesen sitze ich ruhig. \\
+Genitiv & des Lesens & Die Geschwindigkeit des Lesens steigt. \\
+\end{longtable}
+
+\section{Adjektive \textnormal{(Adjectives)}}
+\begin{grammarentry}{Adjektiv wird dekliniert}{nominale Struktur}
+\GermanText{Ein substantivierter Infinitiv kann wie ein anderes Nomen durch ein Adjektiv näher bestimmt werden. Das Adjektiv erhält die normale Adjektivendung.}
+\EnglishText{A nominalized infinitive can be modified by an adjective like another noun. The adjective takes the normal adjective ending.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{regelmäßiges Lernen}{regular learning}
+\ExampleItem{das schnelle Lesen}{fast reading}
+\ExampleItem{beim konzentrierten Arbeiten}{while working with concentration}
+\ExampleItem{durch tägliches Üben}{through daily practice / by practicing daily}
+\end{itemize}
+\end{exbox}
+
+\section{Ergänzungen beim Infinitiv-Nomen \textnormal{(Complements with the infinitive noun)}}
+\begin{grammarentry}{Nominale Ergänzungen}{Genitiv und Präpositionalgruppe}
+\GermanText{Wenn der Infinitiv substantiviert ist, werden seine Ergänzungen häufig nominal ausgedrückt. Sehr typisch sind ein Genitivattribut oder eine Präpositionalgruppe.}
+\EnglishText{When the infinitive is nominalized, its complements are often expressed nominally. A genitive attribute or a prepositional phrase is especially common.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{das Lesen des Buches}{reading the book / the reading of the book}
+\ExampleItem{das Lernen der neuen Wörter}{learning the new words}
+\ExampleItem{das Warten auf den Bus}{waiting for the bus}
+\ExampleItem{das Sprechen mit dem Lehrer}{speaking with the teacher}
+\end{itemize}
+\end{exbox}
+
+\section{Präpositionen mit Infinitiv-Nomen \textnormal{(Prepositions with infinitive nouns)}}
+\begin{grammarentry}{Sehr häufige Strukturen}{B1-wichtig}
+\GermanText{Substantivierte Infinitive stehen sehr oft nach Präpositionen. Dadurch kann man zeitliche, kausale, modale oder finale Beziehungen ausdrücken.}
+\EnglishText{Nominalized infinitives very often occur after prepositions. This makes it possible to express temporal, causal, modal, or purpose relationships.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{3.0cm}|p{5.2cm}|p{5.1cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Struktur (Structure)} & \color{white}\textbf{Deutsch (German)} & \color{white}\textbf{English} \\
+beim + Dativ & Beim Essen telefoniere ich nicht. & I do not use the phone while eating. \\
+nach + Dativ & Nach dem Lernen mache ich Pause. & After studying, I take a break. \\
+vor + Dativ & Vor dem Schlafen lese ich. & Before sleeping, I read. \\
+zum + Dativ & Ich brauche Ruhe zum Lernen. & I need quiet for studying. \\
+durch + Akkusativ & Durch Üben wird man besser. & By practicing, one gets better. \\
+ohne + Akkusativ & Er ging ohne Zögern hinein. & He went inside without hesitating. \\
+\end{longtable}
+
+\section{Trennbare Verben \textnormal{(Separable verbs)}}
+\begin{grammarentry}{Infinitiv bleibt zusammen}{Großschreibung am Anfang}
+\GermanText{Bei trennbaren Verben wird der vollständige Infinitiv substantiviert und zusammengeschrieben: \textit{aufstehen $\rightarrow$ das Aufstehen}, \textit{einkaufen $\rightarrow$ das Einkaufen}, \textit{fernsehen $\rightarrow$ das Fernsehen}.}
+\EnglishText{With separable verbs, the full infinitive is nominalized and written as one word: \textit{aufstehen $\rightarrow$ das Aufstehen}, \textit{einkaufen $\rightarrow$ das Einkaufen}, \textit{fernsehen $\rightarrow$ das Fernsehen}.}
+\end{grammarentry}
+
+\section{Reflexive Verben \textnormal{(Reflexive verbs)}}
+\begin{grammarentry}{Oft besser umformulieren}{Form kann schwer wirken}
+\GermanText{Auch reflexive Verben können nominalisiert werden, aber Formen mit \textit{sich} können stilistisch schwer wirken. Im normalen Sprachgebrauch ist oft eine Umformulierung natürlicher.}
+\EnglishText{Reflexive verbs can also be nominalized, but forms containing \textit{sich} can sound stylistically heavy. In normal usage, a reformulation is often more natural.}
+
+\GermanText{Zum Beispiel ist statt einer komplizierten Nominalisierung von \textit{sich erholen} häufig einfach \textit{die Erholung} oder ein verbaler Satz besser.}
+\EnglishText{For example, instead of a complicated nominalization of \textit{sich erholen}, the noun \textit{die Erholung} or a verbal sentence is often better.}
+\end{grammarentry}
+
+\section{Infinitiv-Nomen oder Zu-Infinitiv? \textnormal{(Infinitive noun or zu-infinitive?)}}
+\begin{grammarentry}{Zwei verschiedene grammatische Strukturen}{nicht verwechseln}
+\GermanText{\textbf{Das Lernen} ist ein Nomen. \textbf{Deutsch zu lernen} ist dagegen eine Infinitivgruppe und kein Nomen. In der Infinitivgruppe bleibt das Verb kleingeschrieben.}
+\EnglishText{\textbf{Das Lernen} is a noun. \textbf{Deutsch zu lernen}, by contrast, is an infinitive phrase and not a noun. In the infinitive phrase, the verb remains lowercase.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Das Lernen von Deutsch braucht Zeit.}{Learning German takes time.}
+\ExampleItem{Deutsch zu lernen braucht Zeit.}{To learn German takes time. / Learning German takes time.}
+\ExampleItem{Es ist wichtig, Deutsch zu lernen.}{It is important to learn German.}
+\end{itemize}
+\end{exbox}
+
+\section{Infinitiv-Nomen oder normales Nomen? \textnormal{(Infinitive noun or ordinary noun?)}}
+\begin{grammarentry}{Prozess gegen Ergebnis oder Begriff}{Bedeutungsunterschied}
+\GermanText{Ein substantivierter Infinitiv betont häufig den \textbf{Vorgang oder die Tätigkeit}. Ein eigenständiges Nomen kann eher ein Ergebnis, einen Zustand oder einen festeren Begriff ausdrücken.}
+\EnglishText{A nominalized infinitive often emphasizes the \textbf{process or activity}. An independent noun may instead express a result, state, or more established concept.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{das Wachsen = der Vorgang}{growing = the process}
+\ExampleItem{das Wachstum = die Zunahme oder Entwicklung}{growth = the increase or development}
+\ExampleItem{das Entscheiden = der Vorgang des Entscheidens}{deciding = the process of deciding}
+\ExampleItem{die Entscheidung = das Ergebnis des Entscheidens}{decision = the result of deciding}
+\end{itemize}
+\end{exbox}
+
+\section{Mehrdeutige Formen \textnormal{(Ambiguous forms)}}
+\begin{grammarentry}{Dasselbe Wort kann lexikalisiert sein}{Kontext entscheidet}
+\GermanText{Manche Formen sehen wie ein substantivierter Infinitiv aus, haben aber zusätzlich eine feste Nomenbedeutung. \textit{Das Essen} kann den Vorgang des Essens bedeuten, aber auch eine Mahlzeit oder Nahrung.}
+\EnglishText{Some forms look like a nominalized infinitive but also have an established lexical noun meaning. \textit{Das Essen} can mean the act of eating, but also a meal or food.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Das Essen dauert eine Stunde.}{The eating / meal lasts one hour, depending on context.}
+\ExampleItem{Das Essen ist kalt.}{The food is cold.}
+\end{itemize}
+\end{exbox}
+
+\section{Plural \textnormal{(Plural)}}
+\begin{grammarentry}{Meist nicht nötig}{Vorgang als abstrakte Tätigkeit}
+\GermanText{Substantivierte Infinitive haben normalerweise keinen gebräuchlichen Plural, wenn sie eine Tätigkeit oder einen Vorgang allgemein bezeichnen. Bei lexikalisierten Nomen kann jedoch ein Plural existieren.}
+\EnglishText{Nominalized infinitives normally do not have a commonly used plural when they refer to an activity or process in general. However, a lexicalized noun may have a plural.}
+\end{grammarentry}
+
+\section{Groß- und Kleinschreibung erkennen \textnormal{(Recognizing capitalization)}}
+\begin{grammarentry}{Signale für Substantivierung}{Artikel, Adjektiv, Präposition}
+\GermanText{Typische Signale für eine Substantivierung sind ein Artikel, ein dekliniertes Adjektiv oder eine Präposition mit Artikel. Dann wird der Infinitiv großgeschrieben.}
+\EnglishText{Typical signals of nominalization are an article, a declined adjective, or a preposition with an article. In that case, the infinitive is capitalized.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{das Lesen}{the reading / reading}
+\ExampleItem{regelmäßiges Lesen}{regular reading}
+\ExampleItem{beim Lesen}{while reading}
+\ExampleItem{zum Lesen}{for reading}
+\end{itemize}
+\end{exbox}
+
+\section{Häufige Fehler \textnormal{(Common mistakes)}}
+\begin{grammarentry}{Fehler vermeiden}{B1-relevant}
+\GermanText{\textbf{Fehler 1:} Kleinschreibung nach Artikel: \textit{das lesen}. Richtig: \textit{das Lesen}.}
+\EnglishText{\textbf{Mistake 1:} Lowercase after an article: \textit{das lesen}. Correct: \textit{das Lesen}.}
+
+\GermanText{\textbf{Fehler 2:} Falsches Genus: \textit{die Lesen}. Richtig: \textit{das Lesen}.}
+\EnglishText{\textbf{Mistake 2:} Wrong gender: \textit{die Lesen}. Correct: \textit{das Lesen}.}
+
+\GermanText{\textbf{Fehler 3:} Den substantivierten Infinitiv mit einem Zu-Infinitiv verwechseln. \textit{das Lernen} ist ein Nomen; \textit{zu lernen} ist eine Verbform innerhalb einer Infinitivgruppe.}
+\EnglishText{\textbf{Mistake 3:} Confusing the nominalized infinitive with a zu-infinitive. \textit{das Lernen} is a noun; \textit{zu lernen} is a verb form inside an infinitive phrase.}
+
+\GermanText{\textbf{Fehler 4:} Nach einer Präposition den falschen Kasus verwenden. Zum Beispiel verlangt \textit{bei} den Dativ: \textit{beim Lernen}.}
+\EnglishText{\textbf{Mistake 4:} Using the wrong case after a preposition. For example, \textit{bei} requires the dative: \textit{beim Lernen}.}
+\end{grammarentry}
+
+\section{Schneller Test \textnormal{(Quick test)}}
+\begin{grammarentry}{Ist es ein Infinitiv-Nomen?}{Prüffragen}
+\GermanText{Frage 1: Bezeichnet die Form eine Tätigkeit oder einen Vorgang als Sache oder Begriff?}
+\EnglishText{Question 1: Does the form refer to an activity or process as a thing or concept?}
+
+\GermanText{Frage 2: Kann man einen Artikel davor setzen, zum Beispiel \textit{das}?}
+\EnglishText{Question 2: Can an article such as \textit{das} be placed before it?}
+
+\GermanText{Frage 3: Kann die Form einen Kasus haben oder nach einer Präposition stehen, zum Beispiel \textit{beim Lesen}?}
+\EnglishText{Question 3: Can the form have a case or follow a preposition, for example \textit{beim Lesen}?}
+
+\GermanText{Wenn diese Fragen passen, handelt es sich sehr wahrscheinlich um einen substantivierten Infinitiv.}
+\EnglishText{If these questions fit, the form is very likely a nominalized infinitive.}
+\end{grammarentry}
+
+\section{Zusammenfassung \textnormal{(Summary)}}
+\begin{grammarentry}{Merksätze}{kurz und wichtig}
+\GermanText{1. Verb im Infinitiv + nominale Verwendung = substantivierter Infinitiv.}
+\EnglishText{1. Verb in the infinitive + nominal use = nominalized infinitive.}
+
+\GermanText{2. Er wird großgeschrieben und ist grundsätzlich Neutrum: \textit{das Lesen}.}
+\EnglishText{2. It is capitalized and is fundamentally neuter: \textit{das Lesen}.}
+
+\GermanText{3. Er kann in allen vier Kasus stehen: \textit{das Lesen, des Lesens, dem Lesen}.}
+\EnglishText{3. It can occur in all four cases: \textit{das Lesen, des Lesens, dem Lesen}.}
+
+\GermanText{4. Nach Präpositionen sind Formen wie \textit{beim Lesen}, \textit{nach dem Essen} und \textit{zum Lernen} sehr häufig.}
+\EnglishText{4. After prepositions, forms such as \textit{beim Lesen}, \textit{nach dem Essen}, and \textit{zum Lernen} are very common.}
+
+\GermanText{5. \textit{Das Lernen} ist ein Nomen; \textit{zu lernen} ist kein Nomen.}
+\EnglishText{5. \textit{Das Lernen} is a noun; \textit{zu lernen} is not a noun.}
+\end{grammarentry}
+
+\end{document}

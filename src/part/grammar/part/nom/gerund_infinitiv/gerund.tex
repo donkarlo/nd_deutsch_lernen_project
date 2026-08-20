@@ -1,0 +1,249 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Gerund-Nomen im Deutschen\\\large\textnormal{(Gerund Nouns in German)}}
+\date{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Grundidee \textnormal{(Basic idea)}}
+\begin{grammarentry}{Kein deutsches Gerundium wie im Englischen}{zentraler Punkt}
+\GermanText{Das heutige Deutsche besitzt \textbf{kein eigenes, produktives Gerundium} wie das englische \textbf{-ing}-Gerund. Ein englisches Gerund wird deshalb je nach Satz auf verschiedene Arten ins Deutsche übertragen.}
+\EnglishText{Modern German has \textbf{no separate productive gerund} comparable to the English \textbf{-ing} gerund. Therefore, an English gerund is translated into German in different ways depending on the sentence.}
+
+\GermanText{Sehr häufig entspricht dem englischen Gerund ein \textbf{substantivierter Infinitiv}: \textit{reading} $\rightarrow$ \textit{das Lesen}, \textit{swimming} $\rightarrow$ \textit{das Schwimmen}, \textit{growing} $\rightarrow$ \textit{das Wachsen}.}
+\EnglishText{Very often, the English gerund corresponds to a \textbf{nominalized infinitive}: \textit{reading} $\rightarrow$ \textit{das Lesen}, \textit{swimming} $\rightarrow$ \textit{das Schwimmen}, \textit{growing} $\rightarrow$ \textit{das Wachsen}.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Reading is important. $\rightarrow$ Lesen ist wichtig.}{Reading is important.}
+\ExampleItem{Swimming is healthy. $\rightarrow$ Schwimmen ist gesund.}{Swimming is healthy.}
+\ExampleItem{Growing takes time. $\rightarrow$ Wachsen braucht Zeit.}{Growing takes time.}
+\end{itemize}
+\end{exbox}
+
+\section{Was ist ein englisches Gerund? \textnormal{(What is an English gerund?)}}
+\begin{grammarentry}{Verbform mit nominaler Funktion}{English -ing form}
+\GermanText{Ein englisches Gerund ist eine \textbf{-ing-Form}, die im Satz eine nominale Funktion hat. Sie kann zum Beispiel Subjekt, Objekt oder Ergänzung nach einer Präposition sein.}
+\EnglishText{An English gerund is an \textbf{-ing form} that has a nominal function in the sentence. It can be, for example, a subject, object, or complement after a preposition.}
+
+\GermanText{Nicht jede englische \textbf{-ing}-Form ist ein Gerund. In \textit{I am reading} ist \textit{reading} Teil der Verlaufsform und kein nominales Gerund.}
+\EnglishText{Not every English \textbf{-ing} form is a gerund. In \textit{I am reading}, \textit{reading} is part of the progressive form and is not a nominal gerund.}
+\end{grammarentry}
+
+\section{Die wichtigsten deutschen Entsprechungen \textnormal{(The most important German equivalents)}}
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\raggedright\arraybackslash}p{3.0cm}|>{\raggedright\arraybackslash}p{5.5cm}|>{\raggedright\arraybackslash}p{5.5cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Typ (Type)} & \color{white}\textbf{Deutsch (German)} & \color{white}\textbf{English} \\
+Substantivierter Infinitiv & \textit{Lesen macht Spaß.} & Reading is fun. \\
+Mit Artikel & \textit{Das Lesen macht Spaß.} & Reading is fun. \\
+Nach Präposition & \textit{Beim Lesen trinke ich Kaffee.} & While reading, I drink coffee. \\
+Zu-Infinitiv & \textit{Es ist wichtig, regelmäßig zu lesen.} & Reading regularly is important. / It is important to read regularly. \\
+Verbaler Satz & \textit{Ich lese gern.} & I enjoy reading. \\
+Eigenständiges Nomen & \textit{das Wachstum} & growth \\
+\end{longtable}
+
+\section{Gerund als Subjekt \textnormal{(Gerund as subject)}}
+\begin{grammarentry}{Substantivierter Infinitiv als Subjekt}{sehr häufig}
+\GermanText{Wenn ein englisches Gerund das Subjekt ist, verwendet Deutsch sehr häufig den substantivierten Infinitiv. Er wird großgeschrieben und ist grammatisch Neutrum. Der Artikel kann bei allgemeiner Bedeutung oft fehlen.}
+\EnglishText{When an English gerund is the subject, German very often uses a nominalized infinitive. It is capitalized and grammatically neuter. The article can often be omitted when the meaning is general.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Rauchen ist ungesund.}{Smoking is unhealthy.}
+\ExampleItem{Das Lernen einer Sprache braucht Zeit.}{Learning a language takes time.}
+\ExampleItem{Warten ist manchmal schwierig.}{Waiting is sometimes difficult.}
+\end{itemize}
+\end{exbox}
+
+\section{Gerund als Objekt \textnormal{(Gerund as object)}}
+\begin{grammarentry}{Nicht immer wörtlich übersetzen}{Verb entscheidet}
+\GermanText{Ein englisches Verb kann ein Gerund als Objekt verlangen, während das entsprechende deutsche Verb eine ganz andere Konstruktion verwendet. Deshalb darf man die englische Struktur nicht mechanisch übernehmen.}
+\EnglishText{An English verb may require a gerund as its object, while the corresponding German verb uses a completely different construction. Therefore, the English structure must not be copied mechanically.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{I enjoy reading. $\rightarrow$ Ich lese gern.}{I enjoy reading.}
+\ExampleItem{I like swimming. $\rightarrow$ Ich schwimme gern.}{I like swimming.}
+\ExampleItem{He stopped smoking. $\rightarrow$ Er hat mit dem Rauchen aufgehört.}{He stopped smoking.}
+\ExampleItem{She started learning German. $\rightarrow$ Sie hat angefangen, Deutsch zu lernen.}{She started learning German.}
+\end{itemize}
+\end{exbox}
+
+\section{Gerund nach Präpositionen \textnormal{(Gerund after prepositions)}}
+\begin{grammarentry}{Präposition + substantivierter Infinitiv}{Kasus beachten}
+\GermanText{Englische Präpositionen mit Gerund werden im Deutschen oft durch eine deutsche Präposition plus substantivierten Infinitiv wiedergegeben. Der Kasus richtet sich nach der deutschen Präposition.}
+\EnglishText{English prepositions followed by a gerund are often expressed in German by a German preposition plus a nominalized infinitive. The case is determined by the German preposition.}
+
+\GermanText{Besonders häufig sind Formen wie \textbf{beim} (= bei dem), \textbf{zum} (= zu dem), \textbf{nach dem}, \textbf{vor dem}, \textbf{durch} und \textbf{ohne}.}
+\EnglishText{Especially common forms are \textbf{beim} (= bei dem), \textbf{zum} (= zu dem), \textbf{nach dem}, \textbf{vor dem}, \textbf{durch}, and \textbf{ohne}.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Beim Essen spreche ich nicht viel.}{While eating, I do not speak much.}
+\ExampleItem{Nach dem Arbeiten bin ich müde.}{After working, I am tired.}
+\ExampleItem{Durch regelmäßiges Üben wird man besser.}{By practicing regularly, one gets better.}
+\ExampleItem{Ohne Nachdenken antwortete er sofort.}{Without thinking, he answered immediately.}
+\end{itemize}
+\end{exbox}
+
+\section{Gerund und Zu-Infinitiv \textnormal{(Gerund and zu-infinitive)}}
+\begin{grammarentry}{Oft ist ein Zu-Infinitiv natürlicher}{keine 1:1-Regel}
+\GermanText{Viele englische Gerundkonstruktionen entsprechen im Deutschen keinem Nomen, sondern einer \textbf{Infinitivgruppe mit zu}. Diese Infinitivgruppe ist keine Nominalisierung.}
+\EnglishText{Many English gerund constructions correspond in German not to a noun, but to an \textbf{infinitive phrase with zu}. This infinitive phrase is not a nominalization.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Learning German is important. $\rightarrow$ Es ist wichtig, Deutsch zu lernen.}{Learning German is important.}
+\ExampleItem{She started working. $\rightarrow$ Sie fing an zu arbeiten.}{She started working.}
+\ExampleItem{He avoided answering. $\rightarrow$ Er vermied es, zu antworten.}{He avoided answering.}
+\end{itemize}
+\end{exbox}
+
+\section{Gerund und Nebensatz \textnormal{(Gerund and subordinate clause)}}
+\begin{grammarentry}{Manchmal braucht Deutsch einen ganzen Satz}{Subjekt und Zeit ausdrücken}
+\GermanText{Wenn das englische Gerund ein eigenes Subjekt, eine genauere Zeitbeziehung oder zusätzliche Information enthält, ist im Deutschen oft ein Nebensatz besser.}
+\EnglishText{When the English gerund has its own subject, a more precise time relationship, or additional information, a subordinate clause is often better in German.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{After he finished working, he went home. $\rightarrow$ Nachdem er mit der Arbeit fertig war, ging er nach Hause.}{After finishing work, he went home.}
+\ExampleItem{Before leaving, call me. $\rightarrow$ Bevor du gehst, ruf mich an.}{Before leaving, call me.}
+\end{itemize}
+\end{exbox}
+
+\section{Gerund oder echtes Nomen? \textnormal{(Gerund or lexical noun?)}}
+\begin{grammarentry}{Bedeutung entscheidet}{Wachsen vs. Wachstum}
+\GermanText{Ein englisches \textbf{-ing}-Wort kann einen Vorgang ausdrücken. Dann passt oft ein substantivierter Infinitiv. Ein eigenständiges deutsches Nomen kann dagegen eher das Ergebnis, den Zustand oder das abstrakte Konzept bezeichnen.}
+\EnglishText{An English \textbf{-ing} word can express an ongoing process. In that case, a nominalized infinitive often fits. An independent German noun may instead refer more to the result, state, or abstract concept.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{das Wachsen = der Vorgang des Wachsens}{growing = the process of growing}
+\ExampleItem{das Wachstum = Zunahme oder Entwicklung als Nomen}{growth = increase or development as a noun}
+\ExampleItem{das Entscheiden = der Vorgang, eine Entscheidung zu treffen}{deciding = the act/process of deciding}
+\ExampleItem{die Entscheidung = das Ergebnis oder der konkrete Entschluss}{decision = the result or concrete choice}
+\end{itemize}
+\end{exbox}
+
+\section{Artikel, Genus und Kasus \textnormal{(Article, gender, and case)}}
+\begin{grammarentry}{Wenn der Infinitiv zum Nomen wird}{Neutrum}
+\GermanText{Ein substantivierter Infinitiv ist grundsätzlich \textbf{Neutrum}: \textit{das Lesen, das Schreiben, das Arbeiten, das Wachsen}. Er wird wie ein Nomen dekliniert.}
+\EnglishText{A nominalized infinitive is fundamentally \textbf{neuter}: \textit{das Lesen, das Schreiben, das Arbeiten, das Wachsen}. It is declined like a noun.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{2.8cm}|p{5.0cm}|p{5.4cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Kasus (Case)} & \color{white}\textbf{Deutsch (German)} & \color{white}\textbf{English} \\
+Nominativ & Das Lesen hilft mir. & Reading helps me. \\
+Akkusativ & Ich mag das Lesen. & I like reading. \\
+Dativ & Beim Lesen lerne ich viel. & While reading, I learn a lot. \\
+Genitiv & Die Vorteile des Lesens sind groß. & The advantages of reading are considerable. \\
+\end{longtable}
+
+\section{Adjektive beim substantivierten Infinitiv \textnormal{(Adjectives with the nominalized infinitive)}}
+\begin{grammarentry}{Adjektivdeklination gilt normal}{Nomenstruktur}
+\GermanText{Weil der substantivierte Infinitiv ein Nomen ist, kann er durch ein dekliniertes Adjektiv näher bestimmt werden.}
+\EnglishText{Because the nominalized infinitive is a noun, it can be modified by a declined adjective.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{regelmäßiges Lernen}{regular learning / studying regularly}
+\ExampleItem{das schnelle Lesen}{fast reading}
+\ExampleItem{durch tägliches Üben}{through daily practice / by practicing daily}
+\end{itemize}
+\end{exbox}
+
+\section{Häufige Fehler \textnormal{(Common mistakes)}}
+\begin{grammarentry}{Fehler vermeiden}{B1-relevant}
+\GermanText{\textbf{Fehler 1:} Ein substantivierter Infinitiv wird kleingeschrieben. Falsch: \textit{das lesen}. Richtig: \textit{das Lesen}.}
+\EnglishText{\textbf{Mistake 1:} A nominalized infinitive is written with a lowercase letter. Wrong: \textit{das lesen}. Correct: \textit{das Lesen}.}
+
+\GermanText{\textbf{Fehler 2:} Man übersetzt jedes englische Gerund automatisch mit \textit{das + Infinitiv}. Das funktioniert nicht in jedem Satz.}
+\EnglishText{\textbf{Mistake 2:} Every English gerund is automatically translated with \textit{das + infinitive}. This does not work in every sentence.}
+
+\GermanText{\textbf{Fehler 3:} Man verwechselt das englische Gerund mit der englischen Verlaufsform. \textit{I am working} bedeutet normalerweise einfach \textit{Ich arbeite}; nicht \textit{Ich bin das Arbeiten}.}
+\EnglishText{\textbf{Mistake 3:} The English gerund is confused with the English progressive form. \textit{I am working} normally simply means \textit{Ich arbeite}; not \textit{Ich bin das Arbeiten}.}
+\end{grammarentry}
+
+\section{Entscheidungshilfe \textnormal{(Decision guide)}}
+\begin{grammarentry}{So wählst du die deutsche Form}{praktische Regel}
+\GermanText{Wenn du ein englisches \textbf{-ing}-Wort übersetzen willst, frage zuerst: Hat es im Satz eine nominale Funktion? Wenn ja, prüfe einen substantivierten Infinitiv. Danach prüfe, ob das deutsche Verb eine festere und natürlichere Konstruktion mit \textit{zu}, einer Präposition oder einem Nebensatz verlangt.}
+\EnglishText{When translating an English \textbf{-ing} word, first ask: Does it have a nominal function in the sentence? If yes, test a nominalized infinitive. Then check whether the German verb requires a more natural construction with \textit{zu}, a preposition, or a subordinate clause.}
+\end{grammarentry}
+
+\section{Zusammenfassung \textnormal{(Summary)}}
+\begin{grammarentry}{Merksätze}{kurz und wichtig}
+\GermanText{1. Deutsch hat kein direktes Gerundium wie Englisch.}
+\EnglishText{1. German has no direct gerund equivalent like English.}
+
+\GermanText{2. Ein englisches Gerund wird sehr oft durch einen substantivierten Infinitiv wiedergegeben: \textit{reading} $\rightarrow$ \textit{das Lesen}.}
+\EnglishText{2. An English gerund is very often expressed by a nominalized infinitive: \textit{reading} $\rightarrow$ \textit{das Lesen}.}
+
+\GermanText{3. Je nach Verb und Satz können auch ein Zu-Infinitiv, eine Präpositionalgruppe, ein Nebensatz oder ein anderes Nomen nötig sein.}
+\EnglishText{3. Depending on the verb and sentence, a zu-infinitive, a prepositional phrase, a subordinate clause, or another noun may be necessary.}
+
+\GermanText{4. Nicht jede englische \textbf{-ing}-Form ist ein Gerund.}
+\EnglishText{4. Not every English \textbf{-ing} form is a gerund.}
+\end{grammarentry}
+
+\end{document}
