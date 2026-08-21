@@ -40,9 +40,9 @@
 \newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
 
 \NewDocumentEnvironment{grammarentry}{mm+b}{%
-    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
-    #3
-    \end{tcolorbox}
+\begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+#3
+\end{tcolorbox}
 }{}
 
 \newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
@@ -53,313 +53,313 @@
 \date{}
 
 \begin{document}
-\renewcommand{\contentsname}{Inhaltsverzeichnis \textnormal{(Table of Contents)}}
-\maketitle
-\tableofcontents
-\newpage
+    \renewcommand{\contentsname}{Inhaltsverzeichnis \textnormal{(Table of Contents)}}
+    \maketitle
+    \tableofcontents
+    \newpage
 
-\section{Grundidee \textnormal{(Basic idea)}}
+    \section{Grundidee \textnormal{(Basic idea)}}
 
-\begin{grammarentry}{Was ist die n-Deklination? \textnormal{(What is the n-declension?)}}{schwache Deklination maskuliner Nomen \textnormal{(weak declension of masculine nouns)}}
-\GermanText{Die \textbf{n-Deklination} ist eine besondere Deklination bestimmter \textbf{maskuliner Nomen}. Diese Nomen bekommen im Singular in \textbf{Akkusativ, Dativ und Genitiv} normalerweise die Endung \textbf{-n} oder \textbf{-en}. Nur der \textbf{Nominativ Singular} bleibt ohne diese zusätzliche Endung.}
-\EnglishText{The \textbf{n-declension} is a special declension of certain \textbf{masculine nouns}. In the singular, these nouns normally take the ending \textbf{-n} or \textbf{-en} in the \textbf{accusative, dative, and genitive}. Only the \textbf{nominative singular} remains without this additional ending.}
+        \begin{grammarentry}{Was ist die n-Deklination? \textnormal{(What is the n-declension?)}}{schwache Deklination maskuliner Nomen \textnormal{(weak declension of masculine nouns)}}
+            \GermanText{Die \textbf{n-Deklination} ist eine besondere Deklination bestimmter \textbf{maskuliner Nomen}. Diese Nomen bekommen im Singular in \textbf{Akkusativ, Dativ und Genitiv} normalerweise die Endung \textbf{-n} oder \textbf{-en}. Nur der \textbf{Nominativ Singular} bleibt ohne diese zusätzliche Endung.}
+            \EnglishText{The \textbf{n-declension} is a special declension of certain \textbf{masculine nouns}. In the singular, these nouns normally take the ending \textbf{-n} or \textbf{-en} in the \textbf{accusative, dative, and genitive}. Only the \textbf{nominative singular} remains without this additional ending.}
 
-\GermanText{Ein typisches Beispiel ist \textbf{der Student}: der Student, den Studenten, dem Studenten, des Studenten.}
-\EnglishText{A typical example is \textbf{der Student}: der Student, den Studenten, dem Studenten, des Studenten.}
-\end{grammarentry}
+            \GermanText{Ein typisches Beispiel ist \textbf{der Student}: der Student, den Studenten, dem Studenten, des Studenten.}
+            \EnglishText{A typical example is \textbf{der Student}: der Student, den Studenten, dem Studenten, des Studenten.}
+        \end{grammarentry}
 
-\begin{exbox}
-\begin{itemize}
-\ExampleItem{Der Student kommt.}{The student is coming.}
-\ExampleItem{Ich sehe den Studenten.}{I see the student.}
-\ExampleItem{Ich helfe dem Studenten.}{I help the student.}
-\ExampleItem{Das Buch des Studenten liegt hier.}{The student's book is here.}
-\end{itemize}
-\end{exbox}
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Der Student kommt.}{The student is coming.}
+                \ExampleItem{Ich sehe den Studenten.}{I see the student.}
+                \ExampleItem{Ich helfe dem Studenten.}{I help the student.}
+                \ExampleItem{Das Buch des Studenten liegt hier.}{The student's book is here.}
+            \end{itemize}
+        \end{exbox}
 
-\section{Die wichtigste Regel \textnormal{(The most important rule)}}
+    \section{Die wichtigste Regel \textnormal{(The most important rule)}}
 
-\begin{grammarentry}{Singular \textnormal{(Singular)}}{Nominativ anders, drei andere Kasus mit -(e)n \textnormal{(nominative differs; three other cases take -(e)n)}}
-\GermanText{Merksatz: \textbf{Nominativ Singular ohne -(e)n; Akkusativ, Dativ und Genitiv Singular mit -(e)n.}}
-\EnglishText{Memory rule: \textbf{Nominative singular without -(e)n; accusative, dative, and genitive singular with -(e)n.}}
+        \begin{grammarentry}{Singular \textnormal{(Singular)}}{Nominativ anders, drei andere Kasus mit -(e)n \textnormal{(nominative differs; three other cases take -(e)n)}}
+            \GermanText{Merksatz: \textbf{Nominativ Singular ohne -(e)n; Akkusativ, Dativ und Genitiv Singular mit -(e)n.}}
+            \EnglishText{Memory rule: \textbf{Nominative singular without -(e)n; accusative, dative, and genitive singular with -(e)n.}}
 
-\GermanText{Die Endung gehört zum \textbf{Nomen selbst}. Sie ist also nicht die Endung des Artikels oder eines Adjektivs.}
-\EnglishText{The ending belongs to the \textbf{noun itself}. It is therefore not the ending of the article or an adjective.}
-\end{grammarentry}
+            \GermanText{Die Endung gehört zum \textbf{Nomen selbst}. Sie ist also nicht die Endung des Artikels oder eines Adjektivs.}
+            \EnglishText{The ending belongs to the \textbf{noun itself}. It is therefore not the ending of the article or an adjective.}
+        \end{grammarentry}
 
-\rowcolors{2}{RowBlueLight}{RowBlueDark}
-\begin{longtable}{>{\bfseries}p{2.8cm}|p{4.4cm}|p{7.0cm}}
-\rowcolor{HeaderBlueDark}
-\color{white}\textbf{Kasus (Case)} & \color{white}\textbf{Form (Form)} & \color{white}\textbf{Beispiel / Übersetzung (Example / Translation)} \\
-Nominativ & der Student & Der Student lernt. / The student studies. \\
-Akkusativ & den Studenten & Ich sehe den Studenten. / I see the student. \\
-Dativ & dem Studenten & Ich helfe dem Studenten. / I help the student. \\
-Genitiv & des Studenten & Das Buch des Studenten. / The student's book. \\
-\end{longtable}
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{2.8cm}|p{4.4cm}|p{7.0cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Kasus (Case)} & \color{white}\textbf{Form (Form)} & \color{white}\textbf{Beispiel / Übersetzung (Example / Translation)} \\
+            Nominativ & der Student & Der Student lernt. / The student studies. \\
+            Akkusativ & den Studenten & Ich sehe den Studenten. / I see the student. \\
+            Dativ & dem Studenten & Ich helfe dem Studenten. / I help the student. \\
+            Genitiv & des Studenten & Das Buch des Studenten. / The student's book. \\
+        \end{longtable}
 
-\section{Wann benutzt man -n und wann -en? \textnormal{(When do we use -n and when -en?)}}
+    \section{Wann benutzt man -n und wann -en? \textnormal{(When do we use -n and when -en?)}}
 
-\begin{grammarentry}{Endung \textnormal{(Ending)}}{Form des Wortes \textnormal{(form of the word)}}
-\GermanText{Viele n-Deklination-Nomen, die im Nominativ Singular bereits auf \textbf{-e} enden, bekommen normalerweise nur \textbf{-n}: der Junge $\rightarrow$ den Jungen; der Kollege $\rightarrow$ dem Kollegen; der Löwe $\rightarrow$ des Löwen.}
-\EnglishText{Many n-declension nouns that already end in \textbf{-e} in the nominative singular normally add only \textbf{-n}: der Junge $\rightarrow$ den Jungen; der Kollege $\rightarrow$ dem Kollegen; der Löwe $\rightarrow$ des Löwen.}
+        \begin{grammarentry}{Endung \textnormal{(Ending)}}{Form des Wortes \textnormal{(form of the word)}}
+            \GermanText{Viele n-Deklination-Nomen, die im Nominativ Singular bereits auf \textbf{-e} enden, bekommen normalerweise nur \textbf{-n}: der Junge $\rightarrow$ den Jungen; der Kollege $\rightarrow$ dem Kollegen; der Löwe $\rightarrow$ des Löwen.}
+            \EnglishText{Many n-declension nouns that already end in \textbf{-e} in the nominative singular normally add only \textbf{-n}: der Junge $\rightarrow$ den Jungen; der Kollege $\rightarrow$ dem Kollegen; der Löwe $\rightarrow$ des Löwen.}
 
-\GermanText{Viele andere schwache Maskulina bekommen \textbf{-en}: der Student $\rightarrow$ den Studenten; der Journalist $\rightarrow$ dem Journalisten; der Elefant $\rightarrow$ des Elefanten.}
-\EnglishText{Many other weak masculine nouns take \textbf{-en}: der Student $\rightarrow$ den Studenten; der Journalist $\rightarrow$ dem Journalisten; der Elefant $\rightarrow$ des Elefanten.}
+            \GermanText{Viele andere schwache Maskulina bekommen \textbf{-en}: der Student $\rightarrow$ den Studenten; der Journalist $\rightarrow$ dem Journalisten; der Elefant $\rightarrow$ des Elefanten.}
+            \EnglishText{Many other weak masculine nouns take \textbf{-en}: der Student $\rightarrow$ den Studenten; der Journalist $\rightarrow$ dem Journalisten; der Elefant $\rightarrow$ des Elefanten.}
 
-\GermanText{Für Lernende ist es am sichersten, das Nomen zusammen mit einer gebeugten Form zu lernen, zum Beispiel: \textbf{der Student -- des Studenten -- die Studenten}.}
-\EnglishText{For learners, the safest method is to learn the noun together with an inflected form, for example: \textbf{der Student -- des Studenten -- die Studenten}.}
-\end{grammarentry}
+            \GermanText{Für Lernende ist es am sichersten, das Nomen zusammen mit einer gebeugten Form zu lernen, zum Beispiel: \textbf{der Student -- des Studenten -- die Studenten}.}
+            \EnglishText{For learners, the safest method is to learn the noun together with an inflected form, for example: \textbf{der Student -- des Studenten -- die Studenten}.}
+        \end{grammarentry}
 
-\section{Welche Nomen gehören häufig zur n-Deklination? \textnormal{(Which nouns often belong to the n-declension?)}}
+    \section{Welche Nomen gehören häufig zur n-Deklination? \textnormal{(Which nouns often belong to the n-declension?)}}
 
-\subsection{Maskuline Personen- und Tierbezeichnungen auf -e \textnormal{(Masculine words for people and animals ending in -e)}}
+        \subsection{Maskuline Personen- und Tierbezeichnungen auf -e \textnormal{(Masculine words for people and animals ending in -e)}}
 
-\begin{grammarentry}{Typische Gruppe \textnormal{(Typical group)}}{Endung -e \textnormal{(ending -e)}}
-\GermanText{Viele maskuline Personen- und Tierbezeichnungen auf \textbf{-e} gehören zur n-Deklination.}
-\EnglishText{Many masculine nouns referring to people and animals and ending in \textbf{-e} belong to the n-declension.}
-\end{grammarentry}
+            \begin{grammarentry}{Typische Gruppe \textnormal{(Typical group)}}{Endung -e \textnormal{(ending -e)}}
+                \GermanText{Viele maskuline Personen- und Tierbezeichnungen auf \textbf{-e} gehören zur n-Deklination.}
+                \EnglishText{Many masculine nouns referring to people and animals and ending in \textbf{-e} belong to the n-declension.}
+            \end{grammarentry}
 
-\rowcolors{2}{RowBlueLight}{RowBlueDark}
-\begin{longtable}{>{\bfseries}p{4.0cm}|p{5.0cm}|p{5.0cm}}
-\rowcolor{HeaderBlueDark}
-\color{white}\textbf{Nominativ (Nominative)} & \color{white}\textbf{Andere Kasus (Other cases)} & \color{white}\textbf{English} \\
-der Junge & den/dem/des Jungen & boy \\
-der Kollege & den/dem/des Kollegen & colleague \\
-der Kunde & den/dem/des Kunden & customer \\
-der Experte & den/dem/des Experten & expert \\
-der Löwe & den/dem/des Löwen & lion \\
-der Hase & den/dem/des Hasen & hare / rabbit \\
-der Zeuge & den/dem/des Zeugen & witness \\
-der Neffe & den/dem/des Neffen & nephew \\
-\end{longtable}
+            \rowcolors{2}{RowBlueLight}{RowBlueDark}
+            \begin{longtable}{>{\bfseries}p{4.0cm}|p{5.0cm}|p{5.0cm}}
+                \rowcolor{HeaderBlueDark}
+                \color{white}\textbf{Nominativ (Nominative)} & \color{white}\textbf{Andere Kasus (Other cases)} & \color{white}\textbf{English} \\
+                der Junge & den/dem/des Jungen & boy \\
+                der Kollege & den/dem/des Kollegen & colleague \\
+                der Kunde & den/dem/des Kunden & customer \\
+                der Experte & den/dem/des Experten & expert \\
+                der Löwe & den/dem/des Löwen & lion \\
+                der Hase & den/dem/des Hasen & hare / rabbit \\
+                der Zeuge & den/dem/des Zeugen & witness \\
+                der Neffe & den/dem/des Neffen & nephew \\
+            \end{longtable}
 
-\subsection{Fremdwörter mit typischen Endungen \textnormal{(Loanwords with typical endings)}}
+        \subsection{Fremdwörter mit typischen Endungen \textnormal{(Loanwords with typical endings)}}
 
-\begin{grammarentry}{Sehr häufige Muster \textnormal{(Very common patterns)}}{-ant, -ent, -ist und weitere \textnormal{(-ant, -ent, -ist and others)}}
-\GermanText{Viele maskuline Fremdwörter, besonders Personenbezeichnungen, gehören zur n-Deklination. Häufige Endungen sind zum Beispiel \textbf{-ant, -ent, -ist, -oge, -at, -et, -nom}.}
-\EnglishText{Many masculine loanwords, especially nouns referring to people, belong to the n-declension. Common endings include \textbf{-ant, -ent, -ist, -oge, -at, -et, -nom}.}
-\end{grammarentry}
+            \begin{grammarentry}{Sehr häufige Muster \textnormal{(Very common patterns)}}{-ant, -ent, -ist und weitere \textnormal{(-ant, -ent, -ist and others)}}
+                \GermanText{Viele maskuline Fremdwörter, besonders Personenbezeichnungen, gehören zur n-Deklination. Häufige Endungen sind zum Beispiel \textbf{-ant, -ent, -ist, -oge, -at, -et, -nom}.}
+                \EnglishText{Many masculine loanwords, especially nouns referring to people, belong to the n-declension. Common endings include \textbf{-ant, -ent, -ist, -oge, -at, -et, -nom}.}
+            \end{grammarentry}
 
-\rowcolors{2}{RowBlueLight}{RowBlueDark}
-\begin{longtable}{>{\bfseries}p{3.5cm}|p{4.5cm}|p{6.0cm}}
-\rowcolor{HeaderBlueDark}
-\color{white}\textbf{Muster (Pattern)} & \color{white}\textbf{Beispiel (Example)} & \color{white}\textbf{Form außerhalb Nom. Sg. (Form outside nom. sg.)} \\
--ant & der Praktikant & den/dem/des Praktikanten \\
--ent & der Student & den/dem/des Studenten \\
--ist & der Journalist & den/dem/des Journalisten \\
--oge & der Biologe & den/dem/des Biologen \\
--at & der Diplomat & den/dem/des Diplomaten \\
--et & der Athlet & den/dem/des Athleten \\
--nom & der Astronom & den/dem/des Astronomen \\
-\end{longtable}
+            \rowcolors{2}{RowBlueLight}{RowBlueDark}
+            \begin{longtable}{>{\bfseries}p{3.5cm}|p{4.5cm}|p{6.0cm}}
+                \rowcolor{HeaderBlueDark}
+                \color{white}\textbf{Muster (Pattern)} & \color{white}\textbf{Beispiel (Example)} & \color{white}\textbf{Form außerhalb Nom. Sg. (Form outside nom. sg.)} \\
+                -ant & der Praktikant & den/dem/des Praktikanten \\
+                -ent & der Student & den/dem/des Studenten \\
+                -ist & der Journalist & den/dem/des Journalisten \\
+                -oge & der Biologe & den/dem/des Biologen \\
+                -at & der Diplomat & den/dem/des Diplomaten \\
+                -et & der Athlet & den/dem/des Athleten \\
+                -nom & der Astronom & den/dem/des Astronomen \\
+            \end{longtable}
 
-\subsection{Wichtige Wörter ohne offensichtliche Endung \textnormal{(Important words without an obvious ending)}}
+        \subsection{Wichtige Wörter ohne offensichtliche Endung \textnormal{(Important words without an obvious ending)}}
 
-\begin{grammarentry}{Auswendig lernen \textnormal{(Learn by heart)}}{häufige Einzelwörter \textnormal{(common individual nouns)}}
-\GermanText{Einige sehr häufige schwache Maskulina erkennt man nicht zuverlässig an einer typischen Endung. Diese sollte man als Wortschatz lernen.}
-\EnglishText{Some very common weak masculine nouns cannot be reliably recognized by a typical ending. These should be learned as vocabulary.}
-\end{grammarentry}
+            \begin{grammarentry}{Auswendig lernen \textnormal{(Learn by heart)}}{häufige Einzelwörter \textnormal{(common individual nouns)}}
+                \GermanText{Einige sehr häufige schwache Maskulina erkennt man nicht zuverlässig an einer typischen Endung. Diese sollte man als Wortschatz lernen.}
+                \EnglishText{Some very common weak masculine nouns cannot be reliably recognized by a typical ending. These should be learned as vocabulary.}
+            \end{grammarentry}
 
-\rowcolors{2}{RowBlueLight}{RowBlueDark}
-\begin{longtable}{>{\bfseries}p{4.0cm}|p{5.0cm}|p{5.0cm}}
-\rowcolor{HeaderBlueDark}
-\color{white}\textbf{Nominativ (Nominative)} & \color{white}\textbf{Andere Kasus (Other cases)} & \color{white}\textbf{English} \\
-der Mensch & den/dem/des Menschen & human being / person \\
-der Herr & den/dem/des Herrn & gentleman / Mr. \\
-der Bär & den/dem/des Bären & bear \\
-der Held & den/dem/des Helden & hero \\
-der Prinz & den/dem/des Prinzen & prince \\
-der Graf & den/dem/des Grafen & count \\
-\end{longtable}
+            \rowcolors{2}{RowBlueLight}{RowBlueDark}
+            \begin{longtable}{>{\bfseries}p{4.0cm}|p{5.0cm}|p{5.0cm}}
+                \rowcolor{HeaderBlueDark}
+                \color{white}\textbf{Nominativ (Nominative)} & \color{white}\textbf{Andere Kasus (Other cases)} & \color{white}\textbf{English} \\
+                der Mensch & den/dem/des Menschen & human being / person \\
+                der Herr & den/dem/des Herrn & gentleman / Mr. \\
+                der Bär & den/dem/des Bären & bear \\
+                der Held & den/dem/des Helden & hero \\
+                der Prinz & den/dem/des Prinzen & prince \\
+                der Graf & den/dem/des Grafen & count \\
+            \end{longtable}
 
-\section{Der Plural \textnormal{(The plural)}}
+    \section{Der Plural \textnormal{(The plural)}}
 
-\begin{grammarentry}{Pluralformen \textnormal{(Plural forms)}}{nicht mit der Singularregel verwechseln \textnormal{(do not confuse them with the singular rule)}}
-\GermanText{Bei vielen n-Deklination-Nomen endet auch der Plural auf \textbf{-n} oder \textbf{-en}. Deshalb sehen viele Pluralformen genauso aus wie Akkusativ, Dativ und Genitiv Singular.}
-\EnglishText{For many n-declension nouns, the plural also ends in \textbf{-n} or \textbf{-en}. Therefore, many plural forms look the same as the accusative, dative, and genitive singular.}
+        \begin{grammarentry}{Pluralformen \textnormal{(Plural forms)}}{nicht mit der Singularregel verwechseln \textnormal{(do not confuse them with the singular rule)}}
+            \GermanText{Bei vielen n-Deklination-Nomen endet auch der Plural auf \textbf{-n} oder \textbf{-en}. Deshalb sehen viele Pluralformen genauso aus wie Akkusativ, Dativ und Genitiv Singular.}
+            \EnglishText{For many n-declension nouns, the plural also ends in \textbf{-n} or \textbf{-en}. Therefore, many plural forms look the same as the accusative, dative, and genitive singular.}
 
-\GermanText{Beispiel: \textbf{der Student} -- Singular: der Student / den Studenten / dem Studenten / des Studenten; Plural: die Studenten / die Studenten / den Studenten / der Studenten.}
-\EnglishText{Example: \textbf{der Student} -- singular: der Student / den Studenten / dem Studenten / des Studenten; plural: die Studenten / die Studenten / den Studenten / der Studenten.}
-\end{grammarentry}
+            \GermanText{Beispiel: \textbf{der Student} -- Singular: der Student / den Studenten / dem Studenten / des Studenten; Plural: die Studenten / die Studenten / den Studenten / der Studenten.}
+            \EnglishText{Example: \textbf{der Student} -- singular: der Student / den Studenten / dem Studenten / des Studenten; plural: die Studenten / die Studenten / den Studenten / der Studenten.}
+        \end{grammarentry}
 
-\section{Artikel und Adjektive ändern die n-Deklination nicht \textnormal{(Articles and adjectives do not cancel the n-declension)}}
+    \section{Artikel und Adjektive ändern die n-Deklination nicht \textnormal{(Articles and adjectives do not cancel the n-declension)}}
 
-\begin{grammarentry}{Mehrere Endungen gleichzeitig \textnormal{(Several endings at the same time)}}{Artikel, Adjektiv und Nomen \textnormal{(article, adjective and noun)}}
-\GermanText{Artikel und Adjektive werden nach ihren eigenen Regeln dekliniert. Das n-Deklination-Nomen bekommt trotzdem seine Endung.}
-\EnglishText{Articles and adjectives are declined according to their own rules. The n-declension noun still receives its own ending.}
-\end{grammarentry}
+        \begin{grammarentry}{Mehrere Endungen gleichzeitig \textnormal{(Several endings at the same time)}}{Artikel, Adjektiv und Nomen \textnormal{(article, adjective and noun)}}
+            \GermanText{Artikel und Adjektive werden nach ihren eigenen Regeln dekliniert. Das n-Deklination-Nomen bekommt trotzdem seine Endung.}
+            \EnglishText{Articles and adjectives are declined according to their own rules. The n-declension noun still receives its own ending.}
+        \end{grammarentry}
 
-\begin{exbox}
-\begin{itemize}
-\ExampleItem{Ich sehe den jungen Studenten.}{I see the young student.}
-\ExampleItem{Ich spreche mit einem netten Kollegen.}{I am speaking with a nice colleague.}
-\ExampleItem{Das ist das Auto meines neuen Nachbarn.}{This is my new neighbor's car.}
-\end{itemize}
-\end{exbox}
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich sehe den jungen Studenten.}{I see the young student.}
+                \ExampleItem{Ich spreche mit einem netten Kollegen.}{I am speaking with a nice colleague.}
+                \ExampleItem{Das ist das Auto meines neuen Nachbarn.}{This is my new neighbor's car.}
+            \end{itemize}
+        \end{exbox}
 
-\begin{grammarentry}{Achtung bei \glqq Nachbar\grqq \textnormal{(Note on \glqq Nachbar\grqq)}}{Gebrauchsvariation \textnormal{(variation in usage)}}
-\GermanText{Bei einzelnen Wörtern können Wörterbücher oder Varietäten verschiedene zulässige Formen angeben. Wenn du unsicher bist, prüfe die Wörterbuchangabe für genau dieses Nomen. Die n-Deklination ist eine lexikalische Eigenschaft: Man kann sie nicht bei jedem maskulinen Nomen nur aus der Form erraten.}
-\EnglishText{For some individual nouns, dictionaries or language varieties may list more than one acceptable form. If you are unsure, check the dictionary entry for that exact noun. The n-declension is a lexical property: it cannot be predicted from form alone for every masculine noun.}
-\end{grammarentry}
+        \begin{grammarentry}{Achtung bei \glqq Nachbar\grqq \textnormal{(Note on \glqq Nachbar\grqq)}}{Gebrauchsvariation \textnormal{(variation in usage)}}
+            \GermanText{Bei einzelnen Wörtern können Wörterbücher oder Varietäten verschiedene zulässige Formen angeben. Wenn du unsicher bist, prüfe die Wörterbuchangabe für genau dieses Nomen. Die n-Deklination ist eine lexikalische Eigenschaft: Man kann sie nicht bei jedem maskulinen Nomen nur aus der Form erraten.}
+            \EnglishText{For some individual nouns, dictionaries or language varieties may list more than one acceptable form. If you are unsure, check the dictionary entry for that exact noun. The n-declension is a lexical property: it cannot be predicted from form alone for every masculine noun.}
+        \end{grammarentry}
 
-\section{Besonders wichtig: \glqq Herr\grqq \textnormal{(Especially important: \glqq Herr\grqq)}}
+    \section{Besonders wichtig: \glqq Herr\grqq \textnormal{(Especially important: \glqq Herr\grqq)}}
 
-\begin{grammarentry}{der Herr $\rightarrow$ Herrn \textnormal{(der Herr $\rightarrow$ Herrn)}}{sehr häufig im Alltag \textnormal{(very common in everyday German)}}
-\GermanText{\textbf{Herr} hat die Formen: Nominativ \textbf{der Herr}, aber Akkusativ \textbf{den Herrn}, Dativ \textbf{dem Herrn}, Genitiv \textbf{des Herrn}.}
-\EnglishText{\textbf{Herr} has the forms: nominative \textbf{der Herr}, but accusative \textbf{den Herrn}, dative \textbf{dem Herrn}, genitive \textbf{des Herrn}.}
-\end{grammarentry}
+        \begin{grammarentry}{der Herr $\rightarrow$ Herrn \textnormal{(der Herr $\rightarrow$ Herrn)}}{sehr häufig im Alltag \textnormal{(very common in everyday German)}}
+            \GermanText{\textbf{Herr} hat die Formen: Nominativ \textbf{der Herr}, aber Akkusativ \textbf{den Herrn}, Dativ \textbf{dem Herrn}, Genitiv \textbf{des Herrn}.}
+            \EnglishText{\textbf{Herr} has the forms: nominative \textbf{der Herr}, but accusative \textbf{den Herrn}, dative \textbf{dem Herrn}, genitive \textbf{des Herrn}.}
+        \end{grammarentry}
 
-\begin{exbox}
-\begin{itemize}
-\ExampleItem{Herr Müller kommt um zehn Uhr.}{Mr. Müller is coming at ten o'clock.}
-\ExampleItem{Ich sehe Herrn Müller.}{I see Mr. Müller.}
-\ExampleItem{Ich spreche mit Herrn Müller.}{I am speaking with Mr. Müller.}
-\ExampleItem{Das Büro Herrn Müllers ist dort.}{Mr. Müller's office is there.}
-\end{itemize}
-\end{exbox}
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Herr Müller kommt um zehn Uhr.}{Mr. Müller is coming at ten o'clock.}
+                \ExampleItem{Ich sehe Herrn Müller.}{I see Mr. Müller.}
+                \ExampleItem{Ich spreche mit Herrn Müller.}{I am speaking with Mr. Müller.}
+                \ExampleItem{Das Büro Herrn Müllers ist dort.}{Mr. Müller's office is there.}
+            \end{itemize}
+        \end{exbox}
 
-\section{Gemischte Deklination: ähnliche, aber nicht identische Wörter \textnormal{(Mixed declension: similar but not identical nouns)}}
+    \section{Gemischte Deklination: ähnliche, aber nicht identische Wörter \textnormal{(Mixed declension: similar but not identical nouns)}}
 
-\begin{grammarentry}{Nicht reine n-Deklination \textnormal{(Not pure n-declension)}}{Genitiv auf -ns \textnormal{(genitive ending in -ns)}}
-\GermanText{Einige maskuline Nomen sehen fast wie n-Deklination aus, haben aber im Genitiv Singular zusätzlich ein \textbf{-s}: zum Beispiel \textbf{der Name -- den Namen -- dem Namen -- des Namens}. Diese Gruppe nennt man oft \textbf{gemischte Deklination}.}
-\EnglishText{Some masculine nouns look almost like n-declension nouns, but add an extra \textbf{-s} in the genitive singular: for example \textbf{der Name -- den Namen -- dem Namen -- des Namens}. This group is often called \textbf{mixed declension}.}
-\end{grammarentry}
+        \begin{grammarentry}{Nicht reine n-Deklination \textnormal{(Not pure n-declension)}}{Genitiv auf -ns \textnormal{(genitive ending in -ns)}}
+            \GermanText{Einige maskuline Nomen sehen fast wie n-Deklination aus, haben aber im Genitiv Singular zusätzlich ein \textbf{-s}: zum Beispiel \textbf{der Name -- den Namen -- dem Namen -- des Namens}. Diese Gruppe nennt man oft \textbf{gemischte Deklination}.}
+            \EnglishText{Some masculine nouns look almost like n-declension nouns, but add an extra \textbf{-s} in the genitive singular: for example \textbf{der Name -- den Namen -- dem Namen -- des Namens}. This group is often called \textbf{mixed declension}.}
+        \end{grammarentry}
 
-\rowcolors{2}{RowBlueLight}{RowBlueDark}
-\begin{longtable}{>{\bfseries}p{3.7cm}|p{3.7cm}|p{3.7cm}|p{3.7cm}}
-\rowcolor{HeaderBlueDark}
-\color{white}\textbf{Nominativ (Nom.)} & \color{white}\textbf{Akkusativ (Acc.)} & \color{white}\textbf{Dativ (Dat.)} & \color{white}\textbf{Genitiv (Gen.)} \\
-der Name & den Namen & dem Namen & des Namens \\
-der Gedanke & den Gedanken & dem Gedanken & des Gedankens \\
-der Glaube & den Glauben & dem Glauben & des Glaubens \\
-der Wille & den Willen & dem Willen & des Willens \\
-der Buchstabe & den Buchstaben & dem Buchstaben & des Buchstabens \\
-\end{longtable}
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{3.7cm}|p{3.7cm}|p{3.7cm}|p{3.7cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Nominativ (Nom.)} & \color{white}\textbf{Akkusativ (Acc.)} & \color{white}\textbf{Dativ (Dat.)} & \color{white}\textbf{Genitiv (Gen.)} \\
+            der Name & den Namen & dem Namen & des Namens \\
+            der Gedanke & den Gedanken & dem Gedanken & des Gedankens \\
+            der Glaube & den Glauben & dem Glauben & des Glaubens \\
+            der Wille & den Willen & dem Willen & des Willens \\
+            der Buchstabe & den Buchstaben & dem Buchstaben & des Buchstabens \\
+        \end{longtable}
 
-\begin{grammarentry}{Merke \textnormal{(Remember)}}{Unterschied im Genitiv \textnormal{(difference in the genitive)}}
-\GermanText{Reine n-Deklination: \textbf{des Studenten}. Gemischte Deklination: \textbf{des Namens}. Der wichtigste sichtbare Unterschied ist hier das zusätzliche \textbf{-s} im Genitiv.}
-\EnglishText{Pure n-declension: \textbf{des Studenten}. Mixed declension: \textbf{des Namens}. The main visible difference here is the additional \textbf{-s} in the genitive.}
-\end{grammarentry}
+        \begin{grammarentry}{Merke \textnormal{(Remember)}}{Unterschied im Genitiv \textnormal{(difference in the genitive)}}
+            \GermanText{Reine n-Deklination: \textbf{des Studenten}. Gemischte Deklination: \textbf{des Namens}. Der wichtigste sichtbare Unterschied ist hier das zusätzliche \textbf{-s} im Genitiv.}
+            \EnglishText{Pure n-declension: \textbf{des Studenten}. Mixed declension: \textbf{des Namens}. The main visible difference here is the additional \textbf{-s} in the genitive.}
+        \end{grammarentry}
 
-\section{Nicht mit substantivierten Adjektiven verwechseln \textnormal{(Do not confuse it with nominalized adjectives)}}
+    \section{Nicht mit substantivierten Adjektiven verwechseln \textnormal{(Do not confuse it with nominalized adjectives)}}
 
-\begin{grammarentry}{der Deutsche, ein Deutscher \textnormal{(the German, a German)}}{Adjektivdeklination statt n-Deklination \textnormal{(adjective declension instead of n-declension)}}
-\GermanText{Wörter wie \textbf{der Deutsche, der Erwachsene, der Bekannte, der Angestellte} sehen teilweise ähnlich aus, folgen aber der \textbf{Adjektivdeklination}. Ihre Endung hängt deshalb vom Artikel und Kasus ab.}
-\EnglishText{Words such as \textbf{der Deutsche, der Erwachsene, der Bekannte, der Angestellte} may look similar, but they follow \textbf{adjective declension}. Their ending therefore depends on the article and case.}
-\end{grammarentry}
+        \begin{grammarentry}{der Deutsche, ein Deutscher \textnormal{(the German, a German)}}{Adjektivdeklination statt n-Deklination \textnormal{(adjective declension instead of n-declension)}}
+            \GermanText{Wörter wie \textbf{der Deutsche, der Erwachsene, der Bekannte, der Angestellte} sehen teilweise ähnlich aus, folgen aber der \textbf{Adjektivdeklination}. Ihre Endung hängt deshalb vom Artikel und Kasus ab.}
+            \EnglishText{Words such as \textbf{der Deutsche, der Erwachsene, der Bekannte, der Angestellte} may look similar, but they follow \textbf{adjective declension}. Their ending therefore depends on the article and case.}
+        \end{grammarentry}
 
-\begin{exbox}
-\begin{itemize}
-\ExampleItem{Der Deutsche spricht Deutsch.}{The German speaks German.}
-\ExampleItem{Ein Deutscher spricht Deutsch.}{A German speaks German.}
-\ExampleItem{Ich sehe den Deutschen.}{I see the German.}
-\ExampleItem{Ich sehe einen Deutschen.}{I see a German.}
-\end{itemize}
-\end{exbox}
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Der Deutsche spricht Deutsch.}{The German speaks German.}
+                \ExampleItem{Ein Deutscher spricht Deutsch.}{A German speaks German.}
+                \ExampleItem{Ich sehe den Deutschen.}{I see the German.}
+                \ExampleItem{Ich sehe einen Deutschen.}{I see a German.}
+            \end{itemize}
+        \end{exbox}
 
-\section{Auch nicht verwechseln: \glqq das Herz\grqq \textnormal{(Also do not confuse: \glqq das Herz\grqq)}}
+    \section{Auch nicht verwechseln: \glqq das Herz\grqq \textnormal{(Also do not confuse: \glqq das Herz\grqq)}}
 
-\begin{grammarentry}{Sonderfall \textnormal{(Special case)}}{Neutrum, keine n-Deklination \textnormal{(neuter, not n-declension)}}
-\GermanText{\textbf{das Herz} ist neutral und deshalb kein normales n-Deklination-Nomen. Es hat besondere Formen: \textbf{das Herz, des Herzens, dem Herzen, das Herz}.}
-\EnglishText{\textbf{das Herz} is neuter and therefore not a normal n-declension noun. It has special forms: \textbf{das Herz, des Herzens, dem Herzen, das Herz}.}
-\end{grammarentry}
+        \begin{grammarentry}{Sonderfall \textnormal{(Special case)}}{Neutrum, keine n-Deklination \textnormal{(neuter, not n-declension)}}
+            \GermanText{\textbf{das Herz} ist neutral und deshalb kein normales n-Deklination-Nomen. Es hat besondere Formen: \textbf{das Herz, des Herzens, dem Herzen, das Herz}.}
+            \EnglishText{\textbf{das Herz} is neuter and therefore not a normal n-declension noun. It has special forms: \textbf{das Herz, des Herzens, dem Herzen, das Herz}.}
+        \end{grammarentry}
 
-\section{Wie erkenne ich ein n-Deklination-Nomen? \textnormal{(How do I recognize an n-declension noun?)}}
+    \section{Wie erkenne ich ein n-Deklination-Nomen? \textnormal{(How do I recognize an n-declension noun?)}}
 
-\begin{grammarentry}{Praktische Methode \textnormal{(Practical method)}}{Schritt für Schritt \textnormal{(step by step)}}
-\GermanText{Benutze diese Reihenfolge:}
-\EnglishText{Use this sequence:}
-\begin{itemize}
-\item \textbf{1.} Ist das Nomen maskulin? Wenn nein, ist es normalerweise keine n-Deklination.\\{\small\color{SoftGray}Is the noun masculine? If not, it is normally not an n-declension noun.}
-\item \textbf{2.} Bezeichnet es eine Person oder ein Tier und endet es auf -e? Dann ist n-Deklination sehr wahrscheinlich.\\{\small\color{SoftGray}Does it refer to a person or animal and end in -e? Then n-declension is very likely.}
-\item \textbf{3.} Hat es eine typische Fremdwortendung wie -ant, -ent, -ist, -oge, -at, -et oder -nom? Dann prüfe n-Deklination.\\{\small\color{SoftGray}Does it have a typical loanword ending such as -ant, -ent, -ist, -oge, -at, -et, or -nom? Then check for n-declension.}
-\item \textbf{4.} Bei häufigen Einzelwörtern wie Mensch, Herr, Held, Prinz und Bär: Form mitlernen.\\{\small\color{SoftGray}For common individual nouns such as Mensch, Herr, Held, Prinz, and Bär: learn the inflected form together with the word.}
-\item \textbf{5.} Im Zweifel Wörterbuch prüfen. Es gibt keine einzige Endungsregel, die alle Fälle sicher erkennt.\\{\small\color{SoftGray}If in doubt, check a dictionary. There is no single ending rule that identifies every case with certainty.}
-\end{itemize}
-\end{grammarentry}
+        \begin{grammarentry}{Praktische Methode \textnormal{(Practical method)}}{Schritt für Schritt \textnormal{(step by step)}}
+            \GermanText{Benutze diese Reihenfolge:}
+            \EnglishText{Use this sequence:}
+            \begin{itemize}
+                \item \textbf{1.} Ist das Nomen maskulin? Wenn nein, ist es normalerweise keine n-Deklination.\\{\small\color{SoftGray}Is the noun masculine? If not, it is normally not an n-declension noun.}
+                \item \textbf{2.} Bezeichnet es eine Person oder ein Tier und endet es auf -e? Dann ist n-Deklination sehr wahrscheinlich.\\{\small\color{SoftGray}Does it refer to a person or animal and end in -e? Then n-declension is very likely.}
+                \item \textbf{3.} Hat es eine typische Fremdwortendung wie -ant, -ent, -ist, -oge, -at, -et oder -nom? Dann prüfe n-Deklination.\\{\small\color{SoftGray}Does it have a typical loanword ending such as -ant, -ent, -ist, -oge, -at, -et, or -nom? Then check for n-declension.}
+                \item \textbf{4.} Bei häufigen Einzelwörtern wie Mensch, Herr, Held, Prinz und Bär: Form mitlernen.\\{\small\color{SoftGray}For common individual nouns such as Mensch, Herr, Held, Prinz, and Bär: learn the inflected form together with the word.}
+                \item \textbf{5.} Im Zweifel Wörterbuch prüfen. Es gibt keine einzige Endungsregel, die alle Fälle sicher erkennt.\\{\small\color{SoftGray}If in doubt, check a dictionary. There is no single ending rule that identifies every case with certainty.}
+            \end{itemize}
+        \end{grammarentry}
 
-\section{Typische Fehler \textnormal{(Common mistakes)}}
+    \section{Typische Fehler \textnormal{(Common mistakes)}}
 
-\begin{grammarentry}{Fehler 1 \textnormal{(Mistake 1)}}{Endung im Akkusativ vergessen \textnormal{(forgetting the accusative ending)}}
-\GermanText{Falsch: \textbf{Ich sehe den Student.} Richtig: \textbf{Ich sehe den Studenten.}}
-\EnglishText{Wrong: \textbf{Ich sehe den Student.} Correct: \textbf{Ich sehe den Studenten.}}
-\end{grammarentry}
+        \begin{grammarentry}{Fehler 1 \textnormal{(Mistake 1)}}{Endung im Akkusativ vergessen \textnormal{(forgetting the accusative ending)}}
+            \GermanText{Falsch: \textbf{Ich sehe den Student.} Richtig: \textbf{Ich sehe den Studenten.}}
+            \EnglishText{Wrong: \textbf{Ich sehe den Student.} Correct: \textbf{Ich sehe den Studenten.}}
+        \end{grammarentry}
 
-\begin{grammarentry}{Fehler 2 \textnormal{(Mistake 2)}}{Endung im Dativ vergessen \textnormal{(forgetting the dative ending)}}
-\GermanText{Falsch: \textbf{Ich spreche mit dem Kollege.} Richtig: \textbf{Ich spreche mit dem Kollegen.}}
-\EnglishText{Wrong: \textbf{Ich spreche mit dem Kollege.} Correct: \textbf{Ich spreche mit dem Kollegen.}}
-\end{grammarentry}
+        \begin{grammarentry}{Fehler 2 \textnormal{(Mistake 2)}}{Endung im Dativ vergessen \textnormal{(forgetting the dative ending)}}
+            \GermanText{Falsch: \textbf{Ich spreche mit dem Kollege.} Richtig: \textbf{Ich spreche mit dem Kollegen.}}
+            \EnglishText{Wrong: \textbf{Ich spreche mit dem Kollege.} Correct: \textbf{Ich spreche mit dem Kollegen.}}
+        \end{grammarentry}
 
-\begin{grammarentry}{Fehler 3 \textnormal{(Mistake 3)}}{Endung im Genitiv vergessen \textnormal{(forgetting the genitive ending)}}
-\GermanText{Falsch: \textbf{Das Auto des Student.} Richtig: \textbf{Das Auto des Studenten.}}
-\EnglishText{Wrong: \textbf{Das Auto des Student.} Correct: \textbf{Das Auto des Studenten.}}
-\end{grammarentry}
+        \begin{grammarentry}{Fehler 3 \textnormal{(Mistake 3)}}{Endung im Genitiv vergessen \textnormal{(forgetting the genitive ending)}}
+            \GermanText{Falsch: \textbf{Das Auto des Student.} Richtig: \textbf{Das Auto des Studenten.}}
+            \EnglishText{Wrong: \textbf{Das Auto des Student.} Correct: \textbf{Das Auto des Studenten.}}
+        \end{grammarentry}
 
-\begin{grammarentry}{Fehler 4 \textnormal{(Mistake 4)}}{-en im Nominativ Singular benutzen \textnormal{(using -en in nominative singular)}}
-\GermanText{Falsch: \textbf{Der Studenten kommt.} Richtig: \textbf{Der Student kommt.}}
-\EnglishText{Wrong: \textbf{Der Studenten kommt.} Correct: \textbf{Der Student kommt.}}
-\end{grammarentry}
+        \begin{grammarentry}{Fehler 4 \textnormal{(Mistake 4)}}{-en im Nominativ Singular benutzen \textnormal{(using -en in nominative singular)}}
+            \GermanText{Falsch: \textbf{Der Studenten kommt.} Richtig: \textbf{Der Student kommt.}}
+            \EnglishText{Wrong: \textbf{Der Studenten kommt.} Correct: \textbf{Der Student kommt.}}
+        \end{grammarentry}
 
-\begin{grammarentry}{Fehler 5 \textnormal{(Mistake 5)}}{Jedes maskuline Nomen als n-Deklination behandeln \textnormal{(treating every masculine noun as n-declension)}}
-\GermanText{Nicht jedes maskuline Nomen ist schwach. Zum Beispiel: \textbf{der Tisch -- den Tisch -- dem Tisch -- des Tisches}. Hier gibt es keine n-Deklination.}
-\EnglishText{Not every masculine noun is weak. For example: \textbf{der Tisch -- den Tisch -- dem Tisch -- des Tisches}. There is no n-declension here.}
-\end{grammarentry}
+        \begin{grammarentry}{Fehler 5 \textnormal{(Mistake 5)}}{Jedes maskuline Nomen als n-Deklination behandeln \textnormal{(treating every masculine noun as n-declension)}}
+            \GermanText{Nicht jedes maskuline Nomen ist schwach. Zum Beispiel: \textbf{der Tisch -- den Tisch -- dem Tisch -- des Tisches}. Hier gibt es keine n-Deklination.}
+            \EnglishText{Not every masculine noun is weak. For example: \textbf{der Tisch -- den Tisch -- dem Tisch -- des Tisches}. There is no n-declension here.}
+        \end{grammarentry}
 
-\section{Präpositionen machen die n-Endung sichtbar \textnormal{(Prepositions often make the n-ending visible)}}
+    \section{Präpositionen machen die n-Endung sichtbar \textnormal{(Prepositions often make the n-ending visible)}}
 
-\begin{grammarentry}{Kasus nach Präpositionen \textnormal{(Case after prepositions)}}{n-Deklination bleibt aktiv \textnormal{(n-declension still applies)}}
-\GermanText{Wenn eine Präposition Akkusativ oder Dativ verlangt, muss ein n-Deklination-Nomen ebenfalls seine Endung bekommen.}
-\EnglishText{When a preposition requires the accusative or dative, an n-declension noun must also receive its ending.}
-\end{grammarentry}
+        \begin{grammarentry}{Kasus nach Präpositionen \textnormal{(Case after prepositions)}}{n-Deklination bleibt aktiv \textnormal{(n-declension still applies)}}
+            \GermanText{Wenn eine Präposition Akkusativ oder Dativ verlangt, muss ein n-Deklination-Nomen ebenfalls seine Endung bekommen.}
+            \EnglishText{When a preposition requires the accusative or dative, an n-declension noun must also receive its ending.}
+        \end{grammarentry}
 
-\begin{exbox}
-\begin{itemize}
-\ExampleItem{für den Studenten}{for the student}
-\ExampleItem{ohne den Kollegen}{without the colleague}
-\ExampleItem{mit dem Journalisten}{with the journalist}
-\ExampleItem{von dem / vom Kunden}{from the customer}
-\ExampleItem{bei dem / beim Experten}{with / at the expert}
-\end{itemize}
-\end{exbox}
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{für den Studenten}{for the student}
+                \ExampleItem{ohne den Kollegen}{without the colleague}
+                \ExampleItem{mit dem Journalisten}{with the journalist}
+                \ExampleItem{von dem / vom Kunden}{from the customer}
+                \ExampleItem{bei dem / beim Experten}{with / at the expert}
+            \end{itemize}
+        \end{exbox}
 
-\section{Relativsätze und Pronomen ändern die Regel nicht \textnormal{(Relative clauses and pronouns do not change the rule)}}
+    \section{Relativsätze und Pronomen ändern die Regel nicht \textnormal{(Relative clauses and pronouns do not change the rule)}}
 
-\begin{grammarentry}{Das Nomen bleibt schwach \textnormal{(The noun remains weak)}}{Kasus entscheidet die Form \textnormal{(case determines the form)}}
-\GermanText{Auch in komplexeren Sätzen entscheidet der Kasus über die Form des schwachen Nomens.}
-\EnglishText{Even in more complex sentences, the case determines the form of the weak noun.}
-\end{grammarentry}
+        \begin{grammarentry}{Das Nomen bleibt schwach \textnormal{(The noun remains weak)}}{Kasus entscheidet die Form \textnormal{(case determines the form)}}
+            \GermanText{Auch in komplexeren Sätzen entscheidet der Kasus über die Form des schwachen Nomens.}
+            \EnglishText{Even in more complex sentences, the case determines the form of the weak noun.}
+        \end{grammarentry}
 
-\begin{exbox}
-\begin{itemize}
-\ExampleItem{Der Student, den ich kenne, wohnt in Wien.}{The student whom I know lives in Vienna.}
-\ExampleItem{Der Kollege, mit dem ich arbeite, ist freundlich.}{The colleague with whom I work is friendly.}
-\ExampleItem{Der Journalist, dessen Artikel ich lese, arbeitet hier.}{The journalist whose article I read works here.}
-\end{itemize}
-\end{exbox}
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Der Student, den ich kenne, wohnt in Wien.}{The student whom I know lives in Vienna.}
+                \ExampleItem{Der Kollege, mit dem ich arbeite, ist freundlich.}{The colleague with whom I work is friendly.}
+                \ExampleItem{Der Journalist, dessen Artikel ich lese, arbeitet hier.}{The journalist whose article I read works here.}
+            \end{itemize}
+        \end{exbox}
 
-\section{Lernstrategie \textnormal{(Learning strategy)}}
+    \section{Lernstrategie \textnormal{(Learning strategy)}}
 
-\begin{grammarentry}{So lernst du die Wörter \textnormal{(How to learn the nouns)}}{nicht nur den Nominativ lernen \textnormal{(do not learn only the nominative)}}
-\GermanText{Lerne ein neues schwaches Nomen nicht nur als \textbf{der Student}. Lerne besser drei Informationen zusammen: \textbf{der Student -- des Studenten -- die Studenten}. Damit erkennst du sofort Genitiv und Plural und weißt, dass das Wort zur n-Deklination gehört.}
-\EnglishText{Do not learn a new weak noun only as \textbf{der Student}. It is better to learn three pieces of information together: \textbf{der Student -- des Studenten -- die Studenten}. This immediately shows you the genitive and plural and tells you that the word belongs to the n-declension.}
-\end{grammarentry}
+        \begin{grammarentry}{So lernst du die Wörter \textnormal{(How to learn the nouns)}}{nicht nur den Nominativ lernen \textnormal{(do not learn only the nominative)}}
+            \GermanText{Lerne ein neues schwaches Nomen nicht nur als \textbf{der Student}. Lerne besser drei Informationen zusammen: \textbf{der Student -- des Studenten -- die Studenten}. Damit erkennst du sofort Genitiv und Plural und weißt, dass das Wort zur n-Deklination gehört.}
+            \EnglishText{Do not learn a new weak noun only as \textbf{der Student}. It is better to learn three pieces of information together: \textbf{der Student -- des Studenten -- die Studenten}. This immediately shows you the genitive and plural and tells you that the word belongs to the n-declension.}
+        \end{grammarentry}
 
-\begin{grammarentry}{Minimalregel für B1 \textnormal{(Minimum rule for B1)}}{das musst du sicher können \textnormal{(what you should know confidently)}}
-\GermanText{Für B1 solltest du sicher erkennen und bilden können: \textbf{der Student -- den Studenten -- dem Studenten -- des Studenten}; außerdem häufige Wörter wie \textbf{Junge, Kollege, Kunde, Mensch, Herr, Journalist, Student, Praktikant, Experte}.}
-\EnglishText{For B1, you should be able to recognize and form with confidence: \textbf{der Student -- den Studenten -- dem Studenten -- des Studenten}; also common nouns such as \textbf{Junge, Kollege, Kunde, Mensch, Herr, Journalist, Student, Praktikant, Experte}.}
-\end{grammarentry}
+        \begin{grammarentry}{Minimalregel für B1 \textnormal{(Minimum rule for B1)}}{das musst du sicher können \textnormal{(what you should know confidently)}}
+            \GermanText{Für B1 solltest du sicher erkennen und bilden können: \textbf{der Student -- den Studenten -- dem Studenten -- des Studenten}; außerdem häufige Wörter wie \textbf{Junge, Kollege, Kunde, Mensch, Herr, Journalist, Student, Praktikant, Experte}.}
+            \EnglishText{For B1, you should be able to recognize and form with confidence: \textbf{der Student -- den Studenten -- dem Studenten -- des Studenten}; also common nouns such as \textbf{Junge, Kollege, Kunde, Mensch, Herr, Journalist, Student, Praktikant, Experte}.}
+        \end{grammarentry}
 
-\section{Zusammenfassung \textnormal{(Summary)}}
+    \section{Zusammenfassung \textnormal{(Summary)}}
 
-\begin{grammarentry}{Merksatz \textnormal{(Memory rule)}}{kurz und wichtig \textnormal{(short and important)}}
-\GermanText{\textbf{n-Deklination = bestimmte maskuline Nomen. Im Singular: nur Nominativ ohne -(e)n; Akkusativ, Dativ und Genitiv mit -(e)n.}}
-\EnglishText{\textbf{n-declension = certain masculine nouns. In the singular: only the nominative has no -(e)n; accusative, dative, and genitive take -(e)n.}}
+        \begin{grammarentry}{Merksatz \textnormal{(Memory rule)}}{kurz und wichtig \textnormal{(short and important)}}
+            \GermanText{\textbf{n-Deklination = bestimmte maskuline Nomen. Im Singular: nur Nominativ ohne -(e)n; Akkusativ, Dativ und Genitiv mit -(e)n.}}
+            \EnglishText{\textbf{n-declension = certain masculine nouns. In the singular: only the nominative has no -(e)n; accusative, dative, and genitive take -(e)n.}}
 
-\GermanText{Beispiel: \textbf{der Student -- den Studenten -- dem Studenten -- des Studenten}.}
-\EnglishText{Example: \textbf{der Student -- den Studenten -- dem Studenten -- des Studenten}.}
+            \GermanText{Beispiel: \textbf{der Student -- den Studenten -- dem Studenten -- des Studenten}.}
+            \EnglishText{Example: \textbf{der Student -- den Studenten -- dem Studenten -- des Studenten}.}
 
-\GermanText{Sondergruppe: \textbf{der Name -- den Namen -- dem Namen -- des Namens} gehört zur gemischten Deklination, nicht zur reinen n-Deklination.}
-\EnglishText{Special group: \textbf{der Name -- den Namen -- dem Namen -- des Namens} belongs to mixed declension, not pure n-declension.}
-\end{grammarentry}
+            \GermanText{Sondergruppe: \textbf{der Name -- den Namen -- dem Namen -- des Namens} gehört zur gemischten Deklination, nicht zur reinen n-Deklination.}
+            \EnglishText{Special group: \textbf{der Name -- den Namen -- dem Namen -- des Namens} belongs to mixed declension, not pure n-declension.}
+        \end{grammarentry}
 
 \end{document}
