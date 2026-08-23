@@ -1,42 +1,313 @@
-\documentclass[a4paper]{article}
-\usepackage{graphicx}
-\usepackage{amsmath,amssymb}
-\usepackage{hyperref}
-\usepackage{minted}
+\documentclass[a4paper,11pt]{article}
 
-\title{Jahr}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[table]{xcolor}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{5pt}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Jahreszahlen im Deutschen\\\large \textnormal{Years in German}}
 \date{}
+
 \begin{document}
-    \section{Nur das Jahr }
-    \maketitle
-    In German, years are usually pronounced as full numbers.
-    
-    For years from 1100 to 1999, the most common pattern is:
-    \[
-        \text{<century> hundred <rest>}
-    \]
-    Examples:
-    \begin{itemize}
-        \item 1998: \textit{neunzehnhundertachtundneunzig}
-        \item 1984: \textit{neunzehnhundertvierundachtzig}
-        \item 1975: \textit{neunzehnhundertfünfundsiebzig}
-    \end{itemize}
-    
-    For 2000 and later, the standard form is:
-    \[
-        \text{zweitausend + <rest>}
-    \]
-    Examples:
-    \begin{itemize}
-        \item 2005: \textit{zweitausendfünf}
-        \item 2012: \textit{zweitausendzwölf}
-        \item 2024: \textit{zweitausendvierundzwanzig}
-    \end{itemize}
-    
-    In casual speech, some people also say:
-    \[
-        2024:\ \textit{zwanzig vierundzwanzig}
-    \]
-    but the neutral/standard form remains \textit{zweitausendvierundzwanzig}.
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Grundidee \textnormal{(Basic idea)}}
+
+\begin{grammarentry}{Jahreszahlen}{Aussprache und Gebrauch / Pronunciation and use}
+\GermanText{Jahreszahlen werden im Deutschen als Kardinalzahlen gesprochen. Für viele Jahre zwischen 1100 und 1999 gibt es jedoch eine besonders typische Lesart mit \textbf{-hundert-}.}
+\EnglishText{Years are spoken as cardinal numbers in German. However, for many years between 1100 and 1999 there is a particularly typical reading using \textbf{-hundert-}.}
+
+\GermanText{Ab dem Jahr 2000 wird normalerweise mit \textbf{zweitausend-}, \textbf{zweitausendeins}, \textbf{zweitausendsechzehn} usw. gesprochen.}
+\EnglishText{From the year 2000 onward, German normally uses \textbf{zweitausend-}, \textbf{zweitausendeins}, \textbf{zweitausendsechzehn}, and so on.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{1476 = vierzehnhundertsechsundsiebzig}{1476 = fourteen seventy-six}
+\ExampleItem{1934 = neunzehnhundertvierunddreißig}{1934 = nineteen thirty-four}
+\ExampleItem{2001 = zweitausendeins}{2001 = two thousand one}
+\ExampleItem{2016 = zweitausendsechzehn}{2016 = two thousand sixteen}
+\end{itemize}
+\end{exbox}
+
+\section{Jahre von 1100 bis 1999 \textnormal{(Years from 1100 to 1999)}}
+
+\begin{grammarentry}{Typisches Muster}{XX-hundert-YY / Typical pattern}
+\GermanText{Bei Jahreszahlen von 1100 bis 1999 teilt man die Zahl beim Sprechen normalerweise gedanklich in zwei Teile: die ersten beiden Ziffern bilden die Hunderterzahl, danach folgt der Rest.}
+\EnglishText{For years from 1100 to 1999, German normally splits the number mentally into two parts: the first two digits form the hundreds, followed by the remaining part.}
+
+\GermanText{Schema: \textbf{14|76 = vierzehnhundert + sechsundsiebzig}.}
+\EnglishText{Pattern: \textbf{14|76 = fourteen hundred + seventy-six}.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{2.2cm}|p{6.0cm}|p{6.0cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Jahr / Year} &
+\color{white}\textbf{Deutsch / German} &
+\color{white}\textbf{English / Englisch} \\
+1100 & elfhundert & eleven hundred \\
+1205 & zwölfhundertfünf & twelve oh five / twelve hundred five \\
+1476 & vierzehnhundertsechsundsiebzig & fourteen seventy-six \\
+1806 & achtzehnhundertsechs & eighteen oh six \\
+1900 & neunzehnhundert & nineteen hundred \\
+1934 & neunzehnhundertvierunddreißig & nineteen thirty-four \\
+1989 & neunzehnhundertneunundachtzig & nineteen eighty-nine \\
+1999 & neunzehnhundertneunundneunzig & nineteen ninety-nine \\
+\end{longtable}
+
+\begin{grammarentry}{Wichtiger Hinweis}{Alternative volle Zahl / Alternative full-number reading}
+\GermanText{Rein mathematisch kann man zum Beispiel 1934 auch als \textbf{eintausendneunhundertvierunddreißig} lesen. Als Jahreszahl ist jedoch \textbf{neunzehnhundertvierunddreißig} die normale und viel natürlichere Form.}
+\EnglishText{Purely as a number, 1934 can also be read as \textbf{one thousand nine hundred thirty-four}. As a year, however, \textbf{neunzehnhundertvierunddreißig} is the normal and much more natural German form.}
+\end{grammarentry}
+
+\section{Jahre ab 2000 \textnormal{(Years from 2000 onward)}}
+
+\begin{grammarentry}{zweitausend-}{Das normale moderne Muster / The normal modern pattern}
+\GermanText{Für Jahre ab 2000 verwendet man normalerweise die vollständige Tausenderform. Man sagt also \textbf{zweitausend}, \textbf{zweitausendeins}, \textbf{zweitausendzehn}, \textbf{zweitausendsechsundzwanzig} usw.}
+\EnglishText{For years from 2000 onward, German normally uses the full thousands form: \textbf{two thousand}, \textbf{two thousand one}, \textbf{two thousand ten}, \textbf{two thousand twenty-six}, and so on.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{2.2cm}|p{6.0cm}|p{6.0cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Jahr / Year} &
+\color{white}\textbf{Deutsch / German} &
+\color{white}\textbf{English / Englisch} \\
+2000 & zweitausend & two thousand \\
+2001 & zweitausendeins & two thousand one \\
+2005 & zweitausendfünf & two thousand five \\
+2010 & zweitausendzehn & two thousand ten \\
+2016 & zweitausendsechzehn & two thousand sixteen \\
+2020 & zweitausendzwanzig & two thousand twenty \\
+2026 & zweitausendsechsundzwanzig & two thousand twenty-six \\
+\end{longtable}
+
+\begin{grammarentry}{Nicht wie im Englischen}{Kein übliches ``zwanzig-sechzehn'' / No usual ``twenty sixteen''}
+\GermanText{Anders als im heutigen Englisch sagt man für 2016 im normalen Standarddeutsch \textbf{zweitausendsechzehn}, nicht \textbf{zwanzig sechzehn}.}
+\EnglishText{Unlike modern English, standard German normally says \textbf{zweitausendsechzehn} for 2016, not \textbf{twenty sixteen}.}
+\end{grammarentry}
+
+\section{Jahre vor 1100 \textnormal{(Years before 1100)}}
+
+\begin{grammarentry}{Frühere Jahreszahlen}{Als normale Zahl lesen / Read as a normal number}
+\GermanText{Jahreszahlen vor 1100 werden im Allgemeinen wie normale Kardinalzahlen gelesen.}
+\EnglishText{Years before 1100 are generally read like ordinary cardinal numbers.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{476 = vierhundertsechsundsiebzig}{476 = four hundred seventy-six}
+\ExampleItem{800 = achthundert}{800 = eight hundred}
+\ExampleItem{962 = neunhundertzweiundsechzig}{962 = nine hundred sixty-two}
+\ExampleItem{1000 = tausend}{1000 = one thousand}
+\ExampleItem{1066 = tausendsechsundsechzig}{1066 = one thousand sixty-six}
+\end{itemize}
+\end{exbox}
+
+\section{Jahreszahlen im Satz \textnormal{(Years in a sentence)}}
+
+\begin{grammarentry}{Ohne Präposition}{Jahr direkt nennen / Naming the year directly}
+\GermanText{Eine Jahreszahl kann ohne Präposition als Zeitangabe stehen: \textbf{Ich wurde 1990 geboren.}}
+\EnglishText{A year can be used directly without a preposition as a time expression: \textbf{I was born in 1990.}}
+\end{grammarentry}
+
+\begin{grammarentry}{im Jahr + Jahreszahl}{Sehr klare Form / Very clear form}
+\GermanText{Man kann auch \textbf{im Jahr + Jahreszahl} verwenden: \textbf{Im Jahr 2016 zog sie nach Wien.}}
+\EnglishText{You can also use \textbf{im Jahr + year}: \textbf{In the year 2016, she moved to Vienna.}}
+\end{grammarentry}
+
+\begin{grammarentry}{Nicht einfach ``in 2016''}{Typischer Fehler / Common error}
+\GermanText{Für eine einfache Jahresangabe ist \textbf{in 2016} nach englischem Muster im allgemeinen Standarddeutsch nicht die normale Form. Verwende besser \textbf{2016} oder \textbf{im Jahr 2016}.}
+\EnglishText{For a simple year reference, \textbf{in 2016} modeled on English is not the normal form in general standard German. Prefer \textbf{2016} or \textbf{im Jahr 2016}.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich wurde 1994 geboren.}{I was born in 1994.}
+\ExampleItem{Im Jahr 2001 begann er sein Studium.}{He began his studies in 2001.}
+\ExampleItem{Seit 2018 wohne ich in Wien.}{I have lived in Vienna since 2018.}
+\ExampleItem{Von 2010 bis 2015 arbeitete sie in Berlin.}{She worked in Berlin from 2010 to 2015.}
+\ExampleItem{Zwischen 1990 und 2000 hat sich viel verändert.}{A lot changed between 1990 and 2000.}
+\end{itemize}
+\end{exbox}
+
+\section{Wichtige Präpositionen mit Jahren \textnormal{(Important prepositions with years)}}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{3.4cm}|p{5.4cm}|p{5.4cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Struktur / Structure} &
+\color{white}\textbf{Beispiel / Example} &
+\color{white}\textbf{English / Englisch} \\
+seit + Jahr & seit 2020 & since 2020 \\
+von + Jahr + bis + Jahr & von 2010 bis 2018 & from 2010 to 2018 \\
+zwischen + Jahr + und + Jahr & zwischen 1990 und 2000 & between 1990 and 2000 \\
+ab + Jahr & ab 2027 & from 2027 onward \\
+bis + Jahr & bis 2030 & until 2030 \\
+vor + Jahreszahl + Jahren & vor zehn Jahren & ten years ago \\
+in + Zahl + Jahren & in drei Jahren & in three years \\
+\end{longtable}
+
+\begin{grammarentry}{Jahr vs. Jahre}{Singular und Plural / Singular and plural}
+\GermanText{\textbf{das Jahr} ist Singular, \textbf{die Jahre} ist Plural. Nach bestimmten Präpositionen kann der Dativ Plural \textbf{Jahren} erscheinen: \textbf{seit drei Jahren}, \textbf{vor zehn Jahren}, \textbf{in zwei Jahren}.}
+\EnglishText{\textbf{das Jahr} is singular and \textbf{die Jahre} is plural. After certain prepositions, the dative plural \textbf{Jahren} appears: \textbf{for three years}, \textbf{ten years ago}, \textbf{in two years}.}
+\end{grammarentry}
+
+\section{Jahrzehnte \textnormal{(Decades)}}
+
+\begin{grammarentry}{1990er-Jahre}{Schriftliche Form / Written form}
+\GermanText{Ein Jahrzehnt kann mit einer Jahreszahl und \textbf{-er-Jahre} bezeichnet werden: \textbf{die 1990er-Jahre}, \textbf{die 2020er-Jahre}.}
+\EnglishText{A decade can be written using a year number plus \textbf{-er-Jahre}: \textbf{the 1990s}, \textbf{the 2020s}.}
+
+\GermanText{Sehr üblich ist auch: \textbf{die neunziger Jahre}, \textbf{in den Neunzigerjahren}.}
+\EnglishText{Also very common: \textbf{the nineties}, \textbf{in the nineties}.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Die Musik der 1980er-Jahre ist wieder beliebt.}{The music of the 1980s is popular again.}
+\ExampleItem{In den Neunzigerjahren gab es noch keine Smartphones.}{There were no smartphones yet in the 1990s.}
+\end{itemize}
+\end{exbox}
+
+\section{Jahrhunderte \textnormal{(Centuries)}}
+
+\begin{grammarentry}{Ordnungszahl + Jahrhundert}{Wichtige Zuordnung / Important mapping}
+\GermanText{Jahrhunderte werden mit einer Ordnungszahl ausgedrückt: \textbf{das 19. Jahrhundert}, \textbf{das 20. Jahrhundert}, \textbf{das 21. Jahrhundert}.}
+\EnglishText{Centuries are expressed with an ordinal number: \textbf{the 19th century}, \textbf{the 20th century}, \textbf{the 21st century}.}
+
+\GermanText{Das \textbf{20. Jahrhundert} umfasst die Jahre \textbf{1901 bis 2000}. Das \textbf{21. Jahrhundert} umfasst die Jahre \textbf{2001 bis 2100}.}
+\EnglishText{The \textbf{20th century} covers the years \textbf{1901 to 2000}. The \textbf{21st century} covers the years \textbf{2001 to 2100}.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Mozart lebte im 18. Jahrhundert.}{Mozart lived in the 18th century.}
+\ExampleItem{Das Internet veränderte die Welt im späten 20. Jahrhundert.}{The internet changed the world in the late 20th century.}
+\end{itemize}
+\end{exbox}
+
+\section{Vor und nach Christus \textnormal{(BC and AD)}}
+
+\begin{grammarentry}{v. Chr. und n. Chr.}{Historische Jahreszahlen / Historical years}
+\GermanText{\textbf{v. Chr.} bedeutet \textbf{vor Christus}. \textbf{n. Chr.} bedeutet \textbf{nach Christus}. Bei normalen modernen Jahreszahlen wird \textbf{n. Chr.} meistens nicht dazugesagt.}
+\EnglishText{\textbf{v. Chr.} means \textbf{BC, before Christ}. \textbf{n. Chr.} means \textbf{AD, after Christ}. For ordinary modern years, \textbf{AD} is normally omitted.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{476 v. Chr. = vierhundertsechsundsiebzig vor Christus}{476 BC = four hundred seventy-six before Christ}
+\ExampleItem{800 n. Chr. = achthundert nach Christus}{AD 800 = eight hundred after Christ}
+\end{itemize}
+\end{exbox}
+
+\section{Schreibweise \textnormal{(Writing years)}}
+
+\begin{grammarentry}{Keine Punkte in der Jahreszahl}{Zahl, nicht Datum / Number, not date}
+\GermanText{Eine reine Jahreszahl wird ohne Punkt geschrieben: \textbf{1999}, \textbf{2001}, \textbf{2026}.}
+\EnglishText{A year by itself is written without a period: \textbf{1999}, \textbf{2001}, \textbf{2026}.}
+
+\GermanText{Der Punkt erscheint bei Ordnungszahlen, zum Beispiel beim Jahrhundert: \textbf{im 21. Jahrhundert}.}
+\EnglishText{The period appears with ordinal numbers, for example with centuries: \textbf{in the 21st century}.}
+\end{grammarentry}
+
+\section{Typische Fehler \textnormal{(Common mistakes)}}
+
+\begin{grammarentry}{Fehler 1}{Wortstellung und Präposition / Word order and preposition}
+\GermanText{Nicht nach englischem Muster: \textbf{Ich wurde in 1990 geboren.} Besser: \textbf{Ich wurde 1990 geboren.} oder \textbf{Ich wurde im Jahr 1990 geboren.}}
+\EnglishText{Avoid the English-style construction \textbf{I was born in 1990} with German \textbf{in}. Better: \textbf{Ich wurde 1990 geboren} or \textbf{Ich wurde im Jahr 1990 geboren}.}
+\end{grammarentry}
+
+\begin{grammarentry}{Fehler 2}{2000er-Jahre / Years after 2000}
+\GermanText{Für 2016 sagt man normalerweise \textbf{zweitausendsechzehn}, nicht \textbf{zwanzighundertsechzehn} und nicht \textbf{zwanzig sechzehn}.}
+\EnglishText{For 2016, German normally says \textbf{zweitausendsechzehn}, not \textbf{twenty hundred sixteen} or \textbf{twenty sixteen}.}
+\end{grammarentry}
+
+\begin{grammarentry}{Fehler 3}{Jahrhundert richtig zählen / Counting centuries correctly}
+\GermanText{Das Jahr 1900 gehört noch zum \textbf{19. Jahrhundert}; das Jahr 1901 beginnt das \textbf{20. Jahrhundert}.}
+\EnglishText{The year 1900 still belongs to the \textbf{19th century}; the year 1901 begins the \textbf{20th century}.}
+\end{grammarentry}
+
+\section{Schnellübersicht \textnormal{(Quick reference)}}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{4.0cm}|p{5.0cm}|p{5.0cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Bereich / Range} &
+\color{white}\textbf{Regel / Rule} &
+\color{white}\textbf{Beispiel / Example} \\
+bis 1099 / up to 1099 & normale Kardinalzahl / ordinary cardinal number & 962 = neunhundertzweiundsechzig \\
+1100--1999 & meist XX-hundert-YY / usually XX-hundred-YY & 1934 = neunzehnhundertvierunddreißig \\
+ab 2000 / from 2000 & Tausenderform / thousands form & 2016 = zweitausendsechzehn \\
+im Satz / in a sentence & Jahr direkt oder ``im Jahr'' / direct year or ``im Jahr'' & 2016 / im Jahr 2016 \\
+Jahrzehnt / decade & -er-Jahre / -er years & die 1990er-Jahre \\
+Jahrhundert / century & Ordnungszahl + Jahrhundert / ordinal + century & das 21. Jahrhundert \\
+\end{longtable}
+
+\section{Merksätze \textnormal{(Memory rules)}}
+
+\begin{grammarentry}{Kurz und wichtig}{Die wichtigsten Regeln / The most important rules}
+\GermanText{\textbf{1476} = vierzehnhundertsechsundsiebzig.}
+\EnglishText{\textbf{1476} = fourteen seventy-six.}
+
+\GermanText{\textbf{1934} = neunzehnhundertvierunddreißig.}
+\EnglishText{\textbf{1934} = nineteen thirty-four.}
+
+\GermanText{\textbf{2001} = zweitausendeins.}
+\EnglishText{\textbf{2001} = two thousand one.}
+
+\GermanText{\textbf{2016} = zweitausendsechzehn.}
+\EnglishText{\textbf{2016} = two thousand sixteen.}
+
+\GermanText{Für eine Zeitangabe: \textbf{Ich wurde 1990 geboren} oder \textbf{im Jahr 1990}, normalerweise nicht \textbf{in 1990}.}
+\EnglishText{For a time reference: \textbf{Ich wurde 1990 geboren} or \textbf{im Jahr 1990}, normally not \textbf{in 1990}.}
+\end{grammarentry}
 
 \end{document}

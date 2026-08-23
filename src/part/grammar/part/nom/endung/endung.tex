@@ -1,0 +1,327 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[table]{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{5pt}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Nomenendungen im Deutschen\\\large \textnormal{Noun Endings in German}}
+\date{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Grundidee \textnormal{(Basic idea)}}
+\begin{grammarentry}{Was verändert sich am Nomen?}{Kasusbedingte Nomenendungen}
+\GermanText{Im Deutschen verändert sich das Nomen selbst wegen des Kasus nur in bestimmten Gruppen. Die wichtigsten Fälle sind: \textbf{Genitiv Singular mit -s/-es}, \textbf{n-Deklination mit -n/-en}, \textbf{Dativ Plural mit -n} und einige \textbf{Sonderfälle}.}
+\EnglishText{In German, the noun itself changes because of case only in certain groups. The most important cases are: \textbf{genitive singular with -s/-es}, \textbf{n-declension with -n/-en}, \textbf{dative plural with -n}, and a few \textbf{special cases}.}
+
+\GermanText{Die Endungen von Artikeln und Adjektiven sind ein anderes Thema. In \glqq mit den kleinen Kindern\grqq sind \textbf{-en} an \glqq kleinen\grqq und \textbf{-n} an \glqq Kindern\grqq nicht dieselbe grammatische Erscheinung.}
+\EnglishText{Article and adjective endings are a different topic. In \emph{mit den kleinen Kindern}, the \textbf{-en} on \emph{kleinen} and the \textbf{-n} on \emph{Kindern} are not the same grammatical phenomenon.}
+\end{grammarentry}
+
+\begin{grammarentry}{Wichtig}{Pluralbildung ist nicht dasselbe}
+\GermanText{Die normalen Pluralformen wie \textbf{Tag -- Tage}, \textbf{Kind -- Kinder}, \textbf{Frau -- Frauen} oder \textbf{Auto -- Autos} muss man im Allgemeinen mit dem Nomen lernen. Sie sind keine normalen Kasusendungen. Eine wichtige Ausnahme ist das zusätzliche \textbf{-n im Dativ Plural}.}
+\EnglishText{Normal plural forms such as \textbf{Tag -- Tage}, \textbf{Kind -- Kinder}, \textbf{Frau -- Frauen}, or \textbf{Auto -- Autos} generally have to be learned with the noun. They are not ordinary case endings. One important exception is the additional \textbf{-n in the dative plural}.}
+\end{grammarentry}
+
+\section{Gesamtüberblick \textnormal{(Overall overview)}}
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{3.1cm}|p{3.1cm}|p{3.2cm}|p{5.5cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Typ (Type)} &
+\color{white}\textbf{Kasus (Case)} &
+\color{white}\textbf{Endung (Ending)} &
+\color{white}\textbf{Beispiel (Example)} \\
+Starke mask./neutr. Nomen & Genitiv Singular & -s oder -es & der Mann $\rightarrow$ des Mannes; das Auto $\rightarrow$ des Autos \\
+n-Deklination & Akk., Dat., Gen. Singular & -n oder -en & der Student $\rightarrow$ den/dem/des Studenten \\
+Dativ Plural & Dativ Plural & meist zusätzlich -n & die Kinder $\rightarrow$ mit den Kindern \\
+Gemischte Deklination & Genitiv zusätzlich -s & -ns / -ens & der Name $\rightarrow$ des Namens \\
+Sonderfall \glqq Herz\grqq & Dat./Gen. Singular & -en / -ens & das Herz $\rightarrow$ dem Herzen, des Herzens \\
+Eigennamen & Genitiv & meist -s & Annas Buch; Peters Auto \\
+\end{longtable}
+
+\section{Genitiv Singular: -s und -es \textnormal{(Genitive singular: -s and -es)}}
+\begin{grammarentry}{Grundregel}{Maskulin und Neutrum}
+\GermanText{Viele maskuline und neutrale Nomen bekommen im Genitiv Singular \textbf{-s} oder \textbf{-es}. Feminine Nomen bekommen normalerweise keine Genitivendung am Nomen.}
+\EnglishText{Many masculine and neuter nouns take \textbf{-s} or \textbf{-es} in the genitive singular. Feminine nouns normally do not take a genitive ending on the noun itself.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{3cm}|p{3.3cm}|p{3.3cm}|p{5.3cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Genus (Gender)} &
+\color{white}\textbf{Nominativ (Nominative)} &
+\color{white}\textbf{Genitiv (Genitive)} &
+\color{white}\textbf{Bemerkung (Remark)} \\
+Maskulin & der Mann & des Mannes & -es \\
+Maskulin & der Lehrer & des Lehrers & -s \\
+Neutrum & das Kind & des Kindes & -es \\
+Neutrum & das Auto & des Autos & -s \\
+Feminin & die Frau & der Frau & keine Endung am Nomen \\
+\end{longtable}
+
+\begin{grammarentry}{Wann -es?}{Praktische Regel}
+\GermanText{Bei vielen \textbf{einsilbigen} Nomen ist \textbf{-es} sehr häufig: \textbf{des Mannes, des Kindes, des Tages, des Buches}. Bei längeren Nomen ist oft \textbf{-s} üblich: \textbf{des Lehrers, des Computers, des Hotels}.}
+\EnglishText{With many \textbf{one-syllable} nouns, \textbf{-es} is very common: \emph{des Mannes, des Kindes, des Tages, des Buches}. With longer nouns, \textbf{-s} is often usual: \emph{des Lehrers, des Computers, des Hotels}.}
+
+\GermanText{Nach bestimmten Lauten und Schreibungen ist \textbf{-es} besonders wichtig oder deutlich natürlicher, zum Beispiel bei vielen Wörtern auf \textbf{-s, -ß, -x, -z, -tz, -sch}: \textbf{des Hauses, des Fußes, des Reflexes, des Satzes, des Tisches}.}
+\EnglishText{After certain sounds and spellings, \textbf{-es} is especially important or clearly more natural, for example with many words ending in \textbf{-s, -ß, -x, -z, -tz, -sch}: \emph{des Hauses, des Fußes, des Reflexes, des Satzes, des Tisches}.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Die Farbe des Autos ist schön.}{The color of the car is beautiful.}
+\ExampleItem{Das Ende des Tages war ruhig.}{The end of the day was quiet.}
+\ExampleItem{Die Meinung der Frau ist wichtig.}{The woman's opinion is important.}
+\end{itemize}
+\end{exbox}
+
+\section{n-Deklination \textnormal{(N-declension)}}
+\begin{grammarentry}{Grundregel}{Schwache maskuline Nomen}
+\GermanText{Bei der n-Deklination handelt es sich fast immer um \textbf{maskuline Nomen}. Im \textbf{Nominativ Singular} steht die Grundform. Im \textbf{Akkusativ, Dativ und Genitiv Singular} bekommt das Nomen \textbf{-n oder -en}.}
+\EnglishText{N-declension concerns almost always \textbf{masculine nouns}. In the \textbf{nominative singular}, the base form is used. In the \textbf{accusative, dative, and genitive singular}, the noun takes \textbf{-n or -en}.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{3.2cm}|p{4.6cm}|p{4.6cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Kasus (Case)} &
+\color{white}\textbf{der Student} &
+\color{white}\textbf{der Junge} \\
+Nominativ & der Student & der Junge \\
+Akkusativ & den Studenten & den Jungen \\
+Dativ & dem Studenten & dem Jungen \\
+Genitiv & des Studenten & des Jungen \\
+\end{longtable}
+
+\begin{grammarentry}{Typische Gruppen}{Welche Nomen gehören dazu?}
+\GermanText{Sehr häufig gehören dazu maskuline Personen- und Tierbezeichnungen, besonders auf \textbf{-e}: \textbf{der Junge, der Kunde, der Kollege, der Löwe, der Hase}.}
+\EnglishText{Masculine nouns referring to people and animals often belong to this group, especially those ending in \textbf{-e}: \emph{der Junge, der Kunde, der Kollege, der Löwe, der Hase}.}
+
+\GermanText{Viele Fremdwörter mit bestimmten Endungen gehören ebenfalls dazu, zum Beispiel \textbf{-ant, -ent, -ist, -oge, -at}: \textbf{der Student, der Präsident, der Journalist, der Biologe, der Diplomat}.}
+\EnglishText{Many loanwords with certain endings also belong to this group, for example \textbf{-ant, -ent, -ist, -oge, -at}: \emph{der Student, der Präsident, der Journalist, der Biologe, der Diplomat}.}
+
+\GermanText{Es gibt auch wichtige Wörter, die man einzeln lernen muss: \textbf{der Mensch, der Herr, der Nachbar, der Bauer, der Held, der Bär, der Prinz}. Nicht alle verhalten sich formal völlig gleich, aber sie zeigen im Singular außerhalb des Nominativs eine entsprechende Endung.}
+\EnglishText{There are also important words that must be learned individually: \emph{der Mensch, der Herr, der Nachbar, der Bauer, der Held, der Bär, der Prinz}. They do not all behave identically in every formal detail, but they show a corresponding ending outside the nominative singular.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich sehe den Studenten.}{I see the student.}
+\ExampleItem{Ich spreche mit dem Kollegen.}{I am speaking with the colleague.}
+\ExampleItem{Das ist das Auto des Präsidenten.}{That is the president's car.}
+\end{itemize}
+\end{exbox}
+
+\section{Gemischte Deklination: Name, Gedanke usw. \textnormal{(Mixed declension: Name, Gedanke, etc.)}}
+\begin{grammarentry}{Besondere maskuline Nomen}{-n/-en plus Genitiv -s}
+\GermanText{Einige maskuline Nomen sehen der n-Deklination ähnlich, bekommen aber im \textbf{Genitiv Singular zusätzlich -s}. Typische Wörter sind \textbf{der Name, der Gedanke, der Glaube, der Wille, der Buchstabe, der Same}.}
+\EnglishText{Some masculine nouns resemble n-declension nouns but take an \textbf{additional -s in the genitive singular}. Typical words are \emph{der Name, der Gedanke, der Glaube, der Wille, der Buchstabe, der Same}.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{3.2cm}|p{5cm}|p{5cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Kasus (Case)} &
+\color{white}\textbf{der Name} &
+\color{white}\textbf{der Gedanke} \\
+Nominativ & der Name & der Gedanke \\
+Akkusativ & den Namen & den Gedanken \\
+Dativ & dem Namen & dem Gedanken \\
+Genitiv & des Namens & des Gedankens \\
+\end{longtable}
+
+\begin{grammarentry}{Merksatz}{Warum \glqq gemischt\grqq?}
+\GermanText{Diese Nomen verbinden Eigenschaften der schwachen und der starken Deklination: \textbf{-n/-en} in den abhängigen Kasus und zusätzlich ein \textbf{-s} im Genitiv.}
+\EnglishText{These nouns combine features of weak and strong declension: \textbf{-n/-en} in the dependent cases and an additional \textbf{-s} in the genitive.}
+\end{grammarentry}
+
+\section{Dativ Plural: zusätzliches -n \textnormal{(Dative plural: additional -n)}}
+\begin{grammarentry}{Grundregel}{Fast alle Pluralnomen}
+\GermanText{Im \textbf{Dativ Plural} bekommt das Nomen normalerweise ein zusätzliches \textbf{-n}, wenn die Pluralform nicht bereits auf \textbf{-n/-en} endet und wenn sie nicht auf \textbf{-s} endet.}
+\EnglishText{In the \textbf{dative plural}, the noun normally takes an additional \textbf{-n} if the plural form does not already end in \textbf{-n/-en} and if it does not end in \textbf{-s}.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{3.4cm}|p{3.5cm}|p{3.7cm}|p{4.2cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Singular (Singular)} &
+\color{white}\textbf{Plural (Plural)} &
+\color{white}\textbf{Dativ Plural} &
+\color{white}\textbf{Regel (Rule)} \\
+das Kind & die Kinder & den Kindern & zusätzlich -n \\
+das Buch & die Bücher & den Büchern & zusätzlich -n \\
+die Frau & die Frauen & den Frauen & -n schon vorhanden \\
+das Auto & die Autos & den Autos & kein zusätzliches -n nach -s \\
+\end{longtable}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich spiele mit den Kindern.}{I play with the children.}
+\ExampleItem{Die Informationen stehen in den Büchern.}{The information is in the books.}
+\ExampleItem{Wir fahren mit den Autos.}{We are driving with the cars.}
+\end{itemize}
+\end{exbox}
+
+\section{Der Sonderfall \glqq Herz\grqq \textnormal{(The special case \emph{Herz})}}
+\begin{grammarentry}{das Herz}{unregelmäßige Mischform}
+\GermanText{\textbf{das Herz} ist ein wichtiges neutrales Sonderwort. Im heutigen Standarddeutsch lauten die typischen Formen: \textbf{das Herz, das Herz, dem Herzen, des Herzens}. Der Plural lautet \textbf{die Herzen}.}
+\EnglishText{\textbf{das Herz} is an important neuter special case. In present-day Standard German, the typical forms are: \textbf{das Herz, das Herz, dem Herzen, des Herzens}. The plural is \textbf{die Herzen}.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{4cm}|p{7cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Kasus (Case)} &
+\color{white}\textbf{Form (Form)} \\
+Nominativ Singular & das Herz \\
+Akkusativ Singular & das Herz \\
+Dativ Singular & dem Herzen \\
+Genitiv Singular & des Herzens \\
+Plural & die Herzen \\
+\end{longtable}
+
+\section{Eigennamen im Genitiv \textnormal{(Proper names in the genitive)}}
+\begin{grammarentry}{Personennamen}{meist -s ohne Artikel}
+\GermanText{Personennamen ohne Artikel bekommen im Genitiv normalerweise \textbf{-s}: \textbf{Annas Buch, Peters Auto, Goethes Werke}.}
+\EnglishText{Personal names used without an article normally take \textbf{-s} in the genitive: \emph{Annas Buch, Peters Auto, Goethes Werke}.}
+
+\GermanText{Endet ein Name bereits auf einen s-Laut wie \textbf{-s, -ß, -x, -z}, setzt man im Deutschen normalerweise einen \textbf{Apostroph ohne zusätzliches s}: \textbf{Max' Auto, Hans' Bruder}.}
+\EnglishText{If a name already ends in an s-sound such as \textbf{-s, -ß, -x, -z}, German normally uses an \textbf{apostrophe without an additional s}: \emph{Max' Auto, Hans' Bruder}.}
+\end{grammarentry}
+
+\section{Wann das Nomen keine Kasusendung bekommt \textnormal{(When the noun gets no case ending)}}
+\begin{grammarentry}{Sehr häufig keine Veränderung}{Normale feminine Nomen und viele andere Formen}
+\GermanText{Viele Nomen verändern ihre Form in den meisten Kasus überhaupt nicht. Besonders feminine Nomen im Singular bleiben normalerweise gleich: \textbf{die Frau, der Frau, der Frau}. Der Kasus wird dann vor allem durch Artikel, Adjektiv oder Satzfunktion gezeigt.}
+\EnglishText{Many nouns do not change their form in most cases at all. Feminine nouns in the singular, in particular, normally remain unchanged: \emph{die Frau, der Frau, der Frau}. The case is then shown mainly by the article, adjective, or sentence function.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich sehe die Frau.}{I see the woman.}
+\ExampleItem{Ich helfe der Frau.}{I help the woman.}
+\ExampleItem{Das Auto der Frau ist neu.}{The woman's car is new.}
+\end{itemize}
+\end{exbox}
+
+\section{Nomenendung oder Adjektivendung? \textnormal{(Noun ending or adjective ending?)}}
+\begin{grammarentry}{Nicht verwechseln}{Zwei verschiedene Systeme}
+\GermanText{In \textbf{mit einem kleinen Kind} ist \textbf{-en} in \glqq kleinen\grqq eine \textbf{Adjektivendung}. Das Nomen \glqq Kind\grqq hat im Dativ Singular keine zusätzliche Endung.}
+\EnglishText{In \emph{mit einem kleinen Kind}, the \textbf{-en} in \emph{kleinen} is an \textbf{adjective ending}. The noun \emph{Kind} has no additional ending in the dative singular.}
+
+\GermanText{In \textbf{mit kleinen Kindern} ist dagegen das letzte \textbf{-n} in \glqq Kindern\grqq eine echte \textbf{Dativ-Plural-Endung des Nomens}.}
+\EnglishText{In \emph{mit kleinen Kindern}, however, the final \textbf{-n} in \emph{Kindern} is a genuine \textbf{dative plural ending of the noun}.}
+\end{grammarentry}
+
+\section{Ein praktischer Entscheidungsweg \textnormal{(A practical decision path)}}
+\begin{grammarentry}{Schritt für Schritt}{Welche Endung brauche ich?}
+\GermanText{\textbf{1. Ist das Nomen Plural und steht es im Dativ?} Dann prüfe das zusätzliche \textbf{-n}: \textbf{mit den Kindern}, aber \textbf{mit den Frauen}, \textbf{mit den Autos}.}
+\EnglishText{\textbf{1. Is the noun plural and in the dative?} Then check the additional \textbf{-n}: \emph{mit den Kindern}, but \emph{mit den Frauen}, \emph{mit den Autos}.}
+
+\GermanText{\textbf{2. Ist es ein maskulines Nomen der n-Deklination?} Dann bekommen Akkusativ, Dativ und Genitiv Singular \textbf{-n/-en}: \textbf{den Studenten, dem Studenten, des Studenten}.}
+\EnglishText{\textbf{2. Is it a masculine n-declension noun?} Then the accusative, dative, and genitive singular take \textbf{-n/-en}: \emph{den Studenten, dem Studenten, des Studenten}.}
+
+\GermanText{\textbf{3. Ist es ein gemischtes Nomen wie \glqq Name\grqq?} Dann: \textbf{den Namen, dem Namen, des Namens}.}
+\EnglishText{\textbf{3. Is it a mixed-declension noun such as \emph{Name}?} Then use: \emph{den Namen, dem Namen, des Namens}.}
+
+\GermanText{\textbf{4. Ist es ein normales maskulines oder neutrales Nomen im Genitiv Singular?} Dann normalerweise \textbf{-s/-es}: \textbf{des Lehrers, des Kindes}.}
+\EnglishText{\textbf{4. Is it a normal masculine or neuter noun in the genitive singular?} Then normally use \textbf{-s/-es}: \emph{des Lehrers, des Kindes}.}
+
+\GermanText{\textbf{5. Trifft keiner dieser Fälle zu?} Dann bekommt das Nomen wegen des Kasus meistens keine eigene Endung.}
+\EnglishText{\textbf{5. Does none of these cases apply?} Then the noun usually does not get its own ending because of case.}
+\end{grammarentry}
+
+\section{Typische Fehler \textnormal{(Typical mistakes)}}
+\begin{grammarentry}{Fehler 1}{n-Deklination vergessen}
+\GermanText{Falsch: \textbf{Ich sehe den Student.} Richtig: \textbf{Ich sehe den Studenten.}}
+\EnglishText{Wrong: \emph{Ich sehe den Student.} Correct: \emph{Ich sehe den Studenten.}}
+\end{grammarentry}
+
+\begin{grammarentry}{Fehler 2}{Dativ-Plural-n vergessen}
+\GermanText{Falsch: \textbf{mit den Kinder}. Richtig: \textbf{mit den Kindern}.}
+\EnglishText{Wrong: \emph{mit den Kinder}. Correct: \emph{mit den Kindern}.}
+\end{grammarentry}
+
+\begin{grammarentry}{Fehler 3}{Genitivendung vergessen}
+\GermanText{Falsch: \textbf{die Farbe des Auto}. Richtig: \textbf{die Farbe des Autos}.}
+\EnglishText{Wrong: \emph{die Farbe des Auto}. Correct: \emph{die Farbe des Autos}.}
+\end{grammarentry}
+
+\begin{grammarentry}{Fehler 4}{-s bei femininen Nomen hinzufügen}
+\GermanText{Falsch: \textbf{die Tasche der Fraus}. Richtig: \textbf{die Tasche der Frau}.}
+\EnglishText{Wrong: \emph{die Tasche der Fraus}. Correct: \emph{die Tasche der Frau}.}
+\end{grammarentry}
+
+\begin{grammarentry}{Fehler 5}{Pluralbildung und Kasusendung verwechseln}
+\GermanText{In \textbf{die Kinder} gehört \textbf{-er} zur Pluralform des Wortes. Erst in \textbf{mit den Kindern} kommt wegen des Dativs zusätzlich \textbf{-n} dazu.}
+\EnglishText{In \emph{die Kinder}, \textbf{-er} belongs to the plural form of the word. Only in \emph{mit den Kindern} is an additional \textbf{-n} added because of the dative.}
+\end{grammarentry}
+
+\section{Zusammenfassung \textnormal{(Summary)}}
+\begin{grammarentry}{Die vier wichtigsten Regeln}{Merkschema}
+\GermanText{\textbf{1. Genitiv Singular, maskulin/neutrum:} meistens \textbf{-s/-es}.}
+\EnglishText{\textbf{1. Genitive singular, masculine/neuter:} usually \textbf{-s/-es}.}
+
+\GermanText{\textbf{2. n-Deklination:} Akkusativ, Dativ und Genitiv Singular bekommen \textbf{-n/-en}.}
+\EnglishText{\textbf{2. N-declension:} accusative, dative, and genitive singular take \textbf{-n/-en}.}
+
+\GermanText{\textbf{3. Dativ Plural:} normalerweise zusätzlich \textbf{-n}, außer die Pluralform endet bereits auf \textbf{-n/-en} oder auf \textbf{-s}.}
+\EnglishText{\textbf{3. Dative plural:} normally an additional \textbf{-n}, unless the plural already ends in \textbf{-n/-en} or in \textbf{-s}.}
+
+\GermanText{\textbf{4. Sonder- und Mischformen:} besonders \textbf{Name $\rightarrow$ Namens} und \textbf{Herz $\rightarrow$ Herzen/Herzens} bewusst lernen.}
+\EnglishText{\textbf{4. Special and mixed forms:} especially learn \textbf{Name $\rightarrow$ Namens} and \textbf{Herz $\rightarrow$ Herzen/Herzens} consciously.}
+\end{grammarentry}
+
+\begin{grammarentry}{Kurzantwort auf die Ausgangsfrage}{Ist n-Deklination der einzige Fall?}
+\GermanText{Nein. Die n-Deklination ist nur \textbf{eine} Art, wie sich die Nomenform nach dem Kasus verändert. Zusätzlich sind vor allem \textbf{Genitiv -s/-es} und \textbf{Dativ-Plural -n} wichtig.}
+\EnglishText{No. N-declension is only \textbf{one} way in which the noun form changes according to case. In addition, \textbf{genitive -s/-es} and \textbf{dative plural -n} are especially important.}
+\end{grammarentry}
+
+\end{document}
