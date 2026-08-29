@@ -1,0 +1,255 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Die Infinitivkonstruktion \glqq um \ldots{} zu\grqq\\\large \textnormal{The infinitive construction ``um ... zu''}}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+    \section{Grundbedeutung \textnormal{(Basic meaning)}}
+
+        \begin{grammarentry}{um \ldots{} zu}{Finalkonstruktion mit Infinitiv}
+            \GermanText{Die Konstruktion \textbf{um \ldots{} zu + Infinitiv} drückt einen Zweck, ein Ziel oder eine Absicht aus. Sie beantwortet die Frage \glqq Wozu?\grqq{} oder \glqq Mit welchem Ziel?\grqq.}
+            \EnglishText{The construction \textbf{um ... zu + infinitive} expresses a purpose, goal, or intention. It answers the question ``What for?'' or ``With what goal?''}
+
+            \GermanText{Sie gehört zu den \textbf{Infinitivkonstruktionen mit zu} und hat kein eigenes konjugiertes Verb.}
+            \EnglishText{It belongs to the \textbf{infinitive constructions with zu} and does not have its own conjugated verb.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich lerne Deutsch, um in Österreich zu arbeiten.}{I am learning German in order to work in Austria.}
+                \ExampleItem{Sie spart Geld, um ein Fahrrad zu kaufen.}{She is saving money in order to buy a bicycle.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Grammatische Struktur \textnormal{(Grammatical structure)}}
+
+        \begin{grammarentry}{Grundstruktur}{basic pattern}
+            \GermanText{Die Grundstruktur lautet: \textbf{Hauptsatz + Komma + um + Ergänzungen + zu + Infinitiv}.}
+            \EnglishText{The basic pattern is: \textbf{main clause + comma + um + complements + zu + infinitive}.}
+
+            \GermanText{Der Infinitiv steht am Ende der Infinitivgruppe. Bei einem einfachen Verb steht \textbf{zu} direkt vor dem Infinitiv.}
+            \EnglishText{The infinitive stands at the end of the infinitive group. With a simple verb, \textbf{zu} stands directly before the infinitive.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich gehe früh ins Bett, um morgen fit zu sein.}{I go to bed early in order to be fit tomorrow.}
+                \ExampleItem{Er fährt langsamer, um Benzin zu sparen.}{He drives more slowly in order to save fuel.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Gleiches Subjekt \textnormal{(Same subject)}}
+
+        \begin{grammarentry}{Subjektregel}{same understood subject}
+            \GermanText{Bei \textbf{um \ldots{} zu} ist das Subjekt der Infinitivgruppe normalerweise dasselbe wie das Subjekt des Hauptsatzes. Das Subjekt wird in der Infinitivgruppe nicht noch einmal genannt.}
+            \EnglishText{With \textbf{um ... zu}, the subject of the infinitive group is normally the same as the subject of the main clause. The subject is not stated again in the infinitive group.}
+
+            \GermanText{Wenn die handelnden Personen verschieden sind, verwendet man normalerweise \textbf{damit} statt \textbf{um \ldots{} zu}.}
+            \EnglishText{If the acting persons are different, German normally uses \textbf{damit} instead of \textbf{um ... zu}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich lerne viel, um die Prüfung zu bestehen.}{I study a lot in order to pass the exam.}
+                \ExampleItem{Ich spreche langsam, damit du mich verstehst.}{I speak slowly so that you understand me.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Was steht zwischen \glqq um\grqq{} und \glqq zu\grqq? \textnormal{(What stands between ``um'' and ``zu''?)}}
+
+        \begin{grammarentry}{Wichtige Regel}{important structural rule}
+            \GermanText{Es muss \textbf{nicht alles}, was im ganzen Satz vorkommt, zwischen \textbf{um} und \textbf{zu} stehen. In die Infinitivgruppe gehören nur die Satzteile, die grammatisch zu ihrem Infinitiv gehören. Satzteile des Hauptsatzes bleiben außerhalb der \textbf{um \ldots{} zu}-Gruppe.}
+            \EnglishText{Not everything that appears in the whole sentence has to stand between \textbf{um} and \textbf{zu}. Only the parts that grammatically belong to the infinitive belong inside the infinitive group. Parts of the main clause remain outside the \textbf{um ... zu} group.}
+
+            \GermanText{Merkschema: \textbf{um + Ergänzungen des Infinitivverbs + zu + Infinitiv}.}
+            \EnglishText{Memory pattern: \textbf{um + complements of the infinitive verb + zu + infinitive}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich nehme den Bus, um Benzin zu sparen.}{I take the bus in order to save fuel.}
+                \ExampleItem{Benzin gehört zu \textit{sparen}; den Bus gehört zu \textit{nehmen}.}{Benzin belongs to \textit{sparen}; den Bus belongs to \textit{nehmen}.}
+                \ExampleItem{Ich habe, um Gewicht zu sparen, nur das Kabel dabei, keinen Stecker.}{In order to save weight, I only have the cable with me, not a plug.}
+                \ExampleItem{Gewicht gehört zu \textit{sparen}; nur das Kabel dabei, keinen Stecker gehört zum Hauptsatz.}{Gewicht belongs to \textit{sparen}; only the cable with me, no plug belongs to the main clause.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Position im Satz \textnormal{(Position in the sentence)}}
+
+        \begin{grammarentry}{Stellung der Infinitivgruppe}{sentence position}
+            \GermanText{Die \textbf{um \ldots{} zu}-Gruppe kann nach dem Hauptsatz stehen. Sie kann aber auch am Satzanfang oder als Einschub im Hauptsatz stehen.}
+            \EnglishText{The \textbf{um ... zu} group can stand after the main clause. It can also stand at the beginning of the sentence or be inserted into the main clause.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich nehme nur das Kabel mit, um Gewicht zu sparen.}{I take only the cable with me in order to save weight.}
+                \ExampleItem{Um Gewicht zu sparen, nehme ich nur das Kabel mit.}{In order to save weight, I take only the cable with me.}
+                \ExampleItem{Ich habe, um Gewicht zu sparen, nur das Kabel dabei.}{In order to save weight, I only have the cable with me.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Kommasetzung \textnormal{(Comma placement)}}
+
+        \begin{grammarentry}{Komma ist erforderlich}{mandatory comma}
+            \GermanText{Eine Infinitivgruppe mit \textbf{um} wird durch Komma vom übrigen Satz abgetrennt. Steht sie als Einschub in der Mitte des Hauptsatzes, steht vor und nach der Infinitivgruppe ein Komma.}
+            \EnglishText{An infinitive group introduced by \textbf{um} is separated from the rest of the sentence by a comma. If it is inserted in the middle of the main clause, a comma stands before and after the infinitive group.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich trainiere regelmäßig, um fitter zu werden.}{I train regularly in order to become fitter.}
+                \ExampleItem{Ich habe, um Gewicht zu sparen, nur das Kabel dabei.}{In order to save weight, I only have the cable with me.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Trennbare Verben \textnormal{(Separable verbs)}}
+
+        \begin{grammarentry}{zu im Infinitiv}{placement of zu}
+            \GermanText{Bei trennbaren Verben steht \textbf{zu} zwischen Präfix und Verbstamm. Das Verb wird zusammengeschrieben.}
+            \EnglishText{With separable verbs, \textbf{zu} stands between the prefix and the verb stem. The verb is written as one word.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich gehe in die Stadt, um einzukaufen.}{I go into the city in order to shop.}
+                \ExampleItem{Sie spart Geld, um früher aufzuhören.}{She saves money in order to stop earlier.}
+                \ExampleItem{Er arbeitet mehr, um seine Schulden zurückzuzahlen.}{He works more in order to pay back his debts.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Nicht trennbare Verben \textnormal{(Inseparable verbs)}}
+
+        \begin{grammarentry}{zu vor dem Infinitiv}{inseparable verbs}
+            \GermanText{Bei nicht trennbaren Verben steht \textbf{zu} vor dem Infinitiv.}
+            \EnglishText{With inseparable verbs, \textbf{zu} stands before the infinitive.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich frage nach, um alles besser zu verstehen.}{I ask for clarification in order to understand everything better.}
+                \ExampleItem{Sie übt jeden Tag, um sich zu verbessern.}{She practices every day in order to improve.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Negation \textnormal{(Negation)}}
+
+        \begin{grammarentry}{nicht und kein}{negation inside the infinitive group}
+            \GermanText{Die Infinitivgruppe kann mit \textbf{nicht} oder \textbf{kein} verneint werden. Die Negation steht bei dem Satzteil, den sie verneint.}
+            \EnglishText{The infinitive group can be negated with \textbf{nicht} or \textbf{kein}. The negation stands with the element it negates.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich schreibe es auf, um es nicht zu vergessen.}{I write it down in order not to forget it.}
+                \ExampleItem{Er fährt vorsichtig, um keinen Unfall zu verursachen.}{He drives carefully in order not to cause an accident.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Abgrenzung zu \glqq damit\grqq \textnormal{(Difference from ``damit'')}}
+
+        \begin{grammarentry}{um \ldots{} zu oder damit?}{choice of structure}
+            \GermanText{\textbf{um \ldots{} zu} wird besonders verwendet, wenn Hauptsatz und Infinitivgruppe dasselbe Subjekt haben. \textbf{damit} bildet dagegen einen Nebensatz mit einem eigenen konjugierten Verb und kann deshalb auch ein anderes Subjekt haben.}
+            \EnglishText{\textbf{um ... zu} is especially used when the main clause and infinitive group have the same subject. \textbf{damit}, by contrast, forms a subordinate clause with its own conjugated verb and can therefore also have a different subject.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich gehe früh schlafen, um morgen fit zu sein.}{I go to sleep early in order to be fit tomorrow.}
+                \ExampleItem{Ich mache das Fenster zu, damit das Kind nicht friert.}{I close the window so that the child does not get cold.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Typische Fehler \textnormal{(Typical mistakes)}}
+
+        \begin{grammarentry}{Fehler vermeiden}{common errors}
+            \GermanText{Falsch ist es, alle Teile des Hauptsatzes automatisch zwischen \textbf{um} und \textbf{zu} zu setzen. Man muss zuerst bestimmen, welches Verb zu welchem Satzteil gehört.}
+            \EnglishText{It is wrong to automatically place all parts of the main clause between \textbf{um} and \textbf{zu}. First determine which verb each sentence element belongs to.}
+
+            \GermanText{Auch ein eigenes ausgesprochenes Subjekt steht normalerweise nicht in der \textbf{um \ldots{} zu}-Gruppe. Bei verschiedenen Subjekten verwendet man meist \textbf{damit}.}
+            \EnglishText{A separate explicitly stated subject also normally does not stand in the \textbf{um ... zu} group. With different subjects, German usually uses \textbf{damit}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Richtig: Ich nehme den Bus, um Benzin zu sparen.}{Correct: I take the bus in order to save fuel.}
+                \ExampleItem{Nicht: Ich nehme, um Benzin den Bus zu sparen.}{Not: a structure in which a main-clause element is incorrectly put inside the infinitive group.}
+            \end{itemize}
+        \end{exbox}
+
+
+    \section{Zusammenfassung \textnormal{(Summary)}}
+
+        \begin{grammarentry}{Merksätze}{key points}
+            \GermanText{\textbf{um \ldots{} zu + Infinitiv} drückt einen Zweck oder ein Ziel aus.}
+            \EnglishText{\textbf{um ... zu + infinitive} expresses a purpose or goal.}
+
+            \GermanText{Das Subjekt ist normalerweise dasselbe wie im Hauptsatz.}
+            \EnglishText{The subject is normally the same as in the main clause.}
+
+            \GermanText{Nur die Teile, die zum Infinitiv gehören, stehen innerhalb der Infinitivgruppe.}
+            \EnglishText{Only the elements that belong to the infinitive stand inside the infinitive group.}
+
+            \GermanText{Die Infinitivgruppe wird mit Komma abgetrennt und kann auch als Einschub stehen.}
+            \EnglishText{The infinitive group is separated by commas and can also appear as an inserted phrase.}
+        \end{grammarentry}
+
+\end{document}

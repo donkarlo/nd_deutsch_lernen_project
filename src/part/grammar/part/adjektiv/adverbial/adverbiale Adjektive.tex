@@ -1,0 +1,276 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{6pt}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Adverbiale Adjektive\\\large\textnormal{Adverbial Adjectives}}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+    \section{Grundidee \textnormal{(Basic idea)}}
+
+        \begin{grammarentry}{Adverbialer Gebrauch}{Funktion eines Adjektivs}
+            \GermanText{Ein \textbf{adverbial gebrauchtes Adjektiv} beschreibt nicht direkt ein Nomen, sondern vor allem, \textbf{wie} eine Handlung oder ein Vorgang geschieht. Es bezieht sich typischerweise auf das Verb.}
+            \EnglishText{An \textbf{adverbially used adjective} does not directly describe a noun. Instead, it mainly describes \textbf{how} an action or process happens. It typically relates to the verb.}
+
+            \GermanText{Das wichtigste Merkmal ist: Das Adjektiv bekommt im adverbialen Gebrauch \textbf{keine Adjektivendung}.}
+            \EnglishText{The most important feature is: In adverbial use, the adjective takes \textbf{no adjective ending}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Er fährt schnell.}{He drives quickly.}
+                \ExampleItem{Sie spricht leise.}{She speaks quietly.}
+                \ExampleItem{Die Kinder arbeiten konzentriert.}{The children work in a focused way.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Form: keine Deklination \textnormal{(Form: no declension)}}
+
+        \begin{grammarentry}{Unflektierte Form}{keine Endung}
+            \GermanText{Adverbial gebrauchte Adjektive werden \textbf{nicht nach Genus, Numerus oder Kasus dekliniert}. Die Form bleibt unverändert.}
+            \EnglishText{Adjectives used adverbially are \textbf{not declined according to gender, number, or case}. Their form remains unchanged.}
+
+            \GermanText{Vergleiche: \textbf{ein schnelles Auto} (attributiv, mit Endung) - \textbf{Das Auto fährt schnell} (adverbial, ohne Endung).}
+            \EnglishText{Compare: \textbf{ein schnelles Auto} (attributive, with an ending) - \textbf{Das Auto fährt schnell} (adverbial, without an ending).}
+        \end{grammarentry}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{3.5cm}|p{5.4cm}|p{5.4cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Gebrauch / Use} &
+            \color{white}\textbf{Deutsch / German} &
+            \color{white}\textbf{English} \\
+            Attributiv / Attributive & ein \textbf{schnelles} Auto & a fast car \\
+            Prädikativ / Predicative & Das Auto ist \textbf{schnell}. & The car is fast. \\
+            Adverbial / Adverbial & Das Auto fährt \textbf{schnell}. & The car drives quickly. \\
+        \end{longtable}
+
+    \section{Woran erkennt man den adverbialen Gebrauch? \textnormal{(How do you recognize adverbial use?)}}
+
+        \begin{grammarentry}{Erkennungsfrage}{meistens: Wie?}
+            \GermanText{Ein adverbial gebrauchtes Adjektiv beantwortet sehr häufig die Frage \textbf{Wie?}.}
+            \EnglishText{An adjective used adverbially very often answers the question \textbf{How?}.}
+
+            \GermanText{Beispiel: \glqq Wie fährt er?\grqq{} - \glqq Er fährt \textbf{vorsichtig}.\grqq}
+            \EnglishText{Example: ``How does he drive?'' - ``He drives \textbf{carefully}.''}
+
+            \GermanText{Diese Frageprobe ist sehr hilfreich, aber nicht jede adverbiale Bestimmung muss ein Adjektiv sein. Auch echte Adverbien oder Präpositionalgruppen können dieselbe Funktion übernehmen.}
+            \EnglishText{This question test is very useful, but not every adverbial modifier has to be an adjective. True adverbs or prepositional phrases can perform the same function.}
+        \end{grammarentry}
+
+    \section{Adjektiv oder Adverb? \textnormal{(Adjective or adverb?)}}
+
+        \begin{grammarentry}{Wichtige Besonderheit im Deutschen}{gleiche Form}
+            \GermanText{Im Deutschen braucht man für den adverbialen Gebrauch normalerweise \textbf{keine besondere Adverbform}. Das normale Adjektiv wird unverändert verwendet.}
+            \EnglishText{In German, adverbial use normally does \textbf{not require a special adverb form}. The ordinary adjective is used unchanged.}
+
+            \GermanText{Deshalb entspricht deutsches \textbf{schnell} je nach Satz sowohl englischem \textbf{fast} als auch einer englischen adverbialen Bedeutung wie \textbf{quickly}.}
+            \EnglishText{Therefore, German \textbf{schnell} can correspond, depending on the sentence, both to English \textbf{fast} and to an English adverbial meaning such as \textbf{quickly}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Er ist ruhig.}{He is calm. - predicative use}
+                \ExampleItem{Er spricht ruhig.}{He speaks calmly. - adverbial use}
+                \ExampleItem{Sie erklärt die Aufgabe klar.}{She explains the task clearly.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Steigerung \textnormal{(Comparison)}}
+
+        \begin{grammarentry}{Komparativ und Superlativ}{auch adverbial möglich}
+            \GermanText{Wenn ein Adjektiv steigerbar ist, kann es auch im adverbialen Gebrauch im \textbf{Komparativ} und \textbf{Superlativ} stehen.}
+            \EnglishText{If an adjective is gradable, it can also be used adverbially in the \textbf{comparative} and \textbf{superlative}.}
+
+            \GermanText{Komparativ: Grundform + \textbf{-er}, zum Beispiel \textbf{schneller}. Es gibt weiterhin keine zusätzliche Adjektivendung.}
+            \EnglishText{Comparative: base form + \textbf{-er}, for example \textbf{schneller}. There is still no additional adjective ending.}
+
+            \GermanText{Beim adverbialen Superlativ verwendet man normalerweise die Form \textbf{am + -sten/-esten}: \textbf{am schnellsten}, \textbf{am besten}, \textbf{am vorsichtigsten}.}
+            \EnglishText{For the adverbial superlative, German normally uses \textbf{am + -sten/-esten}: \textbf{am schnellsten}, \textbf{am besten}, \textbf{am vorsichtigsten}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Anna läuft schnell.}{Anna runs fast.}
+                \ExampleItem{Lukas läuft schneller.}{Lukas runs faster.}
+                \ExampleItem{Mira läuft am schnellsten.}{Mira runs the fastest.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Stellung im Satz \textnormal{(Position in the sentence)}}
+
+        \begin{grammarentry}{Keine einzige feste Position}{abhängig vom Satz}
+            \GermanText{Ein adverbial gebrauchtes Adjektiv hat nicht eine einzige feste Position. Es steht innerhalb des Satzes dort, wo die adverbiale Information sinnvoll eingeordnet wird.}
+            \EnglishText{An adverbially used adjective does not have one single fixed position. It appears within the sentence where the adverbial information is naturally placed.}
+
+            \GermanText{Bei einfachen Sätzen steht es oft im Mittelfeld oder nahe beim Verb beziehungsweise bei dem Teil, den es näher bestimmt.}
+            \EnglishText{In simple sentences, it often appears in the middle field or close to the verb or the element it modifies more precisely.}
+
+            \GermanText{Die allgemeinen Regeln der deutschen Wortstellung, besonders die Reihenfolge mehrerer adverbialer Angaben, gelten weiterhin.}
+            \EnglishText{The general rules of German word order, especially the ordering of several adverbial elements, still apply.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Er hat die Frage ruhig beantwortet.}{He answered the question calmly.}
+                \ExampleItem{Sie arbeitet heute besonders konzentriert.}{She is working especially attentively today.}
+                \ExampleItem{Vorsichtig öffnete er die Tür.}{He carefully opened the door.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Erweiterung und Gradangaben \textnormal{(Modification and degree)}}
+
+        \begin{grammarentry}{Sehr, besonders, ziemlich, zu}{Grad des Adjektivs}
+            \GermanText{Ein adverbial gebrauchtes Adjektiv kann durch Gradwörter näher bestimmt werden, zum Beispiel \textbf{sehr}, \textbf{besonders}, \textbf{ziemlich}, \textbf{extrem}, \textbf{zu} oder \textbf{genug}.}
+            \EnglishText{An adjective used adverbially can be modified by degree words such as \textbf{very}, \textbf{especially}, \textbf{quite}, \textbf{extremely}, \textbf{too}, or \textbf{enough}.}
+
+            \GermanText{Auch dann bleibt das Adjektiv ohne Deklinationsendung.}
+            \EnglishText{Even then, the adjective remains without a declensional ending.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Sie spricht sehr deutlich.}{She speaks very clearly.}
+                \ExampleItem{Er fährt zu schnell.}{He drives too fast.}
+                \ExampleItem{Du hast die Aufgabe gut genug erklärt.}{You explained the task well enough.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Partizipien im adverbialen Gebrauch \textnormal{(Participles in adverbial use)}}
+
+        \begin{grammarentry}{Partizip I und Partizip II}{adjektivischer Gebrauch}
+            \GermanText{Auch Partizipien können wie Adjektive adverbial gebraucht werden. Dann stehen sie ebenfalls ohne Adjektivendung.}
+            \EnglishText{Participles can also be used adverbially like adjectives. In that case, they also appear without an adjective ending.}
+
+            \GermanText{Partizip I: \textbf{lächelnd}, \textbf{schweigend}. Partizip II: zum Beispiel \textbf{konzentriert}, \textbf{genervt}, wenn die Form eine Eigenschaft oder einen Zustand ausdrückt.}
+            \EnglishText{Present participle: \textbf{lächelnd} (smiling), \textbf{schweigend} (silently). Past participle: for example \textbf{konzentriert} (focused), \textbf{genervt} (annoyed), when the form expresses a property or state.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Sie kam lächelnd ins Zimmer.}{She came into the room smiling.}
+                \ExampleItem{Er hörte schweigend zu.}{He listened silently.}
+                \ExampleItem{Sie arbeitet konzentriert weiter.}{She continues working in a focused way.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Abgrenzung zum attributiven Adjektiv \textnormal{(Difference from attributive adjectives)}}
+
+        \begin{grammarentry}{Attributiv = direkt beim Nomen}{mit Deklination}
+            \GermanText{Ein attributives Adjektiv steht direkt bei einem Nomen und bekommt eine Endung: \textbf{ein schneller Zug}, \textbf{mit einem schnellen Zug}.}
+            \EnglishText{An attributive adjective stands directly with a noun and receives an ending: \textbf{ein schneller Zug} (a fast train), \textbf{mit einem schnellen Zug} (with a fast train).}
+
+            \GermanText{Ein adverbiales Adjektiv beschreibt dagegen die Handlung oder den Vorgang: \textbf{Der Zug fährt schnell}.}
+            \EnglishText{An adverbial adjective, by contrast, describes the action or process: \textbf{Der Zug fährt schnell} (The train travels fast).}
+        \end{grammarentry}
+
+    \section{Abgrenzung zum prädikativen Adjektiv \textnormal{(Difference from predicative adjectives)}}
+
+        \begin{grammarentry}{Beide ohne Endung}{aber unterschiedliche Funktion}
+            \GermanText{Sowohl prädikative als auch adverbiale Adjektive stehen normalerweise \textbf{ohne Adjektivendung}. Der Unterschied liegt deshalb nicht in der Form, sondern in der Funktion.}
+            \EnglishText{Both predicative and adverbial adjectives normally appear \textbf{without an adjective ending}. The difference is therefore not in the form but in the function.}
+
+            \GermanText{Prädikativ: Das Adjektiv beschreibt das Subjekt oder ein anderes Satzglied über ein verbindendes Verb: \textbf{Das Auto ist schnell}.}
+            \EnglishText{Predicative: The adjective describes the subject or another sentence element through a linking verb: \textbf{Das Auto ist schnell} (The car is fast).}
+
+            \GermanText{Adverbial: Das Adjektiv beschreibt, wie eine Handlung geschieht: \textbf{Das Auto fährt schnell}.}
+            \EnglishText{Adverbial: The adjective describes how an action happens: \textbf{Das Auto fährt schnell} (The car drives fast).}
+        \end{grammarentry}
+
+    \section{Typische Fehler \textnormal{(Typical mistakes)}}
+
+        \begin{grammarentry}{Fehler 1}{unnötige Adjektivendung}
+            \GermanText{Falsch: \textbf{Er fährt schnelles.} Richtig: \textbf{Er fährt schnell.}}
+            \EnglishText{Wrong: \textbf{Er fährt schnelles.} Correct: \textbf{Er fährt schnell.}}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Fehler 2}{englische -ly-Logik übertragen}
+            \GermanText{Im Deutschen bildet man normalerweise kein neues Adverb wie im Englischen mit \textit{-ly}. Man verwendet die unveränderte Adjektivform: \textbf{ruhig}, \textbf{klar}, \textbf{schnell}.}
+            \EnglishText{German normally does not form a new adverb as English does with \textit{-ly}. It uses the unchanged adjective form: \textbf{ruhig}, \textbf{klar}, \textbf{schnell}.}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Fehler 3}{adverbial und prädikativ verwechseln}
+            \GermanText{\textbf{Er ist vorsichtig} ist prädikativ. \textbf{Er fährt vorsichtig} ist adverbial. In beiden Fällen steht \textbf{vorsichtig} ohne Endung, aber die grammatische Funktion ist verschieden.}
+            \EnglishText{\textbf{Er ist vorsichtig} is predicative. \textbf{Er fährt vorsichtig} is adverbial. In both cases, \textbf{vorsichtig} has no ending, but the grammatical function is different.}
+        \end{grammarentry}
+
+    \section{Schnelltest \textnormal{(Quick test)}}
+
+        \begin{grammarentry}{Drei Fragen}{Erkennung}
+            \GermanText{1. Steht das Adjektiv direkt vor einem Nomen und beschreibt dieses? Dann ist es meistens \textbf{attributiv} und wird dekliniert.}
+            \EnglishText{1. Does the adjective stand directly before a noun and describe it? Then it is usually \textbf{attributive} and is declined.}
+
+            \GermanText{2. Beschreibt das Adjektiv über \textbf{sein, werden, bleiben} oder ein ähnliches Verb einen Zustand oder eine Eigenschaft des Subjekts? Dann ist es \textbf{prädikativ}.}
+            \EnglishText{2. Does the adjective describe a state or property of the subject through \textbf{sein, werden, bleiben} or a similar verb? Then it is \textbf{predicative}.}
+
+            \GermanText{3. Beschreibt das Adjektiv vor allem, \textbf{wie} eine Handlung geschieht? Dann ist es \textbf{adverbial}.}
+            \EnglishText{3. Does the adjective mainly describe \textbf{how} an action happens? Then it is \textbf{adverbial}.}
+        \end{grammarentry}
+
+    \section{Zusammenfassung \textnormal{(Summary)}}
+
+        \begin{grammarentry}{Merksätze}{kurz und wichtig}
+            \GermanText{Adverbial gebrauchte Adjektive beschreiben typischerweise eine Handlung oder einen Vorgang und beantworten oft die Frage \textbf{Wie?}.}
+            \EnglishText{Adjectives used adverbially typically describe an action or process and often answer the question \textbf{How?}.}
+
+            \GermanText{Sie haben \textbf{keine Deklinationsendung}: \textbf{schnell, ruhig, deutlich, vorsichtig}.}
+            \EnglishText{They have \textbf{no declensional ending}: \textbf{schnell, ruhig, deutlich, vorsichtig}.}
+
+            \GermanText{Komparativ und Superlativ sind möglich: \textbf{schneller}, \textbf{am schnellsten}.}
+            \EnglishText{Comparative and superlative forms are possible: \textbf{schneller} (faster), \textbf{am schnellsten} (the fastest).}
+
+            \GermanText{Der wichtigste Gegensatz lautet: \textbf{ein schnelles Auto} (attributiv) - \textbf{Das Auto ist schnell} (prädikativ) - \textbf{Das Auto fährt schnell} (adverbial).}
+            \EnglishText{The key contrast is: \textbf{ein schnelles Auto} (attributive) - \textbf{Das Auto ist schnell} (predicative) - \textbf{Das Auto fährt schnell} (adverbial).}
+        \end{grammarentry}
+
+\end{document}

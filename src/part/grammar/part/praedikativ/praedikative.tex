@@ -1,0 +1,329 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{6pt}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Prädikative Adjektive\\\large\textnormal{Predicative Adjectives}}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+    \section{Grundidee \textnormal{(Basic idea)}}
+
+        \begin{grammarentry}{Prädikativer Gebrauch}{Eigenschaft oder Zustand}
+            \GermanText{Ein \textbf{prädikativ gebrauchtes Adjektiv} beschreibt eine Eigenschaft oder einen Zustand des Subjekts, ohne direkt vor dem Nomen zu stehen. Es ist Teil des Prädikats.}
+            \EnglishText{A \textbf{predicatively used adjective} describes a property or state of the subject without standing directly before the noun. It is part of the predicate.}
+
+            \GermanText{Das wichtigste Merkmal ist: Ein prädikatives Adjektiv bekommt normalerweise \textbf{keine Adjektivendung}.}
+            \EnglishText{The most important feature is: A predicative adjective normally takes \textbf{no adjective ending}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Das Auto ist schnell.}{The car is fast.}
+                \ExampleItem{Die Kinder sind müde.}{The children are tired.}
+                \ExampleItem{Das Wetter wird kalt.}{The weather is becoming cold.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Die wichtigsten Verben \textnormal{(The most important verbs)}}
+
+        \begin{grammarentry}{sein, werden, bleiben}{Kopulaverben}
+            \GermanText{Die wichtigsten Verben beim prädikativen Gebrauch sind \textbf{sein}, \textbf{werden} und \textbf{bleiben}. Sie verbinden das Subjekt mit einer Eigenschaft oder einem Zustand.}
+            \EnglishText{The most important verbs in predicative use are \textbf{sein} (to be), \textbf{werden} (to become), and \textbf{bleiben} (to remain). They link the subject to a property or state.}
+
+            \GermanText{\textbf{sein} beschreibt einen bestehenden Zustand: \textbf{Der Raum ist ruhig}.}
+            \EnglishText{\textbf{sein} describes an existing state: \textbf{Der Raum ist ruhig} (The room is quiet).}
+
+            \GermanText{\textbf{werden} beschreibt eine Veränderung oder Entwicklung: \textbf{Der Raum wird ruhig}.}
+            \EnglishText{\textbf{werden} describes a change or development: \textbf{Der Raum wird ruhig} (The room is becoming quiet).}
+
+            \GermanText{\textbf{bleiben} beschreibt das Fortbestehen eines Zustands: \textbf{Der Raum bleibt ruhig}.}
+            \EnglishText{\textbf{bleiben} describes the continuation of a state: \textbf{Der Raum bleibt ruhig} (The room remains quiet).}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Der Kaffee ist heiß.}{The coffee is hot.}
+                \ExampleItem{Der Kaffee wird kalt.}{The coffee is getting cold.}
+                \ExampleItem{Der Kaffee bleibt warm.}{The coffee stays warm.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Form: keine Deklination \textnormal{(Form: no declension)}}
+
+        \begin{grammarentry}{Unflektierte Form}{unabhängig von Genus, Numerus und Kasus}
+            \GermanText{Prädikative Adjektive werden normalerweise \textbf{nicht dekliniert}. Die Form ist unabhängig von Genus und Numerus des Subjekts.}
+            \EnglishText{Predicative adjectives are normally \textbf{not declined}. Their form is independent of the gender and number of the subject.}
+
+            \GermanText{Man sagt: \textbf{Der Mann ist müde}, \textbf{Die Frau ist müde}, \textbf{Das Kind ist müde}, \textbf{Die Kinder sind müde}.}
+            \EnglishText{One says: \textbf{Der Mann ist müde} (The man is tired), \textbf{Die Frau ist müde} (The woman is tired), \textbf{Das Kind ist müde} (The child is tired), \textbf{Die Kinder sind müde} (The children are tired).}
+        \end{grammarentry}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{3.5cm}|p{5.4cm}|p{5.4cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Gebrauch / Use} &
+            \color{white}\textbf{Deutsch / German} &
+            \color{white}\textbf{English} \\
+            Attributiv / Attributive & ein \textbf{kalter} Tag & a cold day \\
+            Prädikativ / Predicative & Der Tag ist \textbf{kalt}. & The day is cold. \\
+            Adverbial / Adverbial & Der Wind weht \textbf{kalt}. & The wind blows coldly / with a cold quality. \\
+        \end{longtable}
+
+    \section{Bezug zum Subjekt \textnormal{(Relation to the subject)}}
+
+        \begin{grammarentry}{Subjektsprädikativ}{Eigenschaft des Subjekts}
+            \GermanText{Im Normalfall bezieht sich das prädikative Adjektiv auf das \textbf{Subjekt}. Es sagt, wie das Subjekt ist, wird oder bleibt.}
+            \EnglishText{Normally, the predicative adjective refers to the \textbf{subject}. It states what the subject is like, becomes like, or remains like.}
+
+            \GermanText{Beispiel: In \glqq Die Straße ist glatt\grqq{} beschreibt \textbf{glatt} die Straße.}
+            \EnglishText{Example: In ``Die Straße ist glatt'' (The road is slippery), \textbf{glatt} describes the road.}
+        \end{grammarentry}
+
+    \section{Weitere Verben mit prädikativer Funktion \textnormal{(Other verbs with predicative function)}}
+
+        \begin{grammarentry}{scheinen, wirken, aussehen}{ähnliche Strukturen}
+            \GermanText{Neben \textbf{sein, werden, bleiben} können auch andere Verben ein Adjektiv mit einer prädikativen Bedeutung verbinden, besonders \textbf{scheinen}, \textbf{wirken} und \textbf{aussehen}.}
+            \EnglishText{Besides \textbf{sein, werden, bleiben}, other verbs can also link an adjective with predicative meaning, especially \textbf{scheinen} (to seem), \textbf{wirken} (to appear/seem), and \textbf{aussehen} (to look).}
+
+            \GermanText{Bei diesen Verben beschreibt das Adjektiv ebenfalls eine Eigenschaft oder einen Zustand der Person oder Sache.}
+            \EnglishText{With these verbs, the adjective likewise describes a property or state of the person or thing.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Er scheint müde.}{He seems tired.}
+                \ExampleItem{Die Aufgabe wirkt schwierig.}{The task seems difficult.}
+                \ExampleItem{Du siehst glücklich aus.}{You look happy.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Objektsprädikative Verwendungen \textnormal{(Object-predicative uses)}}
+
+        \begin{grammarentry}{Bezug auf ein Objekt}{erweiterter Gebrauch}
+            \GermanText{Adjektive können in bestimmten Strukturen auch eine Eigenschaft eines \textbf{Objekts} ausdrücken. Je nach Grammatikmodell nennt man solche Formen \textbf{Objektsprädikativ}, \textbf{prädikatives Attribut} oder ähnlich.}
+            \EnglishText{In certain structures, adjectives can also express a property of an \textbf{object}. Depending on the grammatical framework, such forms are called an \textbf{object predicative}, \textbf{predicative attribute}, or similar terms.}
+
+            \GermanText{Auch hier steht das Adjektiv normalerweise ohne Deklinationsendung.}
+            \EnglishText{Here too, the adjective normally appears without a declensional ending.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich finde den Film interessant.}{I find the film interesting.}
+                \ExampleItem{Sie nennt die Entscheidung falsch.}{She calls the decision wrong.}
+                \ExampleItem{Wir streichen die Wand weiß.}{We paint the wall white.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Steigerung \textnormal{(Comparison)}}
+
+        \begin{grammarentry}{Komparativ und Superlativ}{prädikativ möglich}
+            \GermanText{Steigerbare Adjektive können auch prädikativ im \textbf{Komparativ} und \textbf{Superlativ} verwendet werden.}
+            \EnglishText{Gradable adjectives can also be used predicatively in the \textbf{comparative} and \textbf{superlative}.}
+
+            \GermanText{Komparativ: \textbf{Das Auto ist schneller}.}
+            \EnglishText{Comparative: \textbf{Das Auto ist schneller} (The car is faster).}
+
+            \GermanText{Prädikativer Superlativ: normalerweise \textbf{am + -sten/-esten}: \textbf{Dieses Auto ist am schnellsten}.}
+            \EnglishText{Predicative superlative: normally \textbf{am + -sten/-esten}: \textbf{Dieses Auto ist am schnellsten} (This car is the fastest).}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Der erste Weg ist kurz.}{The first route is short.}
+                \ExampleItem{Der zweite Weg ist kürzer.}{The second route is shorter.}
+                \ExampleItem{Der dritte Weg ist am kürzesten.}{The third route is the shortest.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Erweiterung und Gradangaben \textnormal{(Modification and degree)}}
+
+        \begin{grammarentry}{sehr, ziemlich, besonders, zu}{Grad und Intensität}
+            \GermanText{Prädikative Adjektive können durch Gradwörter erweitert werden. Häufig sind zum Beispiel \textbf{sehr}, \textbf{ziemlich}, \textbf{besonders}, \textbf{extrem}, \textbf{zu} und \textbf{genug}.}
+            \EnglishText{Predicative adjectives can be modified by degree words. Common examples include \textbf{very}, \textbf{quite}, \textbf{especially}, \textbf{extremely}, \textbf{too}, and \textbf{enough}.}
+
+            \GermanText{Das Adjektiv selbst bleibt dabei ohne Deklinationsendung.}
+            \EnglishText{The adjective itself still remains without a declensional ending.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Die Prüfung ist sehr schwierig.}{The exam is very difficult.}
+                \ExampleItem{Der Raum ist zu klein.}{The room is too small.}
+                \ExampleItem{Die Erklärung ist klar genug.}{The explanation is clear enough.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Partizipien als prädikative Adjektive \textnormal{(Participles as predicative adjectives)}}
+
+        \begin{grammarentry}{Zustand oder Eigenschaft}{Partizip I und II}
+            \GermanText{Auch Partizipien können prädikativ wie Adjektive gebraucht werden, wenn sie einen Zustand oder eine Eigenschaft ausdrücken.}
+            \EnglishText{Participles can also be used predicatively like adjectives when they express a state or property.}
+
+            \GermanText{Sie stehen dann ebenfalls ohne Adjektivendung.}
+            \EnglishText{They likewise appear without an adjective ending.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Die Tür ist geschlossen.}{The door is closed.}
+                \ExampleItem{Die Situation bleibt spannend.}{The situation remains exciting.}
+                \ExampleItem{Er wirkt erschöpft.}{He looks exhausted.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Prädikatives Adjektiv oder Zustandspassiv? \textnormal{(Predicative adjective or stative passive?)}}
+
+        \begin{grammarentry}{Formgleichheit mit sein + Partizip II}{Kontext entscheidet}
+            \GermanText{Bei einem Partizip II nach \textbf{sein} kann die Form sowohl als adjektivische Zustandsbeschreibung als auch als \textbf{Zustandspassiv} verstanden werden. Die genaue Analyse hängt vom Verb, vom Kontext und von der gemeinten Bedeutung ab.}
+            \EnglishText{With a past participle after \textbf{sein}, the form can be understood either as an adjectival description of a state or as a \textbf{stative passive}. The exact analysis depends on the verb, the context, and the intended meaning.}
+
+            \GermanText{Für die praktische Sprachverwendung ist wichtig: In beiden Fällen steht das Partizip nach \textbf{sein} ohne Adjektivendung, wenn es prädikativ gebraucht wird.}
+            \EnglishText{For practical language use, the important point is: In both cases, the participle after \textbf{sein} appears without an adjective ending when used predicatively.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Die Tür ist geschlossen.}{The door is closed.}
+                \ExampleItem{Das Fenster ist geöffnet.}{The window is open / has been opened and is in that state.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Abgrenzung zum attributiven Adjektiv \textnormal{(Difference from attributive adjectives)}}
+
+        \begin{grammarentry}{Attributiv = beim Nomen}{prädikativ = Teil des Prädikats}
+            \GermanText{Attributiv: \textbf{ein schönes Haus}. Das Adjektiv steht direkt beim Nomen und wird dekliniert.}
+            \EnglishText{Attributive: \textbf{ein schönes Haus} (a beautiful house). The adjective stands directly with the noun and is declined.}
+
+            \GermanText{Prädikativ: \textbf{Das Haus ist schön}. Das Adjektiv steht als Teil des Prädikats und hat keine Deklinationsendung.}
+            \EnglishText{Predicative: \textbf{Das Haus ist schön} (The house is beautiful). The adjective is part of the predicate and has no declensional ending.}
+        \end{grammarentry}
+
+    \section{Abgrenzung zum adverbialen Adjektiv \textnormal{(Difference from adverbial adjectives)}}
+
+        \begin{grammarentry}{Gleiche Form, andere Funktion}{wichtig für die Analyse}
+            \GermanText{Prädikative und adverbiale Adjektive sehen häufig gleich aus, weil beide keine Adjektivendung haben.}
+            \EnglishText{Predicative and adverbial adjectives often look identical because neither normally has an adjective ending.}
+
+            \GermanText{Prädikativ: \textbf{Er ist ruhig}. \textbf{ruhig} beschreibt \textbf{er}.}
+            \EnglishText{Predicative: \textbf{Er ist ruhig} (He is calm). \textbf{ruhig} describes \textbf{him}.}
+
+            \GermanText{Adverbial: \textbf{Er spricht ruhig}. \textbf{ruhig} beschreibt, \textbf{wie} er spricht.}
+            \EnglishText{Adverbial: \textbf{Er spricht ruhig} (He speaks calmly). \textbf{ruhig} describes \textbf{how} he speaks.}
+        \end{grammarentry}
+
+    \section{Adjektive mit Ergänzungen \textnormal{(Adjectives with complements)}}
+
+        \begin{grammarentry}{Kasus und Präpositionen gehören zum Adjektiv}{wichtige Rektion}
+            \GermanText{Manche prädikativ gebrauchten Adjektive verlangen eine bestimmte Ergänzung mit Kasus oder Präposition. Diese Rektion muss zusammen mit dem Adjektiv gelernt werden.}
+            \EnglishText{Some predicatively used adjectives require a particular complement with a case or preposition. This government pattern should be learned together with the adjective.}
+
+            \GermanText{Beispiele: \textbf{jemandem dankbar sein} (+ Dativ), \textbf{auf etwas stolz sein} (+ Akkusativ), \textbf{mit etwas zufrieden sein} (+ Dativ), \textbf{für etwas verantwortlich sein} (+ Akkusativ).}
+            \EnglishText{Examples: \textbf{jemandem dankbar sein} (to be grateful to someone, + dative), \textbf{auf etwas stolz sein} (to be proud of something, + accusative), \textbf{mit etwas zufrieden sein} (to be satisfied with something, + dative), \textbf{für etwas verantwortlich sein} (to be responsible for something, + accusative).}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich bin dir dankbar.}{I am grateful to you.}
+                \ExampleItem{Sie ist auf ihre Arbeit stolz.}{She is proud of her work.}
+                \ExampleItem{Wir sind mit dem Ergebnis zufrieden.}{We are satisfied with the result.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Typische Fehler \textnormal{(Typical mistakes)}}
+
+        \begin{grammarentry}{Fehler 1}{Adjektivendung nach sein}
+            \GermanText{Falsch: \textbf{Das Auto ist schnelles}. Richtig: \textbf{Das Auto ist schnell}.}
+            \EnglishText{Wrong: \textbf{Das Auto ist schnelles}. Correct: \textbf{Das Auto ist schnell}.}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Fehler 2}{Endung an Genus oder Plural anpassen}
+            \GermanText{Falsch: \textbf{Die Frauen sind müde(n)} im Sinn eines prädikativen Adjektivs. Richtig: \textbf{Die Frauen sind müde}. Die Form bleibt unverändert.}
+            \EnglishText{Wrong: adding an adjective ending in \textbf{Die Frauen sind müde(n)} when the adjective is predicative. Correct: \textbf{Die Frauen sind müde}. The form remains unchanged.}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Fehler 3}{prädikativ und adverbial verwechseln}
+            \GermanText{\textbf{Der Mann ist langsam} beschreibt den Mann und ist prädikativ. \textbf{Der Mann läuft langsam} beschreibt das Laufen und ist adverbial.}
+            \EnglishText{\textbf{Der Mann ist langsam} describes the man and is predicative. \textbf{Der Mann läuft langsam} describes the running and is adverbial.}
+        \end{grammarentry}
+
+    \section{Schnelltest \textnormal{(Quick test)}}
+
+        \begin{grammarentry}{Drei Fragen}{Erkennung}
+            \GermanText{1. Steht das Adjektiv direkt vor einem Nomen? Dann ist es meistens \textbf{attributiv} und bekommt eine Endung.}
+            \EnglishText{1. Does the adjective stand directly before a noun? Then it is usually \textbf{attributive} and receives an ending.}
+
+            \GermanText{2. Verbindet ein Verb wie \textbf{sein, werden, bleiben, scheinen, wirken, aussehen} das Adjektiv mit einer Person oder Sache, deren Zustand oder Eigenschaft beschrieben wird? Dann ist die Verwendung \textbf{prädikativ}.}
+            \EnglishText{2. Does a verb such as \textbf{sein, werden, bleiben, scheinen, wirken, aussehen} link the adjective to a person or thing whose state or property is described? Then the use is \textbf{predicative}.}
+
+            \GermanText{3. Beschreibt das Adjektiv hauptsächlich, \textbf{wie} eine Handlung geschieht? Dann ist es eher \textbf{adverbial}.}
+            \EnglishText{3. Does the adjective mainly describe \textbf{how} an action happens? Then it is more likely \textbf{adverbial}.}
+        \end{grammarentry}
+
+    \section{Zusammenfassung \textnormal{(Summary)}}
+
+        \begin{grammarentry}{Merksätze}{kurz und wichtig}
+            \GermanText{Prädikative Adjektive beschreiben eine Eigenschaft oder einen Zustand eines Satzglieds, besonders des Subjekts.}
+            \EnglishText{Predicative adjectives describe a property or state of a sentence element, especially the subject.}
+
+            \GermanText{Die wichtigsten Verben sind \textbf{sein, werden, bleiben}; auch \textbf{scheinen, wirken, aussehen} können ähnliche prädikative Strukturen bilden.}
+            \EnglishText{The most important verbs are \textbf{sein, werden, bleiben}; \textbf{scheinen, wirken, aussehen} can also form similar predicative structures.}
+
+            \GermanText{Prädikative Adjektive haben normalerweise \textbf{keine Deklinationsendung}: \textbf{Der Mann ist müde; die Frau ist müde; die Kinder sind müde}.}
+            \EnglishText{Predicative adjectives normally have \textbf{no declensional ending}: \textbf{Der Mann ist müde; die Frau ist müde; die Kinder sind müde}.}
+
+            \GermanText{Der wichtigste Gegensatz lautet: \textbf{ein schnelles Auto} (attributiv) - \textbf{Das Auto ist schnell} (prädikativ) - \textbf{Das Auto fährt schnell} (adverbial).}
+            \EnglishText{The key contrast is: \textbf{ein schnelles Auto} (attributive) - \textbf{Das Auto ist schnell} (predicative) - \textbf{Das Auto fährt schnell} (adverbial).}
+        \end{grammarentry}
+
+\end{document}
