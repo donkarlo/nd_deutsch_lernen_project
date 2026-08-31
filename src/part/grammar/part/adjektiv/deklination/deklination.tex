@@ -1,4 +1,6 @@
-% Erklärung und Tabellen zur deutschen Adjektivdeklination
+% Zusammengeführte und erweiterte Erklärung zur deutschen Adjektivdeklination
+% Grundlage: deklination.tex, kasus.tex, starke_schwache_gemischte_adjektivendungen.tex
+% sowie die vom Benutzer hochgeladene Übersicht zur Deklination des Adjektivs.
 
 \documentclass[a4paper,11pt]{article}
 
@@ -24,8 +26,9 @@
 
 \setlength{\parindent}{0pt}
 \setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
-\renewcommand{\arraystretch}{1.45}
-\setlength{\tabcolsep}{5pt}
+\setlist[enumerate]{leftmargin=1.8em,itemsep=0.35em,topsep=0.35em}
+\renewcommand{\arraystretch}{1.42}
+\setlength{\tabcolsep}{4pt}
 \linespread{1.05}
 
 \titleformat{\section}[block]
@@ -38,10 +41,40 @@
 {}{0pt}{}
 \titlespacing{\subsection}{0pt}{1.0em}{0.6em}
 
-\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+\newtcolorbox{exbox}{
+    enhanced,
+    breakable,
+    colback=RowBlueLight,
+    colframe=RowBlueDark,
+    boxrule=0.4pt,
+    arc=1.5mm,
+    left=1.2mm,
+    right=1.2mm,
+    top=1mm,
+    bottom=1mm,
+    title={Beispiele \textnormal{(Examples)}},
+    fonttitle=\bfseries,
+    colbacktitle=RowBlueDark,
+    coltitle=black
+}
 
 \NewDocumentEnvironment{grammarentry}{mm+b}{%
-    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    \begin{tcolorbox}[
+        enhanced,
+        breakable,
+        colback=white,
+        colframe=HeaderBlueDark,
+        boxrule=0.6pt,
+        arc=1.5mm,
+        left=1.5mm,
+        right=1.5mm,
+        top=1mm,
+        bottom=1mm,
+        colbacktitle=HeaderBlueDark,
+        coltitle=white,
+        fonttitle=\bfseries,
+        title={#1\hfill\normalfont\footnotesize #2}
+    ]
     #3
     \end{tcolorbox}
 }{}
@@ -51,396 +84,628 @@
 \newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
 \newcommand{\TableEnglish}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
 
-\title{Die deutsche Adjektivdeklination\\\large German Adjective Declension}
+\title{Die Adjektivdeklination\\\large German Adjective Declension}
 \date{}
 
 \begin{document}
-    \maketitle
-    \tableofcontents
-    \newpage
-
-    \section{Grundidee}
-
-        \begin{grammarentry}{Adjektivdeklination}{Bedeutung und Funktion}
-            \GermanText{Ein attributiv verwendetes Adjektiv steht vor einem Nomen und bekommt eine Endung. Diese Endung zeigt zusammen mit dem Artikel den Kasus, das Genus und den Numerus der Nominalgruppe.}
-            \EnglishText{An attributively used adjective stands before a noun and receives an ending. Together with the article, this ending indicates the case, gender, and number of the noun phrase.}
-
-            \GermanText{Es gibt drei Deklinationstypen: \textbf{stark}, \textbf{schwach} und \textbf{gemischt}. Das Adjektiv selbst gehört nicht dauerhaft zu einem Typ. Der Typ hängt von dem Wort ab, das vor dem Adjektiv steht.}
-            \EnglishText{There are three declension types: \textbf{strong}, \textbf{weak}, and \textbf{mixed}. An adjective does not permanently belong to one type. The type depends on the word that comes before the adjective.}
-        \end{grammarentry}
-
-        \begin{exbox}
-            \begin{itemize}
-                \ExampleItem{guter Kaffee}{good coffee -- strong declension}
-                \ExampleItem{der gute Kaffee}{the good coffee -- weak declension}
-                \ExampleItem{ein guter Kaffee}{a good coffee -- mixed declension}
-            \end{itemize}
-        \end{exbox}
-
-    \section{Wann bekommt ein Adjektiv eine Endung?}
-
-        \begin{grammarentry}{Attributiver Gebrauch}{Adjektiv vor einem Nomen}
-            \GermanText{Steht das Adjektiv direkt vor einem Nomen, wird es dekliniert. Zwischen Artikel und Adjektiv können auch Adverbien wie \textbf{sehr}, \textbf{besonders} oder \textbf{wirklich} stehen. Sie verändern den Deklinationstyp nicht.}
-            \EnglishText{When the adjective stands directly before a noun, it is declined. Adverbs such as \textbf{sehr}, \textbf{besonders}, or \textbf{wirklich} may stand between the article and adjective. They do not change the declension type.}
-        \end{grammarentry}
-
-        \begin{exbox}
-            \begin{itemize}
-                \ExampleItem{Das ist ein sehr wichtiger Termin.}{This is a very important appointment.}
-                \ExampleItem{Wir kaufen frisches Brot.}{We are buying fresh bread.}
-            \end{itemize}
-        \end{exbox}
-
-        \begin{grammarentry}{Prädikativer und adverbialer Gebrauch}{Keine Adjektivendung}
-            \GermanText{Nach \textbf{sein}, \textbf{werden} und \textbf{bleiben} bleibt das Adjektiv normalerweise unverändert. Auch ein adverbial verwendetes Adjektiv, das ein Verb näher beschreibt, bekommt keine Endung.}
-            \EnglishText{After \textbf{sein}, \textbf{werden}, and \textbf{bleiben}, the adjective normally remains unchanged. An adjective used adverbially to describe a verb also receives no ending.}
-        \end{grammarentry}
-
-        \begin{exbox}
-            \begin{itemize}
-                \ExampleItem{Der Termin ist wichtig.}{The appointment is important.}
-                \ExampleItem{Das Wetter wird kalt.}{The weather is becoming cold.}
-                \ExampleItem{Sie spricht deutlich.}{She speaks clearly.}
-            \end{itemize}
-        \end{exbox}
-
-    \section{Das Grundprinzip hinter den drei Typen}
-
-        \begin{grammarentry}{Wer zeigt die grammatische Information?}{Artikel oder Adjektiv}
-            \GermanText{In einer Nominalgruppe müssen Kasus, Genus und Numerus erkennbar sein. Wenn ein Artikel diese Information deutlich zeigt, bekommt das Adjektiv meist eine schwache Endung. Wenn kein Artikel vorhanden ist, muss das Adjektiv die Information selbst zeigen und bekommt eine starke Endung. Ein \textbf{ein-Wort} zeigt die Information nur teilweise; deshalb entsteht die gemischte Deklination.}
-            \EnglishText{In a noun phrase, case, gender, and number must be recognizable. When an article clearly shows this information, the adjective usually receives a weak ending. When there is no article, the adjective must show the information itself and receives a strong ending. An \textbf{ein-word} shows the information only partially, which produces mixed declension.}
-        \end{grammarentry}
-
-    \section{Starke Adjektivdeklination}
-
-        \begin{grammarentry}{Wann stark?}{Ohne Artikelwort}
-            \GermanText{Die starke Deklination wird hauptsächlich verwendet, wenn vor dem Adjektiv kein Artikel oder kein anderes dekliniertes Artikelwort steht. Das Adjektiv trägt dann die wichtigsten grammatischen Endungen.}
-            \EnglishText{Strong declension is mainly used when no article or other declined determiner stands before the adjective. The adjective then carries the main grammatical endings.}
-        \end{grammarentry}
-
-        \rowcolors{2}{RowBlueLight}{RowBlueDark}
-        \begin{longtable}{>{\bfseries}p{2.6cm}|*{4}{>{\centering\arraybackslash}p{2.55cm}}}
-            \rowcolor{HeaderBlueDark}
-            \color{white}\textbf{Kasus / Case} &
-            \color{white}\textbf{Maskulin} &
-            \color{white}\textbf{Feminin} &
-            \color{white}\textbf{Neutrum} &
-            \color{white}\textbf{Plural} \\
-            Nominativ & gut\textbf{er} Wein & gut\textbf{e} Milch & gut\textbf{es} Brot & gut\textbf{e} Bücher \\
-            Akkusativ & gut\textbf{en} Wein & gut\textbf{e} Milch & gut\textbf{es} Brot & gut\textbf{e} Bücher \\
-            Dativ & gut\textbf{em} Wein & gut\textbf{er} Milch & gut\textbf{em} Brot & gut\textbf{en} Büchern \\
-            Genitiv & gut\textbf{en} Weines & gut\textbf{er} Milch & gut\textbf{en} Brotes & gut\textbf{er} Bücher \\
-        \end{longtable}
-        \TableEnglish{Strong endings are used mainly without an article. Notice the additional \textbf{-n} on many plural nouns in the dative: \textit{mit guten Büchern}.}
-
-        \begin{grammarentry}{Typische Auslöser}{Starke Endungen}
-            \GermanText{Starke Endungen stehen besonders nach \textbf{keinem Artikel}, nach Zahlen und oft nach Mengenwörtern wie \textbf{viele}, \textbf{wenige}, \textbf{einige} und \textbf{mehrere}.}
-            \EnglishText{Strong endings occur especially after \textbf{no article}, after numbers, and often after quantity words such as \textbf{viele}, \textbf{wenige}, \textbf{einige}, and \textbf{mehrere}.}
-        \end{grammarentry}
-
-        \begin{exbox}
-            \begin{itemize}
-                \ExampleItem{Kalter Wind kommt aus dem Norden.}{Cold wind comes from the north.}
-                \ExampleItem{Ich trinke heißen Tee.}{I am drinking hot tea.}
-                \ExampleItem{Wir sprechen mit freundlichen Kollegen.}{We are speaking with friendly colleagues.}
-                \ExampleItem{Drei neue Mitarbeiter beginnen heute.}{Three new employees are starting today.}
-                \ExampleItem{Viele junge Menschen lernen Deutsch.}{Many young people learn German.}
-            \end{itemize}
-        \end{exbox}
-
-    \section{Schwache Adjektivdeklination}
-
-        \begin{grammarentry}{Wann schwach?}{Nach der-Wörtern}
-            \GermanText{Die schwache Deklination steht nach dem bestimmten Artikel \textbf{der, die, das} und nach Wörtern, die ähnlich wie der bestimmte Artikel dekliniert werden. Dazu gehören zum Beispiel \textbf{dieser}, \textbf{jener}, \textbf{jeder}, \textbf{welcher}, \textbf{solcher}, \textbf{mancher}, \textbf{derselbe} und \textbf{derjenige}.}
-            \EnglishText{Weak declension is used after the definite article \textbf{der, die, das} and after words declined in a similar way. These include, for example, \textbf{dieser}, \textbf{jener}, \textbf{jeder}, \textbf{welcher}, \textbf{solcher}, \textbf{mancher}, \textbf{derselbe}, and \textbf{derjenige}.}
-
-            \GermanText{Bei der schwachen Deklination gibt es nur zwei Endungen: \textbf{-e} und \textbf{-en}.}
-            \EnglishText{Weak declension has only two endings: \textbf{-e} and \textbf{-en}.}
-        \end{grammarentry}
-
-        \rowcolors{2}{RowBlueLight}{RowBlueDark}
-        \begin{longtable}{>{\bfseries}p{2.6cm}|*{4}{>{\centering\arraybackslash}p{2.55cm}}}
-            \rowcolor{HeaderBlueDark}
-            \color{white}\textbf{Kasus / Case} &
-            \color{white}\textbf{Maskulin} &
-            \color{white}\textbf{Feminin} &
-            \color{white}\textbf{Neutrum} &
-            \color{white}\textbf{Plural} \\
-            Nominativ & der gut\textbf{e} Wein & die gut\textbf{e} Milch & das gut\textbf{e} Brot & die gut\textbf{en} Bücher \\
-            Akkusativ & den gut\textbf{en} Wein & die gut\textbf{e} Milch & das gut\textbf{e} Brot & die gut\textbf{en} Bücher \\
-            Dativ & dem gut\textbf{en} Wein & der gut\textbf{en} Milch & dem gut\textbf{en} Brot & den gut\textbf{en} Büchern \\
-            Genitiv & des gut\textbf{en} Weines & der gut\textbf{en} Milch & des gut\textbf{en} Brotes & der gut\textbf{en} Bücher \\
-        \end{longtable}
-        \TableEnglish{Use \textbf{-e} only in nominative singular and in accusative feminine/neuter. Use \textbf{-en} everywhere else.}
-
-        \begin{grammarentry}{Einfacher Merksatz}{Schwache Endungen}
-            \GermanText{\textbf{-e} steht bei: Nominativ Singular in allen drei Genera sowie Akkusativ Singular Feminin und Neutrum. In allen anderen Feldern steht \textbf{-en}.}
-            \EnglishText{Use \textbf{-e} in: nominative singular for all three genders and accusative singular feminine and neuter. Use \textbf{-en} in all other positions.}
-        \end{grammarentry}
-
-        \begin{exbox}
-            \begin{itemize}
-                \ExampleItem{Der neue Computer ist schnell.}{The new computer is fast.}
-                \ExampleItem{Ich kaufe den neuen Computer.}{I am buying the new computer.}
-                \ExampleItem{Mit diesem neuen Computer arbeite ich besser.}{I work better with this new computer.}
-                \ExampleItem{Alle wichtigen Dokumente liegen hier.}{All important documents are here.}
-                \ExampleItem{Beide alten Häuser wurden verkauft.}{Both old houses were sold.}
-            \end{itemize}
-        \end{exbox}
-
-    \section{Gemischte Adjektivdeklination}
-
-        \begin{grammarentry}{Wann gemischt?}{Nach ein-Wörtern}
-            \GermanText{Die gemischte Deklination steht nach \textbf{ein}, \textbf{kein} und nach Possessivartikeln wie \textbf{mein}, \textbf{dein}, \textbf{sein}, \textbf{ihr}, \textbf{unser}, \textbf{euer} und \textbf{Ihr}.}
-            \EnglishText{Mixed declension is used after \textbf{ein}, \textbf{kein}, and possessive determiners such as \textbf{mein}, \textbf{dein}, \textbf{sein}, \textbf{ihr}, \textbf{unser}, \textbf{euer}, and \textbf{Ihr}.}
-
-            \GermanText{Wo das ein-Wort keine sichtbare Endung hat, übernimmt das Adjektiv eine starke Endung. Wo das ein-Wort bereits eine deutliche Endung hat, bekommt das Adjektiv normalerweise \textbf{-en}.}
-            \EnglishText{Where the ein-word has no visible ending, the adjective takes a strong ending. Where the ein-word already has a clear ending, the adjective normally takes \textbf{-en}.}
-        \end{grammarentry}
-
-        \rowcolors{2}{RowBlueLight}{RowBlueDark}
-        \begin{longtable}{>{\bfseries}p{2.6cm}|*{4}{>{\centering\arraybackslash}p{2.55cm}}}
-            \rowcolor{HeaderBlueDark}
-            \color{white}\textbf{Kasus / Case} &
-            \color{white}\textbf{Maskulin} &
-            \color{white}\textbf{Feminin} &
-            \color{white}\textbf{Neutrum} &
-            \color{white}\textbf{Plural mit kein/mein} \\
-            Nominativ & ein gut\textbf{er} Wein & eine gut\textbf{e} Milch & ein gut\textbf{es} Brot & keine gut\textbf{en} Bücher \\
-            Akkusativ & einen gut\textbf{en} Wein & eine gut\textbf{e} Milch & ein gut\textbf{es} Brot & keine gut\textbf{en} Bücher \\
-            Dativ & einem gut\textbf{en} Wein & einer gut\textbf{en} Milch & einem gut\textbf{en} Brot & keinen gut\textbf{en} Büchern \\
-            Genitiv & eines gut\textbf{en} Weines & einer gut\textbf{en} Milch & eines gut\textbf{en} Brotes & keiner gut\textbf{en} Bücher \\
-        \end{longtable}
-        \TableEnglish{The adjective has strong endings in nominative masculine, nominative neuter, and accusative neuter because \textit{ein} has no visible ending there. In the other positions, the adjective normally ends in \textbf{-en}, except feminine nominative/accusative with \textbf{-e}.}
-
-        \begin{exbox}
-            \begin{itemize}
-                \ExampleItem{Ein wichtiger Termin beginnt um neun Uhr.}{An important appointment begins at nine o'clock.}
-                \ExampleItem{Sie hat eine neue Stelle gefunden.}{She has found a new job.}
-                \ExampleItem{Er kauft ein schnelles Auto.}{He is buying a fast car.}
-                \ExampleItem{Ich spreche mit meinem neuen Chef.}{I am speaking with my new boss.}
-                \ExampleItem{Keine schwierigen Aufgaben sind übrig.}{No difficult tasks are left.}
-            \end{itemize}
-        \end{exbox}
-
-    \section{Welche Wörter bestimmen den Deklinationstyp?}
-
-        \rowcolors{2}{RowBlueLight}{RowBlueDark}
-        \begin{longtable}{>{\bfseries}p{3.1cm}|p{5.5cm}|p{6.1cm}}
-            \rowcolor{HeaderBlueDark}
-            \color{white}\textbf{Typ / Type} &
-            \color{white}\textbf{Typische Wörter davor} &
-            \color{white}\textbf{Beispiel / Example} \\
-            Stark / Strong & kein Artikel; Zahlen; oft viele, wenige, einige, mehrere & frisches Brot; zwei neue Bücher; viele gute Ideen \\
-            Schwach / Weak & der, die, das; dieser, jener, jeder, welcher, solcher; alle, beide, sämtliche & der neue Chef; diese wichtige Frage; alle guten Bücher \\
-            Gemischt / Mixed & ein, kein; mein, dein, sein, ihr, unser, euer, Ihr & ein neuer Chef; keine leichte Aufgabe; mein altes Auto \\
-        \end{longtable}
-        \TableEnglish{The word before the adjective determines the declension type. The table lists the most important trigger words.}
-
-        \begin{grammarentry}{Wichtige Mengenwörter}{Nicht alle funktionieren gleich}
-            \GermanText{Nach Zahlen und nach \textbf{viele}, \textbf{wenige}, \textbf{einige} und \textbf{mehrere} steht das folgende Adjektiv normalerweise stark: \textbf{viele interessante Bücher}. Nach \textbf{alle}, \textbf{beide} und \textbf{sämtliche} steht es normalerweise schwach: \textbf{alle interessanten Bücher}.}
-            \EnglishText{After numbers and after \textbf{viele}, \textbf{wenige}, \textbf{einige}, and \textbf{mehrere}, the following adjective is normally strong: \textbf{viele interessante Bücher}. After \textbf{alle}, \textbf{beide}, and \textbf{sämtliche}, it is normally weak: \textbf{alle interessanten Bücher}.}
-        \end{grammarentry}
-
-    \section{Schritt-für-Schritt-Methode}
-
-        \begin{grammarentry}{Entscheidungsweg}{So findest du die richtige Endung}
-            \GermanText{\textbf{Schritt 1:} Bestimme den Kasus. Frage zum Beispiel: Wer oder was? Wen oder was? Wem? Wessen?}
-            \EnglishText{\textbf{Step 1:} Determine the case. Ask, for example: who or what? whom or what? to whom? whose?}
-
-            \GermanText{\textbf{Schritt 2:} Bestimme Genus und Numerus des Nomens: maskulin, feminin, neutrum oder Plural.}
-            \EnglishText{\textbf{Step 2:} Determine the noun's gender and number: masculine, feminine, neuter, or plural.}
-
-            \GermanText{\textbf{Schritt 3:} Prüfe das Wort vor dem Adjektiv: kein Artikel, der-Wort oder ein-Wort?}
-            \EnglishText{\textbf{Step 3:} Check the word before the adjective: no article, der-word, or ein-word?}
-
-            \GermanText{\textbf{Schritt 4:} Wähle die starke, schwache oder gemischte Tabelle und setze die passende Endung ein.}
-            \EnglishText{\textbf{Step 4:} Choose the strong, weak, or mixed table and add the correct ending.}
-        \end{grammarentry}
-
-        \begin{exbox}
-            \begin{itemize}
-                \ExampleItem{Ich spreche mit einem freundlich\textbf{en} Kollegen.}{I am speaking with a friendly colleague. \textit{mit} requires dative; \textit{Kollege} is masculine; \textit{einem} triggers mixed declension; therefore the ending is \textbf{-en}.}
-                \ExampleItem{Wir brauchen neu\textbf{e} Computer.}{We need new computers. \textit{brauchen} takes accusative; \textit{Computer} is plural; there is no article; therefore strong \textbf{-e}.}
-                \ExampleItem{Die alt\textbf{en} Häuser stehen am Fluss.}{The old houses stand by the river. Plural nominative after \textit{die}; therefore weak \textbf{-en}.}
-            \end{itemize}
-        \end{exbox}
-
-    \section{Die wichtigsten Endungsmuster}
-
-        \begin{grammarentry}{Schwache Deklination}{Nur -e oder -en}
-            \GermanText{Merke: Bei der schwachen Deklination steht \textbf{-e} nur in fünf Feldern: Nominativ Maskulin, Feminin und Neutrum sowie Akkusativ Feminin und Neutrum. Sonst steht immer \textbf{-en}.}
-            \EnglishText{Remember: In weak declension, \textbf{-e} appears in only five positions: nominative masculine, feminine, and neuter, plus accusative feminine and neuter. All other positions use \textbf{-en}.}
-        \end{grammarentry}
-
-        \begin{grammarentry}{Gemischte Deklination}{Stark, wenn ein keine Endung zeigt}
-            \GermanText{Merke: Nach \textbf{ein} steht eine starke Adjektivendung dort, wo \textbf{ein} selbst keine Endung zeigt: \textbf{ein gut-er Mann}, \textbf{ein gut-es Kind}, \textbf{ein gut-es Kind} im Akkusativ.}
-            \EnglishText{Remember: After \textbf{ein}, the adjective has a strong ending where \textbf{ein} itself shows no ending: \textbf{ein gut-er Mann}, \textbf{ein gut-es Kind}, and accusative \textbf{ein gut-es Kind}.}
-        \end{grammarentry}
-
-        \begin{grammarentry}{Starke Deklination}{Ähnlichkeit mit der-Artikeln}
-            \GermanText{Die starken Endungen ähneln oft den Endungen des bestimmten Artikels: \textbf{der} $\rightarrow$ gut\textbf{er}, \textbf{die} $\rightarrow$ gut\textbf{e}, \textbf{das} $\rightarrow$ gut\textbf{es}, \textbf{dem} $\rightarrow$ gut\textbf{em}, \textbf{der} $\rightarrow$ gut\textbf{er}. Eine wichtige Ausnahme ist der Genitiv Maskulin und Neutrum, wo das Adjektiv normalerweise \textbf{-en} bekommt: \textbf{guten Weines}, \textbf{kalten Wassers}.}
-            \EnglishText{Strong endings often resemble the endings of the definite article: \textbf{der} $\rightarrow$ gut\textbf{er}, \textbf{die} $\rightarrow$ gut\textbf{e}, \textbf{das} $\rightarrow$ gut\textbf{es}, \textbf{dem} $\rightarrow$ gut\textbf{em}, \textbf{der} $\rightarrow$ gut\textbf{er}. An important exception is masculine and neuter genitive, where the adjective normally takes \textbf{-en}: \textbf{guten Weines}, \textbf{kalten Wassers}.}
-        \end{grammarentry}
-
-    \section{Mehrere Adjektive}
-
-        \begin{grammarentry}{Gleiche Deklination}{Jedes Adjektiv erhält eine Endung}
-            \GermanText{Wenn mehrere gleichrangige Adjektive vor einem Nomen stehen, bekommt jedes Adjektiv normalerweise dieselbe Deklinationsart und die entsprechende Endung. Ein Adverb vor dem Adjektiv bekommt dagegen keine Endung.}
-            \EnglishText{When several coordinate adjectives stand before a noun, each adjective normally follows the same declension type and receives the corresponding ending. An adverb before an adjective, however, receives no ending.}
-        \end{grammarentry}
-
-        \begin{exbox}
-            \begin{itemize}
-                \ExampleItem{ein großer, heller Raum}{a large, bright room}
-                \ExampleItem{mit einem großen, hellen Raum}{with a large, bright room}
-                \ExampleItem{die sehr wichtigen neuen Regeln}{the very important new rules}
-            \end{itemize}
-        \end{exbox}
-
-    \section{Partizipien und substantivierte Adjektive}
-
-        \begin{grammarentry}{Partizipien als Adjektive}{Gleiche Endungen}
-            \GermanText{Partizipien werden wie normale Adjektive dekliniert, wenn sie vor einem Nomen stehen.}
-            \EnglishText{Participles are declined like normal adjectives when they stand before a noun.}
-        \end{grammarentry}
-
-        \begin{exbox}
-            \begin{itemize}
-                \ExampleItem{die kommende Woche}{the coming week}
-                \ExampleItem{ein anstrengender Tag}{an exhausting day}
-                \ExampleItem{die geschriebene Nachricht}{the written message}
-            \end{itemize}
-        \end{exbox}
-
-        \begin{grammarentry}{Substantivierte Adjektive}{Großschreibung und Deklination}
-            \GermanText{Ein substantiviertes Adjektiv wird großgeschrieben, behält aber die normalen Adjektivendungen. Das ausgelassene Nomen wird aus dem Kontext verstanden.}
-            \EnglishText{A nominalized adjective is capitalized but keeps the normal adjective endings. The omitted noun is understood from context.}
-        \end{grammarentry}
-
-        \begin{exbox}
-            \begin{itemize}
-                \ExampleItem{der Deutsche, ein Deutscher}{the German man, a German man}
-                \ExampleItem{die Deutsche, eine Deutsche}{the German woman, a German woman}
-                \ExampleItem{etwas Neues}{something new}
-                \ExampleItem{nichts Wichtiges}{nothing important}
-            \end{itemize}
-        \end{exbox}
-
-    \section{Besondere Hinweise}
-
-        \begin{grammarentry}{Dativ Plural}{Zusätzliches -n am Nomen}
-            \GermanText{Im Dativ Plural bekommt nicht nur das Adjektiv meistens \textbf{-en}; auch das Nomen erhält häufig ein zusätzliches \textbf{-n}, sofern seine Pluralform nicht bereits auf \textbf{-n} oder \textbf{-s} endet.}
-            \EnglishText{In dative plural, not only does the adjective usually take \textbf{-en}; the noun also often receives an additional \textbf{-n}, unless its plural form already ends in \textbf{-n} or \textbf{-s}.}
-        \end{grammarentry}
-
-        \begin{exbox}
-            \begin{itemize}
-                \ExampleItem{mit den neuen Büchern}{with the new books}
-                \ExampleItem{mit meinen alten Freunden}{with my old friends}
-                \ExampleItem{mit den neuen Autos}{with the new cars -- no additional \textit{-n} after plural \textit{-s}}
-            \end{itemize}
-        \end{exbox}
-
-        \begin{grammarentry}{Genitiv Maskulin und Neutrum}{Endung am Nomen}
-            \GermanText{Im Genitiv Singular Maskulin und Neutrum bekommt das Nomen normalerweise zusätzlich \textbf{-s} oder \textbf{-es}: \textbf{des alten Hauses}, \textbf{guten Weines}.}
-            \EnglishText{In masculine and neuter genitive singular, the noun normally also takes \textbf{-s} or \textbf{-es}: \textbf{des alten Hauses}, \textbf{guten Weines}.}
-        \end{grammarentry}
-
-        \begin{grammarentry}{Eigennamen und Genitivattribute}{Oft starke Endung}
-            \GermanText{Nach einem vorangestellten Genitiv oder einem Namen mit Genitiv-s steht häufig kein Artikel. Das folgende Adjektiv wird deshalb stark dekliniert: \textbf{Peters neues Auto}, \textbf{Deutschlands größte Stadt}.}
-            \EnglishText{After a preceding genitive or a name with genitive \textit{-s}, there is often no article. The following adjective is therefore strongly declined: \textbf{Peters neues Auto}, \textbf{Deutschlands größte Stadt}.}
-        \end{grammarentry}
-
-    \section{Häufige Fehler}
-
-        \begin{grammarentry}{Fehler 1}{Adjektiv nach sein deklinieren}
-            \GermanText{Falsch: \textbf{Der Mann ist alter.} Richtig: \textbf{Der Mann ist alt.} Nach \textbf{sein} steht das Adjektiv prädikativ und ohne Endung.}
-            \EnglishText{Wrong: \textbf{Der Mann ist alter.} Correct: \textbf{Der Mann ist alt.} After \textbf{sein}, the adjective is predicative and has no ending.}
-        \end{grammarentry}
-
-        \begin{grammarentry}{Fehler 2}{Nach bestimmtem Artikel starke Endung benutzen}
-            \GermanText{Falsch: \textbf{der guter Mann}. Richtig: \textbf{der gute Mann}. Der bestimmte Artikel zeigt die grammatische Information; deshalb steht die schwache Endung.}
-            \EnglishText{Wrong: \textbf{der guter Mann}. Correct: \textbf{der gute Mann}. The definite article shows the grammatical information, so the weak ending is used.}
-        \end{grammarentry}
-
-        \begin{grammarentry}{Fehler 3}{Nach ein die Endung vergessen}
-            \GermanText{Falsch: \textbf{ein gut Mann}. Richtig: \textbf{ein guter Mann}. Im Nominativ Maskulin hat \textbf{ein} keine sichtbare Endung; deshalb muss das Adjektiv \textbf{-er} zeigen.}
-            \EnglishText{Wrong: \textbf{ein gut Mann}. Correct: \textbf{ein guter Mann}. In masculine nominative, \textbf{ein} has no visible ending, so the adjective must show \textbf{-er}.}
-        \end{grammarentry}
-
-        \begin{grammarentry}{Fehler 4}{Dativ Plural ohne -n am Nomen}
-            \GermanText{Falsch: \textbf{mit den neuen Bücher}. Richtig: \textbf{mit den neuen Büchern}. Im Dativ Plural bekommt das Nomen meistens ein zusätzliches \textbf{-n}.}
-            \EnglishText{Wrong: \textbf{mit den neuen Bücher}. Correct: \textbf{mit den neuen Büchern}. In dative plural, the noun usually receives an additional \textbf{-n}.}
-        \end{grammarentry}
-
-    \section{Kompakte Gesamttabelle der Endungen}
-
-        \subsection{Starke Endungen}
-        \rowcolors{2}{RowBlueLight}{RowBlueDark}
-        \begin{longtable}{>{\bfseries}p{2.8cm}|*{4}{>{\centering\arraybackslash}p{2.3cm}}}
-            \rowcolor{HeaderBlueDark}
-            \color{white}\textbf{Kasus / Case} &
-            \color{white}\textbf{Maskulin} &
-            \color{white}\textbf{Feminin} &
-            \color{white}\textbf{Neutrum} &
-            \color{white}\textbf{Plural} \\
-            Nominativ & -er & -e & -es & -e \\
-            Akkusativ & -en & -e & -es & -e \\
-            Dativ & -em & -er & -em & -en \\
-            Genitiv & -en & -er & -en & -er \\
-        \end{longtable}
-
-        \subsection{Schwache Endungen}
-        \rowcolors{2}{RowBlueLight}{RowBlueDark}
-        \begin{longtable}{>{\bfseries}p{2.8cm}|*{4}{>{\centering\arraybackslash}p{2.3cm}}}
-            \rowcolor{HeaderBlueDark}
-            \color{white}\textbf{Kasus / Case} &
-            \color{white}\textbf{Maskulin} &
-            \color{white}\textbf{Feminin} &
-            \color{white}\textbf{Neutrum} &
-            \color{white}\textbf{Plural} \\
-            Nominativ & -e & -e & -e & -en \\
-            Akkusativ & -en & -e & -e & -en \\
-            Dativ & -en & -en & -en & -en \\
-            Genitiv & -en & -en & -en & -en \\
-        \end{longtable}
-
-        \subsection{Gemischte Endungen}
-        \rowcolors{2}{RowBlueLight}{RowBlueDark}
-        \begin{longtable}{>{\bfseries}p{2.8cm}|*{4}{>{\centering\arraybackslash}p{2.3cm}}}
-            \rowcolor{HeaderBlueDark}
-            \color{white}\textbf{Kasus / Case} &
-            \color{white}\textbf{Maskulin} &
-            \color{white}\textbf{Feminin} &
-            \color{white}\textbf{Neutrum} &
-            \color{white}\textbf{Plural} \\
-            Nominativ & -er & -e & -es & -en \\
-            Akkusativ & -en & -e & -es & -en \\
-            Dativ & -en & -en & -en & -en \\
-            Genitiv & -en & -en & -en & -en \\
-        \end{longtable}
-        \TableEnglish{These three compact tables contain the adjective endings without example nouns.}
-
-    \section{Zusammenfassung}
-
-        \begin{grammarentry}{Die drei Hauptregeln}{Kurz und wichtig}
-            \GermanText{\textbf{Kein Artikel} $\rightarrow$ meistens starke Deklination: \textbf{guter Kaffee}.}
-            \EnglishText{\textbf{No article} $\rightarrow$ usually strong declension: \textbf{guter Kaffee}.}
-
-            \GermanText{\textbf{der-Wort} $\rightarrow$ schwache Deklination: \textbf{der gute Kaffee}.}
-            \EnglishText{\textbf{der-word} $\rightarrow$ weak declension: \textbf{der gute Kaffee}.}
-
-            \GermanText{\textbf{ein-Wort} $\rightarrow$ gemischte Deklination: \textbf{ein guter Kaffee}.}
-            \EnglishText{\textbf{ein-word} $\rightarrow$ mixed declension: \textbf{ein guter Kaffee}.}
-
-            \GermanText{Bestimme immer zuerst \textbf{Kasus}, \textbf{Genus/Numerus} und das \textbf{Wort vor dem Adjektiv}.}
-            \EnglishText{Always determine \textbf{case}, \textbf{gender/number}, and the \textbf{word before the adjective} first.}
-        \end{grammarentry}
-
-        \begin{grammarentry}{Prüfungs-Merksatz}{B1-taugliche Strategie}
-            \GermanText{Frage dich: \glqq Hat der Artikel die Endung schon gezeigt?\grqq{} Wenn ja, ist die Adjektivendung meist schwach. Wenn nein, muss das Adjektiv die fehlende Information zeigen.}
-            \EnglishText{Ask yourself: ``Has the article already shown the ending?'' If yes, the adjective ending is usually weak. If not, the adjective must show the missing information.}
-        \end{grammarentry}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Grundidee \textnormal{(Basic idea)}}
+
+\begin{grammarentry}{Adjektivdeklination}{adjective declension}
+\GermanText{Das grammatische Thema heißt \textbf{Adjektivdeklination}. Dabei geht es darum, ob ein Adjektiv eine Endung bekommt und, wenn ja, welche Endung richtig ist.}
+\EnglishText{The grammar topic is called \textbf{adjective declension}. It concerns whether an adjective receives an ending and, if so, which ending is correct.}
+
+\GermanText{Bei einem attributiv verwendeten Adjektiv zeigt die Endung zusammen mit Artikel und Nomen Informationen über \textbf{Kasus}, \textbf{Genus} und \textbf{Numerus}.}
+\EnglishText{With an attributively used adjective, the ending together with the article and noun shows information about \textbf{case}, \textbf{gender}, and \textbf{number}.}
+
+\GermanText{Es gibt drei Hauptmuster: \textbf{starke}, \textbf{schwache} und \textbf{gemischte Deklination}. Ein Adjektiv gehört nicht dauerhaft zu einem dieser Typen. Der Typ hängt von der Nominalgruppe ab.}
+\EnglishText{There are three main patterns: \textbf{strong}, \textbf{weak}, and \textbf{mixed declension}. An adjective does not permanently belong to one of these types. The type depends on the noun phrase.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{guter Kaffee}{good coffee -- strong declension}
+\ExampleItem{der gute Kaffee}{the good coffee -- weak declension}
+\ExampleItem{ein guter Kaffee}{a good coffee -- mixed declension}
+\end{itemize}
+\end{exbox}
+
+\section{Attributiv, prädikativ und adverbial \textnormal{(Attributive, predicative, and adverbial use)}}
+
+\begin{grammarentry}{Wann gibt es eine Endung?}{when is there an ending?}
+\GermanText{\textbf{Attributiv:} Steht ein Adjektiv vor einem Nomen und gehört es zu diesem Nomen, bekommt es in der Regel eine Deklinationsendung.}
+\EnglishText{\textbf{Attributive:} When an adjective stands before a noun and belongs to that noun, it normally receives a declension ending.}
+
+\GermanText{\textbf{Prädikativ:} Steht ein Adjektiv zum Beispiel nach \textbf{sein}, \textbf{werden} oder \textbf{bleiben}, bekommt es keine Deklinationsendung.}
+\EnglishText{\textbf{Predicative:} When an adjective stands, for example, after \textbf{sein}, \textbf{werden}, or \textbf{bleiben}, it receives no declension ending.}
+
+\GermanText{\textbf{Adverbial:} Beschreibt ein Adjektiv ein Verb näher, bekommt es ebenfalls keine Deklinationsendung.}
+\EnglishText{\textbf{Adverbial:} When an adjective describes a verb more closely, it also receives no declension ending.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Die Erdbeeren schmecken süß.}{The strawberries taste sweet. -- adverbial use, no declension ending}
+\ExampleItem{Die Erdbeeren sind süß.}{The strawberries are sweet. -- predicative use, no declension ending}
+\ExampleItem{Das ist ein neuer Computer.}{This is a new computer. -- attributive use, with an ending}
+\ExampleItem{Das ist der neue Computer.}{This is the new computer. -- attributive use, with an ending}
+\end{itemize}
+\end{exbox}
+
+\begin{grammarentry}{Adverbien vor Adjektiven}{adverbs before adjectives}
+\GermanText{Wörter wie \textbf{sehr}, \textbf{besonders}, \textbf{wirklich} oder \textbf{extrem} verändern die Deklination des folgenden Adjektivs nicht.}
+\EnglishText{Words such as \textbf{sehr}, \textbf{besonders}, \textbf{wirklich}, or \textbf{extrem} do not change the declension of the following adjective.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Das ist ein sehr wichtiger Termin.}{This is a very important appointment.}
+\ExampleItem{Wir haben die wirklich guten Vorschläge gewählt.}{We chose the really good suggestions.}
+\end{itemize}
+\end{exbox}
+
+\section{Beispiele aus der Übersicht \textnormal{(Examples from the overview)}}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Frischer Orangensaft ist gesund.}{Fresh orange juice is healthy.}
+\ExampleItem{Jana macht sich große Sorgen.}{Jana is very worried.}
+\ExampleItem{Zeig mir mal dein neues Fahrrad.}{Show me your new bicycle.}
+\ExampleItem{Kennst du die neuen Regeln?}{Do you know the new rules?}
+\ExampleItem{Gib mir bitte das blaue T-Shirt.}{Please give me the blue T-shirt.}
+\ExampleItem{Ich arbeite mit einem neuen Programm.}{I work with a new program.}
+\end{itemize}
+\end{exbox}
+
+\section{Das Signalprinzip \textnormal{(The signal principle)}}
+
+\begin{grammarentry}{Wer zeigt Kasus, Genus und Numerus?}{who carries the grammatical signal?}
+\GermanText{Eine hilfreiche Denkweise ist: In der Nominalgruppe muss die grammatische Information sichtbar sein. Wenn ein Artikel die Information deutlich zeigt, braucht das Adjektiv meistens nur eine schwache Endung. Wenn kein Artikel vorhanden ist, muss das Adjektiv die Information selbst stärker zeigen.}
+\EnglishText{A useful way to think about the system is this: the grammatical information must be visible in the noun phrase. If an article clearly shows the information, the adjective usually needs only a weak ending. If no article is present, the adjective must show the information more strongly itself.}
+
+\GermanText{Die starken Endungen ähneln deshalb häufig den Endungen des bestimmten Artikels: \textbf{der} $\rightarrow$ \textbf{-er}, \textbf{die} $\rightarrow$ \textbf{-e}, \textbf{das} $\rightarrow$ \textbf{-es}, \textbf{dem} $\rightarrow$ \textbf{-em}.}
+\EnglishText{For this reason, strong adjective endings often resemble the endings of the definite article: \textbf{der} $\rightarrow$ \textbf{-er}, \textbf{die} $\rightarrow$ \textbf{-e}, \textbf{das} $\rightarrow$ \textbf{-es}, \textbf{dem} $\rightarrow$ \textbf{-em}.}
+\end{grammarentry}
+
+\begin{grammarentry}{Tabelle 1 und Tabelle 2}{table 1 and table 2}
+\GermanText{Die hochgeladene Übersicht arbeitet mit zwei Ideen: \textbf{Tabelle 1} enthält die starken Signalendungen; \textbf{Tabelle 2} enthält die schwachen Endungen \textbf{-e} und \textbf{-en}. Wenn das grammatische Signal schon am Artikel steht, verwendet das Adjektiv das schwache Muster.}
+\EnglishText{The uploaded overview works with two ideas: \textbf{Table 1} contains the strong signal endings; \textbf{Table 2} contains the weak endings \textbf{-e} and \textbf{-en}. If the grammatical signal is already shown on the article, the adjective uses the weak pattern.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{mit frischem Obst}{with fresh fruit -- no article; the adjective shows dative neuter with \textbf{-em}}
+\ExampleItem{für meine alten Freunde}{for my old friends -- \textbf{meine} already carries the plural accusative signal; adjective \textbf{-en}}
+\ExampleItem{ein großer Fehler}{a big mistake -- \textbf{ein} has no visible nominative masculine ending; adjective \textbf{-er}}
+\ExampleItem{für ein gesundes Leben}{for a healthy life -- \textbf{ein} has no visible accusative neuter ending; adjective \textbf{-es}}
+\end{itemize}
+\end{exbox}
+
+\section{Die drei Haupttypen \textnormal{(The three main types)}}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{3.2cm}|p{5.2cm}|p{6.4cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Typ / Type} &
+\color{white}\textbf{Wann? / When?} &
+\color{white}\textbf{Beispiel / Example} \\
+Stark / Strong & ohne Artikel oder ohne dekliniertes Artikelwort & mit klarem Bezugswort; frisches Brot \\
+Schwach / Weak & nach der-Wörtern und anderen klar deklinierten Artikelwörtern & mit dem klaren Bezugswort; die neuen Regeln \\
+Gemischt / Mixed & nach ein-Wörtern und Possessivartikeln & mit einem klaren Bezugswort; mein neues Fahrrad \\
+\end{longtable}
+
+\TableEnglish{The declension type is determined mainly by the word before the adjective.}
+
+\section{Starke Adjektivdeklination \textnormal{(Strong adjective declension)}}
+
+\begin{grammarentry}{Wann stark?}{when is strong declension used?}
+\GermanText{Die starke Deklination steht hauptsächlich, wenn vor dem Adjektiv kein Artikel oder kein anderes dekliniertes Artikelwort steht. Das Adjektiv trägt dann die grammatische Information.}
+\EnglishText{Strong declension is used mainly when no article or other declined determiner stands before the adjective. The adjective then carries the grammatical information.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{2.6cm}|*{4}{>{\centering\arraybackslash}p{2.55cm}}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Kasus / Case} &
+\color{white}\textbf{Maskulin} &
+\color{white}\textbf{Feminin} &
+\color{white}\textbf{Neutrum} &
+\color{white}\textbf{Plural} \\
+Nominativ & gut\textbf{er} Mann & gut\textbf{e} Frau & gut\textbf{es} Kind & gut\textbf{e} Leute \\
+Akkusativ & gut\textbf{en} Mann & gut\textbf{e} Frau & gut\textbf{es} Kind & gut\textbf{e} Leute \\
+Dativ & gut\textbf{em} Mann & gut\textbf{er} Frau & gut\textbf{em} Kind & gut\textbf{en} Leuten \\
+Genitiv & gut\textbf{en} Mannes & gut\textbf{er} Frau & gut\textbf{en} Kindes & gut\textbf{er} Leute \\
+\end{longtable}
+
+\TableEnglish{Strong declension: the adjective carries the main case/gender/number signal. In modern standard German, the adjective normally takes \textbf{-en} in genitive masculine and neuter singular.}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{guter Kaffee}{good coffee}
+\ExampleItem{kaltes Wasser}{cold water}
+\ExampleItem{mit gutem Kaffee}{with good coffee}
+\ExampleItem{wegen schlechten Wetters}{because of bad weather}
+\ExampleItem{wegen starken Sturmes}{because of a strong storm}
+\end{itemize}
+\end{exbox}
+
+\begin{grammarentry}{Wichtige Genitiv-Ausnahme}{important genitive exception}
+\GermanText{Im Genitiv Singular Maskulin und Neutrum steht das Adjektiv auch ohne Artikel normalerweise auf \textbf{-en}: \textbf{wegen starken Sturmes}, \textbf{guten Mutes}, \textbf{kalten Wassers}. Das Nomen selbst zeigt den Genitiv meist zusätzlich mit \textbf{-s} oder \textbf{-es}.}
+\EnglishText{In genitive singular masculine and neuter, the adjective normally ends in \textbf{-en} even without an article: \textbf{wegen starken Sturmes}, \textbf{guten Mutes}, \textbf{kalten Wassers}. The noun itself usually also marks the genitive with \textbf{-s} or \textbf{-es}.}
+\end{grammarentry}
+
+\section{Schwache Adjektivdeklination \textnormal{(Weak adjective declension)}}
+
+\begin{grammarentry}{Wann schwach?}{when is weak declension used?}
+\GermanText{Die schwache Deklination steht nach dem bestimmten Artikel und nach Wörtern, die ähnlich wie der bestimmte Artikel dekliniert werden. Typische Wörter sind \textbf{der, die, das, dieser, jener, jeder, welcher, solcher, mancher, derselbe, derjenige}.}
+\EnglishText{Weak declension is used after the definite article and after words declined similarly to the definite article. Typical words include \textbf{der, die, das, dieser, jener, jeder, welcher, solcher, mancher, derselbe, derjenige}.}
+
+\GermanText{Auch nach \textbf{alle}, \textbf{beide} und \textbf{sämtliche} folgt das Adjektiv normalerweise schwach.}
+\EnglishText{After \textbf{alle}, \textbf{beide}, and \textbf{sämtliche}, the adjective also normally follows the weak pattern.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{2.6cm}|*{4}{>{\centering\arraybackslash}p{2.55cm}}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Kasus / Case} &
+\color{white}\textbf{Maskulin} &
+\color{white}\textbf{Feminin} &
+\color{white}\textbf{Neutrum} &
+\color{white}\textbf{Plural} \\
+Nominativ & der gut\textbf{e} Mann & die gut\textbf{e} Frau & das gut\textbf{e} Kind & die gut\textbf{en} Leute \\
+Akkusativ & den gut\textbf{en} Mann & die gut\textbf{e} Frau & das gut\textbf{e} Kind & die gut\textbf{en} Leute \\
+Dativ & dem gut\textbf{en} Mann & der gut\textbf{en} Frau & dem gut\textbf{en} Kind & den gut\textbf{en} Leuten \\
+Genitiv & des gut\textbf{en} Mannes & der gut\textbf{en} Frau & des gut\textbf{en} Kindes & der gut\textbf{en} Leute \\
+\end{longtable}
+
+\TableEnglish{Weak declension uses only \textbf{-e} and \textbf{-en}.}
+
+\begin{grammarentry}{Die Fünf-Felder-Regel}{the five-position rule}
+\GermanText{Bei der schwachen Deklination steht \textbf{-e} nur in fünf Feldern: Nominativ Maskulin, Feminin und Neutrum sowie Akkusativ Feminin und Neutrum. In allen anderen Feldern steht \textbf{-en}.}
+\EnglishText{In weak declension, \textbf{-e} appears in only five positions: nominative masculine, feminine, and neuter, plus accusative feminine and neuter. All other positions use \textbf{-en}.}
+\end{grammarentry}
+
+\section{Gemischte Adjektivdeklination \textnormal{(Mixed adjective declension)}}
+
+\begin{grammarentry}{Wann gemischt?}{when is mixed declension used?}
+\GermanText{Die gemischte Deklination steht nach \textbf{ein, kein} und nach Possessivartikeln: \textbf{mein, dein, sein, ihr, unser, euer, Ihr}.}
+\EnglishText{Mixed declension is used after \textbf{ein, kein} and after possessive determiners: \textbf{mein, dein, sein, ihr, unser, euer, Ihr}.}
+
+\GermanText{Sie heißt gemischt, weil ein-Wörter in manchen Formen eine sichtbare Endung haben und in anderen nicht. Wenn das ein-Wort keine Endung zeigt, übernimmt das Adjektiv die starke Signalendung.}
+\EnglishText{It is called mixed because ein-words have a visible ending in some forms but not in others. When the ein-word shows no ending, the adjective takes the strong signal ending.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{2.6cm}|*{4}{>{\centering\arraybackslash}p{2.55cm}}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Kasus / Case} &
+\color{white}\textbf{Maskulin} &
+\color{white}\textbf{Feminin} &
+\color{white}\textbf{Neutrum} &
+\color{white}\textbf{Plural mit kein} \\
+Nominativ & ein gut\textbf{er} Mann & eine gut\textbf{e} Frau & ein gut\textbf{es} Kind & keine gut\textbf{en} Leute \\
+Akkusativ & einen gut\textbf{en} Mann & eine gut\textbf{e} Frau & ein gut\textbf{es} Kind & keine gut\textbf{en} Leute \\
+Dativ & einem gut\textbf{en} Mann & einer gut\textbf{en} Frau & einem gut\textbf{en} Kind & keinen gut\textbf{en} Leuten \\
+Genitiv & eines gut\textbf{en} Mannes & einer gut\textbf{en} Frau & eines gut\textbf{en} Kindes & keiner gut\textbf{en} Leute \\
+\end{longtable}
+
+\TableEnglish{Mixed declension: strong adjective endings appear where the ein-word itself has no visible ending; elsewhere the adjective follows the weak pattern.}
+
+\begin{grammarentry}{Wo hat ein keine Endung?}{where does ein have no ending?}
+\GermanText{Die drei wichtigsten Nullstellen sind: \textbf{Nominativ Maskulin}, \textbf{Nominativ Neutrum} und \textbf{Akkusativ Neutrum}. Deshalb: \textbf{ein guter Mann}, \textbf{ein gutes Kind}, \textbf{ich sehe ein gutes Kind}.}
+\EnglishText{The three most important zero-ending positions are: \textbf{nominative masculine}, \textbf{nominative neuter}, and \textbf{accusative neuter}. Therefore: \textbf{ein guter Mann}, \textbf{ein gutes Kind}, \textbf{ich sehe ein gutes Kind}.}
+\end{grammarentry}
+
+\section{Warum heißt es \glqq mit einem klaren Bezugswort\grqq? \textnormal{(Why is it ``mit einem klaren Bezugswort''?)}}
+
+\begin{grammarentry}{Analyse}{analysis}
+\GermanText{\textbf{mit} verlangt Dativ. \textbf{das Bezugswort} ist Neutrum. Der Dativ Neutrum von \textbf{ein} ist \textbf{einem}.}
+\EnglishText{\textbf{mit} requires dative. \textbf{das Bezugswort} is neuter. The dative neuter form of \textbf{ein} is \textbf{einem}.}
+
+\GermanText{\textbf{einem} zeigt die Dativ-Neutrum-Information bereits deutlich mit \textbf{-em}. Deshalb bekommt das Adjektiv die schwache Endung \textbf{-en}: \textbf{einem klaren Bezugswort}.}
+\EnglishText{\textbf{einem} already clearly shows the dative-neuter information with \textbf{-em}. Therefore the adjective gets the weak ending \textbf{-en}: \textbf{einem klaren Bezugswort}.}
+
+\GermanText{Falsch ist: \textbf{mit einem klarem Bezugswort}. Hier würde die starke Dativ-Endung \textbf{-em} unnötig zweimal signalisiert.}
+\EnglishText{Wrong: \textbf{mit einem klarem Bezugswort}. Here the strong dative signal \textbf{-em} would be unnecessarily marked twice.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{mit klarem Bezugswort}{with a clear antecedent -- strong, no article}
+\ExampleItem{mit einem klaren Bezugswort}{with a clear antecedent -- mixed after \textbf{ein}}
+\ExampleItem{mit dem klaren Bezugswort}{with the clear antecedent -- weak after \textbf{dem}}
+\end{itemize}
+\end{exbox}
+
+\section{Welche Wörter bestimmen den Deklinationstyp? \textnormal{(Which words determine the declension type?)}}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{3.6cm}|p{4.2cm}|p{7cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Wort davor / Word before} &
+\color{white}\textbf{Typ / Type} &
+\color{white}\textbf{Beispiel / Example} \\
+kein Artikel & stark & frisches Brot; mit gutem Deutsch \\
+Zahlwort: zwei, drei, zehn \ldots & stark & zwei neue Bücher; mit drei guten Freunden \\
+viele, wenige, einige, mehrere & stark & viele gute Ideen; wegen einiger wichtiger Fragen \\
+mehr, weniger & stark & mehr frisches Obst; mit weniger kaltem Wasser \\
+der, die, das & schwach & der neue Chef; mit dem neuen Chef \\
+dieser, jener, jeder, welcher, solcher, mancher & schwach & diese wichtige Frage; mit diesem guten Beispiel \\
+alle, beide, sämtliche & schwach & alle guten Bücher; beide neuen Autos \\
+ein, kein & gemischt & ein neuer Chef; keine schwere Aufgabe \\
+mein, dein, sein, ihr, unser, euer, Ihr & gemischt & mein altes Auto; mit deinem guten Freund \\
+\end{longtable}
+
+\TableEnglish{This table gives the most useful B1/B2 trigger words.}
+
+\section{Schritt-für-Schritt-Methode \textnormal{(Step-by-step method)}}
+
+\begin{grammarentry}{Entscheidungsweg}{decision path}
+\GermanText{\textbf{Schritt 1:} Entscheide zuerst, ob das Adjektiv attributiv vor einem Nomen steht. Wenn nicht, brauchst du normalerweise keine Deklinationsendung.}
+\EnglishText{\textbf{Step 1:} First decide whether the adjective is used attributively before a noun. If not, you normally do not need a declension ending.}
+
+\GermanText{\textbf{Schritt 2:} Bestimme den Kasus: Nominativ, Akkusativ, Dativ oder Genitiv.}
+\EnglishText{\textbf{Step 2:} Determine the case: nominative, accusative, dative, or genitive.}
+
+\GermanText{\textbf{Schritt 3:} Bestimme Genus und Numerus: Maskulin, Feminin, Neutrum oder Plural.}
+\EnglishText{\textbf{Step 3:} Determine gender and number: masculine, feminine, neuter, or plural.}
+
+\GermanText{\textbf{Schritt 4:} Prüfe das Wort vor dem Adjektiv: kein Artikel, der-Wort oder ein-Wort?}
+\EnglishText{\textbf{Step 4:} Check the word before the adjective: no article, a der-word, or an ein-word?}
+
+\GermanText{\textbf{Schritt 5:} Wähle die starke, schwache oder gemischte Endung.}
+\EnglishText{\textbf{Step 5:} Choose the strong, weak, or mixed ending.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich spreche mit einem freundlichen Kollegen.}{I am speaking with a friendly colleague. -- dative masculine, mixed declension, \textbf{-en}}
+\ExampleItem{Wir brauchen neue Computer.}{We need new computers. -- accusative plural, no article, strong \textbf{-e}}
+\ExampleItem{Die alten Häuser stehen am Fluss.}{The old houses stand by the river. -- nominative plural after \textbf{die}, weak \textbf{-en}}
+\end{itemize}
+\end{exbox}
+
+\section{Mehrere Adjektive \textnormal{(Several adjectives)}}
+
+\begin{grammarentry}{Parallele Deklination}{parallel declension}
+\GermanText{Wenn mehrere gleichrangige Adjektive vor einem Nomen stehen, bekommt jedes dieser Adjektive normalerweise eine passende Deklinationsendung.}
+\EnglishText{When several coordinate adjectives stand before a noun, each of these adjectives normally receives the appropriate declension ending.}
+
+\GermanText{Ein Adverb vor einem Adjektiv wird dagegen nicht dekliniert: \textbf{die sehr wichtigen neuen Regeln}.}
+\EnglishText{An adverb before an adjective, by contrast, is not declined: \textbf{die sehr wichtigen neuen Regeln}.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{ein großer, heller Raum}{a large, bright room}
+\ExampleItem{mit einem großen, hellen Raum}{with a large, bright room}
+\ExampleItem{frisches kaltes Wasser}{fresh cold water}
+\ExampleItem{die sehr wichtigen neuen Regeln}{the very important new rules}
+\end{itemize}
+\end{exbox}
+
+\section{Zahlen, Mengenwörter und Quantoren \textnormal{(Numbers, quantity words, and quantifiers)}}
+
+\begin{grammarentry}{Zahlen}{cardinal numbers}
+\GermanText{Nach Kardinalzahlen wie \textbf{zwei, drei, zehn} steht ein Adjektiv normalerweise stark, weil die Zahl keine Kasus-/Genusendung wie ein Artikel trägt.}
+\EnglishText{After cardinal numbers such as \textbf{zwei, drei, zehn}, an adjective normally follows the strong pattern because the number does not carry article-like case/gender endings.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{zwei gute Freunde}{two good friends}
+\ExampleItem{mit drei guten Freunden}{with three good friends}
+\ExampleItem{wegen vier wichtiger Termine}{because of four important appointments}
+\end{itemize}
+\end{exbox}
+
+\begin{grammarentry}{viele, wenige, einige, mehrere}{strong following adjective}
+\GermanText{Nach \textbf{viele, wenige, einige, mehrere} wird ein folgendes Adjektiv normalerweise stark dekliniert: \textbf{viele gute Bücher}, \textbf{wegen einiger wichtiger Fragen}.}
+\EnglishText{After \textbf{viele, wenige, einige, mehrere}, a following adjective is normally strongly declined: \textbf{viele gute Bücher}, \textbf{wegen einiger wichtiger Fragen}.}
+\end{grammarentry}
+
+\begin{grammarentry}{alle, beide, sämtliche}{weak following adjective}
+\GermanText{Nach \textbf{alle, beide, sämtliche} wird das folgende Adjektiv normalerweise schwach dekliniert: \textbf{alle guten Bücher}, \textbf{mit beiden neuen Kollegen}.}
+\EnglishText{After \textbf{alle, beide, sämtliche}, the following adjective is normally weakly declined: \textbf{alle guten Bücher}, \textbf{mit beiden neuen Kollegen}.}
+\end{grammarentry}
+
+\begin{grammarentry}{viel, wenig, mehr, weniger}{especially with uncountable nouns}
+\GermanText{Unflektierte Mengenangaben wie \textbf{viel, wenig, mehr, weniger} stehen oft vor einer starken Adjektivform: \textbf{viel frische Luft}, \textbf{mit wenig kaltem Wasser}, \textbf{mehr gesundes Essen}.}
+\EnglishText{Uninflected quantity expressions such as \textbf{viel, wenig, mehr, weniger} are often followed by a strong adjective form: \textbf{viel frische Luft}, \textbf{mit wenig kaltem Wasser}, \textbf{mehr gesundes Essen}.}
+\end{grammarentry}
+
+\section{Partizipien als Adjektive \textnormal{(Participles used as adjectives)}}
+
+\begin{grammarentry}{Partizip I und Partizip II}{present and past participles}
+\GermanText{Partizipien werden wie normale Adjektive dekliniert, wenn sie attributiv vor einem Nomen stehen.}
+\EnglishText{Participles are declined like normal adjectives when they are used attributively before a noun.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{die kommende Woche}{the coming week}
+\ExampleItem{ein anstrengender Tag}{an exhausting day}
+\ExampleItem{die geschriebene Nachricht}{the written message}
+\ExampleItem{mit geöffnetem Fenster}{with the window open}
+\end{itemize}
+\end{exbox}
+
+\section{Substantivierte Adjektive \textnormal{(Nominalized adjectives)}}
+
+\begin{grammarentry}{Großschreibung und Deklination}{capitalization and declension}
+\GermanText{Ein substantiviertes Adjektiv wird großgeschrieben, behält aber die normalen Adjektivendungen. Das ausgelassene Nomen wird aus dem Kontext verstanden.}
+\EnglishText{A nominalized adjective is capitalized but keeps the normal adjective endings. The omitted noun is understood from context.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{der Deutsche, ein Deutscher}{the German man, a German man}
+\ExampleItem{die Deutsche, eine Deutsche}{the German woman, a German woman}
+\ExampleItem{die Reichen}{the rich}
+\ExampleItem{die Einkommensschwachen}{people with low incomes}
+\end{itemize}
+\end{exbox}
+
+\begin{grammarentry}{etwas, nichts, viel, wenig + substantiviertes Adjektiv}{something/nothing + nominalized adjective}
+\GermanText{Nach \textbf{etwas} und \textbf{nichts} steht häufig ein substantiviertes Adjektiv im Neutrum mit starker Endung: \textbf{etwas Neues}, \textbf{nichts Wichtiges}. Ähnlich: \textbf{viel Gutes}, \textbf{wenig Interessantes}.}
+\EnglishText{After \textbf{etwas} and \textbf{nichts}, a nominalized neuter adjective with a strong ending is common: \textbf{etwas Neues}, \textbf{nichts Wichtiges}. Similarly: \textbf{viel Gutes}, \textbf{wenig Interessantes}.}
+\end{grammarentry}
+
+\section{Komparativ und Superlativ \textnormal{(Comparative and superlative)}}
+
+\begin{grammarentry}{Steigerung plus Deklinationsendung}{comparison plus declension ending}
+\GermanText{Auch ein Komparativ oder Superlativ wird dekliniert, wenn er attributiv vor einem Nomen steht. Zuerst wird die Steigerungsform gebildet, danach kommt die normale Adjektivendung.}
+\EnglishText{A comparative or superlative is also declined when it is used attributively before a noun. First the comparative/superlative form is built, then the normal adjective ending is added.}
+
+\GermanText{Darum kann man zwei \textbf{-er}-Teile sehen: \textbf{alt} $\rightarrow$ \textbf{älter} + \textbf{-er} $\rightarrow$ \textbf{ein älterer Mann}. Das erste \textbf{-er} gehört zum Komparativ, das zweite zur Deklination.}
+\EnglishText{This is why two \textbf{-er} elements can appear: \textbf{alt} $\rightarrow$ \textbf{älter} + \textbf{-er} $\rightarrow$ \textbf{ein älterer Mann}. The first \textbf{-er} belongs to the comparative, the second to declension.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{ein älteres Auto}{an older car}
+\ExampleItem{mit einem älteren Auto}{with an older car}
+\ExampleItem{der älteste Mann}{the oldest man}
+\ExampleItem{die schnellste Verbindung}{the fastest connection}
+\end{itemize}
+\end{exbox}
+
+\begin{grammarentry}{Prädikative Steigerung}{predicative comparison}
+\GermanText{Bei prädikativem Gebrauch gibt es keine Deklinationsendung: \textbf{Das Auto ist älter.} Die Form \textbf{älter} enthält hier nur die Komparativbildung.}
+\EnglishText{With predicative use there is no declension ending: \textbf{Das Auto ist älter.} Here \textbf{älter} contains only the comparative formation.}
+\end{grammarentry}
+
+\section{Ordinalzahlen \textnormal{(Ordinal numbers)}}
+
+\begin{grammarentry}{Ordinalzahlen funktionieren wie Adjektive}{ordinal numbers behave like adjectives}
+\GermanText{Ordinalzahlen wie \textbf{erste, zweite, dritte} werden attributiv wie Adjektive dekliniert.}
+\EnglishText{Ordinal numbers such as \textbf{erste, zweite, dritte} are declined attributively like adjectives.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{der erste Vorteil}{the first advantage}
+\ExampleItem{ein erster Versuch}{a first attempt}
+\ExampleItem{am ersten Tag}{on the first day}
+\ExampleItem{meine ersten Wochen}{my first weeks}
+\end{itemize}
+\end{exbox}
+
+\section{Wichtige Stammänderungen \textnormal{(Important stem changes)}}
+
+\begin{grammarentry}{Nicht nur die Endung kann sich verändern}{the stem can also change}
+\GermanText{Bei einigen Adjektiven verändert sich beim Anhängen einer Endung auch der Stamm. Diese Veränderung gehört zur Wortform und darf nicht mit der Deklinationsendung verwechselt werden.}
+\EnglishText{With some adjectives, the stem also changes when an ending is added. This change belongs to the word form and should not be confused with the declension ending.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{3cm}|p{5.2cm}|p{6.5cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Grundform / Base form} &
+\color{white}\textbf{Attributive Form / Attributive form} &
+\color{white}\textbf{Hinweis / Note} \\
+hoch & ein hohes Haus; ein hoher Berg & vor einer Endung wird \textbf{hoch-} zu \textbf{hoh-} \\
+teuer & ein teures Auto; teure Produkte & das unbetonte \textbf{e} kann wegfallen \\
+sauer & saure Milch; ein saurer Apfel & das unbetonte \textbf{e} fällt meist weg \\
+dunkel & ein dunkles Zimmer; dunkle Straßen & das \textbf{e} vor \textbf{l} fällt häufig weg \\
+edel & ein edles Material; edle Stoffe & das \textbf{e} vor \textbf{l} fällt häufig weg \\
+\end{longtable}
+
+\TableEnglish{These are common stem changes that occur before adjective endings.}
+
+\section{Besondere attributive Ausnahmen \textnormal{(Special attributive exceptions)}}
+
+\begin{grammarentry}{Ortsadjektive auf -er}{place-derived adjectives ending in -er}
+\GermanText{Von Ortsnamen abgeleitete Adjektive auf \textbf{-er} werden großgeschrieben und normalerweise nicht dekliniert: \textbf{die Berliner Mauer}, \textbf{ein Wiener Kaffeehaus}, \textbf{Schweizer Käse}.}
+\EnglishText{Adjectives derived from place names and ending in \textbf{-er} are capitalized and normally not declined: \textbf{die Berliner Mauer}, \textbf{ein Wiener Kaffeehaus}, \textbf{Schweizer Käse}.}
+\end{grammarentry}
+
+\begin{grammarentry}{rosa und lila}{common indeclinable color words}
+\GermanText{\textbf{rosa} und \textbf{lila} werden im allgemeinen Sprachgebrauch oft unverändert attributiv verwendet: \textbf{ein rosa Kleid}, \textbf{eine lila Tasche}. In formeller Sprache sind Bildungen wie \textbf{rosafarbenes Kleid} oder \textbf{lilafarbene Tasche} möglich.}
+\EnglishText{\textbf{rosa} and \textbf{lila} are often used unchanged attributively in ordinary language: \textbf{ein rosa Kleid}, \textbf{eine lila Tasche}. In formal language, forms such as \textbf{rosafarbenes Kleid} or \textbf{lilafarbene Tasche} are possible.}
+\end{grammarentry}
+
+\section{Dativ Plural und Genitiv \textnormal{(Dative plural and genitive)}}
+
+\begin{grammarentry}{Dativ Plural}{additional -n on the noun}
+\GermanText{Im Dativ Plural bekommt nicht nur das Adjektiv meistens \textbf{-en}; auch das Nomen erhält häufig ein zusätzliches \textbf{-n}, sofern der Plural nicht schon auf \textbf{-n} oder \textbf{-s} endet.}
+\EnglishText{In dative plural, not only does the adjective usually take \textbf{-en}; the noun also often receives an additional \textbf{-n}, unless the plural already ends in \textbf{-n} or \textbf{-s}.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{mit den neuen Büchern}{with the new books}
+\ExampleItem{mit meinen alten Freunden}{with my old friends}
+\ExampleItem{mit den neuen Autos}{with the new cars -- no additional \textbf{-n} after plural \textbf{-s}}
+\end{itemize}
+\end{exbox}
+
+\begin{grammarentry}{Genitiv Maskulin und Neutrum}{noun ending in genitive singular}
+\GermanText{Im Genitiv Singular Maskulin und Neutrum bekommt das Nomen normalerweise zusätzlich \textbf{-s} oder \textbf{-es}: \textbf{des alten Hauses}, \textbf{eines guten Mannes}, \textbf{wegen starken Regens}.}
+\EnglishText{In masculine and neuter genitive singular, the noun normally also takes \textbf{-s} or \textbf{-es}: \textbf{des alten Hauses}, \textbf{eines guten Mannes}, \textbf{wegen starken Regens}.}
+\end{grammarentry}
+
+\section{Genitivattribute und Eigennamen \textnormal{(Genitive attributes and proper names)}}
+
+\begin{grammarentry}{Vorangehender Genitiv}{preceding genitive}
+\GermanText{Nach einem vorangestellten Genitiv oder einem Namen mit Genitiv-\textbf{s} steht häufig kein Artikel. Das folgende attributive Adjektiv wird deshalb stark dekliniert.}
+\EnglishText{After a preceding genitive or a proper name with genitive \textbf{-s}, there is often no article. The following attributive adjective is therefore strongly declined.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Peters neues Auto}{Peter's new car}
+\ExampleItem{Deutschlands größte Stadt}{Germany's largest city}
+\end{itemize}
+\end{exbox}
+
+\section{Häufige Fehler \textnormal{(Common mistakes)}}
+
+\begin{grammarentry}{Fehler 1}{declining a predicative adjective}
+\GermanText{Falsch: \textbf{Der Mann ist alter.} Richtig: \textbf{Der Mann ist alt.} Nach \textbf{sein} steht das Adjektiv prädikativ und ohne Deklinationsendung.}
+\EnglishText{Wrong: \textbf{Der Mann ist alter.} Correct: \textbf{Der Mann ist alt.} After \textbf{sein}, the adjective is predicative and has no declension ending.}
+\end{grammarentry}
+
+\begin{grammarentry}{Fehler 2}{strong ending after a definite article}
+\GermanText{Falsch: \textbf{der guter Mann}. Richtig: \textbf{der gute Mann}. Der bestimmte Artikel zeigt die grammatische Information; deshalb steht die schwache Endung.}
+\EnglishText{Wrong: \textbf{der guter Mann}. Correct: \textbf{der gute Mann}. The definite article shows the grammatical information, so the weak ending is used.}
+\end{grammarentry}
+
+\begin{grammarentry}{Fehler 3}{missing ending after ein}
+\GermanText{Falsch: \textbf{ein gut Mann}. Richtig: \textbf{ein guter Mann}. Im Nominativ Maskulin hat \textbf{ein} keine sichtbare Endung; deshalb muss das Adjektiv \textbf{-er} zeigen.}
+\EnglishText{Wrong: \textbf{ein gut Mann}. Correct: \textbf{ein guter Mann}. In masculine nominative, \textbf{ein} has no visible ending, so the adjective must show \textbf{-er}.}
+\end{grammarentry}
+
+\begin{grammarentry}{Fehler 4}{double strong signal after einem}
+\GermanText{Falsch: \textbf{mit einem klarem Bezugswort}. Richtig: \textbf{mit einem klaren Bezugswort}. \textbf{einem} zeigt den Dativ bereits.}
+\EnglishText{Wrong: \textbf{mit einem klarem Bezugswort}. Correct: \textbf{mit einem klaren Bezugswort}. \textbf{einem} already marks the dative.}
+\end{grammarentry}
+
+\begin{grammarentry}{Fehler 5}{missing -n in dative plural}
+\GermanText{Falsch: \textbf{mit den neuen Bücher}. Richtig: \textbf{mit den neuen Büchern}. Im Dativ Plural bekommt das Nomen meistens ein zusätzliches \textbf{-n}.}
+\EnglishText{Wrong: \textbf{mit den neuen Bücher}. Correct: \textbf{mit den neuen Büchern}. In dative plural, the noun usually receives an additional \textbf{-n}.}
+\end{grammarentry}
+
+\section{Kompakte Gesamttabellen \textnormal{(Compact complete tables)}}
+
+\subsection{Starke Endungen \textnormal{(Strong endings)}}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{2.8cm}|*{4}{>{\centering\arraybackslash}p{2.3cm}}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Kasus / Case} &
+\color{white}\textbf{Maskulin} &
+\color{white}\textbf{Feminin} &
+\color{white}\textbf{Neutrum} &
+\color{white}\textbf{Plural} \\
+Nominativ & -er & -e & -es & -e \\
+Akkusativ & -en & -e & -es & -e \\
+Dativ & -em & -er & -em & -en \\
+Genitiv & -en & -er & -en & -er \\
+\end{longtable}
+
+\subsection{Schwache Endungen \textnormal{(Weak endings)}}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{2.8cm}|*{4}{>{\centering\arraybackslash}p{2.3cm}}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Kasus / Case} &
+\color{white}\textbf{Maskulin} &
+\color{white}\textbf{Feminin} &
+\color{white}\textbf{Neutrum} &
+\color{white}\textbf{Plural} \\
+Nominativ & -e & -e & -e & -en \\
+Akkusativ & -en & -e & -e & -en \\
+Dativ & -en & -en & -en & -en \\
+Genitiv & -en & -en & -en & -en \\
+\end{longtable}
+
+\subsection{Gemischte Endungen \textnormal{(Mixed endings)}}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{2.8cm}|*{4}{>{\centering\arraybackslash}p{2.3cm}}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Kasus / Case} &
+\color{white}\textbf{Maskulin} &
+\color{white}\textbf{Feminin} &
+\color{white}\textbf{Neutrum} &
+\color{white}\textbf{Plural} \\
+Nominativ & -er & -e & -es & -en \\
+Akkusativ & -en & -e & -es & -en \\
+Dativ & -en & -en & -en & -en \\
+Genitiv & -en & -en & -en & -en \\
+\end{longtable}
+
+\TableEnglish{These three compact tables show only the adjective endings.}
+
+\section{B1-Merksystem \textnormal{(B1 memory system)}}
+
+\begin{grammarentry}{Die drei Hauptfragen}{the three main questions}
+\GermanText{Für die Prüfung kannst du dir diese Reihenfolge merken:}
+\EnglishText{For an exam, you can remember this sequence:}
+
+\begin{enumerate}
+\item \textbf{Steht das Adjektiv attributiv vor einem Nomen?} Wenn nein: normalerweise keine Deklinationsendung.
+\item \textbf{Welcher Kasus und welches Genus/Numerus?}
+\item \textbf{Welches Wort steht vor dem Adjektiv?} Kein Artikel $\rightarrow$ stark; der-Wort $\rightarrow$ schwach; ein-Wort $\rightarrow$ gemischt.
+\end{enumerate}
+
+\EnglishText{1. Is the adjective used attributively before a noun? If not, normally no declension ending. 2. Which case and which gender/number? 3. Which word stands before the adjective? No article $\rightarrow$ strong; der-word $\rightarrow$ weak; ein-word $\rightarrow$ mixed.}
+\end{grammarentry}
+
+\begin{grammarentry}{Signalfrage}{signal question}
+\GermanText{Eine besonders nützliche Frage ist: \glqq Hat das Wort vor dem Adjektiv die grammatische Endung schon deutlich gezeigt?\grqq{} Wenn ja, bekommt das Adjektiv meistens die schwache Endung. Wenn nein, muss das Adjektiv das fehlende Signal selbst zeigen.}
+\EnglishText{A particularly useful question is: ``Has the word before the adjective already clearly shown the grammatical ending?'' If yes, the adjective usually takes the weak ending. If not, the adjective must show the missing signal itself.}
+\end{grammarentry}
+
+\section{Mini-Test \textnormal{(Mini test)}}
+
+\begin{grammarentry}{Übung}{exercise}
+\GermanText{Setze die richtige Form des Adjektivs ein.}
+\EnglishText{Insert the correct form of the adjective.}
+
+\begin{enumerate}
+\item mit \underline{\hspace{2cm}} Deutsch \quad (gut)
+\item mit dem \underline{\hspace{2cm}} Deutsch \quad (gut)
+\item mit einem \underline{\hspace{2cm}} Beispiel \quad (gut)
+\item ein \underline{\hspace{2cm}} Mann \quad (gut)
+\item der \underline{\hspace{2cm}} Mann \quad (gut)
+\item ohne \underline{\hspace{2cm}} Grund \quad (gut)
+\item wegen \underline{\hspace{2cm}} Wetters \quad (schlecht)
+\item zwei \underline{\hspace{2cm}} Freunde \quad (neu)
+\item die \underline{\hspace{2cm}} Verbindung \quad (schnell; Superlativ)
+\item etwas \underline{\hspace{2cm}} \quad (neu)
+\end{enumerate}
+\end{grammarentry}
+
+\begin{grammarentry}{Lösungen}{answers}
+\GermanText{1. \textbf{gutem}; 2. \textbf{guten}; 3. \textbf{guten}; 4. \textbf{guter}; 5. \textbf{gute}; 6. \textbf{guten}; 7. \textbf{schlechten}; 8. \textbf{neue}; 9. \textbf{schnellste}; 10. \textbf{Neues}.}
+\EnglishText{1. \textbf{gutem}; 2. \textbf{guten}; 3. \textbf{guten}; 4. \textbf{guter}; 5. \textbf{gute}; 6. \textbf{guten}; 7. \textbf{schlechten}; 8. \textbf{neue}; 9. \textbf{schnellste}; 10. \textbf{Neues}.}
+\end{grammarentry}
+
+\section{Zusammenfassung \textnormal{(Summary)}}
+
+\begin{grammarentry}{Alles in kurzer Form}{everything in short form}
+\GermanText{\textbf{Prädikativ oder adverbial} $\rightarrow$ keine Deklinationsendung: \textbf{Das Essen ist gut. Es schmeckt gut.}}
+\EnglishText{\textbf{Predicative or adverbial} $\rightarrow$ no declension ending: \textbf{Das Essen ist gut. Es schmeckt gut.}}
+
+\GermanText{\textbf{Attributiv} $\rightarrow$ normalerweise eine Endung: \textbf{gutes Essen}.}
+\EnglishText{\textbf{Attributive} $\rightarrow$ normally an ending: \textbf{gutes Essen}.}
+
+\GermanText{\textbf{Kein Artikel} $\rightarrow$ meistens stark: \textbf{guter Kaffee}.}
+\EnglishText{\textbf{No article} $\rightarrow$ usually strong: \textbf{guter Kaffee}.}
+
+\GermanText{\textbf{der-Wort} $\rightarrow$ schwach: \textbf{der gute Kaffee}.}
+\EnglishText{\textbf{der-word} $\rightarrow$ weak: \textbf{der gute Kaffee}.}
+
+\GermanText{\textbf{ein-Wort} $\rightarrow$ gemischt: \textbf{ein guter Kaffee}.}
+\EnglishText{\textbf{ein-word} $\rightarrow$ mixed: \textbf{ein guter Kaffee}.}
+
+\GermanText{Wichtige Sonderpunkte sind: Genitiv Maskulin/Neutrum ohne Artikel meist \textbf{-en}; Dativ Plural oft zusätzliches \textbf{-n} am Nomen; Komparativ, Superlativ, Partizipien und Ordinalzahlen werden attributiv ebenfalls dekliniert.}
+\EnglishText{Important special points are: genitive masculine/neuter without an article usually uses adjective \textbf{-en}; dative plural often adds \textbf{-n} to the noun; comparative, superlative, participles, and ordinal numbers are also declined when used attributively.}
+\end{grammarentry}
 
 \end{document}
