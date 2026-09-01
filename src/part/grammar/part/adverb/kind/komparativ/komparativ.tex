@@ -1,41 +1,456 @@
-\documentclass[a4paper]{article}
+\documentclass[a4paper,11pt]{article}
 
-\usepackage{graphicx}
-\usepackage{amsmath,amssymb}
-\usepackage{minted}
-\usepackage{multirow}
-\usepackage{float}
-\usepackage{algorithm}
-\usepackage{algpseudocode}
-\usepackage{todonotes}
-\usepackage{forest}
-\usepackage{xstring}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
 \usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
 \usepackage[most]{tcolorbox}
-\usepackage{xparse}
-\usepackage{natbib}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[table]{xcolor}
 
-\usetikzlibrary{graphs,graphdrawing}
-\usegdlibrary{layered}
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
 
-% for external graphviz
-\input{/home/donkarlo/Dropbox/repo/nd_language_ai_project/src/nd_language_ai/formal/computer/programming/tex/latex/code_clips/external_graphviz.tex}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{5pt}
 
-% for tags
-\input{/home/donkarlo/Dropbox/repo/nd_language_ai_project/src/nd_language_ai/formal/computer/programming/tex/latex/parts/control_sequence/kind/semtag/semtag.tex}
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
 
-% for links
-\input{/home/donkarlo/Dropbox/repo/nd_language_ai_project/src/nd_language_ai/formal/computer/programming/tex/latex/code_clips/seehere.tex}
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
 
-\title{}
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+\begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+#3
+\end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Der Komparativ bei Adjektiven\\\large\textnormal{The Comparative of Adjectives}}
 \date{}
-\author{Mohammad Rahmani}
 
 \begin{document}
    \maketitle
+   \tableofcontents
+   \newpage
 
-   % ND_MIND_MIRROR_CONTENT
+   \section{Grundidee \textnormal{(Basic idea)}}
 
-   \bibliographystyle{plainnat}
-   \bibliography{/home/donkarlo/Dropbox/repo/nd_shared_research/bibliography/bibliography.bib}
+      \begin{grammarentry}{Was ist der Komparativ?}{What is the comparative?}
+         \GermanText{Der \textbf{Komparativ} ist die zweite Steigerungsstufe eines steigerbaren Adjektivs. Er zeigt, dass eine Person oder Sache eine Eigenschaft in einem höheren oder niedrigeren Grad besitzt als eine andere.}
+         \EnglishText{The \textbf{comparative} is the second degree of comparison of a gradable adjective. It shows that a person or thing has a quality to a higher or lower degree than another.}
+
+         \GermanText{Die drei Stufen heißen: \textbf{Positiv} -- \textbf{Komparativ} -- \textbf{Superlativ}.}
+         \EnglishText{The three degrees are: \textbf{positive} -- \textbf{comparative} -- \textbf{superlative}.}
+      \end{grammarentry}
+
+      \begin{exbox}
+         \begin{itemize}
+            \ExampleItem{klein -- kleiner -- am kleinsten}{small -- smaller -- smallest}
+            \ExampleItem{schnell -- schneller -- am schnellsten}{fast -- faster -- fastest}
+            \ExampleItem{gut -- besser -- am besten}{good -- better -- best}
+         \end{itemize}
+      \end{exbox}
+
+   \section{Regelmäßige Bildung mit -er \textnormal{(Regular formation with -er)}}
+
+      \begin{grammarentry}{Grundregel}{Basic rule}
+         \GermanText{Bei den meisten Adjektiven bildet man den Komparativ, indem man an den Positiv die Endung \textbf{-er} anhängt.}
+         \EnglishText{For most adjectives, the comparative is formed by adding \textbf{-er} to the positive form.}
+
+         \GermanText{Schema: \textbf{Adjektiv + -er}.}
+         \EnglishText{Pattern: \textbf{adjective + -er}.}
+      \end{grammarentry}
+
+      \rowcolors{2}{RowBlueLight}{RowBlueDark}
+      \begin{longtable}{>{\bfseries}p{3.7cm}|p{4.2cm}|p{5.5cm}}
+         \rowcolor{HeaderBlueDark}
+         \color{white}\textbf{Positiv / Positive} &
+         \color{white}\textbf{Komparativ / Comparative} &
+         \color{white}\textbf{Beispiel / Example} \\
+         klein & kleiner & Das Zimmer ist kleiner. / The room is smaller. \\
+         schnell & schneller & Dieses Auto ist schneller. / This car is faster. \\
+         langsam & langsamer & Der Bus ist langsamer. / The bus is slower. \\
+         modern & moderner & Die neue Wohnung ist moderner. / The new apartment is more modern. \\
+         interessant & interessanter & Das Buch ist interessanter. / The book is more interesting. \\
+      \end{longtable}
+
+      \begin{grammarentry}{Wichtig: nicht mit „mehr“}{Important: not normally with “more”}
+         \GermanText{Im Deutschen bildet man den normalen Komparativ eines Adjektivs normalerweise \textbf{nicht} mit \textbf{mehr + Adjektiv}. Man sagt also \textbf{interessanter}, nicht \textbf{mehr interessant}.}
+         \EnglishText{In German, the normal comparative of an adjective is generally \textbf{not} formed with \textbf{mehr + adjective}. Therefore, one says \textbf{interessanter}, not \textbf{mehr interessant}.}
+
+         \GermanText{Das unterscheidet Deutsch zum Beispiel vom Englischen, wo bei manchen Adjektiven \textit{more} gebraucht wird.}
+         \EnglishText{This differs, for example, from English, where \textit{more} is used with some adjectives.}
+      \end{grammarentry}
+
+   \section{Adjektive mit Umlaut \textnormal{(Adjectives with umlaut)}}
+
+      \begin{grammarentry}{a, o, u können zu ä, ö, ü werden}{a, o, u may change to ä, ö, ü}
+         \GermanText{Bei einer Gruppe häufig gebrauchter, besonders einsilbiger Adjektive bekommt der Stammvokal im Komparativ einen Umlaut. Zusätzlich kommt weiterhin \textbf{-er}.}
+         \EnglishText{With a group of common, especially one-syllable adjectives, the stem vowel takes an umlaut in the comparative. The ending \textbf{-er} is still added.}
+
+         \GermanText{Diese Umlautbildung muss zum Teil mit dem einzelnen Adjektiv gelernt werden; nicht jedes einsilbige Adjektiv mit a, o oder u bekommt einen Umlaut.}
+         \EnglishText{The umlaut must partly be learned with each adjective; not every one-syllable adjective containing a, o, or u takes an umlaut.}
+      \end{grammarentry}
+
+      \rowcolors{2}{RowBlueLight}{RowBlueDark}
+      \begin{longtable}{>{\bfseries}p{3.3cm}|p{3.5cm}|p{6.5cm}}
+         \rowcolor{HeaderBlueDark}
+         \color{white}\textbf{Positiv / Positive} &
+         \color{white}\textbf{Komparativ / Comparative} &
+         \color{white}\textbf{Hinweis / Note} \\
+         alt & älter & a $\rightarrow$ ä \\
+         arm & ärmer & a $\rightarrow$ ä \\
+         groß & größer & o $\rightarrow$ ö \\
+         jung & jünger & u $\rightarrow$ ü \\
+         kalt & kälter & a $\rightarrow$ ä \\
+         kurz & kürzer & u $\rightarrow$ ü \\
+         lang & länger & a $\rightarrow$ ä \\
+         scharf & schärfer & a $\rightarrow$ ä \\
+         schwach & schwächer & a $\rightarrow$ ä \\
+         stark & stärker & a $\rightarrow$ ä \\
+         warm & wärmer & a $\rightarrow$ ä \\
+      \end{longtable}
+
+      \begin{grammarentry}{Nicht automatisch}{Not automatic}
+         \GermanText{Beispiele ohne Umlaut sind unter anderem \textbf{flach -- flacher}, \textbf{klar -- klarer}, \textbf{voll -- voller} und \textbf{bunt -- bunter}. Deshalb darf man den Umlaut nicht allein aus der Schreibweise des Positivs ableiten.}
+         \EnglishText{Examples without umlaut include \textbf{flach -- flacher}, \textbf{klar -- klarer}, \textbf{voll -- voller}, and \textbf{bunt -- bunter}. Therefore, the umlaut cannot be predicted solely from the spelling of the positive form.}
+      \end{grammarentry}
+
+   \section{Unregelmäßige und besondere Formen \textnormal{(Irregular and special forms)}}
+
+      \begin{grammarentry}{Die wichtigsten Formen}{The most important forms}
+         \GermanText{Einige sehr häufige Adjektive verändern ihren Stamm oder haben eine besondere Form. Diese Formen sollte man auswendig lernen.}
+         \EnglishText{Some very common adjectives change their stem or have a special form. These forms should be memorized.}
+      \end{grammarentry}
+
+      \rowcolors{2}{RowBlueLight}{RowBlueDark}
+      \begin{longtable}{>{\bfseries}p{3.2cm}|p{3.6cm}|p{3.8cm}|p{3.2cm}}
+         \rowcolor{HeaderBlueDark}
+         \color{white}\textbf{Positiv / Positive} &
+         \color{white}\textbf{Komparativ / Comparative} &
+         \color{white}\textbf{Superlativ / Superlative} &
+         \color{white}\textbf{Art / Type} \\
+         gut & besser & am besten & unregelmäßig / irregular \\
+         hoch & höher & am höchsten & Stammänderung / stem change \\
+         nah & näher & am nächsten & besondere Form / special form \\
+         groß & größer & am größten & Umlaut / umlaut \\
+      \end{longtable}
+
+      \begin{grammarentry}{Wörter, die oft mit Adjektiven zusammen gelernt werden}{Words often learned together with adjectives}
+         \GermanText{\textbf{viel -- mehr -- am meisten} und \textbf{gern -- lieber -- am liebsten} sind sehr wichtige Steigerungsreihen. Sie werden häufig zusammen mit Adjektivsteigerung gelernt, obwohl \textbf{gern} ein Adverb ist und \textbf{viel} je nach Verwendung unterschiedliche grammatische Funktionen haben kann.}
+         \EnglishText{\textbf{viel -- mehr -- am meisten} and \textbf{gern -- lieber -- am liebsten} are very important comparison series. They are often learned together with adjective comparison, although \textbf{gern} is an adverb and \textbf{viel} can have different grammatical functions depending on its use.}
+      \end{grammarentry}
+
+      \begin{exbox}
+         \begin{itemize}
+            \ExampleItem{Dieses Ergebnis ist besser als das vorige.}{This result is better than the previous one.}
+            \ExampleItem{Der Turm ist höher als das Haus.}{The tower is higher than the house.}
+            \ExampleItem{Meine Wohnung ist näher am Bahnhof.}{My apartment is closer to the station.}
+         \end{itemize}
+      \end{exbox}
+
+   \section{Besondere Schreibformen: -el und -er \textnormal{(Special spelling patterns: -el and -er)}}
+
+      \begin{grammarentry}{Unbetontes e kann wegfallen}{An unstressed e may disappear}
+         \GermanText{Bei einigen Adjektiven auf \textbf{-el} oder \textbf{-er} fällt im Komparativ ein unbetontes \textbf{e} im Stamm weg. Die Komparativendung bleibt \textbf{-er}.}
+         \EnglishText{With some adjectives ending in \textbf{-el} or \textbf{-er}, an unstressed \textbf{e} in the stem disappears in the comparative. The comparative ending remains \textbf{-er}.}
+      \end{grammarentry}
+
+      \begin{exbox}
+         \begin{itemize}
+            \ExampleItem{dunkel -- dunkler}{dark -- darker}
+            \ExampleItem{teuer -- teurer}{expensive -- more expensive}
+            \ExampleItem{edel -- edler}{noble -- nobler}
+         \end{itemize}
+      \end{exbox}
+
+   \section{Vergleich mit „als“ und „wie“ \textnormal{(Comparison with “als” and “wie”)}}
+
+      \begin{grammarentry}{Ungleichheit: Komparativ + als}{Inequality: comparative + als}
+         \GermanText{Wenn zwei Personen oder Sachen nicht den gleichen Grad einer Eigenschaft haben, benutzt man \textbf{Komparativ + als}.}
+         \EnglishText{When two people or things do not have the same degree of a quality, use \textbf{comparative + als}.}
+      \end{grammarentry}
+
+      \begin{exbox}
+         \begin{itemize}
+            \ExampleItem{Berlin ist größer als Graz.}{Berlin is bigger than Graz.}
+            \ExampleItem{Heute ist es wärmer als gestern.}{Today it is warmer than yesterday.}
+            \ExampleItem{Dieses Buch ist interessanter als das andere.}{This book is more interesting than the other one.}
+         \end{itemize}
+      \end{exbox}
+
+      \begin{grammarentry}{Gleichheit: so + Positiv + wie}{Equality: so + positive + wie}
+         \GermanText{Wenn zwei Personen oder Sachen im gleichen Grad eine Eigenschaft haben, benutzt man nicht den Komparativ, sondern \textbf{so + Positiv + wie}.}
+         \EnglishText{When two people or things have a quality to the same degree, do not use the comparative; use \textbf{so + positive + wie}.}
+
+         \GermanText{Für Standarddeutsch und Prüfungen gilt: \textbf{größer als}, nicht \textbf{größer wie}.}
+         \EnglishText{For Standard German and examinations, use \textbf{größer als}, not \textbf{größer wie}.}
+      \end{grammarentry}
+
+      \begin{exbox}
+         \begin{itemize}
+            \ExampleItem{Ali ist so groß wie Reza.}{Ali is as tall as Reza.}
+            \ExampleItem{Mein Fahrrad ist nicht so teuer wie deins.}{My bicycle is not as expensive as yours.}
+         \end{itemize}
+      \end{exbox}
+
+   \section{Komparativ als Prädikativ, Adverbial und Attribut \textnormal{(Comparative as predicative, adverbial, and attributive form)}}
+
+      \begin{grammarentry}{Prädikativ: keine zusätzliche Adjektivendung}{Predicative: no additional adjective ending}
+         \GermanText{Nach Verben wie \textbf{sein}, \textbf{werden} und \textbf{bleiben} bleibt der Komparativ unverändert.}
+         \EnglishText{After verbs such as \textbf{sein}, \textbf{werden}, and \textbf{bleiben}, the comparative remains unchanged.}
+      \end{grammarentry}
+
+      \begin{exbox}
+         \begin{itemize}
+            \ExampleItem{Das Haus ist größer.}{The house is bigger.}
+            \ExampleItem{Es wird kälter.}{It is getting colder.}
+         \end{itemize}
+      \end{exbox}
+
+      \begin{grammarentry}{Adverbial: ebenfalls keine Deklinationsendung}{Adverbial: also no declension ending}
+         \GermanText{Wenn der Komparativ ein Verb näher beschreibt, bekommt er keine zusätzliche Deklinationsendung.}
+         \EnglishText{When the comparative describes a verb more closely, it receives no additional declension ending.}
+      \end{grammarentry}
+
+      \begin{exbox}
+         \begin{itemize}
+            \ExampleItem{Er fährt schneller als ich.}{He drives faster than I do.}
+            \ExampleItem{Bitte sprich langsamer.}{Please speak more slowly.}
+         \end{itemize}
+      \end{exbox}
+
+      \begin{grammarentry}{Attributiv: Komparativ + normale Adjektivdeklination}{Attributive: comparative + normal adjective declension}
+         \GermanText{Steht der Komparativ direkt vor einem Nomen, wird er wie jedes attributive Adjektiv dekliniert. Die Form \textbf{-er} gehört dann zum Komparativstamm, und danach kommt zusätzlich die normale Adjektivendung.}
+         \EnglishText{When the comparative stands directly before a noun, it is declined like any attributive adjective. The form \textbf{-er} belongs to the comparative stem, and the normal adjective ending is then added after it.}
+
+         \GermanText{Beispiel: \textbf{groß $\rightarrow$ größer $\rightarrow$ ein größerer Mann}. Das erste \textbf{-er} gehört zur Steigerung; das zweite \textbf{-er} ist die Adjektivendung für diesen Kasus.}
+         \EnglishText{Example: \textbf{groß $\rightarrow$ größer $\rightarrow$ ein größerer Mann}. The first \textbf{-er} belongs to comparison; the second \textbf{-er} is the adjective ending required by the case.}
+      \end{grammarentry}
+
+      \begin{exbox}
+         \begin{itemize}
+            \ExampleItem{Ich brauche ein größeres Auto.}{I need a bigger car.}
+            \ExampleItem{Sie wohnt in einer kleineren Wohnung.}{She lives in a smaller apartment.}
+            \ExampleItem{Wir sprechen mit einem älteren Mann.}{We are speaking with an older man.}
+         \end{itemize}
+      \end{exbox}
+
+   \section{Zusätzliche Wörter vor dem Komparativ \textnormal{(Additional words before the comparative)}}
+
+      \begin{grammarentry}{Diese Wörter bilden den Komparativ nicht}{These words do not form the comparative}
+         \GermanText{Wörter wie \textbf{viel}, \textbf{deutlich}, \textbf{wesentlich}, \textbf{etwas}, \textbf{ein bisschen}, \textbf{noch} und \textbf{weitaus} können einen bereits gebildeten Komparativ verstärken oder abschwächen. Sie ersetzen aber die Komparativendung \textbf{-er} nicht.}
+         \EnglishText{Words such as \textbf{viel}, \textbf{deutlich}, \textbf{wesentlich}, \textbf{etwas}, \textbf{ein bisschen}, \textbf{noch}, and \textbf{weitaus} can strengthen or weaken an already formed comparative. However, they do not replace the comparative ending \textbf{-er}.}
+      \end{grammarentry}
+
+      \rowcolors{2}{RowBlueLight}{RowBlueDark}
+      \begin{longtable}{>{\bfseries}p{3.5cm}|p{4.5cm}|p{5.5cm}}
+         \rowcolor{HeaderBlueDark}
+         \color{white}\textbf{Wort / Word} &
+         \color{white}\textbf{Funktion / Function} &
+         \color{white}\textbf{Beispiel / Example} \\
+         viel & starke Verstärkung / strong intensification & viel größer = much bigger \\
+         deutlich & klare Verstärkung / clear intensification & deutlich besser = clearly better \\
+         wesentlich & starke Verstärkung / substantial intensification & wesentlich günstiger = considerably cheaper \\
+         weitaus & sehr starke Verstärkung / very strong intensification & weitaus schneller = far faster \\
+         etwas & kleine Abschwächung / slight degree & etwas kleiner = somewhat smaller \\
+         ein bisschen & kleine Abschwächung / slight degree & ein bisschen älter = a little older \\
+         noch & zusätzliche Steigerung / additional increase & noch besser = even better \\
+      \end{longtable}
+
+   \section{„Weniger + Adjektiv“ \textnormal{(“weniger + adjective”)}}
+
+      \begin{grammarentry}{Vergleich nach unten}{Downward comparison}
+         \GermanText{Mit \textbf{weniger + Positiv + als} kann man ausdrücken, dass eine Eigenschaft in geringerem Maß vorhanden ist. Das ist eine echte Vergleichskonstruktion, aber nicht die normale morphologische Komparativform des Adjektivs.}
+         \EnglishText{With \textbf{weniger + positive + als}, one can express that a quality is present to a lesser degree. This is a genuine comparison construction, but it is not the normal morphological comparative form of the adjective.}
+      \end{grammarentry}
+
+      \begin{exbox}
+         \begin{itemize}
+            \ExampleItem{Dieses Auto ist weniger teuer als das andere.}{This car is less expensive than the other one.}
+            \ExampleItem{Die zweite Aufgabe ist weniger schwierig als die erste.}{The second task is less difficult than the first.}
+         \end{itemize}
+      \end{exbox}
+
+      \begin{grammarentry}{Oft ist eine einfache Gegenform natürlicher}{Often a simple opposite is more natural}
+         \GermanText{Wenn ein gebräuchliches Gegenadjektiv existiert, ist dieses häufig einfacher: \textbf{weniger teuer = billiger/günstiger}, \textbf{weniger schwer = leichter}. Grammatisch ist \textbf{weniger + Adjektiv} trotzdem möglich.}
+         \EnglishText{If a common opposite adjective exists, it is often simpler: \textbf{weniger teuer = billiger/günstiger}, \textbf{weniger schwer = leichter}. Grammatically, \textbf{weniger + adjective} is nevertheless possible.}
+      \end{grammarentry}
+
+   \section{„Weiter“ und Formen ohne normalen -er-Komparativ \textnormal{(“weiter” and forms without a normal -er comparative)}}
+
+      \begin{grammarentry}{Wichtige Abgrenzung}{Important distinction}
+         \GermanText{Für normale steigerbare \textbf{Adjektive} braucht man \textbf{weiter} nicht zur Bildung des Komparativs. Man sagt zum Beispiel \textbf{hoch -- höher}, \textbf{nah -- näher}, \textbf{groß -- größer}.}
+         \EnglishText{For normal gradable \textbf{adjectives}, \textbf{weiter} is not needed to form the comparative. For example: \textbf{hoch -- höher}, \textbf{nah -- näher}, \textbf{groß -- größer}.}
+
+         \GermanText{\textbf{Weiter} ist jedoch besonders wichtig bei bestimmten \textbf{Ortsadverbien}, die keinen normalen Komparativ mit \textbf{-er} bilden. Dann bedeutet \textbf{weiter} ungefähr „mehr in dieser Richtung“ oder „an einer weiter entfernten Position“.}
+         \EnglishText{However, \textbf{weiter} is especially important with certain \textbf{adverbs of place} that do not form a normal comparative with \textbf{-er}. In this use, \textbf{weiter} means roughly “more in that direction” or “at a farther position.”}
+      \end{grammarentry}
+
+      \rowcolors{2}{RowBlueLight}{RowBlueDark}
+      \begin{longtable}{>{\bfseries}p{3.0cm}|p{4.2cm}|p{6.3cm}}
+         \rowcolor{HeaderBlueDark}
+         \color{white}\textbf{Grundform / Base form} &
+         \color{white}\textbf{Vergleich / Comparison} &
+         \color{white}\textbf{Hinweis / Note} \\
+         oben & weiter oben & nicht: \textit{obner}; farther/higher up \\
+         unten & weiter unten & farther down \\
+         vorne & weiter vorne & farther forward / further to the front \\
+         hinten & weiter hinten & farther back \\
+         links & weiter links & farther to the left \\
+         rechts & weiter rechts & farther to the right \\
+         draußen & weiter draußen & farther outside \\
+         drinnen & weiter drinnen & farther inside \\
+         weg & weiter weg & farther away \\
+      \end{longtable}
+
+      \begin{grammarentry}{„weit“ selbst ist anders}{“weit” itself is different}
+         \GermanText{Das Adjektiv bzw. Adverb \textbf{weit} hat selbst einen normalen Komparativ: \textbf{weit -- weiter -- am weitesten}. Hier ist \textbf{weiter} tatsächlich die Komparativform von \textbf{weit}.}
+         \EnglishText{The adjective/adverb \textbf{weit} itself has a normal comparative: \textbf{weit -- weiter -- am weitesten}. Here, \textbf{weiter} really is the comparative form of \textbf{weit}.}
+
+         \GermanText{Vergleich: \textbf{oben -- weiter oben} ist eine Wortgruppe; \textbf{weit -- weiter} ist eine echte Steigerungsform.}
+         \EnglishText{Compare: \textbf{oben -- weiter oben} is a word combination; \textbf{weit -- weiter} is a true comparative form.}
+      \end{grammarentry}
+
+   \section{Nicht oder normalerweise nicht steigerbare Adjektive \textnormal{(Non-gradable or normally non-gradable adjectives)}}
+
+      \begin{grammarentry}{Absolute Eigenschaften}{Absolute qualities}
+         \GermanText{Einige Adjektive bezeichnen in ihrer Grundbedeutung einen absoluten Zustand und werden deshalb normalerweise nicht gesteigert. Dazu gehören zum Beispiel \textbf{tot}, \textbf{schwanger}, \textbf{einzig}, \textbf{gleich}, \textbf{perfekt} und \textbf{optimal}.}
+         \EnglishText{Some adjectives describe an absolute state in their basic meaning and are therefore normally not compared. Examples include \textbf{tot}, \textbf{schwanger}, \textbf{einzig}, \textbf{gleich}, \textbf{perfekt}, and \textbf{optimal}.}
+
+         \GermanText{In Werbung, Umgangssprache oder rhetorischer Sprache können trotzdem Formen wie \textbf{perfekter} vorkommen. Für klare B1-Grammatik sollte man solche absoluten Adjektive grundsätzlich als normalerweise nicht steigerbar behandeln.}
+         \EnglishText{In advertising, colloquial language, or rhetorical language, forms such as \textbf{perfekter} may nevertheless occur. For clear B1 grammar, such absolute adjectives should generally be treated as normally non-gradable.}
+      \end{grammarentry}
+
+   \section{Vergleich ohne direkt genanntes Vergleichsobjekt \textnormal{(Comparison without an explicitly stated standard)}}
+
+      \begin{grammarentry}{„als“ ist nicht immer nötig}{“als” is not always necessary}
+         \GermanText{Ein Komparativ kann auch ohne \textbf{als} stehen, wenn aus dem Kontext klar ist, womit verglichen wird oder wenn nur eine Veränderung beschrieben wird.}
+         \EnglishText{A comparative can also stand without \textbf{als} when the comparison is clear from context or when only a change is being described.}
+      \end{grammarentry}
+
+      \begin{exbox}
+         \begin{itemize}
+            \ExampleItem{Heute geht es mir besser.}{I feel better today.}
+            \ExampleItem{Es wird immer kälter.}{It is getting colder and colder.}
+            \ExampleItem{Kannst du etwas langsamer sprechen?}{Can you speak a little more slowly?}
+         \end{itemize}
+      \end{exbox}
+
+   \section{„Immer + Komparativ“ \textnormal{(“immer + comparative”)}}
+
+      \begin{grammarentry}{Fortschreitende Veränderung}{Progressive change}
+         \GermanText{Mit \textbf{immer + Komparativ} zeigt man, dass sich eine Eigenschaft fortlaufend verstärkt oder verändert.}
+         \EnglishText{With \textbf{immer + comparative}, one shows that a quality continuously increases or changes.}
+      \end{grammarentry}
+
+      \begin{exbox}
+         \begin{itemize}
+            \ExampleItem{Die Tage werden immer kürzer.}{The days are getting shorter and shorter.}
+            \ExampleItem{Die Aufgabe wird immer schwieriger.}{The task is becoming more and more difficult.}
+            \ExampleItem{Er fährt immer schneller.}{He is driving faster and faster.}
+         \end{itemize}
+      \end{exbox}
+
+   \section{„Je ... desto/umso ...“ \textnormal{(“the ... the ...”)}}
+
+      \begin{grammarentry}{Zwei Veränderungen miteinander verbinden}{Connecting two changes}
+         \GermanText{Mit \textbf{je + Komparativ ..., desto/umso + Komparativ ...} drückt man aus, dass zwei Veränderungen voneinander abhängen.}
+         \EnglishText{With \textbf{je + comparative ..., desto/umso + comparative ...}, one expresses that two changes depend on each other.}
+
+         \GermanText{Im \textbf{je}-Nebensatz steht das konjugierte Verb am Ende. Im Hauptsatz mit \textbf{desto/umso} steht das konjugierte Verb an Position 2.}
+         \EnglishText{In the subordinate clause with \textbf{je}, the conjugated verb stands at the end. In the main clause with \textbf{desto/umso}, the conjugated verb stands in position 2.}
+      \end{grammarentry}
+
+      \begin{exbox}
+         \begin{itemize}
+            \ExampleItem{Je mehr ich lerne, desto besser verstehe ich Deutsch.}{The more I study, the better I understand German.}
+            \ExampleItem{Je älter man wird, umso wichtiger wird die Gesundheit.}{The older one gets, the more important health becomes.}
+         \end{itemize}
+      \end{exbox}
+
+   \section{Typische Fehler \textnormal{(Typical mistakes)}}
+
+      \begin{grammarentry}{Fehler, die man vermeiden sollte}{Mistakes to avoid}
+         \GermanText{\textbf{Falsch:} mehr interessant. \quad \textbf{Richtig:} interessanter.}
+         \EnglishText{\textbf{Wrong:} mehr interessant. \quad \textbf{Correct:} interessanter.}
+
+         \GermanText{\textbf{Falsch im Standarddeutsch:} größer wie. \quad \textbf{Richtig:} größer als.}
+         \EnglishText{\textbf{Wrong in Standard German:} größer wie. \quad \textbf{Correct:} größer als.}
+
+         \GermanText{\textbf{Falsch:} obner. \quad \textbf{Richtig:} weiter oben.}
+         \EnglishText{\textbf{Wrong:} obner. \quad \textbf{Correct:} weiter oben.}
+
+         \GermanText{\textbf{Falsch:} ein mehr großes Auto. \quad \textbf{Richtig:} ein größeres Auto.}
+         \EnglishText{\textbf{Wrong:} ein mehr großes Auto. \quad \textbf{Correct:} ein größeres Auto.}
+
+         \GermanText{\textbf{Falsch:} ein größer Mann. \quad \textbf{Richtig:} ein größerer Mann.}
+         \EnglishText{\textbf{Wrong:} ein größer Mann. \quad \textbf{Correct:} ein größerer Mann.}
+      \end{grammarentry}
+
+   \section{Schnelle Entscheidungsregel \textnormal{(Quick decision rule)}}
+
+      \begin{grammarentry}{So bildest du den Komparativ}{How to form the comparative}
+         \GermanText{1. Prüfe zuerst, ob das Wort ein steigerbares Adjektiv ist.}
+         \EnglishText{1. First check whether the word is a gradable adjective.}
+
+         \GermanText{2. Bei den meisten Adjektiven: \textbf{-er} anhängen.}
+         \EnglishText{2. For most adjectives: add \textbf{-er}.}
+
+         \GermanText{3. Prüfe, ob das Adjektiv einen Umlaut oder eine besondere Stammform hat: \textbf{alt -- älter}, \textbf{gut -- besser}, \textbf{hoch -- höher}, \textbf{nah -- näher}.}
+         \EnglishText{3. Check whether the adjective has an umlaut or a special stem form: \textbf{alt -- älter}, \textbf{gut -- besser}, \textbf{hoch -- höher}, \textbf{nah -- näher}.}
+
+         \GermanText{4. Für einen ungleichen Vergleich benutze \textbf{als}: \textbf{größer als}. Für Gleichheit benutze \textbf{so ... wie}.}
+         \EnglishText{4. For an unequal comparison, use \textbf{als}: \textbf{größer als}. For equality, use \textbf{so ... wie}.}
+
+         \GermanText{5. Steht der Komparativ vor einem Nomen, dekliniere ihn zusätzlich wie ein normales Adjektiv: \textbf{ein größeres Haus}.}
+         \EnglishText{5. If the comparative stands before a noun, decline it additionally like a normal adjective: \textbf{ein größeres Haus}.}
+
+         \GermanText{6. Benutze \textbf{weiter} nicht als allgemeine Komparativhilfe für Adjektive. Bei Ortsadverbien wie \textbf{oben} heißt es dagegen \textbf{weiter oben}.}
+         \EnglishText{6. Do not use \textbf{weiter} as a general comparative helper for adjectives. With adverbs of place such as \textbf{oben}, however, use \textbf{weiter oben}.}
+      \end{grammarentry}
+
+   \section{Zusammenfassung \textnormal{(Summary)}}
+
+      \begin{grammarentry}{Merksätze}{Key rules}
+         \GermanText{Der normale Adjektivkomparativ wird im Deutschen meistens mit \textbf{-er} gebildet: \textbf{schnell -- schneller}.}
+         \EnglishText{The normal adjective comparative in German is usually formed with \textbf{-er}: \textbf{schnell -- schneller}.}
+
+         \GermanText{Einige Adjektive bekommen Umlaut oder verändern ihren Stamm: \textbf{alt -- älter}, \textbf{gut -- besser}, \textbf{hoch -- höher}, \textbf{nah -- näher}.}
+         \EnglishText{Some adjectives take an umlaut or change their stem: \textbf{alt -- älter}, \textbf{gut -- besser}, \textbf{hoch -- höher}, \textbf{nah -- näher}.}
+
+         \GermanText{\textbf{Als} steht beim ungleichen Vergleich; \textbf{so ... wie} steht beim gleichen Grad.}
+         \EnglishText{\textbf{Als} is used for unequal comparison; \textbf{so ... wie} is used for equal degree.}
+
+         \GermanText{Zusätzliche Wörter wie \textbf{viel}, \textbf{etwas}, \textbf{noch} und \textbf{weitaus} verändern die Stärke des Vergleichs, bilden aber nicht selbst den normalen Adjektivkomparativ.}
+         \EnglishText{Additional words such as \textbf{viel}, \textbf{etwas}, \textbf{noch}, and \textbf{weitaus} modify the strength of the comparison but do not themselves form the normal adjective comparative.}
+
+         \GermanText{\textbf{Weniger + Adjektiv} drückt einen niedrigeren Grad aus. \textbf{Weiter + Ortsadverb} wird bei Formen wie \textbf{weiter oben} gebraucht; \textbf{obner} existiert nicht.}
+         \EnglishText{\textbf{Weniger + adjective} expresses a lower degree. \textbf{Weiter + adverb of place} is used in forms such as \textbf{weiter oben}; \textbf{obner} does not exist.}
+      \end{grammarentry}
+
 \end{document}
