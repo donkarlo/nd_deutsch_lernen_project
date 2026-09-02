@@ -1,0 +1,322 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[table]{xcolor}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.4}
+\setlength{\tabcolsep}{6pt}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Stellung von \glqq nicht\grqq im Satz\\{\large\textnormal{Position of ``nicht'' in the sentence}}}
+\date{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Grundidee \textnormal{(Basic idea)}}
+
+\begin{grammarentry}{nicht}{Negationspartikel}
+\GermanText{\textbf{nicht} verneint Verben, Adjektive, Adverbien, Präpositionalgruppen, einzelne Satzteile oder einen ganzen Satz. Seine Stellung hängt vor allem davon ab, \textbf{was verneint wird}.}
+\EnglishText{\textbf{nicht} negates verbs, adjectives, adverbs, prepositional phrases, individual sentence elements, or an entire sentence. Its position mainly depends on \textbf{what is being negated}.}
+
+\GermanText{Die wichtigste Unterscheidung ist: \textbf{Satznegation} oder \textbf{Teilnegation}.}
+\EnglishText{The most important distinction is: \textbf{sentence negation} or \textbf{partial/constituent negation}.}
+\end{grammarentry}
+
+\section{Teilnegation: \glqq nicht\grqq steht direkt vor dem verneinten Teil \textnormal{(Partial negation: ``nicht'' stands directly before the negated element)}}
+
+\begin{grammarentry}{Teilnegation}{ein bestimmter Satzteil wird verneint}
+\GermanText{Wenn nur ein bestimmtes Wort oder ein bestimmter Satzteil verneint wird, steht \textbf{nicht normalerweise direkt davor}. Häufig gibt es einen ausgesprochenen oder gedachten Gegensatz.}
+\EnglishText{If only a particular word or sentence element is negated, \textbf{nicht normally stands directly before it}. There is often an explicit or implied contrast.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich fahre \textbf{nicht heute}, sondern morgen.}{I am not going today, but tomorrow.}
+\ExampleItem{Ich fahre \textbf{nicht mit dem Auto}, sondern mit dem Zug.}{I am not going by car, but by train.}
+\ExampleItem{Das ist \textbf{nicht teuer}.}{That is not expensive.}
+\ExampleItem{Er arbeitet \textbf{nicht schnell}.}{He does not work quickly.}
+\ExampleItem{\textbf{Nicht Peter} hat angerufen, sondern Paul.}{It was not Peter who called, but Paul.}
+\end{itemize}
+\end{exbox}
+
+\section{Satznegation im einfachen Hauptsatz \textnormal{(Sentence negation in a simple main clause)}}
+
+\begin{grammarentry}{Grundregel}{möglichst spät, aber vor bestimmten Satzteilen}
+\GermanText{Bei der Satznegation steht \textbf{nicht im Mittelfeld normalerweise relativ weit hinten}. Es steht jedoch vor Elementen, die eng zum Prädikat gehören oder typischerweise am Ende des Mittelfelds stehen.}
+\EnglishText{With sentence negation, \textbf{nicht normally appears relatively late in the middle field}. However, it stands before elements that are closely connected to the predicate or typically occur at the end of the middle field.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich komme heute \textbf{nicht}.}{I am not coming today.}
+\ExampleItem{Ich kenne diesen Mann \textbf{nicht}.}{I do not know this man.}
+\ExampleItem{Wir verstehen die Aufgabe \textbf{nicht}.}{We do not understand the task.}
+\end{itemize}
+\end{exbox}
+
+\section{Vor Adjektiven und Adverbien \textnormal{(Before adjectives and adverbs)}}
+
+\begin{grammarentry}{Adjektiv / Adverb}{nicht + Adjektiv oder Adverb}
+\GermanText{Wenn ein Adjektiv oder Adverb verneint wird, steht \textbf{nicht direkt davor}.}
+\EnglishText{When an adjective or adverb is negated, \textbf{nicht stands directly before it}.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Das Essen ist \textbf{nicht gut}.}{The food is not good.}
+\ExampleItem{Die Wohnung ist \textbf{nicht besonders groß}.}{The apartment is not particularly large.}
+\ExampleItem{Er fährt \textbf{nicht schnell}.}{He does not drive fast.}
+\end{itemize}
+\end{exbox}
+
+\section{Vor Präpositionalgruppen \textnormal{(Before prepositional phrases)}}
+
+\begin{grammarentry}{Präpositionalgruppe}{nicht + Präposition}
+\GermanText{Wenn eine Präpositionalgruppe verneint wird oder eng zum Verb gehört, steht \textbf{nicht häufig vor der Präpositionalgruppe}.}
+\EnglishText{When a prepositional phrase is negated or is closely connected to the verb, \textbf{nicht often stands before the prepositional phrase}.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich interessiere mich \textbf{nicht für Fußball}.}{I am not interested in football.}
+\ExampleItem{Wir fahren \textbf{nicht nach Wien}.}{We are not going to Vienna.}
+\ExampleItem{Er wartet \textbf{nicht auf den Bus}.}{He is not waiting for the bus.}
+\end{itemize}
+\end{exbox}
+
+\section{Bei Ortsangaben \textnormal{(With expressions of place)}}
+
+\begin{grammarentry}{Ort}{häufig nicht vor der Ortsangabe}
+\GermanText{Bei einer Satznegation steht \textbf{nicht häufig vor einer Ortsangabe}, besonders wenn die Ortsangabe das Ziel oder den Ort des Geschehens bezeichnet.}
+\EnglishText{In sentence negation, \textbf{nicht often stands before an expression of place}, especially when it gives the destination or location of the action.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich gehe heute \textbf{nicht ins Büro}.}{I am not going to the office today.}
+\ExampleItem{Er wohnt \textbf{nicht in Wien}.}{He does not live in Vienna.}
+\end{itemize}
+\end{exbox}
+
+\section{Bei Zeitangaben \textnormal{(With expressions of time)}}
+
+\begin{grammarentry}{Zeit}{Bedeutung entscheidet}
+\GermanText{Eine Zeitangabe kann vor \textbf{nicht} stehen, wenn der ganze Satz verneint wird: \glqq Ich arbeite heute nicht.\grqq}
+\EnglishText{A time expression can stand before \textbf{nicht} when the whole sentence is negated: ``I am not working today.''}
+
+\GermanText{Steht \textbf{nicht direkt vor der Zeitangabe}, wird normalerweise gerade diese Zeitangabe kontrastiert: \glqq Ich arbeite nicht heute, sondern morgen.\grqq}
+\EnglishText{If \textbf{nicht stands directly before the time expression}, that time expression itself is normally contrasted: ``I am not working today, but tomorrow.''}
+\end{grammarentry}
+
+\section{Bei trennbaren Verben \textnormal{(With separable verbs)}}
+
+\begin{grammarentry}{Satzklammer}{nicht vor dem abgetrennten Verbteil}
+\GermanText{Bei einem trennbaren Verb steht der abgetrennte Verbteil am Satzende. Bei Satznegation steht \textbf{nicht normalerweise vor diesem Verbteil}.}
+\EnglishText{With a separable verb, the separated verb particle stands at the end of the clause. In sentence negation, \textbf{nicht normally stands before this verb part}.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich stehe morgen \textbf{nicht auf}.}{I am not getting up tomorrow.}
+\ExampleItem{Er ruft mich heute \textbf{nicht an}.}{He is not calling me today.}
+\ExampleItem{Wir kaufen am Sonntag \textbf{nicht ein}.}{We are not shopping on Sunday.}
+\end{itemize}
+\end{exbox}
+
+\section{Mit Modalverben \textnormal{(With modal verbs)}}
+
+\begin{grammarentry}{Modalverb + Infinitiv}{nicht vor dem Infinitivbereich}
+\GermanText{Bei einem Modalverb steht der Infinitiv am Satzende. Bei der normalen Satznegation steht \textbf{nicht häufig vor dem Infinitiv oder vor den Elementen, die eng zu ihm gehören}.}
+\EnglishText{With a modal verb, the infinitive stands at the end of the clause. In normal sentence negation, \textbf{nicht often stands before the infinitive or before elements closely connected to it}.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich kann heute \textbf{nicht kommen}.}{I cannot come today.}
+\ExampleItem{Wir wollen morgen \textbf{nicht arbeiten}.}{We do not want to work tomorrow.}
+\ExampleItem{Ich muss heute \textbf{nicht ins Büro gehen}.}{I do not have to go to the office today.}
+\end{itemize}
+\end{exbox}
+
+\section{Im Perfekt \textnormal{(In the perfect tense)}}
+
+\begin{grammarentry}{haben/sein + Partizip II}{nicht vor dem Partizipbereich}
+\GermanText{Im Perfekt steht das Partizip II am Satzende. Bei Satznegation steht \textbf{nicht normalerweise vor dem Partizip II oder vor dem Teil, der eng mit dem Partizip verbunden ist}.}
+\EnglishText{In the perfect tense, the past participle stands at the end of the clause. In sentence negation, \textbf{nicht normally stands before the past participle or before the element closely connected to it}.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich habe gestern \textbf{nicht gearbeitet}.}{I did not work yesterday.}
+\ExampleItem{Er ist gestern \textbf{nicht gekommen}.}{He did not come yesterday.}
+\ExampleItem{Ich habe das Buch \textbf{nicht gelesen}.}{I did not read the book.}
+\end{itemize}
+\end{exbox}
+
+\section{Im Nebensatz \textnormal{(In subordinate clauses)}}
+
+\begin{grammarentry}{Nebensatz}{Verb am Ende}
+\GermanText{Im Nebensatz steht das konjugierte Verb am Ende. Die Grundidee für \textbf{nicht} bleibt aber gleich: Es steht vor dem Bereich, den es verneint. Bei Satznegation steht es häufig relativ weit hinten, aber vor dem Verbkomplex oder vor einem eng zum Verb gehörenden Teil.}
+\EnglishText{In a subordinate clause, the conjugated verb stands at the end. The basic idea for \textbf{nicht} remains the same: it stands before the element or domain it negates. In sentence negation it often occurs relatively late, but before the verb complex or before an element closely connected to the verb.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich bleibe zu Hause, weil ich heute \textbf{nicht arbeite}.}{I am staying at home because I am not working today.}
+\ExampleItem{Ich weiß, dass er morgen \textbf{nicht kommt}.}{I know that he is not coming tomorrow.}
+\ExampleItem{Sie sagt, dass sie \textbf{nicht nach Wien fährt}.}{She says that she is not going to Vienna.}
+\end{itemize}
+\end{exbox}
+
+\section{\glqq nicht\grqq und Akkusativ-/Dativobjekte \textnormal{(``nicht'' and accusative/dative objects)}}
+
+\begin{grammarentry}{Objekte}{häufig vor nicht}
+\GermanText{Bestimmte Akkusativ- und Dativobjekte stehen bei normaler Satznegation häufig \textbf{vor nicht}.}
+\EnglishText{Definite accusative and dative objects often stand \textbf{before nicht} in normal sentence negation.}
+
+\GermanText{Wenn aber gerade das Objekt verneint oder kontrastiert wird, kann \textbf{nicht direkt vor dem Objekt} stehen.}
+\EnglishText{However, if the object itself is being negated or contrasted, \textbf{nicht can stand directly before the object}.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich kenne den Mann \textbf{nicht}.}{I do not know the man.}
+\ExampleItem{Ich gebe ihm das Buch \textbf{nicht}.}{I am not giving him the book.}
+\ExampleItem{Ich kaufe \textbf{nicht dieses Auto}, sondern das andere.}{I am not buying this car, but the other one.}
+\end{itemize}
+\end{exbox}
+
+\section{\glqq nicht\grqq oder \glqq kein\grqq? \textnormal{(``nicht'' or ``kein''?)}}
+
+\begin{grammarentry}{kein statt nicht}{Nomen mit unbestimmtem oder ohne Artikel}
+\GermanText{Bei einem Nomen mit unbestimmtem Artikel oder ohne Artikel verwendet man zur Verneinung normalerweise \textbf{kein} statt \textbf{nicht}.}
+\EnglishText{With a noun that has an indefinite article or no article, German normally uses \textbf{kein} rather than \textbf{nicht} for negation.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich habe \textbf{kein Auto}.}{I do not have a car.}
+\ExampleItem{Das ist \textbf{kein Problem}.}{That is not a problem.}
+\ExampleItem{Ich trinke \textbf{keinen Kaffee}.}{I do not drink coffee.}
+\end{itemize}
+\end{exbox}
+
+\section{Bedeutungsunterschied durch die Stellung \textnormal{(Change of meaning through position)}}
+
+\begin{grammarentry}{Kontrast}{die Stellung verändert den Fokus}
+\GermanText{Die Stellung von \textbf{nicht} kann bestimmen, welcher Teil des Satzes verneint wird. Deshalb können ähnliche Sätze unterschiedliche Bedeutungen haben.}
+\EnglishText{The position of \textbf{nicht} can determine which part of the sentence is negated. Therefore, similar sentences can have different meanings.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich fahre heute \textbf{nicht nach Wien}.}{I am not going to Vienna today.}
+\ExampleItem{Ich fahre \textbf{nicht heute} nach Wien, sondern morgen.}{I am not going to Vienna today, but tomorrow.}
+\ExampleItem{Ich fahre heute \textbf{nicht mit dem Auto} nach Wien, sondern mit dem Zug.}{I am not going to Vienna by car today, but by train.}
+\end{itemize}
+\end{exbox}
+
+\section{Praktische Regel für B1 \textnormal{(Practical rule for B1)}}
+
+\begin{grammarentry}{Entscheidungsschritte}{eine einfache Methode}
+\GermanText{1. Frage zuerst: Verneine ich \textbf{den ganzen Satz} oder nur \textbf{einen bestimmten Teil}?}
+\EnglishText{1. First ask: Am I negating \textbf{the whole sentence} or only \textbf{one particular element}?}
+
+\GermanText{2. Teilnegation: Setze \textbf{nicht direkt vor den Teil}, den du verneinen willst.}
+\EnglishText{2. Partial negation: Put \textbf{nicht directly before the element} you want to negate.}
+
+\GermanText{3. Satznegation: Setze \textbf{nicht relativ weit nach hinten}, aber normalerweise vor einen Infinitiv, ein Partizip II, den abgetrennten Verbteil, ein prädikatives Adjektiv oder eine eng zum Verb gehörende Präpositional-/Ortsangabe.}
+\EnglishText{3. Sentence negation: Put \textbf{nicht relatively late}, but normally before an infinitive, a past participle, a separated verb particle, a predicative adjective, or a prepositional/place expression closely connected to the verb.}
+\end{grammarentry}
+
+\section{Übersicht \textnormal{(Overview)}}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{4.1cm}|p{5.2cm}|p{5.2cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Situation} &
+\color{white}\textbf{Position von nicht} &
+\color{white}\textbf{Beispiel} \\
+Teilnegation & direkt vor dem verneinten Teil & nicht heute, sondern morgen \\
+Adjektiv/Adverb & direkt davor & nicht teuer; nicht schnell \\
+Präpositionalgruppe & häufig davor & nicht für Fußball; nicht nach Wien \\
+Trennbares Verb & vor dem abgetrennten Verbteil & nicht anrufen / Er ruft nicht an. \\
+Modalverb & vor dem Infinitivbereich & nicht kommen können \\
+Perfekt & vor dem Partizipbereich & nicht gearbeitet haben \\
+Nebensatz & relativ weit hinten, vor Verbkomplex/engem Ergänzungsteil & weil er nicht kommt \\
+Bestimmtes Objekt & bei Satznegation häufig Objekt + nicht & Ich kenne ihn nicht. \\
+Kontrastiertes Objekt & nicht direkt vor dem Objekt & nicht dieses Auto, sondern das andere \\
+\end{longtable}
+
+\section{Häufige Fehler \textnormal{(Common mistakes)}}
+
+\begin{grammarentry}{Fehler vermeiden}{B1-relevante Punkte}
+\GermanText{\textbf{Falsch:} Ich nicht komme heute. \quad \textbf{Richtig:} Ich komme heute nicht.}
+\EnglishText{\textbf{Wrong:} Ich nicht komme heute. \quad \textbf{Correct:} Ich komme heute nicht.}
+
+\GermanText{\textbf{Falsch:} Ich habe nicht ein Auto. \quad \textbf{Normalerweise richtig:} Ich habe kein Auto.}
+\EnglishText{\textbf{Wrong:} Ich habe nicht ein Auto. \quad \textbf{Normally correct:} Ich habe kein Auto.}
+
+\GermanText{\textbf{Wichtig:} \glqq nicht\grqq hat nicht immer genau eine feste Position. Die gewünschte Bedeutung und der Fokus des Satzes entscheiden mit.}
+\EnglishText{\textbf{Important:} ``nicht'' does not always have exactly one fixed position. The intended meaning and the focus of the sentence also determine its position.}
+\end{grammarentry}
+
+\section{Zusammenfassung \textnormal{(Summary)}}
+
+\begin{grammarentry}{Merksatz}{kurz und wichtig}
+\GermanText{\textbf{Teilnegation:} nicht steht direkt vor dem Teil, der verneint wird.}
+\EnglishText{\textbf{Partial negation:} nicht stands directly before the element being negated.}
+
+\GermanText{\textbf{Satznegation:} nicht steht normalerweise relativ weit hinten im Mittelfeld, aber vor Elementen, die eng zum Prädikat gehören.}
+\EnglishText{\textbf{Sentence negation:} nicht normally stands relatively late in the middle field, but before elements closely connected to the predicate.}
+
+\GermanText{\textbf{Die beste Kontrollfrage lautet: Was genau möchte ich verneinen?}}
+\EnglishText{\textbf{The best checking question is: What exactly do I want to negate?}}
+\end{grammarentry}
+
+\end{document}
