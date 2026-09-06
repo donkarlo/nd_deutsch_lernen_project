@@ -1,0 +1,317 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[table]{xcolor}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{6pt}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Past Continuous im Deutschen\\\large\textnormal{Past Continuous in German}}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+    \section{Grundidee \textnormal{(Basic idea)}}
+
+        \begin{grammarentry}{Kein eigenes Continuous Tempus}{No separate continuous tense}
+            \GermanText{Das Deutsche hat kein eigenes grammatisches Tempus wie das englische \textbf{Past Continuous} in \glqq I was talking\grqq. Die fortlaufende Bedeutung wird normalerweise durch den Kontext und durch Wörter oder Konstruktionen wie \textbf{gerade}, \textbf{dabei sein + zu + Infinitiv} oder andere Zeitangaben ausgedrückt.}
+            \EnglishText{German has no separate grammatical tense equivalent to the English \textbf{Past Continuous} in ``I was talking.'' The ongoing meaning is normally expressed by context and by words or constructions such as \textbf{gerade}, \textbf{dabei sein + zu + infinitive}, or other time expressions.}
+
+            \GermanText{Deshalb gibt es nicht nur eine einzige deutsche Form für das englische Past Continuous. Welche Form am besten passt, hängt von Kontext, Stil und gewünschter Betonung ab.}
+            \EnglishText{Therefore, there is not just one German form for the English Past Continuous. The best form depends on context, style, and the emphasis you want.}
+        \end{grammarentry}
+
+    \section{Die wichtigste Struktur: \glqq gerade\grqq \textnormal{(The most important structure: ``gerade'')}}
+
+        \begin{grammarentry}{gerade + Verb}{Ongoing action from context}
+            \GermanText{\textbf{gerade} bedeutet in diesem Gebrauch ungefähr \glqq genau in diesem Moment\grqq oder \glqq zu diesem Zeitpunkt\grqq. Zusammen mit einem Verb kann es zeigen, dass eine Handlung zu einem bestimmten Zeitpunkt im Verlauf war.}
+            \EnglishText{In this use, \textbf{gerade} means approximately ``right at that moment'' or ``at that time.'' Together with a verb, it can show that an action was in progress at a particular time.}
+
+            \GermanText{Wichtig: \textbf{gerade} allein bildet kein grammatisches Continuous. Es liefert nur die zeitliche Bedeutung. Das Tempus des Verbs bleibt Präsens, Präteritum, Perfekt usw.}
+            \EnglishText{Important: \textbf{gerade} by itself does not form a grammatical continuous tense. It only supplies the time meaning. The verb still remains in the present, preterite, perfect, and so on.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich spreche gerade mit Anna.}{I am talking to Anna right now.}
+                \ExampleItem{Ich sprach gerade mit Anna, als du angerufen hast.}{I was talking to Anna when you called.}
+                \ExampleItem{Ich habe gerade mit Anna gesprochen, als du angerufen hast.}{I was talking to Anna when you called. In spoken German, the context with ``als'' makes the ongoing interpretation possible.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Past Continuous mit Präteritum \textnormal{(Past Continuous with the preterite)}}
+
+        \begin{grammarentry}{Präteritum + gerade}{Especially clear in narration}
+            \GermanText{Das \textbf{Präteritum + gerade} kann eine Handlung ausdrücken, die in der Vergangenheit gerade im Verlauf war. Diese Form ist besonders klar in schriftlicher Erzählung und bei Verben, deren Präteritum auch in der gesprochenen Sprache häufig ist.}
+            \EnglishText{The \textbf{preterite + gerade} can express an action that was in progress in the past. This form is especially clear in written narration and with verbs whose preterite is also common in spoken language.}
+
+            \GermanText{Struktur: \textbf{Subjekt + konjugiertes Verb im Präteritum + gerade + ...}}
+            \EnglishText{Structure: \textbf{subject + conjugated verb in the preterite + gerade + ...}}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich sprach gerade über das Problem, als du mich unterbrochen hast.}{I was talking about the problem when you interrupted me.}
+                \ExampleItem{Sie kochte gerade, als das Telefon klingelte.}{She was cooking when the phone rang.}
+                \ExampleItem{Wir gingen gerade nach Hause, als es zu regnen begann.}{We were going home when it started to rain.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Past Continuous mit Perfekt \textnormal{(Past Continuous with the perfect tense)}}
+
+        \begin{grammarentry}{Perfekt + gerade}{Common in spoken German, but context matters}
+            \GermanText{In der gesprochenen Sprache kann auch \textbf{Perfekt + gerade} eine Handlung beschreiben, die zu einem vergangenen Zeitpunkt im Verlauf war, besonders wenn ein zweiter Satzteil mit \textbf{als} eine Unterbrechung oder ein gleichzeitig eintretendes Ereignis nennt.}
+            \EnglishText{In spoken German, \textbf{perfect tense + gerade} can also describe an action that was in progress at a past moment, especially when a second clause with \textbf{als} names an interruption or another event occurring at that time.}
+
+            \GermanText{Struktur: \textbf{Subjekt + haben/sein + gerade + ... + Partizip II}.}
+            \EnglishText{Structure: \textbf{subject + haben/sein + gerade + ... + past participle}.}
+
+            \GermanText{Aber: Ohne einen klaren Kontext kann \textbf{Perfekt + gerade} auch \glqq soeben\grqq bedeuten, also eine gerade abgeschlossene Handlung. Deshalb ist diese Form nicht immer eindeutig.}
+            \EnglishText{However, without clear context, \textbf{perfect tense + gerade} can also mean ``just now,'' that is, an action that has just been completed. Therefore, this form is not always unambiguous.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich habe gerade gekocht, als du angerufen hast.}{I was cooking when you called.}
+                \ExampleItem{Ich habe gerade gekocht.}{I have just cooked / I just cooked. Without more context, this does not necessarily mean ``I was cooking.''}
+                \ExampleItem{Ich habe gerade über das Problem gesprochen, als du mich unterbrochen hast.}{I was talking about the problem when you interrupted me.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Die eindeutigste Form: \glqq dabei sein, ... zu ...\grqq \textnormal{(The clearest form: ``dabei sein, ... zu ...'')}}
+
+        \begin{grammarentry}{dabei sein + zu + Infinitiv}{Explicit ongoing action}
+            \GermanText{Wenn du ausdrücklich sagen willst, dass eine Handlung \textbf{gerade im Verlauf} war, ist \textbf{dabei sein, etwas zu tun} eine sehr klare Konstruktion. Im Past Continuous steht \textbf{sein} normalerweise im Präteritum: \textbf{war dabei}.}
+            \EnglishText{If you explicitly want to say that an action \textbf{was in progress}, \textbf{dabei sein, etwas zu tun} is a very clear construction. For a past continuous meaning, \textbf{sein} is normally in the preterite: \textbf{war dabei}.}
+
+            \GermanText{Struktur: \textbf{Subjekt + war/waren + gerade + dabei + , + ... zu + Infinitiv}.}
+            \EnglishText{Structure: \textbf{subject + war/waren + gerade + dabei + , + ... zu + infinitive}.}
+
+            \GermanText{Das Wort \textbf{gerade} ist hier nicht zwingend, aber sehr häufig und verstärkt die Bedeutung \glqq genau in diesem Moment\grqq.}
+            \EnglishText{The word \textbf{gerade} is not obligatory here, but it is very common and strengthens the meaning ``right at that moment.''}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich war gerade dabei, über das Problem zu sprechen, als du mich unterbrochen hast.}{I was in the middle of talking about the problem when you interrupted me.}
+                \ExampleItem{Sie war dabei, das Abendessen zu kochen, als das Licht ausging.}{She was cooking dinner when the lights went out.}
+                \ExampleItem{Wir waren gerade dabei, das Haus zu verlassen.}{We were just in the process of leaving the house.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Kann \glqq dabei sein\grqq auch im Perfekt stehen? \textnormal{(Can ``dabei sein'' also be used in the perfect tense?)}}
+
+        \begin{grammarentry}{ist dabei gewesen}{Grammatically possible, usually less elegant}
+            \GermanText{Grammatisch kann \textbf{dabei sein} auch im Perfekt stehen: \textbf{ich bin dabei gewesen, etwas zu tun}. Für eine einfache vergangene Verlaufsbedeutung klingt jedoch \textbf{ich war dabei, ...} normalerweise natürlicher und ist wesentlich häufiger.}
+            \EnglishText{Grammatically, \textbf{dabei sein} can also be used in the perfect tense: \textbf{ich bin dabei gewesen, etwas zu tun}. For a simple past ongoing meaning, however, \textbf{ich war dabei, ...} normally sounds more natural and is much more common.}
+
+            \GermanText{Deshalb solltest du für das englische Past Continuous in der Regel \textbf{war dabei, ... zu ...} bevorzugen, wenn du die laufende Handlung ausdrücklich markieren willst.}
+            \EnglishText{Therefore, for the English Past Continuous you should normally prefer \textbf{war dabei, ... zu ...} when you want to mark the ongoing action explicitly.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich war gerade dabei, die Tür zu öffnen, als er anrief.}{I was just opening the door when he called.}
+                \ExampleItem{Ich bin gerade dabei gewesen, die Tür zu öffnen, als er anrief.}{Grammatically possible, but less usual for this simple narrative situation.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Past Continuous ohne \glqq gerade\grqq \textnormal{(Past Continuous without ``gerade'')}}
+
+        \begin{grammarentry}{Kontext allein}{No special marker is always necessary}
+            \GermanText{Oft braucht das Deutsche überhaupt kein besonderes Continuous-Signal. Wenn der Kontext eindeutig zeigt, dass eine Handlung zu einem Zeitpunkt im Verlauf war, kann ein normales Präteritum oder Perfekt ausreichen.}
+            \EnglishText{German often does not need any special continuous marker at all. If the context clearly shows that an action was in progress at a certain time, an ordinary preterite or perfect tense can be enough.}
+
+            \GermanText{Zeitangaben wie \textbf{um acht Uhr}, \textbf{zu dieser Zeit}, \textbf{den ganzen Abend} oder ein Nebensatz mit \textbf{als} können die Verlaufsbedeutung deutlich machen.}
+            \EnglishText{Time expressions such as \textbf{at eight o'clock}, \textbf{at that time}, \textbf{all evening}, or a subordinate clause with \textbf{als} can make the ongoing meaning clear.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Um acht Uhr arbeitete ich noch.}{At eight o'clock, I was still working.}
+                \ExampleItem{Als du kamst, schlief ich.}{When you came, I was sleeping.}
+                \ExampleItem{Als du angerufen hast, habe ich gearbeitet.}{When you called, I was working.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Gleichzeitige und unterbrochene Handlungen \textnormal{(Simultaneous and interrupted actions)}}
+
+        \begin{grammarentry}{als + Ereignis}{Typical Past Continuous situation}
+            \GermanText{Eine typische englische Past-Continuous-Situation besteht aus einer längeren laufenden Handlung und einem kürzeren Ereignis, das währenddessen eintritt. Im Deutschen wird dafür sehr oft \textbf{als} verwendet.}
+            \EnglishText{A typical English Past Continuous situation consists of a longer ongoing action and a shorter event that occurs during it. In German, \textbf{als} is very often used for this.}
+
+            \GermanText{Muster: \textbf{laufende Handlung + als + plötzliches/kurzes Ereignis}.}
+            \EnglishText{Pattern: \textbf{ongoing action + als + sudden/short event}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich las gerade, als das Telefon klingelte.}{I was reading when the phone rang.}
+                \ExampleItem{Ich habe gerade gelesen, als das Telefon geklingelt hat.}{I was reading when the phone rang. This pattern is common in spoken German.}
+                \ExampleItem{Ich war gerade dabei zu lesen, als das Telefon klingelte.}{I was in the middle of reading when the phone rang.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Präteritum oder Perfekt? \textnormal{(Preterite or perfect tense?)}}
+
+        \begin{grammarentry}{Stil und Region}{Both can express the past context}
+            \GermanText{Ob du \textbf{Präteritum} oder \textbf{Perfekt} benutzt, hängt im Deutschen oft mehr von Stil, Region und Verb ab als von der Frage \glqq continuous oder nicht?\grqq. Beide Tempora können in einem passenden Kontext eine laufende vergangene Handlung ausdrücken.}
+            \EnglishText{Whether you use the \textbf{preterite} or the \textbf{perfect tense} in German often depends more on style, region, and the verb than on the question ``continuous or not?'' Both tenses can express an ongoing past action in a suitable context.}
+
+            \GermanText{Das \textbf{Präteritum} ist in geschriebener Erzählung besonders häufig. Das \textbf{Perfekt} ist in gesprochener Alltagssprache bei vielen Vollverben sehr häufig. Bei \textbf{sein}, \textbf{haben} und Modalverben ist das Präteritum auch beim Sprechen sehr gebräuchlich.}
+            \EnglishText{The \textbf{preterite} is especially common in written narration. The \textbf{perfect tense} is very common with many full verbs in everyday spoken German. With \textbf{sein}, \textbf{haben}, and modal verbs, the preterite is also very common in speech.}
+        \end{grammarentry}
+
+    \section{Vergleichstabelle \textnormal{(Comparison table)}}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\raggedright\arraybackslash}p{3.4cm}|>{\raggedright\arraybackslash}p{5.0cm}|>{\raggedright\arraybackslash}p{6.0cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Form \textnormal{(Form)}} &
+            \color{white}\textbf{Beispiel \textnormal{(Example)}} &
+            \color{white}\textbf{Bedeutung/Gebrauch \textnormal{(Meaning/Use)}} \\
+            Präteritum + gerade & Ich sprach gerade mit ihm. & Klare laufende Handlung in der Vergangenheit; besonders passend in Erzählungen. / Clear ongoing past action; especially suitable in narration. \\
+            Perfekt + gerade + Kontext & Ich habe gerade mit ihm gesprochen, als du angerufen hast. & In der gesprochenen Sprache möglich; der Kontext macht die laufende Bedeutung klar. / Possible in spoken German; context makes the ongoing meaning clear. \\
+            Perfekt + gerade ohne Kontext & Ich habe gerade mit ihm gesprochen. & Meist: \glqq Ich habe soeben mit ihm gesprochen.\grqq, also gerade abgeschlossen. / Usually: ``I have just spoken to him,'' so recently completed. \\
+            war gerade dabei, ... zu ... & Ich war gerade dabei, mit ihm zu sprechen. & Sehr eindeutig: die Handlung war im Verlauf. / Very explicit: the action was in progress. \\
+            Präteritum ohne gerade & Als du kamst, schlief ich. & Der Kontext allein kann die Verlaufsbedeutung liefern. / Context alone can supply the ongoing meaning. \\
+            Perfekt ohne gerade & Als du angerufen hast, habe ich gearbeitet. & Besonders in gesprochener Sprache möglich. / Especially possible in spoken German. \\
+        \end{longtable}
+
+    \section{Wichtiger Unterschied zu \glqq just\grqq \textnormal{(Important difference from ``just'')}}
+
+        \begin{grammarentry}{gerade ist mehrdeutig}{``right now'' or ``just''}
+            \GermanText{\textbf{gerade} kann je nach Tempus und Kontext zwei wichtige Bedeutungen haben: \glqq gerade jetzt / zu diesem Moment\grqq oder \glqq soeben / vor sehr kurzer Zeit\grqq.}
+            \EnglishText{Depending on tense and context, \textbf{gerade} can have two important meanings: ``right now / at that moment'' or ``just / a very short time ago.''}
+
+            \GermanText{Bei \textbf{Präsens + gerade} ist meistens die laufende Bedeutung gemeint: \glqq Ich esse gerade.\grqq Bei \textbf{Perfekt + gerade} ist ohne weiteren Kontext oft die Bedeutung \glqq soeben\grqq gemeint: \glqq Ich habe gerade gegessen.\grqq}
+            \EnglishText{With \textbf{present tense + gerade}, the ongoing meaning is usually intended: ``I am eating right now.'' With \textbf{perfect tense + gerade}, without further context the meaning is often ``just'': ``I have just eaten.''}
+        \end{grammarentry}
+
+    \section{Andere Verlaufsformen \textnormal{(Other progressive constructions)}}
+
+        \begin{grammarentry}{am + nominalisierter Infinitiv + sein}{Regional / colloquial}
+            \GermanText{In Teilen des deutschen Sprachraums gibt es auch die sogenannte \textbf{am-Progressiv}-Konstruktion, zum Beispiel \glqq Ich war am Arbeiten.\grqq Sie drückt sehr direkt eine laufende Handlung aus.}
+            \EnglishText{In parts of the German-speaking area there is also the so-called \textbf{am-progressive} construction, for example ``Ich war am Arbeiten.'' It expresses an ongoing action very directly.}
+
+            \GermanText{Für allgemeines Standarddeutsch und besonders für eine B1-Prüfung solltest du diese Form nicht als deine Hauptkonstruktion lernen. \textbf{gerade} und \textbf{dabei sein, ... zu ...} sind sicherer und allgemein verständlich.}
+            \EnglishText{For general Standard German and especially for a B1 exam, you should not learn this form as your main construction. \textbf{gerade} and \textbf{dabei sein, ... zu ...} are safer and universally understandable.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich war am Arbeiten, als er kam.}{I was working when he came. Regional/colloquial in many contexts.}
+                \ExampleItem{Ich war gerade dabei zu arbeiten, als er kam.}{I was in the middle of working when he came. General Standard German.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Wie übersetzt man englische Past-Continuous-Sätze? \textnormal{(How should English Past Continuous sentences be translated?)}}
+
+        \begin{grammarentry}{Praktische Strategie}{Translation strategy}
+            \GermanText{Übersetze das englische \textbf{was/were + -ing} nicht mechanisch mit einer einzigen deutschen Form. Frage zuerst: Muss ich ausdrücklich zeigen, dass die Handlung gerade im Verlauf war?}
+            \EnglishText{Do not mechanically translate English \textbf{was/were + -ing} with one single German form. First ask: Do I need to explicitly show that the action was in progress?}
+
+            \GermanText{Wenn nein, reicht oft ein normales Präteritum oder Perfekt. Wenn ja, benutze \textbf{gerade}. Wenn du maximale Eindeutigkeit willst, benutze \textbf{war gerade dabei, ... zu ...}.}
+            \EnglishText{If not, an ordinary preterite or perfect tense is often enough. If yes, use \textbf{gerade}. If you want maximum clarity, use \textbf{war gerade dabei, ... zu ...}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{I was reading when she arrived. --- Ich las gerade, als sie ankam.}{A direct narrative translation with preterite + gerade.}
+                \ExampleItem{I was reading when she arrived. --- Ich habe gerade gelesen, als sie angekommen ist.}{A possible spoken-German version with perfect tense.}
+                \ExampleItem{I was reading when she arrived. --- Ich war gerade dabei zu lesen, als sie ankam.}{An explicit and unambiguous progressive version.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Dein Beispielsatz \textnormal{(Your example sentence)}}
+
+        \begin{grammarentry}{I was talking about the problem when you interrupted me}{Three useful German versions}
+            \GermanText{\textbf{Ich sprach gerade über das Problem, als du mich unterbrochen hast.} --- gut für eine erzählende oder schriftliche Form.}
+            \EnglishText{\textbf{I was talking about the problem when you interrupted me.} --- good for narrative or written style.}
+
+            \GermanText{\textbf{Ich habe gerade über das Problem gesprochen, als du mich unterbrochen hast.} --- in gesprochener Sprache möglich; durch \textbf{als du mich unterbrochen hast} wird die laufende Bedeutung klar.}
+            \EnglishText{\textbf{I was talking about the problem when you interrupted me.} --- possible in spoken German; the clause \textbf{when you interrupted me} makes the ongoing meaning clear.}
+
+            \GermanText{\textbf{Ich war gerade dabei, über das Problem zu sprechen, als du mich unterbrochen hast.} --- am eindeutigsten, wenn du die laufende Handlung ausdrücklich hervorheben willst.}
+            \EnglishText{\textbf{I was in the middle of talking about the problem when you interrupted me.} --- the clearest version when you explicitly want to emphasize the ongoing action.}
+        \end{grammarentry}
+
+    \section{Häufige Fehler \textnormal{(Common mistakes)}}
+
+        \begin{grammarentry}{Nicht Wort für Wort aus dem Englischen übersetzen}{Avoid literal transfer}
+            \GermanText{Falsch ist es, eine englische Form wie \glqq was speaking\grqq als besondere deutsche Verbform nachzubauen. Deutsch hat dafür keine eigene Flexionsform.}
+            \EnglishText{It is incorrect to try to recreate an English form such as ``was speaking'' as a special German verb form. German has no separate inflectional form for it.}
+
+            \GermanText{Verwechsle außerdem \textbf{gerade + Perfekt} nicht automatisch mit einer laufenden Handlung. \glqq Ich habe gerade gegessen\grqq bedeutet normalerweise \glqq I have just eaten\grqq, nicht \glqq I was eating\grqq.}
+            \EnglishText{Also, do not automatically equate \textbf{gerade + perfect tense} with an ongoing action. ``Ich habe gerade gegessen'' normally means ``I have just eaten,'' not ``I was eating.''}
+
+            \GermanText{Wenn die Verlaufsbedeutung wichtig und der Kontext nicht eindeutig ist, ist \textbf{war gerade dabei, ... zu ...} die sicherste Form.}
+            \EnglishText{If the ongoing meaning is important and the context is not clear, \textbf{war gerade dabei, ... zu ...} is the safest form.}
+        \end{grammarentry}
+
+    \section{Zusammenfassung \textnormal{(Summary)}}
+
+        \begin{grammarentry}{Merksätze}{Key rules}
+            \GermanText{1. Deutsch hat kein eigenes Past Continuous.}
+            \EnglishText{1. German has no separate Past Continuous tense.}
+
+            \GermanText{2. \textbf{Präteritum + gerade} kann eine laufende vergangene Handlung sehr gut ausdrücken.}
+            \EnglishText{2. \textbf{Preterite + gerade} can express an ongoing past action very well.}
+
+            \GermanText{3. \textbf{Perfekt + gerade} kann in der gesprochenen Sprache ebenfalls eine laufende Bedeutung haben, wenn der Kontext sie klar macht. Ohne passenden Kontext bedeutet es jedoch oft \glqq soeben\grqq.}
+            \EnglishText{3. \textbf{Perfect tense + gerade} can also have an ongoing meaning in spoken German if the context makes it clear. Without suitable context, however, it often means ``just.''}
+
+            \GermanText{4. \textbf{war gerade dabei, ... zu ...} ist eine besonders eindeutige Möglichkeit, das englische Past Continuous auszudrücken.}
+            \EnglishText{4. \textbf{war gerade dabei, ... zu ...} is an especially clear way to express the English Past Continuous.}
+
+            \GermanText{5. Oft genügt im Deutschen auch ein normales Präteritum oder Perfekt, weil der Kontext bereits zeigt, dass die Handlung im Verlauf war.}
+            \EnglishText{5. In German, an ordinary preterite or perfect tense is often sufficient because the context already shows that the action was in progress.}
+        \end{grammarentry}
+
+\end{document}
