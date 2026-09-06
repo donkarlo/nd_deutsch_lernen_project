@@ -1,23 +1,215 @@
-\documentclass[a4paper]{article}
-\usepackage{graphicx}
-\usepackage{amsmath,amssymb}
-\usepackage{hyperref}
-\usepackage{minted}
-
-\title{}
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[table]{xcolor}
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{6pt}
+\titleformat{\section}[block]{\Large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+\titleformat{\subsection}[block]{\large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+\begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]#3\end{tcolorbox}}{}
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\title{Die Uhrzeit sagen \textnormal{(Telling the time)}}
 \date{}
 \begin{document}
-    \maketitle
-    3:30 = halb vier
-    
-    halb fünf [halp fʏnf]: half past four (four thirty)\\
-    ex: Es ist halb fünf: It is half past four.\\
-    ex: Wir treffen uns um halb fünf: We meet at half past four.
-    
-    
-    \section{Fargen um Zeit}
-        Wie spät ist est?
-    
-    \section{Näherung}
-        \textbf{gegen} sechs Uhr: around 6:00 oclock
+\maketitle
+\tableofcontents
+\newpage
+\section{Grundidee \textnormal{(Basic idea)}}
+\begin{grammarentry}{Zwei Systeme}{Two systems}
+\GermanText{Im Deutschen gibt es zwei wichtige Arten, eine Uhrzeit zu sagen: die \textbf{offizielle oder digitale Form} und die \textbf{umgangssprachliche Form}.}
+\EnglishText{In German there are two important ways to tell the time: the \textbf{official or digital form} and the \textbf{colloquial form}.}
+\GermanText{Die offizielle Form verwendet häufig die 24-Stunden-Uhr. Die Alltagssprache verwendet oft \textbf{vor}, \textbf{nach}, \textbf{halb} und Viertel-Formen.}
+\EnglishText{The official form often uses the 24-hour clock. Everyday speech often uses \textbf{vor}, \textbf{nach}, \textbf{halb}, and quarter-hour forms.}
+\end{grammarentry}
+\section{Nach der Uhrzeit fragen \textnormal{(Asking the time)}}
+\begin{grammarentry}{Wie spät ist es?}{What time is it?}
+\GermanText{Die normale Frage nach der aktuellen Uhrzeit lautet: \textbf{Wie spät ist es?}}
+\EnglishText{The normal question for the current time is: \textbf{What time is it?}}
+\GermanText{Auch möglich ist: \textbf{Wie viel Uhr ist es?}}
+\EnglishText{Also possible: \textbf{What time is it?}}
+\GermanText{Nach der Uhrzeit eines Ereignisses fragt man: \textbf{Um wie viel Uhr ...?} oder einfacher \textbf{Wann ...?}}
+\EnglishText{To ask for the time of an event, use: \textbf{At what time ...?} or more simply \textbf{When ...?}}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Wie spät ist es? -- Es ist halb fünf.}{What time is it? -- It is half past four.}
+\ExampleItem{Um wie viel Uhr beginnt der Kurs? -- Um acht Uhr.}{At what time does the course begin? -- At eight o'clock.}
+\end{itemize}\end{exbox}
+\section{Volle Stunden \textnormal{(Full hours)}}
+\begin{grammarentry}{Es ist ... Uhr}{It is ... o'clock}
+\GermanText{Bei einer vollen Stunde kann man \textbf{Uhr} verwenden: \textbf{Es ist drei Uhr}. In einer einfachen Antwort ist auch \textbf{Es ist drei} möglich.}
+\EnglishText{For an exact full hour, you can use \textbf{Uhr}: \textbf{It is three o'clock}. In a simple answer, \textbf{It is three} is also possible.}
+\end{grammarentry}
+\section{Offizielle und digitale Uhrzeit \textnormal{(Official and digital time)}}
+\begin{grammarentry}{24-Stunden-System}{24-hour system}
+\GermanText{In Fahrplänen, Durchsagen, Terminen und anderen formellen Situationen wird häufig die 24-Stunden-Uhr verwendet. Die Struktur lautet: \textbf{Stunde + Uhr + Minuten}.}
+\EnglishText{Timetables, announcements, appointments, and other formal situations often use the 24-hour clock. The structure is: \textbf{hour + Uhr + minutes}.}
+\GermanText{Bei dieser Form sagt man die Minuten als Zahl und verwendet normalerweise nicht \textbf{vor}, \textbf{nach} oder \textbf{halb}.}
+\EnglishText{In this form, the minutes are spoken as a number and \textbf{vor}, \textbf{nach}, and \textbf{halb} are normally not used.}
+\end{grammarentry}
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{2.7cm}|p{5cm}|p{6cm}}
+\rowcolor{HeaderBlueDark}\color{white}\textbf{Uhrzeit (Time)}&\color{white}\textbf{Deutsch (German)}&\color{white}\textbf{English}\\
+08:05 & acht Uhr fünf & eight oh five \\
+09:15 & neun Uhr fünfzehn & nine fifteen \\
+12:30 & zwölf Uhr dreißig & twelve thirty \\
+16:45 & sechzehn Uhr fünfundvierzig & four forty-five p.m. \\
+21:10 & einundzwanzig Uhr zehn & nine ten p.m. \\
+\end{longtable}
+\section{Alltagssprache: nach und vor \textnormal{(Colloquial time: past and to)}}
+\begin{grammarentry}{nach}{Minutes past the hour}
+\GermanText{\textbf{nach} zählt die Minuten nach der letzten vollen Stunde: \textbf{zehn nach vier} = 4:10.}
+\EnglishText{\textbf{nach} counts the minutes after the last full hour: \textbf{zehn nach vier} = 4:10.}
+\end{grammarentry}
+\begin{grammarentry}{vor}{Minutes to the next hour}
+\GermanText{\textbf{vor} zählt die Minuten bis zur nächsten vollen Stunde: \textbf{zehn vor fünf} = 4:50.}
+\EnglishText{\textbf{vor} counts the minutes until the next full hour: \textbf{zehn vor fünf} = 4:50.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Es ist fünf nach zwei.}{It is five past two.}
+\ExampleItem{Es ist zwanzig nach acht.}{It is twenty past eight.}
+\ExampleItem{Es ist zehn vor sechs.}{It is ten to six.}
+\end{itemize}\end{exbox}
+\section{halb richtig verstehen \textnormal{(Understanding halb)}}
+\begin{grammarentry}{halb + nächste Stunde}{Half past}
+\GermanText{Im Deutschen bezieht sich \textbf{halb} auf die \textbf{kommende Stunde}. Deshalb bedeutet \textbf{halb fünf} = 4:30, nicht 5:30.}
+\EnglishText{In German, \textbf{halb} refers to the \textbf{coming hour}. Therefore \textbf{halb fünf} = 4:30, not 5:30.}
+\GermanText{Merksatz: \textbf{halb X} = eine halbe Stunde vor X.}
+\EnglishText{Rule to remember: \textbf{halb X} = half an hour before X.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{3:30 = halb vier.}{3:30 = half past three.}
+\ExampleItem{4:30 = halb fünf.}{4:30 = half past four.}
+\ExampleItem{Wir treffen uns um halb fünf.}{We meet at half past four.}
+\end{itemize}\end{exbox}
+\section{Viertelstunden \textnormal{(Quarter hours)}}
+\begin{grammarentry}{Viertel nach / Viertel vor}{Quarter past / quarter to}
+\GermanText{Überregional verständlich sind \textbf{Viertel nach vier} = 4:15 und \textbf{Viertel vor fünf} = 4:45.}
+\EnglishText{Widely understood forms are \textbf{Viertel nach vier} = 4:15 and \textbf{Viertel vor fünf} = 4:45.}
+\end{grammarentry}
+\section{Regionale Formen in Österreich \textnormal{(Regional forms in Austria)}}
+\begin{grammarentry}{Viertel fünf / dreiviertel fünf}{Regional quarter-hour system}
+\GermanText{In Österreich und in einigen Regionen Deutschlands hört man auch \textbf{Viertel fünf} für 4:15 und \textbf{dreiviertel fünf} für 4:45. Wie \textbf{halb fünf} beziehen sich diese Formen auf die kommende Stunde fünf.}
+\EnglishText{In Austria and in some regions of Germany, you can also hear \textbf{Viertel fünf} for 4:15 and \textbf{dreiviertel fünf} for 4:45. Like \textbf{halb fünf}, these forms refer to the coming hour, five.}
+\GermanText{Wenn du überall im deutschsprachigen Raum eindeutig verstanden werden möchtest, sind \textbf{Viertel nach vier} und \textbf{Viertel vor fünf} die sichereren Formen.}
+\EnglishText{If you want to be understood unambiguously throughout the German-speaking area, \textbf{Viertel nach vier} and \textbf{Viertel vor fünf} are the safer forms.}
+\end{grammarentry}
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{2.5cm}|p{4.5cm}|p{4.5cm}|p{3.2cm}}
+\rowcolor{HeaderBlueDark}\color{white}\textbf{Zeit (Time)}&\color{white}\textbf{Überregional (Widely understood)}&\color{white}\textbf{Regional (Regional)}&\color{white}\textbf{English}\\
+4:15 & Viertel nach vier & Viertel fünf & quarter past four \\
+4:30 & halb fünf & halb fünf & half past four \\
+4:45 & Viertel vor fünf & dreiviertel fünf & quarter to five \\
+\end{longtable}
+\section{Minuten rund um halb \textnormal{(Minutes around half past)}}
+\begin{grammarentry}{vor halb / nach halb}{Before and after half past}
+\GermanText{In der Alltagssprache kann man Minuten relativ zu \textbf{halb} ausdrücken: \textbf{fünf vor halb fünf} = 4:25; \textbf{fünf nach halb fünf} = 4:35.}
+\EnglishText{In everyday speech, minutes can be expressed relative to \textbf{halb}: \textbf{fünf vor halb fünf} = 4:25; \textbf{fünf nach halb fünf} = 4:35.}
+\end{grammarentry}
+\section{Das Wort Uhr \textnormal{(The word Uhr)}}
+\begin{grammarentry}{Wann steht Uhr?}{When is Uhr used?}
+\GermanText{In der offiziellen Form steht \textbf{Uhr} zwischen Stunde und Minuten: \textbf{acht Uhr zwanzig}. Bei einer vollen Stunde ist \textbf{acht Uhr} normal.}
+\EnglishText{In the official form, \textbf{Uhr} stands between the hour and the minutes: \textbf{acht Uhr zwanzig}. For a full hour, \textbf{acht Uhr} is normal.}
+\GermanText{Mit \textbf{vor}, \textbf{nach}, \textbf{halb} oder \textbf{Viertel} verwendet man normalerweise kein \textbf{Uhr}: \textbf{halb acht}, nicht \textbf{halb acht Uhr}.}
+\EnglishText{With \textbf{vor}, \textbf{nach}, \textbf{halb}, or \textbf{Viertel}, \textbf{Uhr} is normally omitted: \textbf{halb acht}, not \textbf{halb acht Uhr}.}
+\end{grammarentry}
+\section{um bei einem Zeitpunkt \textnormal{(Using um for a point in time)}}
+\begin{grammarentry}{um + Uhrzeit}{At + time}
+\GermanText{Wenn eine Handlung zu einem bestimmten Zeitpunkt stattfindet, verwendet man normalerweise \textbf{um}: \textbf{um acht Uhr}, \textbf{um halb neun}, \textbf{um Viertel vor neun}.}
+\EnglishText{When an action takes place at a specific time, German normally uses \textbf{um}: \textbf{at eight o'clock}, \textbf{at half past eight}, \textbf{at quarter to nine}.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Der Film beginnt um 20 Uhr.}{The film begins at 8 p.m.}
+\ExampleItem{Ich stehe um halb sieben auf.}{I get up at half past six.}
+\end{itemize}\end{exbox}
+\section{Ungefähre Uhrzeiten \textnormal{(Approximate times)}}
+\begin{grammarentry}{gegen / etwa / ungefähr}{Around / approximately}
+\GermanText{\textbf{gegen sechs Uhr} bedeutet ungefähr um sechs Uhr. Auch \textbf{etwa um sechs Uhr} und \textbf{ungefähr um sechs Uhr} sind möglich.}
+\EnglishText{\textbf{gegen sechs Uhr} means around six o'clock. \textbf{etwa um sechs Uhr} and \textbf{ungefähr um sechs Uhr} are also possible.}
+\end{grammarentry}
+\section{Tageszeit eindeutig machen \textnormal{(Making the time of day clear)}}
+\begin{grammarentry}{morgens bis nachts}{Parts of the day}
+\GermanText{In der Alltagssprache wird oft nur die 12-Stunden-Zahl gesagt. Wenn der Kontext nicht klar ist, kann man \textbf{morgens}, \textbf{vormittags}, \textbf{mittags}, \textbf{nachmittags}, \textbf{abends} oder \textbf{nachts} ergänzen.}
+\EnglishText{In everyday speech, people often use only the 12-hour number. If the context is unclear, add \textbf{in the morning}, \textbf{late morning}, \textbf{at noon}, \textbf{in the afternoon}, \textbf{in the evening}, or \textbf{at night}.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Wir treffen uns um acht Uhr morgens.}{We meet at eight in the morning.}
+\ExampleItem{Der Kurs beginnt um sechs Uhr abends.}{The course begins at six in the evening.}
+\ExampleItem{Ich bin um zwei Uhr nachts aufgewacht.}{I woke up at two at night.}
+\end{itemize}\end{exbox}
+\section{Mitternacht und Mittag \textnormal{(Midnight and noon)}}
+\begin{grammarentry}{0:00 und 12:00}{Midnight and noon}
+\GermanText{\textbf{Mitternacht} bezeichnet 0:00 Uhr. \textbf{Mittag} oder \textbf{zwölf Uhr mittags} bezeichnet 12:00 Uhr. In offiziellen Angaben kann man \textbf{null Uhr} für 0:00 verwenden.}
+\EnglishText{\textbf{Mitternacht} means midnight. \textbf{Mittag} or \textbf{zwölf Uhr mittags} means noon. In official time expressions, \textbf{null Uhr} can be used for 00:00.}
+\end{grammarentry}
+\section{Zeiträume und Grenzen \textnormal{(Time ranges and limits)}}
+\begin{grammarentry}{von ... bis / ab / bis}{From ... to / from / until}
+\GermanText{Für einen Zeitraum verwendet man \textbf{von ... bis ...}: \textbf{von acht bis zehn Uhr}. \textbf{ab} bezeichnet den Beginn: \textbf{ab acht Uhr}. \textbf{bis} bezeichnet die zeitliche Grenze: \textbf{bis zehn Uhr}.}
+\EnglishText{For a time range, use \textbf{von ... bis ...}: \textbf{from eight to ten o'clock}. \textbf{ab} marks the starting point and \textbf{bis} marks the time limit.}
+\end{grammarentry}
+\section{Schneller Vergleich \textnormal{(Quick comparison)}}
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{2.5cm}|p{5.3cm}|p{5.3cm}}
+\rowcolor{HeaderBlueDark}\color{white}\textbf{Zahl (Digits)}&\color{white}\textbf{Alltagssprache (Colloquial)}&\color{white}\textbf{Offiziell (Official)}\\
+04:00 & vier Uhr / vier & vier Uhr \\
+04:05 & fünf nach vier & vier Uhr fünf \\
+04:15 & Viertel nach vier & vier Uhr fünfzehn \\
+04:25 & fünf vor halb fünf & vier Uhr fünfundzwanzig \\
+04:30 & halb fünf & vier Uhr dreißig \\
+04:35 & fünf nach halb fünf & vier Uhr fünfunddreißig \\
+04:45 & Viertel vor fünf & vier Uhr fünfundvierzig \\
+04:55 & fünf vor fünf & vier Uhr fünfundfünfzig \\
+\end{longtable}
+\section{Typische Fehler \textnormal{(Common mistakes)}}
+\begin{grammarentry}{halb falsch interpretieren}{Misunderstanding halb}
+\GermanText{Falsch gedacht: \textbf{halb fünf = 5:30}. Richtig: \textbf{halb fünf = 4:30}.}
+\EnglishText{Wrong interpretation: \textbf{halb fünf = 5:30}. Correct: \textbf{halb fünf = 4:30}.}
+\end{grammarentry}
+\begin{grammarentry}{Uhr nach halb}{Using Uhr after halb}
+\GermanText{Nicht: \textbf{um halb fünf Uhr}. Normal ist: \textbf{um halb fünf}.}
+\EnglishText{Not: \textbf{um halb fünf Uhr}. The normal form is: \textbf{um halb fünf}.}
+\end{grammarentry}
+\begin{grammarentry}{um in einer reinen Zeitantwort}{Using um in a simple time answer}
+\GermanText{Auf \glqq Wie spät ist es?\grqq{} antwortet man: \textbf{Es ist fünf Uhr}. \textbf{um} verwendet man, wenn die Uhrzeit mit einer Handlung verbunden ist: \textbf{Der Kurs beginnt um fünf Uhr}.}
+\EnglishText{To ``What time is it?'' answer: \textbf{It is five o'clock}. Use \textbf{um} when the time is connected to an action: \textbf{The course begins at five o'clock}.}
+\end{grammarentry}
+\begin{grammarentry}{24-Stunden- und Umgangsform mischen}{Mixing 24-hour and colloquial forms}
+\GermanText{Für 16:30 sagt man umgangssprachlich \textbf{halb fünf} oder offiziell \textbf{sechzehn Uhr dreißig}; normalerweise nicht \textbf{halb siebzehn}.}
+\EnglishText{For 16:30, say colloquially \textbf{halb fünf} or officially \textbf{sechzehn Uhr dreißig}; normally not \textbf{halb siebzehn}.}
+\end{grammarentry}
+\section{Zusammenfassung \textnormal{(Summary)}}
+\begin{grammarentry}{Merksätze}{Key rules}
+\GermanText{\textbf{Wie spät ist es?} fragt nach der aktuellen Uhrzeit. \textbf{Um wie viel Uhr?} fragt nach der Uhrzeit eines Ereignisses.}
+\EnglishText{\textbf{Wie spät ist es?} asks for the current time. \textbf{Um wie viel Uhr?} asks for the time of an event.}
+\GermanText{\textbf{um + Uhrzeit} bezeichnet einen bestimmten Zeitpunkt.}
+\EnglishText{\textbf{um + time} expresses a specific point in time.}
+\GermanText{\textbf{halb fünf = 4:30}. \textbf{Viertel nach vier = 4:15}. \textbf{Viertel vor fünf = 4:45}. In Österreich hört man regional auch \textbf{Viertel fünf} und \textbf{dreiviertel fünf}.}
+\EnglishText{\textbf{halb fünf = 4:30}. \textbf{Viertel nach vier = 4:15}. \textbf{Viertel vor fünf = 4:45}. In Austria, regional forms also include \textbf{Viertel fünf} and \textbf{dreiviertel fünf}.}
+\GermanText{Offiziell: \textbf{16:30 = sechzehn Uhr dreißig}. Umgangssprachlich: \textbf{16:30 = halb fünf}.}
+\EnglishText{Officially: \textbf{16:30 = sixteen thirty}. Colloquially: \textbf{16:30 = half past four}.}
+\end{grammarentry}
 \end{document}

@@ -1,0 +1,213 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[table]{xcolor}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.00}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{6pt}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.0em}{0.6em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{0.8em}{0.5em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Das deutsche Verb \glqq stammen\grqq\\\large The German Verb ``stammen''}
+\date{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Grundbedeutung \textnormal{(Basic meaning)}}
+\begin{grammarentry}{stammen}{Verb, intransitiv, regelmäßig}
+\GermanText{\textbf{stammen} bedeutet, seinen Ursprung oder seine Herkunft in einer Person, einem Ort, einer Zeit oder einer Quelle zu haben.}
+\EnglishText{\textbf{stammen} means to have one's origin or provenance in a person, place, time, or source.}
+\GermanText{Aussprache: Betonung auf der ersten Silbe: \textbf{STAM-men}.}
+\EnglishText{Pronunciation: approximately \textit{SHTAHM-men}.}
+\GermanText{Das Verb ist regelmäßig und nicht trennbar. Es wird normalerweise ohne Akkusativobjekt gebraucht.}
+\EnglishText{The verb is regular and non-separable. It is normally used without an accusative object.}
+\end{grammarentry}
+
+\section{Die wichtigste Struktur: \glqq aus + Dativ stammen\grqq\ \textnormal{(The most important structure: ``stammen aus + dative'')}}
+\begin{grammarentry}{aus + Dativ}{Herkunft und Ursprung}
+\GermanText{Mit \textbf{aus + Dativ} bezeichnet \textbf{stammen} meistens die geografische, zeitliche, materielle oder soziale Herkunft.}
+\EnglishText{With \textbf{aus + dative}, \textbf{stammen} usually expresses geographical, temporal, material, or social origin.}
+\GermanText{Struktur: \textbf{jemand/etwas stammt aus + Dativ}.}
+\EnglishText{Structure: \textbf{someone/something comes from + dative}.}
+\end{grammarentry}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich stamme aus dem Iran.}{I come from Iran.}
+\ExampleItem{Sie stammt aus einer kleinen Stadt.}{She comes from a small town.}
+\ExampleItem{Dieses Möbelstück stammt aus dem 19. Jahrhundert.}{This piece of furniture dates from the 19th century.}
+\ExampleItem{Das Wort stammt aus dem Lateinischen.}{The word comes from Latin.}
+\end{itemize}
+\end{exbox}
+
+\section{Die Struktur \glqq von + Dativ stammen\grqq\ \textnormal{(The structure ``stammen von + dative'')}}
+\begin{grammarentry}{von + Dativ}{Urheber, Quelle oder Herkunft}
+\GermanText{Mit \textbf{von + Dativ} nennt man häufig eine Person oder Quelle, von der etwas kommt oder geschaffen wurde.}
+\EnglishText{With \textbf{von + dative}, one often names a person or source from which something comes or by whom it was created.}
+\GermanText{Diese Struktur ist besonders häufig bei Zitaten, Ideen, Werken, Informationen und Gegenständen.}
+\EnglishText{This structure is especially common with quotations, ideas, works, information, and objects.}
+\end{grammarentry}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Dieses Zitat stammt von Goethe.}{This quotation is by Goethe.}
+\ExampleItem{Die Idee stammt von meiner Kollegin.}{The idea comes from my colleague.}
+\ExampleItem{Die Information stammt von einer zuverlässigen Quelle.}{The information comes from a reliable source.}
+\ExampleItem{Der Brief stammt von meinem Großvater.}{The letter is from my grandfather.}
+\end{itemize}
+\end{exbox}
+
+\section{\glqq aus\grqq\ oder \glqq von\grqq? \textnormal{(``aus'' or ``von''?)}}
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{3.0cm}|p{5.2cm}|p{6.0cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Struktur / Structure} & \color{white}\textbf{Deutsch / German} & \color{white}\textbf{English} \\
+\textbf{aus + Dativ} & Herkunft aus einem Ort, einer Zeit, Sprache, Gruppe oder einem Bereich. & Origin from a place, period, language, group, or domain. \\
+\textbf{von + Dativ} & Ursprung bei einer Person oder konkreten Quelle; oft Urheber oder Absender. & Origin from a person or concrete source; often author, creator, or sender. \\
+\end{longtable}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Das Gemälde stammt aus dem 18. Jahrhundert.}{The painting dates from the 18th century.}
+\ExampleItem{Das Gemälde stammt von einem österreichischen Künstler.}{The painting is by an Austrian artist.}
+\end{itemize}
+\end{exbox}
+
+\section{Personen und Herkunft \textnormal{(People and origin)}}
+\begin{grammarentry}{stammen aus}{bei Personen}
+\GermanText{Bei Personen bedeutet \textbf{aus einem Land, einer Stadt oder einer Familie stammen}, dort seine Herkunft zu haben.}
+\EnglishText{With people, \textbf{to come from a country, city, or family} means to have one's origin there.}
+\GermanText{\textbf{Ich stamme aus Österreich} beschreibt die Herkunft. Für den heutigen Wohnort benutzt man dagegen normalerweise \textbf{wohnen} oder \textbf{leben}.}
+\EnglishText{\textbf{Ich stamme aus Österreich} describes origin. For one's current place of residence, German normally uses \textbf{wohnen} or \textbf{leben}.}
+\end{grammarentry}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Er stammt aus Wien, lebt aber jetzt in Graz.}{He comes from Vienna but now lives in Graz.}
+\ExampleItem{Sie stammt aus einer Musikerfamilie.}{She comes from a family of musicians.}
+\end{itemize}
+\end{exbox}
+
+\section{Unterschied zwischen \glqq stammen\grqq\ und \glqq kommen\grqq\ \textnormal{(Difference between ``stammen'' and ``kommen'')}}
+\begin{grammarentry}{stammen vs. kommen}{Herkunft}
+\GermanText{\textbf{kommen aus} und \textbf{stammen aus} können beide Herkunft ausdrücken. Bei Personen ist \textbf{kommen aus} im Alltag meist neutraler und häufiger. \textbf{stammen aus} klingt oft etwas sachlicher und betont stärker die Herkunft oder den Ursprung.}
+\EnglishText{\textbf{kommen aus} and \textbf{stammen aus} can both express origin. With people, \textbf{kommen aus} is usually more neutral and more common in everyday speech. \textbf{stammen aus} often sounds somewhat more factual and emphasizes origin more strongly.}
+\GermanText{Bei historischen Gegenständen, Wörtern, Ideen und Quellen ist \textbf{stammen} besonders typisch.}
+\EnglishText{With historical objects, words, ideas, and sources, \textbf{stammen} is especially typical.}
+\end{grammarentry}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich komme aus Graz.}{I come from Graz.}
+\ExampleItem{Ich stamme aus Graz.}{I originate from / come from Graz.}
+\ExampleItem{Dieses Dokument stammt aus dem Jahr 1920.}{This document dates from the year 1920.}
+\end{itemize}
+\end{exbox}
+
+\section{Unterschied zwischen \glqq stammen\grqq\ und \glqq abstammen\grqq\ \textnormal{(Difference between ``stammen'' and ``abstammen'')}}
+\begin{grammarentry}{abstammen von}{Abstammung und Vorfahren}
+\GermanText{\textbf{abstammen von + Dativ} benutzt man besonders für biologische oder genealogische Abstammung, also für Vorfahren und Entwicklungslinien.}
+\EnglishText{\textbf{abstammen von + dative} is used especially for biological or genealogical descent, that is, for ancestors and lines of development.}
+\GermanText{\textbf{stammen aus} ist allgemeiner und beschreibt Herkunft; \textbf{abstammen von} betont Abstammung von Vorfahren oder einer früheren Form.}
+\EnglishText{\textbf{stammen aus} is more general and describes origin; \textbf{abstammen von} emphasizes descent from ancestors or an earlier form.}
+\end{grammarentry}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Er stammt aus einer alten Familie.}{He comes from an old family.}
+\ExampleItem{Er stammt von einer alten Familie ab.}{He descends from an old family.}
+\end{itemize}
+\end{exbox}
+
+\section{Konjugation \textnormal{(Conjugation)}}
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{3.4cm}|p{5.0cm}|p{5.5cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Form / Form} & \color{white}\textbf{Deutsch / German} & \color{white}\textbf{English} \\
+Präsens & ich stamme & I come from / originate \\
+Präteritum & ich stammte & I came from / originated \\
+Perfekt & ich habe gestammt & I have come from / originated \\
+Plusquamperfekt & ich hatte gestammt & I had come from / originated \\
+Futur I & ich werde stammen & I will come from / originate \\
+Konjunktiv II & ich würde stammen & I would come from / originate \\
+Konjunktiv I & ich stamme & I come from / originate \\
+Partizip II & gestammt & originated / come from \\
+\end{longtable}
+\begin{grammarentry}{Hinweis zum Perfekt}{usage note}
+\GermanText{Die Perfektform \textbf{hat gestammt} ist grammatisch möglich, aber in vielen Herkunftsaussagen verwendet man häufiger Präsens oder Präteritum, weil die Herkunft meist als dauerhafte Tatsache verstanden wird.}
+\EnglishText{The perfect form \textbf{hat gestammt} is grammatically possible, but in many statements of origin, the present or simple past is more common because origin is usually understood as a lasting fact.}
+\end{grammarentry}
+
+\section{Typische Bedeutungsbereiche \textnormal{(Typical semantic areas)}}
+\begin{grammarentry}{Herkunft}{wichtige Verwendungen}
+\GermanText{\textbf{Person:} aus einem Land, einer Stadt, Region oder Familie stammen.}
+\EnglishText{\textbf{Person:} to come from a country, city, region, or family.}
+\GermanText{\textbf{Zeit:} aus einer bestimmten Epoche oder einem Jahr stammen.}
+\EnglishText{\textbf{Time:} to date from a particular period or year.}
+\GermanText{\textbf{Sprache:} ein Wort stammt aus einer anderen Sprache.}
+\EnglishText{\textbf{Language:} a word comes from another language.}
+\GermanText{\textbf{Urheber:} ein Zitat, eine Idee oder ein Werk stammt von jemandem.}
+\EnglishText{\textbf{Creator/source:} a quotation, idea, or work comes from / is by someone.}
+\GermanText{\textbf{Quelle:} Daten oder Informationen stammen aus einer Studie oder von einer Institution.}
+\EnglishText{\textbf{Source:} data or information comes from a study or institution.}
+\end{grammarentry}
+
+\section{Typische Fehler \textnormal{(Common mistakes)}}
+\begin{grammarentry}{Kasus und Präposition}{wichtig}
+\GermanText{Nach \textbf{aus} und \textbf{von} steht immer der \textbf{Dativ}.}
+\EnglishText{After \textbf{aus} and \textbf{von}, German always uses the \textbf{dative}.}
+\GermanText{Richtig: \textbf{Ich stamme aus dem Iran.} Nicht: \textbf{aus den Iran}.}
+\EnglishText{Correct: \textbf{Ich stamme aus dem Iran.} Not: \textbf{aus den Iran}.}
+\GermanText{Richtig: \textbf{Die Idee stammt von meiner Freundin.} Nicht: \textbf{von meine Freundin}.}
+\EnglishText{Correct: \textbf{Die Idee stammt von meiner Freundin.} Not: \textbf{von meine Freundin}.}
+\end{grammarentry}
+
+\section{Zusammenfassung \textnormal{(Summary)}}
+\begin{grammarentry}{Merksatz}{kurz und wichtig}
+\GermanText{\textbf{stammen aus + Dativ} = Herkunft aus einem Ort, einer Zeit, Sprache, Familie oder einem Bereich.}
+\EnglishText{\textbf{stammen aus + dative} = origin from a place, time, language, family, or domain.}
+\GermanText{\textbf{stammen von + Dativ} = Ursprung bei einer Person oder konkreten Quelle; oft Urheber, Absender oder Quelle.}
+\EnglishText{\textbf{stammen von + dative} = origin from a person or concrete source; often author, sender, or source.}
+\GermanText{\textbf{abstammen von + Dativ} = genealogisch oder biologisch von Vorfahren bzw. einer früheren Form herkommen.}
+\EnglishText{\textbf{abstammen von + dative} = to descend genealogically or biologically from ancestors or an earlier form.}
+\end{grammarentry}
+
+\end{document}
