@@ -1,0 +1,355 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[table]{xcolor}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{5pt}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Possessivartikel \textnormal{(Possessive Determiners)}}
+\date{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Grundidee \textnormal{(Basic idea)}}
+
+\begin{grammarentry}{Possessivartikel}{Possessive determiner}
+\GermanText{Possessivartikel zeigen Besitz, Zugehörigkeit oder eine persönliche Beziehung. Sie stehen normalerweise direkt vor einem Nomen: \textbf{mein Hund}, \textbf{deine Wohnung}, \textbf{unsere Freunde}.}
+\EnglishText{Possessive determiners express possession, belonging, or a personal relationship. They normally stand directly before a noun: \textbf{mein Hund}, \textbf{deine Wohnung}, \textbf{unsere Freunde}.}
+
+\GermanText{Wichtig: Ein Possessivartikel begleitet ein Nomen. Wenn die Besitzform ohne Nomen steht und das Nomen ersetzt, spricht man von einem \textbf{Possessivpronomen}.}
+\EnglishText{Important: A possessive determiner accompanies a noun. If the possessive form stands without a noun and replaces that noun, it is called a \textbf{possessive pronoun}.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Das ist mein Hund.}{That is my dog.}
+\ExampleItem{Das ist meine Wohnung.}{That is my apartment.}
+\ExampleItem{Unsere Freunde kommen heute.}{Our friends are coming today.}
+\end{itemize}
+\end{exbox}
+
+\section{Die Grundformen nach der Person \textnormal{(Base forms by person)}}
+
+\begin{grammarentry}{Wer besitzt etwas?}{Who possesses something?}
+\GermanText{Die Grundform des Possessivartikels richtet sich nach der Person, die etwas besitzt.}
+\EnglishText{The base form of the possessive determiner depends on the person who possesses something.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{2.2cm}|p{3.0cm}|p{3.2cm}|p{5.0cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Person} &
+\color{white}\textbf{Grundform} &
+\color{white}\textbf{English} &
+\color{white}\textbf{Beispiel / Example} \\
+ich & mein- & my & mein Hund \\
+du & dein- & your & dein Hund \\
+er & sein- & his & sein Hund \\
+sie & ihr- & her & ihr Hund \\
+es & sein- & its & sein Futter \\
+wir & unser- & our & unser Hund \\
+ihr & euer- & your & euer Hund \\
+sie & ihr- & their & ihr Hund \\
+Sie & Ihr- & your (formal) & Ihr Hund \\
+\end{longtable}
+
+\begin{grammarentry}{Großschreibung bei \glqq Ihr\grqq}{Capitalization of formal \glqq Ihr\grqq}
+\GermanText{Bei der höflichen Anrede \textbf{Sie} wird auch der zugehörige Possessivartikel großgeschrieben: \textbf{Ihr}, \textbf{Ihre}, \textbf{Ihren}, \textbf{Ihrem} usw.}
+\EnglishText{With formal \textbf{Sie}, the corresponding possessive determiner is also capitalized: \textbf{Ihr}, \textbf{Ihre}, \textbf{Ihren}, \textbf{Ihrem}, etc.}
+\end{grammarentry}
+
+\section{Zwei Entscheidungen gleichzeitig \textnormal{(Two decisions at the same time)}}
+
+\begin{grammarentry}{Stamm und Endung}{Stem and ending}
+\GermanText{Bei einem Possessivartikel muss man zwei Dinge getrennt bestimmen: \textbf{(1)} Die Person des Besitzers bestimmt den Stamm, zum Beispiel \textbf{ich $\rightarrow$ mein-}, \textbf{du $\rightarrow$ dein-}, \textbf{Anna/sie $\rightarrow$ ihr-}. \textbf{(2)} Genus, Numerus und Kasus des folgenden Nomens bestimmen die Endung.}
+\EnglishText{With a possessive determiner, two things must be determined separately: \textbf{(1)} The possessor determines the stem, for example \textbf{ich $\rightarrow$ mein-}, \textbf{du $\rightarrow$ dein-}, \textbf{Anna/sie $\rightarrow$ ihr-}. \textbf{(2)} The gender, number, and case of the following noun determine the ending.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Peter liebt seinen Hund.}{Peter loves his dog.}
+\ExampleItem{Anna liebt ihren Hund.}{Anna loves her dog.}
+\ExampleItem{Anna liebt ihre Katze.}{Anna loves her cat.}
+\end{itemize}
+\end{exbox}
+
+\begin{grammarentry}{Merksatz}{Rule to remember}
+\GermanText{Der \textbf{Besitzer} bestimmt \textbf{mein-/dein-/sein-/ihr-/unser-/euer-}. Das \textbf{besessene Nomen} bestimmt die grammatische Endung.}
+\EnglishText{The \textbf{possessor} determines \textbf{mein-/dein-/sein-/ihr-/unser-/euer-}. The \textbf{possessed noun} determines the grammatical ending.}
+\end{grammarentry}
+
+\section{Deklination der Possessivartikel \textnormal{(Declension of possessive determiners)}}
+
+\begin{grammarentry}{Ein-Wörter}{Ein-word pattern}
+\GermanText{Possessivartikel werden wie \textbf{ein / eine} dekliniert. Deshalb gehören sie zur Gruppe der sogenannten \textbf{Ein-Wörter}.}
+\EnglishText{Possessive determiners are declined like \textbf{ein / eine}. Therefore, they belong to the group often called \textbf{ein-words}.}
+\end{grammarentry}
+
+\subsection{Endungen \textnormal{(Endings)}}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{2.6cm}|*{4}{>{\centering\arraybackslash}p{2.6cm}}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Kasus / Case} &
+\color{white}\textbf{Maskulin / Masculine} &
+\color{white}\textbf{Neutrum / Neuter} &
+\color{white}\textbf{Feminin / Feminine} &
+\color{white}\textbf{Plural / Plural} \\
+Nominativ & -- & -- & -e & -e \\
+Akkusativ & -en & -- & -e & -e \\
+Dativ & -em & -em & -er & -en \\
+Genitiv & -es & -es & -er & -er \\
+\end{longtable}
+
+\subsection{Vollständiges Beispiel mit \glqq mein-\grqq \textnormal{(Complete example with \glqq mein-\grqq)}}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{2.5cm}|p{3.0cm}|p{3.0cm}|p{3.0cm}|p{3.2cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Kasus / Case} &
+\color{white}\textbf{Maskulin} &
+\color{white}\textbf{Neutrum} &
+\color{white}\textbf{Feminin} &
+\color{white}\textbf{Plural} \\
+Nominativ & mein Vater & mein Kind & meine Mutter & meine Freunde \\
+Akkusativ & meinen Vater & mein Kind & meine Mutter & meine Freunde \\
+Dativ & meinem Vater & meinem Kind & meiner Mutter & meinen Freunden \\
+Genitiv & meines Vaters & meines Kindes & meiner Mutter & meiner Freunde \\
+\end{longtable}
+
+\begin{grammarentry}{Dativ Plural}{Dative plural}
+\GermanText{Im Dativ Plural bekommt nicht nur der Possessivartikel die Endung \textbf{-en}; das Nomen bekommt normalerweise zusätzlich ein \textbf{-n}, wenn es diese Endung nicht schon hat: \textbf{mit meinen Freunden}.}
+\EnglishText{In the dative plural, not only does the possessive determiner take \textbf{-en}; the noun normally also receives an additional \textbf{-n} if it does not already have that ending: \textbf{mit meinen Freunden}.}
+\end{grammarentry}
+
+\section{Besonders wichtige Kasusmuster \textnormal{(Especially important case patterns)}}
+
+\begin{grammarentry}{Nominativ}{Nominative}
+\GermanText{Maskulin und Neutrum haben im Nominativ Singular keine Endung am Possessivartikel: \textbf{mein Vater}, \textbf{mein Auto}. Feminin und Plural bekommen \textbf{-e}: \textbf{meine Mutter}, \textbf{meine Freunde}.}
+\EnglishText{Masculine and neuter have no ending on the possessive determiner in nominative singular: \textbf{mein Vater}, \textbf{mein Auto}. Feminine and plural take \textbf{-e}: \textbf{meine Mutter}, \textbf{meine Freunde}.}
+\end{grammarentry}
+
+\begin{grammarentry}{Akkusativ Maskulin}{Accusative masculine}
+\GermanText{Der Akkusativ Maskulin ist besonders wichtig: \textbf{mein Vater $\rightarrow$ meinen Vater}.}
+\EnglishText{The masculine accusative is especially important: \textbf{mein Vater $\rightarrow$ meinen Vater}.}
+\end{grammarentry}
+
+\begin{grammarentry}{Dativ}{Dative}
+\GermanText{Im Dativ sind die typischen Endungen \textbf{-em, -er, -en}: \textbf{meinem Vater}, \textbf{meiner Mutter}, \textbf{meinen Freunden}.}
+\EnglishText{In the dative, the typical endings are \textbf{-em, -er, -en}: \textbf{meinem Vater}, \textbf{meiner Mutter}, \textbf{meinen Freunden}.}
+\end{grammarentry}
+
+\begin{grammarentry}{Genitiv}{Genitive}
+\GermanText{Im Genitiv lauten die typischen Endungen \textbf{-es} bei Maskulin und Neutrum sowie \textbf{-er} bei Feminin und Plural: \textbf{meines Vaters}, \textbf{meines Kindes}, \textbf{meiner Mutter}, \textbf{meiner Freunde}.}
+\EnglishText{In the genitive, the typical endings are \textbf{-es} for masculine and neuter and \textbf{-er} for feminine and plural: \textbf{meines Vaters}, \textbf{meines Kindes}, \textbf{meiner Mutter}, \textbf{meiner Freunde}.}
+\end{grammarentry}
+
+\section{Possessivartikel mit Adjektiv \textnormal{(Possessive determiner with an adjective)}}
+
+\begin{grammarentry}{Gemischte Adjektivdeklination}{Mixed adjective declension}
+\GermanText{Steht zwischen Possessivartikel und Nomen ein Adjektiv, wird das Adjektiv nach der \textbf{gemischten Adjektivdeklination} dekliniert.}
+\EnglishText{If an adjective stands between the possessive determiner and the noun, the adjective follows the \textbf{mixed adjective declension}.}
+
+\GermanText{Wenn der Possessivartikel selbst keine sichtbare Endung trägt, zeigt das Adjektiv deutlicher Genus und Kasus: \textbf{mein neuer Hund}, \textbf{mein neues Auto}.}
+\EnglishText{When the possessive determiner itself has no visible ending, the adjective more clearly marks gender and case: \textbf{mein neuer Hund}, \textbf{mein neues Auto}.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{2.5cm}|p{3.0cm}|p{3.0cm}|p{3.0cm}|p{3.2cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Kasus / Case} &
+\color{white}\textbf{Maskulin} &
+\color{white}\textbf{Neutrum} &
+\color{white}\textbf{Feminin} &
+\color{white}\textbf{Plural} \\
+Nominativ & mein neuer Hund & mein neues Auto & meine neue Wohnung & meine neuen Freunde \\
+Akkusativ & meinen neuen Hund & mein neues Auto & meine neue Wohnung & meine neuen Freunde \\
+Dativ & meinem neuen Hund & meinem neuen Auto & meiner neuen Wohnung & meinen neuen Freunden \\
+Genitiv & meines neuen Hundes & meines neuen Autos & meiner neuen Wohnung & meiner neuen Freunde \\
+\end{longtable}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Schau, das ist mein neuer Hund!}{Look, that is my new dog!}
+\ExampleItem{Ich sehe meinen neuen Hund.}{I see my new dog.}
+\ExampleItem{Ich spiele mit meinem neuen Hund.}{I play with my new dog.}
+\end{itemize}
+\end{exbox}
+
+\section{Possessivartikel oder Possessivpronomen? \textnormal{(Possessive determiner or possessive pronoun?)}}
+
+\begin{grammarentry}{Mit Nomen: Possessivartikel}{With a noun: possessive determiner}
+\GermanText{Steht ein Nomen direkt dahinter, ist die Form ein Possessivartikel: \textbf{mein Hund}, \textbf{meine Tasche}, \textbf{unser Auto}.}
+\EnglishText{If a noun follows directly, the form is a possessive determiner: \textbf{mein Hund}, \textbf{meine Tasche}, \textbf{unser Auto}.}
+\end{grammarentry}
+
+\begin{grammarentry}{Ohne Nomen: Possessivpronomen}{Without a noun: possessive pronoun}
+\GermanText{Ersetzt die Besitzform das Nomen, ist sie ein Possessivpronomen: \textbf{Der Hund ist meiner.} -- \textbf{Welche Tasche ist deine?}}
+\EnglishText{If the possessive form replaces the noun, it is a possessive pronoun: \textbf{Der Hund ist meiner.} -- \textbf{Welche Tasche ist deine?}}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Das ist mein neuer Hund.}{That is my new dog.}
+\ExampleItem{Der neue Hund ist meiner.}{The new dog is mine.}
+\ExampleItem{Ist das deine Tasche? -- Ja, sie ist meine.}{Is that your bag? -- Yes, it is mine.}
+\end{itemize}
+\end{exbox}
+
+\begin{grammarentry}{Häufiger Fehler}{Common error}
+\GermanText{Falsch: \textbf{Das ist meiner neuer Hund.} Richtig: \textbf{Das ist mein neuer Hund.} Vor dem Nomen \textbf{Hund} braucht man den Possessivartikel \textbf{mein}; die Endung \textbf{-er} steht hier am Adjektiv \textbf{neuer}.}
+\EnglishText{Incorrect: \textbf{Das ist meiner neuer Hund.} Correct: \textbf{Das ist mein neuer Hund.} Before the noun \textbf{Hund}, the possessive determiner \textbf{mein} is required; the ending \textbf{-er} appears here on the adjective \textbf{neuer}.}
+\end{grammarentry}
+
+\section{Besonderheiten von \glqq euer-\grqq \textnormal{(Special features of \glqq euer-\grqq)}}
+
+\begin{grammarentry}{euer $\rightarrow$ eure-}{euer $\rightarrow$ eure-}
+\GermanText{Bei \textbf{euer-} fällt in den meisten Formen ein \textbf{e} im Stamm weg, sobald eine Endung folgt: \textbf{euer Vater}, aber \textbf{eure Mutter}, \textbf{euren Vater}, \textbf{eurem Kind}, \textbf{eurer Freunde}.}
+\EnglishText{With \textbf{euer-}, one \textbf{e} in the stem disappears in most forms as soon as an ending is added: \textbf{euer Vater}, but \textbf{eure Mutter}, \textbf{euren Vater}, \textbf{eurem Kind}, \textbf{eurer Freunde}.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ist das euer Auto?}{Is that your car?}
+\ExampleItem{Ich sehe eure Freunde.}{I see your friends.}
+\ExampleItem{Ich spreche mit eurem Lehrer.}{I am speaking with your teacher.}
+\end{itemize}
+\end{exbox}
+
+\section{\glqq sein-\grqq und \glqq ihr-\grqq richtig wählen \textnormal{(Choosing \glqq sein-\grqq and \glqq ihr-\grqq correctly)}}
+
+\begin{grammarentry}{Das Geschlecht des Besitzers}{Gender of the possessor}
+\GermanText{Bei \textbf{er} und einem männlichen Besitzer benutzt man \textbf{sein-}. Bei \textbf{sie} im Singular und einem weiblichen Besitzer benutzt man \textbf{ihr-}.}
+\EnglishText{With \textbf{er} and a male possessor, use \textbf{sein-}. With singular \textbf{sie} and a female possessor, use \textbf{ihr-}.}
+
+\GermanText{Das Genus des besessenen Nomens ändert nicht den Stamm. Beispiel: Peter hat eine Schwester. \textbf{Seine Schwester} ist nett. Anna hat einen Bruder. \textbf{Ihr Bruder} ist nett.}
+\EnglishText{The gender of the possessed noun does not change the stem. Example: Peter has a sister. \textbf{His sister} is nice. Anna has a brother. \textbf{Her brother} is nice.}
+\end{grammarentry}
+
+\begin{grammarentry}{\glqq ihr-\grqq kann zwei Bedeutungen haben}{\glqq ihr-\grqq can have two meanings}
+\GermanText{\textbf{ihr-} kann je nach Kontext \textbf{her} oder \textbf{their} bedeuten. Der Satzkontext zeigt, ob der Besitzer \textbf{sie = she} oder \textbf{sie = they} ist.}
+\EnglishText{Depending on context, \textbf{ihr-} can mean \textbf{her} or \textbf{their}. The sentence context shows whether the possessor is \textbf{sie = she} or \textbf{sie = they}.}
+\end{grammarentry}
+
+\section{Kein zusätzlicher Artikel \textnormal{(No additional article)}}
+
+\begin{grammarentry}{Possessivartikel ersetzt einen anderen Artikel}{The possessive determiner replaces another article}
+\GermanText{Vor einem Nomen benutzt man normalerweise nicht gleichzeitig einen Possessivartikel und einen bestimmten oder unbestimmten Artikel.}
+\EnglishText{Before a noun, a possessive determiner is normally not used together with a definite or indefinite article.}
+
+\GermanText{Richtig: \textbf{mein Hund}. Falsch: \textbf{der mein Hund} oder \textbf{ein mein Hund}.}
+\EnglishText{Correct: \textbf{mein Hund}. Incorrect: \textbf{der mein Hund} or \textbf{ein mein Hund}.}
+\end{grammarentry}
+
+\section{Typische Fehler \textnormal{(Typical mistakes)}}
+
+\begin{grammarentry}{Fehler 1: Besitzer und Nomen verwechseln}{Mistake 1: confusing possessor and noun}
+\GermanText{Der Besitzer bestimmt nur den Stamm; das folgende Nomen bestimmt die Endung.}
+\EnglishText{The possessor determines only the stem; the following noun determines the ending.}
+\end{grammarentry}
+
+\begin{grammarentry}{Fehler 2: Akkusativ Maskulin vergessen}{Mistake 2: forgetting masculine accusative}
+\GermanText{Falsch: \textbf{Ich sehe mein Vater.} Richtig: \textbf{Ich sehe meinen Vater.}}
+\EnglishText{Incorrect: \textbf{Ich sehe mein Vater.} Correct: \textbf{Ich sehe meinen Vater.}}
+\end{grammarentry}
+
+\begin{grammarentry}{Fehler 3: Dativ Plural ohne -n am Nomen}{Mistake 3: dative plural without -n on the noun}
+\GermanText{Falsch: \textbf{mit meinen Freunde}. Richtig: \textbf{mit meinen Freunden}.}
+\EnglishText{Incorrect: \textbf{mit meinen Freunde}. Correct: \textbf{mit meinen Freunden}.}
+\end{grammarentry}
+
+\begin{grammarentry}{Fehler 4: Possessivpronomen vor einem Nomen}{Mistake 4: possessive pronoun before a noun}
+\GermanText{Falsch: \textbf{meiner Hund}. Richtig: \textbf{mein Hund}. \textbf{Meiner} kann dagegen allein stehen: \textbf{Der Hund ist meiner.}}
+\EnglishText{Incorrect: \textbf{meiner Hund}. Correct: \textbf{mein Hund}. \textbf{Meiner}, however, can stand alone: \textbf{Der Hund ist meiner.}}
+\end{grammarentry}
+
+\section{Schnelle Entscheidungsstrategie \textnormal{(Quick decision strategy)}}
+
+\begin{grammarentry}{Vier Schritte}{Four steps}
+\GermanText{\textbf{1.} Wer besitzt etwas? $\rightarrow$ Stamm wählen: mein-, dein-, sein-, ihr-, unser-, euer-, Ihr-.}
+\EnglishText{\textbf{1.} Who possesses something? $\rightarrow$ Choose the stem: mein-, dein-, sein-, ihr-, unser-, euer-, Ihr-.}
+
+\GermanText{\textbf{2.} Welches Nomen folgt? $\rightarrow$ Genus und Numerus bestimmen.}
+\EnglishText{\textbf{2.} Which noun follows? $\rightarrow$ Determine gender and number.}
+
+\GermanText{\textbf{3.} Welchen Kasus hat dieses Nomen? $\rightarrow$ Nominativ, Akkusativ, Dativ oder Genitiv bestimmen.}
+\EnglishText{\textbf{3.} Which case does this noun have? $\rightarrow$ Determine nominative, accusative, dative, or genitive.}
+
+\GermanText{\textbf{4.} Die passende Endung hinzufügen. Wenn zusätzlich ein Adjektiv steht, dieses nach der gemischten Deklination deklinieren.}
+\EnglishText{\textbf{4.} Add the appropriate ending. If an adjective is also present, decline it according to the mixed declension.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich spreche mit meiner neuen Kollegin.}{I am speaking with my new colleague.}
+\ExampleItem{Besitzer: ich $\rightarrow$ mein-. Nomen: Kollegin = feminin. Präposition: mit $\rightarrow$ Dativ. Ergebnis: meiner neuen Kollegin.}{Possessor: I $\rightarrow$ mein-. Noun: Kollegin = feminine. Preposition: mit $\rightarrow$ dative. Result: meiner neuen Kollegin.}
+\end{itemize}
+\end{exbox}
+
+\section{Zusammenfassung \textnormal{(Summary)}}
+
+\begin{grammarentry}{Das Wichtigste}{The most important points}
+\GermanText{Possessivartikel stehen vor einem Nomen und zeigen Besitz oder Zugehörigkeit.}
+\EnglishText{Possessive determiners stand before a noun and express possession or belonging.}
+
+\GermanText{Der Besitzer bestimmt den Stamm: \textbf{mein-, dein-, sein-, ihr-, unser-, euer-, Ihr-}.}
+\EnglishText{The possessor determines the stem: \textbf{mein-, dein-, sein-, ihr-, unser-, euer-, Ihr-}.}
+
+\GermanText{Genus, Numerus und Kasus des folgenden Nomens bestimmen die Endung. Die Formen folgen dem Muster von \textbf{ein / eine}.}
+\EnglishText{The gender, number, and case of the following noun determine the ending. The forms follow the pattern of \textbf{ein / eine}.}
+
+\GermanText{Mit einem Adjektiv gilt die gemischte Adjektivdeklination: \textbf{mein neuer Hund}, \textbf{meinen neuen Hund}, \textbf{mit meinem neuen Hund}.}
+\EnglishText{With an adjective, mixed adjective declension applies: \textbf{mein neuer Hund}, \textbf{meinen neuen Hund}, \textbf{mit meinem neuen Hund}.}
+
+\GermanText{Mit Nomen: \textbf{Possessivartikel}. Ohne Nomen als Ersatz: \textbf{Possessivpronomen}.}
+\EnglishText{With a noun: \textbf{possessive determiner}. Without a noun, replacing it: \textbf{possessive pronoun}.}
+\end{grammarentry}
+
+\end{document}
