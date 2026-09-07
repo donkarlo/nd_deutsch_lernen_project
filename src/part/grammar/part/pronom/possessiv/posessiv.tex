@@ -1,48 +1,413 @@
-\documentclass[a4paper]{article}
+\documentclass[a4paper,11pt]{article}
 
-\usepackage{graphicx}
-\usepackage{amsmath,amssymb}
-\usepackage{minted}
-\usepackage{multirow}
-\usepackage{float}
-\usepackage{todonotes}
-\usepackage{forest}
-\usepackage{xstring}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
 \usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
 \usepackage[most]{tcolorbox}
-\usepackage{xparse}
-\usepackage{natbib}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[table]{xcolor}
 
-\usetikzlibrary{graphs,graphdrawing}
-\usegdlibrary{layered}
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
 
-% for external graphviz
-\input{/home/donkarlo/Dropbox/repo/nd_language_ai_project/src/nd_language_ai/formal/computer/programming/tex/latex/code_clips/external_graphviz.tex}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{5pt}
 
-% for tags
-\input{/home/donkarlo/Dropbox/repo/nd_language_ai_project/src/nd_language_ai/formal/computer/programming/tex/latex/parts/control_sequence/kind/semtag/semtag.tex}
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
 
-% for links
-\input{/home/donkarlo/Dropbox/repo/nd_language_ai_project/src/nd_language_ai/formal/computer/programming/tex/latex/code_clips/seehere.tex}
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
 
-\title{Posessiv}
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Possessivpronomen\\\large Possessive pronouns}
 \date{}
-\author{Mohammad Rahmani}
 
 \begin{document}
     \maketitle
-    Um die richtig Possiv pronom wahlen, muss man drei fakturen überlegen.
-    \begin{itemize}
-        \item das Subjektgenus
-        \item die Kasus der objekt laut dem verb
-        \item das Objekt genus die ist besitzt worden von die Subjekt
-    \end{itemize}
-    Beispiel: \textbf{Paul fährt ohne seine Kolligen}
-    \begin{itemize}
-        \item Paul: Subjektgenus ist maskulin
-        \item fahren: mit etwas Dat. jemanden Akk. Fahren
-        \item Kollegin: Objektgenus ist Feminin
-    \end{itemize}
-    \bibliographystyle{plainnat}
-    \bibliography{/home/donkarlo/Dropbox/repo/nd_shared_research/bibliography/bibliography.bib}
+    \tableofcontents
+    \newpage
+
+    \section{Grundidee \textnormal{(Basic idea)}}
+
+        \begin{grammarentry}{Was ist ein Possessivpronomen?}{What is a possessive pronoun?}
+            \GermanText{Ein \textbf{Possessivpronomen} drückt Zugehörigkeit oder Besitz aus und \textbf{ersetzt ein Nomen}, das aus dem Kontext schon bekannt ist.}
+            \EnglishText{A \textbf{possessive pronoun} expresses belonging or possession and \textbf{replaces a noun} that is already known from the context.}
+
+            \GermanText{Typische Grundformen sind \textbf{mein-, dein-, sein-, ihr-, unser-, euer-, ihr-, Ihr-}. Als Pronomen bekommen diese Stämme eine Endung.}
+            \EnglishText{Typical stems are \textbf{mein-, dein-, sein-, ihr-, unser-, euer-, ihr-, Ihr-}. When used as pronouns, these stems take an ending.}
+
+            \GermanText{Merksatz: \textbf{Possessivartikel + Nomen}; \textbf{Possessivpronomen ohne Nomen}.}
+            \EnglishText{Rule to remember: \textbf{possessive article + noun}; \textbf{possessive pronoun without a noun}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Das ist mein Auto.}{That is my car. -- \textit{mein} is a possessive article because \textit{Auto} follows it.}
+                \ExampleItem{Das Auto ist meines / meins.}{The car is mine. -- \textit{meines / meins} is a possessive pronoun because it replaces \textit{Auto}.}
+                \ExampleItem{Ist das deine Tasche? -- Nein, meine ist dort.}{Is that your bag? -- No, mine is over there.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Possessivartikel und Possessivpronomen \textnormal{(Possessive article and possessive pronoun)}}
+
+        \begin{grammarentry}{Der wichtigste Unterschied}{The most important difference}
+            \GermanText{Ein \textbf{Possessivartikel} begleitet ein Nomen: \textbf{mein Hund, deine Tasche, unser Haus}.}
+            \EnglishText{A \textbf{possessive article} accompanies a noun: \textbf{my dog, your bag, our house}.}
+
+            \GermanText{Ein \textbf{Possessivpronomen} steht selbstständig und ersetzt dieses Nomen: \textbf{meiner, deine, unseres}.}
+            \EnglishText{A \textbf{possessive pronoun} stands on its own and replaces that noun: \textbf{mine, yours, ours}.}
+        \end{grammarentry}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{3.3cm}|p{5.7cm}|p{5.7cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Funktion / Function} &
+            \color{white}\textbf{Possessivartikel / Possessive article} &
+            \color{white}\textbf{Possessivpronomen / Possessive pronoun} \\
+            Verwendung / Use & steht vor einem Nomen / stands before a noun & ersetzt das Nomen / replaces the noun \\
+            Maskulin Nom. / Masculine nom. & mein Hund / my dog & meiner / mine \\
+            Feminin Nom. / Feminine nom. & meine Tasche / my bag & meine / mine \\
+            Neutrum Nom. / Neuter nom. & mein Auto / my car & meines / meins / mine \\
+            Plural Nom. / Plural nom. & meine Bücher / my books & meine / mine \\
+        \end{longtable}
+
+    \section{Die zwei Entscheidungen \textnormal{(The two decisions)}}
+
+        \begin{grammarentry}{1. Stamm: Wer besitzt etwas?}{1. Stem: Who possesses something?}
+            \GermanText{Zuerst wählt man den Stamm nach der Person oder Sache, zu der etwas gehört. Diese Person nennt man den \textbf{Possessor} oder die \textbf{Bezugsperson}.}
+            \EnglishText{First, choose the stem according to the person or thing to which something belongs. This person is the \textbf{possessor} or \textbf{reference person}.}
+        \end{grammarentry}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{3.0cm}|p{3.4cm}|p{3.5cm}|p{4.5cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Person / Person} &
+            \color{white}\textbf{Personalpronomen / Personal pronoun} &
+            \color{white}\textbf{Stamm / Stem} &
+            \color{white}\textbf{Bedeutung / Meaning} \\
+            1. Sg. / 1st sg. & ich / I & mein- & my / mine \\
+            2. Sg. / 2nd sg. & du / you & dein- & your / yours \\
+            3. Sg. mask. / 3rd sg. masc. & er / he & sein- & his \\
+            3. Sg. fem. / 3rd sg. fem. & sie / she & ihr- & her / hers \\
+            3. Sg. neutr. / 3rd sg. neut. & es / it & sein- & its \\
+            1. Pl. / 1st pl. & wir / we & unser- & our / ours \\
+            2. Pl. / 2nd pl. & ihr / you & euer- & your / yours \\
+            3. Pl. / 3rd pl. & sie / they & ihr- & their / theirs \\
+            Höflich / Formal & Sie / you & Ihr- & your / yours \\
+        \end{longtable}
+
+        \begin{grammarentry}{2. Endung: Was wird ersetzt?}{2. Ending: What is being replaced?}
+            \GermanText{Danach wählt man die Endung nach \textbf{Kasus, Genus und Numerus des ersetzten Nomens}. Die Endung richtet sich also nicht nach dem Besitzer, sondern nach der Sache oder Person, die das Pronomen ersetzt.}
+            \EnglishText{Then choose the ending according to the \textbf{case, gender, and number of the replaced noun}. Therefore, the ending is not determined by the owner, but by the person or thing that the pronoun replaces.}
+
+            \GermanText{Beispiel: \textbf{Peter hat einen Stift. Der Stift ist seiner.} Der Besitzer ist Peter, deshalb \textbf{sein-}. Das ersetzte Nomen \textbf{Stift} ist maskulin und Nominativ, deshalb die Endung \textbf{-er}.}
+            \EnglishText{Example: \textbf{Peter has a pen. The pen is his.} The owner is Peter, so the stem is \textbf{sein-}. The replaced noun \textbf{Stift} is masculine and nominative, so the ending is \textbf{-er}.}
+        \end{grammarentry}
+
+    \section{Deklination \textnormal{(Declension)}}
+
+        \begin{grammarentry}{Endungsmuster}{Ending pattern}
+            \GermanText{Das folgende Muster gilt für alle Possessivpronomen. Man ersetzt nur den Stamm \textbf{mein-} durch \textbf{dein-, sein-, ihr-, unser-, euer-, Ihr-} usw.}
+            \EnglishText{The following pattern applies to all possessive pronouns. Only replace the stem \textbf{mein-} with \textbf{dein-, sein-, ihr-, unser-, euer-, Ihr-}, etc.}
+
+            \GermanText{Die Genitivformen existieren grammatisch, sind aber im heutigen alltäglichen Deutsch als selbstständige Possessivpronomen selten.}
+            \EnglishText{The genitive forms exist grammatically, but as independent possessive pronouns they are rare in present-day everyday German.}
+        \end{grammarentry}
+
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\bfseries}p{3.0cm}|p{2.9cm}|p{2.9cm}|p{2.9cm}|p{2.9cm}}
+            \rowcolor{HeaderBlueDark}
+            \color{white}\textbf{Kasus / Case} &
+            \color{white}\textbf{Maskulin / Masculine} &
+            \color{white}\textbf{Feminin / Feminine} &
+            \color{white}\textbf{Neutrum / Neuter} &
+            \color{white}\textbf{Plural / Plural} \\
+            Nominativ / Nominative & meiner & meine & meines / meins & meine \\
+            Akkusativ / Accusative & meinen & meine & meines / meins & meine \\
+            Dativ / Dative & meinem & meiner & meinem & meinen \\
+            Genitiv / Genitive & meines & meiner & meines & meiner \\
+        \end{longtable}
+
+        \begin{grammarentry}{Die Endungen allein}{The endings alone}
+            \GermanText{Nominativ: Maskulin \textbf{-er}, Feminin \textbf{-e}, Neutrum \textbf{-es} bzw. Kurzform \textbf{-s}, Plural \textbf{-e}.}
+            \EnglishText{Nominative: masculine \textbf{-er}, feminine \textbf{-e}, neuter \textbf{-es} or the short form \textbf{-s}, plural \textbf{-e}.}
+
+            \GermanText{Akkusativ: Maskulin \textbf{-en}, Feminin \textbf{-e}, Neutrum \textbf{-es} bzw. Kurzform \textbf{-s}, Plural \textbf{-e}.}
+            \EnglishText{Accusative: masculine \textbf{-en}, feminine \textbf{-e}, neuter \textbf{-es} or the short form \textbf{-s}, plural \textbf{-e}.}
+
+            \GermanText{Dativ: Maskulin \textbf{-em}, Feminin \textbf{-er}, Neutrum \textbf{-em}, Plural \textbf{-en}.}
+            \EnglishText{Dative: masculine \textbf{-em}, feminine \textbf{-er}, neuter \textbf{-em}, plural \textbf{-en}.}
+        \end{grammarentry}
+
+    \section{Kasus erkennen \textnormal{(Recognizing the case)}}
+
+        \subsection{Nominativ \textnormal{(Nominative)}}
+
+            \begin{grammarentry}{Possessivpronomen als Subjekt}{Possessive pronoun as subject}
+                \GermanText{Wenn das Possessivpronomen selbst das Subjekt des Satzes ist, steht es im Nominativ.}
+                \EnglishText{When the possessive pronoun itself is the subject of the sentence, it is in the nominative.}
+            \end{grammarentry}
+
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Mein Stift ist blau. Deiner ist schwarz.}{My pen is blue. Yours is black.}
+                    \ExampleItem{Meine Tasche ist schwer. Deine ist leicht.}{My bag is heavy. Yours is light.}
+                    \ExampleItem{Mein Handy ist neu. Deines / deins ist alt.}{My phone is new. Yours is old.}
+                    \ExampleItem{Meine Schuhe sind hier. Deine sind dort.}{My shoes are here. Yours are there.}
+                \end{itemize}
+            \end{exbox}
+
+        \subsection{Akkusativ \textnormal{(Accusative)}}
+
+            \begin{grammarentry}{Possessivpronomen als Akkusativobjekt}{Possessive pronoun as accusative object}
+                \GermanText{Wenn das Pronomen ein Akkusativobjekt ersetzt, benutzt man die Akkusativform. Nur beim Maskulinum unterscheidet sie sich im Nominativ und Akkusativ deutlich: \textbf{meiner} -- \textbf{meinen}.}
+                \EnglishText{When the pronoun replaces an accusative object, use the accusative form. Only the masculine form differs clearly between nominative and accusative: \textbf{meiner} -- \textbf{meinen}.}
+            \end{grammarentry}
+
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich finde meinen Stift nicht. Kann ich deinen nehmen?}{I cannot find my pen. Can I take yours?}
+                    \ExampleItem{Meine Jacke ist nass. Ich nehme deine.}{My jacket is wet. I will take yours.}
+                    \ExampleItem{Mein Fahrrad ist kaputt. Ich benutze deines / deins.}{My bicycle is broken. I will use yours.}
+                \end{itemize}
+            \end{exbox}
+
+        \subsection{Dativ \textnormal{(Dative)}}
+
+            \begin{grammarentry}{Dativ nach Verb oder Präposition}{Dative after a verb or preposition}
+                \GermanText{Steht das ersetzte Nomen im Dativ, bekommt auch das Possessivpronomen die entsprechende Dativendung.}
+                \EnglishText{If the replaced noun is in the dative, the possessive pronoun also takes the corresponding dative ending.}
+            \end{grammarentry}
+
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Mit meinem Auto fahre ich selten; mit deinem fahre ich lieber.}{I rarely drive with my car; I prefer driving with yours.}
+                    \ExampleItem{Ich vertraue meiner Ärztin und du deiner.}{I trust my doctor and you trust yours.}
+                    \ExampleItem{Wir fahren mit unseren Fahrrädern, ihr mit euren.}{We are going with our bicycles; you are going with yours.}
+                \end{itemize}
+            \end{exbox}
+
+        \subsection{Genitiv \textnormal{(Genitive)}}
+
+            \begin{grammarentry}{Selten im Alltag}{Rare in everyday language}
+                \GermanText{Die selbstständigen Genitivformen \textbf{meines, meiner} usw. sind grammatisch möglich, werden aber im normalen Alltagsdeutsch selten gebraucht. Für B1 ist es wichtiger, Nominativ, Akkusativ und Dativ sicher zu beherrschen.}
+                \EnglishText{The independent genitive forms \textbf{meines, meiner}, etc. are grammatically possible, but are rarely used in normal everyday German. At B1 level, it is more important to master the nominative, accusative, and dative confidently.}
+            \end{grammarentry}
+
+    \section{Genus und Numerus des ersetzten Nomens \textnormal{(Gender and number of the replaced noun)}}
+
+        \begin{grammarentry}{Das Nomen entscheidet über die Endung}{The noun determines the ending}
+            \GermanText{Das grammatische Geschlecht des Besitzers ist für die Endung nicht entscheidend. Entscheidend ist das Genus des \textbf{ersetzten Nomens}.}
+            \EnglishText{The grammatical gender of the owner does not determine the ending. What matters is the gender of the \textbf{replaced noun}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Anna hat einen Hund. Der Hund ist ihrer.}{Anna has a dog. The dog is hers. -- \textit{Hund} is masculine, so the ending is \textit{-er}.}
+                \ExampleItem{Anna hat eine Tasche. Die Tasche ist ihre.}{Anna has a bag. The bag is hers. -- \textit{Tasche} is feminine, so the ending is \textit{-e}.}
+                \ExampleItem{Anna hat ein Auto. Das Auto ist ihres.}{Anna has a car. The car is hers. -- \textit{Auto} is neuter, so the ending is \textit{-es}.}
+                \ExampleItem{Anna hat zwei Bücher. Die Bücher sind ihre.}{Anna has two books. The books are hers. -- plural takes \textit{-e} in the nominative.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Die dritte Person: sein- oder ihr-? \textnormal{(Third person: sein- or ihr-?)}}
+
+        \begin{grammarentry}{Der Besitzer bestimmt den Stamm}{The owner determines the stem}
+            \GermanText{Bei \textbf{er} und \textbf{es} benutzt man den Stamm \textbf{sein-}. Bei \textbf{sie} im Singular und bei \textbf{sie} im Plural benutzt man \textbf{ihr-}.}
+            \EnglishText{With \textbf{er} and \textbf{es}, use the stem \textbf{sein-}. With singular \textbf{sie} and plural \textbf{sie}, use \textbf{ihr-}.}
+
+            \GermanText{Erst danach wird nach dem ersetzten Nomen dekliniert.}
+            \EnglishText{Only after that is the pronoun declined according to the replaced noun.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Paul hat einen Schlüssel. Der hier ist seiner.}{Paul has a key. This one is his.}
+                \ExampleItem{Maria hat einen Schlüssel. Der hier ist ihrer.}{Maria has a key. This one is hers.}
+                \ExampleItem{Die Kinder haben einen Schlüssel. Der hier ist ihrer.}{The children have a key. This one is theirs.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Besonderheiten von unser- und euer- \textnormal{(Special features of unser- and euer-)}}
+
+        \begin{grammarentry}{euer verliert oft ein e}{euer often loses an e}
+            \GermanText{Bei \textbf{euer-} fällt vor vielen Endungen das zweite \textbf{e} weg: \textbf{eurer, eure, eurem, euren, eures}. Formen wie \textbf{euere} kommen ebenfalls vor, aber \textbf{eure} ist sehr üblich.}
+            \EnglishText{With \textbf{euer-}, the second \textbf{e} is often dropped before endings: \textbf{eurer, eure, eurem, euren, eures}. Forms such as \textbf{euere} also occur, but \textbf{eure} is very common.}
+
+            \GermanText{Bei \textbf{unser-} können in manchen Formen ebenfalls verkürzte Varianten vorkommen, zum Beispiel \textbf{unsrer}; für Lernende sind die vollständigen Formen wie \textbf{unserer} besonders klar.}
+            \EnglishText{With \textbf{unser-}, shortened variants can also occur in some forms, for example \textbf{unsrer}; for learners, the full forms such as \textbf{unserer} are especially clear.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Unser Hund ist groß. Eurer ist klein.}{Our dog is big. Yours is small.}
+                \ExampleItem{Unsere Wohnung ist alt. Eure ist neu.}{Our apartment is old. Yours is new.}
+                \ExampleItem{Unser Auto ist hier. Eures ist dort.}{Our car is here. Yours is there.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Neutrum: meines oder meins? \textnormal{(Neuter: meines or meins?)}}
+
+        \begin{grammarentry}{Vollform und Kurzform}{Full form and short form}
+            \GermanText{Im Nominativ und Akkusativ Neutrum ist die Form auf \textbf{-es} grammatisch: \textbf{meines, deines, seines}. Sehr häufig wird das unbetonte \textbf{e} weggelassen: \textbf{meins, deins, seins}.}
+            \EnglishText{In the nominative and accusative neuter, the form ending in \textbf{-es} is grammatical: \textbf{meines, deines, seines}. Very often the unstressed \textbf{e} is omitted: \textbf{meins, deins, seins}.}
+
+            \GermanText{Für den Alltag sind Sätze wie \textbf{Das ist meins} und \textbf{Ich nehme deins} besonders häufig.}
+            \EnglishText{In everyday language, sentences such as \textbf{Das ist meins} and \textbf{Ich nehme deins} are especially common.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ist das dein Handy? -- Ja, das ist meins.}{Is that your phone? -- Yes, that is mine.}
+                \ExampleItem{Mein Glas ist leer. Kann ich deins nehmen?}{My glass is empty. Can I take yours?}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Höfliche Form Ihr- \textnormal{(Formal form Ihr-)}}
+
+        \begin{grammarentry}{Großschreibung}{Capitalization}
+            \GermanText{Die Possessivformen zu höflichem \textbf{Sie} werden großgeschrieben: \textbf{Ihr-, Ihrer, Ihre, Ihres, Ihrem, Ihren}.}
+            \EnglishText{The possessive forms corresponding to formal \textbf{Sie} are capitalized: \textbf{Ihr-, Ihrer, Ihre, Ihres, Ihrem, Ihren}.}
+
+            \GermanText{Die Endungen folgen demselben Muster wie bei den anderen Possessivpronomen.}
+            \EnglishText{The endings follow the same pattern as with the other possessive pronouns.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ist das mein Mantel oder Ihrer?}{Is that my coat or yours?}
+                \ExampleItem{Mein Termin ist um zehn Uhr. Wann ist Ihrer?}{My appointment is at ten o'clock. When is yours?}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Form mit bestimmtem Artikel \textnormal{(Form with a definite article)}}
+
+        \begin{grammarentry}{der meine, die meine, das meine}{the one that is mine}
+            \GermanText{Possessivpronomen können auch mit einem bestimmten Artikel auftreten: \textbf{der meine, die meine, das meine, die meinen}. Diese Form wirkt oft gehobener oder weniger alltäglich.}
+            \EnglishText{Possessive pronouns can also occur with a definite article: \textbf{der meine, die meine, das meine, die meinen}. This form often sounds more elevated or less conversational.}
+
+            \GermanText{Für B1 reicht es normalerweise, diese Form zu erkennen; die selbstständigen Formen \textbf{meiner, meine, meines / meins} sind im Alltag wichtiger.}
+            \EnglishText{At B1 level, it is normally enough to recognize this form; the independent forms \textbf{meiner, meine, meines / meins} are more important in everyday language.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Dein Mantel ist schwarz; der meine ist blau.}{Your coat is black; mine is blue.}
+                \ExampleItem{Seine Freunde kommen später, die meinen sind schon hier.}{His friends are coming later; mine are already here.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Typische Fragen und Antworten \textnormal{(Typical questions and answers)}}
+
+        \begin{grammarentry}{Wessen?}{Whose?}
+            \GermanText{Possessivpronomen stehen sehr häufig in Antworten auf die Frage \textbf{Wessen?} oder in Vergleichen zwischen Besitzern.}
+            \EnglishText{Possessive pronouns very often occur in answers to the question \textbf{Whose?} or in comparisons between owners.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Wessen Tasche ist das? -- Das ist meine.}{Whose bag is that? -- It is mine.}
+                \ExampleItem{Welcher Schlüssel ist deiner? -- Der schwarze ist meiner.}{Which key is yours? -- The black one is mine.}
+                \ExampleItem{Sind das eure Bücher? -- Nein, unsere liegen auf dem Tisch.}{Are those your books? -- No, ours are on the table.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Häufige Fehler \textnormal{(Common mistakes)}}
+
+        \begin{grammarentry}{Fehler 1: Pronomen und Artikel verwechseln}{Mistake 1: Confusing pronoun and article}
+            \GermanText{Falsch: \textbf{Das ist meiner Hund.} Richtig: \textbf{Das ist mein Hund.} Vor einem Nomen braucht man hier den Possessivartikel.}
+            \EnglishText{Wrong: \textbf{Das ist meiner Hund.} Correct: \textbf{Das ist mein Hund.} Before a noun, the possessive article is required here.}
+
+            \GermanText{Richtig als Pronomen: \textbf{Der Hund ist meiner.}}
+            \EnglishText{Correct as a pronoun: \textbf{Der Hund ist meiner.}}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Fehler 2: Endung nach dem Besitzer wählen}{Mistake 2: Choosing the ending according to the owner}
+            \GermanText{Die Endung hängt nicht davon ab, ob der Besitzer ein Mann oder eine Frau ist. Sie hängt vom ersetzten Nomen ab.}
+            \EnglishText{The ending does not depend on whether the owner is a man or a woman. It depends on the replaced noun.}
+
+            \GermanText{Maria besitzt einen Hund: \textbf{Der Hund ist ihrer.} Maria besitzt eine Tasche: \textbf{Die Tasche ist ihre.}}
+            \EnglishText{Maria owns a dog: \textbf{The dog is hers.} Maria owns a bag: \textbf{The bag is hers.}}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Fehler 3: Kasus ignorieren}{Mistake 3: Ignoring the case}
+            \GermanText{Maskulin zeigt den Unterschied besonders deutlich: \textbf{meiner} im Nominativ, \textbf{meinen} im Akkusativ, \textbf{meinem} im Dativ.}
+            \EnglishText{The masculine form shows the difference especially clearly: \textbf{meiner} in the nominative, \textbf{meinen} in the accusative, \textbf{meinem} in the dative.}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Fehler 4: Ihr- und ihr- verwechseln}{Mistake 4: Confusing Ihr- and ihr-}
+            \GermanText{\textbf{Ihr-} mit großem I gehört zum höflichen \textbf{Sie}. \textbf{ihr-} mit kleinem i kann \textbf{her} oder \textbf{their} bedeuten.}
+            \EnglishText{\textbf{Ihr-} with a capital I belongs to formal \textbf{Sie}. \textbf{ihr-} with a lowercase i can mean \textbf{her} or \textbf{their}.}
+        \end{grammarentry}
+
+    \section{B1-Prüfungsstrategie \textnormal{(B1 exam strategy)}}
+
+        \begin{grammarentry}{Drei Schritte}{Three steps}
+            \GermanText{\textbf{Schritt 1:} Finde den Besitzer. Dadurch bekommst du den Stamm: mein-, dein-, sein-, ihr-, unser-, euer-, Ihr-.}
+            \EnglishText{\textbf{Step 1:} Find the owner. This gives you the stem: mein-, dein-, sein-, ihr-, unser-, euer-, Ihr-.}
+
+            \GermanText{\textbf{Schritt 2:} Finde das Nomen, das ersetzt wird, und bestimme Genus und Numerus.}
+            \EnglishText{\textbf{Step 2:} Find the noun that is being replaced and determine its gender and number.}
+
+            \GermanText{\textbf{Schritt 3:} Bestimme den Kasus aus der Satzfunktion, dem Verb oder der Präposition und füge die richtige Endung hinzu.}
+            \EnglishText{\textbf{Step 3:} Determine the case from the sentence function, verb, or preposition and add the correct ending.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Kann ich deinen Stift nehmen? Meiner ist kaputt.}{Can I take your pen? Mine is broken. -- owner: ich $\rightarrow$ mein-; replaced noun: Stift, masculine; case: nominative $\rightarrow$ meiner.}
+                \ExampleItem{Ich sehe deinen Stift, aber meinen sehe ich nicht.}{I see your pen, but I do not see mine. -- owner: ich $\rightarrow$ mein-; replaced noun: Stift, masculine; case: accusative $\rightarrow$ meinen.}
+                \ExampleItem{Ich schreibe mit deinem Stift, weil ich mit meinem nicht gut schreiben kann.}{I am writing with your pen because I cannot write well with mine. -- owner: ich $\rightarrow$ mein-; replaced noun: Stift, masculine; case: dative after \textit{mit} $\rightarrow$ meinem.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Zusammenfassung \textnormal{(Summary)}}
+
+        \begin{grammarentry}{Merksätze}{Rules to remember}
+            \GermanText{1. \textbf{Possessivartikel} stehen vor einem Nomen: \textbf{mein Auto}. \textbf{Possessivpronomen} ersetzen das Nomen: \textbf{meines / meins}.}
+            \EnglishText{1. \textbf{Possessive articles} stand before a noun: \textbf{my car}. \textbf{Possessive pronouns} replace the noun: \textbf{mine}.}
+
+            \GermanText{2. Der \textbf{Besitzer} bestimmt den Stamm: ich $\rightarrow$ mein-, du $\rightarrow$ dein-, er $\rightarrow$ sein-, sie $\rightarrow$ ihr-.}
+            \EnglishText{2. The \textbf{owner} determines the stem: I $\rightarrow$ mein-, you $\rightarrow$ dein-, he $\rightarrow$ sein-, she $\rightarrow$ ihr-.}
+
+            \GermanText{3. Das \textbf{ersetzte Nomen} bestimmt zusammen mit dem Kasus die Endung.}
+            \EnglishText{3. The \textbf{replaced noun}, together with the case, determines the ending.}
+
+            \GermanText{4. Besonders wichtig für B1: \textbf{meiner -- meinen -- meinem} bei maskulinen Nomen sowie \textbf{meine}, \textbf{meines / meins} und die entsprechenden Formen der anderen Stämme.}
+            \EnglishText{4. Especially important for B1: \textbf{meiner -- meinen -- meinem} with masculine nouns, as well as \textbf{meine}, \textbf{meines / meins}, and the corresponding forms of the other stems.}
+
+            \GermanText{5. Die Genitivformen sind im Alltag selten; Nominativ, Akkusativ und Dativ haben für B1 deutlich höhere Priorität.}
+            \EnglishText{5. The genitive forms are rare in everyday language; nominative, accusative, and dative have much higher priority at B1 level.}
+        \end{grammarentry}
+
 \end{document}
