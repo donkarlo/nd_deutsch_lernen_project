@@ -1,0 +1,373 @@
+% Vollständige Erklärung zu deutschen Zahlen und Zahlwörtern
+% Stil nach erklaerung_vorlage.tex und tabelle_vorlage.tex
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{xparse}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{5pt}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\newcommand{\BICell}[2]{\textbf{#1}\newline{\footnotesize\color{SoftGray}#2}}
+
+\title{Zahlen und Zahlwörter im Deutschen\\\large\textnormal{Numbers and Numerals in German}}
+\date{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Grundbegriffe \textnormal{(Basic terms)}}
+\begin{grammarentry}{Zahl, Ziffer und Zahlwort}{Number, digit and numeral}
+\GermanText{Eine \textbf{Zahl} ist ein mathematischer Wert, zum Beispiel 27. Eine \textbf{Ziffer} ist ein einzelnes Zeichen von 0 bis 9. Ein \textbf{Zahlwort} oder \textbf{Numerale} ist ein sprachlicher Ausdruck für eine Zahl oder Zahlenbeziehung, zum Beispiel \textbf{drei}, \textbf{dritter}, \textbf{dreimal} oder \textbf{ein Drittel}.}
+\EnglishText{A \textbf{number} is a mathematical value, for example 27. A \textbf{digit} is a single symbol from 0 to 9. A \textbf{numeral} is a linguistic expression for a number or numerical relationship, for example \textbf{three}, \textbf{third}, \textbf{three times}, or \textbf{one third}.}
+\GermanText{Zahlwörter sind grammatisch nicht automatisch Nomen. Ihre Wortart und ihr Verhalten hängen von ihrer Verwendung ab.}
+\EnglishText{Numerals are not automatically nouns grammatically. Their word class and behavior depend on how they are used.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich habe drei Bücher.}{I have three books.}
+\ExampleItem{Die Drei steht auf dem Blatt.}{The digit three is written on the sheet.}
+\ExampleItem{Er wurde Dritter.}{He came third.}
+\end{itemize}
+\end{exbox}
+
+\section{Groß- und Kleinschreibung \textnormal{(Capitalization)}}
+\begin{grammarentry}{Grundregel}{Basic rule}
+\GermanText{Kardinalzahlen wie \textbf{eins, zwei, drei, hundert, tausend} werden normalerweise \textbf{kleingeschrieben}, wenn sie als Zahlwörter gebraucht werden.}
+\EnglishText{Cardinal numbers such as \textbf{eins, zwei, drei, hundred, thousand} are normally written in \textbf{lowercase} when used as numerals.}
+\GermanText{Werden Zahlen substantiviert, schreibt man sie \textbf{groß}: \textbf{die Eins, die Zwei, die Hundert}. Auch Bruchnomen wie \textbf{das Drittel} und \textbf{das Viertel} sowie Nomen wie \textbf{die Million} und \textbf{die Milliarde} werden großgeschrieben.}
+\EnglishText{When numbers are nominalized, they are \textbf{capitalized}: \textbf{die Eins, die Zwei, die Hundert}. Fraction nouns such as \textbf{das Drittel} and \textbf{das Viertel}, and nouns such as \textbf{die Million} and \textbf{die Milliarde}, are also capitalized.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich brauche drei Eier.}{I need three eggs.}
+\ExampleItem{Schreib bitte eine Drei in das Kästchen.}{Please write a three in the box.}
+\ExampleItem{Sie hat zwei Einsen in der Schule bekommen.}{She got two top grades at school.}
+\ExampleItem{Drei Millionen Menschen leben dort.}{Three million people live there.}
+\end{itemize}
+\end{exbox}
+
+\section{Kardinalzahlen \textnormal{(Cardinal numbers)}}
+\begin{grammarentry}{Wieviel? Wie viele?}{How much? How many?}
+\GermanText{Kardinalzahlen geben eine Anzahl oder einen Zahlenwert an. Typische Formen sind \textbf{null, eins, zwei, drei, zehn, hundert, tausend}.}
+\EnglishText{Cardinal numbers indicate a quantity or numerical value. Typical forms are \textbf{zero, one, two, three, ten, hundred, thousand}.}
+\GermanText{Sie sind normalerweise nicht deklinierbar und stehen ohne Endung vor einem Nomen: \textbf{zwei Bücher, mit fünf Freunden, wegen zehn Euro}.}
+\EnglishText{They are normally indeclinable and stand without an ending before a noun: \textbf{two books, with five friends, because of ten euros}.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{p{2.5cm}p{4.7cm}p{7.0cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\BICell{Zahl}{Number} & \color{white}\BICell{Deutsch}{German} & \color{white}\BICell{Hinweis}{Note}\\
+0 & null & \BICell{auch als Ziffer gesprochen}{also spoken as a digit}\\
+1 & eins & \BICell{vor Nomen meist ein/eine}{before a noun usually ein/eine}\\
+2 & zwei & \BICell{normalerweise unverändert}{normally unchanged}\\
+3 & drei & \BICell{normalerweise unverändert}{normally unchanged}\\
+10 & zehn & \BICell{Grundform}{basic form}\\
+11 & elf & \BICell{unregelmäßig}{irregular}\\
+12 & zwölf & \BICell{unregelmäßig}{irregular}\\
+13 & dreizehn & \BICell{Einer + zehn}{unit + ten}\\
+20 & zwanzig & \BICell{eigene Zehnerform}{special tens form}\\
+21 & einundzwanzig & \BICell{Einer + und + Zehner}{unit + und + tens}\\
+30 & dreißig & \BICell{mit ß}{with ß}\\
+100 & hundert / einhundert & \BICell{beides möglich}{both possible}\\
+1.000 & tausend / eintausend & \BICell{beides möglich}{both possible}\\
+\end{longtable}
+
+\section{Bildung und Schreibung zusammengesetzter Zahlen \textnormal{(Formation and spelling of compound numbers)}}
+\begin{grammarentry}{Einer vor Zehner}{Units before tens}
+\GermanText{Bei Zahlen von 21 bis 99 steht im Deutschen zuerst die Einerzahl, dann \textbf{und}, dann die Zehnerzahl: \textbf{ein-und-zwanzig, zwei-und-dreißig, sieben-und-fünfzig}.}
+\EnglishText{For numbers from 21 to 99, German puts the unit first, then \textbf{und}, then the tens: \textbf{one-and-twenty, two-and-thirty, seven-and-fifty}.}
+\GermanText{Ausgeschriebene Zahlen unter einer Million werden im Allgemeinen als \textbf{ein Wort} geschrieben.}
+\EnglishText{Spelled-out numbers below one million are generally written as \textbf{one word}.}
+\GermanText{Zwischen Hunderten oder Tausenden und dem folgenden Teil steht kein zusätzliches \textbf{und}.}
+\EnglishText{No extra \textbf{und} is inserted between hundreds or thousands and the following part.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{21 = einundzwanzig}{21 = twenty-one.}
+\ExampleItem{48 = achtundvierzig}{48 = forty-eight.}
+\ExampleItem{121 = einhunderteinundzwanzig}{121 = one hundred and twenty-one.}
+\ExampleItem{1.245 = eintausendzweihundertfünfundvierzig}{1,245 = one thousand two hundred and forty-five.}
+\end{itemize}
+\end{exbox}
+
+\section{\glqq eins\grqq, \glqq ein\grqq{} und Deklination \textnormal{(``eins'', ``ein'' and declension)}}
+\begin{grammarentry}{Die Zahl 1}{The number 1}
+\GermanText{\textbf{eins} steht gewöhnlich allein oder beim Zählen: \textbf{eins, zwei, drei}; \textbf{Die Antwort ist eins}.}
+\EnglishText{\textbf{eins} is normally used on its own or when counting: \textbf{one, two, three}; \textbf{The answer is one}.}
+\GermanText{Vor einem Nomen verwendet man die Formen von \textbf{ein}: \textbf{ein Mann, eine Frau, ein Kind}. Diese Formen werden nach Genus und Kasus dekliniert.}
+\EnglishText{Before a noun, the forms of \textbf{ein} are used: \textbf{one man, one woman, one child}. These forms decline according to gender and case.}
+\GermanText{Wenn die Zahl pronominal gebraucht wird, sind Formen wie \textbf{einer, eine, eines} möglich: \textbf{Einer fehlt. Ich nehme eines davon.}}
+\EnglishText{When the number is used pronominally, forms such as \textbf{einer, eine, eines} are possible: \textbf{One is missing. I will take one of them.}}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{p{2.8cm}p{3.3cm}p{3.3cm}p{3.3cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\BICell{Kasus}{Case} & \color{white}\BICell{Maskulin}{Masculine} & \color{white}\BICell{Feminin}{Feminine} & \color{white}\BICell{Neutrum}{Neuter}\\
+\BICell{Nominativ}{Nominative} & ein Mann & eine Frau & ein Kind\\
+\BICell{Akkusativ}{Accusative} & einen Mann & eine Frau & ein Kind\\
+\BICell{Dativ}{Dative} & einem Mann & einer Frau & einem Kind\\
+\BICell{Genitiv}{Genitive} & eines Mannes & einer Frau & eines Kindes\\
+\end{longtable}
+
+\begin{grammarentry}{zwei und drei}{two and three}
+\GermanText{\textbf{zwei} und \textbf{drei} sind meistens unverändert. Ohne Artikel oder anderes Begleitwort können besonders im Genitiv die Formen \textbf{zweier} und \textbf{dreier} auftreten: \textbf{die Meinung zweier Experten}. Im Dativ sind pronominale Formen wie \textbf{zweien} oder \textbf{dreien} möglich: \textbf{mit zweien von ihnen}.}
+\EnglishText{\textbf{zwei} and \textbf{drei} are usually unchanged. Without an article or another determiner, especially in the genitive, the forms \textbf{zweier} and \textbf{dreier} can occur: \textbf{the opinion of two experts}. In the dative, pronominal forms such as \textbf{zweien} or \textbf{dreien} are possible: \textbf{with two of them}.}
+\end{grammarentry}
+
+\section{Hundert, Tausend, Million und große Zahlen \textnormal{(Hundred, thousand, million and large numbers)}}
+\begin{grammarentry}{Wortart und Großschreibung}{Word class and capitalization}
+\GermanText{\textbf{hundert} und \textbf{tausend} funktionieren normalerweise als Zahlwörter und werden kleingeschrieben: \textbf{zweihundert, dreitausend}. Als substantivierte Mengenangaben erscheinen Formen wie \textbf{Hunderte} und \textbf{Tausende}.}
+\EnglishText{\textbf{hundert} and \textbf{tausend} normally function as numerals and are written in lowercase: \textbf{two hundred, three thousand}. As nominalized quantity expressions, forms such as \textbf{Hundreds} and \textbf{Thousands} occur.}
+\GermanText{\textbf{Million, Milliarde, Billion, Billiarde, Trillion} sind Nomen. Sie werden großgeschrieben, können einen Plural haben und stehen als eigene Wörter.}
+\EnglishText{\textbf{Million, billion, trillion, quadrillion, quintillion} in the German long-scale naming system are nouns. They are capitalized, can take a plural, and are written as separate words.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{p{3cm}p{3cm}p{4cm}p{4.2cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\BICell{Wert}{Value} & \color{white}\BICell{Deutsch}{German} & \color{white}\BICell{Englisch}{English} & \color{white}\BICell{Wichtiger Hinweis}{Important note}\\
+$10^6$ & eine Million & one million & \BICell{Nomen, groß}{noun, capitalized}\\
+$10^9$ & eine Milliarde & one billion & \BICell{engl. billion = dt. Milliarde}{English billion = German Milliarde}\\
+$10^{12}$ & eine Billion & one trillion & \BICell{engl. trillion = dt. Billion}{English trillion = German Billion}\\
+$10^{15}$ & eine Billiarde & one quadrillion & \BICell{Nomen, groß}{noun, capitalized}\\
+$10^{18}$ & eine Trillion & one quintillion & \BICell{Nomen, groß}{noun, capitalized}\\
+\end{longtable}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Dreitausend Menschen kamen.}{Three thousand people came.}
+\ExampleItem{Drei Millionen Menschen kamen.}{Three million people came.}
+\ExampleItem{Tausende Menschen warteten draußen.}{Thousands of people waited outside.}
+\end{itemize}
+\end{exbox}
+
+\section{Ordinalzahlen \textnormal{(Ordinal numbers)}}
+\begin{grammarentry}{Reihenfolge}{Order}
+\GermanText{Ordinalzahlen geben eine Position in einer Reihenfolge an: \textbf{der erste, der zweite, der dritte}. Sie verhalten sich grammatisch wie Adjektive und werden dekliniert.}
+\EnglishText{Ordinal numbers indicate a position in an order: \textbf{the first, the second, the third}. Grammatically, they behave like adjectives and are declined.}
+\GermanText{Von 1 bis 19 wird meistens \textbf{-te} verwendet; ab 20 meistens \textbf{-ste}: \textbf{vierte, neunzehnte, zwanzigste, einundzwanzigste}. Wichtige Sonderformen sind \textbf{erste, dritte, siebte, achte}.}
+\EnglishText{From 1 to 19, \textbf{-te} is usually used; from 20 onward, \textbf{-ste}: \textbf{fourth, nineteenth, twentieth, twenty-first}. Important irregular forms are \textbf{erste, dritte, siebte, achte}.}
+\GermanText{In Ziffernschreibweise kennzeichnet ein Punkt die Ordinalzahl: \textbf{1., 2., 3., 20.}}
+\EnglishText{When written with digits, a period marks the ordinal number: \textbf{1st, 2nd, 3rd, 20th}.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{p{2.6cm}p{4.5cm}p{6.5cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\BICell{Zahl}{Number} & \color{white}\BICell{Ordinalzahl}{Ordinal number} & \color{white}\BICell{Beispiel}{Example}\\
+1. & erste & \BICell{der erste Tag}{the first day}\\
+2. & zweite & \BICell{die zweite Woche}{the second week}\\
+3. & dritte & \BICell{das dritte Kapitel}{the third chapter}\\
+7. & siebte & \BICell{der siebte Versuch}{the seventh attempt}\\
+8. & achte & \BICell{der achte September}{the eighth of September}\\
+20. & zwanzigste & \BICell{der zwanzigste Platz}{the twentieth place}\\
+21. & einundzwanzigste & \BICell{mein einundzwanzigster Geburtstag}{my twenty-first birthday}\\
+\end{longtable}
+
+\section{Ordinalzahlen deklinieren \textnormal{(Declining ordinal numbers)}}
+\begin{grammarentry}{Wie Adjektive}{Like adjectives}
+\GermanText{Ordinalzahlen erhalten dieselben Endungen wie attributive Adjektive. Die Endung hängt von Artikel, Genus, Numerus und Kasus ab.}
+\EnglishText{Ordinal numbers take the same endings as attributive adjectives. The ending depends on the article, gender, number, and case.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Das ist der erste Tag.}{This is the first day.}
+\ExampleItem{Ich erinnere mich an den ersten Tag.}{I remember the first day.}
+\ExampleItem{Am ersten Tag war ich müde.}{On the first day I was tired.}
+\ExampleItem{Wegen des ersten Fehlers wurde der Test wiederholt.}{Because of the first error, the test was repeated.}
+\end{itemize}
+\end{exbox}
+
+\section{Datum und Kalender \textnormal{(Dates and calendar)}}
+\begin{grammarentry}{Datum sprechen}{Saying dates}
+\GermanText{Beim Datum werden Tageszahlen als Ordinalzahlen gesprochen. Nach \textbf{am} steht Dativ: \textbf{am achten September}. Mit \textbf{der} steht Nominativ: \textbf{der achte September}.}
+\EnglishText{In dates, day numbers are spoken as ordinal numbers. After \textbf{am}, the dative is used: \textbf{on the eighth of September}. With \textbf{der}, the nominative is used: \textbf{the eighth of September}.}
+\GermanText{Die Schreibweise \textbf{08.09.2026} oder \textbf{8. September 2026} ist üblich.}
+\EnglishText{The forms \textbf{08.09.2026} or \textbf{8 September 2026} are common.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Heute ist der achte September.}{Today is the eighth of September.}
+\ExampleItem{Wir treffen uns am neunten September.}{We are meeting on the ninth of September.}
+\ExampleItem{Die Prüfung ist vom achten bis zum zehnten September.}{The exam is from the eighth to the tenth of September.}
+\end{itemize}
+\end{exbox}
+
+\section{Bruchzahlen \textnormal{(Fractions)}}
+\begin{grammarentry}{halb, Drittel, Viertel}{Half, third, quarter}
+\GermanText{\textbf{halb} kann als Adjektiv gebraucht und dekliniert werden: \textbf{ein halbes Jahr, eine halbe Stunde}.}
+\EnglishText{\textbf{halb} can be used as an adjective and declined: \textbf{half a year, half an hour}.}
+\GermanText{Bruchnomen wie \textbf{das Drittel, das Viertel, das Fünftel} sind Nomen und werden großgeschrieben. Nach einer Zahl bleibt die Form häufig unverändert: \textbf{zwei Drittel, drei Viertel}.}
+\EnglishText{Fraction nouns such as \textbf{das Drittel, das Viertel, das Fünftel} are nouns and are capitalized. After a number, the form often remains unchanged: \textbf{two thirds, three quarters}.}
+\GermanText{\textbf{eineinhalb} und \textbf{anderthalb} bedeuten 1,5. Danach steht bei zählbaren Dingen normalerweise der Plural: \textbf{eineinhalb Stunden}.}
+\EnglishText{\textbf{eineinhalb} and \textbf{anderthalb} mean 1.5. With countable things, the plural normally follows: \textbf{one and a half hours}.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich warte eine halbe Stunde.}{I am waiting half an hour.}
+\ExampleItem{Ein Drittel der Teilnehmer fehlt.}{One third of the participants is absent.}
+\ExampleItem{Wir brauchen eineinhalb Stunden.}{We need one and a half hours.}
+\end{itemize}
+\end{exbox}
+
+\section{Dezimalzahlen, Prozent und deutsche Zahlzeichen \textnormal{(Decimals, percentages and German number notation)}}
+\begin{grammarentry}{Komma und Punkt}{Comma and point}
+\GermanText{Im Deutschen steht bei Dezimalzahlen normalerweise ein \textbf{Komma}: \textbf{3,14; 1,5; 0,25}. Nach dem Komma werden die Ziffern beim deutlichen Vorlesen häufig einzeln gesprochen: \textbf{drei Komma eins vier}.}
+\EnglishText{In German, decimals normally use a \textbf{comma}: \textbf{3.14; 1.5; 0.25} in English notation. After the comma, the digits are often read individually when speaking clearly: \textbf{three point one four}.}
+\GermanText{Zur Gliederung großer Zahlen wird im normalen deutschen Schriftgebrauch häufig ein Punkt verwendet: \textbf{1.000; 12.500; 1.234.567}. In technischen und internationalen Kontexten werden auch schmale Leerzeichen zur Gruppierung verwendet.}
+\EnglishText{In ordinary German writing, a period is often used to group large numbers: \textbf{1,000; 12,500; 1,234,567} in English notation. In technical and international contexts, thin spaces are also used for grouping.}
+\GermanText{Prozentangaben stehen zum Beispiel als \textbf{25\,\%} und werden \textbf{fünfundzwanzig Prozent} gesprochen.}
+\EnglishText{Percentages are written, for example, as \textbf{25\,\%} and pronounced \textbf{twenty-five percent}.}
+\end{grammarentry}
+
+\section{Wiederholung, Häufigkeit und Vervielfachung \textnormal{(Repetition, frequency and multiplication)}}
+\begin{grammarentry}{einmal, zweimal, dreifach}{once, twice, threefold}
+\GermanText{Mit \textbf{-mal} bezeichnet man, wie oft etwas geschieht: \textbf{einmal, zweimal, dreimal, hundertmal}.}
+\EnglishText{The suffix \textbf{-mal} indicates how many times something happens: \textbf{once, twice, three times, a hundred times}.}
+\GermanText{Mit \textbf{-fach} bezeichnet man eine Vervielfachung oder Anzahl von Ausführungen: \textbf{einfach, zweifach, dreifach, mehrfach}. \textbf{doppelt} ist eine sehr häufige Alternative zu \textbf{zweifach}.}
+\EnglishText{The suffix \textbf{-fach} indicates multiplication or the number of versions/layers: \textbf{single, twofold, threefold, multiple}. \textbf{doppelt} is a very common alternative to \textbf{zweifach}.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich habe ihn zweimal angerufen.}{I called him twice.}
+\ExampleItem{Die Geschwindigkeit hat sich verdreifacht.}{The speed has tripled.}
+\ExampleItem{Bitte kontrolliere das Ergebnis doppelt.}{Please check the result twice / double-check the result.}
+\end{itemize}
+\end{exbox}
+
+\section{Gruppen und Verteilung \textnormal{(Groups and distribution)}}
+\begin{grammarentry}{zu zweit und je zwei}{in pairs and two each}
+\GermanText{\textbf{zu zweit, zu dritt, zu viert} bezeichnet die Größe einer Gruppe: \textbf{Wir gehen zu zweit}.}
+\EnglishText{\textbf{zu zweit, zu dritt, zu viert} indicates the size of a group: \textbf{We are going as a pair}.}
+\GermanText{Mit \textbf{je} kann man eine Verteilung ausdrücken: \textbf{je zwei Bücher, je fünf Euro}.}
+\EnglishText{\textbf{je} can express distribution: \textbf{two books each, five euros each}.}
+\GermanText{\textbf{beide} bedeutet \textbf{die zwei zusammen} und wird dekliniert: \textbf{beide Männer, mit beiden Männern}.}
+\EnglishText{\textbf{beide} means \textbf{the two together / both} and is declined: \textbf{both men, with both men}.}
+\end{grammarentry}
+
+\section{Ungefähre Zahlen und Mengen \textnormal{(Approximate numbers and quantities)}}
+\begin{grammarentry}{etwa, ungefähr, rund}{about, approximately, around}
+\GermanText{Ungefähre Zahlen werden häufig mit \textbf{etwa, ungefähr, circa, rund} ausgedrückt: \textbf{etwa zwanzig Personen, rund hundert Euro}.}
+\EnglishText{Approximate numbers are often expressed with \textbf{about, approximately, circa, around}: \textbf{about twenty people, around one hundred euros}.}
+\GermanText{Substantivierte Mengenangaben wie \textbf{Dutzende, Hunderte, Tausende, Millionen} können ungenaue große Mengen bezeichnen.}
+\EnglishText{Nominalized quantity expressions such as \textbf{dozens, hundreds, thousands, millions} can indicate approximate large quantities.}
+\end{grammarentry}
+
+\section{Jahreszahlen, Uhrzeit und Telefonnummern \textnormal{(Years, time and telephone numbers)}}
+\begin{grammarentry}{Je nach Kontext anders lesen}{Read differently depending on context}
+\GermanText{Jahreszahlen können als ganze Zahl gelesen werden. Besonders bei Jahren vor 2000 ist die Form mit \textbf{hundert} sehr üblich: \textbf{1999 = neunzehnhundertneunundneunzig}. Jahre ab 2000 werden gewöhnlich mit \textbf{zweitausend} gebildet: \textbf{2026 = zweitausendsechsundzwanzig}.}
+\EnglishText{Years can be read as whole numbers. Especially for years before 2000, the form with \textbf{hundred} is very common: \textbf{1999 = nineteen ninety-nine}. Years from 2000 onward are normally formed with \textbf{two thousand}: \textbf{2026 = two thousand twenty-six}.}
+\GermanText{Bei Telefonnummern werden Ziffern oft einzeln oder in kleinen Gruppen gesprochen. Eine führende 0 wird als \textbf{null} gesprochen.}
+\EnglishText{Telephone numbers are often read digit by digit or in small groups. A leading 0 is pronounced \textbf{null}.}
+\GermanText{Bei der Uhrzeit sind sowohl Formen wie \textbf{14:30 = vierzehn Uhr dreißig} als auch alltagssprachliche Formen wie \textbf{halb drei} üblich.}
+\EnglishText{For time, forms such as \textbf{14:30 = fourteen thirty} as well as everyday forms such as \textbf{half past two} are common.}
+\end{grammarentry}
+
+\section{Rechnen und mathematische Ausdrücke \textnormal{(Arithmetic and mathematical expressions)}}
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{p{3cm}p{4cm}p{6.5cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\BICell{Zeichen}{Symbol} & \color{white}\BICell{Deutsch}{German} & \color{white}\BICell{Beispiel}{Example}\\
+$+$ & plus & \BICell{zwei plus drei ist fünf}{two plus three is five}\\
+$-$ & minus & \BICell{fünf minus zwei ist drei}{five minus two is three}\\
+$\times$ & mal & \BICell{drei mal vier ist zwölf}{three times four is twelve}\\
+$\div$ & geteilt durch & \BICell{zwölf geteilt durch drei ist vier}{twelve divided by three is four}\\
+$=$ & ist gleich / gleich & \BICell{zwei plus zwei ist gleich vier}{two plus two equals four}\\
+$<$ & kleiner als & \BICell{drei ist kleiner als fünf}{three is less than five}\\
+$>$ & größer als & \BICell{fünf ist größer als drei}{five is greater than three}\\
+\end{longtable}
+
+\section{Römische Zahlen \textnormal{(Roman numerals)}}
+\begin{grammarentry}{I, V, X, L, C, D, M}{Roman numeral symbols}
+\GermanText{Römische Zahlen kommen besonders bei Jahrhunderten, Herrschernamen, Kapiteln oder traditionellen Bezeichnungen vor: \textbf{I = 1, V = 5, X = 10, L = 50, C = 100, D = 500, M = 1000}.}
+\EnglishText{Roman numerals occur especially with centuries, rulers' names, chapters, or traditional labels: \textbf{I = 1, V = 5, X = 10, L = 50, C = 100, D = 500, M = 1000}.}
+\GermanText{Beispiele: \textbf{Karl V.} wird \textbf{Karl der Fünfte} gesprochen; \textbf{XXI} entspricht 21.}
+\EnglishText{Examples: \textbf{Karl V.} is pronounced \textbf{Charles the Fifth}; \textbf{XXI} corresponds to 21.}
+\end{grammarentry}
+
+\section{Häufige Fehler \textnormal{(Common mistakes)}}
+\begin{grammarentry}{Typische Stolperstellen}{Typical pitfalls}
+\GermanText{Falsch: \textbf{Ich habe Drei Bücher.} Richtig: \textbf{Ich habe drei Bücher.} Das Zahlwort ist hier nicht substantiviert.}
+\EnglishText{Wrong: \textbf{I have Three books.} Correct: \textbf{I have three books.} The numeral is not nominalized here.}
+\GermanText{Falsch: \textbf{zwanzigundeins}. Richtig: \textbf{einundzwanzig}. Bei 21--99 steht die Einerzahl vor der Zehnerzahl.}
+\EnglishText{Wrong: \textbf{twenty-and-one}. Correct: \textbf{one-and-twenty} in German word order. For 21--99, the unit comes before the tens.}
+\GermanText{Falsch: \textbf{einundzwanzigsten Jahre}. Richtig: \textbf{einundzwanzig Jahre}, wenn nur die Anzahl gemeint ist. Eine Ordinalzahl braucht man für eine Reihenfolge: \textbf{im einundzwanzigsten Jahr}.}
+\EnglishText{Wrong: \textbf{twenty-first years} when only quantity is meant. Correct: \textbf{twenty-one years}. An ordinal is used for an order: \textbf{in the twenty-first year}.}
+\GermanText{Achtung bei Englisch: \textbf{one billion} = \textbf{eine Milliarde}, nicht \textbf{eine Billion}.}
+\EnglishText{Be careful with English: \textbf{one billion} = German \textbf{eine Milliarde}, not German \textbf{eine Billion}.}
+\end{grammarentry}
+
+\section{Zusammenfassung \textnormal{(Summary)}}
+\begin{grammarentry}{Merksätze}{Key rules}
+\GermanText{\textbf{1.} Normale Kardinalzahlen werden kleingeschrieben: \textbf{drei Bücher}. Substantivierte Zahlen werden großgeschrieben: \textbf{die Drei}.}
+\EnglishText{\textbf{1.} Ordinary cardinal numerals are lowercase: \textbf{three books}. Nominalized numbers are capitalized: \textbf{the number three}.}
+\GermanText{\textbf{2.} Vor einem Nomen wird \textbf{eins} zu einer Form von \textbf{ein}: \textbf{ein Mann, eine Frau}.}
+\EnglishText{\textbf{2.} Before a noun, \textbf{eins} becomes a form of \textbf{ein}: \textbf{one man, one woman}.}
+\GermanText{\textbf{3.} Bei 21--99 gilt: Einer + \textbf{und} + Zehner: \textbf{einundzwanzig}.}
+\EnglishText{\textbf{3.} For 21--99: unit + \textbf{und} + tens: \textbf{twenty-one} in German order.}
+\GermanText{\textbf{4.} Ordinalzahlen verhalten sich wie Adjektive und werden dekliniert: \textbf{der erste Tag, am ersten Tag}.}
+\EnglishText{\textbf{4.} Ordinal numbers behave like adjectives and are declined: \textbf{the first day, on the first day}.}
+\GermanText{\textbf{5.} \textbf{Million, Milliarde, Billion} sind Nomen und werden großgeschrieben; \textbf{hundert} und \textbf{tausend} sind normalerweise Zahlwörter und werden kleingeschrieben.}
+\EnglishText{\textbf{5.} \textbf{Million, Milliarde, Billion} are nouns and are capitalized; \textbf{hundred} and \textbf{thousand} normally function as numerals and are lowercase.}
+\GermanText{\textbf{6.} Deutsche Dezimalzahlen verwenden ein Komma: \textbf{3,14}.}
+\EnglishText{\textbf{6.} German decimal numbers use a comma: \textbf{3.14} in English notation.}
+\end{grammarentry}
+
+\end{document}

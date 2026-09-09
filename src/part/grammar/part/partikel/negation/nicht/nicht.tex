@@ -1,41 +1,239 @@
-\documentclass[a4paper]{article}
-
-\usepackage{graphicx}
-\usepackage{amsmath,amssymb}
-\usepackage{minted}
-\usepackage{multirow}
-\usepackage{float}
-\usepackage{algorithm}
-\usepackage{algpseudocode}
-\usepackage{todonotes}
-\usepackage{forest}
-\usepackage{xstring}
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
 \usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
 \usepackage[most]{tcolorbox}
-\usepackage{xparse}
-\usepackage{natbib}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[table]{xcolor}
 
-\usetikzlibrary{graphs,graphdrawing}
-\usegdlibrary{layered}
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{5pt}
 
-% for external graphviz
-\input{/home/donkarlo/Dropbox/repo/nd_language_ai_project/src/nd_language_ai/formal/computer/programming/tex/latex/code_clips/external_graphviz.tex}
+\titleformat{\section}[block]{\Large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+\titleformat{\subsection}[block]{\large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
 
-% for tags
-\input{/home/donkarlo/Dropbox/repo/nd_language_ai_project/src/nd_language_ai/formal/computer/programming/tex/latex/part/control_sequence/kind/semtag/semtag.tex}
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+\begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+#3
+\end{tcolorbox}}{}
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
 
-% for links
-\input{/home/donkarlo/Dropbox/repo/nd_language_ai_project/src/nd_language_ai/formal/computer/programming/tex/latex/code_clips/seehere.tex}
-
-\title{}
+\title{\glqq nicht\grqq -- Bedeutung und Gebrauch\\{\large\textnormal{``nicht'' -- meaning and use}}}
 \date{}
-\author{Mohammad Rahmani}
-
 \begin{document}
-   \maketitle
+\maketitle
+\tableofcontents
+\newpage
 
-   % ND_MIND_MIRROR_CONTENT
+\section{Grundbedeutung \textnormal{(Basic meaning)}}
+\begin{grammarentry}{nicht}{Negationspartikel}
+\GermanText{\textbf{nicht} ist die zentrale Negationspartikel des Deutschen. Sie verneint eine Aussage oder einen Teil einer Aussage.}
+\EnglishText{\textbf{nicht} is the central negation particle in German. It negates a statement or part of a statement.}
+\GermanText{\textbf{nicht} wird nicht dekliniert und nicht konjugiert.}
+\EnglishText{\textbf{nicht} is neither declined nor conjugated.}
+\end{grammarentry}
 
-   \bibliographystyle{plainnat}
-   \bibliography{/home/donkarlo/Dropbox/repo/nd_shared_research/bibliography/bibliography.bib}
+\section{Was kann \glqq nicht\grqq verneinen? \textnormal{(What can ``nicht'' negate?)}}
+\begin{grammarentry}{Reichweite}{ganzer Satz oder einzelner Teil}
+\GermanText{\textbf{nicht} kann den ganzen Satz, ein Verb bzw. Prädikat, ein Adjektiv, ein Adverb, eine Präpositionalgruppe, eine Orts- oder Richtungsangabe oder einen gezielt kontrastierten Satzteil verneinen.}
+\EnglishText{\textbf{nicht} can negate the whole sentence, a verb or predicate, an adjective, an adverb, a prepositional phrase, an expression of place or direction, or a specifically contrasted sentence element.}
+\GermanText{Die genaue Stellung von \textbf{nicht} ist ein eigenes Thema und wird in der Datei \texttt{nicht\_stellung.tex} behandelt.}
+\EnglishText{The exact position of \textbf{nicht} is a separate topic and is covered in the file \texttt{nicht\_stellung.tex}.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Ich komme nicht.}{I am not coming.}
+\ExampleItem{Das ist nicht teuer.}{That is not expensive.}
+\ExampleItem{Er arbeitet nicht schnell.}{He does not work quickly.}
+\ExampleItem{Ich fahre nicht nach Wien.}{I am not going to Vienna.}
+\ExampleItem{Nicht Peter hat angerufen, sondern Paul.}{It was not Peter who called, but Paul.}
+\end{itemize}\end{exbox}
+
+\section{\glqq nicht\grqq und \glqq kein\grqq \textnormal{(``nicht'' and ``kein'')}}
+\begin{grammarentry}{Grundunterschied}{Negationspartikel und Negativartikel}
+\GermanText{\textbf{kein} wird typischerweise bei Nomen verwendet, wenn im positiven Satz der unbestimmte Artikel \textbf{ein/eine} stehen würde oder das Nomen ohne Artikel gebraucht wird. \textbf{nicht} verneint dagegen normalerweise andere Satzteile oder eine ganze Aussage.}
+\EnglishText{\textbf{kein} is typically used with nouns when the positive sentence would contain the indefinite article \textbf{ein/eine}, or when the noun is used without an article. \textbf{nicht}, by contrast, normally negates other sentence elements or an entire statement.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Ich habe kein Auto.}{I do not have a car.}
+\ExampleItem{Sie trinkt keinen Kaffee.}{She does not drink coffee.}
+\ExampleItem{Das ist nicht mein Auto.}{That is not my car.}
+\ExampleItem{Ich kaufe nicht dieses Auto, sondern das andere.}{I am not buying this car, but the other one.}
+\end{itemize}\end{exbox}
+
+\section{\glqq nicht\grqq bei Nomen \textnormal{(``nicht'' with nouns)}}
+\begin{grammarentry}{Kontrast}{bestimmte oder besonders kontrastierte Nominalgruppe}
+\GermanText{Auch ein Nomen kann mit \textbf{nicht} verneint werden, besonders wenn die Nominalgruppe bestimmt ist oder ausdrücklich einem anderen Element gegenübergestellt wird.}
+\EnglishText{A noun can also be negated with \textbf{nicht}, especially when the noun phrase is definite or explicitly contrasted with another element.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Das ist nicht der Schlüssel.}{That is not the key.}
+\ExampleItem{Nicht der Preis ist das Problem, sondern die Qualität.}{It is not the price that is the problem, but the quality.}
+\end{itemize}\end{exbox}
+
+\section{Satznegation und Teilnegation \textnormal{(Sentence negation and constituent negation)}}
+\begin{grammarentry}{Satznegation}{die Aussage als Ganzes}
+\GermanText{Bei der \textbf{Satznegation} wird die Aussage als Ganzes verneint.}
+\EnglishText{With \textbf{sentence negation}, the statement as a whole is negated.}
+\end{grammarentry}
+\begin{grammarentry}{Teilnegation}{nur ein Element}
+\GermanText{Bei der \textbf{Teilnegation} wird nur ein bestimmter Satzteil verneint oder kontrastiert. Häufig folgt eine Korrektur mit \textbf{sondern}.}
+\EnglishText{With \textbf{constituent negation}, only a particular sentence element is negated or contrasted. A correction with \textbf{sondern} often follows.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Ich arbeite heute nicht.}{I am not working today.}
+\ExampleItem{Ich arbeite nicht heute, sondern morgen.}{I am not working today, but tomorrow.}
+\end{itemize}\end{exbox}
+
+\section{\glqq nicht ... sondern ...\grqq \textnormal{(``not ... but ...'')}}
+\begin{grammarentry}{Korrektur}{Gegensatz nach einer Negation}
+\GermanText{Mit \textbf{nicht ..., sondern ...} wird ein Element verneint und durch ein anderes ersetzt oder korrigiert. Die gegenübergestellten Elemente sollten grammatisch und inhaltlich parallel sein.}
+\EnglishText{With \textbf{nicht ..., sondern ...}, one element is negated and replaced or corrected by another. The contrasted elements should be grammatically and semantically parallel.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Ich fahre nicht mit dem Auto, sondern mit dem Zug.}{I am not going by car, but by train.}
+\ExampleItem{Er kommt nicht heute, sondern morgen.}{He is not coming today, but tomorrow.}
+\end{itemize}\end{exbox}
+
+\section{\glqq nicht nur ... sondern auch ...\grqq \textnormal{(``not only ... but also ...'')}}
+\begin{grammarentry}{Addition}{zwei zutreffende Informationen}
+\GermanText{\textbf{nicht nur ..., sondern auch ...} verneint die erste Information nicht wirklich. Die Konstruktion bedeutet, dass sowohl die erste als auch die zweite Information gilt, wobei die zweite hinzugefügt und oft hervorgehoben wird.}
+\EnglishText{\textbf{not only ..., but also ...} does not truly negate the first piece of information. The construction means that both pieces of information are true, with the second being added and often emphasized.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Sie spricht nicht nur Deutsch, sondern auch Englisch.}{She speaks not only German but also English.}
+\ExampleItem{Das ist nicht nur teuer, sondern auch unpraktisch.}{That is not only expensive but also impractical.}
+\end{itemize}\end{exbox}
+
+\section{Zeitliche Verbindungen \textnormal{(Temporal combinations)}}
+\begin{grammarentry}{noch nicht}{bis jetzt nicht, aber später möglich}
+\GermanText{\textbf{noch nicht} bedeutet, dass etwas bis zum jetzigen Zeitpunkt nicht der Fall ist; eine spätere Änderung ist möglich oder erwartet.}
+\EnglishText{\textbf{noch nicht} means that something is not the case up to the present time; a later change is possible or expected.}
+\end{grammarentry}
+\begin{grammarentry}{nicht mehr}{früher ja, jetzt nein}
+\GermanText{\textbf{nicht mehr} bedeutet, dass etwas früher der Fall war, jetzt aber nicht mehr gilt.}
+\EnglishText{\textbf{nicht mehr} means that something was true before but is no longer true now.}
+\end{grammarentry}
+\begin{grammarentry}{noch immer nicht / immer noch nicht}{Fortdauer der Negation}
+\GermanText{\textbf{noch immer nicht} und \textbf{immer noch nicht} betonen, dass ein erwarteter Zustand weiterhin nicht eingetreten ist.}
+\EnglishText{\textbf{noch immer nicht} and \textbf{immer noch nicht} emphasize that an expected state has still not occurred.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Ich bin noch nicht fertig.}{I am not finished yet.}
+\ExampleItem{Ich wohne nicht mehr in Wien.}{I no longer live in Vienna.}
+\ExampleItem{Er hat immer noch nicht geantwortet.}{He still has not answered.}
+\end{itemize}\end{exbox}
+
+\section{Verstärkung der Negation \textnormal{(Strengthening negation)}}
+\begin{grammarentry}{gar nicht / überhaupt nicht}{starke Negation}
+\GermanText{\textbf{gar nicht} und \textbf{überhaupt nicht} verstärken die Negation. \textbf{überhaupt nicht} kann besonders deutlich ausdrücken, dass etwas in keiner Weise zutrifft.}
+\EnglishText{\textbf{gar nicht} and \textbf{überhaupt nicht} strengthen negation. \textbf{überhaupt nicht} can especially emphasize that something is not true in any way.}
+\end{grammarentry}
+\begin{grammarentry}{keineswegs}{formeller und deutlich}
+\GermanText{\textbf{keineswegs} bedeutet etwa \glqq auf keinen Fall / überhaupt nicht\grqq und wirkt häufig formeller.}
+\EnglishText{\textbf{keineswegs} means roughly ``by no means / not at all'' and often sounds more formal.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Das ist gar nicht schwer.}{That is not difficult at all.}
+\ExampleItem{Ich bin überhaupt nicht müde.}{I am not tired at all.}
+\ExampleItem{Die Entscheidung ist keineswegs endgültig.}{The decision is by no means final.}
+\end{itemize}\end{exbox}
+
+\section{Wichtige Verbindungen mit \glqq nicht\grqq \textnormal{(Important combinations with ``nicht'')}}
+\begin{grammarentry}{nicht einmal}{even not / not even}
+\GermanText{\textbf{nicht einmal} bedeutet, dass selbst ein besonders kleiner, einfacher oder erwartbarer Fall nicht zutrifft.}
+\EnglishText{\textbf{nicht einmal} means that even a particularly small, simple, or expected case does not apply.}
+\end{grammarentry}
+\begin{grammarentry}{nicht unbedingt}{not necessarily}
+\GermanText{\textbf{nicht unbedingt} bedeutet, dass etwas nicht zwingend oder nicht in jedem Fall zutrifft. Es ist schwächer als eine absolute Verneinung.}
+\EnglishText{\textbf{nicht unbedingt} means that something is not necessarily or not always the case. It is weaker than an absolute negation.}
+\end{grammarentry}
+\begin{grammarentry}{nicht ganz}{not quite / not completely}
+\GermanText{\textbf{nicht ganz} schränkt eine Aussage ab und bedeutet \glqq nicht vollständig\grqq oder \glqq nicht völlig\grqq.}
+\EnglishText{\textbf{nicht ganz} limits a statement and means ``not completely'' or ``not quite.''}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Er hat nicht einmal angerufen.}{He did not even call.}
+\ExampleItem{Das ist nicht unbedingt falsch.}{That is not necessarily wrong.}
+\ExampleItem{Ich habe die Frage nicht ganz verstanden.}{I did not fully understand the question.}
+\end{itemize}\end{exbox}
+
+\section{\glqq nicht\grqq in Fragen und Aufforderungen \textnormal{(``nicht'' in questions and requests)}}
+\begin{grammarentry}{Fragen}{echte Frage oder Erwartung}
+\GermanText{\textbf{nicht} kann in Fragen eine negative Information ausdrücken. Je nach Kontext kann eine negative Frage außerdem zeigen, dass der Sprecher eher eine positive Antwort erwartet oder überrascht ist.}
+\EnglishText{\textbf{nicht} can express negative information in questions. Depending on context, a negative question can also show that the speaker rather expects a positive answer or is surprised.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Kommst du heute nicht?}{Aren't you coming today?}
+\ExampleItem{Hast du das nicht gewusst?}{Didn't you know that?}
+\ExampleItem{Mach das bitte nicht!}{Please don't do that!}
+\end{itemize}\end{exbox}
+
+\section{Negation mit Modalverben: Bedeutungsgefahr \textnormal{(Negation with modal verbs: meaning differences)}}
+\begin{grammarentry}{müssen + nicht}{keine Notwendigkeit}
+\GermanText{\textbf{nicht müssen} bedeutet normalerweise \glqq nicht notwendig sein\grqq, nicht \glqq verboten sein\grqq.}
+\EnglishText{\textbf{nicht müssen} normally means ``not to have to,'' not ``to be forbidden.''}
+\end{grammarentry}
+\begin{grammarentry}{nicht dürfen}{Verbot}
+\GermanText{\textbf{nicht dürfen} bedeutet normalerweise, dass etwas nicht erlaubt ist.}
+\EnglishText{\textbf{nicht dürfen} normally means that something is not allowed.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Du musst heute nicht arbeiten.}{You do not have to work today.}
+\ExampleItem{Du darfst hier nicht rauchen.}{You must not smoke here.}
+\end{itemize}\end{exbox}
+
+\section{Betonung und Bedeutung \textnormal{(Stress and meaning)}}
+\begin{grammarentry}{Kontrastfokus}{gesprochene Sprache}
+\GermanText{In der gesprochenen Sprache kann die Betonung zeigen, welcher Teil besonders verneint oder korrigiert wird. Derselbe Satz kann dadurch unterschiedliche Kontraste nahelegen.}
+\EnglishText{In spoken German, stress can indicate which part is specifically negated or corrected. The same sentence can therefore suggest different contrasts.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{ICH habe das nicht gesagt.}{I did not say that -- someone else may have.}
+\ExampleItem{Ich habe DAS nicht gesagt.}{I did not say that -- I may have said something else.}
+\end{itemize}\end{exbox}
+
+\section{Mehrere Negationselemente \textnormal{(Multiple negative elements)}}
+\begin{grammarentry}{Standarddeutsch}{keine normale doppelte Negation zur Verstärkung}
+\GermanText{Im heutigen Standarddeutsch werden zwei Negationen normalerweise nicht einfach kombiniert, um eine einzige Negation zu verstärken. Formen wie \glqq Ich habe niemanden nicht gesehen\grqq haben nicht die normale Bedeutung von \glqq Ich habe niemanden gesehen\grqq. Mehrere Negationselemente können jedoch in besonderen logischen oder kontrastiven Strukturen vorkommen.}
+\EnglishText{In contemporary Standard German, two negatives are not normally combined merely to strengthen a single negation. Forms such as ``Ich habe niemanden nicht gesehen'' do not have the normal meaning of ``I saw nobody.'' Multiple negative elements can, however, occur in special logical or contrastive structures.}
+\end{grammarentry}
+
+\section{Häufige Fehler \textnormal{(Common errors)}}
+\begin{grammarentry}{kein oder nicht?}{typische Entscheidung}
+\GermanText{Bei einem unbestimmten Nomen ist häufig \textbf{kein} nötig: \glqq Ich habe kein Auto\grqq, nicht normalerweise \glqq Ich habe nicht ein Auto\grqq.}
+\EnglishText{With an indefinite noun, \textbf{kein} is often required: ``Ich habe kein Auto,'' not normally ``Ich habe nicht ein Auto.''}
+\GermanText{\textbf{nicht mehr} und \textbf{noch nicht} dürfen nicht verwechselt werden: \glqq noch nicht\grqq = bis jetzt nein; \glqq nicht mehr\grqq = früher ja, jetzt nein.}
+\EnglishText{\textbf{nicht mehr} and \textbf{noch nicht} must not be confused: ``noch nicht'' = not yet; ``nicht mehr'' = no longer.}
+\end{grammarentry}
+
+\section{Zusammenfassung \textnormal{(Summary)}}
+\begin{grammarentry}{Merksätze}{kurz und wichtig}
+\GermanText{\textbf{nicht} verneint Aussagen und Satzteile. \textbf{kein} verneint typischerweise unbestimmte oder artikellose Nomen.}
+\EnglishText{\textbf{nicht} negates statements and sentence elements. \textbf{kein} typically negates indefinite nouns or nouns without an article.}
+\GermanText{\textbf{noch nicht} = not yet; \textbf{nicht mehr} = no longer; \textbf{gar nicht / überhaupt nicht} = not at all.}
+\EnglishText{\textbf{noch nicht} = not yet; \textbf{nicht mehr} = no longer; \textbf{gar nicht / überhaupt nicht} = not at all.}
+\GermanText{Für die genaue Wortstellung siehe die getrennte Erklärung \texttt{nicht\_stellung.tex}.}
+\EnglishText{For exact word order, see the separate explanation \texttt{nicht\_stellung.tex}.}
+\end{grammarentry}
 \end{document}

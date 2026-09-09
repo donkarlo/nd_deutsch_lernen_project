@@ -1,0 +1,256 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[table]{xcolor}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{5pt}
+
+\titleformat{\section}[block]{\Large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+\titleformat{\subsection}[block]{\large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+\begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+#3
+\end{tcolorbox}}{}
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Negation im Deutschen\\{\large\textnormal{Negation in German}}}
+\date{}
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Was ist Negation? \textnormal{(What is negation?)}}
+\begin{grammarentry}{Negation}{Verneinung}
+\GermanText{\textbf{Negation} oder \textbf{Verneinung} bezeichnet grammatische und lexikalische Mittel, mit denen ausgedrückt wird, dass etwas nicht gilt, nicht existiert, nicht geschieht oder ausgeschlossen wird.}
+\EnglishText{\textbf{Negation} is the grammatical and lexical expression that something is not true, does not exist, does not happen, or is excluded.}
+\GermanText{Das Gegenteil ist \textbf{Affirmation} bzw. \textbf{Bejahung}. Ein Satz kann also affirmativ oder negativ sein.}
+\EnglishText{The opposite is \textbf{affirmation}. A sentence can therefore be affirmative or negative.}
+\end{grammarentry}
+
+\section{Die wichtigsten Negationsmittel \textnormal{(The main means of negation)}}
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{2.7cm}|p{4.2cm}|p{6.1cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Mittel} & \color{white}\textbf{Funktion} & \color{white}\textbf{Beispiel / Example}\\
+nicht & allgemeine Negationspartikel / general negation particle & Ich komme \textbf{nicht}. / I am \textbf{not} coming.\\
+kein & Negativartikel bzw. Negativpronomen / negative determiner or pronoun & Ich habe \textbf{kein} Auto. / I have \textbf{no} car.\\
+niemand & negative Personenreferenz / negative reference to a person & \textbf{Niemand} ist da. / \textbf{Nobody} is there.\\
+nichts & negative Sachreferenz / negative reference to a thing & Ich sehe \textbf{nichts}. / I see \textbf{nothing}.\\
+nie / niemals & negative Zeitangabe / negative time expression & Er kommt \textbf{nie}. / He \textbf{never} comes.\\
+nirgendwo / nirgends & negativer Ort / negative place & Ich finde es \textbf{nirgendwo}. / I can find it \textbf{nowhere}.\\
+keineswegs & starke, oft formellere Negation / strong, often more formal negation & Das ist \textbf{keineswegs} sicher. / That is \textbf{by no means} certain.\\
+\end{longtable}
+
+\section{Satznegation und Teilnegation \textnormal{(Sentence negation and constituent negation)}}
+\begin{grammarentry}{Satznegation}{ganze Proposition}
+\GermanText{Bei der \textbf{Satznegation} wird der Inhalt des ganzen Satzes verneint.}
+\EnglishText{With \textbf{sentence negation}, the content of the entire sentence is negated.}
+\end{grammarentry}
+\begin{grammarentry}{Teilnegation}{ein Satzteil}
+\GermanText{Bei der \textbf{Teilnegation} wird nur ein bestimmter Bestandteil verneint oder kontrastiert.}
+\EnglishText{With \textbf{constituent negation}, only a particular constituent is negated or contrasted.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Ich arbeite heute nicht.}{I am not working today.}
+\ExampleItem{Ich arbeite nicht heute, sondern morgen.}{I am not working today, but tomorrow.}
+\end{itemize}\end{exbox}
+
+\section{Negation mit \glqq nicht\grqq \textnormal{(Negation with ``nicht'')}}
+\begin{grammarentry}{nicht}{breit einsetzbar}
+\GermanText{\textbf{nicht} ist das wichtigste Mittel zur Negation von Verben, Prädikaten, Adjektiven, Adverbien, Präpositionalgruppen und ganzen Aussagen.}
+\EnglishText{\textbf{nicht} is the main means of negating verbs, predicates, adjectives, adverbs, prepositional phrases, and whole statements.}
+\GermanText{Die Einzelheiten zu Bedeutung und Gebrauch stehen in \texttt{nicht.tex}; die Wortstellung wird in \texttt{nicht\_stellung.tex} behandelt.}
+\EnglishText{Details of meaning and use are covered in \texttt{nicht.tex}; word order is covered in \texttt{nicht\_stellung.tex}.}
+\end{grammarentry}
+
+\section{Negation mit \glqq kein\grqq \textnormal{(Negation with ``kein'')}}
+\begin{grammarentry}{kein}{Nomen negieren}
+\GermanText{\textbf{kein} negiert typischerweise ein Nomen, wenn im entsprechenden positiven Satz \textbf{ein/eine} oder kein Artikel steht. Es wird ähnlich wie ein Possessivartikel dekliniert.}
+\EnglishText{\textbf{kein} typically negates a noun when the corresponding positive sentence contains \textbf{ein/eine} or no article. It is declined similarly to a possessive determiner.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Ich habe ein Auto. $\rightarrow$ Ich habe kein Auto.}{I have a car. $\rightarrow$ I do not have a car.}
+\ExampleItem{Ich trinke Kaffee. $\rightarrow$ Ich trinke keinen Kaffee.}{I drink coffee. $\rightarrow$ I do not drink coffee.}
+\end{itemize}\end{exbox}
+
+\section{Deklination von \glqq kein\grqq \textnormal{(Declension of ``kein'')}}
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{2.5cm}|p{2.6cm}|p{2.6cm}|p{2.6cm}|p{2.6cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Kasus (Case)} & \color{white}\textbf{Maskulin} & \color{white}\textbf{Feminin} & \color{white}\textbf{Neutrum} & \color{white}\textbf{Plural}\\
+Nominativ & kein & keine & kein & keine\\
+Akkusativ & keinen & keine & kein & keine\\
+Dativ & keinem & keiner & keinem & keinen\\
+Genitiv & keines & keiner & keines & keiner\\
+\end{longtable}
+
+\section{Negative Pronomen und Adverbien \textnormal{(Negative pronouns and adverbs)}}
+\begin{grammarentry}{niemand / nichts}{Person und Sache}
+\GermanText{\textbf{niemand} bedeutet \glqq keine Person\grqq; \textbf{nichts} bedeutet \glqq keine Sache / nicht etwas\grqq.}
+\EnglishText{\textbf{niemand} means ``nobody''; \textbf{nichts} means ``nothing.''}
+\end{grammarentry}
+\begin{grammarentry}{nie / niemals}{Zeit}
+\GermanText{\textbf{nie} und \textbf{niemals} verneinen eine Zeit- oder Häufigkeitsangabe. \textbf{niemals} kann stärker oder nachdrücklicher wirken.}
+\EnglishText{\textbf{nie} and \textbf{niemals} negate time or frequency. \textbf{niemals} can sound stronger or more emphatic.}
+\end{grammarentry}
+\begin{grammarentry}{nirgendwo / nirgends}{Ort}
+\GermanText{\textbf{nirgendwo} und \textbf{nirgends} bedeuten \glqq an keinem Ort\grqq.}
+\EnglishText{\textbf{nirgendwo} and \textbf{nirgends} mean ``nowhere.''}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Niemand kennt die Antwort.}{Nobody knows the answer.}
+\ExampleItem{Ich habe nichts gehört.}{I heard nothing.}
+\ExampleItem{Ich rauche nie.}{I never smoke.}
+\ExampleItem{Der Schlüssel ist nirgends zu finden.}{The key is nowhere to be found.}
+\end{itemize}\end{exbox}
+
+\section{Negation von Mengen \textnormal{(Negation of quantities)}}
+\begin{grammarentry}{kein / nicht alle / nicht jeder}{Reichweite ist entscheidend}
+\GermanText{\textbf{Kein Student bestand die Prüfung} bedeutet: null Studenten bestanden. \textbf{Nicht alle Studenten bestanden die Prüfung} bedeutet dagegen: mindestens einer bestand nicht; andere können bestanden haben.}
+\EnglishText{\textbf{No student passed the exam} means that zero students passed. \textbf{Not all students passed the exam}, by contrast, means that at least one did not pass; others may have passed.}
+\GermanText{\textbf{Nicht jeder} bedeutet nicht dasselbe wie \textbf{keiner}.}
+\EnglishText{\textbf{Not everyone} does not mean the same as \textbf{no one}.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Nicht jeder mag Kaffee.}{Not everyone likes coffee.}
+\ExampleItem{Keiner mag Kaffee.}{Nobody likes coffee.}
+\end{itemize}\end{exbox}
+
+\section{Negation und Modalverben \textnormal{(Negation and modal verbs)}}
+\begin{grammarentry}{Skopus}{Negation verändert die modale Bedeutung}
+\GermanText{Bei Modalverben ist wichtig, ob eine Notwendigkeit, Möglichkeit, Fähigkeit, Erlaubnis oder ein Wunsch negiert wird. Besonders wichtig ist der Unterschied zwischen \textbf{nicht müssen} und \textbf{nicht dürfen}.}
+\EnglishText{With modal verbs, it matters whether necessity, possibility, ability, permission, or desire is negated. The distinction between \textbf{nicht müssen} and \textbf{nicht dürfen} is especially important.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Du musst nicht kommen.}{You do not have to come.}
+\ExampleItem{Du darfst nicht kommen.}{You are not allowed to come.}
+\end{itemize}\end{exbox}
+
+\section{Negation und Konjunktionen \textnormal{(Negation and conjunctions)}}
+\begin{grammarentry}{sondern}{Korrektur nach einer Negation}
+\GermanText{\textbf{sondern} verbindet einen verneinten ersten Teil mit einer korrigierenden Alternative: \textbf{nicht A, sondern B}.}
+\EnglishText{\textbf{sondern} links a negated first element with a corrective alternative: \textbf{not A, but B}.}
+\end{grammarentry}
+\begin{grammarentry}{weder ... noch}{neither ... nor}
+\GermanText{\textbf{weder ... noch ...} verneint zwei oder mehr parallele Alternativen.}
+\EnglishText{\textbf{weder ... noch ...} negates two or more parallel alternatives.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Ich fahre nicht nach Wien, sondern nach Graz.}{I am not going to Vienna, but to Graz.}
+\ExampleItem{Er trinkt weder Kaffee noch Tee.}{He drinks neither coffee nor tea.}
+\end{itemize}\end{exbox}
+
+\section{Negation in Fragen \textnormal{(Negation in questions)}}
+\begin{grammarentry}{Negative Frage}{Erwartung und Kontext}
+\GermanText{Negative Fragen können echte Informationsfragen sein, aber auch eine Erwartung, Überraschung oder Annahme des Sprechers zeigen.}
+\EnglishText{Negative questions can be genuine requests for information, but they can also express the speaker's expectation, surprise, or assumption.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Kommst du nicht mit?}{Aren't you coming along?}
+\ExampleItem{Ist das nicht dein Bruder?}{Isn't that your brother?}
+\end{itemize}\end{exbox}
+
+\section{Negation in Aufforderungen \textnormal{(Negation in commands and requests)}}
+\begin{grammarentry}{Verbot oder Bitte}{nicht + Imperativ}
+\GermanText{Ein Imperativ kann mit \textbf{nicht} negiert werden. Dadurch entsteht je nach Kontext ein Verbot, eine Warnung oder eine negative Bitte.}
+\EnglishText{An imperative can be negated with \textbf{nicht}. Depending on context, this creates a prohibition, warning, or negative request.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Mach das nicht!}{Don't do that!}
+\ExampleItem{Vergiss bitte den Schlüssel nicht.}{Please don't forget the key.}
+\end{itemize}\end{exbox}
+
+\section{Lexikalische Negation \textnormal{(Lexical negation)}}
+\begin{grammarentry}{Präfixe}{un-, in-, des-/dis- und andere}
+\GermanText{Negation kann auch Teil eines Wortes sein. Besonders produktiv ist das Präfix \textbf{un-}: \textbf{möglich -- unmöglich}, \textbf{bekannt -- unbekannt}. In Fremdwörtern kommen außerdem Formen wie \textbf{in-/im-/il-/ir-} oder \textbf{dis-} vor. Diese Bildungen sind lexikalisch und nicht immer frei vorhersagbar.}
+\EnglishText{Negation can also be part of a word. The prefix \textbf{un-} is especially productive: \textbf{möglich -- unmöglich}, \textbf{bekannt -- unbekannt}. In loanwords, forms such as \textbf{in-/im-/il-/ir-} or \textbf{dis-} also occur. These formations are lexical and are not always freely predictable.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{möglich -- unmöglich}{possible -- impossible}
+\ExampleItem{bekannt -- unbekannt}{known -- unknown}
+\ExampleItem{legal -- illegal}{legal -- illegal}
+\end{itemize}\end{exbox}
+
+\section{Negation durch Wörter mit negativer Bedeutung \textnormal{(Negation through words with negative meaning)}}
+\begin{grammarentry}{verneinen / ablehnen / fehlen}{lexikalische Bedeutung}
+\GermanText{Ein negativer Inhalt kann auch durch die Bedeutung eines Verbs, Adjektivs oder Nomens entstehen, ohne dass \textbf{nicht} oder \textbf{kein} vorkommt, zum Beispiel \textbf{verneinen}, \textbf{ablehnen}, \textbf{verweigern}, \textbf{fehlen}, \textbf{unmöglich}.}
+\EnglishText{Negative content can also arise from the meaning of a verb, adjective, or noun without \textbf{nicht} or \textbf{kein}, for example \textbf{verneinen}, \textbf{ablehnen}, \textbf{verweigern}, \textbf{fehlen}, \textbf{unmöglich}.}
+\end{grammarentry}
+
+\section{Doppelte und mehrfache Negation \textnormal{(Double and multiple negation)}}
+\begin{grammarentry}{Standarddeutsch}{keine einfache Verstärkung}
+\GermanText{Im Standarddeutschen wird eine zweite Negation normalerweise nicht einfach als Verstärkung derselben Negation verwendet. Zwei Negationen können sich logisch gegenseitig aufheben oder eine besondere, oft abgeschwächte Bedeutung erzeugen. Dialekte und ältere Sprachstufen können andere Muster haben.}
+\EnglishText{In Standard German, a second negative is not normally used simply to strengthen the same negation. Two negatives can logically cancel each other or create a special, often weakened meaning. Dialects and older stages of the language may have different patterns.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Das ist nicht unmöglich.}{That is not impossible.}
+\ExampleItem{Das ist nicht uninteressant.}{That is not uninteresting.}
+\end{itemize}\end{exbox}
+
+\section{Litotes \textnormal{(Litotes)}}
+\begin{grammarentry}{Negation des Gegenteils}{rhetorische Abschwächung oder Untertreibung}
+\GermanText{Bei einer \textbf{Litotes} wird häufig das Gegenteil verneint, etwa \glqq nicht schlecht\grqq. Die Bedeutung ist nicht immer identisch mit dem einfachen positiven Wort; \glqq nicht schlecht\grqq kann je nach Kontext schwächer oder indirekter als \glqq gut\grqq sein.}
+\EnglishText{In \textbf{litotes}, the opposite is often negated, as in ``not bad.'' The meaning is not always identical to the simple positive word; ``not bad'' can be weaker or more indirect than ``good,'' depending on context.}
+\end{grammarentry}
+
+\section{Negation und Reichweite \textnormal{(Negation and scope)}}
+\begin{grammarentry}{Skopus}{was genau wird verneint?}
+\GermanText{Der \textbf{Skopus der Negation} ist der Bereich, auf den sich die Negation bezieht. Unterschiedlicher Skopus kann zu unterschiedlicher Bedeutung führen. Wortstellung, Betonung und Kontext helfen dabei, den Skopus zu erkennen.}
+\EnglishText{The \textbf{scope of negation} is the domain to which the negation applies. Different scope can produce different meanings. Word order, stress, and context help identify the scope.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Nicht alle Teilnehmer kamen.}{Not all participants came.}
+\ExampleItem{Alle Teilnehmer kamen nicht.}{Depending on context and prosody, this can be ambiguous or marked; a clearer formulation is often preferable.}
+\end{itemize}\end{exbox}
+
+\section{Negation und Wortstellung \textnormal{(Negation and word order)}}
+\begin{grammarentry}{Stellung}{abhängig vom Negationsmittel und Skopus}
+\GermanText{Die Stellung eines Negationselements hängt von seiner grammatischen Art und davon ab, was verneint wird. Besonders die Stellung von \textbf{nicht} hat eigene Regeln. Diese werden ausführlich in \texttt{nicht\_stellung.tex} behandelt.}
+\EnglishText{The position of a negative element depends on its grammatical type and on what is being negated. The position of \textbf{nicht} has its own rules, which are covered in detail in \texttt{nicht\_stellung.tex}.}
+\end{grammarentry}
+
+\section{Häufige Bedeutungsunterschiede \textnormal{(Common meaning differences)}}
+\begin{grammarentry}{noch nicht / nicht mehr}{Zeitverlauf}
+\GermanText{\textbf{noch nicht}: bis jetzt nein, später möglicherweise ja. \textbf{nicht mehr}: früher ja, jetzt nein.}
+\EnglishText{\textbf{noch nicht}: not yet. \textbf{nicht mehr}: no longer.}
+\end{grammarentry}
+\begin{grammarentry}{nicht jeder / keiner}{Quantität}
+\GermanText{\textbf{nicht jeder} lässt offen, wie viele die Aussage nicht erfüllen. \textbf{keiner} bedeutet null Personen aus der betreffenden Gruppe.}
+\EnglishText{\textbf{not everyone} leaves open how many fail to satisfy the statement. \textbf{no one} means zero people from the relevant group.}
+\end{grammarentry}
+
+\section{Zusammenfassung \textnormal{(Summary)}}
+\begin{grammarentry}{System}{die wichtigsten Ebenen}
+\GermanText{Negation im Deutschen besteht nicht nur aus \textbf{nicht}. Zu den zentralen Mitteln gehören \textbf{nicht}, \textbf{kein}, negative Pronomen und Adverbien wie \textbf{niemand}, \textbf{nichts}, \textbf{nie} und \textbf{nirgendwo}, koordinierende Konstruktionen wie \textbf{weder ... noch}, sowie lexikalische Negation durch Präfixe und Wörter mit negativer Bedeutung.}
+\EnglishText{German negation consists of more than \textbf{nicht}. Central means include \textbf{nicht}, \textbf{kein}, negative pronouns and adverbs such as \textbf{niemand}, \textbf{nichts}, \textbf{nie}, and \textbf{nirgendwo}, coordinating constructions such as \textbf{weder ... noch}, and lexical negation through prefixes and words with negative meaning.}
+\GermanText{Für eine genaue Analyse sind besonders \textbf{Negationsmittel}, \textbf{Skopus}, \textbf{Satznegation vs. Teilnegation}, \textbf{Wortstellung} und \textbf{Kontext} wichtig.}
+\EnglishText{For precise analysis, the \textbf{means of negation}, \textbf{scope}, \textbf{sentence vs. constituent negation}, \textbf{word order}, and \textbf{context} are especially important.}
+\end{grammarentry}
+\end{document}
