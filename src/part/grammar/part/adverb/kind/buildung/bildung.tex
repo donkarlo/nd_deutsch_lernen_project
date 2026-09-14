@@ -1,0 +1,536 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[table]{xcolor}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{5pt}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\newcommand{\BSection}[2]{\section{#1 \textnormal{\small (#2)}}}
+\newcommand{\BSubsection}[2]{\subsection{#1 \textnormal{\small (#2)}}}
+
+\title{Adverbbildung\\\large \textnormal{Adverb Formation}}
+\date{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\BSection{Grundidee}{Basic idea}
+
+\begin{grammarentry}{Die wichtigste Regel}{The most important rule}
+\GermanText{Im Deutschen gibt es \textbf{keine allgemeine Endung wie englisch -ly}, mit der man jedes Adjektiv in ein Adverb verwandelt. Ein Adjektiv kann sehr oft \textbf{unverändert adverbial} verwendet werden.}
+\EnglishText{German has \textbf{no general ending like English -ly} that turns every adjective into an adverb. An adjective can very often be used \textbf{adverbially without any change}.}
+
+\GermanText{Deshalb heißt es: \textbf{schnell fahren}, \textbf{leise sprechen}, \textbf{gut arbeiten}, \textbf{vorsichtig fahren}.}
+\EnglishText{Therefore German says: \textbf{schnell fahren} (drive quickly), \textbf{leise sprechen} (speak quietly), \textbf{gut arbeiten} (work well), \textbf{vorsichtig fahren} (drive carefully).}
+
+\GermanText{Daneben gibt es echte Adverbien, die selbstständige Wörter sind, und abgeleitete Adverbien mit bestimmten Endungen oder Wortbildungsmustern.}
+\EnglishText{In addition, German has genuine adverbs that are independent words, and derived adverbs formed with certain endings or word-formation patterns.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Er fährt schnell.}{He drives quickly.}
+\ExampleItem{Sie spricht deutlich.}{She speaks clearly.}
+\ExampleItem{Das Kind schläft ruhig.}{The child sleeps quietly.}
+\end{itemize}
+\end{exbox}
+
+\BSection{Adjektiv oder Adverb?}{Adjective or adverb?}
+
+\begin{grammarentry}{Adjektiv attributiv}{Attributive adjective}
+\GermanText{Steht ein Adjektiv \textbf{vor einem Nomen}, bekommt es normalerweise eine Deklinationsendung.}
+\EnglishText{When an adjective stands \textbf{before a noun}, it normally receives a declension ending.}
+\GermanText{Beispiel: \textbf{ein schnelles Auto}.}
+\EnglishText{Example: \textbf{ein schnelles Auto} = a fast car.}
+\end{grammarentry}
+
+\begin{grammarentry}{Adjektiv prädikativ}{Predicative adjective}
+\GermanText{Nach Verben wie \textbf{sein, werden, bleiben} steht das Adjektiv normalerweise ohne Deklinationsendung.}
+\EnglishText{After verbs such as \textbf{sein, werden, bleiben}, the adjective normally has no declension ending.}
+\GermanText{Beispiel: \textbf{Das Auto ist schnell.}}
+\EnglishText{Example: \textbf{Das Auto ist schnell.} = The car is fast.}
+\end{grammarentry}
+
+\begin{grammarentry}{Adjektiv adverbial}{Adverbial use of an adjective}
+\GermanText{Beschreibt das Adjektiv, \textbf{wie} eine Handlung geschieht, steht es ebenfalls ohne Deklinationsendung.}
+\EnglishText{When the adjective describes \textbf{how} an action happens, it also appears without a declension ending.}
+\GermanText{Beispiel: \textbf{Das Auto fährt schnell.}}
+\EnglishText{Example: \textbf{Das Auto fährt schnell.} = The car drives quickly.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{3.2cm}|p{4.8cm}|p{6.0cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Funktion / Function} & \color{white}\textbf{Beispiel / Example} & \color{white}\textbf{Erklärung / Explanation} \\
+Attributiv & ein \textbf{schnelles} Auto & vor einem Nomen; dekliniert / before a noun; declined \\
+Prädikativ & Das Auto ist \textbf{schnell}. & nach sein; nicht dekliniert / after sein; not declined \\
+Adverbial & Das Auto fährt \textbf{schnell}. & beschreibt die Handlung; nicht dekliniert / describes the action; not declined \\
+\end{longtable}
+
+\begin{grammarentry}{Merksatz}{Rule to remember}
+\GermanText{\textbf{Nicht jede adverbiale Bestimmung ist grammatisch ein abgeleitetes Adverb.} In \glqq Er fährt schnell\grqq{} ist \textbf{schnell} formal dasselbe Adjektiv; es wird nur adverbial gebraucht.}
+\EnglishText{\textbf{Not every adverbial expression is grammatically a derived adverb.} In ``Er fährt schnell'', \textbf{schnell} is formally the same adjective; it is simply used adverbially.}
+\end{grammarentry}
+
+\BSection{Das adverbiale -s: anfangs, morgens, abends}{The adverbial -s: anfangs, morgens, abends}
+
+\begin{grammarentry}{Was bedeutet das -s?}{What does the -s mean?}
+\GermanText{Bei Wörtern wie \textbf{anfangs, morgens, mittags, abends, nachts} ist das \textbf{-s} eine alte bzw. lexikalisierte adverbiale Bildung, historisch oft mit dem Genitiv verbunden.}
+\EnglishText{In words such as \textbf{anfangs, morgens, mittags, abends, nachts}, the \textbf{-s} is an old or lexicalized adverbial formation, historically often connected with the genitive.}
+
+\GermanText{Für heutige Lernende ist wichtiger: Diese Formen sind \textbf{feste Adverbien}. Man darf nicht einfach an jedes Nomen ein -s anhängen.}
+\EnglishText{For modern learners, the important point is that these forms are \textbf{established adverbs}. You cannot simply add -s to every noun.}
+\end{grammarentry}
+
+\begin{grammarentry}{anfangs}{initially; at first}
+\GermanText{\textbf{Anfangs} bedeutet \glqq am Anfang einer Entwicklung oder eines Zeitraums\grqq{}.}
+\EnglishText{\textbf{Anfangs} means ``initially'' or ``at first'', especially at the beginning of a development or period.}
+\GermanText{Es wird kleingeschrieben, weil es ein Adverb ist: \textbf{anfangs}.}
+\EnglishText{It is written with a lowercase letter because it is an adverb: \textbf{anfangs}.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Anfangs war das ungewohnt, aber inzwischen ist es normal.}{At first it was unfamiliar, but by now it is normal.}
+\ExampleItem{Morgens trinke ich Kaffee.}{In the mornings I drink coffee.}
+\ExampleItem{Abends lerne ich Deutsch.}{In the evenings I study German.}
+\ExampleItem{Nachts ist es hier sehr ruhig.}{At night it is very quiet here.}
+\end{itemize}
+\end{exbox}
+
+\BSubsection{Wochentage mit -s}{Weekdays with -s}
+
+\begin{grammarentry}{montags, dienstags, mittwochs ...}{habitual time}
+\GermanText{Ein Wochentag mit \textbf{-s} bezeichnet normalerweise eine \textbf{wiederholte Gewohnheit}: \textbf{montags} = an Montagen / jeden Montag.}
+\EnglishText{A weekday with \textbf{-s} normally expresses a \textbf{repeated habit}: \textbf{montags} = on Mondays / every Monday.}
+
+\GermanText{Ein konkreter Montag wird dagegen meist mit \textbf{am Montag} bezeichnet.}
+\EnglishText{A specific Monday is normally expressed with \textbf{am Montag}.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Montags arbeite ich zu Hause.}{I work from home on Mondays.}
+\ExampleItem{Am Montag habe ich einen Termin.}{I have an appointment on Monday.}
+\end{itemize}
+\end{exbox}
+
+\BSubsection{Häufige feste Formen mit -s}{Common established forms with -s}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{3.2cm}|p{5.0cm}|p{5.8cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Adverb / Adverb} & \color{white}\textbf{Bedeutung / Meaning} & \color{white}\textbf{Beispiel / Example} \\
+anfangs & zunächst; am Anfang / initially; at first & Anfangs war es schwierig. \\
+morgens & am Morgen, regelmäßig / in the mornings & Morgens gehe ich spazieren. \\
+mittags & um die Mittagszeit / at midday & Mittags esse ich wenig. \\
+abends & am Abend, regelmäßig / in the evenings & Abends lese ich. \\
+nachts & in der Nacht / at night & Nachts schlafe ich. \\
+montags & jeden Montag / on Mondays & Montags lerne ich zu Hause. \\
+tagsüber & während des Tages / during the day & Tagsüber ist es warm. \\
+teils & zum Teil / partly & Das ist teils richtig. \\
+\end{longtable}
+
+\begin{grammarentry}{Nicht produktiv}{Not freely productive}
+\GermanText{Man kann \textbf{nicht} aus jedem Nomen durch -s ein korrektes Adverb bilden. Formen wie *\textbf{Büros}, *\textbf{Autos} oder *\textbf{Problems} sind in dieser Bedeutung falsch.}
+\EnglishText{You \textbf{cannot} form a correct adverb from every noun by adding -s. Forms such as *\textbf{Büros}, *\textbf{Autos}, or *\textbf{Problems} are incorrect in this function.}
+\end{grammarentry}
+
+\BSection{-weise und -erweise}{-weise and -erweise}
+
+\begin{grammarentry}{-weise}{manner, distribution, temporary use}
+\GermanText{Mit \textbf{-weise} entstehen viele Adverbien, die eine Art und Weise, eine Verteilung oder eine begrenzte Verwendung ausdrücken.}
+\EnglishText{Many adverbs with \textbf{-weise} express a manner, distribution, or limited/temporary use.}
+
+\GermanText{Typische Formen sind: \textbf{schrittweise, stückweise, teilweise, paarweise, probeweise, beispielsweise}.}
+\EnglishText{Typical forms are: \textbf{schrittweise} (step by step), \textbf{stückweise} (piece by piece), \textbf{teilweise} (partly), \textbf{paarweise} (in pairs), \textbf{probeweise} (on a trial basis), \textbf{beispielsweise} (for example).}
+\end{grammarentry}
+
+\begin{grammarentry}{-erweise}{speaker evaluation or typical manner}
+\GermanText{\textbf{-erweise} wird häufig mit Adjektiven verbunden und drückt oft eine Bewertung oder Einschätzung des Sprechers aus.}
+\EnglishText{\textbf{-erweise} is often attached to adjectives and frequently expresses the speaker's evaluation or assessment.}
+
+\GermanText{Typische Formen sind: \textbf{normalerweise, möglicherweise, glücklicherweise, überraschenderweise, verständlicherweise}.}
+\EnglishText{Typical forms are: \textbf{normalerweise} (normally), \textbf{möglicherweise} (possibly), \textbf{glücklicherweise} (fortunately), \textbf{überraschenderweise} (surprisingly), \textbf{verständlicherweise} (understandably).}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Normalerweise stehe ich um sieben Uhr auf.}{Normally I get up at seven.}
+\ExampleItem{Glücklicherweise wurde niemand verletzt.}{Fortunately, nobody was injured.}
+\ExampleItem{Wir verbessern das System schrittweise.}{We are improving the system step by step.}
+\ExampleItem{Die Straße ist teilweise gesperrt.}{The road is partly closed.}
+\end{itemize}
+\end{exbox}
+
+\begin{grammarentry}{Wichtige Einschränkung}{Important limitation}
+\GermanText{Auch \textbf{-weise/-erweise} ist nicht völlig frei. Man soll etablierte Formen lernen und nicht mechanisch jedes Adjektiv oder Nomen damit verbinden.}
+\EnglishText{\textbf{-weise/-erweise} is not completely free either. Learners should use established forms rather than mechanically attaching the ending to every adjective or noun.}
+\end{grammarentry}
+
+\BSection{-wärts: Richtung}{-wärts: direction}
+
+\begin{grammarentry}{Richtungsadverbien}{Directional adverbs}
+\GermanText{\textbf{-wärts} bildet Adverbien mit der Bedeutung \glqq in eine bestimmte Richtung\grqq{}.}
+\EnglishText{\textbf{-wärts} forms adverbs meaning ``in a certain direction''.}
+\GermanText{Häufig: \textbf{vorwärts, rückwärts, aufwärts, abwärts, seitwärts, heimwärts, westwärts}.}
+\EnglishText{Common forms: \textbf{vorwärts} (forward), \textbf{rückwärts} (backward), \textbf{aufwärts} (upward), \textbf{abwärts} (downward), \textbf{seitwärts} (sideways), \textbf{heimwärts} (homeward), \textbf{westwärts} (westward).}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Bitte gehen Sie ein Stück vorwärts.}{Please move a little forward.}
+\ExampleItem{Der Weg führt aufwärts.}{The path leads upward.}
+\ExampleItem{Am Abend fahren wir heimwärts.}{In the evening we travel homeward.}
+\end{itemize}
+\end{exbox}
+
+\BSection{-halber: aus einem Grund}{-halber: for the sake of / for a reason}
+
+\begin{grammarentry}{Grund oder Zweck}{Reason or purpose}
+\GermanText{Mit \textbf{-halber} entstehen feste adverbiale Ausdrücke, die einen Grund oder Zweck angeben.}
+\EnglishText{\textbf{-halber} forms established adverbial expressions indicating a reason or purpose.}
+\GermanText{Häufig sind: \textbf{vorsichtshalber, sicherheitshalber, interessehalber}.}
+\EnglishText{Common examples are: \textbf{vorsichtshalber} (as a precaution), \textbf{sicherheitshalber} (to be on the safe side), \textbf{interessehalber} (out of interest).}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich nehme vorsichtshalber einen Regenschirm mit.}{I will take an umbrella as a precaution.}
+\ExampleItem{Sicherheitshalber speichere ich eine Kopie.}{To be on the safe side, I save a copy.}
+\ExampleItem{Interessehalber habe ich nach dem Preis gefragt.}{Out of interest, I asked about the price.}
+\end{itemize}
+\end{exbox}
+
+\begin{grammarentry}{Nomen + halber als Wortgruppe}{Noun + halber as a phrase}
+\GermanText{Es gibt außerdem die Konstruktion \textbf{der Einfachheit halber}, \textbf{der Vollständigkeit halber}. Hier steht ein Nomen im Genitiv vor \textbf{halber}.}
+\EnglishText{There is also the construction \textbf{der Einfachheit halber} (for simplicity's sake), \textbf{der Vollständigkeit halber} (for the sake of completeness). Here a noun in the genitive stands before \textbf{halber}.}
+\end{grammarentry}
+
+\BSection{-seits: Seite oder Perspektive}{-seits: side or perspective}
+
+\begin{grammarentry}{Feste Bildungen}{Established formations}
+\GermanText{\textbf{-seits} erscheint in festen Adverbien wie \textbf{einerseits, andererseits, beiderseits, diesseits, jenseits}.}
+\EnglishText{\textbf{-seits} occurs in established adverbs such as \textbf{einerseits} (on the one hand), \textbf{andererseits} (on the other hand), \textbf{beiderseits} (on both sides), \textbf{diesseits} (on this side), \textbf{jenseits} (beyond/on the other side).}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Einerseits ist die Wohnung günstig, andererseits ist sie sehr klein.}{On the one hand the apartment is inexpensive; on the other hand it is very small.}
+\ExampleItem{Beiderseits der Straße stehen Bäume.}{There are trees on both sides of the street.}
+\end{itemize}
+\end{exbox}
+
+\BSection{-mal und -mals: Häufigkeit und Anzahl}{-mal and -mals: frequency and number}
+
+\begin{grammarentry}{Zahl + mal}{Number + mal}
+\GermanText{Mit Zahlen entstehen Häufigkeitsangaben: \textbf{einmal, zweimal, dreimal, hundertmal}.}
+\EnglishText{Numbers form frequency expressions: \textbf{einmal} (once), \textbf{zweimal} (twice), \textbf{dreimal} (three times), \textbf{hundertmal} (a hundred times).}
+\end{grammarentry}
+
+\begin{grammarentry}{-mals}{Established frequency adverbs}
+\GermanText{Häufige feste Formen sind \textbf{damals, mehrmals, oftmals, nochmals, erstmals}.}
+\EnglishText{Common established forms include \textbf{damals} (at that time), \textbf{mehrmals} (several times), \textbf{oftmals} (often), \textbf{nochmals} (once again), and \textbf{erstmals} (for the first time).}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich habe ihn zweimal angerufen.}{I called him twice.}
+\ExampleItem{Wir haben das Problem mehrmals besprochen.}{We discussed the problem several times.}
+\ExampleItem{Das Gerät wurde erstmals 2025 vorgestellt.}{The device was presented for the first time in 2025.}
+\end{itemize}
+\end{exbox}
+
+\BSection{-ens und andere feste Endungen}{-ens and other established endings}
+
+\begin{grammarentry}{-ens}{enumeration and degree}
+\GermanText{Einige häufige Adverbien enden auf \textbf{-ens}: \textbf{erstens, zweitens, drittens, höchstens, wenigstens, meistens, übrigens}.}
+\EnglishText{Some common adverbs end in \textbf{-ens}: \textbf{erstens} (firstly), \textbf{zweitens} (secondly), \textbf{drittens} (thirdly), \textbf{höchstens} (at most), \textbf{wenigstens} (at least), \textbf{meistens} (mostly), \textbf{übrigens} (by the way).}
+\GermanText{Diese Formen sind überwiegend lexikalisiert. Man bildet nicht beliebig neue Wörter mit -ens.}
+\EnglishText{These forms are mostly lexicalized. New adverbs are not freely created with -ens.}
+\end{grammarentry}
+
+\begin{grammarentry}{-lings}{rare but useful}
+\GermanText{Einige feste Adverbien enden auf \textbf{-lings}, zum Beispiel \textbf{blindlings, rücklings, bäuchlings}. Dieses Muster ist heute kaum produktiv.}
+\EnglishText{Some established adverbs end in \textbf{-lings}, for example \textbf{blindlings} (blindly), \textbf{rücklings} (backwards/on one's back), and \textbf{bäuchlings} (face down/on one's stomach). This pattern is barely productive today.}
+\end{grammarentry}
+
+\BSection{Pronominaladverbien: da(r)-, wo(r)-, hier-}{Pronominal adverbs: da(r)-, wo(r)-, hier-}
+
+\begin{grammarentry}{Grundmuster}{Basic pattern}
+\GermanText{Ein sehr wichtiges produktives Muster ist \textbf{da(r) + Präposition}, \textbf{wo(r) + Präposition} und seltener \textbf{hier + Präposition}.}
+\EnglishText{A very important productive pattern is \textbf{da(r) + preposition}, \textbf{wo(r) + preposition}, and less commonly \textbf{hier + preposition}.}
+
+\GermanText{Diese Wörter beziehen sich normalerweise auf \textbf{Sachen, Sachverhalte oder ganze Sätze}, nicht auf Personen.}
+\EnglishText{These words normally refer to \textbf{things, situations, or entire clauses}, not to people.}
+\end{grammarentry}
+
+\BSubsection{Das r vor einem Vokal}{The r before a vowel}
+
+\begin{grammarentry}{dar-, wor-}{dar-, wor-}
+\GermanText{Beginnt die Präposition mit einem Vokal, steht normalerweise ein \textbf{r}: \textbf{daran, darauf, darüber, darum}; \textbf{woran, worauf, worüber, worum}.}
+\EnglishText{If the preposition begins with a vowel, an \textbf{r} is normally inserted: \textbf{daran, darauf, darüber, darum}; \textbf{woran, worauf, worüber, worum}.}
+
+\GermanText{Vor einem Konsonanten steht kein r: \textbf{damit, davon, dazu, dafür}; \textbf{womit, wovon, wozu, wofür}.}
+\EnglishText{Before a consonant there is no r: \textbf{damit, davon, dazu, dafür}; \textbf{womit, wovon, wozu, wofür}.}
+\end{grammarentry}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{2.7cm}|p{3.5cm}|p{3.5cm}|p{4.7cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Präposition / Prep.} & \color{white}\textbf{da-Form / da-form} & \color{white}\textbf{wo-Form / wo-form} & \color{white}\textbf{Beispiel / Example} \\
+an & daran & woran & Ich denke daran. / Woran denkst du? \\
+auf & darauf & worauf & Ich warte darauf. / Worauf wartest du? \\
+über & darüber & worüber & Wir sprechen darüber. / Worüber sprecht ihr? \\
+mit & damit & womit & Ich schreibe damit. / Womit schreibst du? \\
+von & davon & wovon & Ich weiß davon. / Wovon weißt du? \\
+für & dafür & wofür & Ich bin dafür. / Wofür bist du? \\
+zu & dazu & wozu & Das gehört dazu. / Wozu brauchst du das? \\
+\end{longtable}
+
+\begin{grammarentry}{Personen: nicht da(r)-}{People: not da(r)-}
+\GermanText{Bei Personen verwendet man normalerweise \textbf{Präposition + Pronomen}: \textbf{mit ihm, an sie, über ihn, von ihr}.}
+\EnglishText{With people, German normally uses \textbf{preposition + pronoun}: \textbf{mit ihm} (with him), \textbf{an sie} (about/to her depending on verb), \textbf{über ihn} (about him), \textbf{von ihr} (from/about her).}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich spreche über das Problem. Ich spreche darüber.}{I am talking about the problem. I am talking about it.}
+\ExampleItem{Ich spreche über meinen Kollegen. Ich spreche über ihn.}{I am talking about my colleague. I am talking about him.}
+\ExampleItem{Worauf wartest du? -- Ich warte auf den Bus.}{What are you waiting for? -- I am waiting for the bus.}
+\end{itemize}
+\end{exbox}
+
+\BSection{hin- und her-: Richtung relativ zum Sprecher}{hin- and her-: direction relative to the speaker}
+
+\begin{grammarentry}{hin}{away from the speaker}
+\GermanText{\textbf{hin} bezeichnet grundsätzlich eine Richtung \textbf{vom Sprecher weg}: \textbf{dahin, dorthin, hinein, hinaus, hinauf, hinunter}.}
+\EnglishText{\textbf{hin} basically indicates movement \textbf{away from the speaker}: \textbf{dahin, dorthin, hinein, hinaus, hinauf, hinunter}.}
+\end{grammarentry}
+
+\begin{grammarentry}{her}{toward the speaker}
+\GermanText{\textbf{her} bezeichnet grundsätzlich eine Richtung \textbf{zum Sprecher hin}: \textbf{hierher, herein, heraus, herauf, herunter}.}
+\EnglishText{\textbf{her} basically indicates movement \textbf{toward the speaker}: \textbf{hierher, herein, heraus, herauf, herunter}.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Geh bitte hinein.}{Please go inside.}
+\ExampleItem{Komm bitte herein.}{Please come in.}
+\ExampleItem{Wohin gehst du? -- Ich gehe dorthin.}{Where are you going? -- I am going there.}
+\ExampleItem{Woher kommst du?}{Where do you come from?}
+\end{itemize}
+\end{exbox}
+
+\BSection{Zusammensetzungen und feste Adverbien}{Compounds and fixed adverbs}
+
+\begin{grammarentry}{Nicht alles wird durch eine Endung gebildet}{Not everything is formed by a suffix}
+\GermanText{Viele sehr häufige Adverbien sind einfache oder historisch feste Wörter: \textbf{heute, gestern, morgen, jetzt, dort, hier, sehr, schon, noch, bald, oft, immer, nie, gern}.}
+\EnglishText{Many very common adverbs are simple or historically fixed words: \textbf{heute} (today), \textbf{gestern} (yesterday), \textbf{morgen} (tomorrow), \textbf{jetzt} (now), \textbf{dort} (there), \textbf{hier} (here), \textbf{sehr} (very), \textbf{schon} (already), \textbf{noch} (still/yet), \textbf{bald} (soon), \textbf{oft} (often), \textbf{immer} (always), \textbf{nie} (never), \textbf{gern} (gladly).}
+\end{grammarentry}
+
+\begin{grammarentry}{Zusammengesetzte Formen}{Compound forms}
+\GermanText{Andere Adverbien entstehen durch Zusammensetzung, zum Beispiel \textbf{irgendwo, nirgendwo, überall, jederzeit, heutzutage, gleichzeitig}. Solche Bildungen müssen oft als Wortschatz gelernt werden.}
+\EnglishText{Other adverbs are compounds, for example \textbf{irgendwo} (somewhere), \textbf{nirgendwo} (nowhere), \textbf{überall} (everywhere), \textbf{jederzeit} (at any time), \textbf{heutzutage} (nowadays), \textbf{gleichzeitig} (simultaneously). Such formations often need to be learned as vocabulary.}
+\end{grammarentry}
+
+\BSection{Steigerung von Adverbien und adverbial gebrauchten Adjektiven}{Comparison of adverbs and adverbially used adjectives}
+
+\begin{grammarentry}{Regelmäßige Steigerung}{Regular comparison}
+\GermanText{Adverbial gebrauchte Adjektive können häufig wie Adjektive gesteigert werden: \textbf{schnell -- schneller -- am schnellsten}.}
+\EnglishText{Adjectives used adverbially can often be compared like adjectives: \textbf{schnell -- schneller -- am schnellsten}.}
+\end{grammarentry}
+
+\begin{grammarentry}{Wichtige unregelmäßige Formen}{Important irregular forms}
+\GermanText{Einige sehr häufige adverbiale Formen sind unregelmäßig: \textbf{gut -- besser -- am besten}; \textbf{gern -- lieber -- am liebsten}; \textbf{viel -- mehr -- am meisten}.}
+\EnglishText{Some very common adverbial forms are irregular: \textbf{gut -- besser -- am besten} (well -- better -- best); \textbf{gern -- lieber -- am liebsten} (gladly -- preferably -- most gladly); \textbf{viel -- mehr -- am meisten} (much -- more -- most).}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Er fährt schneller als ich.}{He drives faster than I do.}
+\ExampleItem{Heute arbeite ich besser als gestern.}{Today I work better than yesterday.}
+\ExampleItem{Ich lese gern, aber ich höre lieber Musik.}{I like reading, but I prefer listening to music.}
+\end{itemize}
+\end{exbox}
+
+\BSection{Groß- und Kleinschreibung}{Capitalization}
+
+\begin{grammarentry}{Adverb klein, Nomen groß}{Adverb lowercase, noun uppercase}
+\GermanText{Adverbien werden normalerweise kleingeschrieben: \textbf{anfangs, morgens, abends, montags, normalerweise, vorsichtshalber}.}
+\EnglishText{Adverbs are normally written in lowercase: \textbf{anfangs, morgens, abends, montags, normalerweise, vorsichtshalber}.}
+
+\GermanText{Dasselbe Bedeutungselement kann als Nomen großgeschrieben werden: \textbf{am Anfang, am Morgen, am Abend, am Montag}.}
+\EnglishText{The corresponding noun is capitalized: \textbf{am Anfang} (at the beginning), \textbf{am Morgen} (in the morning), \textbf{am Abend} (in the evening), \textbf{am Montag} (on Monday).}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Anfangs war alles neu.}{At first everything was new.}
+\ExampleItem{Am Anfang des Buches war alles ruhig.}{At the beginning of the book, everything was calm.}
+\ExampleItem{Morgens bin ich konzentrierter.}{In the mornings I am more focused.}
+\ExampleItem{Am Morgen des 3. Mai regnete es.}{On the morning of May 3, it rained.}
+\end{itemize}
+\end{exbox}
+
+\BSection{Bedeutungsunterschiede: anfangs, am Anfang, zuerst, zunächst}{Meaning differences: anfangs, am Anfang, zuerst, zunächst}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{2.8cm}|p{5.3cm}|p{5.7cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Form / Form} & \color{white}\textbf{Bedeutung / Meaning} & \color{white}\textbf{Beispiel / Example} \\
+anfangs & in der ersten Phase; später änderte sich etwas / in the initial phase; something later changed & Anfangs war es schwer, später wurde es leichter. \\
+am Anfang & an einem konkreten Anfangspunkt / at a concrete beginning point & Am Anfang des Films passiert wenig. \\
+zuerst & als erste Handlung in einer Reihenfolge / first in a sequence & Zuerst esse ich, dann arbeite ich. \\
+zunächst & zuerst; vorerst; oft etwas formeller / initially, first, for the time being & Zunächst prüfen wir die Daten. \\
+\end{longtable}
+
+\BSection{Satzstellung}{Sentence position}
+
+\begin{grammarentry}{Adverbien sind beweglich}{Adverbs are movable}
+\GermanText{Viele Adverbien können im Mittelfeld stehen oder ins Vorfeld gesetzt werden. Steht ein Adverb im Vorfeld, bleibt das konjugierte Verb auf Position 2.}
+\EnglishText{Many adverbs can appear in the middle field or be moved to the first position. If an adverb is in the first position, the finite verb remains in position 2.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich lerne abends Deutsch.}{I study German in the evenings.}
+\ExampleItem{Abends lerne ich Deutsch.}{In the evenings I study German.}
+\ExampleItem{Normalerweise fahre ich mit dem Fahrrad.}{Normally I go by bicycle.}
+\ExampleItem{Ich fahre normalerweise mit dem Fahrrad.}{I normally go by bicycle.}
+\end{itemize}
+\end{exbox}
+
+\begin{grammarentry}{TeKaMoLo als Orientierung}{TeKaMoLo as a guideline}
+\GermanText{Wenn mehrere adverbiale Angaben im Mittelfeld stehen, ist \textbf{TeKaMoLo} eine nützliche Grundregel: \textbf{Temporal -- Kausal -- Modal -- Lokal}. Sie ist eine Orientierung, keine absolut starre Regel.}
+\EnglishText{When several adverbial elements occur in the middle field, \textbf{TeKaMoLo} is a useful basic guideline: \textbf{temporal -- causal -- modal -- local}. It is a guideline, not an absolutely rigid rule.}
+\end{grammarentry}
+
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Ich fahre morgen wegen des Termins schnell nach Wien.}{Tomorrow I am going quickly to Vienna because of the appointment.}
+\end{itemize}
+\end{exbox}
+
+\BSection{Die wichtigsten Bildungsmuster im Überblick}{Overview of the most important formation patterns}
+
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{2.4cm}|p{3.4cm}|p{4.0cm}|p{4.2cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}\textbf{Muster / Pattern} & \color{white}\textbf{Funktion / Function} & \color{white}\textbf{Beispiele / Examples} & \color{white}\textbf{Produktivität / Productivity} \\
+Adjektiv unverändert & Art und Weise / manner & schnell, ruhig, vorsichtig & sehr häufig und produktiv / very common and productive \\
+-s & Zeit oder feste Bildung / time or fixed formation & anfangs, morgens, abends, montags & nur bei etablierten Formen / established forms only \\
+-weise & Art, Verteilung / manner, distribution & schrittweise, teilweise, paarweise & relativ produktiv, aber nicht völlig frei / fairly productive, not fully free \\
+-erweise & Einschätzung / evaluation & normalerweise, glücklicherweise & häufig, aber lexikalisch beschränkt / common but lexically restricted \\
+-wärts & Richtung / direction & vorwärts, abwärts, heimwärts & begrenzt produktiv / limited productivity \\
+-halber & Grund, Zweck / reason, purpose & vorsichtshalber, interessehalber & feste und halbproduktive Formen / established and semi-productive \\
+-seits & Seite, Perspektive / side, perspective & einerseits, andererseits & überwiegend feste Formen / mostly fixed forms \\
+-mal/-mals & Häufigkeit / frequency & zweimal, mehrmals, erstmals & produktiv mit Zahlen; sonst oft fest / productive with numbers; otherwise often fixed \\
+-ens & Reihenfolge, Grad / sequence, degree & erstens, höchstens, meistens & überwiegend fest / mostly fixed \\
+da(r)-/wo(r)- + Präp. & Bezug auf Sachen/Sachverhalte / reference to things/situations & darauf, darüber, womit & sehr wichtig und produktiv / very important and productive \\
+hin-/her- & Richtung relativ zum Sprecher / direction relative to speaker & hinein, heraus, dorthin & produktives Wortbildungssystem / productive word-formation system \\
+\end{longtable}
+
+\BSection{Typische Fehler}{Typical mistakes}
+
+\begin{grammarentry}{Fehler 1: eine englische -ly-Regel übertragen}{Mistake 1: transferring an English -ly rule}
+\GermanText{Falsch: *\textbf{Er fährt schnellig.} Richtig: \textbf{Er fährt schnell.}}
+\EnglishText{Wrong: *\textbf{Er fährt schnellig.} Correct: \textbf{Er fährt schnell.}}
+\end{grammarentry}
+
+\begin{grammarentry}{Fehler 2: -s beliebig anhängen}{Mistake 2: adding -s freely}
+\GermanText{Man darf nicht aus jedem Nomen ein Adverb auf -s bilden. Man lernt Formen wie \textbf{anfangs, morgens, montags} als etablierte Wörter oder Muster.}
+\EnglishText{You cannot turn every noun into an adverb by adding -s. Forms such as \textbf{anfangs, morgens, montags} should be learned as established words or patterns.}
+\end{grammarentry}
+
+\begin{grammarentry}{Fehler 3: Personen mit da(r)- ersetzen}{Mistake 3: replacing people with da(r)-}
+\GermanText{Sache: \textbf{Ich spreche darüber.} Person: \textbf{Ich spreche über ihn.} Nicht: *\textbf{Ich spreche darüber}, wenn \textbf{darüber} eine Person meinen soll.}
+\EnglishText{Thing: \textbf{Ich spreche darüber.} Person: \textbf{Ich spreche über ihn.} Do not use \textbf{darüber} to refer to a person.}
+\end{grammarentry}
+
+\begin{grammarentry}{Fehler 4: Großschreibung verwechseln}{Mistake 4: confusing capitalization}
+\GermanText{Adverb: \textbf{anfangs, morgens, montags}. Nomen: \textbf{am Anfang, am Morgen, am Montag}.}
+\EnglishText{Adverb: \textbf{anfangs, morgens, montags}. Noun: \textbf{am Anfang, am Morgen, am Montag}.}
+\end{grammarentry}
+
+\BSection{Entscheidungshilfe}{Decision guide}
+
+\begin{grammarentry}{Wenn du ein deutsches Adverb bilden willst}{When you want to form a German adverb}
+\GermanText{1. Willst du nur sagen, \textbf{wie} eine Handlung geschieht? Dann reicht meistens das Adjektiv ohne Endung: \textbf{schnell fahren, ruhig sprechen}.}
+\EnglishText{1. Do you simply want to say \textbf{how} an action happens? Usually use the adjective without an ending: \textbf{schnell fahren, ruhig sprechen}.}
+
+\GermanText{2. Geht es um eine feste Zeitangabe wie \textbf{anfangs, morgens, montags}? Dann prüfe, ob eine etablierte -s-Form existiert.}
+\EnglishText{2. Is it a fixed time expression such as \textbf{anfangs, morgens, montags}? Check whether an established -s form exists.}
+
+\GermanText{3. Geht es um Art, Verteilung oder Bewertung? Prüfe etablierte Formen mit \textbf{-weise/-erweise}.}
+\EnglishText{3. Is it about manner, distribution, or evaluation? Check established forms with \textbf{-weise/-erweise}.}
+
+\GermanText{4. Geht es um Richtung? Prüfe \textbf{-wärts} oder das System mit \textbf{hin-/her-}.}
+\EnglishText{4. Is it about direction? Check \textbf{-wärts} or the \textbf{hin-/her-} system.}
+
+\GermanText{5. Willst du auf eine Sache mit Präposition zurückverweisen? Verwende \textbf{da(r)- + Präposition}; für eine Frage \textbf{wo(r)- + Präposition}.}
+\EnglishText{5. Do you want to refer back to a thing with a preposition? Use \textbf{da(r)- + preposition}; for a question use \textbf{wo(r)- + preposition}.}
+\end{grammarentry}
+
+\BSection{Zusammenfassung}{Summary}
+
+\begin{grammarentry}{Was du unbedingt behalten solltest}{What you should definitely remember}
+\GermanText{\textbf{1.} Deutsche Adjektive brauchen für die adverbiale Verwendung normalerweise \textbf{keine besondere Endung}: \textbf{schnell fahren}.}
+\EnglishText{\textbf{1.} German adjectives normally need \textbf{no special ending} for adverbial use: \textbf{schnell fahren}.}
+
+\GermanText{\textbf{2.} Das \textbf{-s} in \textbf{anfangs} ist eine feste adverbiale Bildung. Es ist weder ein Plural-s noch eine frei anwendbare Regel für alle Nomen.}
+\EnglishText{\textbf{2.} The \textbf{-s} in \textbf{anfangs} is an established adverbial formation. It is neither a plural -s nor a freely applicable rule for all nouns.}
+
+\GermanText{\textbf{3.} Sehr wichtige Wortbildungsmuster sind \textbf{-weise/-erweise, -wärts, -halber, -seits, -mal/-mals, -ens} sowie \textbf{da(r)-/wo(r)- + Präposition} und \textbf{hin-/her-}.}
+\EnglishText{\textbf{3.} Very important word-formation patterns are \textbf{-weise/-erweise, -wärts, -halber, -seits, -mal/-mals, -ens}, as well as \textbf{da(r)-/wo(r)- + preposition} and \textbf{hin-/her-}.}
+
+\GermanText{\textbf{4.} Viele dieser Muster sind nur teilweise produktiv. Im Zweifel muss man prüfen, ob die konkrete Form im Deutschen tatsächlich üblich ist.}
+\EnglishText{\textbf{4.} Many of these patterns are only partly productive. When in doubt, check whether the specific form is actually established in German.}
+\end{grammarentry}
+
+\end{document}
