@@ -1,0 +1,159 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage[active,tightpage]{preview}
+\PreviewBorder=4pt
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\titleformat{\section}[block]{\Large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+\titleformat{\subsection}[block]{\large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+\NewDocumentEnvironment{grammarentry}{mm+b}{\begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]#3\end{tcolorbox}}{}
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{6pt}
+\title{Substantivierung von Verben}
+\date{}
+\begin{document}
+\selectlanguage{ngerman}
+\begin{preview}
+\maketitle
+
+\section{Grundregel}
+\begin{grammarentry}{Substantivierter Infinitiv}{Verb $\rightarrow$ Nomen}
+\GermanText{Wenn der Infinitiv eines Verbs selbst als Nomen verwendet wird, spricht man von einem \textbf{substantivierten Infinitiv}. Er wird immer \textbf{großgeschrieben} und ist immer \textbf{neutral}: \textbf{das}.}
+\EnglishText{When the infinitive itself is used as a noun, it is called a nominalized infinitive. It is always capitalized and always neuter: \textbf{das}.}
+\GermanText{Die Form des Verbs bleibt grundsätzlich der Infinitiv: \textit{lernen $\rightarrow$ das Lernen}.}
+\EnglishText{The verb keeps its infinitive form: \textit{lernen $\rightarrow$ das Lernen}.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Das Lernen ist wichtig.}{Learning is important.}
+\ExampleItem{Schwimmen ist gesund.}{Swimming is healthy.}
+\ExampleItem{Das Essen war angenehm.}{The eating/meal was pleasant.}
+\end{itemize}\end{exbox}
+
+\section{Trennbare und mehrteilige Verben}
+\begin{grammarentry}{Bildung}{auch bei komplexeren Verben}
+\GermanText{Trennbare Verben werden in ihrer Infinitivform substantiviert: \textit{einkaufen $\rightarrow$ das Einkaufen}, \textit{aufräumen $\rightarrow$ das Aufräumen}.}
+\EnglishText{Separable verbs are nominalized in their infinitive form.}
+\GermanText{Bei festen mehrteiligen Verbgruppen können die Bestandteile zu einer substantivierten Einheit zusammengeschrieben werden: \textit{spazieren gehen $\rightarrow$ das Spazierengehen}.}
+\EnglishText{Fixed multi-word verb expressions can form one nominalized unit: \textit{spazieren gehen $\rightarrow$ das Spazierengehen}.}
+\end{grammarentry}
+
+\section{Kasus und Deklination}
+\begin{grammarentry}{Deklination}{Neutrum}
+\GermanText{Der substantivierte Infinitiv verhält sich wie ein neutrales Nomen. Im Genitiv erhält er normalerweise \textbf{-s}. Ein Plural wird normalerweise nicht verwendet, weil meist eine Tätigkeit oder ein Vorgang allgemein gemeint ist.}
+\EnglishText{A nominalized infinitive behaves like a neuter noun. In the genitive it normally takes \textbf{-s}. A plural is normally not used because it usually denotes an activity or process in general.}
+\end{grammarentry}
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{2.8cm}|p{3.5cm}|p{7.5cm}}
+\rowcolor{HeaderBlueDark}\color{white}Kasus & \color{white}Form & \color{white}Beispiel \\
+Nominativ & das Lernen & Das Lernen hilft mir. \\
+Akkusativ & das Lernen & Ich mag das Lernen. \\
+Dativ & dem Lernen & Beim Lernen höre ich Musik. \\
+Genitiv & des Lernens & Die Vorteile des Lernens sind deutlich. \
+\end{longtable}
+
+\section{Typische Konstruktionen}
+\begin{grammarentry}{Präposition + substantivierter Infinitiv}{häufige Signale}
+\GermanText{Sehr häufig steht der substantivierte Infinitiv nach einer Präposition mit Artikel: \textbf{beim} (= bei dem), \textbf{zum} (= zu dem), \textbf{nach dem}, \textbf{vor dem}, \textbf{durch das}.}
+\EnglishText{Nominalized infinitives frequently occur after a preposition with an article: \textbf{beim}, \textbf{zum}, \textbf{nach dem}, \textbf{vor dem}, \textbf{durch das}.}
+\GermanText{Auch ohne Artikel bleibt der Infinitiv ein Nomen und wird großgeschrieben. Ein Adjektiv davor wird normal dekliniert.}
+\EnglishText{Even without an article it remains a noun and is capitalized. A preceding adjective is declined normally.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Beim Lernen brauche ich Ruhe.}{I need quiet while studying.}
+\ExampleItem{Nach dem Essen gehe ich spazieren.}{After eating, I go for a walk.}
+\ExampleItem{Lesen macht Spaß.}{Reading is fun.}
+\ExampleItem{Langes Warten ist anstrengend.}{Waiting for a long time is exhausting.}
+\end{itemize}\end{exbox}
+
+\section{Ergänzungen und Rektion}
+\begin{grammarentry}{Rektion bleibt erhalten}{Präpositionen und Ergänzungen}
+\GermanText{Die inhaltlichen Ergänzungen und die vom Verb verlangten Präpositionen können nach der Substantivierung erhalten bleiben.}
+\EnglishText{The verb's complements and required prepositions can remain after nominalization.}
+\GermanText{Zum Beispiel: \textit{warten auf $\rightarrow$ das Warten auf}; \textit{denken an $\rightarrow$ das Denken an}.}
+\EnglishText{For example: \textit{warten auf $\rightarrow$ das Warten auf}; \textit{denken an $\rightarrow$ das Denken an}.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Das Warten auf den Bus dauert lange.}{Waiting for the bus takes a long time.}
+\ExampleItem{Das Denken an die Zukunft macht ihn nervös.}{Thinking about the future makes him nervous.}
+\ExampleItem{Das Lesen von Büchern hilft beim Lernen.}{Reading books helps with learning.}
+\end{itemize}\end{exbox}
+
+\section{Substantivierter Infinitiv und abgeleitetes Nomen}
+\begin{grammarentry}{Wichtiger Unterschied}{nicht jede Nominalisierung ist \textit{das}}
+\GermanText{Nicht jedes Nomen, das von einem Verb stammt, ist ein substantivierter Infinitiv. \textbf{Nur wenn der Infinitiv selbst als Nomen verwendet wird, gilt automatisch das Neutrum.} Ein anders gebildetes Nomen hat sein eigenes Genus.}
+\EnglishText{Not every noun derived from a verb is a nominalized infinitive. \textbf{Only the infinitive itself, when used as a noun, is automatically neuter.} A differently derived noun has its own gender.}
+\end{grammarentry}
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{3cm}|p{5cm}|p{5cm}}
+\rowcolor{HeaderBlueDark}\color{white}Verb & \color{white}substantivierter Infinitiv & \color{white}anderes abgeleitetes Nomen \\
+fahren & das Fahren & die Fahrt \\
+entscheiden & das Entscheiden & die Entscheidung \\
+beginnen & das Beginnen & der Beginn \\
+arbeiten & das Arbeiten & die Arbeit \\
+helfen & das Helfen & die Hilfe \
+\end{longtable}
+\begin{grammarentry}{Bedeutungsunterschied}{Vorgang vs. lexikalisches Nomen}
+\GermanText{Der substantivierte Infinitiv bezeichnet häufig die \textbf{Tätigkeit oder den Vorgang selbst}. Ein anderes abgeleitetes Nomen kann dagegen ein Ergebnis, ein einzelnes Ereignis, eine Person, einen Gegenstand oder ein anderes Konzept bezeichnen.}
+\EnglishText{The nominalized infinitive often denotes the activity or process itself. Another derived noun may denote a result, a specific event, a person, an object, or another concept.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Das Fahren macht mir Spaß.}{Driving as an activity is fun for me.}
+\ExampleItem{Die Fahrt dauert zwei Stunden.}{The trip takes two hours.}
+\ExampleItem{Das Entscheiden fällt ihm schwer.}{The act of deciding is difficult for him.}
+\ExampleItem{Die Entscheidung war schwierig.}{The decision was difficult.}
+\end{itemize}\end{exbox}
+
+\section{Abgrenzung zum normalen Infinitiv}
+\begin{grammarentry}{Verb oder Nomen?}{Groß- und Kleinschreibung}
+\GermanText{Ein normaler Infinitiv bleibt ein Verb und wird kleingeschrieben: \textit{Ich muss lernen. Ich versuche, mehr zu lernen. Es ist wichtig, genug zu schlafen.}}
+\EnglishText{A normal infinitive remains a verb and is written in lowercase.}
+\GermanText{Wird derselbe Infinitiv als Nomen gebraucht, wird er großgeschrieben: \textit{Das Lernen ist wichtig.}}
+\EnglishText{When the same infinitive is used as a noun, it is capitalized: \textit{Das Lernen ist wichtig.}}
+\end{grammarentry}
+
+\section{Erkennung}
+\begin{grammarentry}{Wie erkennt man einen substantivierten Infinitiv?}{Prüfschritte}
+\begin{itemize}
+\item Er bezeichnet eine Tätigkeit oder einen Vorgang als Sache.
+\item Er wird großgeschrieben.
+\item Häufig kann man \textbf{das} davor setzen.
+\item Typische Signale sind \textit{beim, zum, nach dem, vor dem}.
+\item Ein Adjektiv davor wird dekliniert: \textit{langes Warten, regelmäßiges Laufen}.
+\end{itemize}
+\EnglishText{Typical clues: it functions as a noun, is capitalized, often accepts \textbf{das}, and frequently follows expressions such as \textit{beim} or \textit{zum}.}
+\end{grammarentry}
+
+\section{Zusammenfassung}
+\begin{grammarentry}{Merksatz}{kurz und wichtig}
+\GermanText{\textbf{Infinitiv selbst als Nomen $\Rightarrow$ immer das + Großschreibung.}}
+\EnglishText{\textbf{The infinitive itself used as a noun $\Rightarrow$ always das + capitalization.}}
+\GermanText{Aber: Ein anderes vom Verb abgeleitetes Nomen kann \textbf{der, die oder das} sein: \textit{das Fahren -- die Fahrt; das Beginnen -- der Beginn}.}
+\EnglishText{But another noun derived from the verb can have any gender: \textit{das Fahren -- die Fahrt; das Beginnen -- der Beginn}.}
+\end{grammarentry}
+
+\end{preview}
+\end{document}
