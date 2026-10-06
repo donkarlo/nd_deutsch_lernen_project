@@ -1,0 +1,226 @@
+\documentclass[a4paper]{article}
+
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{minted}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{todonotes}
+\usepackage{forest}
+\usepackage{xstring}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{xparse}
+\usepackage{natbib}
+\usepackage{adjustbox}
+
+\usetikzlibrary{graphs,graphdrawing}
+\usegdlibrary{layered}
+
+% for external graphviz
+\input{/home/donkarlo/Dropbox/repo/nd_language_ai_project/src/nd_language_ai/formal/computer/programming/tex/latex/code_clips/external_graphviz.tex}
+
+% for tags
+\input{/home/donkarlo/Dropbox/repo/nd_language_ai_project/src/nd_language_ai/formal/computer/programming/tex/latex/part/control_sequence/kind/semtag/semtag.tex}
+
+% for links
+\input{/home/donkarlo/Dropbox/repo/nd_language_ai_project/src/nd_language_ai/formal/computer/programming/tex/latex/code_clips/seehere.tex}
+
+% for nested lists and sections
+\input{/home/donkarlo/Dropbox/repo/nd_language_ai_project/src/nd_language_ai/formal/computer/programming/tex/latex/code_clips/deep_structure.tex}
+
+\title{Wegen}
+\date{}
+\author{Mohammad Rahmani}
+
+\begin{document}
+   \maketitle
+
+   \section{Grundfunktion \textnormal{(Basic function)}}
+
+   \textbf{wegen} ist eine \textbf{kausale Präposition}. Sie nennt den Grund oder die Ursache für eine Handlung, einen Zustand oder ein Ereignis.
+
+   \textit{English:} \textbf{wegen} is a causal preposition. It states the reason or cause of an action, state, or event.
+
+   \begin{itemize}
+      \item Frage: \textbf{Warum? / Aus welchem Grund?}
+      \item Grundstruktur: \textbf{wegen + Genitiv}
+      \item Beispiel: \textbf{Wegen des Regens bleibe ich zu Hause.}\\
+      \textit{English: Because of the rain, I am staying at home.}
+   \end{itemize}
+
+   \section{Kasus: standardsprachlich Genitiv \textnormal{(Case: genitive in standard German)}}
+
+   In der Standardsprache verlangt \textbf{wegen} den Genitiv. Für formelles Schreiben und besonders für eine Prüfung sollte der Genitiv verwendet werden.
+
+   \textit{English:} In standard German, \textbf{wegen} governs the genitive. In formal writing and especially in an exam, the genitive should be used.
+
+   \begin{itemize}
+      \item Maskulin: \textbf{wegen des Regens}
+      \item Neutrum: \textbf{wegen des Wetters}
+      \item Feminin: \textbf{wegen der Entfernung}
+      \item Plural: \textbf{wegen der Probleme}
+   \end{itemize}
+
+   Bei maskulinen und neutralen Nomen erhält das Nomen im Genitiv Singular häufig zusätzlich \textbf{-s} oder \textbf{-es}.
+
+   \textit{English:} Masculine and neuter nouns in the genitive singular often additionally take \textbf{-s} or \textbf{-es}.
+
+   \begin{itemize}
+      \item der Regen $\rightarrow$ \textbf{wegen des Regens}
+      \item das Wetter $\rightarrow$ \textbf{wegen des Wetters}
+      \item das Kind $\rightarrow$ \textbf{wegen des Kindes}
+   \end{itemize}
+
+   \section{Dativ in der Umgangssprache \textnormal{(Dative in colloquial speech)}}
+
+   In der gesprochenen Umgangssprache hört man sehr häufig \textbf{wegen + Dativ}, zum Beispiel \textbf{wegen dem Regen}. Das ist verbreitet, aber für formelles Standarddeutsch und für die Prüfung ist \textbf{wegen des Regens} die sichere Form.
+
+   \textit{English:} In colloquial spoken German, \textbf{wegen + dative} is very common, for example \textbf{wegen dem Regen}. In formal standard German and in an exam, \textbf{wegen des Regens} is the safer form.
+
+   \section{Satzstellung \textnormal{(Word order)}}
+
+   Eine Wortgruppe mit \textbf{wegen} kann an verschiedenen Stellen im Hauptsatz stehen. Steht sie an Position 1, bleibt das konjugierte Verb im Hauptsatz an Position 2.
+
+   \textit{English:} A phrase with \textbf{wegen} can occur in different positions in a main clause. If it occupies position 1, the finite verb still remains in position 2.
+
+   \begin{itemize}
+      \item \textbf{Wegen des Regens bleibe ich zu Hause.}\\
+      \textit{English: Because of the rain, I am staying at home.}
+      \item \textbf{Ich bleibe wegen des Regens zu Hause.}\\
+      \textit{English: I am staying at home because of the rain.}
+   \end{itemize}
+
+   Normalerweise steht nach einer vorangestellten \textbf{wegen}-Gruppe \textbf{kein Komma}.
+
+   \textit{English:} Normally, no comma is placed after an initial \textbf{wegen}-phrase.
+
+   \section{Wegen mit Adjektiven \textnormal{(Wegen with adjectives)}}
+
+   Wenn zwischen Artikel und Nomen ein Adjektiv steht, wird auch die Genitivdeklination des Adjektivs verwendet.
+
+   \textit{English:} If an adjective occurs between the article and the noun, the adjective also takes the genitive ending.
+
+   \begin{itemize}
+      \item \textbf{wegen des starken Regens}
+      \item \textbf{wegen der großen Entfernung}
+      \item \textbf{wegen der überfüllten Straßen}
+   \end{itemize}
+
+   Ohne Artikel steht das Adjektiv stark:
+
+   \begin{itemize}
+      \item \textbf{wegen starken Regens}
+      \item \textbf{wegen großer Probleme}
+   \end{itemize}
+
+   \section{Wegen mit Pronomen \textnormal{(Wegen with pronouns)}}
+
+   Bei Personalpronomen sind Formen wie \textbf{meinetwegen}, \textbf{deinetwegen}, \textbf{seinetwegen}, \textbf{ihretwegen}, \textbf{unseretwegen} und \textbf{euretwegen} standardsprachlich möglich.
+
+   \textit{English:} With personal pronouns, forms such as \textbf{meinetwegen}, \textbf{deinetwegen}, \textbf{seinetwegen}, \textbf{ihretwegen}, \textbf{unseretwegen}, and \textbf{euretwegen} are possible in standard German.
+
+   \begin{itemize}
+      \item \textbf{Meinetwegen musst du nicht warten.}\\
+      \textit{English: You do not have to wait because of me.}
+      \item \textbf{Seinetwegen haben wir den Termin verschoben.}\\
+      \textit{English: We postponed the appointment because of him.}
+   \end{itemize}
+
+   Umgangssprachlich sind auch \textbf{wegen mir}, \textbf{wegen dir} usw. sehr häufig. In formellen Texten sind die Formen mit \textbf{-wegen} stilistisch sicherer.
+
+   \section{Wegen bezeichnet einen Grund, nicht einen Zweck \textnormal{(Reason, not purpose)}}
+
+   Das ist der wichtigste Unterschied zu \textbf{um \ldots{} zu}. \textbf{wegen} beantwortet die Frage nach dem \textbf{Grund}; \textbf{um \ldots{} zu} beantwortet die Frage nach dem \textbf{Zweck oder Ziel}.
+
+   \textit{English:} This is the most important difference from \textbf{um \ldots{} zu}. \textbf{wegen} gives a \textbf{reason}; \textbf{um \ldots{} zu} gives a \textbf{purpose or goal}.
+
+   \begin{itemize}
+      \item \textbf{Ich gehe zu Fuß, um die Haltestelle zu erreichen.}\\
+      \textit{English: I walk in order to reach the bus stop.}
+      \item \textbf{Ich gehe wegen der Entfernung zur Haltestelle zu Fuß.}\\
+      \textit{English: I walk because of the distance to the bus stop.}
+   \end{itemize}
+
+   Deshalb kann man \textbf{um \ldots{} zu} nicht einfach mechanisch durch \textbf{wegen} ersetzen. Man muss den Grund als Nomen oder Nominalgruppe ausdrücken.
+
+   \textit{English:} Therefore, \textbf{um \ldots{} zu} cannot simply be mechanically replaced by \textbf{wegen}. The reason has to be expressed as a noun or noun phrase.
+
+   Für den Satz über die Haltestelle sind zum Beispiel möglich:
+
+   \begin{itemize}
+      \item \textbf{Das verpflichtende Spazierengehen ist wegen der Entfernung zur nächsten Haltestelle nötig.}
+      \item \textbf{Das verpflichtende Spazierengehen ist wegen des langen Weges zur nächsten Haltestelle nötig.}
+   \end{itemize}
+
+   Die Form \textbf{wegen des Erreichens der nächsten Haltestelle} ist grammatisch als Nominalisierung bildbar, klingt hier aber unnatürlich und drückt nicht denselben Zweck wie \textbf{um die nächste Haltestelle zu erreichen} aus.
+
+   \section{Unterschied zu weil \textnormal{(Difference from weil)}}
+
+   \textbf{wegen} ist eine Präposition und steht mit einer Nominalgruppe. \textbf{weil} ist eine subordinierende Konjunktion und leitet einen Nebensatz ein; das konjugierte Verb steht am Ende.
+
+   \textit{English:} \textbf{wegen} is a preposition and is followed by a noun phrase. \textbf{weil} is a subordinating conjunction and introduces a subordinate clause; the finite verb goes to the end.
+
+   \begin{itemize}
+      \item \textbf{Wegen des Regens bleibe ich zu Hause.}
+      \item \textbf{Ich bleibe zu Hause, weil es regnet.}
+   \end{itemize}
+
+   \textbf{wegen dass} ist im Standarddeutschen nicht die normale Konstruktion. Wenn ein ganzer Satz folgen soll, benutzt man normalerweise \textbf{weil} oder \textbf{da}.
+
+   \section{Unterschied zu deshalb und deswegen \textnormal{(Difference from deshalb and deswegen)}}
+
+   \textbf{deshalb} und \textbf{deswegen} sind Konjunktionaladverbien. Sie verbinden den Grund mit einer Folge und gehören zu einem Hauptsatz. Nach ihnen steht das konjugierte Verb auf Position 2.
+
+   \textit{English:} \textbf{deshalb} and \textbf{deswegen} are conjunctive adverbs. They connect a reason with its consequence and belong to a main clause. The finite verb remains in position 2.
+
+   \begin{itemize}
+      \item \textbf{Es regnet. Deshalb bleibe ich zu Hause.}
+      \item \textbf{Es regnet. Deswegen bleibe ich zu Hause.}
+      \item \textbf{Wegen des Regens bleibe ich zu Hause.}
+   \end{itemize}
+
+   \section{Nachgestelltes wegen \textnormal{(Postposed wegen)}}
+
+   In gehobener oder älter wirkender Sprache kann \textbf{wegen} auch nach der Genitivgruppe stehen.
+
+   \textit{English:} In elevated or somewhat old-fashioned language, \textbf{wegen} can also come after the genitive phrase.
+
+   \begin{itemize}
+      \item \textbf{des Wetters wegen}
+      \item \textbf{der Kinder wegen}
+   \end{itemize}
+
+   Für normales heutiges Deutsch ist die Voranstellung \textbf{wegen des Wetters} deutlich häufiger.
+
+   \section{Typische Fehler \textnormal{(Common mistakes)}}
+
+   \begin{itemize}
+      \item Falsch für formelles Standarddeutsch: \textbf{wegen dem Regen}.\\
+      Besser: \textbf{wegen des Regens}.
+      \item Falsch: \textbf{wegen am nächsten Haltestelle}.\\
+      Richtig je nach Bedeutung: \textbf{wegen der Entfernung zur nächsten Haltestelle} oder \textbf{um die nächste Haltestelle zu erreichen}.
+      \item Falsch: \textbf{wegen ich krank bin}.\\
+      Richtig: \textbf{weil ich krank bin} oder \textbf{wegen meiner Krankheit}.
+      \item Nicht verwechseln: \textbf{wegen} = Grund; \textbf{um \ldots{} zu} = Zweck.
+   \end{itemize}
+
+   \section{Merksatz \textnormal{(Key rule)}}
+
+   \textbf{wegen + Genitiv = Grund/Ursache.}
+
+   \textit{English:} \textbf{wegen + genitive = reason/cause.}
+
+   \begin{itemize}
+      \item \textbf{wegen des Regens} = because of the rain
+      \item \textbf{weil es regnet} = because it is raining
+      \item \textbf{deshalb bleibe ich zu Hause} = therefore I am staying at home
+      \item \textbf{um trocken zu bleiben} = in order to stay dry
+   \end{itemize}
+
+
+   \bibliographystyle{plainnat}
+   \bibliography{/home/donkarlo/Dropbox/repo/nd_shared_research/bibliography/bibliography.bib}
+\end{document}

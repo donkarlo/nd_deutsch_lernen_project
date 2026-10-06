@@ -1,0 +1,316 @@
+% Erklärung: Modalverben ohne Infinitiv / Ellipse des Infinitivs
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\titleformat{\subsection}[block]
+{\large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Modalverben ohne Infinitiv\\{\large Modal verbs without an infinitive}}
+\date{}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \newpage
+
+    \section{Grundregel \textnormal{(Basic rule)}}
+
+        \begin{grammarentry}{Modalverb ohne Infinitiv}{Ellipse des Infinitivs}
+            \GermanText{Normalerweise steht bei einem Modalverb ein zweites Verb im Infinitiv: \textbf{Ich möchte auf den Weihnachtsmarkt gehen.} Im Deutschen kann dieser Infinitiv aber weggelassen werden, wenn seine Bedeutung aus dem Satz oder aus dem Zusammenhang klar ist.}
+            \EnglishText{Normally, a modal verb is accompanied by a second verb in the infinitive: \textbf{Ich möchte auf den Weihnachtsmarkt gehen.} In German, however, this infinitive can be omitted when its meaning is clear from the sentence or from the context.}
+
+            \GermanText{Dann steht das Modalverb ohne ausgesprochenen Infinitiv: \textbf{Ich möchte auf den Weihnachtsmarkt.}}
+            \EnglishText{The modal verb then appears without an explicitly stated infinitive: \textbf{Ich möchte auf den Weihnachtsmarkt.}}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich muss nach Hause.}{I have to go home.}
+                \ExampleItem{Sie will nach Wien.}{She wants to go to Vienna.}
+                \ExampleItem{Mustafa möchte zur Eröffnung auf den Weihnachtsmarkt.}{Mustafa wants to go to the Christmas market for the opening.}
+                \ExampleItem{Darf ich rein?}{May I come/go in?}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Terminologie \textnormal{(Terminology)}}
+
+        \begin{grammarentry}{Wie heißt diese Erscheinung?}{mehrere gebräuchliche Bezeichnungen}
+            \GermanText{Man kann diese Erscheinung als \textbf{Ellipse des Infinitivs}, \textbf{Infinitivellipse}, \textbf{elliptischen Gebrauch eines Modalverbs} oder einfach als \textbf{Modalverb ohne Infinitiv} bezeichnen. In Lehrwerken ist \textbf{Modalverb ohne Infinitiv} oft die verständlichste Bezeichnung.}
+            \EnglishText{This phenomenon can be called \textbf{ellipsis of the infinitive}, \textbf{infinitive ellipsis}, \textbf{elliptical use of a modal verb}, or simply \textbf{modal verb without an infinitive}. In textbooks, \textbf{modal verb without an infinitive} is often the clearest label.}
+
+            \GermanText{\textbf{möchten} ist grammatisch der Konjunktiv II von \textbf{mögen}. Im heutigen Sprachgebrauch verhält es sich in vielen solchen Sätzen ähnlich wie ein Modalverb.}
+            \EnglishText{\textbf{möchten} is grammatically the Konjunktiv II form of \textbf{mögen}. In modern usage, it behaves like a modal verb in many such sentences.}
+        \end{grammarentry}
+
+    \section{Warum kann der Infinitiv fehlen? \textnormal{(Why can the infinitive be omitted?)}}
+
+        \begin{grammarentry}{Bedeutung ist erschließbar}{kein Informationsverlust}
+            \GermanText{Der Infinitiv kann fehlen, wenn der Hörer oder Leser die gemeinte Handlung leicht erschließen kann. Eine Richtungsangabe wie \textbf{nach Hause}, \textbf{ins Kino} oder \textbf{auf den Weihnachtsmarkt} macht zum Beispiel deutlich, dass eine Bewegung zu einem Ziel gemeint ist.}
+            \EnglishText{The infinitive can be omitted when the listener or reader can easily infer the intended action. A directional phrase such as \textbf{nach Hause}, \textbf{ins Kino}, or \textbf{auf den Weihnachtsmarkt}, for example, makes it clear that movement toward a destination is meant.}
+
+            \GermanText{Wichtig: Es ist nicht immer genau das Verb \textbf{gehen}, das gedanklich ergänzt werden muss. Je nach Situation können auch \textbf{fahren}, \textbf{kommen}, \textbf{reisen}, \textbf{mitkommen} oder ein anderes Verb gemeint sein.}
+            \EnglishText{Important: The mentally supplied verb is not always specifically \textbf{gehen}. Depending on the situation, \textbf{fahren}, \textbf{kommen}, \textbf{reisen}, \textbf{mitkommen}, or another verb may be intended.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich will nach Wien.}{I want to go to Vienna. The German sentence does not specify whether the person will walk, drive, fly, or travel in another way.}
+                \ExampleItem{Wir müssen zum Bahnhof.}{We have to go to the station. The exact motion verb is understood from the situation.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Besonders häufig bei Richtungsangaben \textnormal{(Especially common with directional expressions)}}
+
+        \begin{grammarentry}{Wohin?}{Ziel einer Bewegung}
+            \GermanText{Sehr häufig steht ein Modalverb ohne Infinitiv zusammen mit einer Angabe, die die Frage \textbf{Wohin?} beantwortet.}
+            \EnglishText{A modal verb without an infinitive very often appears together with an expression answering the question \textbf{Where to?}.}
+
+            \GermanText{Typische Strukturen sind: \textbf{nach + Ziel}, \textbf{zu + Dativ}, \textbf{in + Akkusativ}, \textbf{auf + Akkusativ} und \textbf{an + Akkusativ}.}
+            \EnglishText{Typical structures are: \textbf{nach + destination}, \textbf{zu + dative}, \textbf{in + accusative}, \textbf{auf + accusative}, and \textbf{an + accusative}.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich möchte nach Hause.}{I would like to go home.}
+                \ExampleItem{Sie muss zum Arzt.}{She has to go to the doctor.}
+                \ExampleItem{Wir wollen ins Kino.}{We want to go to the cinema.}
+                \ExampleItem{Mustafa möchte auf den Weihnachtsmarkt.}{Mustafa wants to go to the Christmas market.}
+                \ExampleItem{Die Kinder wollen ans Meer.}{The children want to go to the seaside.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Kasus kommt von der Präposition}{nicht von der Ellipse}
+            \GermanText{Der Kasus wird nicht durch die Ellipse bestimmt, sondern durch die jeweilige Präposition und ihre Bedeutung. Bei Wechselpräpositionen steht bei einer Richtung normalerweise der Akkusativ: \textbf{ins Kino}, \textbf{auf den Markt}, \textbf{ans Meer}. Bei \textbf{zu} steht der Dativ: \textbf{zum Arzt}, \textbf{zur Arbeit}.}
+            \EnglishText{The case is not determined by the ellipsis, but by the relevant preposition and its meaning. With two-way prepositions, direction normally takes the accusative: \textbf{ins Kino}, \textbf{auf den Markt}, \textbf{ans Meer}. With \textbf{zu}, the dative is used: \textbf{zum Arzt}, \textbf{zur Arbeit}.}
+        \end{grammarentry}
+
+    \section{Das Beispiel mit dem Weihnachtsmarkt \textnormal{(The Christmas-market example)}}
+
+        \begin{grammarentry}{Mustafa möchte zur Eröffnung auf den Weihnachtsmarkt}{Analyse}
+            \GermanText{Im Satz \textbf{Mustafa möchte zur Eröffnung auf den Weihnachtsmarkt.} ist \textbf{möchte} das konjugierte Verb. Ein Bewegungsverb wird nicht ausgesprochen.}
+            \EnglishText{In the sentence \textbf{Mustafa möchte zur Eröffnung auf den Weihnachtsmarkt.}, \textbf{möchte} is the conjugated verb. A verb of motion is not explicitly stated.}
+
+            \GermanText{\textbf{auf den Weihnachtsmarkt} ist eine Richtungsangabe und beantwortet die Frage \textbf{Wohin?}. Wegen der Richtung steht nach der Wechselpräposition \textbf{auf} der Akkusativ: \textbf{den Weihnachtsmarkt}.}
+            \EnglishText{\textbf{auf den Weihnachtsmarkt} is a directional expression and answers the question \textbf{Where to?}. Because direction is expressed, the two-way preposition \textbf{auf} takes the accusative: \textbf{den Weihnachtsmarkt}.}
+
+            \GermanText{\textbf{zur Eröffnung} bedeutet hier ungefähr \glqq anlässlich der Eröffnung\grqq{} oder \glqq für die Eröffnung\grqq{}. Es gehört nicht zur Ellipsenregel.}
+            \EnglishText{\textbf{zur Eröffnung} here means approximately "for the opening" or "on the occasion of the opening." It is not part of the ellipsis rule.}
+
+            \GermanText{Eine mögliche ausführliche Paraphrase ist: \textbf{Mustafa möchte zur Eröffnung auf den Weihnachtsmarkt gehen.} Das hinzugefügte \textbf{gehen} erklärt die Bedeutung, steht aber im ursprünglichen Satz nicht.}
+            \EnglishText{One possible full paraphrase is: \textbf{Mustafa möchte zur Eröffnung auf den Weihnachtsmarkt gehen.} The added \textbf{gehen} explains the meaning, but it is not present in the original sentence.}
+        \end{grammarentry}
+
+    \section{Welche Modalverben können so verwendet werden? \textnormal{(Which modal verbs can be used this way?)}}
+
+        \begin{grammarentry}{Häufige Fälle}{Modalverb + klarer Kontext}
+            \GermanText{Besonders häufig findet man den Gebrauch ohne Infinitiv bei \textbf{wollen}, \textbf{müssen}, \textbf{sollen}, \textbf{dürfen}, \textbf{können} und bei \textbf{möchten}, wenn der fehlende Inhalt klar ist.}
+            \EnglishText{Use without an infinitive is especially common with \textbf{wollen}, \textbf{müssen}, \textbf{sollen}, \textbf{dürfen}, \textbf{können}, and with \textbf{möchten} when the omitted content is clear.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich will nach Hause.}{I want to go home.}
+                \ExampleItem{Ich muss jetzt weg.}{I have to leave now.}
+                \ExampleItem{Du sollst zum Chef.}{You are supposed to go to the boss.}
+                \ExampleItem{Darf ich rein?}{May I come/go in?}
+                \ExampleItem{Kannst du morgen zu mir?}{Can you come to my place tomorrow?}
+                \ExampleItem{Ich möchte ins Museum.}{I would like to go to the museum.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Nicht nur bei Richtungsangaben \textnormal{(Not only with directional expressions)}}
+
+        \begin{grammarentry}{Der Kontext kann den Infinitiv ersetzen}{allgemeinere Ellipse}
+            \GermanText{Ein Modalverb kann auch ohne Richtungsangabe allein stehen, wenn aus dem vorherigen Gespräch klar ist, welche Handlung gemeint ist.}
+            \EnglishText{A modal verb can also stand without a directional expression when the preceding conversation makes the intended action clear.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Kommst du heute mit? -- Ich kann nicht.}{Are you coming along today? -- I can't.}
+                \ExampleItem{Willst du noch bleiben? -- Nein, ich will nicht.}{Do you want to stay longer? -- No, I don't want to.}
+                \ExampleItem{Musst du morgen arbeiten? -- Ja, ich muss.}{Do you have to work tomorrow? -- Yes, I do.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Objekt statt Infinitiv}{weitere feste Verwendungen}
+            \GermanText{Auch Sätze wie \textbf{Ich möchte einen Kaffee.} sind vollständig und sehr üblich. Der Kontext liefert eine Bedeutung wie \glqq haben\grqq{}, \glqq bekommen\grqq{} oder \glqq bestellen\grqq{}. Man sollte aber nicht behaupten, dass immer genau ein bestimmtes Verb ausgelassen wurde.}
+            \EnglishText{Sentences such as \textbf{Ich möchte einen Kaffee.} are also complete and very common. The context supplies a meaning such as "have," "get," or "order." However, one should not claim that one particular verb has always been omitted.}
+
+            \GermanText{Bei \textbf{Ich mag Kaffee.} liegt dagegen keine notwendige Infinitivellipse vor: \textbf{mögen} kann hier selbst die Bedeutung \glqq gernhaben\grqq{} ausdrücken.}
+            \EnglishText{By contrast, \textbf{Ich mag Kaffee.} does not require an infinitive ellipsis: \textbf{mögen} itself can mean "to like" here.}
+        \end{grammarentry}
+
+    \section{Satzstellung \textnormal{(Word order)}}
+
+        \begin{grammarentry}{Hauptsatz}{Modalverb auf Position 2}
+            \GermanText{Im Aussagesatz steht das konjugierte Modalverb wie jedes finite Verb auf Position 2. Da kein Infinitiv ausgesprochen wird, steht am Satzende auch kein zweites Verb.}
+            \EnglishText{In a declarative main clause, the conjugated modal verb stands in position 2 like any finite verb. Since no infinitive is expressed, there is no second verb at the end of the clause.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich möchte heute auf den Weihnachtsmarkt.}{I would like to go to the Christmas market today.}
+                \ExampleItem{Heute möchte ich auf den Weihnachtsmarkt.}{Today I would like to go to the Christmas market.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Nebensatz}{finites Modalverb am Ende}
+            \GermanText{Im Nebensatz steht das finite Modalverb am Ende: \textbf{..., weil ich nach Hause muss.} Wenn der Infinitiv ausgesprochen wird, steht er vor dem Modalverb: \textbf{..., weil ich nach Hause gehen muss.}}
+            \EnglishText{In a subordinate clause, the finite modal verb stands at the end: \textbf{..., weil ich nach Hause muss.} If the infinitive is expressed, it stands before the modal verb: \textbf{..., weil ich nach Hause gehen muss.}}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Fragesatz}{Verb zuerst oder nach dem Fragewort}
+            \GermanText{In einer Ja/Nein-Frage steht das Modalverb an Position 1: \textbf{Möchtest du auf den Weihnachtsmarkt?} Bei einer W-Frage steht es nach dem Fragewort: \textbf{Wohin möchtest du?}}
+            \EnglishText{In a yes/no question, the modal verb stands in position 1: \textbf{Möchtest du auf den Weihnachtsmarkt?} In a wh-question, it follows the question word: \textbf{Wohin möchtest du?}}
+        \end{grammarentry}
+
+    \section{Negation \textnormal{(Negation)}}
+
+        \begin{grammarentry}{nicht}{gleiche Grundregeln wie sonst}
+            \GermanText{Die Negation funktioniert grundsätzlich wie in anderen Sätzen. \textbf{nicht} kann die gemeinte Handlung oder einen bestimmten Satzteil verneinen.}
+            \EnglishText{Negation generally works as in other sentences. \textbf{nicht} can negate the intended action or a particular part of the sentence.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich möchte nicht auf den Weihnachtsmarkt.}{I do not want to go to the Christmas market.}
+                \ExampleItem{Ich muss heute nicht zur Arbeit.}{I do not have to go to work today.}
+                \ExampleItem{Du darfst nicht rein.}{You are not allowed to go/come in.}
+            \end{itemize}
+        \end{exbox}
+
+    \section{Zeitformen und Perfekt \textnormal{(Tenses and the perfect)}}
+
+        \begin{grammarentry}{Präsens und Präteritum}{normale Konjugation des Modalverbs}
+            \GermanText{Im Präsens und Präteritum wird das Modalverb normal konjugiert: \textbf{Ich muss nach Hause.} -- \textbf{Ich musste nach Hause.}}
+            \EnglishText{In the present and simple past, the modal verb is conjugated normally: \textbf{Ich muss nach Hause.} -- \textbf{Ich musste nach Hause.}}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Perfekt ohne zweiten Infinitiv}{Partizip II des Modalverbs}
+            \GermanText{Wenn ein Modalverb ohne zweiten Infinitiv verwendet wird, kann im Perfekt das normale Partizip II stehen: \textbf{Ich habe nach Hause gemusst.}}
+            \EnglishText{When a modal verb is used without a second infinitive, the normal past participle can be used in the perfect: \textbf{Ich habe nach Hause gemusst.}}
+
+            \GermanText{Mit ausgesprochenem Infinitiv verwendet man dagegen normalerweise den Ersatzinfinitiv: \textbf{Ich habe nach Hause gehen müssen.}}
+            \EnglishText{With an explicitly stated infinitive, the substitute infinitive is normally used instead: \textbf{Ich habe nach Hause gehen müssen.}}
+        \end{grammarentry}
+
+    \section{Wann darf man den Infinitiv nicht einfach weglassen? \textnormal{(When can the infinitive not simply be omitted?)}}
+
+        \begin{grammarentry}{Bedeutung muss klar bleiben}{keine mechanische Regel}
+            \GermanText{Man darf einen Infinitiv nicht beliebig streichen. Die Ellipse funktioniert nur, wenn die verbleibenden Satzteile oder der Gesprächskontext die gemeinte Handlung verständlich machen.}
+            \EnglishText{An infinitive cannot be deleted arbitrarily. Ellipsis works only when the remaining parts of the sentence or the conversational context make the intended action understandable.}
+        \end{grammarentry}
+
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich muss zur Arbeit.}{Correct: the destination makes the intended movement clear.}
+                \ExampleItem{Ich muss die Aufgabe machen.}{The infinitive \textbf{machen} is normally necessary here.}
+                \ExampleItem{Ich kann das Buch lesen.}{The infinitive \textbf{lesen} is normally necessary here.}
+                \ExampleItem{Ich will morgen nach Graz fahren.}{The infinitive is useful when the exact action or means of movement matters.}
+            \end{itemize}
+        \end{exbox}
+
+        \begin{grammarentry}{Vollform bei möglicher Unklarheit}{Infinitiv besser ausdrücken}
+            \GermanText{Wenn mehrere Handlungen möglich sind und die genaue Handlung wichtig ist, sollte der Infinitiv genannt werden. \textbf{Ich will nach Wien} nennt nur das Ziel; \textbf{Ich will nach Wien fliegen} nennt zusätzlich die Art der Bewegung.}
+            \EnglishText{If several actions are possible and the exact action matters, the infinitive should be stated. \textbf{Ich will nach Wien} gives only the destination; \textbf{Ich will nach Wien fliegen} additionally specifies the type of movement.}
+        \end{grammarentry}
+
+    \section{Unterschied zwischen deutscher Form und englischer Übersetzung \textnormal{(Difference between the German form and the English translation)}}
+
+        \begin{grammarentry}{Englisch braucht oft ein Bewegungsverb}{Übersetzung ist keine Wort-für-Wort-Analyse}
+            \GermanText{Englisch braucht in solchen Sätzen häufig ein ausdrücklich genanntes Verb wie \textbf{go}. Deshalb enthält die englische Übersetzung oft ein Verb, das im deutschen Original nicht steht.}
+            \EnglishText{English often requires an explicitly stated verb such as \textbf{go} in these sentences. Therefore, the English translation often contains a verb that is not present in the German original.}
+
+            \GermanText{\textbf{Ich möchte nach Hause.} bedeutet auf Englisch normalerweise \textbf{I want to go home.} Das englische \textbf{go} beweist aber nicht, dass im deutschen Satz das Wort \textbf{gehen} vorhanden ist.}
+            \EnglishText{\textbf{Ich möchte nach Hause.} is normally translated as \textbf{I want to go home.} However, the English word \textbf{go} does not mean that the German sentence literally contains the word \textbf{gehen}.}
+        \end{grammarentry}
+
+    \section{Typische Fehler \textnormal{(Common mistakes)}}
+
+        \begin{grammarentry}{Fehler 1}{ein unsichtbares \glqq gehen\grqq{} als vorhandenes Wort behandeln}
+            \GermanText{Man sollte bei \textbf{Mustafa möchte auf den Weihnachtsmarkt.} nicht sagen: \glqq Das Verb \textbf{gehen} steht im Satz.\grqq{} Es steht nicht im Satz. Richtig ist: Ein Bewegungsverb ist aus der Bedeutung erschließbar.}
+            \EnglishText{With \textbf{Mustafa möchte auf den Weihnachtsmarkt.}, one should not say: "The verb \textbf{gehen} is in the sentence." It is not in the sentence. Correct: a verb of motion can be inferred from the meaning.}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Fehler 2}{jede Modalverbkonstruktion verkürzen}
+            \GermanText{Nicht jeder Satz mit einem Modalverb erlaubt dieselbe Verkürzung. Wenn die gemeinte Handlung ohne den Infinitiv unklar wäre, muss der Infinitiv stehen.}
+            \EnglishText{Not every sentence with a modal verb allows the same shortening. If the intended action would be unclear without the infinitive, the infinitive must be stated.}
+        \end{grammarentry}
+
+        \begin{grammarentry}{Fehler 3}{Richtungskasus mit der Ellipse verwechseln}
+            \GermanText{Der Akkusativ in \textbf{auf den Weihnachtsmarkt} kommt von der Richtungsbedeutung der Wechselpräposition \textbf{auf}, nicht davon, dass ein Infinitiv ausgelassen wurde.}
+            \EnglishText{The accusative in \textbf{auf den Weihnachtsmarkt} comes from the directional meaning of the two-way preposition \textbf{auf}, not from the omission of an infinitive.}
+        \end{grammarentry}
+
+    \section{Prüfungsrelevante Merksätze \textnormal{(Exam-relevant key rules)}}
+
+        \begin{grammarentry}{Merksätze}{kurz und wichtig}
+            \GermanText{Ein Modalverb kann ohne Infinitiv stehen, wenn die fehlende Handlung aus dem Satz oder Kontext klar ist.}
+            \EnglishText{A modal verb can stand without an infinitive when the omitted action is clear from the sentence or context.}
+
+            \GermanText{Bei Richtungsangaben ist diese Ellipse sehr häufig: \textbf{Ich muss nach Hause.} -- \textbf{Ich möchte ins Kino.}}
+            \EnglishText{This ellipsis is very common with directional expressions: \textbf{Ich muss nach Hause.} -- \textbf{Ich möchte ins Kino.}}
+
+            \GermanText{Der genaue ausgelassene Infinitiv ist nicht immer \textbf{gehen}; der Kontext entscheidet.}
+            \EnglishText{The exact omitted infinitive is not always \textbf{gehen}; the context determines it.}
+
+            \GermanText{Im Nebensatz steht das finite Modalverb am Ende: \textbf{..., weil ich nach Hause muss.}}
+            \EnglishText{In a subordinate clause, the finite modal verb stands at the end: \textbf{..., weil ich nach Hause muss.}}
+
+            \GermanText{Wenn die genaue Handlung wichtig oder ohne Infinitiv unklar ist, nennt man den Infinitiv ausdrücklich.}
+            \EnglishText{If the exact action is important or would be unclear without the infinitive, the infinitive is stated explicitly.}
+        \end{grammarentry}
+
+    \section{Zusammenfassung \textnormal{(Summary)}}
+
+        \begin{grammarentry}{Kurzformel}{Modalverb + klarer Kontext}
+            \GermanText{\textbf{Modalverb + verständlicher Kontext} kann einen ausgesprochenen Infinitiv unnötig machen.}
+            \EnglishText{\textbf{Modal verb + clear context} can make an explicitly stated infinitive unnecessary.}
+
+            \GermanText{\textbf{Ich möchte auf den Weihnachtsmarkt.} ist ein vollständiger und grammatisch korrekter deutscher Satz. Er bedeutet, dass die Person dorthin möchte; ein konkretes Bewegungsverb wird nicht ausgesprochen.}
+            \EnglishText{\textbf{Ich möchte auf den Weihnachtsmarkt.} is a complete and grammatically correct German sentence. It means that the person wants to go there; no specific verb of motion is explicitly stated.}
+        \end{grammarentry}
+
+\end{document}
