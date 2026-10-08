@@ -1,0 +1,145 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern,microtype,xcolor,parskip,enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\titleformat{\section}[block]{\Large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+\NewDocumentEnvironment{grammarentry}{mm+b}{\begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]#3\end{tcolorbox}}{}
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\title{\glqq was\grqq{} als Relativpronomen\\\large Was as a Relative Pronoun}
+\date{}
+\begin{document}
+   \maketitle\tableofcontents\newpage
+   \section{Grundregel (Basic rule)}
+      \begin{grammarentry}{Relativpronomen was}{Relative pronoun was}
+         \GermanText{\textbf{was} leitet einen Relativsatz ein. Es bezieht sich häufig auf einen ganzen Satz oder Sachverhalt, auf unbestimmte Pronomen oder auf substantivierte Superlative und neutrale substantivierte Adjektive. Das finite Verb steht am Ende des Relativsatzes.}
+         \EnglishText{\textbf{was} introduces a relative clause. It often refers to an entire clause or situation, an indefinite pronoun, or a nominalized superlative or neuter adjective. The finite verb comes last in the relative clause.}
+      \end{grammarentry}
+   \section{Bezug auf einen ganzen Satz (Reference to an entire clause)}
+      \begin{grammarentry}{Satzbezug}{Clause reference}
+         \GermanText{Hier bezieht sich \textbf{was} auf die ganze vorherige Aussage oder Handlung, nicht auf ein bestimmtes Nomen.}
+         \EnglishText{Here \textbf{was} refers to the whole preceding statement or action, not to a specific noun.}
+      \end{grammarentry}
+      \begin{exbox}\begin{itemize}
+         \ExampleItem{Ich gehe oft zu Fuß, was gut für meine Gesundheit ist.}{I often walk, which is good for my health.}
+         \ExampleItem{Der Zug hatte Verspätung, was uns ärgerte.}{The train was delayed, which annoyed us.}
+         \ExampleItem{Sie hat die Prüfung bestanden, was mich sehr freut.}{She passed the exam, which makes me very happy.}
+         \end{itemize}\end{exbox}
+   \section{Nach Indefinitpronomen (After indefinite pronouns)}
+         \begin{grammarentry}{alles, etwas, nichts, vieles, manches, einiges}{Indefinite antecedents}
+            \GermanText{Nach \textbf{alles, etwas, nichts, vieles, manches, einiges} und ähnlichen unbestimmten Ausdrücken steht im Standarddeutschen normalerweise \textbf{was}.}
+            \EnglishText{After \textbf{alles, etwas, nichts, vieles, manches, einiges} and similar indefinite expressions, standard German normally uses \textbf{was}.}
+         \end{grammarentry}
+         \begin{exbox}\begin{itemize}
+            \ExampleItem{Das ist alles, was ich weiß.}{That is all I know.}
+            \ExampleItem{Gibt es etwas, was du nicht verstehst?}{Is there something you do not understand?}
+            \ExampleItem{Es gibt nichts, was mich daran hindert.}{There is nothing that prevents me from doing that.}
+            \ExampleItem{Vieles, was früher schwierig war, ist heute einfacher.}{Much of what was once difficult is easier today.}
+            \end{itemize}\end{exbox}
+   \section{Nach substantivierten Adjektiven und Superlativen (After nominalized adjectives and superlatives)}
+            \begin{grammarentry}{das Beste, das Wichtigste, etwas Neues}{Nominalized adjectives}
+               \GermanText{Nach neutralen substantivierten Adjektiven und Superlativen steht üblicherweise \textbf{was}. Das erste \textbf{das} in \glqq das Beste\grqq{} ist ein Artikel.}
+               \EnglishText{After neuter nominalized adjectives and superlatives, \textbf{was} is usual. The first \textbf{das} in \glqq das Beste\grqq{} is an article.}
+            \end{grammarentry}
+            \begin{exbox}\begin{itemize}
+               \ExampleItem{Das Beste, was du tun kannst, ist zu üben.}{The best thing you can do is practise.}
+               \ExampleItem{Das Wichtigste, was ich gelernt habe, ist Geduld.}{The most important thing I have learned is patience.}
+               \ExampleItem{Er erzählte etwas Neues, was mich überraschte.}{He told something new that surprised me.}
+               \end{itemize}\end{exbox}
+   \section{Was oder das? (Was or das?)}
+               \begin{grammarentry}{Das Bezugswort entscheidet}{The antecedent determines the form}
+                  \GermanText{Nach einem konkreten neutralen Nomen verwendet man normalerweise \textbf{das}. Für eine ganze Aussage oder nach \textbf{alles, etwas, nichts} verwendet man \textbf{was}. Es kommt auf das tatsächliche Bezugswort an.}
+                  \EnglishText{After a specific neuter noun, use \textbf{das}. For an entire statement or after \textbf{alles, etwas, nichts}, use \textbf{was}. The actual antecedent determines the choice.}
+               \end{grammarentry}
+               \begin{exbox}\begin{itemize}
+                  \ExampleItem{Das Fahrrad, das ich gekauft habe, ist neu.}{The bicycle that I bought is new.}
+                  \ExampleItem{Das Spazierengehen, das mir Freude macht, ist gesund.}{Walking, which brings me joy, is healthy.}
+                  \ExampleItem{Ich gehe jeden Abend spazieren, was mir Freude macht.}{I walk every evening, which brings me joy.}
+                  \ExampleItem{Das, was du gesagt hast, stimmt.}{What you said is true.}
+                  \end{itemize}\end{exbox}
+   \section{Kasus und Satzbau (Case and clause structure)}
+                  \begin{grammarentry}{Nominativ und Akkusativ}{Nominative and accusative}
+                     \GermanText{\textbf{was} hat im Nominativ und Akkusativ dieselbe Form. Seine Rolle innerhalb des Relativsatzes bestimmt den Kasus.}
+                     \EnglishText{\textbf{was} has the same form in nominative and accusative. Its syntactic role inside the relative clause determines the case.}
+                  \end{grammarentry}
+                  \begin{exbox}\begin{itemize}
+                     \ExampleItem{Alles, was passiert, hat eine Ursache.}{Everything that happens has a cause. (Nominative subject.)}
+                     \ExampleItem{Alles, was ich sehe, ist neu.}{Everything that I see is new. (Accusative object.)}
+                     \end{itemize}\end{exbox}
+   \section{Präpositionen und wo(r)- (Prepositions and wo(r)-)}
+                     \begin{grammarentry}{woran, womit, worüber, wofür, wovon}{Prepositional relative forms}
+                        \GermanText{Bei einem nicht-personalen Satz- oder Sachverhaltsbezug bildet man mit Präpositionen normalerweise Pronominaladverbien: \textbf{wo + Präposition}; vor einem Vokal steht zusätzlich \textbf{r}. Man sagt \textbf{worüber} statt \glqq über was\grqq{} im üblichen Standarddeutsch.}
+                        \EnglishText{With non-personal reference to a clause or situation, prepositions normally combine with \textbf{wo(r)-}, such as \textbf{worüber} instead of \glqq über was\grqq{} in ordinary standard German. Add \textbf{r} before a vowel.}
+                     \end{grammarentry}
+                     \begin{exbox}\begin{itemize}
+                        \ExampleItem{Er hat mir geholfen, wofür ich dankbar bin.}{He helped me, for which I am grateful.}
+                        \ExampleItem{Das ist etwas, worüber wir sprechen müssen.}{That is something we need to talk about.}
+                        \ExampleItem{Sie hat abgesagt, womit niemand gerechnet hatte.}{She cancelled, which nobody expected.}
+                        \ExampleItem{Das ist alles, woran ich mich erinnere.}{That is all I remember.}
+                        \end{itemize}\end{exbox}
+                        \begin{grammarentry}{Menschen und konkrete Nomen}{People and specific nouns}
+                           \GermanText{Bei Personen und konkreten Bezugsnomen stehen üblicherweise Präposition + \textbf{der/die/das}: \textbf{mit dem Kollegen, mit dem ...}; \textbf{das Buch, über das ...}.}
+                           \EnglishText{For people and specific antecedent nouns, preposition + relative \textbf{der/die/das} is normally used.}
+                        \end{grammarentry}
+                        \begin{exbox}\begin{itemize}
+                           \ExampleItem{Das ist der Kollege, mit dem ich arbeite.}{That is the colleague with whom I work.}
+                           \ExampleItem{Das ist das Buch, über das wir sprechen.}{That is the book we are talking about.}
+                           \end{itemize}\end{exbox}
+   \section{Das, was (Das, was)}
+                           \begin{grammarentry}{Korrelat und Relativpronomen}{Correlate and relative pronoun}
+                              \GermanText{In \textbf{das, was ...} ist das erste \textbf{das} ein hinweisendes Element; \textbf{was} leitet den Relativsatz ein.}
+                              \EnglishText{In \textbf{das, was ...}, the initial \textbf{das} is a pointing element; \textbf{was} introduces the relative clause.}
+                           \end{grammarentry}
+                           \begin{exbox}\begin{itemize}
+                              \ExampleItem{Das, was du brauchst, liegt hier.}{What you need is here.}
+                              \ExampleItem{Ich verstehe das, was du meinst.}{I understand what you mean.}
+                              \end{itemize}\end{exbox}
+   \section{Fragepronomen oder Relativpronomen? (Interrogative or relative pronoun?)}
+                              \begin{grammarentry}{Verschiedene Funktionen}{Different functions}
+                                 \GermanText{\textbf{was} kann auch eine direkte oder indirekte Frage einleiten. Das ist dann kein Relativsatz. Umgangssprachlich kann \textbf{was} außerdem \textbf{etwas} bedeuten.}
+                                 \EnglishText{\textbf{was} may also begin direct or indirect questions; those are not relative clauses. Colloquially, \textbf{was} can also mean \textbf{etwas}.}
+                              \end{grammarentry}
+                              \begin{exbox}\begin{itemize}
+                                 \ExampleItem{Was möchtest du?}{What do you want? (Direct question.)}
+                                 \ExampleItem{Ich weiß nicht, was du möchtest.}{I do not know what you want. (Indirect question.)}
+                                 \ExampleItem{Ich gebe dir alles, was du möchtest.}{I give you everything you want. (Relative clause.)}
+                                 \ExampleItem{Ich möchte was trinken.}{I want something to drink. (Colloquial indefinite pronoun.)}
+                                 \end{itemize}\end{exbox}
+   \section{Kommas und Wortstellung (Commas and word order)}
+                                 \begin{grammarentry}{Relativsatz als Nebensatz}{Relative clause as subordinate clause}
+                                    \GermanText{Vor und nach einem eingeschobenen Relativsatz steht ein Komma. Das finite Verb steht am Ende des Relativsatzes.}
+                                    \EnglishText{An inserted relative clause has commas on both sides. Its finite verb is placed at the end.}
+                                 \end{grammarentry}
+                                 \begin{exbox}\begin{itemize}
+                                    \ExampleItem{Alles, was du heute lernst, hilft dir später.}{Everything you learn today helps you later.}
+                                    \ExampleItem{Er hat viel geübt, was man deutlich merkt.}{He practised a lot, which is clearly noticeable.}
+                                    \end{itemize}\end{exbox}
+   \section{Häufige Fehler (Common mistakes)}
+                                    \begin{exbox}\begin{itemize}
+                                       \ExampleItem{Falsch: Ich gehe spazieren, das gesund ist.\\Richtig: Ich gehe spazieren, was gesund ist.}{Use was when referring to the entire action.}
+                                       \ExampleItem{Falsch: Das Auto, was ich fahre, ist alt.\\Standard: Das Auto, das ich fahre, ist alt.}{A concrete neuter antecedent takes das in standard written German.}
+                                       \ExampleItem{Falsch: Alles, das ich weiß, ...\\Richtig: Alles, was ich weiß, ...}{Use was after alles.}
+                                       \ExampleItem{Falsch: Alles, was ich weiß ist wichtig.\\Richtig: Alles, was ich weiß, ist wichtig.}{Close the inserted relative clause with a comma.}
+                                       \ExampleItem{Umgangssprachlich: etwas, über was wir sprechen\\Standard: etwas, worüber wir sprechen}{With non-personal reference, worüber is preferred in formal German.}
+                                       \end{itemize}\end{exbox}
+   \section{Kurzüberblick (Summary)}
+                                       \begin{grammarentry}{Entscheidungshilfe}{Decision guide}
+                                          \GermanText{\textbf{Ganzer Satz?} was. \textbf{alles / etwas / nichts?} was. \textbf{das Beste / das Wichtigste?} was. \textbf{Konkretes Nomen?} der / die / das. \textbf{Präposition mit nicht-personalem Bezug?} wo(r)- + Präposition.}
+                                          \EnglishText{\textbf{Entire clause?} was. \textbf{Indefinite pronoun?} was. \textbf{Nominalized superlative?} was. \textbf{Concrete noun?} der / die / das. \textbf{Preposition with non-personal reference?} wo(r)- + preposition.}
+                                       \end{grammarentry}
+\end{document}
