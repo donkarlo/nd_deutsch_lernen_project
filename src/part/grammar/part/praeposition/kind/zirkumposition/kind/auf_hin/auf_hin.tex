@@ -1,0 +1,101 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage{xparse}
+\usepackage[hidelinks]{hyperref}
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\titleformat{\section}[block]{\Large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+\titleformat{\subsection}[block]{\large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+\begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+#3
+\end{tcolorbox}}{}
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\title{auf ... hin\\ \large auf + accusative phrase + hin}
+\date{}
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+\section{Einordnung und Wortart / Classification and part of speech}
+\begin{grammarentry}{auf ... hin}{Grammatische Einordnung / grammatical classification}
+\GermanText{Grammatischer Status: Zirkumposition in weiterer Grammatik.}
+\EnglishText{Grammatical status: Circumposition in broader grammar.}
+\end{grammarentry}
+\section{Struktur, Stellung und Rektion / Structure, position and case}
+\begin{grammarentry}{Klammerbau / Framing structure}{Kasus / case}
+\GermanText{Muster: auf + Akkusativgruppe + hin. Rektion: Akkusativ.}
+\EnglishText{Pattern: auf + accusative phrase + hin. Case: accusative.}
+\end{grammarentry}
+\section{Bedeutung / Meaning}
+\begin{grammarentry}{Grundbedeutung / Core meaning}{Semantik / semantics}
+\GermanText{beschreibt einen Anlass, eine Reaktion auf etwas, die Ausrichtung auf einen Zweck oder eine Prüfung hinsichtlich eines Merkmals.}
+\EnglishText{expresses a trigger, a response to something, orientation toward a purpose, or investigation for a property.}
+\end{grammarentry}
+\section{Verwendung und Register / Usage and register}
+\begin{grammarentry}{Gebrauch / Usage}{Typische Kontexte / typical contexts}
+\GermanText{Häufig folgt auf auf ... hin eine Handlung als Reaktion: auf eine Beschwerde hin. Auch fachsprachlich: auf eine Krankheit hin untersuchen.}
+\EnglishText{The expression often precedes an action that follows as a response: in response to a complaint. It is also used technically: to test for a disease.}
+\end{grammarentry}
+\section{Beispiele / Examples}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Auf ihren Vorschlag hin änderte die Gruppe den Plan.}{The group changed the plan following her suggestion.}
+\ExampleItem{Auf eine Beschwerde hin wurde die Anlage geprüft.}{The system was inspected following a complaint.}
+\ExampleItem{Das Wasser wird auf Schadstoffe hin untersucht.}{The water is tested for pollutants.}
+\ExampleItem{Er spart auf den Ruhestand hin.}{He is saving with retirement in mind.}
+\end{itemize}
+\end{exbox}
+\section{Abgrenzung / Comparison with related forms}
+\begin{grammarentry}{Vergleich / Comparison}{Unterschiede / differences}
+\GermanText{Aufgrund ihrer Bitte und auf ihre Bitte hin können ähnlich sein. Auf ... hin hebt häufig den Reiz und die nachfolgende Reaktion stärker hervor.}
+\EnglishText{Aufgrund ihrer Bitte and auf ihre Bitte hin may be similar. The latter often emphasizes the trigger and subsequent reaction.}
+\end{grammarentry}
+\section{Typischer Fehler / Typical mistake}
+\begin{grammarentry}{Kasus und Form / Case and form}{Falsch versus richtig / wrong versus correct}
+\GermanText{Falsch: auf seinem Vorschlag hin. Richtig: auf seinen Vorschlag hin.}
+\EnglishText{Incorrect: auf seinem Vorschlag hin. Correct: auf seinen Vorschlag hin. Auf ... hin governs the accusative, not the dative.}
+\end{grammarentry}
+\section{Kurze Übung / Short exercise}
+\begin{grammarentry}{Ergänze die richtige Form / Complete the phrase}{Selbstkontrolle / self-check}
+\GermanText{Ergänze die Lücke: Auf ... (sein Hinweis) hin wurde die Datei aktualisiert.}
+\EnglishText{Fill in the blank: Auf ... (sein Hinweis) hin wurde die Datei aktualisiert.}
+\end{grammarentry}
+\subsection{Lösung / Answer}
+\begin{grammarentry}{Lösung / Answer}{Kasus prüfen / check the case}
+\GermanText{Auf seinen Hinweis hin wurde die Datei aktualisiert.}
+\EnglishText{The file was updated following his suggestion.}
+\end{grammarentry}
+\section{Zusammenfassung / Summary}
+\begin{grammarentry}{Merksatz / Key point}{Form und Bedeutung / form and meaning}
+\GermanText{auf ... hin — Akkusativ. beschreibt einen Anlass, eine Reaktion auf etwas, die Ausrichtung auf einen Zweck oder eine Prüfung hinsichtlich eines Merkmals.}
+\EnglishText{auf ... hin — accusative. expresses a trigger, a response to something, orientation toward a purpose, or investigation for a property.}
+\end{grammarentry}
+\section{Quellen / Sources}
+\begin{grammarentry}{Fachliche Einordnung / Classification}{IDS und Duden / IDS and Duden}
+\GermanText{Für die Abgrenzung zwischen eindeutigen Zirkumpositionen und ähnlichen Konstruktionen siehe IDS (grammis).}
+\EnglishText{For the distinction between unambiguous circumpositions and similar structures, see IDS (grammis).}
+\url{https://grammis.ids-mannheim.de/terms/view/506}
+\url{https://grammis.ids-mannheim.de/systematische-grammatik/1422}
+\end{grammarentry}
+\end{document}

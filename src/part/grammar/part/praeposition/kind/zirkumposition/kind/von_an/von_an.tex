@@ -1,0 +1,101 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage{xparse}
+\usepackage[hidelinks]{hyperref}
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\titleformat{\section}[block]{\Large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+\titleformat{\subsection}[block]{\large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+\begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+#3
+\end{tcolorbox}}{}
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\title{von ... an\\ \large von + dative phrase / time adverb + an}
+\date{}
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+\section{Einordnung und Wortart / Classification and part of speech}
+\begin{grammarentry}{von ... an}{Grammatische Einordnung / grammatical classification}
+\GermanText{Grammatischer Status: Zirkumpositionsartige zeitliche Verbindung.}
+\EnglishText{Grammatical status: Circumposition-like temporal pattern.}
+\end{grammarentry}
+\section{Struktur, Stellung und Rektion / Structure, position and case}
+\begin{grammarentry}{Klammerbau / Framing structure}{Kasus / case}
+\GermanText{Muster: von + Dativgruppe / Zeitadverb + an. Rektion: Dativ (bei Nominalgruppen).}
+\EnglishText{Pattern: von + dative phrase / time adverb + an. Case: dative (with noun phrases).}
+\end{grammarentry}
+\section{Bedeutung / Meaning}
+\begin{grammarentry}{Grundbedeutung / Core meaning}{Semantik / semantics}
+\GermanText{bezeichnet den Beginn eines Zeitraums, in dem eine Handlung, Regel oder ein Zustand gilt; von hier an kann auch räumlich sein.}
+\EnglishText{denotes the start of a period during which an action, rule or state applies; von hier an can also be spatial.}
+\end{grammarentry}
+\section{Verwendung und Register / Usage and register}
+\begin{grammarentry}{Gebrauch / Usage}{Typische Kontexte / typical contexts}
+\GermanText{Mit Zeitadverbien wie heute, morgen oder nun steht kein deklinierter Artikel. Mit Nominalgruppen wird normalerweise Dativ verwendet.}
+\EnglishText{Time adverbs such as heute, morgen or nun have no inflected article. Noun phrases normally take dative.}
+\end{grammarentry}
+\section{Beispiele / Examples}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Von heute an lerne ich jeden Tag Deutsch.}{Starting today, I will learn German every day.}
+\ExampleItem{Von der nächsten Woche an arbeiten wir wieder im Büro.}{From next week onwards, we will work in the office again.}
+\ExampleItem{Von Beginn an war das Ziel klar.}{The goal was clear from the beginning.}
+\ExampleItem{Von hier an ist der Weg schmal.}{From this point onwards, the path is narrow.}
+\end{itemize}
+\end{exbox}
+\section{Abgrenzung / Comparison with related forms}
+\begin{grammarentry}{Vergleich / Comparison}{Unterschiede / differences}
+\GermanText{Von ... an und von ... ab haben in zeitlichen Angaben häufig dieselbe Bedeutung. Seit bezeichnet dagegen einen bereits begonnenen Zeitraum bis in die Gegenwart, wenn es so verwendet wird.}
+\EnglishText{Von ... an and von ... ab often mean the same in time expressions. Seit instead can mark a period that began in the past and continues to the present.}
+\end{grammarentry}
+\section{Typischer Fehler / Typical mistake}
+\begin{grammarentry}{Kasus und Form / Case and form}{Falsch versus richtig / wrong versus correct}
+\GermanText{Falsch: von die nächste Woche an. Richtig: von der nächsten Woche an.}
+\EnglishText{Incorrect: von die nächste Woche an. Correct: von der nächsten Woche an. With a noun phrase, von requires the dative.}
+\end{grammarentry}
+\section{Kurze Übung / Short exercise}
+\begin{grammarentry}{Ergänze die richtige Form / Complete the phrase}{Selbstkontrolle / self-check}
+\GermanText{Ergänze die Lücke: Von ... (der erste Tag) an hat sie regelmäßig trainiert.}
+\EnglishText{Fill in the blank: Von ... (der erste Tag) an hat sie regelmäßig trainiert.}
+\end{grammarentry}
+\subsection{Lösung / Answer}
+\begin{grammarentry}{Lösung / Answer}{Kasus prüfen / check the case}
+\GermanText{Von dem ersten Tag an hat sie regelmäßig trainiert.}
+\EnglishText{She trained regularly from the very first day.}
+\end{grammarentry}
+\section{Zusammenfassung / Summary}
+\begin{grammarentry}{Merksatz / Key point}{Form und Bedeutung / form and meaning}
+\GermanText{von ... an — Dativ (bei Nominalgruppen). bezeichnet den Beginn eines Zeitraums, in dem eine Handlung, Regel oder ein Zustand gilt; von hier an kann auch räumlich sein.}
+\EnglishText{von ... an — dative (with noun phrases). denotes the start of a period during which an action, rule or state applies; von hier an can also be spatial.}
+\end{grammarentry}
+\section{Quellen / Sources}
+\begin{grammarentry}{Fachliche Einordnung / Classification}{IDS und Duden / IDS and Duden}
+\GermanText{Für die Abgrenzung zwischen eindeutigen Zirkumpositionen und ähnlichen Konstruktionen siehe IDS (grammis).}
+\EnglishText{For the distinction between unambiguous circumpositions and similar structures, see IDS (grammis).}
+\url{https://grammis.ids-mannheim.de/terms/view/506}
+\url{https://grammis.ids-mannheim.de/systematische-grammatik/1422}
+\end{grammarentry}
+\end{document}

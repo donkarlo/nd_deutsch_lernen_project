@@ -1,0 +1,101 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage{xparse}
+\usepackage[hidelinks]{hyperref}
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\titleformat{\section}[block]{\Large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+\titleformat{\subsection}[block]{\large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+\begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+#3
+\end{tcolorbox}}{}
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\title{von ... aus\\ \large von + dative phrase + aus}
+\date{}
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+\section{Einordnung und Wortart / Classification and part of speech}
+\begin{grammarentry}{von ... aus}{Grammatische Einordnung / grammatical classification}
+\GermanText{Grammatischer Status: Zirkumpositionsartige Konstruktion; in weiterer Grammatik auch Zirkumposition.}
+\EnglishText{Grammatical status: Circumposition-like pattern; also a circumposition in broader grammars.}
+\end{grammarentry}
+\section{Struktur, Stellung und Rektion / Structure, position and case}
+\begin{grammarentry}{Klammerbau / Framing structure}{Kasus / case}
+\GermanText{Muster: von + Dativgruppe + aus. Rektion: Dativ.}
+\EnglishText{Pattern: von + dative phrase + aus. Case: dative.}
+\end{grammarentry}
+\section{Bedeutung / Meaning}
+\begin{grammarentry}{Grundbedeutung / Core meaning}{Semantik / semantics}
+\GermanText{bezeichnet einen räumlichen Ausgangspunkt, eine Perspektive oder den Ausgangspunkt einer Tätigkeit oder organisatorischen Initiative.}
+\EnglishText{marks a spatial starting point, a viewpoint, or the origin of an activity or organizational initiative.}
+\end{grammarentry}
+\section{Verwendung und Register / Usage and register}
+\begin{grammarentry}{Gebrauch / Usage}{Typische Kontexte / typical contexts}
+\GermanText{Die Verbindung kann örtlich und übertragen gebraucht werden. Von mir aus hat außerdem idiomatisch die Bedeutung meinetwegen.}
+\EnglishText{It can be used spatially and figuratively. Von mir aus can also idiomatically mean as far as I am concerned.}
+\end{grammarentry}
+\section{Beispiele / Examples}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Von meinem Balkon aus sehe ich die Berge.}{From my balcony I can see the mountains.}
+\ExampleItem{Von der Universität aus wurde die Exkursion organisiert.}{The excursion was organized through the university.}
+\ExampleItem{Von ihrem Standpunkt aus ist die Entscheidung verständlich.}{From her point of view, the decision is understandable.}
+\ExampleItem{Von mir aus können wir morgen beginnen.}{As far as I'm concerned, we can start tomorrow.}
+\end{itemize}
+\end{exbox}
+\section{Abgrenzung / Comparison with related forms}
+\begin{grammarentry}{Vergleich / Comparison}{Unterschiede / differences}
+\GermanText{Von der Schule aus kann man den Sportplatz sehen ist räumlich; von der Schule aus wurde das Projekt organisiert nennt den organisatorischen Ursprung. Das Adverb aus ist hier nicht gleichbedeutend mit aus dem Haus.}
+\EnglishText{From the school you can see the sports ground is spatial; the project was organized through the school expresses institutional origin. The final aus is not the same as the preposition aus in aus dem Haus.}
+\end{grammarentry}
+\section{Typischer Fehler / Typical mistake}
+\begin{grammarentry}{Kasus und Form / Case and form}{Falsch versus richtig / wrong versus correct}
+\GermanText{Falsch: von das Fenster aus. Richtig: von dem Fenster aus / vom Fenster aus.}
+\EnglishText{Incorrect: von das Fenster aus. Correct: von dem Fenster aus / vom Fenster aus. The initial von requires dative.}
+\end{grammarentry}
+\section{Kurze Übung / Short exercise}
+\begin{grammarentry}{Ergänze die richtige Form / Complete the phrase}{Selbstkontrolle / self-check}
+\GermanText{Ergänze die Lücke: Von ... (dieses Zimmer) aus sehe ich den Garten.}
+\EnglishText{Fill in the blank: Von ... (dieses Zimmer) aus sehe ich den Garten.}
+\end{grammarentry}
+\subsection{Lösung / Answer}
+\begin{grammarentry}{Lösung / Answer}{Kasus prüfen / check the case}
+\GermanText{Von diesem Zimmer aus sehe ich den Garten.}
+\EnglishText{From this room I can see the garden.}
+\end{grammarentry}
+\section{Zusammenfassung / Summary}
+\begin{grammarentry}{Merksatz / Key point}{Form und Bedeutung / form and meaning}
+\GermanText{von ... aus — Dativ. bezeichnet einen räumlichen Ausgangspunkt, eine Perspektive oder den Ausgangspunkt einer Tätigkeit oder organisatorischen Initiative.}
+\EnglishText{von ... aus — dative. marks a spatial starting point, a viewpoint, or the origin of an activity or organizational initiative.}
+\end{grammarentry}
+\section{Quellen / Sources}
+\begin{grammarentry}{Fachliche Einordnung / Classification}{IDS und Duden / IDS and Duden}
+\GermanText{Für die Abgrenzung zwischen eindeutigen Zirkumpositionen und ähnlichen Konstruktionen siehe IDS (grammis).}
+\EnglishText{For the distinction between unambiguous circumpositions and similar structures, see IDS (grammis).}
+\url{https://grammis.ids-mannheim.de/terms/view/506}
+\url{https://grammis.ids-mannheim.de/systematische-grammatik/1422}
+\end{grammarentry}
+\end{document}

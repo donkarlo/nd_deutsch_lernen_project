@@ -1,0 +1,101 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage{xparse}
+\usepackage[hidelinks]{hyperref}
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\titleformat{\section}[block]{\Large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+\titleformat{\subsection}[block]{\large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+\begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+#3
+\end{tcolorbox}}{}
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\title{an ... entlang\\ \large an + dative phrase + entlang}
+\date{}
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+\section{Einordnung und Wortart / Classification and part of speech}
+\begin{grammarentry}{an ... entlang}{Grammatische Einordnung / grammatical classification}
+\GermanText{Grammatischer Status: Zirkumpositionsartige Verlaufsverbindung.}
+\EnglishText{Grammatical status: Circumposition-like path pattern.}
+\end{grammarentry}
+\section{Struktur, Stellung und Rektion / Structure, position and case}
+\begin{grammarentry}{Klammerbau / Framing structure}{Kasus / case}
+\GermanText{Muster: an + Dativgruppe + entlang. Rektion: Dativ.}
+\EnglishText{Pattern: an + dative phrase + entlang. Case: dative.}
+\end{grammarentry}
+\section{Bedeutung / Meaning}
+\begin{grammarentry}{Grundbedeutung / Core meaning}{Semantik / semantics}
+\GermanText{bezeichnet einen Weg parallel zu einer Linie, Straße, Mauer, einem Fluss oder einem anderen räumlichen Bezug.}
+\EnglishText{describes a route parallel to a line, road, wall, river or other spatial reference.}
+\end{grammarentry}
+\section{Verwendung und Register / Usage and register}
+\begin{grammarentry}{Gebrauch / Usage}{Typische Kontexte / typical contexts}
+\GermanText{An der Straße entlang verwendet Dativ. Man kann auch ohne an formulieren: die Straße entlang. Dann folgt entlang als Postposition auf den Akkusativ.}
+\EnglishText{An der Straße entlang takes dative. The alternative die Straße entlang has no an; entlang follows an accusative noun phrase as a postposition.}
+\end{grammarentry}
+\section{Beispiele / Examples}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Wir gehen an der Donau entlang.}{We walk along the Danube.}
+\ExampleItem{Die Kinder liefen an der Mauer entlang.}{The children ran along the wall.}
+\ExampleItem{Ein Radweg führt am Fluss entlang.}{A cycle path runs along the river.}
+\ExampleItem{Sie spazierte an der Straße entlang.}{She walked along the road.}
+\end{itemize}
+\end{exbox}
+\section{Abgrenzung / Comparison with related forms}
+\begin{grammarentry}{Vergleich / Comparison}{Unterschiede / differences}
+\GermanText{An der Mauer entlang (Dativ) und die Mauer entlang (Akkusativ) können denselben Weg beschreiben, haben aber verschiedene grammatische Konstruktionen.}
+\EnglishText{An der Mauer entlang (dative) and die Mauer entlang (accusative) can describe the same path but have different structures.}
+\end{grammarentry}
+\section{Typischer Fehler / Typical mistake}
+\begin{grammarentry}{Kasus und Form / Case and form}{Falsch versus richtig / wrong versus correct}
+\GermanText{Falsch: an die Straße entlang. Richtig: an der Straße entlang.}
+\EnglishText{Incorrect: an die Straße entlang. Correct: an der Straße entlang. The an ... entlang pattern uses dative.}
+\end{grammarentry}
+\section{Kurze Übung / Short exercise}
+\begin{grammarentry}{Ergänze die richtige Form / Complete the phrase}{Selbstkontrolle / self-check}
+\GermanText{Ergänze die Lücke: Sie geht an ... (der Fluss) entlang.}
+\EnglishText{Fill in the blank: Sie geht an ... (der Fluss) entlang.}
+\end{grammarentry}
+\subsection{Lösung / Answer}
+\begin{grammarentry}{Lösung / Answer}{Kasus prüfen / check the case}
+\GermanText{Sie geht an dem Fluss entlang.}
+\EnglishText{She walks along the river.}
+\end{grammarentry}
+\section{Zusammenfassung / Summary}
+\begin{grammarentry}{Merksatz / Key point}{Form und Bedeutung / form and meaning}
+\GermanText{an ... entlang — Dativ. bezeichnet einen Weg parallel zu einer Linie, Straße, Mauer, einem Fluss oder einem anderen räumlichen Bezug.}
+\EnglishText{an ... entlang — dative. describes a route parallel to a line, road, wall, river or other spatial reference.}
+\end{grammarentry}
+\section{Quellen / Sources}
+\begin{grammarentry}{Fachliche Einordnung / Classification}{IDS und Duden / IDS and Duden}
+\GermanText{Für die Abgrenzung zwischen eindeutigen Zirkumpositionen und ähnlichen Konstruktionen siehe IDS (grammis).}
+\EnglishText{For the distinction between unambiguous circumpositions and similar structures, see IDS (grammis).}
+\url{https://grammis.ids-mannheim.de/terms/view/506}
+\url{https://grammis.ids-mannheim.de/systematische-grammatik/1422}
+\end{grammarentry}
+\end{document}

@@ -1,0 +1,101 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage{xparse}
+\usepackage[hidelinks]{hyperref}
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\titleformat{\section}[block]{\Large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+\titleformat{\subsection}[block]{\large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+\begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+#3
+\end{tcolorbox}}{}
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\title{von ... her\\ \large von + dative phrase + her}
+\date{}
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+\section{Einordnung und Wortart / Classification and part of speech}
+\begin{grammarentry}{von ... her}{Grammatische Einordnung / grammatical classification}
+\GermanText{Grammatischer Status: Zirkumpositionsartige Verbindung.}
+\EnglishText{Grammatical status: Circumposition-like construction.}
+\end{grammarentry}
+\section{Struktur, Stellung und Rektion / Structure, position and case}
+\begin{grammarentry}{Klammerbau / Framing structure}{Kasus / case}
+\GermanText{Muster: von + Dativgruppe + her. Rektion: Dativ (bei Nominalgruppen).}
+\EnglishText{Pattern: von + dative phrase + her. Case: dative (with noun phrases).}
+\end{grammarentry}
+\section{Bedeutung / Meaning}
+\begin{grammarentry}{Grundbedeutung / Core meaning}{Semantik / semantics}
+\GermanText{bezeichnet einen räumlichen Ursprung, die Sichtweise einer Beurteilung oder den Aspekt, nach dem etwas eingeschätzt wird.}
+\EnglishText{indicates a spatial origin, viewpoint or the aspect in terms of which something is assessed.}
+\end{grammarentry}
+\section{Verwendung und Register / Usage and register}
+\begin{grammarentry}{Gebrauch / Usage}{Typische Kontexte / typical contexts}
+\GermanText{Häufige übertragene Wendungen: von der Größe her, von der Form her, vom Preis her. Die letzten Beispiele sind eher alltagssprachlich.}
+\EnglishText{Common figurative expressions include von der Größe her, von der Form her and vom Preis her. These evaluative uses are often conversational.}
+\end{grammarentry}
+\section{Beispiele / Examples}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Von der Größe her passt die Jacke.}{In terms of size, the jacket fits.}
+\ExampleItem{Vom Preis her ist das Fahrrad interessant.}{The bicycle is interesting price-wise.}
+\ExampleItem{Von Norden her kommen dunkle Wolken.}{Dark clouds are coming from the north.}
+\ExampleItem{Von ihrer Ausbildung her kennt sie das Thema gut.}{Given her training, she knows the topic well.}
+\end{itemize}
+\end{exbox}
+\section{Abgrenzung / Comparison with related forms}
+\begin{grammarentry}{Vergleich / Comparison}{Unterschiede / differences}
+\GermanText{Von ... aus betont oft einen Ausgangspunkt oder Blickpunkt; von ... her kann stärker den Herkunftsbereich oder Beurteilungsaspekt bezeichnen.}
+\EnglishText{Von ... aus often marks a starting point or vantage point; von ... her can emphasize origin or the aspect being assessed.}
+\end{grammarentry}
+\section{Typischer Fehler / Typical mistake}
+\begin{grammarentry}{Kasus und Form / Case and form}{Falsch versus richtig / wrong versus correct}
+\GermanText{Falsch: von die Größe her. Richtig: von der Größe her.}
+\EnglishText{Incorrect: von die Größe her. Correct: von der Größe her. Von requires the dative.}
+\end{grammarentry}
+\section{Kurze Übung / Short exercise}
+\begin{grammarentry}{Ergänze die richtige Form / Complete the phrase}{Selbstkontrolle / self-check}
+\GermanText{Ergänze die Lücke: Von ... (die Form) her passt das Teil.}
+\EnglishText{Fill in the blank: Von ... (die Form) her passt das Teil.}
+\end{grammarentry}
+\subsection{Lösung / Answer}
+\begin{grammarentry}{Lösung / Answer}{Kasus prüfen / check the case}
+\GermanText{Von der Form her passt das Teil.}
+\EnglishText{The part fits in terms of its shape.}
+\end{grammarentry}
+\section{Zusammenfassung / Summary}
+\begin{grammarentry}{Merksatz / Key point}{Form und Bedeutung / form and meaning}
+\GermanText{von ... her — Dativ (bei Nominalgruppen). bezeichnet einen räumlichen Ursprung, die Sichtweise einer Beurteilung oder den Aspekt, nach dem etwas eingeschätzt wird.}
+\EnglishText{von ... her — dative (with noun phrases). indicates a spatial origin, viewpoint or the aspect in terms of which something is assessed.}
+\end{grammarentry}
+\section{Quellen / Sources}
+\begin{grammarentry}{Fachliche Einordnung / Classification}{IDS und Duden / IDS and Duden}
+\GermanText{Für die Abgrenzung zwischen eindeutigen Zirkumpositionen und ähnlichen Konstruktionen siehe IDS (grammis).}
+\EnglishText{For the distinction between unambiguous circumpositions and similar structures, see IDS (grammis).}
+\url{https://grammis.ids-mannheim.de/terms/view/506}
+\url{https://grammis.ids-mannheim.de/systematische-grammatik/1422}
+\end{grammarentry}
+\end{document}

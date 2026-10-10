@@ -1,0 +1,250 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{xparse}
+\usepackage[hidelinks]{hyperref}
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\renewcommand{\arraystretch}{1.4}
+\setlength{\tabcolsep}{5pt}
+\titleformat{\section}[block]{\Large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+\titleformat{\subsection}[block]{\large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+\begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+#3
+\end{tcolorbox}}{}
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\title{Zirkumpositionen und zirkumpositionsartige Konstruktionen\\ \large Circumpositions and circumposition-like constructions}
+\date{}
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Definition / Definition}
+\begin{grammarentry}{Zirkumposition}{Wortart und Stellung / part of speech and position}
+\GermanText{Eine \textbf{Zirkumposition} ist eine mehrteilige adpositionale Konstruktion, die ihre Bezugsgruppe \textbf{umrahmt}: \textbf{erster Teil + Nominalgruppe + zweiter Teil}. Diese Bezugsgruppe kann Artikel, Adjektive, Nomen und manchmal Pronomen umfassen.}
+\EnglishText{A \textbf{circumposition} is a multi-part adpositional construction that \textbf{surrounds} a dependent phrase: \textbf{first part + noun phrase + second part}. The phrase may contain articles, adjectives, nouns and sometimes pronouns.}
+\GermanText{\glqq Zweiteilige Präposition\grqq\ ist ein vereinfachter Unterrichtsbegriff. Die Sprachwissenschaft unterscheidet \textbf{eindeutige Zirkumpositionen} von \textbf{zirkumpositionsartigen Verbindungen}. Nicht jede Kombination aus Präposition und einem späteren Adverb bildet eine einzige feste Wortart.}
+\EnglishText{Two-part preposition is a simplified teaching term. Linguistics distinguishes \textbf{unambiguous circumpositions} from \textbf{circumposition-like patterns}. Not every preposition followed by an adverb forms one fixed grammatical unit.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Um des Friedens willen sollten wir miteinander sprechen.}{For the sake of peace, we should talk to one another.}
+\ExampleItem{Von dieser Brücke aus sieht man die Stadt.}{From this bridge, you can see the city.}
+\ExampleItem{Auf ihren Wunsch hin wurde die Zeit geändert.}{The time was changed at her request.}
+\end{itemize}\end{exbox}
+
+\section{Präposition, Postposition und Zirkumposition / Preposition, postposition and circumposition}
+\begin{grammarentry}{Vier Bauarten}{Position relative to a noun phrase}
+\GermanText{\textbf{Präposition} (vorangestellt): \glqq wegen des Wetters\grqq. \textbf{Postposition} (nachgestellt): \glqq dem Kind zuliebe\grqq. \textbf{Zirkumposition} (umklammernd): \glqq um des Kindes willen\grqq. \textbf{Zirkumpositionsartige Verbindung}: \glqq vom Bahnhof aus\grqq\ (Präposition mit nachgestelltem Element).}
+\EnglishText{\textbf{Preposition} (before): because of the weather; \textbf{postposition} (after): for the child's sake; \textbf{circumposition} (surrounding): for the child's sake; \textbf{circumposition-like pattern}: \emph{vom Bahnhof aus} (preposition with a following element).}
+\GermanText{Nicht dasselbe sind \textbf{mehrteilige Präpositionen}, deren Teile \textbf{alle vor} dem Bezugswort stehen, zum Beispiel \glqq in Bezug auf das Thema\grqq. Auch \glqq von Berlin bis Wien\grqq\ beschreibt zwei Ortsgrenzen und keine Umklammerung einer Nominalgruppe.}
+\EnglishText{Do not confuse these with \textbf{multiword prepositions} whose elements \textbf{all precede} the noun phrase, for example \emph{in Bezug auf das Thema}. From Berlin to Vienna gives two separate endpoints rather than framing a single noun phrase.}
+\end{grammarentry}
+
+\section{Unterschiedliche grammatische Auffassungen / Different linguistic analyses}
+\begin{grammarentry}{Enge und weite Definition}{IDS versus Duden}
+\GermanText{Nach der \textbf{engen Analyse des IDS (grammis)} ist \textbf{um ... willen} die einzige eindeutig verfestigte deutsche Zirkumposition; andere Muster sind \textbf{zirkumpositionsartig}. Nach einer \textbf{weiteren Analyse}, etwa in der Duden-Grammatik, gelten auch \textbf{von ... ab}, \textbf{von ... aus}, \textbf{von ... wegen} und \textbf{auf ... hin} als Zirkumpositionen.}
+\EnglishText{Under the \textbf{strict IDS (grammis) analysis}, \textbf{um ... willen} is the only unambiguously established German circumposition; other patterns are \textbf{circumposition-like}. Under a \textbf{broader analysis}, including the Duden grammar, \textbf{von ... ab}, \textbf{von ... aus}, \textbf{von ... wegen} and \textbf{auf ... hin} also count as circumpositions.}
+\GermanText{Diese Einordnung verändert \textbf{weder den Kasus noch die Korrektheit} der Beispiele. Für die eigene Anwendung müssen drei Dinge gelernt werden: \textbf{Stellung, Kasus und Bedeutung}.}
+\EnglishText{These classifications change \textbf{neither the case nor the correctness} of examples. Three things matter for practical learning: \textbf{word order, case and meaning}.}
+\end{grammarentry}
+
+\section{Satzbau und Stellung / Structure and word order}
+\begin{grammarentry}{Die Klammer}{The frame}
+\GermanText{Im Muster \glqq von der großen Schule aus\grqq\ steht \textbf{von} vor und \textbf{aus} nach der gesamten Nominalgruppe \glqq der großen Schule\grqq. Das Satzglied kann im Vorfeld oder im Mittelfeld stehen: \glqq Von der Schule aus sehen wir den Park.\grqq\ oder \glqq Wir sehen von der Schule aus den Park.\grqq}
+\EnglishText{In \emph{von der großen Schule aus}, \textbf{von} precedes and \textbf{aus} follows the whole phrase \emph{der großen Schule}. The phrase may be placed initially or in the middle of the clause.}
+\GermanText{Der zweite Bestandteil ist manchmal ein selbstständiges \textbf{Richtungsadverb}: \glqq durch den Tunnel hindurch\grqq. Dann kann er in geeigneten Sätzen wegfallen: \glqq durch den Tunnel\grqq. Die feste Verbindung \glqq um des Friedens willen\grqq\ lässt sich dagegen nicht einfach auf \glqq um des Friedens\grqq\ verkürzen.}
+\EnglishText{The second element may be an independent \textbf{directional adverb}, as in \emph{durch den Tunnel hindurch}. It may sometimes be omitted. In contrast, the fixed expression \emph{um des Friedens willen} cannot simply be shortened to \emph{um des Friedens}.}
+\end{grammarentry}
+
+\section{Kasus und Rektion / Case government}
+\begin{grammarentry}{Kein gemeinsamer Kasus}{Dativ, Akkusativ, Genitiv / dative, accusative, genitive}
+\GermanText{Für Zirkumpositionen gibt es \textbf{keinen einzigen allgemeinen Kasus}. \textbf{von ... aus} steht mit Dativ, \textbf{auf ... hin} mit Akkusativ und \textbf{um ... willen} mit Genitiv. Jeder Ausdruck besitzt seine eigene Rektion.}
+\EnglishText{There is \textbf{no single case} governing all circumpositions. \textbf{von ... aus} takes dative, \textbf{auf ... hin} accusative and \textbf{um ... willen} genitive. Every pattern must be learned individually.}
+\GermanText{\textbf{Besonderheit:} In der festen amtssprachlichen Verbindung \textbf{von ... wegen} steht der \textbf{Genitiv} (\glqq von Amts wegen\grqq), obwohl das selbstständige \glqq von\grqq\ normalerweise mit Dativ gebraucht wird.}
+\EnglishText{\textbf{Exception:} In the official fixed expression \textbf{von ... wegen}, the \textbf{genitive} is used (\emph{von Amts wegen}), although ordinary \emph{von} normally governs the dative.}
+\GermanText{Kasus beeinflusst den \textbf{Artikel}, die \textbf{Adjektivendung} und manchmal die \textbf{Nominalendung}: \glqq von \textbf{dem alten Haus} aus\grqq, \glqq auf \textbf{den alten Antrag} hin\grqq, \glqq um \textbf{des alten Hauses} willen\grqq.}
+\EnglishText{Case affects the \textbf{article}, \textbf{adjective ending} and sometimes the \textbf{noun ending}: \emph{von dem alten Haus aus}, \emph{auf den alten Antrag hin}, \emph{um des alten Hauses willen}.}
+\end{grammarentry}
+
+\section{Übersicht / Overview}
+\begin{grammarentry}{Lernübersicht}{Patterns, cases and meanings}
+\GermanText{Die Tabelle umfasst sowohl streng definierte Zirkumpositionen als auch vergleichbare präpositionale Verbindungen mit nachgestellten Elementen. Einzelheiten stehen in den gesonderten Kapiteln im Unterordner \texttt{kind/}.}
+\EnglishText{This table covers both strictly defined circumpositions and comparable prepositional patterns with trailing elements. Individual chapters are provided in the subfolder \texttt{kind/}.}
+\end{grammarentry}
+{\small
+\rowcolors{2}{RowBlueLight}{RowBlueDark}
+\begin{longtable}{>{\bfseries}p{3.0cm}p{1.5cm}p{3.2cm}p{5.9cm}}
+\rowcolor{HeaderBlueDark}
+\color{white}Verbindung / Pattern & \color{white}Kasus / Case & \color{white}Funktion / Function & \color{white}Beispiel / Example \\
+\endfirsthead
+\rowcolor{HeaderBlueDark}
+\color{white}Verbindung / Pattern & \color{white}Kasus / Case & \color{white}Funktion / Function & \color{white}Beispiel / Example \\
+\endhead
+um ... willen & Genitiv & Zweck / sake & Um des Kindes willen bleiben wir. / We stay for the child's sake. \\
+von ... aus & Dativ & Ausgangspunkt / starting point & Vom Balkon aus sehe ich den Platz. / I can see the square from the balcony. \\
+von ... an & Dativ & Beginn / from onwards & Von Montag an gilt der Plan. / The plan applies from Monday. \\
+von ... ab & Dativ & Beginn / from onwards & Von morgen ab gilt die Regel. / The rule applies from tomorrow. \\
+von ... wegen & Genitiv & Behörde / official basis & Von Amts wegen wird geprüft. / It is examined officially. \\
+auf ... hin & Akkusativ & Anlass / trigger & Auf seinen Rat hin wartete sie. / She waited on his advice. \\
+um ... herum & Akkusativ & Umkreis / around & Sie läuft um den See herum. / She runs around the lake. \\
+durch ... hindurch & Akkusativ & Durchgang / through & Wir gehen durch den Wald hindurch. / We walk through the forest. \\
+an ... vorbei & Dativ & Vorbeibewegung / past & Er geht an der Schule vorbei. / He walks past the school. \\
+über ... hinweg & Akkusativ & Überschreitung / across & Sie sprang über den Graben hinweg. / She jumped over the ditch. \\
+aus ... heraus & Dativ & nach außen / out of & Er schaut aus dem Fenster heraus. / He looks out of the window. \\
+in ... hinein & Akkusativ & nach innen / into & Sie geht in das Haus hinein. / She goes into the house. \\
+unter ... hindurch & Dativ & unterhalb / underneath & Wir fahren unter der Brücke hindurch. / We drive beneath the bridge. \\
+zwischen ... hindurch & Dativ & Zwischenraum / between & Er lief zwischen den Autos hindurch. / He ran between the cars. \\
+an ... entlang & Dativ & paralleler Weg / along & Wir gehen an der Mauer entlang. / We walk along the wall. \\
+von ... her & Dativ & Perspektive / perspective & Von der Größe her passt es. / It fits size-wise. \\
+\end{longtable}
+}
+
+\section{Wichtige Bedeutungsgruppen / Major meaning groups}
+\subsection{Ausgangspunkt und Perspektive / Origin and viewpoint}
+\begin{grammarentry}{von ... aus, von ... her}{Räumlich und übertragen / spatial and figurative}
+\GermanText{\textbf{von ... aus} ist besonders häufig für eine Position, von der man etwas sieht, erlebt oder organisiert. \textbf{von ... her} kann auch den Gesichtspunkt einer Bewertung nennen, etwa \glqq vom Preis her\grqq.}
+\EnglishText{\textbf{von ... aus} often describes the position from which one sees, experiences or organizes something. \textbf{von ... her} can also express an aspect of evaluation, such as \emph{vom Preis her} (price-wise).}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Von der Aussichtsterrasse aus sieht man das Tal.}{From the viewing platform, you can see the valley.}
+\ExampleItem{Von der Qualität her ist das Angebot gut.}{The offer is good in terms of quality.}
+\end{itemize}\end{exbox}
+
+\subsection{Zeitlicher Anfang / Starting point in time}
+\begin{grammarentry}{von ... an, von ... ab}{Zeit und Grenze / time and boundary}
+\GermanText{\textbf{von ... an} und \textbf{von ... ab} kennzeichnen den Beginn einer Geltungsdauer. Sie sind häufig austauschbar. Bei Zeitadverbien wie \glqq morgen\grqq\ ist kein Artikel nötig.}
+\EnglishText{\textbf{von ... an} and \textbf{von ... ab} mark the beginning of a period. They are often interchangeable. With time adverbs such as \emph{morgen}, no article is required.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Von heute an trainiert sie regelmäßig.}{She will train regularly from today onwards.}
+\ExampleItem{Von der nächsten Woche ab beginnt die neue Regelung.}{The new arrangement begins next week.}
+\end{itemize}\end{exbox}
+
+\subsection{Grund, Zweck und Reaktion / Reason, purpose and response}
+\begin{grammarentry}{um ... willen, von ... wegen, auf ... hin}{Nicht gleichbedeutend / not interchangeable}
+\GermanText{\textbf{um ... willen} nennt ein Ziel oder einen schützenswerten Wert. \textbf{von ... wegen} verweist meist auf eine amtliche oder berufliche Grundlage. \textbf{auf ... hin} beschreibt einen Anlass und die Reaktion darauf.}
+\EnglishText{\textbf{um ... willen} states an aim or something worth protecting. \textbf{von ... wegen} often marks an official or occupational basis. \textbf{auf ... hin} expresses a trigger and the reaction to it.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Um der Gesundheit willen ändern wir unsere Gewohnheiten.}{We change our habits for the sake of health.}
+\ExampleItem{Die Behörde prüft den Fall von Amts wegen.}{The authority reviews the case on its own official initiative.}
+\ExampleItem{Auf die Beschwerde hin wurde der Fehler behoben.}{The error was fixed following the complaint.}
+\end{itemize}\end{exbox}
+
+\subsection{Weg, Verlauf und Richtung / Path and direction}
+\begin{grammarentry}{Richtungsadverbien}{Directional adverbs}
+\GermanText{Die nachgestellten Elemente \textbf{herum, hindurch, vorbei, hinweg, heraus, hinein, entlang} können einen räumlichen Verlauf präzisieren. Anders als bei \glqq um ... willen\grqq\ sind sie vielfach als Richtungsadverbien oder Teil einer lockeren Verbindung analysierbar.}
+\EnglishText{The following elements \textbf{herum, hindurch, vorbei, hinweg, heraus, hinein, entlang} can specify a spatial path. Unlike \emph{um ... willen}, many are analyzable as directional adverbs or as parts of looser combinations.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Die Kinder liefen um das Haus herum.}{The children ran around the house.}
+\ExampleItem{Wir fuhren unter der Brücke hindurch.}{We drove under the bridge.}
+\ExampleItem{Sie ging an der Bibliothek vorbei.}{She walked past the library.}
+\ExampleItem{Der Weg führt zwischen den Bäumen hindurch.}{The path leads between the trees.}
+\end{itemize}\end{exbox}
+
+\section{Wechselpräpositionen und Richtung / Two-way prepositions and direction}
+\begin{grammarentry}{Ziel und Lage des Weges}{Destination versus path location}
+\GermanText{Bei \textbf{in ... hinein} steht normalerweise Akkusativ, weil ein Ziel im Inneren erreicht wird: \glqq in den Raum hinein\grqq. Bei \textbf{unter ... hindurch} und \textbf{zwischen ... hindurch} steht häufig Dativ: Die Präposition bezeichnet die Lage des Weges, auf dem man etwas durchquert.}
+\EnglishText{\textbf{in ... hinein} normally takes accusative because the destination lies inside something. But \textbf{unter ... hindurch} and \textbf{zwischen ... hindurch} often take dative: their preposition describes where the path is located.}
+\GermanText{Die vereinfachte Regel \glqq Bewegung = Akkusativ\grqq\ ist bei Wechselpräpositionen \textbf{nicht allgemein gültig}. Entscheidend ist, ob die Präposition das Ziel oder die Lage beschreibt.}
+\EnglishText{The simplified rule that movement means accusative is \textbf{not universally valid} for two-way prepositions. What matters is whether the preposition marks the goal or the location of a path.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Sie stellte die Tasche in den Schrank hinein.}{She put the bag into the cupboard.}
+\ExampleItem{Wir fuhren unter der Brücke hindurch.}{We drove underneath the bridge.}
+\ExampleItem{Er ging zwischen den Häusern hindurch.}{He walked between the houses.}
+\end{itemize}\end{exbox}
+
+\section{Feste Wendungen und Register / Idioms and register}
+\begin{grammarentry}{Besondere Fälle}{Special cases}
+\GermanText{\textbf{von mir aus} kann außer einem räumlichen Ausgangspunkt auch \glqq meinetwegen\grqq\ bedeuten. \textbf{von Amts wegen} ist amtssprachlich: Eine Behörde handelt aus eigener Zuständigkeit. \textbf{Von wegen!} als alleinstehender Ausruf bedeutet dagegen ungefähr \glqq keineswegs!\grqq\ und ist keine Verwendung der Konstruktion \glqq von ... wegen\grqq.}
+\EnglishText{\textbf{von mir aus} can mean as far as I am concerned, besides denoting a starting point. \textbf{von Amts wegen} expresses acting under official authority. The separate colloquial exclamation \textbf{Von wegen!} means no way and is not an instance of the same fixed pattern.}
+\GermanText{\textbf{an der Straße entlang} enthält Dativ. Ohne an lautet der Ausdruck \textbf{die Straße entlang} und steht mit Akkusativ. Die räumliche Bedeutung ist ähnlich, die Konstruktion jedoch verschieden.}
+\EnglishText{\textbf{an der Straße entlang} uses the dative. Without \emph{an}, the expression is \textbf{die Straße entlang} and takes accusative. The spatial meaning is similar, but the grammar is different.}
+\end{grammarentry}
+
+\section{Häufige Fehler / Common mistakes}
+\begin{grammarentry}{Falscher Kasus}{Wrong case}
+\GermanText{Falsch: \glqq von das Fenster aus\grqq. Richtig: \textbf{von dem Fenster aus} (Dativ).}
+\EnglishText{Incorrect: von das Fenster aus. Correct: \textbf{von dem Fenster aus} (dative).}
+\GermanText{Falsch: \glqq um dem Kindes willen\grqq. Richtig: \textbf{um des Kindes willen} (Genitiv).}
+\EnglishText{Incorrect: um dem Kindes willen. Correct: \textbf{um des Kindes willen} (genitive).}
+\GermanText{Falsch: \glqq auf seinem Antrag hin\grqq. Richtig: \textbf{auf seinen Antrag hin} (Akkusativ).}
+\EnglishText{Incorrect: auf seinem Antrag hin. Correct: \textbf{auf seinen Antrag hin} (accusative).}
+\GermanText{Falsch: \glqq an die Schule vorbei\grqq. Richtig: \textbf{an der Schule vorbei} (Dativ).}
+\EnglishText{Incorrect: an die Schule vorbei. Correct: \textbf{an der Schule vorbei} (dative).}
+\GermanText{Falsch: \glqq von dem Amt wegen\grqq. Richtig: \textbf{von Amts wegen} (Genitiv, feste Wendung).}
+\EnglishText{Incorrect: von dem Amt wegen. Correct: \textbf{von Amts wegen} (fixed genitive expression).}
+\end{grammarentry}
+
+\section{Übungen / Exercises}
+\begin{grammarentry}{Ergänze die Endungen}{Fill in the correct endings}
+\GermanText{Setze den richtigen Artikel oder die richtige Endung ein.}
+\EnglishText{Insert the correct article or ending.}
+\begin{enumerate}
+\item Von \rule{1cm}{0.4pt} (dieses Haus) aus sieht man die Berge.
+\item Um \rule{1cm}{0.4pt} (der Frieden) willen gab sie nach.
+\item Auf \rule{1cm}{0.4pt} (sein Vorschlag) hin wurde der Plan geändert.
+\item Wir gingen an \rule{1cm}{0.4pt} (die Schule) vorbei.
+\item Wir liefen durch \rule{1cm}{0.4pt} (der Tunnel) hindurch.
+\item Die Prüfung wurde von \rule{1cm}{0.4pt} (das Amt) wegen eingeleitet.
+\item Sie geht in \rule{1cm}{0.4pt} (das Zimmer) hinein.
+\item Wir fahren unter \rule{1cm}{0.4pt} (die Brücke) hindurch.
+\item Die Kinder laufen zwischen \rule{1cm}{0.4pt} (die Bäume) hindurch.
+\item Wir laufen an \rule{1cm}{0.4pt} (die Mauer) entlang.
+\end{enumerate}
+\end{grammarentry}
+\subsection{Lösungen / Answer key}
+\begin{grammarentry}{Lösungen}{Solutions}
+\GermanText{1. \textbf{diesem Haus} (Dativ); 2. \textbf{des Friedens} (Genitiv); 3. \textbf{seinen Vorschlag} (Akkusativ); 4. \textbf{der Schule} (Dativ); 5. \textbf{den Tunnel} (Akkusativ); 6. \textbf{Amts} (Genitiv); 7. \textbf{das Zimmer} (Akkusativ); 8. \textbf{der Brücke} (Dativ); 9. \textbf{den Bäumen} (Dativ); 10. \textbf{der Mauer} (Dativ).}
+\EnglishText{Cases in order: dative, genitive, accusative, dative, accusative, genitive, accusative, dative, dative, dative.}
+\end{grammarentry}
+
+\section{Einzelkapitel / Individual chapters}
+\begin{grammarentry}{Verzeichnis kind/}{Separate LaTeX files}
+\GermanText{Jedes der 16 Muster steht in einer eigenen Datei unter \texttt{kind/}, beispielsweise \texttt{kind/von\_aus/von\_aus.tex}. Die übrigen Ordner heißen \texttt{um\_willen}, \texttt{von\_an}, \texttt{von\_ab}, \texttt{von\_wegen}, \texttt{auf\_hin}, \texttt{um\_herum}, \texttt{durch\_hindurch}, \texttt{an\_vorbei}, \texttt{ueber\_hinweg}, \texttt{aus\_heraus}, \texttt{in\_hinein}, \texttt{unter\_hindurch}, \texttt{zwischen\_hindurch}, \texttt{an\_entlang} und \texttt{von\_her}.}
+\EnglishText{Each of the 16 patterns has a separate standalone LaTeX file under \texttt{kind/}, such as \texttt{kind/von\_aus/von\_aus.tex}. The other subfolder names are listed above.}
+\end{grammarentry}
+
+\section{Zusammenfassung / Summary}
+\begin{grammarentry}{Merksätze}{Key points}
+\GermanText{\textbf{Erkennen:} Zwei Elemente können eine Nominalgruppe umrahmen. \textbf{Lernen:} Jeder Ausdruck hat seine eigene Rektion, Bedeutung und Stilebene. \textbf{Unterscheiden:} In der engen IDS-Analyse ist nur \glqq um ... willen\grqq\ eine eindeutige Zirkumposition; andere ähnliche Konstruktionen werden unterschiedlich analysiert.}
+\EnglishText{\textbf{Recognize:} Two elements may surround a noun phrase. \textbf{Learn:} Each construction has its own case, meaning and register. \textbf{Distinguish:} Under the strict IDS analysis, only \emph{um ... willen} is an unambiguous circumposition; related patterns are classified differently.}
+\end{grammarentry}
+
+\section{Quellen / Sources}
+\begin{grammarentry}{Grammatische Referenzen}{Grammar references}
+\GermanText{Leibniz-Institut für Deutsche Sprache (IDS), grammis: \glqq Zirkumposition\grqq\ und \glqq Einfache Strukturen\grqq.}
+\EnglishText{Leibniz Institute for the German Language (IDS), grammis: Circumposition and Simple Structures.}
+\url{https://grammis.ids-mannheim.de/terms/view/506}\par
+\url{https://grammis.ids-mannheim.de/systematische-grammatik/1422}\par
+\GermanText{Duden, Sprachratgeber: \glqq Die Zirkumposition von ... wegen\grqq. Duden-Wörterbuch, \glqq von\grqq.}
+\EnglishText{Duden usage guide on \emph{von ... wegen}; Duden dictionary entry for \emph{von}.}
+\url{https://www.duden.de/sprachwissen/sprachratgeber/Die-Zirkumposition-\%E2\%80\%9Evon-\%E2\%80\%A6-wegen\%E2\%80\%9C}\par
+\url{https://www.duden.de/rechtschreibung/von_aus_ab_durch_per_seitens}
+\end{grammarentry}
+\end{document}

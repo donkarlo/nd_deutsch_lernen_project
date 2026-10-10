@@ -1,0 +1,101 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage{xparse}
+\usepackage[hidelinks]{hyperref}
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\titleformat{\section}[block]{\Large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+\titleformat{\subsection}[block]{\large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+\begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+#3
+\end{tcolorbox}}{}
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\title{von ... wegen\\ \large von + genitive phrase + wegen}
+\date{}
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+\section{Einordnung und Wortart / Classification and part of speech}
+\begin{grammarentry}{von ... wegen}{Grammatische Einordnung / grammatical classification}
+\GermanText{Grammatischer Status: Zirkumposition in der Duden-Beschreibung; häufig feste Wendung.}
+\EnglishText{Grammatical status: Circumposition in Duden's description; often a fixed expression.}
+\end{grammarentry}
+\section{Struktur, Stellung und Rektion / Structure, position and case}
+\begin{grammarentry}{Klammerbau / Framing structure}{Kasus / case}
+\GermanText{Muster: von + Genitivgruppe + wegen. Rektion: Genitiv (feste standardsprachliche Wendungen).}
+\EnglishText{Pattern: von + genitive phrase + wegen. Case: genitive (established standard expressions).}
+\end{grammarentry}
+\section{Bedeutung / Meaning}
+\begin{grammarentry}{Grundbedeutung / Core meaning}{Semantik / semantics}
+\GermanText{nennt einen institutionellen, amtlichen oder beruflichen Grund bzw. die zuständige Autorität.}
+\EnglishText{indicates an institutional, official or professional basis or authority.}
+\end{grammarentry}
+\section{Verwendung und Register / Usage and register}
+\begin{grammarentry}{Gebrauch / Usage}{Typische Kontexte / typical contexts}
+\GermanText{Typische feste Wendungen sind von Amts wegen, von Rechts wegen und von Berufs wegen. Obwohl von sonst Dativ fordert, steht hier bei diesen Wendungen Genitiv. Manche besonderen Fachsprachformen, etwa von Verfassungs wegen, enthalten ein ungewöhnliches -s.}
+\EnglishText{Typical fixed phrases are von Amts wegen, von Rechts wegen and von Berufs wegen. Although von usually takes dative, these expressions are genitive. Certain specialist expressions such as von Verfassungs wegen have an unusual -s.}
+\end{grammarentry}
+\section{Beispiele / Examples}
+\begin{exbox}
+\begin{itemize}
+\ExampleItem{Die Behörde wurde von Amts wegen tätig.}{The authority took action on its own official initiative.}
+\ExampleItem{Von Rechts wegen steht ihr eine Entschädigung zu.}{She is legally entitled to compensation.}
+\ExampleItem{Er trägt von Berufs wegen Schutzkleidung.}{He wears protective clothing because of his profession.}
+\ExampleItem{Das Verfahren wird von Amts wegen eingeleitet.}{The procedure is initiated ex officio.}
+\end{itemize}
+\end{exbox}
+\section{Abgrenzung / Comparison with related forms}
+\begin{grammarentry}{Vergleich / Comparison}{Unterschiede / differences}
+\GermanText{Nicht verwechseln mit Von wegen! als eigenständigem, umgangssprachlichem Widerspruch: Von wegen einfach! bedeutet So einfach ist es nicht!}
+\EnglishText{Do not confuse it with the independent colloquial objection Von wegen!: Von wegen einfach! means It is not easy at all!}
+\end{grammarentry}
+\section{Typischer Fehler / Typical mistake}
+\begin{grammarentry}{Kasus und Form / Case and form}{Falsch versus richtig / wrong versus correct}
+\GermanText{Falsch: von dem Amt wegen. Richtig: von Amts wegen.}
+\EnglishText{Incorrect: von dem Amt wegen. Correct: von Amts wegen. Use the established genitive formula, not an ordinary dative phrase.}
+\end{grammarentry}
+\section{Kurze Übung / Short exercise}
+\begin{grammarentry}{Ergänze die richtige Form / Complete the phrase}{Selbstkontrolle / self-check}
+\GermanText{Ergänze die Lücke: Die Prüfung wurde von ... (das Amt) wegen eingeleitet.}
+\EnglishText{Fill in the blank: Die Prüfung wurde von ... (das Amt) wegen eingeleitet.}
+\end{grammarentry}
+\subsection{Lösung / Answer}
+\begin{grammarentry}{Lösung / Answer}{Kasus prüfen / check the case}
+\GermanText{Die Prüfung wurde von Amts wegen eingeleitet.}
+\EnglishText{The examination was initiated officially.}
+\end{grammarentry}
+\section{Zusammenfassung / Summary}
+\begin{grammarentry}{Merksatz / Key point}{Form und Bedeutung / form and meaning}
+\GermanText{von ... wegen — Genitiv (feste standardsprachliche Wendungen). nennt einen institutionellen, amtlichen oder beruflichen Grund bzw. die zuständige Autorität.}
+\EnglishText{von ... wegen — genitive (established standard expressions). indicates an institutional, official or professional basis or authority.}
+\end{grammarentry}
+\section{Quellen / Sources}
+\begin{grammarentry}{Fachliche Einordnung / Classification}{IDS und Duden / IDS and Duden}
+\GermanText{Für die Abgrenzung zwischen eindeutigen Zirkumpositionen und ähnlichen Konstruktionen siehe IDS (grammis).}
+\EnglishText{For the distinction between unambiguous circumpositions and similar structures, see IDS (grammis).}
+\url{https://grammis.ids-mannheim.de/terms/view/506}
+\url{https://grammis.ids-mannheim.de/systematische-grammatik/1422}
+\end{grammarentry}
+\end{document}
