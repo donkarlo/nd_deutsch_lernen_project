@@ -1,0 +1,63 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern,microtype,xcolor,parskip,enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\titleformat{\section}[block]{\Large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+\NewDocumentEnvironment{grammarentry}{mm+b}{\begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,title={#1\hfill\normalfont\footnotesize #2},colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries]#3\end{tcolorbox}}{}
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\title{Die Modalpartikel \glqq nur\grqq\\{\large\textnormal{The modal particle nur}}}
+\date{}
+\begin{document}
+\maketitle
+\tableofcontents
+\section{Bedeutung und Gesprächsfunktion \textnormal{(Meaning and pragmatic function)}}
+\begin{grammarentry}{nur}{Modalpartikel / Abtönungspartikel}
+\GermanText{Nur verstärkt als Modalpartikel emotionale Fragen, Warnungen oder Wünsche.}
+\EnglishText{As a modal particle, nur intensifies emotional questions, warnings and wishes.}
+\end{grammarentry}
+\section{Satzart, Stellung und Betonung \textnormal{(Sentence mood, position and stress)}}
+\begin{grammarentry}{Verwendung}{Modalpartikel / Abtönungspartikel}
+\GermanText{Besonders häufig in W-Fragen und Wunschsätzen, gelegentlich in warnenden Aufforderungen.}
+\EnglishText{Especially common in wh-questions and wishes, sometimes in warnings.}
+\end{grammarentry}
+\GermanText{Als Abtönungspartikel ist nur unflektierbar und verlangt keinen Kasus. Sie steht normalerweise im Mittelfeld und kann das Vorfeld eines normalen Aussagesatzes nicht allein besetzen.}
+\EnglishText{As a discourse particle, nur is invariable and governs no case. It normally occurs in the middle field and cannot stand alone in the prefield of a declarative sentence.}
+\section{Typische Beispiele \textnormal{(Typical examples)}}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Wie soll ich das nur schaffen?}{How on earth am I supposed to manage?}
+\ExampleItem{Wenn ich nur mehr Zeit hätte!}{If only I had more time!}
+\ExampleItem{Wo ist nur mein Schlüssel?}{Where on earth is my key?}
+\ExampleItem{Pass nur auf!}{You'd better watch out!}
+\end{itemize}\end{exbox}
+\section{Andere grammatische Rollen \textnormal{(Other grammatical roles)}}
+\begin{grammarentry}{Abgrenzung}{Modalpartikel / Abtönungspartikel}
+\GermanText{Als Fokuspartikel bedeutet nur lediglich oder ausschließlich und begrenzt eine Zahl oder Gruppe.}
+\EnglishText{As a focus particle, nur means only or exclusively, restricting a number or set.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Ich habe nur zwei Euro.}{I have only two euros.}
+\ExampleItem{Was soll ich nur tun?}{What on earth should I do?}
+\end{itemize}\end{exbox}
+\section{Lernhinweis \textnormal{(Learning tip)}}
+\GermanText{Nicht die Wortform allein, sondern der Kontext entscheidet, ob nur als Modalpartikel verwendet wird. Die englische Übersetzung kann die kommunikative Absicht statt einer wortwörtlichen Entsprechung ausdrücken.}
+\EnglishText{The word form alone does not determine whether nur is a modal particle. English translation may express its conversational intent instead of using a word-for-word equivalent.}
+\section{Quellen \textnormal{(Sources)}}
+\begin{itemize}
+\item IDS Mannheim: \url{https://grammis.ids-mannheim.de/terminologie/2}
+\item Duden: \url{https://www.duden.de/sprachwissen/sprachratgeber/Modalpartikeln}
+\end{itemize}
+\end{document}

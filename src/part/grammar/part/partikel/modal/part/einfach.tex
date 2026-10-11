@@ -1,0 +1,63 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern,microtype,xcolor,parskip,enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\titleformat{\section}[block]{\Large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+\NewDocumentEnvironment{grammarentry}{mm+b}{\begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,title={#1\hfill\normalfont\footnotesize #2},colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries]#3\end{tcolorbox}}{}
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\title{Die Modalpartikel \glqq einfach\grqq\\{\large\textnormal{The modal particle einfach}}}
+\date{}
+\begin{document}
+\maketitle
+\tableofcontents
+\section{Bedeutung und Gesprächsfunktion \textnormal{(Meaning and pragmatic function)}}
+\begin{grammarentry}{einfach}{Modalpartikel / Abtönungspartikel}
+\GermanText{Einfach kann eine Handlung als unkomplizierte Lösung anbieten oder eine scheinbar naheliegende Entscheidung hervorheben.}
+\EnglishText{Einfach can present an action as a straightforward solution or highlight an apparently obvious decision.}
+\end{grammarentry}
+\section{Satzart, Stellung und Betonung \textnormal{(Sentence mood, position and stress)}}
+\begin{grammarentry}{Verwendung}{Modalpartikel / Abtönungspartikel}
+\GermanText{Häufig in Vorschlägen und Aufforderungen. Nicht alle Vorkommen lassen sich eindeutig von einem Modaladverb unterscheiden.}
+\EnglishText{Often in suggestions and commands. Some uses cannot be separated clearly from a manner adverb.}
+\end{grammarentry}
+\GermanText{Als Abtönungspartikel ist einfach unflektierbar und verlangt keinen Kasus. Sie steht normalerweise im Mittelfeld und kann das Vorfeld eines normalen Aussagesatzes nicht allein besetzen.}
+\EnglishText{As a discourse particle, einfach is invariable and governs no case. It normally occurs in the middle field and cannot stand alone in the prefield of a declarative sentence.}
+\section{Typische Beispiele \textnormal{(Typical examples)}}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Frag einfach nach!}{Just ask!}
+\ExampleItem{Dann geh einfach nach Hause.}{Then just go home.}
+\ExampleItem{Versuch es einfach mal!}{Just give it a try!}
+\ExampleItem{Das ist einfach so.}{That's simply the way it is.}
+\end{itemize}\end{exbox}
+\section{Andere grammatische Rollen \textnormal{(Other grammatical roles)}}
+\begin{grammarentry}{Abgrenzung}{Modalpartikel / Abtönungspartikel}
+\GermanText{Als Adjektiv beschreibt einfach einen geringen Schwierigkeitsgrad: Diese Aufgabe ist einfach.}
+\EnglishText{As an adjective, einfach describes something as easy: This task is easy.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Die Aufgabe ist einfach.}{The exercise is easy.}
+\ExampleItem{Ruf doch einfach an!}{Why don't you just call!}
+\end{itemize}\end{exbox}
+\section{Lernhinweis \textnormal{(Learning tip)}}
+\GermanText{Nicht die Wortform allein, sondern der Kontext entscheidet, ob einfach als Modalpartikel verwendet wird. Die englische Übersetzung kann die kommunikative Absicht statt einer wortwörtlichen Entsprechung ausdrücken.}
+\EnglishText{The word form alone does not determine whether einfach is a modal particle. English translation may express its conversational intent instead of using a word-for-word equivalent.}
+\section{Quellen \textnormal{(Sources)}}
+\begin{itemize}
+\item IDS Mannheim: \url{https://grammis.ids-mannheim.de/terminologie/2}
+\item Duden: \url{https://www.duden.de/sprachwissen/sprachratgeber/Modalpartikeln}
+\end{itemize}
+\end{document}

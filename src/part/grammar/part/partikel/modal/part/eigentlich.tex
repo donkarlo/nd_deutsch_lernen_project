@@ -1,0 +1,63 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern,microtype,xcolor,parskip,enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\titleformat{\section}[block]{\Large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+\NewDocumentEnvironment{grammarentry}{mm+b}{\begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,title={#1\hfill\normalfont\footnotesize #2},colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries]#3\end{tcolorbox}}{}
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\title{Die Modalpartikel \glqq eigentlich\grqq\\{\large\textnormal{The modal particle eigentlich}}}
+\date{}
+\begin{document}
+\maketitle
+\tableofcontents
+\section{Bedeutung und Gesprächsfunktion \textnormal{(Meaning and pragmatic function)}}
+\begin{grammarentry}{eigentlich}{Modalpartikel / Abtönungspartikel}
+\GermanText{Eigentlich kann in Fragen ein neues Thema einführen, beiläufig fragen oder zum wesentlichen Punkt zurückführen.}
+\EnglishText{Eigentlich in questions can introduce a new topic, ask casually or return to the underlying point.}
+\end{grammarentry}
+\section{Satzart, Stellung und Betonung \textnormal{(Sentence mood, position and stress)}}
+\begin{grammarentry}{Verwendung}{Modalpartikel / Abtönungspartikel}
+\GermanText{Besonders in W-Fragen und Ja/Nein-Fragen. Manche Verwendungen liegen zwischen Modalpartikel und Satzadverb.}
+\EnglishText{Especially in wh- and yes/no questions. Some uses lie between modal-particle and sentence-adverb functions.}
+\end{grammarentry}
+\GermanText{Als Abtönungspartikel ist eigentlich unflektierbar und verlangt keinen Kasus. Sie steht normalerweise im Mittelfeld und kann das Vorfeld eines normalen Aussagesatzes nicht allein besetzen.}
+\EnglishText{As a discourse particle, eigentlich is invariable and governs no case. It normally occurs in the middle field and cannot stand alone in the prefield of a declarative sentence.}
+\section{Typische Beispiele \textnormal{(Typical examples)}}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Wie heißt du eigentlich?}{By the way, what's your name?}
+\ExampleItem{Was möchtest du eigentlich?}{What do you actually want?}
+\ExampleItem{Warum bist du eigentlich hier?}{By the way, why are you here?}
+\ExampleItem{Kennst du sie eigentlich?}{Do you know her, by the way?}
+\end{itemize}\end{exbox}
+\section{Andere grammatische Rollen \textnormal{(Other grammatical roles)}}
+\begin{grammarentry}{Abgrenzung}{Modalpartikel / Abtönungspartikel}
+\GermanText{Eigentlich im Sinne tatsächlich oder im Grunde kann als Adverb vorangestellt werden: Eigentlich wollte ich kommen.}
+\EnglishText{Eigentlich meaning actually or in fact can be fronted as an adverb: I actually wanted to come.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Eigentlich wollte ich heute lernen.}{Actually, I wanted to study today.}
+\ExampleItem{Was ist eigentlich dein Plan?}{So what is your plan, actually?}
+\end{itemize}\end{exbox}
+\section{Lernhinweis \textnormal{(Learning tip)}}
+\GermanText{Nicht die Wortform allein, sondern der Kontext entscheidet, ob eigentlich als Modalpartikel verwendet wird. Die englische Übersetzung kann die kommunikative Absicht statt einer wortwörtlichen Entsprechung ausdrücken.}
+\EnglishText{The word form alone does not determine whether eigentlich is a modal particle. English translation may express its conversational intent instead of using a word-for-word equivalent.}
+\section{Quellen \textnormal{(Sources)}}
+\begin{itemize}
+\item IDS Mannheim: \url{https://grammis.ids-mannheim.de/terminologie/2}
+\item Duden: \url{https://www.duden.de/sprachwissen/sprachratgeber/Modalpartikeln}
+\end{itemize}
+\end{document}

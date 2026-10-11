@@ -1,0 +1,64 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern,microtype,xcolor,parskip,enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\titleformat{\section}[block]{\Large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+\NewDocumentEnvironment{grammarentry}{mm+b}{\begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,title={#1\hfill\normalfont\footnotesize #2},colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries]#3\end{tcolorbox}}{}
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\title{Die Modalpartikel \glqq nicht\grqq\\{\large\textnormal{The modal particle nicht}}}
+\date{}
+\begin{document}
+\maketitle
+\tableofcontents
+\section{Grundbedeutung \textnormal{(Basic meaning)}}
+\begin{grammarentry}{nicht}{Modalpartikel / Abtönungspartikel}
+\GermanText{Nicht ist gewöhnlich eine Negationspartikel. In bestimmten emphatischen Ausrufen oder rhetorischen Fragen kann es ohne wirkliche Negation gebraucht und als Abtönungspartikel eingeordnet werden.}
+\EnglishText{Nicht is usually a negation particle. In certain emphatic exclamations and rhetorical questions, it can lack negative force and be classified as a discourse particle.}
+\end{grammarentry}
+\section{Satzarten und Stellung \textnormal{(Sentence types and word order)}}
+\begin{grammarentry}{Gebrauch}{Modalpartikel / Abtönungspartikel}
+\GermanText{Seltener Sonderfall. Die meisten Sätze mit nicht enthalten echte Verneinung. Gerade in Kombinationen denn nicht und etwa nicht bleibt nicht gewöhnlich Negationspartikel.}
+\EnglishText{A less common special case. Most uses of nicht are genuine negation. Especially in denn nicht and etwa nicht, it normally remains a negation particle.}
+\end{grammarentry}
+\GermanText{Als Partikel ist nicht unflektierbar und verlangt keinen Kasus. Im üblichen Modalpartikelgebrauch steht es im Mittelfeld, nicht selbstständig im Vorfeld. Kontext und Betonung bestimmen die Gesprächswirkung.}
+\EnglishText{As a particle, nicht does not inflect or govern a case. In its usual modal use it stands in the middle field, not independently in the prefield. Context and stress determine the conversational effect.}
+\section{Typische Beispiele \textnormal{(Typical examples)}}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Was sie nicht alles weiß!}{It's amazing how much she knows!}
+\ExampleItem{Wen sie nicht alles kennt!}{It's amazing how many people she knows!}
+\ExampleItem{Was wir nicht alles ausprobiert haben!}{Think of all the things we tried!}
+\ExampleItem{Kann nicht jemand anders helfen?}{Couldn't someone else help? (request, not categorical negative claim)}
+\end{itemize}\end{exbox}
+\section{Abgrenzung \textnormal{(Distinguishing other roles)}}
+\begin{grammarentry}{Nicht jede Verwendung ist modal}{Modalpartikel / Abtönungspartikel}
+\GermanText{In Ich komme nicht ist nicht Negation. In Was sie nicht alles weiß! ist die Gesamtaussage positiv, obwohl nicht vorkommt.}
+\EnglishText{In Ich komme nicht, nicht negates. In Was sie nicht alles weiß!, the overall assertion is positive despite the presence of nicht.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Ich komme nicht.}{I'm not coming. (negation)}
+\ExampleItem{Warum kommst du denn nicht?}{Why aren't you coming, then? (negation + denn)}
+\ExampleItem{Kommst du etwa nicht?}{Don't tell me you're not coming? (negation + etwa)}
+\end{itemize}\end{exbox}
+\section{Lernhinweis \textnormal{(Learning tip)}}
+\GermanText{Modalpartikeln beeinflussen die Haltung oder Erwartung der sprechenden Person. Englische Entsprechungen sind situationsabhängig und häufig keine einzelnen Wörter.}
+\EnglishText{Modal particles affect the speaker's attitude or expectations. English equivalents depend on context and often require a phrase rather than one word.}
+\section{Quellen \textnormal{(Sources)}}
+\begin{itemize}
+\item IDS Mannheim: \url{https://grammis.ids-mannheim.de/terminologie/2}
+\item Duden: \url{https://www.duden.de/sprachwissen/sprachratgeber/Modalpartikeln}
+\end{itemize}
+\end{document}

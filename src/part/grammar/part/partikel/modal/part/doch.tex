@@ -1,0 +1,66 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern,microtype,xcolor,parskip,enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\titleformat{\section}[block]{\Large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+\NewDocumentEnvironment{grammarentry}{mm+b}{\begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,title={#1\hfill\normalfont\footnotesize #2},colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries]#3\end{tcolorbox}}{}
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\title{Die Modalpartikel \glqq doch\grqq\\{\large\textnormal{The modal particle doch}}}
+\date{}
+\begin{document}
+\maketitle
+\tableofcontents
+\section{Bedeutung und Wirkung \textnormal{(Meaning and effect)}}
+\begin{grammarentry}{doch}{Modalpartikel / Abtönungspartikel}
+\GermanText{Doch erinnert an gemeinsames Wissen, widerspricht einer Erwartung oder verstärkt eine Einladung bzw. Aufforderung.}
+\EnglishText{Doch recalls shared knowledge, challenges an expectation or reinforces an invitation or request.}
+\end{grammarentry}
+\section{Grammatische Rolle und Satzarten \textnormal{(Grammar and sentence moods)}}
+\begin{grammarentry}{Verwendung}{Satzart und Kontext}
+\GermanText{Häufig in Aussagen, Imperativen und Wünschen; je nach Kontext freundlich, insistierend oder vorwurfsvoll.}
+\EnglishText{Common in statements, imperatives and wishes; depending on context it can sound friendly, insistent or reproachful.}
+\end{grammarentry}
+\begin{grammarentry}{Form und Stellung}{Syntax}
+\GermanText{Als Modalpartikel ist doch unflektierbar, fordert keinen Kasus und steht normalerweise im Mittelfeld. Allein im Vorfeld eines normalen Aussagesatzes kann eine Modalpartikel nicht stehen. Die Betonung und der Kontext beeinflussen die Wirkung.}
+\EnglishText{As a modal particle, doch is invariable, does not govern case and normally appears in the middle field. It cannot occupy the prefield of a normal statement on its own. Stress and context affect its pragmatic force.}
+\end{grammarentry}
+\section{Typische Beispiele \textnormal{(Typical examples)}}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Komm doch mit!}{Why don't you come along!}
+\ExampleItem{Das weißt du doch!}{But you know that!}
+\ExampleItem{Das ist doch nicht wahr!}{That can't be true!}
+\ExampleItem{Wenn ich doch mehr Zeit hätte!}{If only I had more time!}
+\ExampleItem{Ruf doch mal an!}{Why don't you give them a call!}
+\end{itemize}\end{exbox}
+\section{Abgrenzung zu anderen Verwendungen \textnormal{(Contrast with other uses)}}
+\begin{grammarentry}{Wortarten unterscheiden}{Nicht immer Modalpartikel}
+\GermanText{Doch als Antwort auf eine verneinte Frage ist eine Antwortpartikel. Als Konjunktion kann doch aber oder jedoch bedeuten.}
+\EnglishText{Doch answering a negative question is an answer particle. As a conjunction, it can mean but or however.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Kommst du nicht? Doch, ich komme.}{Aren't you coming? Yes, I am.}
+\ExampleItem{Es war schwierig, doch wir haben es geschafft.}{It was difficult, but we managed.}
+\end{itemize}\end{exbox}
+\section{Lernhinweis \textnormal{(Learning tip)}}
+\GermanText{Eine Modalpartikel verändert vor allem die Gesprächsabsicht. Versuchen Sie nicht, jedem Vorkommen eine feste englische Eins-zu-eins-Übersetzung zu geben. Achten Sie auf Satzart, Tonfall und Situation.}
+\EnglishText{A modal particle mainly affects the speaker's intention. Do not try to give it one fixed English translation in every context. Pay attention to sentence mood, intonation and situation.}
+\section{Quellen \textnormal{(Sources)}}
+\begin{itemize}
+\item IDS Mannheim: \url{https://grammis.ids-mannheim.de/terminologie/2}
+\item Duden: \url{https://www.duden.de/sprachwissen/sprachratgeber/Modalpartikeln}
+\end{itemize}
+\end{document}

@@ -1,0 +1,63 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern,microtype,xcolor,parskip,enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\titleformat{\section}[block]{\Large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+\NewDocumentEnvironment{grammarentry}{mm+b}{\begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,title={#1\hfill\normalfont\footnotesize #2},colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries]#3\end{tcolorbox}}{}
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\title{Die Modalpartikel \glqq aber\grqq\\{\large\textnormal{The modal particle aber}}}
+\date{}
+\begin{document}
+\maketitle
+\tableofcontents
+\section{Grundbedeutung \textnormal{(Basic meaning)}}
+\begin{grammarentry}{aber}{Modalpartikel / Abtönungspartikel}
+\GermanText{In Ausrufen drückt aber Überraschung, Bewunderung oder eine überraschend starke Bewertung aus.}
+\EnglishText{In exclamations, aber expresses surprise, admiration or a striking evaluation.}
+\end{grammarentry}
+\section{Satzarten und Stellung \textnormal{(Sentence types and word order)}}
+\begin{grammarentry}{Gebrauch}{Modalpartikel / Abtönungspartikel}
+\GermanText{Vor allem Ausrufesätze, meistens unbetont. Die Aussage wird emotional gefärbt.}
+\EnglishText{Especially exclamations, usually unstressed. The statement is given an emotional tone.}
+\end{grammarentry}
+\GermanText{Als Partikel ist aber unflektierbar und verlangt keinen Kasus. Im üblichen Modalpartikelgebrauch steht es im Mittelfeld, nicht selbstständig im Vorfeld. Kontext und Betonung bestimmen die Gesprächswirkung.}
+\EnglishText{As a particle, aber does not inflect or govern a case. In its usual modal use it stands in the middle field, not independently in the prefield. Context and stress determine the conversational effect.}
+\section{Typische Beispiele \textnormal{(Typical examples)}}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Das ist aber schön!}{Oh, that's lovely!}
+\ExampleItem{Du hast aber viel gelernt!}{Wow, you've studied a lot!}
+\ExampleItem{Das ist aber eine Überraschung!}{Well, that is a surprise!}
+\ExampleItem{Hier ist es aber kalt!}{It really is cold here!}
+\end{itemize}\end{exbox}
+\section{Abgrenzung \textnormal{(Distinguishing other roles)}}
+\begin{grammarentry}{Nicht jede Verwendung ist modal}{Modalpartikel / Abtönungspartikel}
+\GermanText{Als Konjunktion stellt aber einen Gegensatz zwischen Satzteilen oder Sätzen her, etwa: Ich wollte kommen, aber ich war krank.}
+\EnglishText{As a conjunction, aber expresses contrast between clauses or elements, as in I wanted to come, but I was ill.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Ich komme, aber nur kurz.}{I will come, but only briefly.}
+\ExampleItem{Das ist aber teuer!}{Wow, that is expensive!}
+\end{itemize}\end{exbox}
+\section{Lernhinweis \textnormal{(Learning tip)}}
+\GermanText{Modalpartikeln beeinflussen die Haltung oder Erwartung der sprechenden Person. Englische Entsprechungen sind situationsabhängig und häufig keine einzelnen Wörter.}
+\EnglishText{Modal particles affect the speaker's attitude or expectations. English equivalents depend on context and often require a phrase rather than one word.}
+\section{Quellen \textnormal{(Sources)}}
+\begin{itemize}
+\item IDS Mannheim: \url{https://grammis.ids-mannheim.de/terminologie/2}
+\item Duden: \url{https://www.duden.de/sprachwissen/sprachratgeber/Modalpartikeln}
+\end{itemize}
+\end{document}

@@ -1,0 +1,63 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern,microtype,xcolor,parskip,enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\titleformat{\section}[block]{\Large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+\NewDocumentEnvironment{grammarentry}{mm+b}{\begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,title={#1\hfill\normalfont\footnotesize #2},colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries]#3\end{tcolorbox}}{}
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\title{Die Modalpartikel \glqq auch\grqq\\{\large\textnormal{The modal particle auch}}}
+\date{}
+\begin{document}
+\maketitle
+\tableofcontents
+\section{Grundbedeutung \textnormal{(Basic meaning)}}
+\begin{grammarentry}{auch}{Modalpartikel / Abtönungspartikel}
+\GermanText{Auch kann in rhetorischen Fragen einen naheliegenden Grund, Hilflosigkeit oder eine als selbstverständlich behandelte Antwort verstärken.}
+\EnglishText{Auch can reinforce an obvious reason, helplessness or an apparently self-evident answer in rhetorical questions.}
+\end{grammarentry}
+\section{Satzarten und Stellung \textnormal{(Sentence types and word order)}}
+\begin{grammarentry}{Gebrauch}{Modalpartikel / Abtönungspartikel}
+\GermanText{Besonders in rhetorischen Warum- und Wie-Fragen. Die Unterscheidung zur Fokuspartikel hängt vom Kontext ab.}
+\EnglishText{Especially in rhetorical why/how questions. Its distinction from a focus particle depends on context.}
+\end{grammarentry}
+\GermanText{Als Partikel ist auch unflektierbar und verlangt keinen Kasus. Im üblichen Modalpartikelgebrauch steht es im Mittelfeld, nicht selbstständig im Vorfeld. Kontext und Betonung bestimmen die Gesprächswirkung.}
+\EnglishText{As a particle, auch does not inflect or govern a case. In its usual modal use it stands in the middle field, not independently in the prefield. Context and stress determine the conversational effect.}
+\section{Typische Beispiele \textnormal{(Typical examples)}}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Wie soll das auch funktionieren?}{How could that possibly work, anyway?}
+\ExampleItem{Warum sollte er auch lügen?}{Why would he lie, anyway?}
+\ExampleItem{Was kann ich auch dafür?}{How is that my fault?}
+\ExampleItem{Was soll ich auch sonst tun?}{What else am I supposed to do?}
+\end{itemize}\end{exbox}
+\section{Abgrenzung \textnormal{(Distinguishing other roles)}}
+\begin{grammarentry}{Nicht jede Verwendung ist modal}{Modalpartikel / Abtönungspartikel}
+\GermanText{Als Fokuspartikel bedeutet auch ebenfalls oder zusätzlich, beispielsweise: Auch Maria kommt mit.}
+\EnglishText{As a focus particle, auch means also or too, e.g. Maria is coming too.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Auch Anna kommt mit.}{Anna is coming too.}
+\ExampleItem{Warum sollte ich auch warten?}{Why would I wait, anyway?}
+\end{itemize}\end{exbox}
+\section{Lernhinweis \textnormal{(Learning tip)}}
+\GermanText{Modalpartikeln beeinflussen die Haltung oder Erwartung der sprechenden Person. Englische Entsprechungen sind situationsabhängig und häufig keine einzelnen Wörter.}
+\EnglishText{Modal particles affect the speaker's attitude or expectations. English equivalents depend on context and often require a phrase rather than one word.}
+\section{Quellen \textnormal{(Sources)}}
+\begin{itemize}
+\item IDS Mannheim: \url{https://grammis.ids-mannheim.de/terminologie/2}
+\item Duden: \url{https://www.duden.de/sprachwissen/sprachratgeber/Modalpartikeln}
+\end{itemize}
+\end{document}
