@@ -6,7 +6,7 @@
 \usepackage[ngerman,english]{babel}
 \usepackage{lmodern}
 \usepackage{microtype}
-\usepackage{xcolor}
+\usepackage[table]{xcolor}
 \usepackage{parskip}
 \usepackage{enumitem}
 \usepackage[most]{tcolorbox}
@@ -147,6 +147,7 @@
             \begin{longtable}{>{\raggedright\arraybackslash}p{0.31\textwidth}>{\raggedright\arraybackslash}p{0.31\textwidth}>{\raggedright\arraybackslash}p{0.23\textwidth}}
                 \HeaderCell{Deutsch} & \HeaderCell{Beispiel} & \HeaderCell{English} \\
                 sich beeilen & Ich beeile mich. & I hurry. \\
+                sich etwas merken & Ich merke mir die Adresse. & I memorize the address. \\
                 sich erinnern an + Akk. & Ich erinnere mich an dich. & I remember you. \\
                 sich interessieren für + Akk. & Ich interessiere mich für Deutsch. & I am interested in German. \\
                 sich kümmern um + Akk. & Ich kümmere mich um das Kind. & I take care of the child. \\
@@ -160,6 +161,22 @@
         \end{grammarentry}
     
     
+
+    \section{Reflexiver und nicht reflexiver Gebrauch (Reflexive and non-reflexive use)}
+        \begin{grammarentry}{Dasselbe Verb, verschiedene Objekte}{same verb, different object}
+            \GermanText{Einige Verben können mit einem gewöhnlichen Objekt oder einem Reflexivpronomen stehen. Das Reflexivpronomen verweist auf das Subjekt. Bei einem fest reflexiven Verb wie \textbf{sich beeilen} ist es dagegen in dieser Bedeutung nicht weglassbar.}
+            \EnglishText{Some verbs can take either an ordinary object or a reflexive pronoun referring to the subject. With an obligatorily reflexive verb such as \textbf{sich beeilen}, the pronoun cannot be omitted in that meaning.}
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich kenne den Professor. / Ich kenne mich gut.}{I know the professor. / I know myself well.}
+                    \ExampleItem{Ich ziehe das Kind an. / Ich ziehe mich an.}{I dress the child. / I get dressed.}
+                    \ExampleItem{Ich wasche das Obst. / Ich wasche mich.}{I wash the fruit. / I wash myself.}
+                    \ExampleItem{Ich wasche mir das Gesicht.}{I wash my face. (mir: dative; das Gesicht: accusative)}
+                    \ExampleItem{Ich beeile mich.}{I hurry. (the reflexive pronoun is required)}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+
     \section{Fall 4: Dativreflexiv bei Körperteilen und Kleidung}
         
         \begin{grammarentry}{mir, dir, sich mit einem Akkusativobjekt}{dative reflexive pronoun with an accusative object}
@@ -197,6 +214,21 @@
         \end{grammarentry}
     
     
+
+    \section{Reflexivpronomen und \glqq selbst\grqq{} (Reflexive pronouns and self)}
+        \begin{grammarentry}{\glqq selbst\grqq{} verstärkt, ersetzt aber nichts}{intensifier, not a replacement}
+            \GermanText{\textbf{selbst} ist kein Reflexivpronomen, sondern dient der Betonung. Es kann bei \textbf{mich, mir, dich, dir, sich, uns, euch} stehen, ohne den Kasus zu verändern. Das Reflexivpronomen darf bei fest reflexiven Verben nicht durch \textbf{selbst} ersetzt werden.}
+            \EnglishText{\textbf{selbst} is an intensifier, not a reflexive pronoun. It can accompany \textbf{mich, mir, dich, dir, sich, uns, euch} without changing their case. It cannot replace a required reflexive pronoun.}
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Ich ziehe mich an. / Ich ziehe mich selbst an.}{I get dressed. / I dress myself (emphasis).}
+                    \ExampleItem{Ich vertraue mir. / Ich vertraue mir selbst.}{I trust myself. / I trust myself (emphasis).}
+                    \ExampleItem{Ich selbst kaufe das Fahrrad.}{I personally am buying the bicycle. (not a reflexive construction)}
+                    \ExampleItem{Richtig: Ich beeile mich. Falsch: Ich beeile selbst.}{Correct: I hurry. Incorrect: omission of the required reflexive pronoun.}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+
     \section{Fall 6: Gegenseitige Handlung}
         
         \begin{grammarentry}{reziproker Gebrauch}{reciprocal use}
@@ -356,6 +388,22 @@
                     \ExampleItem{Beeil dich!}{Hurry up!}
                     \ExampleItem{Setzen Sie sich bitte!}{Please sit down!}
                     \ExampleItem{Ruht euch aus!}{Have a rest!}
+                \end{itemize}
+            \end{exbox}
+        \end{grammarentry}
+
+
+        \begin{grammarentry}{Fragen mit Nomen oder Pronomen als Subjekt}{noun vs. pronoun subjects in questions}
+            \GermanText{Bei Ja-Nein-Fragen mit einem Subjekt als \textbf{Nomen} sind beide Stellungen möglich: \textbf{Erinnert sich Max?} und \textbf{Erinnert Max sich?} Die erste ist gewöhnlicher, die zweite kann stärker markiert wirken.}
+            \EnglishText{With a \textbf{noun} subject, both orders are possible in yes/no questions: \textbf{Erinnert sich Max?} and \textbf{Erinnert Max sich?} The first is more common; the second may sound more marked.}
+            \GermanText{Ist das Subjekt ein \textbf{Personalpronomen}, steht es normalerweise vor dem Reflexivpronomen: \textbf{Erinnerst du dich?} Die Wortfolge \textbf{Erinnerst dich du?} ist im normalen Standarddeutsch falsch.}
+            \EnglishText{With a \textbf{personal pronoun} subject, the subject normally comes before the reflexive pronoun: \textbf{Erinnerst du dich?} The order \textbf{Erinnerst dich du?} is incorrect in ordinary standard German.}
+            \begin{exbox}
+                \begin{itemize}
+                    \ExampleItem{Erinnert sich Max an den Termin?}{Does Max remember the appointment?}
+                    \ExampleItem{Erinnert Max sich an den Termin?}{Does Max remember the appointment? (more marked)}
+                    \ExampleItem{Erinnert er sich an den Termin?}{Does he remember the appointment?}
+                    \ExampleItem{Erinnerst du dich an den Termin?}{Do you remember the appointment?}
                 \end{itemize}
             \end{exbox}
         \end{grammarentry}

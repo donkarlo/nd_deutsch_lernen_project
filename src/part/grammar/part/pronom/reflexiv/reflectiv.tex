@@ -1,1 +1,132 @@
-Reflexiv pronomoen haben kein Dativ kasus
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{colortbl}
+\usepackage{longtable}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\titleformat{\section}[block]
+{\Large\bfseries\color{HeaderBlueDark}}
+{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+    \begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+    #3
+    \end{tcolorbox}
+}{}
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+\newcommand{\HeaderCell}[1]{\cellcolor{HeaderBlueDark}\color{white}\bfseries #1}
+
+\title{Reflexivpronomen (Reflexive Pronouns)}
+\date{}
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Grundidee (Basic concept)}
+
+    \begin{grammarentry}{Rückbezug auf das Subjekt}{reference to the subject}
+        \GermanText{Ein Reflexivpronomen verweist auf dieselbe Person oder Sache wie das Subjekt. Seine Form hängt von Person, Numerus und Kasus ab. Nicht nur \textbf{sich}, sondern auch \textbf{mich, mir, dich, dir, uns, euch} können Reflexivpronomen sein.}
+        \EnglishText{A reflexive pronoun refers back to the same person or thing as the subject. Its form depends on person, number and case. Not only \textbf{sich}, but also \textbf{mich, mir, dich, dir, uns, euch} can be reflexive pronouns.}
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich wasche mich.}{I wash myself.}
+                \ExampleItem{Du wäschst dich.}{You wash yourself.}
+                \ExampleItem{Sie wäscht sich.}{She washes herself.}
+            \end{itemize}
+        \end{exbox}
+    \end{grammarentry}
+
+\section{Formen im Akkusativ und Dativ (Accusative and dative forms)}
+
+    \begin{grammarentry}{Beide Kasus existieren}{both cases exist}
+        \GermanText{Reflexivpronomen haben Formen im \textbf{Akkusativ} und im \textbf{Dativ}. Es ist falsch zu behaupten, Reflexivpronomen könnten nicht im Dativ stehen.}
+        \EnglishText{Reflexive pronouns have forms in both the \textbf{accusative} and the \textbf{dative}. It is incorrect to say that they cannot appear in the dative.}
+        \rowcolors{2}{RowBlueLight}{RowBlueDark}
+        \begin{longtable}{>{\raggedright\arraybackslash}p{0.23\textwidth}>{\raggedright\arraybackslash}p{0.28\textwidth}>{\raggedright\arraybackslash}p{0.28\textwidth}}
+            \HeaderCell{Person} & \HeaderCell{Akkusativ} & \HeaderCell{Dativ} \\
+            ich & mich & mir \\
+            du & dich & dir \\
+            er/sie/es & sich & sich \\
+            wir & uns & uns \\
+            ihr & euch & euch \\
+            sie/Sie & sich & sich \\
+        \end{longtable}
+        \GermanText{Nur bei \textbf{ich} und \textbf{du} sehen Akkusativ und Dativ verschieden aus: \textbf{mich/mir} und \textbf{dich/dir}. Bei \textbf{sich, uns, euch} ist die Form in beiden Fällen gleich.}
+        \EnglishText{Only for \textbf{ich} and \textbf{du} do accusative and dative look different: \textbf{mich/mir} and \textbf{dich/dir}. For \textbf{sich, uns, euch}, both cases have identical forms.}
+    \end{grammarentry}
+
+\section{Kasus und Satzbau (Case and sentence structure)}
+
+    \begin{grammarentry}{Was wird gewaschen oder gekauft?}{what is washed or bought?}
+        \GermanText{In \textbf{Ich wasche mich} ist \textbf{mich} ein Akkusativobjekt. In \textbf{Ich wasche mir das Gesicht} ist \textbf{das Gesicht} das Akkusativobjekt und \textbf{mir} ein reflexiver Dativ. Ähnliche Konstruktionen gibt es bei Körperteilen, Kleidung und beim Kaufen für sich selbst. Die Kasuswahl hängt jedoch vom jeweiligen Verb und seiner Bedeutung ab.}
+        \EnglishText{In \textbf{Ich wasche mich}, \textbf{mich} is the accusative object. In \textbf{Ich wasche mir das Gesicht}, \textbf{das Gesicht} is the accusative object and \textbf{mir} is a reflexive dative. Similar constructions occur with body parts, clothing and buying something for oneself. However, case selection depends on the specific verb and its meaning.}
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich wasche mich. (Akkusativ)}{I wash myself.}
+                \ExampleItem{Ich wasche mir das Gesicht. (mir: Dativ)}{I wash my face.}
+                \ExampleItem{Du kaufst dir eine Hose. (dir: Dativ)}{You buy yourself trousers.}
+                \ExampleItem{Ich merke mir die Adresse. (mir: Dativ)}{I memorize the address.}
+                \ExampleItem{Er zieht sich eine Jacke an. (sich: Dativ)}{He puts on a jacket.}
+            \end{itemize}
+        \end{exbox}
+    \end{grammarentry}
+
+\section{Unterschied zu \glqq selbst\grqq{} (Difference from self)}
+
+    \begin{grammarentry}{Ein Pronomen ist nicht dasselbe wie ein Verstärker}{pronoun versus intensifier}
+        \GermanText{\textbf{selbst} dient zur Betonung; es ersetzt das Reflexivpronomen nicht und verändert dessen Kasus nicht. Auch \textbf{Ich selbst} kann betont werden, ohne dass ein reflexives Verb vorliegt.}
+        \EnglishText{\textbf{selbst} adds emphasis; it neither replaces a reflexive pronoun nor changes its case. Even \textbf{Ich selbst} can be emphasized without a reflexive verb.}
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Ich ziehe mich selbst an. (mich: Akkusativ)}{I dress myself (emphatic).}
+                \ExampleItem{Ich vertraue mir selbst. (mir: Dativ)}{I trust myself (emphatic).}
+                \ExampleItem{Ich selbst mache das. (nicht reflexiv)}{I myself do that. (not reflexive)}
+            \end{itemize}
+        \end{exbox}
+    \end{grammarentry}
+
+\section{Reihenfolge in Fragen (Word order in questions)}
+
+    \begin{grammarentry}{Nomen und Personalpronomen}{noun and pronoun subjects}
+        \GermanText{Mit einem Nomen als Subjekt sind \textbf{Erinnert sich Max?} und \textbf{Erinnert Max sich?} möglich. Bei einem Personalpronomen steht in der normalen Fragesatzstellung das Subjektpronomen zuerst: \textbf{Erinnerst du dich?}, nicht \textbf{Erinnerst dich du?}}
+        \EnglishText{With a noun subject, both \textbf{Erinnert sich Max?} and \textbf{Erinnert Max sich?} are possible. With a personal-pronoun subject, the subject pronoun comes first in ordinary question word order: \textbf{Erinnerst du dich?}, not \textbf{Erinnerst dich du?}}
+        \begin{exbox}
+            \begin{itemize}
+                \ExampleItem{Erinnert sich Max an den Termin?}{Does Max remember the appointment?}
+                \ExampleItem{Erinnert er sich an den Termin?}{Does he remember the appointment?}
+                \ExampleItem{Erinnerst du dich an den Termin?}{Do you remember the appointment?}
+            \end{itemize}
+        \end{exbox}
+    \end{grammarentry}
+
+\section{Zusammenfassung (Summary)}
+
+    \begin{grammarentry}{Wichtige Regeln}{key rules}
+        \GermanText{Reflexivpronomen können \textbf{Akkusativ oder Dativ} sein. \textbf{mich} und \textbf{mir} sind verschiedene Kasusformen. \textbf{selbst} betont, ersetzt aber kein notwendiges Reflexivpronomen. Der Satzbau entscheidet über die Stellung von Subjekt und Reflexivpronomen.}
+        \EnglishText{Reflexive pronouns can be \textbf{accusative or dative}. \textbf{mich} and \textbf{mir} are different case forms. \textbf{selbst} adds emphasis but cannot replace a required reflexive pronoun. Sentence structure determines the order of the subject and the reflexive pronoun.}
+    \end{grammarentry}
+
+\end{document}
