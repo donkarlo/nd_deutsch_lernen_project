@@ -1,0 +1,299 @@
+% Infinitivgruppen im Deutschen — selbstständiges Lernblatt B1–B2.
+% Stil nach prompt/vorlage/kind/erklaerung_vorlage.tex.
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{HeaderBlueDark}{RGB}{70,110,170}
+\definecolor{RowBlueLight}{RGB}{235,243,255}
+\definecolor{RowBlueDark}{RGB}{220,233,250}
+\definecolor{SoftGray}{RGB}{90,90,90}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.4em,itemsep=0.35em,topsep=0.35em}
+\linespread{1.06}
+\titleformat{\section}[block]{\Large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\section}{0pt}{1.3em}{0.8em}
+\titleformat{\subsection}[block]{\large\bfseries\color{HeaderBlueDark}}{}{0pt}{}
+\titlespacing{\subsection}{0pt}{1.0em}{0.6em}
+\newtcolorbox{exbox}{enhanced,breakable,colback=RowBlueLight,colframe=RowBlueDark,boxrule=0.4pt,arc=1.5mm,left=1.2mm,right=1.2mm,top=1mm,bottom=1mm,title={Beispiele \textnormal{(Examples)}},fonttitle=\bfseries,colbacktitle=RowBlueDark,coltitle=black}
+\NewDocumentEnvironment{grammarentry}{mm+b}{%
+\begin{tcolorbox}[enhanced,breakable,colback=white,colframe=HeaderBlueDark,boxrule=0.6pt,arc=1.5mm,left=1.5mm,right=1.5mm,top=1mm,bottom=1mm,colbacktitle=HeaderBlueDark,coltitle=white,fonttitle=\bfseries,title={#1\hfill\normalfont\footnotesize #2}]
+#3
+\end{tcolorbox}
+}{}
+\newcommand{\GermanText}[1]{\textbf{Deutsch: }#1\par}
+\newcommand{\EnglishText}[1]{{\small\color{SoftGray}\textbf{English: }#1\par}}
+\newcommand{\ExampleItem}[2]{\item \textbf{#1}\\{\small\color{SoftGray}#2}}
+
+\title{Die Infinitivgruppe\\\large\textnormal{The infinitive group in German}}
+\date{}
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Definition \textnormal{(Definition)}}
+\begin{grammarentry}{Infinitivgruppe}{Wortgruppe mit Infinitiv}
+\GermanText{Eine \textbf{Infinitivgruppe} enthält einen Infinitiv (die Grundform eines Verbs) und gegebenenfalls weitere Satzglieder, die zu diesem Verb gehören. Häufig enthält sie \textbf{zu + Infinitiv}. Sie hat \textbf{kein eigenes finites (konjugiertes) Verb} und normalerweise kein ausdrücklich genanntes Subjekt. Die Bezeichnung \glqq Infinitivsatz\grqq{} ist verbreitet; in der Rechtschreibung spricht man präziser von einer \glqq Infinitivgruppe\grqq.}
+\EnglishText{An infinitive group contains an infinitive (a verb's base form) and possibly other constituents belonging to it. It frequently contains \textbf{zu + infinitive}. It has \textbf{no finite (conjugated) verb} and normally no explicitly stated subject. The term \glqq infinitive clause\grqq{} is common; German punctuation rules use the more precise term \glqq infinitive group\grqq.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Ich versuche, Deutsch zu lernen.}{I am trying to learn German.}
+\ExampleItem{Es ist wichtig, die Regeln zu verstehen.}{It is important to understand the rules.}
+\ExampleItem{Ich gehe spazieren, ohne an die Arbeit zu denken.}{I go for a walk without thinking about work.}
+\end{itemize}\end{exbox}
+
+\section{Die zwei Formen des Infinitivs \textnormal{(Two infinitive forms)}}
+\begin{grammarentry}{Mit und ohne zu}{nicht austauschbar}
+\GermanText{Man unterscheidet den \textbf{bloßen Infinitiv} (\glqq kommen\grqq) und den \textbf{zu-Infinitiv} (\glqq zu kommen\grqq). Welche Form steht, bestimmen das übergeordnete Verb oder die gesamte Konstruktion. \textbf{zu} ist hier ein Infinitivmarker und keine Präposition.}
+\EnglishText{German distinguishes the \textbf{bare infinitive} (\glqq kommen\grqq) and the \textbf{zu-infinitive} (\glqq zu kommen\grqq). The governing verb or construction determines which form is used. Here \textbf{zu} is an infinitive marker, not a preposition.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Ich will kommen.}{I want to come.}
+\ExampleItem{Ich hoffe, kommen zu können.}{I hope to be able to come.}
+\ExampleItem{Ich hoffe, morgen zu kommen.}{I hope to come tomorrow.}
+\end{itemize}\end{exbox}
+
+\section{Wann steht der Infinitiv mit zu? \textnormal{(When to use zu)}}
+\subsection{Nach bestimmten Verben \textnormal{(After certain verbs)}}
+\begin{grammarentry}{Häufige Auslöser}{Verb + zu-Infinitiv}
+\GermanText{Häufig: \textbf{versuchen, hoffen, planen, vorhaben, beabsichtigen, beschließen, vergessen, versprechen, anbieten, sich bemühen, sich weigern, scheinen, anfangen} und \textbf{aufhören}. Ob ein zu-Infinitiv möglich ist, hängt von der Bedeutung und der Rektion des jeweiligen Verbs ab.}
+\EnglishText{Common triggers are \textbf{try, hope, plan, intend, decide, forget, promise, offer, make an effort, refuse, seem, begin}, and \textbf{stop}. Whether a zu-infinitive is possible depends on the governing verb's meaning and complementation pattern.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Sie versucht, pünktlich anzukommen.}{She is trying to arrive on time.}
+\ExampleItem{Ich habe vergessen, die Tür abzuschließen.}{I forgot to lock the door.}
+\ExampleItem{Er scheint müde zu sein.}{He seems to be tired.}
+\ExampleItem{Sie hat versprochen, uns zu helfen.}{She promised to help us.}
+\end{itemize}\end{exbox}
+
+\subsection{Nach Adjektiven und Nomen \textnormal{(After adjectives and nouns)}}
+\begin{grammarentry}{Bewertungen, Gefühle und Pläne}{Adjektiv/Nomen + zu}
+\GermanText{Nach Ausdrücken wie \textbf{es ist wichtig/schwer/schön/möglich}, \textbf{Angst haben}, \textbf{Lust haben}, \textbf{Zeit haben}, \textbf{den Wunsch haben} oder \textbf{den Plan haben} kann eine Infinitivgruppe folgen.}
+\EnglishText{An infinitive group can follow expressions such as \textbf{it is important/difficult/nice/possible}, \textbf{be afraid}, \textbf{feel like}, \textbf{have time}, \textbf{have the wish}, or \textbf{have the plan}.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Es ist schwer, jeden Tag früh aufzustehen.}{It is difficult to get up early every day.}
+\ExampleItem{Ich habe keine Zeit, heute einzukaufen.}{I have no time to shop today.}
+\ExampleItem{Ihr Wunsch, Deutsch zu studieren, ist verständlich.}{Her wish to study German is understandable.}
+\end{itemize}\end{exbox}
+
+\subsection{Brauchen + zu \textnormal{(Need to)}}
+\begin{grammarentry}{Nicht brauchen zu}{häufig mit nicht, nur, kaum}
+\GermanText{\textbf{brauchen} steht vor einem Infinitiv besonders häufig mit \textbf{nicht}, \textbf{nur} oder \textbf{kaum}. In der Standardsprache benutzt man dann \textbf{zu}; umgangssprachlich wird \textbf{zu} manchmal weggelassen.}
+\EnglishText{\textbf{brauchen} commonly combines with an infinitive alongside \textbf{nicht}, \textbf{nur}, or \textbf{kaum}. Standard German uses \textbf{zu} here, although colloquial speech sometimes omits it.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Du brauchst heute nicht zu kommen.}{You do not need to come today.}
+\ExampleItem{Du brauchst nur anzurufen.}{You only need to call.}
+\end{itemize}\end{exbox}
+
+\section{Wann steht kein zu? \textnormal{(When zu is omitted)}}
+\begin{grammarentry}{Bloßer Infinitiv}{wichtige Fälle}
+\GermanText{Nach \textbf{Modalverben} (\textbf{können, müssen, wollen, sollen, dürfen, mögen}) steht der weitere Infinitiv ohne \textbf{zu}. Typisch ist der bloße Infinitiv auch nach \textbf{lassen}, bei Wahrnehmungsverben wie \textbf{sehen} und \textbf{hören} sowie in bestimmten Verbindungen mit \textbf{gehen}, \textbf{fahren} und \textbf{bleiben}. \textbf{lernen} und \textbf{helfen} können je nach Konstruktion auch ohne \textbf{zu} stehen.}
+\EnglishText{After \textbf{modal verbs}, the other infinitive has no \textbf{zu}. A bare infinitive also commonly follows \textbf{lassen}, perception verbs such as \textbf{see} and \textbf{hear}, and certain combinations with \textbf{go}, \textbf{drive}, and \textbf{stay}. Depending on the construction, \textbf{lernen} and \textbf{helfen} may also take a bare infinitive.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Ich muss heute arbeiten.}{I have to work today.}
+\ExampleItem{Sie lässt ihren Sohn spielen.}{She lets her son play.}
+\ExampleItem{Ich höre die Kinder singen.}{I hear the children singing.}
+\ExampleItem{Wir gehen einkaufen.}{We are going shopping.}
+\ExampleItem{Ich lerne schwimmen.}{I am learning to swim.}
+\end{itemize}\end{exbox}
+
+\section{Um \ldots{} zu \textnormal{(In order to)}}
+\begin{grammarentry}{Finale Infinitivgruppe}{Zweck oder Ziel}
+\GermanText{\textbf{um + Ergänzungen + zu + Infinitiv} beschreibt den \textbf{Zweck} einer Handlung. Frage: \textbf{Wozu?} Die handelnde Person ist normalerweise dieselbe wie beim Hauptsatz. Bei verschiedenen Handelnden nutzt man typischerweise \textbf{damit + Nebensatz}.}
+\EnglishText{\textbf{um + complements + zu + infinitive} states the \textbf{purpose} of an action. Question: \textbf{What for?} Normally the same person performs both actions. If the actors differ, German typically uses \textbf{damit + subordinate clause}.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Ich lerne Deutsch, um die Prüfung zu bestehen.}{I am learning German in order to pass the exam.}
+\ExampleItem{Ich spreche langsam, damit du mich verstehst.}{I speak slowly so that you understand me.}
+\ExampleItem{Um Benzin zu sparen, fahre ich langsam.}{To save fuel, I drive slowly.}
+\end{itemize}\end{exbox}
+
+\section{Ohne \ldots{} zu \textnormal{(Without doing something)}}
+\begin{grammarentry}{Negative Begleithandlung}{etwas unterbleibt}
+\GermanText{\textbf{ohne + Ergänzungen + zu + Infinitiv} sagt, dass eine weitere Handlung \textbf{nicht} geschieht. Die gedankliche handelnde Person ist normalerweise dieselbe wie im Hauptsatz. Für eine andere Person verwendet man \textbf{ohne dass + Nebensatz}.}
+\EnglishText{\textbf{ohne + complements + zu + infinitive} expresses that an additional action \textbf{does not} take place. The implied actor is normally the same as in the main clause. To introduce a different actor, use \textbf{ohne dass + subordinate clause}.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Er geht weg, ohne etwas zu sagen.}{He leaves without saying anything.}
+\ExampleItem{Ich genieße den Spaziergang, ohne an meinen Parkplatz zu denken.}{I enjoy the walk without thinking about my parking space.}
+\ExampleItem{Sie ging hinaus, ohne dass ich es bemerkte.}{She went outside without me noticing it.}
+\end{itemize}\end{exbox}
+
+\section{(An)statt \ldots{} zu \textnormal{(Instead of)}}
+\begin{grammarentry}{Alternative Handlung}{anstatt / statt}
+\GermanText{\textbf{(an)statt + Ergänzungen + zu + Infinitiv} bezeichnet eine Handlung, die anstelle einer anderen stattfindet. \textbf{statt} und \textbf{anstatt} sind beide möglich. Bei verschiedenem Subjekt kann \textbf{(an)statt dass} verwendet werden.}
+\EnglishText{\textbf{(an)statt + complements + zu + infinitive} expresses an action performed instead of another. Both \textbf{statt} and \textbf{anstatt} are possible. For a different subject, German can use \textbf{(an)statt dass}.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Er sieht fern, statt zu lernen.}{He watches television instead of studying.}
+\ExampleItem{Sie fuhr mit dem Rad, anstatt das Auto zu nehmen.}{She cycled instead of taking the car.}
+\end{itemize}\end{exbox}
+
+\section{Subjekt und Bezug \textnormal{(Who performs the action?)}}
+\begin{grammarentry}{Gleiches Subjekt oder Objekt}{gedachtes Subjekt}
+\GermanText{Die Infinitivgruppe hat normalerweise kein eigenes ausgesprochenes Subjekt. Oft bezieht sie sich auf das \textbf{Subjekt des Hauptsatzes}; nach Verben wie \textbf{bitten} kann das \textbf{Objekt} des Hauptsatzes die Handlung des Infinitivs ausführen. Man darf deshalb nicht die Regel \glqq immer dasselbe Subjekt\grqq{} auf \emph{alle} Infinitivgruppen übertragen.}
+\EnglishText{The infinitive group normally has no spoken subject of its own. Often the performer is the \textbf{subject of the main clause}; after verbs such as \textbf{bitten} (ask), the \textbf{object} of the main clause can perform the infinitive action. Therefore, \glqq always the same subject\grqq{} is not a rule for \emph{all} infinitive groups.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Ich verspreche dir, morgen zu kommen.}{I promise you that I will come tomorrow. (Ich komme.)}
+\ExampleItem{Ich bitte dich, morgen zu kommen.}{I ask you to come tomorrow. (Du kommst.)}
+\ExampleItem{Ich hoffe, dass du morgen kommst.}{I hope that you will come tomorrow.}
+\end{itemize}\end{exbox}
+
+\section{Infinitivgruppe und dass-Satz \textnormal{(Infinitive vs dass-clause)}}
+\begin{grammarentry}{Nicht immer austauschbar}{Subjekt und Verb}
+\GermanText{Ein \textbf{dass-Satz} enthält ein eigenes Subjekt und ein \textbf{konjugiertes Verb}. Eine \textbf{zu-Infinitivgruppe} enthält kein solches Verb und ihr Subjekt wird normalerweise mitgedacht. Ein \textbf{dass-Satz} ist nicht immer durch einen zu-Infinitiv ersetzbar; entscheidend sind das übergeordnete Verb und der gemeinte Handelnde.}
+\EnglishText{A \textbf{dass-clause} has its own subject and a \textbf{conjugated verb}. A \textbf{zu-infinitive group} has no such verb and its subject is generally understood. A \textbf{dass-clause} cannot always be replaced with a zu-infinitive: the governing verb and intended actor determine what is possible.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Ich hoffe, die Stelle zu bekommen.}{I hope to get the job.}
+\ExampleItem{Ich hoffe, dass ich die Stelle bekomme.}{I hope that I get the job.}
+\ExampleItem{Ich hoffe, dass du die Stelle bekommst.}{I hope that you get the job.}
+\end{itemize}\end{exbox}
+
+\section{Wortstellung \textnormal{(Word order)}}
+\begin{grammarentry}{Stellung der Verbgruppe}{Infinitiv am Ende}
+\GermanText{Innerhalb einer zu-Infinitivgruppe steht der Infinitiv gewöhnlich \textbf{am Ende}. Davor stehen die zum Infinitiv gehörenden Objekte, Adverbiale oder Präpositionalgruppen. Die Gruppe kann \textbf{nach} dem Hauptsatz, \textbf{vor} ihm oder als \textbf{Einschub} stehen. Nach einer vorangestellten Infinitivgruppe steht das finite Verb des Hauptsatzes an zweiter Satzgliedposition.}
+\EnglishText{Within a zu-infinitive group, the infinitive usually comes \textbf{at the end}. Objects, adverbials, and prepositional phrases belonging to it precede it. The group may come \textbf{after}, \textbf{before}, or \textbf{inside} the main clause. When it comes first, the finite verb of the main clause follows in the second constituent position.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Ich nehme den Bus, um Geld zu sparen.}{I take the bus to save money.}
+\ExampleItem{Um Geld zu sparen, nehme ich den Bus.}{To save money, I take the bus.}
+\ExampleItem{Ich habe, um Geld zu sparen, das Auto stehen lassen.}{To save money, I left the car parked.}
+\end{itemize}\end{exbox}
+
+\section{Trennbare Verben \textnormal{(Separable verbs)}}
+\begin{grammarentry}{Präfix + zu + Stamm}{ein Wort}
+\GermanText{Bei \textbf{trennbaren} Verben kommt \textbf{zu} zwischen das abtrennbare Präfix und die Verbform: \textbf{aufstehen $\rightarrow$ aufzustehen}, \textbf{einkaufen $\rightarrow$ einzukaufen}, \textbf{zuhören $\rightarrow$ zuzuhören}. Bei \textbf{untrennbaren} Verben steht \textbf{zu} getrennt davor: \textbf{verstehen $\rightarrow$ zu verstehen}.}
+\EnglishText{For \textbf{separable} verbs, \textbf{zu} is inserted between the detachable prefix and the verb: \textbf{aufstehen $\rightarrow$ aufzustehen}, \textbf{einkaufen $\rightarrow$ einzukaufen}, \textbf{zuhören $\rightarrow$ zuzuhören}. For \textbf{inseparable} verbs, \textbf{zu} stands separately before the verb: \textbf{verstehen $\rightarrow$ zu verstehen}.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Ich versuche, früher aufzustehen.}{I am trying to get up earlier.}
+\ExampleItem{Sie bemüht sich, alles zu verstehen.}{She is making an effort to understand everything.}
+\ExampleItem{Er versucht, mir zuzuhören.}{He is trying to listen to me.}
+\end{itemize}\end{exbox}
+
+\section{Mehrere Verben \textnormal{(Several verbs)}}
+\begin{grammarentry}{Modalverb und komplexer Infinitiv}{zu vor dem letzten Verb}
+\GermanText{Wenn eine zu-Infinitivgruppe selbst ein \textbf{Modalverb} enthält, steht \textbf{zu} vor dessen Infinitiv: \textbf{sprechen zu können}, \textbf{arbeiten zu müssen}. Bei einer einfachen Aufzählung mit mehreren eigenständigen Infinitiven wird \textbf{zu} normalerweise wiederholt.}
+\EnglishText{When a zu-infinitive group itself contains a \textbf{modal verb}, \textbf{zu} precedes the modal infinitive: \textbf{sprechen zu können}, \textbf{arbeiten zu müssen}. In a simple coordination of independent infinitives, \textbf{zu} is normally repeated.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Ich lerne, um besser sprechen zu können.}{I study in order to be able to speak better.}
+\ExampleItem{Er hofft, früher gehen zu dürfen.}{He hopes to be allowed to leave earlier.}
+\ExampleItem{Sie plant, einzukaufen und zu kochen.}{She plans to shop and cook.}
+\end{itemize}\end{exbox}
+
+\section{Nicht mit Präpositionen verwechseln \textnormal{(Two kinds of zu)}}
+\begin{grammarentry}{zu + Dativ versus zu + Infinitiv}{zwei grammatische Funktionen}
+\GermanText{\textbf{zu meinem Parkplatz} enthält die \textbf{Präposition zu} mit Dativ. \textbf{zu denken} enthält den \textbf{Infinitivmarker zu}: Er verlangt \emph{keinen} Dativ. Auch die Rektion \textbf{denken an + Akkusativ} ist davon unabhängig. Deshalb können \textbf{an}, die Präposition \textbf{zu} und das Infinitiv-\textbf{zu} im selben Satz vorkommen.}
+\EnglishText{\textbf{zu meinem Parkplatz} contains the \textbf{preposition zu} with dative. \textbf{zu denken} contains the \textbf{infinitive marker zu}: it does \emph{not} govern dative. The complementation pattern \textbf{denken an + accusative} is independent of both. Thus \textbf{an}, prepositional \textbf{zu}, and infinitival \textbf{zu} can all occur in one sentence.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Ich gehe spazieren, ohne an die Rückkehr zu meinem Parkplatz zu denken.}{I go for a walk without thinking about returning to my parking space.}
+\ExampleItem{Ich denke an meine Arbeit.}{I am thinking about my work.}
+\ExampleItem{Ich versuche, nicht an meine Arbeit zu denken.}{I am trying not to think about my work.}
+\end{itemize}\end{exbox}
+
+\section{Verneinung und reflexive Verben \textnormal{(Negation and reflexive verbs)}}
+\begin{grammarentry}{nicht und sich}{richtige Position}
+\GermanText{\textbf{nicht} verneint die betreffende Handlung oder einen Satzteil innerhalb der Infinitivgruppe. Reflexivpronomen wie \textbf{mich}, \textbf{dich} und \textbf{sich} bleiben erhalten und richten sich nach der gemeinten Person und der Rektion des Verbs.}
+\EnglishText{\textbf{nicht} negates the relevant action or constituent within the infinitive group. Reflexive pronouns such as \textbf{mich}, \textbf{dich}, and \textbf{sich} remain and depend on the implied actor and the verb's complementation.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Ich versuche, nicht zu spät zu kommen.}{I am trying not to arrive late.}
+\ExampleItem{Sie geht weg, ohne sich zu verabschieden.}{She leaves without saying goodbye.}
+\ExampleItem{Ich freue mich, dich wiederzusehen.}{I am happy to see you again.}
+\end{itemize}\end{exbox}
+
+\section{Kommasetzung \textnormal{(Comma rules)}}
+\begin{grammarentry}{Wann ist das Komma Pflicht?}{amtliche Rechtschreibung}
+\GermanText{Nach dem \textbf{amtlichen Regelwerk 2024} ist die \textbf{satzwertige, erweiterte zu-Infinitivgruppe mit Komma abzugrenzen}, unabhängig davon, ob sie von einem Verb, Adjektiv oder Nomen abhängt. Dies gilt insbesondere, wenn (1) sie durch \textbf{um, ohne, statt, anstatt, außer, als} eingeleitet wird, (2) weitere Satzglieder wie \textbf{morgen, Deutsch, pünktlich} enthält oder (3) mit einem \textbf{Verweiswort} wie \textbf{es, daran, darauf} verbunden ist. Eingeschobene Gruppen erhalten ein Komma auf beiden Seiten.}
+\EnglishText{Under the \textbf{official 2024 rules}, a \textbf{clause-like, expanded zu-infinitive group must be separated by a comma}, whether it depends on a verb, adjective, or noun. This applies especially when (1) introduced by \textbf{um, ohne, statt, anstatt, außer, als}, (2) expanded by constituents such as \textbf{tomorrow, German, on time}, or (3) linked by a \textbf{referring word} such as \textbf{es, daran, darauf}. An inserted group takes a comma on both sides.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Er ging, ohne sich umzudrehen.}{He left without turning around. (mandatory)}
+\ExampleItem{Ihr Plan, ein Auto zu kaufen, ist sinnvoll.}{Her plan to buy a car makes sense. (mandatory)}
+\ExampleItem{Ich liebe es, Deutsch zu lernen.}{I love learning German. (mandatory)}
+\ExampleItem{Daran, früh aufzustehen, muss ich mich gewöhnen.}{I must get used to getting up early. (mandatory)}
+\end{itemize}\end{exbox}
+\begin{grammarentry}{Wann ist das Komma optional?}{einfacher Infinitiv}
+\GermanText{Bei einem \textbf{nicht erweiterten zu-Infinitiv} ohne einleitende Konjunktion und ohne eigene Satzglieder ist ein Komma häufig \textbf{optional}: \textbf{Er versprach(,) mitzumachen}. Sobald ein Satzglied dazukommt, etwa \textbf{morgen}, ist das Komma in satzwertigen Konstruktionen \textbf{Pflicht}: \textbf{Er versprach, morgen mitzumachen}. In manchen mehrteiligen Prädikaten (\textbf{scheinen, brauchen, sein, haben} in entsprechenden Konstruktionen) steht \textbf{kein Komma}. Bei Verbgefügen wie \textbf{versuchen} kann die Kommawahl in bestimmten uneindeutigen Fällen auch von der Satzstruktur abhängen.}
+\EnglishText{For a \textbf{non-expanded zu-infinitive} without an introductory conjunction or its own constituents, the comma is often \textbf{optional}: \textbf{Er versprach(,) mitzumachen}. Once a constituent such as \textbf{morgen} is added, a clause-like construction \textbf{requires a comma}: \textbf{Er versprach, morgen mitzumachen}. Certain complex predicates (\textbf{scheinen, brauchen, sein, haben} in the relevant constructions) take \textbf{no comma}. With verbs like \textbf{versuchen}, some structurally ambiguous cases allow variation.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Er versprach(,) mitzumachen.}{He promised to participate. (optional comma)}
+\ExampleItem{Er versprach, morgen mitzumachen.}{He promised to participate tomorrow. (mandatory comma)}
+\ExampleItem{Wir hoffen(,) zu gewinnen.}{We hope to win. (optional comma)}
+\ExampleItem{Wir hoffen, das Spiel zu gewinnen.}{We hope to win the match. (mandatory comma)}
+\ExampleItem{Er scheint müde zu sein.}{He seems to be tired. (no comma: complex predicate)}
+\end{itemize}\end{exbox}
+
+\section{Erweiterte Formen \textnormal{(Advanced forms)}}
+\begin{grammarentry}{Vergangenheit und Passiv}{Infinitiv Perfekt / Passiv}
+\GermanText{Für ein \textbf{vorzeitiges} Geschehen kann der \textbf{Infinitiv Perfekt} stehen: \textbf{gemacht zu haben}, \textbf{gekommen zu sein}. Auch das \textbf{Passiv} ist möglich: \textbf{gesehen zu werden}, \textbf{gesehen worden zu sein}. Dies ist eher B2-Niveau; die Grundkonstruktion bleibt dieselbe.}
+\EnglishText{For an action that happened \textbf{earlier}, German can use the \textbf{perfect infinitive}: \textbf{gemacht zu haben}, \textbf{gekommen zu sein}. A \textbf{passive infinitive} is also possible: \textbf{gesehen zu werden}, \textbf{gesehen worden zu sein}. These are mainly B2-level extensions; the basic pattern remains the same.}
+\end{grammarentry}
+\begin{exbox}\begin{itemize}
+\ExampleItem{Er behauptet, den Brief geschrieben zu haben.}{He claims to have written the letter.}
+\ExampleItem{Sie freut sich, eingeladen worden zu sein.}{She is happy to have been invited.}
+\ExampleItem{Er hofft, rechtzeitig informiert zu werden.}{He hopes to be informed in time.}
+\end{itemize}\end{exbox}
+
+\section{Häufige Fehler \textnormal{(Common mistakes)}}
+\begin{grammarentry}{Fehler vermeiden}{richtig statt falsch}
+\GermanText{\textbf{Falsch:} Ich muss zu lernen. \quad \textbf{Richtig:} Ich muss lernen. (Modalverb)}
+\EnglishText{\textbf{Wrong:} Ich muss zu lernen. \quad \textbf{Correct:} Ich muss lernen. (modal verb)}
+\GermanText{\textbf{Falsch:} Ich gehe weg, ohne etwas sagen. \quad \textbf{Richtig:} Ich gehe weg, ohne etwas zu sagen. (ohne + zu)}
+\EnglishText{\textbf{Wrong:} Ich gehe weg, ohne etwas sagen. \quad \textbf{Correct:} Ich gehe weg, ohne etwas zu sagen.}
+\GermanText{\textbf{Falsch:} Ich habe vor, zu aufstehen. \quad \textbf{Richtig:} Ich habe vor, aufzustehen. (trennbares Verb)}
+\EnglishText{\textbf{Wrong:} Ich habe vor, zu aufstehen. \quad \textbf{Correct:} Ich habe vor, aufzustehen. (separable verb)}
+\GermanText{\textbf{Falsch:} Ich hoffe, du zu kommen. \quad \textbf{Richtig:} Ich hoffe, dass du kommst. (eigenes Subjekt)}
+\EnglishText{\textbf{Wrong:} Ich hoffe, du zu kommen. \quad \textbf{Correct:} Ich hoffe, dass du kommst. (own subject)}
+\end{grammarentry}
+
+\section{Übungen mit Lösungen \textnormal{(Exercises with answers)}}
+\begin{grammarentry}{Ergänze die Konstruktion}{B1-Übung}
+\GermanText{1. Ich fahre mit dem Rad, \underline{\hspace{4cm}} (Geld sparen).}
+\EnglishText{I ride my bicycle in order to save money.}
+\GermanText{2. Er ging, \underline{\hspace{4cm}} (sich verabschieden / ohne).}
+\EnglishText{He left without saying goodbye.}
+\GermanText{3. Ich verspreche dir, morgen \underline{\hspace{3cm}} (anrufen).}
+\EnglishText{I promise to call you tomorrow.}
+\GermanText{4. Ich möchte heute \underline{\hspace{3cm}} (lernen).}
+\EnglishText{I would like to study today.}
+\end{grammarentry}
+\begin{grammarentry}{Lösungen}{answers}
+\GermanText{1. \textbf{um Geld zu sparen}. \quad 2. \textbf{ohne sich zu verabschieden}. \quad 3. \textbf{anzurufen}. \quad 4. \textbf{lernen}.}
+\EnglishText{1. in order to save money; 2. without saying goodbye; 3. to call; 4. to study (no \textbf{zu} after a modal form).}
+\end{grammarentry}
+
+\section{Quellen \textnormal{(References)}}
+\begin{grammarentry}{Regelwerk und Erläuterungen}{Stand 2024}
+\GermanText{Amtliches Regelwerk der deutschen Rechtschreibung (Fassung 2024): \url{https://grammis.ids-mannheim.de/rechtschreibung/}}
+\EnglishText{Official German spelling rules, 2024 edition.}
+\GermanText{Duden: Kommasetzung bei Infinitivgruppen, insbesondere D\,123--125: \url{https://www.duden.de/sprachwissen/rechtschreibregeln/komma}}
+\EnglishText{Duden: comma placement with infinitive groups, especially rules D\,123--125.}
+\end{grammarentry}
+
+\section{Zusammenfassung \textnormal{(Key rules)}}
+\begin{grammarentry}{Die wichtigsten Regeln}{Merkkasten}
+\GermanText{\textbf{1.} Nach Modalverben: \textbf{ohne zu}. \textbf{2.} Nach Verben wie \textbf{versuchen}: häufig \textbf{mit zu}. \textbf{3.} \textbf{um/ohne/(an)statt \ldots{} zu}: \textbf{Komma Pflicht}. \textbf{4.} Der Infinitiv steht gewöhnlich \textbf{am Ende}. \textbf{5.} Trennbare Verben: \textbf{aufzustehen}. \textbf{6.} Präposition \textbf{zu + Dativ} ist nicht Infinitiv-\textbf{zu}. \textbf{7.} Seit 2024: satzwertiger erweiterter zu-Infinitiv \textbf{mit Komma}; nur einfache Infinitive häufig \textbf{mit oder ohne Komma}.}
+\EnglishText{\textbf{1.} After modals: \textbf{no zu}. \textbf{2.} After verbs such as \textbf{versuchen}: commonly \textbf{with zu}. \textbf{3.} \textbf{um/ohne/(an)statt \ldots{} zu}: \textbf{mandatory comma}. \textbf{4.} The infinitive usually comes \textbf{at the end}. \textbf{5.} Separable verbs: \textbf{aufzustehen}. \textbf{6.} Prepositional \textbf{zu + dative} differs from infinitival \textbf{zu}. \textbf{7.} Since 2024: \textbf{comma} with expanded clause-like infinitives; only simple infinitives often permit a \textbf{choice}.}
+\end{grammarentry}
+
+\end{document}

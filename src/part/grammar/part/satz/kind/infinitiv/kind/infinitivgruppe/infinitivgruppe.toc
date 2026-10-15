@@ -1,0 +1,24 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Definition \textnormal {(Definition)}}{2}{section.1}%
+\contentsline {section}{\numberline {2}Die zwei Formen des Infinitivs \textnormal {(Two infinitive forms)}}{2}{section.2}%
+\contentsline {section}{\numberline {3}Wann steht der Infinitiv mit zu? \textnormal {(When to use zu)}}{2}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Nach bestimmten Verben \textnormal {(After certain verbs)}}{2}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Nach Adjektiven und Nomen \textnormal {(After adjectives and nouns)}}{3}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Brauchen + zu \textnormal {(Need to)}}{3}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Wann steht kein zu? \textnormal {(When zu is omitted)}}{4}{section.4}%
+\contentsline {section}{\numberline {5}Um \ldots {} zu \textnormal {(In order to)}}{4}{section.5}%
+\contentsline {section}{\numberline {6}Ohne \ldots {} zu \textnormal {(Without doing something)}}{5}{section.6}%
+\contentsline {section}{\numberline {7}(An)statt \ldots {} zu \textnormal {(Instead of)}}{5}{section.7}%
+\contentsline {section}{\numberline {8}Subjekt und Bezug \textnormal {(Who performs the action?)}}{5}{section.8}%
+\contentsline {section}{\numberline {9}Infinitivgruppe und dass-Satz \textnormal {(Infinitive vs dass-clause)}}{6}{section.9}%
+\contentsline {section}{\numberline {10}Wortstellung \textnormal {(Word order)}}{6}{section.10}%
+\contentsline {section}{\numberline {11}Trennbare Verben \textnormal {(Separable verbs)}}{7}{section.11}%
+\contentsline {section}{\numberline {12}Mehrere Verben \textnormal {(Several verbs)}}{7}{section.12}%
+\contentsline {section}{\numberline {13}Nicht mit Präpositionen verwechseln \textnormal {(Two kinds of zu)}}{7}{section.13}%
+\contentsline {section}{\numberline {14}Verneinung und reflexive Verben \textnormal {(Negation and reflexive verbs)}}{8}{section.14}%
+\contentsline {section}{\numberline {15}Kommasetzung \textnormal {(Comma rules)}}{8}{section.15}%
+\contentsline {section}{\numberline {16}Erweiterte Formen \textnormal {(Advanced forms)}}{9}{section.16}%
+\contentsline {section}{\numberline {17}Häufige Fehler \textnormal {(Common mistakes)}}{10}{section.17}%
+\contentsline {section}{\numberline {18}Übungen mit Lösungen \textnormal {(Exercises with answers)}}{10}{section.18}%
+\contentsline {section}{\numberline {19}Quellen \textnormal {(References)}}{10}{section.19}%
+\contentsline {section}{\numberline {20}Zusammenfassung \textnormal {(Key rules)}}{11}{section.20}%
